@@ -1,0 +1,23 @@
+{
+  "catalogue": {
+    "name": "Xenos - Genestealer Cults",
+    "id": "9870-7fc5-63ff-c540",
+    "battleScribeVersion": "2.03",
+    "comment": "todo: everything",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Warlord Trait",
+        "id": "29dd-538e-9064-380e",
+        "collapsible": true,
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [{"id": "d415-e0c2-39ab-d278", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      }
+    ]
+  }
+}

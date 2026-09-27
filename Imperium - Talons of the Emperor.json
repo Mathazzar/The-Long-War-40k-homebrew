@@ -1,0 +1,23 @@
+{
+  "catalogue": {
+    "name": "Imperium - Talons of the Emperor",
+    "id": "6dd6-ae0e-57c0-a5f7",
+    "battleScribeVersion": "2.03",
+    "comment": "todo: everything",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Warlord Trait",
+        "id": "c6f4-fb30-e407-766c",
+        "collapsible": true,
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [{"id": "033e-eb7b-9146-e21b", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      }
+    ]
+  }
+}

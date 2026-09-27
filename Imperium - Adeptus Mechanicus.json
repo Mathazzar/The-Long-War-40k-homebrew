@@ -1,0 +1,23 @@
+{
+  "catalogue": {
+    "name": "Imperium - Adeptus Mechanicus",
+    "id": "42ee-b2e7-9d9b-3c8b",
+    "battleScribeVersion": "2.03",
+    "comment": "todo: everything",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Warlord Trait",
+        "id": "b514-3697-f89c-1c09",
+        "collapsible": true,
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [{"id": "e3d9-e92a-d903-4d6a", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "catalogue": {
+    "name": "Imperium - Imperial Agents",
+    "id": "3a8c-a55f-a279-a31d",
+    "battleScribeVersion": "2.03",
+    "comment": "todo: everything",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Warlord Trait",
+        "id": "a7ca-c877-acf6-a91d",
+        "collapsible": true,
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [{"id": "e323-f9c2-4e0f-9fa8", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      }
+    ]
+  }
+}

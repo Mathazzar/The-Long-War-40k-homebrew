@@ -1,0 +1,23 @@
+{
+  "catalogue": {
+    "name": "Xenos - Dark Eldar",
+    "id": "4263-1bad-6fa8-e501",
+    "battleScribeVersion": "2.03",
+    "comment": "todo: everything",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Warlord Trait",
+        "id": "e35a-e3dc-c4c8-634f",
+        "collapsible": true,
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [{"id": "0a2c-db78-a2df-9bc5", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      }
+    ]
+  }
+}
