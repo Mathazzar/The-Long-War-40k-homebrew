@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 7,
+    "revision": 8,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -14978,6 +14978,7 @@
               {"id": "d099-59d3-4b64-9582", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4},
               {"id": "e7be-0119-7880-0dba", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 9}
             ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
             "entryLinks": [
               {"name": "Krak Grenades", "id": "5c8f-80a7-6145-9d9d", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "cfa3-299c-deb9-48b1", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"}
