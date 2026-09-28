@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 7,
+    "revision": 8,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -201,7 +201,8 @@
       {"name": "Psyker", "id": "4e4d-1694-c7c7-88b1", "hidden": false},
       {"name": "m35", "id": "eac0-484c-93fc-4466", "hidden": false},
       {"name": "Artillery", "id": "4a96-1c0b-540e-a5d7", "hidden": false},
-      {"name": "m37+", "id": "266a-a317-a50a-0784", "hidden": false}
+      {"name": "m37+", "id": "266a-a317-a50a-0784", "hidden": false},
+      {"name": "Tech-Priest", "id": "69c3-b571-197c-4f99", "hidden": false}
     ],
     "costTypes": [
       {
@@ -300,7 +301,7 @@
       {
         "name": "Test Cats",
         "id": "aa80-195a-d359-948a",
-        "hidden": false,
+        "hidden": true,
         "import": true,
         "targetId": "e047-c2b4-8421-3bb8",
         "type": "selectionEntry",
@@ -321,7 +322,7 @@
       {
         "name": "Default Force",
         "id": "566a-ef0a-1609-f0e8",
-        "hidden": false,
+        "hidden": true,
         "categoryLinks": [
           {"name": "Configuration", "id": "08b9-fccb-35a2-b588", "hidden": false, "targetId": "bbf1-bbcb-4fd7-5eda"},
           {"name": "HQ", "id": "08a7-8ea2-265e-4672", "hidden": false, "targetId": "32ec-1b0c-3325-937c"},
@@ -418,10 +419,10 @@
             "constraints": [
               {
                 "id": "7d2c-09ef-437e-af64-min",
-                "automatic": false,
-                "field": "forces",
+                "automatic": true,
+                "field": "selections",
                 "includeChildForces": true,
-                "includeChildSelections": false,
+                "includeChildSelections": true,
                 "scope": "roster",
                 "shared": true,
                 "type": "min",
@@ -429,6 +430,7 @@
               },
               {
                 "id": "7d2c-09ef-437e-af64-max",
+                "automatic": true,
                 "field": "forces",
                 "includeChildForces": true,
                 "includeChildSelections": false,
@@ -559,7 +561,9 @@
                 ]
               }
             ]
-          }
+          },
+          {"field": "hidden", "type": "set", "value": true},
+          {"field": "hidden", "type": "set", "value": true}
         ]
       }
     ],
@@ -1630,15 +1634,6 @@
         "type": "upgrade",
         "categoryLinks": [{"name": "Configuration", "id": "da8d-b5f9-0c41-ba36", "hidden": false, "primary": true, "targetId": "bbf1-bbcb-4fd7-5eda"}],
         "constraints": [{"id": "3d14-ef2c-0374-9bea", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "min", "value": 1}]
-      },
-      {
-        "name": "Config",
-        "id": "ced4-48fd-d00c-34a2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Configuration", "id": "1276-f089-3be2-a849", "hidden": false, "primary": true, "targetId": "bbf1-bbcb-4fd7-5eda"}],
-        "selectionEntries": [{"name": "Detatchment", "id": "a718-c896-b7cc-dec1", "hidden": false, "import": true, "type": "upgrade"}]
       },
       {
         "name": "Test Cats",
