@@ -166,7 +166,17 @@
         "hidden": false,
         "constraints": [{"id": "801a-da0c-a63f-8d1e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
       },
-      {"name": "Beast Boss", "id": "db17-8cd5-045f-4eba", "hidden": false}
+      {"name": "Beast Boss", "id": "db17-8cd5-045f-4eba", "hidden": false},
+      {"name": "Grot Tank Kommander", "id": "2e56-bb37-33c6-9e9d", "hidden": false},
+      {"name": "Mek Boss Buzzgob", "id": "94c9-60e4-7166-0cc8", "hidden": false},
+      {"name": "[Goffs]", "id": "e71c-b010-98f4-5ff9", "hidden": false},
+      {"name": "Boss Zagstuk", "id": "a555-623f-30f3-d216", "hidden": false},
+      {"name": "[Blood Axes]", "id": "eb67-b515-2ae8-89f9", "hidden": false},
+      {"name": "Boss Snikrot", "id": "0903-939a-23a9-c4af", "hidden": false},
+      {"name": "[Evil Sunz]", "id": "2074-5adf-d16b-c280", "hidden": false},
+      {"name": "Zhadsnark Da Rippa", "id": "e851-8a1a-aad2-0ba7", "hidden": false},
+      {"name": "[Snake Bites]", "id": "7773-d277-f242-7f94", "hidden": false},
+      {"name": "Mozrog Skragbad", "id": "941e-1923-8041-a86c", "hidden": false}
     ],
     "publications": [{"name": "The Long War - Codex Orks", "id": "3cdc-bfbe-759f-8d6b", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
@@ -2956,12 +2966,247 @@
         "id": "8361-d3b5-0693-b31e",
         "hidden": false,
         "import": true,
+        "page": "40",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "c55e-52e5-e5e0-91c3", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "c2bc-8288-1287-2514", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "dfc9-a2e7-a71c-bfc2", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "Grot Tank Kommander", "id": "c325-dcda-67a1-a4c2", "hidden": false, "primary": false, "targetId": "2e56-bb37-33c6-9e9d"},
+          {"name": "Tech-Priest", "id": "5e9f-2b2a-7533-e875", "hidden": false, "primary": false, "targetId": "69c3-b571-197c-4f99"},
+          {"name": "M31", "id": "f1a4-6639-3ee2-d5cd", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Vehicle", "id": "6e95-bc07-b927-de10", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 70}],
+        "entryLinks": [
+          {"name": "Relic", "id": "dfdb-d544-f379-58b0", "hidden": false, "import": true, "targetId": "e114-12e7-f9a2-009c", "type": "selectionEntry"},
+          {"name": "Warlord", "id": "b3f2-3859-d56f-f0a9", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {"name": "Machine Rites", "id": "e7b2-1d6a-d835-cb95", "hidden": false, "import": true, "targetId": "725e-13ad-f24f-fd74", "type": "selectionEntryGroup"},
+          {"name": "Warlord Trait", "id": "e30a-a65e-e19c-d16b", "hidden": false, "import": true, "targetId": "6811-13b0-b926-6e59", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Support Squad", "id": "0b7b-46b0-f6c3-c0a8", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
+          {"name": "Character", "id": "ff44-1ec7-387d-5238", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Vehicle Mob", "id": "6010-3aab-a9d9-3abb", "hidden": false, "targetId": "3bac-31a9-0ac8-81b1", "type": "rule"},
+          {"name": "Grot Mob", "id": "3b1b-b54c-e1fc-59fb", "hidden": false, "targetId": "2fa6-a2fb-6f69-b2d7", "type": "rule"},
+          {"name": "Relentless", "id": "be78-e1bf-f260-3f2c", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "9e4d-8070-02b4-737f", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "134e-934c-340f-768d", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
+          {"name": "Fade & Fire", "id": "7d20-35e6-1049-d763", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
+          {"name": "Battle Smith (x)", "id": "b2cd-8b93-55a0-1bf8", "hidden": false, "targetId": "1bae-372c-fb85-7975", "type": "rule"},
+          {"name": "Expendable", "id": "3d2e-5e9a-88ea-3975", "hidden": false, "targetId": "10fa-7459-7b04-1f93", "type": "rule"}
+        ],
+        "rules": [
+          {
+            "name": "Mob Leader",
+            "id": "3bc7-eef1-1b50-2d76",
+            "description": "The Grot Tank Kommander may join other units of Grot Tanks as a Character even though the Grot Tank Kommander is a Vehicle type unit.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Grot Tank Kommander",
+            "id": "a11e-e857-c1c3-d169",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "b86c-4399-22d0-6102-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "b86c-4399-22d0-6102-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Shoota",
+                "id": "c3d8-fd50-2d8a-e148",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "4b67-bb25-bba6-f3ee",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "8cd4-fa16-22be-c073-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "8cd4-fa16-22be-c073-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Dirty Gubbinz",
+                "id": "73ba-dd20-f65e-95f9",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "9687-970e-c85a-57fd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "0b0a-63d9-d4df-ffb4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "0b0a-63d9-d4df-ffb4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Grot Crew Weapons", "id": "53e7-7a30-b3da-034e", "hidden": false, "import": true, "targetId": "5578-8cc1-0b06-c5a2", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Grot Tank Kommander",
+                "id": "356a-c037-cba5-925a",
+                "hidden": false,
+                "typeId": "9f3f-85d3-bf97-fcc9",
+                "typeName": "Vehicle",
+                "characteristics": [
+                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
+                  {"name": "WS", "$text": "3", "typeId": "b91a-6b4e-68f6-5398"},
+                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
+                  {"name": "S", "$text": "6", "typeId": "605e-2df1-55c7-3d9d"},
+                  {"name": "Front", "$text": "10", "typeId": "65d6-7651-a40f-fcd5"},
+                  {"name": "Side", "$text": "10", "typeId": "570a-ef9c-8153-2bb7"},
+                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
+                  {"name": "A", "$text": "3", "typeId": "1a60-9cb9-3892-ac5a"},
+                  {"name": "I", "$text": "3", "typeId": "7f1b-fabe-598c-f8de"},
+                  {"name": "LD", "$text": "6", "typeId": "7b21-f3da-4802-3e38"},
+                  {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Extra",
+                "id": "54ea-f7c1-a1fa-7c15",
+                "defaultSelectionEntryId": "none",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "9348-f65f-860c-c4d7",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Grotzooka",
+                    "id": "46c0-229b-341e-5af4",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ac39-dfcb-16f4-95ec",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  },
+                  {
+                    "name": "Rokkits",
+                    "id": "00de-8f25-9230-1fc6",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e9bd-35d7-0da0-4e82",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                  },
+                  {
+                    "name": "Skorcha",
+                    "id": "bc72-e3df-d2ad-4e5e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "c67c-8857-f466-8968",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  },
+                  {
+                    "name": "Kustom Mega Blaster",
+                    "id": "d7c7-c4d9-87b4-e949",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e7b0-93af-6ca2-0684",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  }
+                ]
+              },
+              {
+                "name": "Big Shoota",
+                "id": "f585-818f-03cc-7041",
+                "defaultSelectionEntryId": "58dc-309f-46b3-224b",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "8952-4f62-b8f6-c112-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "8952-4f62-b8f6-c112-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Grotzooka",
+                    "id": "af93-feda-08cd-108f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ac39-dfcb-16f4-95ec",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  },
+                  {
+                    "name": "Rokkits",
+                    "id": "dfda-3ba0-4fa1-e92d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e9bd-35d7-0da0-4e82",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
+                    "name": "Big Shoota",
+                    "id": "58dc-309f-46b3-224b",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d179-2116-cdfe-b2a8",
+                    "type": "selectionEntry",
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  },
+                  {
+                    "name": "Skorcha",
+                    "id": "ebf7-edf7-b5fe-f6dd",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "c67c-8857-f466-8968",
+                    "type": "selectionEntry",
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  },
+                  {
+                    "name": "Kustom Mega Blaster",
+                    "id": "aed8-f9ee-0f8d-dc0f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e7b0-93af-6ca2-0684",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2969,12 +3214,256 @@
         "id": "5490-4862-7337-0015",
         "hidden": false,
         "import": true,
+        "page": "41",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "9fbf-2205-77a3-8116", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "0ec5-303c-1040-bb06", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "903a-d68c-ac7a-6e74", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "Nob War Leader", "id": "0b70-cc72-cfd4-34a0", "hidden": false, "primary": false, "targetId": "8159-62f1-d8c4-bf12"},
+          {"name": "Mek Boss Buzzgob", "id": "f00f-d7db-208c-0adb", "hidden": false, "primary": false, "targetId": "94c9-60e4-7166-0cc8"},
+          {"name": "[Goffs]", "id": "b656-4847-b85e-7eb7", "hidden": false, "primary": false, "targetId": "e71c-b010-98f4-5ff9"},
+          {"name": "Unique", "id": "83a6-5364-119a-33a4", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M31", "id": "9a8e-1c30-c358-7ab9", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Infantry", "id": "fc39-a1c2-edbb-3da4", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}],
+        "entryLinks": [
+          {"name": "Machine Rites", "id": "7ebe-7489-e67b-2f1c", "hidden": false, "import": true, "targetId": "725e-13ad-f24f-fd74", "type": "selectionEntryGroup"},
+          {"name": "Warlord", "id": "c0dc-64a3-921e-9c98", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}
+        ],
+        "infoLinks": [
+          {"name": "Allegiance: Goffs", "id": "cd59-3e29-760b-4d33", "hidden": false, "targetId": "230a-3a05-0b2d-a951", "type": "rule"},
+          {"name": "Character", "id": "cd40-2ec2-84ae-e683", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Battle Smith (x)", "id": "8bfc-523b-389a-24c6", "hidden": false, "targetId": "1bae-372c-fb85-7975", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "e573-222d-df6b-a830",
+                "childName": "Goffs",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Buzzgobs Dread Heads",
+            "id": "bf08-571c-e886-bdcf",
+            "description": "If your army includes a model with this special rule, you may include one Killa Kan or Deff Dread unit in your army without taking up a Force Organization Slot.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Mek Boss Buzzgob",
+            "id": "7389-9ca6-fd20-a01c",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "c7df-73c0-5541-d7ed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "c7df-73c0-5541-d7ed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "He’avy Armour",
+                "id": "bd16-12d1-b12e-d91b",
+                "defaultAmount": "1",
+                "hidden": true,
+                "import": true,
+                "targetId": "388b-2df1-6738-66ff",
+                "type": "selectionEntry",
+                "constraints": [{"id": "874c-89fd-9972-df6f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              },
+              {"name": "Stikk bombs", "id": "15ce-2032-ea4e-fc63", "hidden": true, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
+              {
+                "name": "Force Field",
+                "id": "1034-2e9e-923c-77fa",
+                "defaultAmount": "1",
+                "hidden": true,
+                "import": true,
+                "targetId": "690e-2db0-52e2-0aba",
+                "type": "selectionEntry",
+                "constraints": [{"id": "7e06-9a0a-2cea-dbda", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              },
+              {
+                "name": "Grot Oiler",
+                "id": "86ec-7666-216e-585e",
+                "defaultAmount": "1",
+                "hidden": true,
+                "import": true,
+                "targetId": "9b3d-322b-85b9-4b4f",
+                "type": "selectionEntry",
+                "constraints": [{"id": "f86a-58af-ee58-d797", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              },
+              {
+                "name": "Big Choppa",
+                "id": "332f-b139-07f3-0d4c",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "e31a-0240-6bc0-0d29",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "e1bc-17fd-a62d-56f4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "e1bc-17fd-a62d-56f4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Slugga",
+                "id": "6823-1c38-9212-0d9f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "91e7-ff54-7ea0-48cd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "f63e-b11a-3e08-afef-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f63e-b11a-3e08-afef-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Mek Boss Buzzgob",
+                "id": "abf3-193f-4b1d-2649",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "2", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "5", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Mek Arms",
+                "id": "e2c3-9162-f54b-359d",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "94d3-1854-88bf-ad0b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "94d3-1854-88bf-ad0b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Mek Arms",
+                    "id": "511d-0537-0353-bcd5",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Unwieldy, Reach", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dread Builder",
+            "id": "f45b-ba78-3e89-2c5b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "98e0-476f-ed0d-7e56-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "98e0-476f-ed0d-7e56-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "98e0-476f-ed0d-7e56-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "98e0-476f-ed0d-7e56-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Dread Builder",
+                "id": "f2cc-6cde-fd32-4c8f",
+                "description": "If this unit is Warlord, select a single Walker or Titan type unit in your army to be his latest custom job. The selected unit gains the Master-Crafted special rule on all weapons it is equipped with.",
+                "hidden": false
+              }
+            ]
+          }
         ]
       },
       {
@@ -2982,12 +3471,287 @@
         "id": "af71-faf6-22f7-af00",
         "hidden": false,
         "import": true,
+        "page": "42",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "18f0-26ec-ebcd-4dd7", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "2ee5-da8d-3375-3fa6", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "ec43-1466-1833-24bf", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "[Goffs]", "id": "dd62-8a5d-6bf5-3fe8", "hidden": false, "primary": false, "targetId": "e71c-b010-98f4-5ff9"},
+          {"name": "Warboss", "id": "065e-dab0-eaf1-629e", "hidden": false, "primary": false, "targetId": "8a8c-271f-5f00-3ca5"},
+          {"name": "Big Boss", "id": "f7c6-111c-bcf2-abee", "hidden": false, "primary": false, "targetId": "b9d1-d6cd-c9ef-c3b6"},
+          {"name": "Boss Zagstuk", "id": "97f9-a5d9-fc24-cd7b", "hidden": false, "primary": false, "targetId": "a555-623f-30f3-d216"},
+          {"name": "Unique", "id": "30e8-9e71-f70b-730c", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M31", "id": "2336-b0a2-12fe-124d", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Infantry", "id": "e6c3-74e3-47c5-b5e1", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 150}],
+        "entryLinks": [{"name": "Warlord", "id": "979b-4d65-8282-039b", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}],
+        "infoLinks": [
+          {"name": "Fly", "id": "b561-f56e-6987-0ca3", "hidden": false, "targetId": "6848-5598-edc5-a56f", "type": "rule"},
+          {"name": "Character", "id": "2015-dfde-d55f-ebba", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Allegiance: Goffs", "id": "6646-70a6-c26d-e6ff", "hidden": false, "targetId": "230a-3a05-0b2d-a951", "type": "rule"},
+          {"name": "WAAAGH!", "id": "7c71-87ab-1e7a-93e8", "hidden": false, "targetId": "0e8a-6f5d-0dfe-df0f", "type": "rule"},
+          {"name": "Da Biggest and Da Strongest", "id": "5950-c4dc-0579-ff84", "hidden": false, "targetId": "33c2-804c-3282-a9b4", "type": "rule"},
+          {"name": "Deep Strike", "id": "2d2d-1241-3afb-475d", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "f15c-4390-e6bc-cd1b", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "e573-222d-df6b-a830",
+                "childName": "Goffs",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Drill Boss",
+            "id": "ce50-789d-bf02-f17b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "7aa9-4898-886e-6e3a-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "7aa9-4898-886e-6e3a-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "7aa9-4898-886e-6e3a-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "7aa9-4898-886e-6e3a-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Drill Boss",
+                "id": "8905-e959-c1d5-4f0f",
+                "description": "If this unit is Warlord, all Storm Boyz units in your primary Detachment gain the Sudden Strike and Stubborn special rules.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Boss Zagstuk",
+            "id": "8276-5833-8681-1f65",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "71d8-7698-3cff-b5c7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "71d8-7698-3cff-b5c7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Choppa",
+                "id": "6403-a089-7370-b1a0",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "8716-b4e4-0c4c-53e8",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6864-9d32-01b4-519f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6864-9d32-01b4-519f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              },
+              {
+                "name": "He’avy Armour",
+                "id": "8620-ce10-7e12-d6d0",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "388b-2df1-6738-66ff",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "21a5-1261-1be8-917a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "21a5-1261-1be8-917a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Rokkit Pack",
+                "id": "fab2-73a7-0f73-1b75",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "18c7-3a8c-33c0-83c9",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "f016-898d-874e-d612-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f016-898d-874e-d612-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Cybork Body",
+                "id": "bd85-5c0d-cb99-a3c9",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d52f-e183-6740-9fe6",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "b9d7-1970-5634-a503-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "b9d7-1970-5634-a503-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              },
+              {
+                "name": "Slugga",
+                "id": "6301-b9de-d9cf-9cce",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "91e7-ff54-7ea0-48cd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c76a-210a-d32f-e2f0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c76a-210a-d32f-e2f0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Boss Zagstuk",
+                "id": "ee7e-31a5-787a-ccdc",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "12", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "5", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "5", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Blitz Missiles",
+                "id": "55cb-b3df-73b2-a337",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "ad13-1e60-2115-1904-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ad13-1e60-2115-1904-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Blitz Missiles",
+                    "id": "cd9d-b43e-5a8c-5c8c",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Da Vulcha Klaw",
+                "id": "6c6f-c4f7-6b52-7e4f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "46a2-a781-18ae-3265-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "46a2-a781-18ae-3265-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Da Vulcha Klaw",
+                    "id": "a46b-92b4-d5b5-b361",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Unwieldy, Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2995,12 +3759,232 @@
         "id": "e669-6a62-b06a-ed24",
         "hidden": false,
         "import": true,
+        "page": "43",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "6cd4-aa99-d959-dc68", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "9771-df6e-d0cc-5262", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "20a8-3c9b-07b1-b762", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "[Blood Axes]", "id": "d4d9-52a7-76af-81af", "hidden": false, "primary": false, "targetId": "eb67-b515-2ae8-89f9"},
+          {"name": "Big Boss", "id": "847a-ecb9-9f67-5694", "hidden": false, "primary": false, "targetId": "b9d1-d6cd-c9ef-c3b6"},
+          {"name": "Warboss", "id": "a80b-9e87-7454-2841", "hidden": false, "primary": false, "targetId": "8a8c-271f-5f00-3ca5"},
+          {"name": "Boss Snikrot", "id": "b042-6660-9628-954d", "hidden": false, "primary": false, "targetId": "0903-939a-23a9-c4af"},
+          {"name": "Unique", "id": "e07a-075e-bdc1-b43a", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M31", "id": "23dd-ee83-3968-fbdb", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Infantry", "id": "cc4b-4023-5d4f-b156", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 120}],
+        "entryLinks": [{"name": "Warlord", "id": "3ffd-2b84-cc58-cf8c", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}],
+        "infoLinks": [
+          {"name": "Fear (x)", "id": "ee56-be30-60c5-eeed", "hidden": false, "targetId": "719f-3e8c-b6f2-54ee", "type": "rule"},
+          {"name": "Da Biggest and Da Strongest", "id": "4dec-94d6-a598-b65c", "hidden": false, "targetId": "33c2-804c-3282-a9b4", "type": "rule"},
+          {"name": "WAAAGH!", "id": "79df-f17a-c725-dc79", "hidden": false, "targetId": "0e8a-6f5d-0dfe-df0f", "type": "rule"},
+          {"name": "Character", "id": "bb19-c43d-6a67-3e70", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Infiltrate", "id": "1da3-9233-dfe1-ada4", "hidden": false, "targetId": "1f09-f0fd-d463-db52", "type": "rule"},
+          {"name": "Scout", "id": "7879-eec9-73b1-6df5", "hidden": false, "targetId": "40e0-db51-99ce-684c", "type": "rule"},
+          {"name": "Outflank", "id": "7736-baf0-6d9c-adf2", "hidden": false, "targetId": "afef-1361-8dda-9d33", "type": "rule"},
+          {"name": "Feel no Pain", "id": "d3e9-4420-a3c7-1748", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9448-d81f-ed11-6862",
+                "childName": "Blood Axes",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "New Rule", "id": "1157-96f5-3481-d9c9", "hidden": false, "alias": ["Allegiance: Blood Axes"]}],
+        "selectionEntries": [
+          {
+            "name": "Red Skull Kommandos",
+            "id": "52cf-a071-444c-faab",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "5f79-d10d-442e-ad69-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "5f79-d10d-442e-ad69-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "5f79-d10d-442e-ad69-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "5f79-d10d-442e-ad69-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Red Skull Kommandos",
+                "id": "4502-a3f5-96e0-f4cc",
+                "description": "If this unit is your Warlord, all Kommando units in your primary Detachment gains the Preferred Enemy (Infantry) Special Rule.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Boss Snikrot",
+            "id": "ab70-379c-eaaf-0034",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "afce-8678-76fc-3fbc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "afce-8678-76fc-3fbc-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Scrap Armour",
+                "id": "f08c-b2f7-cd21-291a",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "8626-5e63-0597-5402",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "08d9-637f-bd45-7108-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "08d9-637f-bd45-7108-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Stikk bombs", "id": "7e89-66d0-72c9-334c", "hidden": false, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
+              {
+                "name": "Speshul Slugga",
+                "id": "c63c-2c5c-847c-cb15",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "bc7a-31bd-397d-7efd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "ba13-846d-6ea4-546e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ba13-846d-6ea4-546e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Dirty Gubbinz",
+                "id": "2854-8b2b-32f4-357f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "9687-970e-c85a-57fd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "b295-e851-86ac-e995-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "b295-e851-86ac-e995-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Boss Snikrot",
+                "id": "9e83-7d27-4e40-dd7a",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "5", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "5", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "6", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Morks Teeth",
+                "id": "6437-2df4-f370-e012",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "d60a-922e-910a-d7b0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d60a-922e-910a-d7b0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Morks Teeth",
+                    "id": "3c5c-7ce0-a5ed-91bd",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Rending (6+), Precision Hits", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3008,12 +3992,258 @@
         "id": "d55d-2022-8386-1131",
         "hidden": false,
         "import": true,
+        "page": "44",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "9df8-8b65-0ed1-c2a3", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "6cb4-f69c-d32e-7ddb", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "a2c3-d624-dda1-92d8", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "[Evil Sunz]", "id": "f0e9-cc7c-c63e-5554", "hidden": false, "primary": false, "targetId": "2074-5adf-d16b-c280"},
+          {"name": "Warboss", "id": "bacd-4ec1-bad6-948d", "hidden": false, "primary": false, "targetId": "8a8c-271f-5f00-3ca5"},
+          {"name": "Big Boss", "id": "a4e5-4865-4c11-31d7", "hidden": false, "primary": false, "targetId": "b9d1-d6cd-c9ef-c3b6"},
+          {"name": "Zhadsnark Da Rippa", "id": "6fe5-9058-24da-6036", "hidden": false, "primary": false, "targetId": "e851-8a1a-aad2-0ba7"},
+          {"name": "Unique", "id": "ca09-21f5-a796-1b3c", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M31", "id": "0f70-d3dd-c658-1e4b", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Bike", "id": "e48c-bd77-d78c-c878", "hidden": false, "primary": false, "targetId": "fa9d-896e-a495-babb"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 120}],
+        "entryLinks": [{"name": "Warlord", "id": "6c6f-1acc-38a0-37b8", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}],
+        "infoLinks": [
+          {"name": "Hammer of Wrath (x)", "id": "42ca-e556-0324-4fd4", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Da Biggest and Da Strongest", "id": "6dae-db6b-e772-ea66", "hidden": false, "targetId": "33c2-804c-3282-a9b4", "type": "rule"},
+          {"name": "WAAAGH!", "id": "d006-2df4-f0f6-2bf4", "hidden": false, "targetId": "0e8a-6f5d-0dfe-df0f", "type": "rule"},
+          {"name": "Outflank", "id": "6e97-7a2e-025e-afe1", "hidden": false, "targetId": "afef-1361-8dda-9d33", "type": "rule"},
+          {"name": "Character", "id": "bf51-d0eb-9b54-d38d", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Relentless", "id": "a891-c99b-6d0d-56a4", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Fleet", "id": "1514-3c6e-74ea-06e7", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
+          {"name": "Fade & Fire", "id": "6fed-18a8-d991-f87d", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "dfda-6383-ec41-ae5e",
+                "childName": "Evil Sunz",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Allegiance: Evil Sunz", "id": "c4ab-d00e-57b0-8710", "hidden": false}],
+        "selectionEntries": [
+          {
+            "name": "Dare Devil Leadership",
+            "id": "7d4e-ebaa-0c58-93b3",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "2b42-1f2a-f543-c255-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "2b42-1f2a-f543-c255-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "2b42-1f2a-f543-c255-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "2b42-1f2a-f543-c255-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Dare Devil Leadership",
+                "id": "7b20-ad7e-b7ca-2c23",
+                "description": "If this unit is your Warlord, this unit and any attached unit gain the Move Through Cover special rule.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Zhadsnark Da Rippa",
+            "id": "15b6-5f45-c34b-7bcd",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "971f-f812-6141-874b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "971f-f812-6141-874b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "He’avy Armour",
+                "id": "fdd8-2603-a55f-4fc1",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "388b-2df1-6738-66ff",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "04b9-3916-1bfd-1f9f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "04b9-3916-1bfd-1f9f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Stikk bombs", "id": "7d51-158d-732d-e320", "hidden": false, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
+              {
+                "name": "Slugga",
+                "id": "b0bf-3113-d96c-4dc1",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "91e7-ff54-7ea0-48cd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "33ee-ab21-ef89-d9e0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "33ee-ab21-ef89-d9e0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "War Bike",
+                "id": "e59d-b5be-ff08-8eba",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "81ee-228d-3c3d-cbb6",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "fc5b-6bf3-f6b6-15ed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fc5b-6bf3-f6b6-15ed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Squig-hide Tires",
+                "id": "8e38-f913-0306-7940",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "4682-7e4d-0cb3-6428",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "5953-963b-3ec2-1e08-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "5953-963b-3ec2-1e08-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Dirty Gubbinz",
+                "id": "a6c5-b772-94b7-17a0",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "9687-970e-c85a-57fd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6559-3ef9-53b6-1646-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6559-3ef9-53b6-1646-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Zhadsnark Da Rippa",
+                "id": "e568-bc0f-cdce-393e",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "5", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "5", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Da Pain Klaw",
+                "id": "f679-bfbd-94d3-8bdc",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "dee4-af38-4a6f-7829-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "dee4-af38-4a6f-7829-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Da Pain Klaw",
+                    "id": "a880-f59a-5037-7a18",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Unwieldy, Crushing (5+), Bane (Monsters)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3021,12 +4251,253 @@
         "id": "61eb-7c43-aa87-6b05",
         "hidden": false,
         "import": true,
+        "page": "45",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "b7b0-e1a9-84a3-48ad", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "de4a-fc9e-c6be-7c4f", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "d572-bf68-a1b4-2308", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "[Snake Bites]", "id": "4597-7c7b-41ae-be77", "hidden": false, "primary": false, "targetId": "7773-d277-f242-7f94"},
+          {"name": "Nob War Leader", "id": "8779-107c-282e-bc7f", "hidden": false, "primary": false, "targetId": "8159-62f1-d8c4-bf12"},
+          {"name": "Mozrog Skragbad", "id": "aaf5-94e3-5b4d-0ee2", "hidden": false, "primary": false, "targetId": "941e-1923-8041-a86c"},
+          {"name": "Unique", "id": "a07f-d6f1-d746-882b", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M31", "id": "a7ba-d051-d54e-5fec", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Cavalry", "id": "4488-fed2-3122-68ea", "hidden": false, "primary": false, "targetId": "ba7d-58f2-ee40-fc55"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 110}],
+        "entryLinks": [
+          {
+            "name": "Brutal but Kunnin",
+            "id": "0be7-23e9-ddb6-172e",
+            "hidden": false,
+            "import": true,
+            "targetId": "c5a1-d1d5-92f0-f928",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "94ef-9c9c-a9e7-ca51-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "94ef-9c9c-a9e7-ca51-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "94ef-9c9c-a9e7-ca51-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "94ef-9c9c-a9e7-ca51-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Warlord", "id": "ed9c-c7fb-847c-8218", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}
+        ],
+        "infoLinks": [
+          {"name": "Feel no Pain", "id": "cfab-4813-0880-6c50", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Character", "id": "47b8-c03b-386a-dca3", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Relentless", "id": "2eba-75c9-5a24-bdb4", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Fleet", "id": "862f-b944-8f32-453f", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
+          {"name": "Fade & Fire", "id": "d0cd-65fe-723c-9ae8", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
+          {"name": "Outflank", "id": "ed49-44ca-0252-b96f", "hidden": false, "targetId": "afef-1361-8dda-9d33", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "0a11-b526-9834-c55b", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Allegiance: Snake Bites", "id": "172c-0de5-e73a-089f", "hidden": false, "targetId": "1c38-fd31-cc33-13aa", "type": "rule"},
+          {"name": "Beast Snagga", "id": "fe15-56be-7182-aa62", "hidden": false, "targetId": "b3e9-357b-ba17-50cb", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "c148-aad0-3d7a-7b36",
+                "childName": "Snake Bites",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Mozrog Skragbad",
+            "id": "5db1-754f-f6cb-dd3a",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "78bb-ff5c-45bc-1935-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "78bb-ff5c-45bc-1935-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Scrap Armour",
+                "id": "8872-6588-30dd-12ff",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "8626-5e63-0597-5402",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a059-4a1b-5b47-7335-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a059-4a1b-5b47-7335-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Thump Gun",
+                "id": "ace9-3b72-9c7e-4514",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c5cb-fe14-b154-4ec8",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c95c-dc87-7b23-bfcc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c95c-dc87-7b23-bfcc-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Close Combat Weapon",
+                "id": "d716-da22-e9d2-d118",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "777e-a4fd-c9a5-ebea",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "27c2-b98d-3b4a-16cd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "27c2-b98d-3b4a-16cd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Mozrog Skragbad",
+                "id": "a1b9-7e9f-9212-0e8d",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "12", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "2", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "6", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Big Chompa’s Jaws",
+                "id": "5f6c-2e4f-54c3-819d",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "8b92-ea0f-9c18-601c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "8b92-ea0f-9c18-601c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Big Chompa’s Jaws",
+                    "id": "ef53-b4ea-4aab-c6ed",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "7", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Gutrippa",
+                "id": "c533-7089-8e29-9c72",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "d65b-990c-2d4f-bbd5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d65b-990c-2d4f-bbd5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Gutrippa",
+                    "id": "bab8-3f4b-8dc7-79ba",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Rending (5+), Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3911,7 +5382,9 @@
         "id": "d25b-84a8-7bfc-df1a",
         "description": "Snake Bites Infantry, Jetbike, Cavlary & Bike units gain the Zealot special rule.",
         "hidden": false
-      }
+      },
+      {"name": "Allegiance: Goffs", "id": "230a-3a05-0b2d-a951", "hidden": false},
+      {"name": "Allegiance: Snake Bites", "id": "1c38-fd31-cc33-13aa", "hidden": false}
     ],
     "sharedSelectionEntries": [
       {
@@ -5949,6 +7422,7 @@
         "name": "Grot Crew Weapons",
         "id": "5578-8cc1-0b06-c5a2",
         "collective": true,
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "page": "14",
