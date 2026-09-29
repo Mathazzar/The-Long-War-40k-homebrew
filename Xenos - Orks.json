@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 2,
+    "revision": 3,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "[Klan]", "id": "5ee1-b487-b991-0e62", "hidden": false},
@@ -158,7 +158,15 @@
             ]
           }
         ]
-      }
+      },
+      {"name": "Warboss", "id": "8a8c-271f-5f00-3ca5", "hidden": false},
+      {
+        "name": "Big Boss",
+        "id": "b9d1-d6cd-c9ef-c3b6",
+        "hidden": false,
+        "constraints": [{"id": "801a-da0c-a63f-8d1e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {"name": "Beast Boss", "id": "db17-8cd5-045f-4eba", "hidden": false}
     ],
     "publications": [{"name": "The Long War - Codex Orks", "id": "3cdc-bfbe-759f-8d6b", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
@@ -870,7 +878,8 @@
                 "constraints": [
                   {"id": "9186-5891-55af-2821-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "9186-5891-55af-2821-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
               },
               {
                 "name": "Choppa",
@@ -1979,12 +1988,237 @@
         "id": "f074-e96d-8c00-b014",
         "hidden": false,
         "import": true,
+        "page": "37",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "4f9f-91fd-6501-6dae", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "434e-e812-2a43-8f58", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "76f3-3670-160f-9d1f", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "[Klan]", "id": "76f3-3670-160f-9d1f", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"},
+          {"name": "Warboss", "id": "e15d-c26b-b441-a4d9", "hidden": false, "primary": false, "targetId": "8a8c-271f-5f00-3ca5"},
+          {"name": "M31", "id": "ca1d-dc5d-a623-07e7", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Big Boss", "id": "20cc-d685-d6ce-0f16", "hidden": false, "primary": false, "targetId": "b9d1-d6cd-c9ef-c3b6"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 95}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "248c-3244-2dfb-84b8", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {"name": "Warlord Trait", "id": "241c-faa8-614f-b1e1", "hidden": false, "import": true, "targetId": "6811-13b0-b926-6e59", "type": "selectionEntryGroup"},
+          {"name": "Relic", "id": "1a66-a0a1-61ed-76f4", "hidden": false, "import": true, "targetId": "e114-12e7-f9a2-009c", "type": "selectionEntry"}
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "95ad-3661-a455-5a1b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "WAAAGH!", "id": "18fa-b1dc-084a-f38d", "hidden": false, "targetId": "0e8a-6f5d-0dfe-df0f", "type": "rule"},
+          {"name": "Da Biggest and Da Strongest", "id": "d2a2-3004-bd22-1757", "hidden": false, "targetId": "33c2-804c-3282-a9b4", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Warboss",
+            "id": "63c1-64ae-258d-1f05",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "entryLinks": [
+              {"name": "Cybork Body", "id": "2784-6534-76d7-a26f", "hidden": false, "import": true, "targetId": "d52f-e183-6740-9fe6", "type": "selectionEntry"},
+              {"name": "Kustom Shoota", "id": "e25e-41d3-6dd8-4a3c", "hidden": false, "targetId": "650f-5b41-297f-06d8", "type": "selectionEntryGroup"},
+              {
+                "name": "Slugga",
+                "id": "4088-ade8-5494-bd43",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "91e7-ff54-7ea0-48cd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "642a-168b-349d-e935-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "642a-168b-349d-e935-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Big Choppa", "id": "cf8d-f77d-4a0d-48fa", "hidden": false, "targetId": "38f7-3e59-5704-2b1a", "type": "selectionEntryGroup"},
+              {
+                "name": "Ammo Runt",
+                "id": "86d7-f2c4-f300-5e43",
+                "hidden": false,
+                "import": true,
+                "targetId": "c437-77ff-a12f-c051",
+                "type": "selectionEntry",
+                "constraints": [{"id": "0bbf-982b-53a9-b5ac", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {"name": "Grot Orderly", "id": "f21b-1cfe-e1bf-0aa4", "hidden": false, "import": true, "targetId": "90f5-b4fa-dba0-75c1", "type": "selectionEntry"},
+              {"name": "Attack Squig", "id": "a5c9-91a1-3b11-b066", "hidden": false, "import": true, "targetId": "6feb-5c3e-161c-ce50", "type": "selectionEntry"},
+              {"name": "Stikk bombs", "id": "f9a3-3fd5-7b65-25ce", "hidden": false, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
+              {
+                "name": "Squig-hide Tires",
+                "id": "87b0-7c2d-ddf5-d496",
+                "hidden": false,
+                "import": true,
+                "targetId": "4682-7e4d-0cb3-6428",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "6cd4-af18-73b2-cd4a",
+                            "childName": "Wartrike",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "81ee-228d-3c3d-cbb6",
+                            "childName": "War Bike",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Dirty Gubbinz",
+                "id": "e9e5-0754-8deb-4acb",
+                "hidden": false,
+                "import": true,
+                "targetId": "9687-970e-c85a-57fd",
+                "type": "selectionEntry",
+                "constraints": [{"id": "655c-dc9f-7713-6b1f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "6cd4-af18-73b2-cd4a",
+                            "childName": "Wartrike",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "81ee-228d-3c3d-cbb6",
+                            "childName": "War Bike",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Warboss",
+                "id": "37c6-9cf8-3bb5-0a8f",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "2", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "He’avy Armour",
+                "id": "d96b-0867-2a9b-4319",
+                "defaultSelectionEntryId": "94f2-c9e6-02ec-bdc2",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "814d-b781-1170-8a90-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "814d-b781-1170-8a90-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "War Bike",
+                    "id": "3301-acca-3b6d-e81d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "81ee-228d-3c3d-cbb6",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "modifiers": [{"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "on War Bike"}]
+                  },
+                  {"name": "He’avy Armour", "id": "94f2-c9e6-02ec-bdc2", "hidden": false, "import": true, "targetId": "388b-2df1-6738-66ff", "type": "selectionEntry"},
+                  {
+                    "name": "Mega Armour",
+                    "id": "340d-30eb-6aeb-40d0",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b945-2cdf-fd04-6401",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [{"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "in Mega Armour"}]
+                  },
+                  {
+                    "name": "Wartrike",
+                    "id": "f4f7-0c49-ee50-e6d4",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6cd4-af18-73b2-cd4a",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "modifiers": [{"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "Wartrike"}]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -1992,12 +2226,171 @@
         "id": "a51d-a29a-55e6-0fbf",
         "hidden": false,
         "import": true,
+        "page": "38",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "f3fd-194e-319c-9227", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "1fdb-7100-39d9-6937", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "7cfb-e83b-18f8-68bb", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "[Klan]", "id": "7cfb-e83b-18f8-68bb", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"},
+          {"name": "Beast Boss", "id": "4c23-0bb9-fc76-f5f4", "hidden": false, "primary": false, "targetId": "db17-8cd5-045f-4eba"},
+          {"name": "Big Boss", "id": "e7f7-84fe-e082-963d", "hidden": false, "primary": false, "targetId": "b9d1-d6cd-c9ef-c3b6"},
+          {"name": "M31", "id": "0d53-cc6a-8a81-6279", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Infantry", "id": "7a0d-c29a-26da-5a91", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}],
+        "entryLinks": [
+          {"name": "Warlord Trait", "id": "bf3d-c1bf-360e-049f", "hidden": false, "import": true, "targetId": "6811-13b0-b926-6e59", "type": "selectionEntryGroup"},
+          {"name": "Warlord", "id": "3e68-6097-58d8-a898", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {"name": "Relic", "id": "027c-a325-9990-73ad", "hidden": false, "import": true, "targetId": "e114-12e7-f9a2-009c", "type": "selectionEntry"}
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "b196-a1af-ae98-0414", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "WAAAGH!", "id": "d8a3-ece9-8f08-7387", "hidden": false, "targetId": "0e8a-6f5d-0dfe-df0f", "type": "rule"},
+          {"name": "Breaking Heads", "id": "7cff-0592-d7cd-fe1b", "hidden": false, "targetId": "0651-85a8-7aca-37aa", "type": "rule"},
+          {"name": "Da Biggest and Da Strongest", "id": "cb94-2a44-815e-bab6", "hidden": false, "targetId": "33c2-804c-3282-a9b4", "type": "rule"},
+          {"name": "Beast Snagga", "id": "ca4d-f3cb-af69-5616", "hidden": false, "targetId": "b3e9-357b-ba17-50cb", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Beast Boss",
+            "id": "74ff-548b-4942-46d8",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "e6ee-c417-6162-059d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "e6ee-c417-6162-059d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "He’avy Armour",
+                "id": "3b88-c313-5fd3-d527",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "388b-2df1-6738-66ff",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3f9f-b22f-5548-d059-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3f9f-b22f-5548-d059-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Cybork Body", "id": "aa52-e9ee-0b7e-a8ca", "hidden": false, "import": true, "targetId": "d52f-e183-6740-9fe6", "type": "selectionEntry"},
+              {
+                "name": "Big Choppa",
+                "id": "c4a5-e7bc-0573-ca2f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "e31a-0240-6bc0-0d29",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "ed86-7122-f10f-208e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ed86-7122-f10f-208e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Close Combat Weapon",
+                "id": "5b44-7dbe-ec14-058f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "777e-a4fd-c9a5-ebea",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "4bff-31ea-4a7e-12f2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "4bff-31ea-4a7e-12f2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Stikk bombs", "id": "cc42-5be1-7b4b-3e9d", "hidden": false, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Beast Boss",
+                "id": "ba77-dfb1-8e51-03ac",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "2", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Power Klaw and Kustom Shoota",
+                "id": "747d-35f2-15e2-dd8e",
+                "defaultSelectionEntryId": "c871-832b-6574-8e04",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "68c5-257e-2b7f-750a-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "68c5-257e-2b7f-750a-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Squigasaur",
+                    "id": "8b5e-ee42-075c-cb0f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "5f55-67c4-fc5d-d853",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"},
+                          {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "on Squigasaur"}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Power Klaw and Kustom Shoota",
+                    "id": "c871-832b-6574-8e04",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "infoLinks": [
+                      {"name": "Power klaw", "id": "9a8f-aef4-6eef-f736", "hidden": false, "targetId": "3144-a6f5-0664-d1b6", "type": "profile"},
+                      {"name": "Kustom Shoota", "id": "18c3-be06-a633-8ead", "hidden": false, "targetId": "dbbe-7ffb-1240-3b5e", "type": "profile"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2005,12 +2398,557 @@
         "id": "0450-0b72-eb88-5ee4",
         "hidden": false,
         "import": true,
+        "page": "39",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Orks", "id": "8217-7df5-7a14-fa6e", "hidden": false, "primary": false, "targetId": "4074-bcd8-3c9f-236e"},
           {"name": "HQ", "id": "a9e6-7523-8f05-844c", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "[Klan]", "id": "99f7-a1e3-1189-d255", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"}
+          {"name": "[Klan]", "id": "99f7-a1e3-1189-d255", "hidden": false, "primary": false, "targetId": "5ee1-b487-b991-0e62"},
+          {"name": "Nob War Leader", "id": "570f-2c1f-7f46-3dc5", "hidden": false, "primary": false, "targetId": "8159-62f1-d8c4-bf12"},
+          {"name": "M31", "id": "cc56-51a3-7987-dcec", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Infantry", "id": "4148-4302-653e-fda7", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
+        "entryLinks": [
+          {"name": "Relic", "id": "7eac-a372-6ebe-202d", "hidden": false, "import": true, "targetId": "e114-12e7-f9a2-009c", "type": "selectionEntry"},
+          {"name": "Warlord", "id": "806b-94e1-de71-266c", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {"name": "Warlord Trait", "id": "ce63-009a-dc50-f66c", "hidden": false, "import": true, "targetId": "6811-13b0-b926-6e59", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "196f-f00a-b0e9-a72f", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Support Squad", "id": "3872-672b-9c0b-2984", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Nob War Leader",
+            "id": "13be-9c05-35da-55f1",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "3326-7c11-b410-61bf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "3326-7c11-b410-61bf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Stikk bombs",
+                "id": "d177-d64c-c178-e43e",
+                "hidden": false,
+                "import": true,
+                "targetId": "cfe1-6df3-b93b-2693",
+                "type": "selectionEntry",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "4cde-2ab8-b2c6-2b47",
+                        "childName": "Weird Boy",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "c68c-2687-ee8c-4f88-min", "type": "set", "value": 0},
+                      {"field": "c68c-2687-ee8c-4f88-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Big Choppa",
+                "id": "e93a-3c62-1301-5827",
+                "hidden": false,
+                "import": true,
+                "targetId": "38f7-3e59-5704-2b1a",
+                "type": "selectionEntryGroup",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "8df3-09f2-290a-8cb2",
+                            "childName": "Pain Boss",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "4cde-2ab8-b2c6-2b47",
+                            "childName": "Weird Boy",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "34ea-1e53-125c-08cd-min", "type": "set", "value": 0},
+                      {"field": "34ea-1e53-125c-08cd-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Kustom Shoota",
+                "id": "feaf-064f-f64a-20f4",
+                "hidden": false,
+                "import": true,
+                "targetId": "650f-5b41-297f-06d8",
+                "type": "selectionEntryGroup",
+                "modifierGroups": [
+                  {
+                    "comment": "todo: Slugga, No instance of this wargear in reference",
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "8df3-09f2-290a-8cb2",
+                            "childName": "Pain Boss",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "4cde-2ab8-b2c6-2b47",
+                            "childName": "Weird Boy",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "6cc3-02b5-f283-43b9-min", "type": "set", "value": 0},
+                      {"field": "6cc3-02b5-f283-43b9-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ],
+                "modifiers": [{"affects": "8124-4c7f-c572-9dc0", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 1}]
+              },
+              {
+                "name": "Ammo Runt",
+                "id": "3c7e-c164-f79d-274c",
+                "hidden": false,
+                "import": true,
+                "targetId": "c437-77ff-a12f-c051",
+                "type": "selectionEntry",
+                "constraints": [{"id": "651c-8c25-1e9f-2b16", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {"name": "Attack Squig", "id": "bc96-1943-9151-e884", "hidden": false, "import": true, "targetId": "6feb-5c3e-161c-ce50", "type": "selectionEntry"},
+              {"name": "Cybork Body", "id": "bf76-54fa-8e5c-b54d", "hidden": false, "import": true, "targetId": "d52f-e183-6740-9fe6", "type": "selectionEntry"},
+              {
+                "name": "Dirty Gubbinz",
+                "id": "40c8-33db-2da3-f532",
+                "hidden": false,
+                "import": true,
+                "targetId": "9687-970e-c85a-57fd",
+                "type": "selectionEntry",
+                "constraints": [{"id": "12ca-2ccc-3827-d19a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "6cd4-af18-73b2-cd4a",
+                            "childName": "Wartrike",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "81ee-228d-3c3d-cbb6",
+                            "childName": "War Bike",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Grot Orderly", "id": "7f1f-0459-b5b2-c2be", "hidden": false, "import": true, "targetId": "90f5-b4fa-dba0-75c1", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Nob War Leader",
+                "id": "1d39-a6ee-c727-c53f",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "2", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "5", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Specialization",
+                "id": "6815-356a-567d-efe1",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "de09-c698-0b87-1888",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Big Mek",
+                    "id": "1b95-c725-e3c2-4f13",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                    "entryLinks": [
+                      {"name": "Shokk-Boosta", "id": "e9e6-aed7-bcde-a3c0", "hidden": false, "import": true, "targetId": "abfc-ff39-ccaa-f082", "type": "selectionEntry"},
+                      {"name": "Machine Rites", "id": "dcb3-714a-b223-f4bd", "hidden": false, "import": true, "targetId": "725e-13ad-f24f-fd74", "type": "selectionEntryGroup"}
+                    ],
+                    "infoLinks": [
+                      {"name": "Relentless", "id": "6003-8a80-2786-f4bc", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+                      {"name": "Battle Smith (x)", "id": "27d2-a1e8-8955-fb00", "hidden": false, "targetId": "1bae-372c-fb85-7975", "type": "rule"}
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Upgrade",
+                        "id": "16cd-f59a-75ca-ccf1",
+                        "defaultSelectionEntryId": "none",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "edbe-b77b-423a-1a79",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Tracktor Kannon",
+                            "id": "024c-49f9-01a1-c0ca",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "1d47-93d5-af4a-c642",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Kustom Force Field",
+                            "id": "0198-a0a8-3e54-ec73",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "01cb-b40f-54c3-f2ca",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Tellyporta Blasta",
+                            "id": "7e48-4b4b-ecf0-efc6",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "c8fd-0e8d-d0b3-fa60",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Shokk Attack Gun",
+                            "id": "ad36-dd3d-1acb-4cd1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "51de-a5b8-335b-2d53",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                            "modifiers": [
+                              {
+                                "field": "hidden",
+                                "type": "set",
+                                "value": true,
+                                "conditions": [
+                                  {
+                                    "childId": "b945-2cdf-fd04-6401",
+                                    "childName": "Mega Armour",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "model",
+                                    "shared": true,
+                                    "type": "atLeast",
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Kustom Mega Kannon",
+                            "id": "6f3a-05b8-38ad-3643",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "bd26-8b29-c039-b859",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Weird Boy",
+                    "id": "4cde-2ab8-b2c6-2b47",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+                    "entryLinks": [
+                      {"name": "Weird Boy Stick", "id": "709b-0bb1-cb80-bf52", "hidden": false, "import": true, "targetId": "d705-4228-1507-5fda", "type": "selectionEntry"},
+                      {
+                        "name": "WAAAGH Psychic Powers",
+                        "id": "8e1f-6480-4b9b-e204",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "6d07-9aa8-cfac-4625",
+                        "type": "selectionEntryGroup"
+                      }
+                    ],
+                    "infoLinks": [
+                      {"name": "Deny the Witch", "id": "6df9-36eb-bd69-bd86", "hidden": false, "targetId": "8c5a-f37c-9230-be38", "type": "rule"},
+                      {"name": "Psyker (x)", "id": "fe25-15b1-3214-ddaf", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+                    ],
+                    "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": ""}],
+                    "selectionEntries": [
+                      {
+                        "name": "Wurr Boy",
+                        "id": "3da0-83c2-0853-bc61",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [{"id": "4ffb-f0f5-aba3-4af5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                        "infoLinks": [{"name": "Beast Snagga", "id": "60dd-23e3-e496-e681", "hidden": false, "targetId": "b3e9-357b-ba17-50cb", "type": "rule"}]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Waaagh! Banner Nob",
+                    "id": "b668-d2b4-6b4b-3f7a",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "entryLinks": [
+                      {
+                        "name": "Powa Stabba",
+                        "id": "c028-d340-2199-cd3f",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "9304-941e-aaf1-b665",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "c034-e509-1a02-a25e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "c034-e509-1a02-a25e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Waaagh! Banner Nob",
+                        "id": "1d9b-499b-0508-e849",
+                        "description": "All friendly Ork units within 12” count as inflicting 1 additional Wound for the purposes of determining who won Combat.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pain Boss",
+                    "id": "8df3-09f2-290a-8cb2",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+                    "entryLinks": [
+                      {
+                        "name": "Fightin Juice",
+                        "id": "f0d9-86d3-1adb-617b",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "c731-12f2-593b-f307",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4512-4f6f-1ef5-8eb6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "4512-4f6f-1ef5-8eb6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Power klaw",
+                        "id": "40b8-8efa-f1ae-fe09",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "e37a-eb02-f98b-a3a6",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "6716-4e62-fa02-0d6f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "6716-4e62-fa02-0d6f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Scrap Armour",
+                        "id": "e368-ace9-0e08-64d5",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "8626-5e63-0597-5402",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "f5c2-7872-c9ad-dd42-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "f5c2-7872-c9ad-dd42-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "He’avy Armour",
+                "id": "7b66-6c66-0226-8d82",
+                "defaultSelectionEntryId": "60f6-2cff-84b9-62bb",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "9977-2699-9e24-6a73-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "9977-2699-9e24-6a73-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Mega Armour",
+                    "id": "fb97-5c21-12b2-3391",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b945-2cdf-fd04-6401",
+                    "type": "selectionEntry",
+                    "modifiers": [{"field": "name", "type": "append", "value": "in Mega Armour"}]
+                  },
+                  {"name": "He’avy Armour", "id": "60f6-2cff-84b9-62bb", "hidden": false, "import": true, "targetId": "388b-2df1-6738-66ff", "type": "selectionEntry"}
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "8df3-09f2-290a-8cb2",
+                            "childName": "Pain Boss",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "4cde-2ab8-b2c6-2b47",
+                            "childName": "Weird Boy",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "9977-2699-9e24-6a73-min", "type": "set", "value": 0},
+                      {"field": "9977-2699-9e24-6a73-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2821,6 +3759,35 @@
           {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
           {"name": "Rules", "$text": "Blast (Large), Ammo (1), Macro", "typeId": "ba87-19e9-d692-6e30"}
         ]
+      },
+      {
+        "name": "Power klaw",
+        "id": "3144-a6f5-0664-d1b6",
+        "hidden": false,
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Unwieldy, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Kustom Shoota",
+        "id": "dbbe-7ffb-1240-3b5e",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+        ]
       }
     ],
     "sharedRules": [
@@ -2956,6 +3923,7 @@
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
         "constraints": [{"id": "376f-13c1-48bc-cde4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
         "modifiers": [{"affects": "profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "model", "type": "increment", "value": 1}],
         "rules": [
           {
@@ -3184,6 +4152,7 @@
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
         "constraints": [{"id": "b36d-fb77-b8f0-aac8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
         "rules": [
           {
             "name": "Shokk-Boosta",
@@ -3203,6 +4172,7 @@
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
         "constraints": [{"id": "162f-4599-5f76-101b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
         "rules": [
           {
             "name": "Cybork Body",
@@ -3221,6 +4191,7 @@
         "page": "7",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
         "rules": [
           {
             "name": "Ammo Runt",
@@ -3260,6 +4231,7 @@
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
         "constraints": [{"id": "eb92-b994-51ae-1200", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
         "rules": [
           {
             "name": "Grot Orderly",
@@ -3908,6 +4880,7 @@
         "name": "Speshul Ammo Shoota",
         "id": "8124-4c7f-c572-9dc0",
         "collective": true,
+        "comment": "todo: Speshul Shoota, No profile provided in reference",
         "hidden": false,
         "import": true,
         "page": "11",
@@ -4021,23 +4994,7 @@
         "page": "11",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Kustom Shoota",
-            "id": "dbbe-7ffb-1240-3b5e",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Kustom Shoota", "id": "d3a7-0a7e-1a90-8b09", "hidden": false, "targetId": "dbbe-7ffb-1240-3b5e", "type": "profile"}]
       },
       {
         "name": "Shoota",
@@ -4313,14 +5270,33 @@
         "name": "Stikk bombs",
         "id": "cfe1-6df3-b93b-2693",
         "collective": true,
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "page": "12",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
         "constraints": [
-          {"id": "cfe5-c8ed-45c1-2f7b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "cfe5-c8ed-45c1-2f7b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {
+            "id": "c68c-2687-ee8c-4f88-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "c68c-2687-ee8c-4f88-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
         ],
         "profiles": [
           {
@@ -4941,22 +5917,7 @@
         "page": "13",
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Power klaw",
-            "id": "3144-a6f5-0664-d1b6",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Power klaw", "id": "447f-9e9a-fbb8-f233", "hidden": false, "targetId": "3144-a6f5-0664-d1b6", "type": "profile"}]
       },
       {
         "name": "Grabba Stikk",
@@ -5274,6 +6235,7 @@
         "name": "Kombi Skorcha",
         "id": "bd01-40cd-13ff-d641",
         "collective": true,
+        "comment": "todo: Kombi-Burna, no profile provided in reference",
         "hidden": false,
         "import": true,
         "page": "15",
@@ -6031,6 +6993,122 @@
                 "hidden": false
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Big Choppa",
+        "id": "38f7-3e59-5704-2b1a",
+        "defaultSelectionEntryId": "951c-1bc7-9611-2141",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "34ea-1e53-125c-08cd-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "34ea-1e53-125c-08cd-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Power klaw",
+            "id": "276e-99f4-25d8-5246",
+            "hidden": false,
+            "import": true,
+            "targetId": "e37a-eb02-f98b-a3a6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+          },
+          {"name": "Big Choppa", "id": "951c-1bc7-9611-2141", "hidden": false, "import": true, "targetId": "e31a-0240-6bc0-0d29", "type": "selectionEntry"},
+          {
+            "name": "Uge Choppa",
+            "id": "85a9-83bf-bdb4-b4a0",
+            "hidden": false,
+            "import": true,
+            "targetId": "3398-7e82-d819-5d99",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          }
+        ]
+      },
+      {
+        "name": "Kustom Shoota",
+        "id": "650f-5b41-297f-06d8",
+        "defaultSelectionEntryId": "7a06-3d14-5dd7-2892",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "6cc3-02b5-f283-43b9-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "6cc3-02b5-f283-43b9-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Kombi Skorcha",
+            "id": "6276-a554-a0a4-6cb4",
+            "hidden": false,
+            "import": true,
+            "targetId": "bd01-40cd-13ff-d641",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {"name": "Kustom Shoota", "id": "7a06-3d14-5dd7-2892", "hidden": false, "import": true, "targetId": "8a6f-0a27-f339-2c89", "type": "selectionEntry"},
+          {
+            "name": "Speshul Ammo Shoota",
+            "id": "ddb3-1820-11ec-077c",
+            "hidden": false,
+            "import": true,
+            "targetId": "8124-4c7f-c572-9dc0",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+          },
+          {
+            "name": "Big Shoota",
+            "id": "d7df-efeb-521c-478d",
+            "hidden": false,
+            "import": true,
+            "targetId": "d179-2116-cdfe-b2a8",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Kombi Rokkit",
+            "id": "baa3-b62f-fb10-e520",
+            "hidden": false,
+            "import": true,
+            "targetId": "8d40-4f94-c022-d584",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
           }
         ]
       }
