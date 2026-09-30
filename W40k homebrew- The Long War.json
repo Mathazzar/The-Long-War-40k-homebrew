@@ -712,14 +712,14 @@
               }
             ]
           },
-          {"name": "WS", "id": "b91a-6b4e-68f6-5398", "defaultValue": "4"},
-          {"name": "BS", "id": "ce2d-33a1-3626-3105", "defaultValue": "4"},
+          {"name": "WS", "id": "b91a-6b4e-68f6-5398", "defaultValue": "3"},
+          {"name": "BS", "id": "ce2d-33a1-3626-3105", "defaultValue": "2"},
           {"name": "S", "id": "605e-2df1-55c7-3d9d"},
           {"name": "Front", "id": "65d6-7651-a40f-fcd5"},
           {"name": "Side", "id": "570a-ef9c-8153-2bb7"},
           {"name": "Rear", "id": "e3d1-4d87-d5c4-921c"},
           {"name": "A", "id": "1a60-9cb9-3892-ac5a"},
-          {"name": "I", "id": "7f1b-fabe-598c-f8de", "defaultValue": "4"},
+          {"name": "I", "id": "7f1b-fabe-598c-f8de", "defaultValue": "3"},
           {"name": "LD", "id": "7b21-f3da-4802-3e38", "defaultValue": "7"},
           {"name": "Transport Capacity", "id": "8058-3a16-8bc0-ad4b", "defaultValue": "0"}
         ]
