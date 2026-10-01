@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "[Klan]", "id": "5ee1-b487-b991-0e62", "hidden": false},
@@ -22,6 +22,7 @@
             "field": "selections",
             "includeChildForces": true,
             "includeChildSelections": true,
+            "message": "{force} requires {difference} more Fast Attack choices",
             "scope": "force",
             "shared": true,
             "type": "min",
@@ -36,7 +37,7 @@
             "scope": "force",
             "shared": true,
             "type": "max",
-            "value": 0
+            "value": -1
           }
         ],
         "modifiers": [
@@ -61,6 +62,19 @@
             "field": "50ed-7a7f-4b05-1027",
             "type": "increment",
             "value": 1,
+            "conditions": [
+              {
+                "childId": "f439-fa59-3a2c-bf5e",
+                "childName": "Kult of Speed",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
             "repeats": [
               {
                 "childId": "c831-e8d6-bb33-52b3",
@@ -72,6 +86,24 @@
                 "roundUp": false,
                 "scope": "roster",
                 "shared": true,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "50ed-7a7f-4b05-1027",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "f439-fa59-3a2c-bf5e",
+                "childName": "Kult of Speed",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
@@ -773,7 +805,7 @@
                 "page": "21",
                 "publicationId": "3cdc-bfbe-759f-8d6b",
                 "type": "upgrade",
-                "modifiers": [{"affects": "d22f-83a4-1032-2783", "field": "category", "scope": "roster", "type": "add", "value": "5f4d-de3c-7e3f-bd20"}]
+                "modifiers": [{"affects": "self.entries.forces.recursive.d22f-83a4-1032-2783", "field": "category", "scope": "roster", "type": "add", "value": "5f4d-de3c-7e3f-bd20"}]
               },
               {
                 "name": "Squigpede",
@@ -4051,27 +4083,27 @@
             "import": true,
             "type": "model",
             "constraints": [
-              {"id": "c7df-73c0-5541-d7ed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "c7df-73c0-5541-d7ed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "0a7f-4ea7-48ec-0ef4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0a7f-4ea7-48ec-0ef4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
               {
                 "name": "He’avy Armour",
                 "id": "bd16-12d1-b12e-d91b",
                 "defaultAmount": "1",
-                "hidden": true,
+                "hidden": false,
                 "import": true,
                 "targetId": "388b-2df1-6738-66ff",
                 "type": "selectionEntry",
                 "constraints": [{"id": "874c-89fd-9972-df6f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
               },
-              {"name": "Stikk bombs", "id": "15ce-2032-ea4e-fc63", "hidden": true, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
+              {"name": "Stikk bombs", "id": "15ce-2032-ea4e-fc63", "hidden": false, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
               {
                 "name": "Force Field",
                 "id": "1034-2e9e-923c-77fa",
                 "defaultAmount": "1",
-                "hidden": true,
+                "hidden": false,
                 "import": true,
                 "targetId": "690e-2db0-52e2-0aba",
                 "type": "selectionEntry",
@@ -4082,7 +4114,7 @@
                 "name": "Grot Oiler",
                 "id": "86ec-7666-216e-585e",
                 "defaultAmount": "1",
-                "hidden": true,
+                "hidden": false,
                 "import": true,
                 "targetId": "9b3d-322b-85b9-4b4f",
                 "type": "selectionEntry",
