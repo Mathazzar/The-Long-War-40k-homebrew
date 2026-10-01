@@ -1,0 +1,846 @@
+{
+  "catalogue": {
+    "name": "Chaos - Chaos Daemons",
+    "id": "d9aa-9c91-9dd0-6ef3",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 9,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "publications": [{"name": "The Long War - Codex Chaos Daemons", "id": "b30d-99de-ef25-ed03", "hidden": false, "publisher": "5.0"}],
+    "sharedRules": [
+      {
+        "name": "Warp Surge",
+        "id": "e1d7-28f8-a7ae-82ad",
+        "description": "At the start of each Battle round, roll 2D6 and consult the chart below. If your Army includes at least 1 unit with the Greater Daemon keyword. After rolling on the Warp Surge table, you may modify the result by 1. Apply any benefits listed as affecting friendly units with this special rule.\n2. Flickering tides: All Daemon units in your army worsen their Invulnerable Saves by 1 until the end of the battle round.\n3. Unexpected tide: immediately summon 1 Flesh Hounds, Fiends of Slaanesh, Beast of Nurgle or Screamers of Tzeentch unit anywhere on the battlefield wholly within 9\" of a friendly Daemon character. The summoned unit arrives Deep Strike and arrives automatically. This result has no effect if you have no units with the Character special rule alive and on the Battlefield.\n4. Anchoring Tide: All Daemon units improve their Invulnerable saves by 1 until the end of the battle round (to a max of 3+).\n5. Strengthening Tide: All Daemon units gain +1 to their Strength (S) characteristic until the end of the battle round.\n6. Dark Prince Ascendant: All Daemon units gain +1 to their Movement (M) characteristic in addition until the end of the round. In addition, all Slaanesh Daemon units gain the Fleet special rule until the end of the Battle Round.\n7. Plague Father Ascendant: All Daemon units gain +1 to their Toughness (T) characteristic until the end of the battle round. All Nurgle Daemon units immediately Heal 1 lost wound when this result is rolled.\n8. Blood God Ascendant: All Daemon units gain +1 to their Attacks (A) characteristic until the end of the battle round. All Khorne Daemon units gain +1 to their Weapon Skill (WS) characteristic until the end of the battle round.\n9. Changer of Fate Ascendant: All Daemon gain +1 to their Ballistic Skill (BS) characteristic until the end of the phase. All Tzeentch Daemon units gain the Linked special rule on each Ranged & Psychic weapons they are equipped with until the end of the phase.\n10. Hellfire Rain: Immediately make D3 attacks anywhere on the board with a strength 6, AP4, Blast (Large) weapon that hits on a 4+.\n11. Warp Rift: Immediately select 1 Daemon unit on the battlefield. Remove it from play and place it back on the board anywhere on the battlefield more than 9\" away from any enemy models.\n12. Great Incursion: Immediately summon 1 Bloodletter, Daemonettes, Plague Bearer or Pink Horror unit anywhere on the battlefield wholly within 9\" of a friendly Daemon character. The summoned unit arrives via Deep Strike and arrives automatically. This result has no effect if you have no units with the Character special rule alive and on the Battlefield.",
+        "hidden": false,
+        "page": "5",
+        "publicationId": "b30d-99de-ef25-ed03"
+      },
+      {
+        "name": "Daemonic Instability",
+        "id": "93c5-6fd7-fc6c-82ce",
+        "description": "A unit with this rule gains the Daemon Keyword. The Daemon unit has a 5+ Invulnerable save and the Fear (1) special rule. Daemon units have +1” to their Movement (M) characteristic. (This is included in unit data sheets that have the Daemon special rule by default)",
+        "hidden": false,
+        "page": "5",
+        "publicationId": "b30d-99de-ef25-ed03"
+      },
+      {
+        "name": "Daemon",
+        "id": "be8b-3155-d9be-22da",
+        "description": "A unit with this rule gains the Daemon Keyword. The Daemon unit has a 5+ Invulnerable save and the Fear (1) special rule. Daemon units have +1” to their Movement (M) characteristic. (This is included in unit data sheets that have the Daemon special rule by default)",
+        "hidden": false,
+        "page": "5",
+        "publicationId": "b30d-99de-ef25-ed03"
+      },
+      {
+        "name": "Greater Daemon",
+        "id": "171f-7464-2302-9d9a",
+        "description": "A unit with this special rule gains the Greater Daemon Keyword. A unit with this special rule has a 4+ Invulnerable save and gains the Battle-Hardened special rule.",
+        "hidden": false,
+        "page": "5",
+        "publicationId": "b30d-99de-ef25-ed03"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Warp Armour",
+        "id": "6141-c0a9-b20e-b536",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "7e72-c115-4587-5ecc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model-self", "type": "set", "value": "3"}],
+        "rules": [
+          {"name": "Warp Armour", "id": "7589-b78f-19a9-f181", "description": "Armour forged within the immaterial realm. It confers a 3+ Armour save.", "hidden": false}
+        ]
+      },
+      {
+        "name": "Instruments of Chaos",
+        "id": "33dd-7cef-b4c7-4c25",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "00e2-9e8f-eb9b-588f", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+        "rules": [
+          {
+            "name": "Instruments of Chaos",
+            "id": "6b26-0a7f-5ca9-e9ab",
+            "description": "A unit that includes a model equipped with this wargear gains the Sprint (1) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Daemonic Banner",
+        "id": "8026-5b2a-1d04-6cb5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "9ede-7a8a-147d-f0e2", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+        "rules": [
+          {
+            "name": "Daemonic Banner",
+            "id": "5447-119c-126d-ec95",
+            "description": "A unit which includes a model equipped with this wargear counts as scoring 1 additional wound for the purposes of combat resolution. In addition, once per game, a unit that includes a model with this wargear may invoke it to return D3 slain models back to the unit in coherency. Further, friendly units which arrive from Deep Strike within 12” of a model equipped with this wargear do not scatter.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Daemonic Chariot",
+        "id": "58ef-295e-b423-9b64",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "profiles.Unit", "field": "name", "scope": "model-self", "type": "append", "value": "on Daemonic Chariot"},
+              {"affects": "profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "model-self", "type": "increment", "value": 2},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model-self", "type": "increment", "value": 2},
+              {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model-self", "type": "increment", "value": 2},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model-self", "type": "set", "value": "13"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Daemonic Chariot",
+            "id": "c825-ceb7-7cbf-4223",
+            "description": "A unit with the Daemonic Chariot becomes a Cavalry type unit. In addition, it gains +2 to its Toughness (T), Attacks (A) and Wounds (W) characteristics.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Warp Scaled Hide",
+        "id": "bd4f-bf8b-f678-5219",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8a88-36cd-fe9c-1d40-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "8a88-36cd-fe9c-1d40-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [{"name": "Warp Scaled Hide", "id": "c6c0-4871-ee5d-72a0", "description": "Shifting warp powered scales. It a 4+ Armour save.", "hidden": false}]
+      },
+      {
+        "name": "Brass Armour",
+        "id": "f9bd-6a61-dcb0-1e12",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e59d-cab4-b1ef-d960", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "5728-0305-319a-57ba", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [{"affects": "self.entries.profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "4"}],
+        "rules": [
+          {
+            "name": "Brass Armour",
+            "id": "8081-b990-ff17-6449",
+            "description": "Sturdy Brass Armour which comes in many forms. It confers a 4+ Armour Save and the Adamantium Will special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Wings",
+        "id": "32f6-d80e-0d93-0348",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b0aa-dd58-2b64-a2ca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "79e2-8d35-ce39-764b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [{"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model-self", "type": "floor", "value": "13"}],
+        "rules": [
+          {
+            "name": "Wings",
+            "id": "7310-9beb-d806-ba49",
+            "description": "A model with this wargear increases their Movement (M) characteristic to 12”. It gains the Hammer of Wrath (1), Fly and Deep strike special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Daemonic Steed",
+        "id": "8d5c-b442-42df-c25b",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model-self", "type": "set", "value": "13"},
+              {"affects": "profiles.Unit", "field": "0ad1-8e51-6f8f-ec14", "scope": "model-self", "type": "increment", "value": 1},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model-self", "type": "increment", "value": 1},
+              {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model-self", "type": "increment", "value": 1}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Daemonic Steed",
+            "id": "cdce-6a95-349e-d790",
+            "description": "A model with this wargear increases their Movement (M) characteristic to 12”. It gains the Hammer of Wrath (1), Fly and Deep strike special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Chaos Undivided",
+        "id": "0b52-6f97-ed7d-d8a6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "The Mark of Chaos Undivided",
+            "id": "d2f0-26cb-212c-2e62",
+            "description": "• A unit with this Mark gains the Undivided Keyword and may only be joined by units with the Undivided, Khorne, Tzeentch, Nurgle or Slaanesh keywords.\n• A unit with this Mark gains the Fear (1) special rule. If the unit already has the Fear (x) special rule, increase the value of X by 1.\n• In addition, if the unit would fail a Panic test, instead of Falling Back, the unit takes D3 wounds with no saves or mitigation rolls allowed.\n• A unit with this wargear gains access to the Lore of Slaanesh, Nurgle and Tzeentch Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Khorne",
+        "id": "d7c9-bd72-2650-52d3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "The Mark of Khorne",
+            "id": "c49c-5204-67c0-9521",
+            "description": "• A unit with this Mark gains the Khorne Keyword and may only join or be joined by units with the Khorne or Undivided Keywords.\n• A unit with this mark gains the Furious Charge special rule. If the unit already has the Furious Charge special rule it gains +1 to its Attack (A) characteristic.\n• A unit with the Psyker (x) special rule may not purchase this wargear.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Nurgle",
+        "id": "a70f-07f4-5c21-cc20",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "The Mark of Nurgle",
+            "id": "d707-b941-3716-44dc",
+            "description": "• A unit with this Mark gains the Nurgle Keyword and may only join or be joined by units with the Nurgle or Undivided Keywords.\n• A unit with this mark gains the Feel no Pain (5+) special rule. If the unit does not have a Wounds (W) characteristic, it instead always gains the Benefits of Heavy Cover.\n• A unit with this wargear gains access to the Lore of Nurgle Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Slaanesh",
+        "id": "7e6c-73ce-f18e-2f52",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "The Mark of Slaanesh",
+            "id": "df64-7d6f-f4db-4e18",
+            "description": "• A unit with this Mark gains the Slaanesh Keyword and may only join or be joined by units with the Slaanesh or Undivided Keywords.\n• A unit with this mark gains +1 to their Initiative (I) characteristic.\n• A unit with this Mark gains the Sudden Strike special rule.\n• A unit with this wargear gains access to the Lore of Slaanesh Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Tzeentch",
+        "id": "8cbd-930e-704b-b337",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "The Mark of Tzeentch",
+            "id": "d7f6-724a-40ba-fae1",
+            "description": "• A unit with this Mark gains the Tzeentch Keyword and may only join or be joined by units with the Tzeentch or Undivided Keywords.\n• A unit with this mark gains +1 to their Invulnerable saves (to a max of 3+). If they do not have an Invulnerable save, they gain a 6+ Invulnerable save.\n• In addition, A unit with this wargear and the Psyker (x) special rule may re-roll 1 dice when making a Psychic Test.\n• A unit with this wargear gains access to the Tzeentch Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Relic",
+        "id": "1719-44d6-6ec9-b171",
+        "collapsible": true,
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "85f8-e4f7-4d82-4ad3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "85f8-e4f7-4d82-4ad3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "entryLinks": [
+          {
+            "name": "Relics",
+            "id": "9112-5785-7f17-5ea0",
+            "hidden": false,
+            "import": true,
+            "targetId": "99d6-0f88-4709-a6b2",
+            "type": "selectionEntryGroup",
+            "selectionEntries": [
+              {
+                "name": "The Impossible Robe",
+                "id": "e13e-a601-1e1d-e77e",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "afae-4169-7003-e829",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "tzeentch",
+                        "childName": "tzeentch",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Impossible Robe",
+                    "id": "c77c-5f23-a873-a081",
+                    "description": "A model with this Relic can re-roll Invulnerable Save rolls of 1.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Rift Bringer",
+                "id": "7237-30e5-26fb-67ee",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "5f77-c647-d2e9-41b5",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "rules": [
+                  {
+                    "name": "Rift Bringer",
+                    "id": "f3e1-3924-d71b-f902",
+                    "description": "If your army includes a model with this wargear, during deployment, you may place down 1 Rift Marker (See Incursion Rite of War) anywhere on the battlefield.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Warp Reserve",
+                "id": "98e3-4989-b794-7707",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "ea9d-ea31-c705-4d01",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
+                "rules": [
+                  {
+                    "name": "Warp Reserve",
+                    "id": "a9e0-a3ea-e3df-4728",
+                    "description": "The first time a model with this wargear is slain and removed from play. Place it in reserves instead with D3 Wounds remaining. It may arrive at the start of your next turn via the Deep Strike special rule.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "The Armour of Scorn",
+                "id": "edbf-c17d-0686-1dec",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "a3ab-5416-1efb-1ce0",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "modifiers": [
+                  {"affects": "self.entries.recursive.profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "unit-self", "type": "set", "value": "3"},
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "khorne",
+                        "childName": "khorne",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Armour of Scorn",
+                    "id": "1a77-e9cf-27b3-dfb3",
+                    "description": "A model with this Relic gains a 3+ Armour Save. In addition, enemy units with a lower Leadership (LD) characteristic than the relic bearer suffer -1 to Wound Rolls against the Bearer.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "A’rgath, King of Blades",
+                "id": "a082-1256-cbdc-9059",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "183e-8b8b-76b4-b86f",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "modifiers": [
+                  {"affects": "self.entries.recursive.profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "unit-self", "type": "set", "value": "3"},
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "khorne",
+                        "childName": "khorne",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "A’rgath, King of Blades",
+                    "id": "d951-c459-5b1c-aff9",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Swift Strike, Murderous Strike (5+), Parry", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "A’rgath, King of Blades",
+                    "id": "fb30-c826-4912-6264",
+                    "description": "may exchange its Hellblade, Daemonic Great Weapon or Axe of Khorne for this relic",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Grotti the Nurgling",
+                "id": "0df4-2300-2660-a4ec",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "eccf-0ebb-0456-459c",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "nurgle",
+                        "childName": "nurgle",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Grotti the Nurgling",
+                    "id": "9b1c-9628-a734-6a11",
+                    "description": "Enemy units within 3” of a model with this relic suffer -1 to their Toughness (T) characteristic.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "The Doomsday Bell",
+                "id": "eae1-99e5-38e3-7553",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "90a6-bb30-f8a6-f7ad",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "nurgle",
+                        "childName": "nurgle",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Doomsday Bell",
+                    "id": "2f14-7392-67b4-287c",
+                    "description": "All enemy units on the battlefield suffer -1 to their Leadership (LD) characteristic so long as the bearer of this relic is alive and on the Battlefield.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Silvershard",
+                "id": "1799-c935-28d0-0761",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "48bc-bfb3-1a62-048b",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "slaanesh",
+                        "childName": "slaanesh",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Silvershard",
+                    "id": "0280-4de6-6e95-a977",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Swift Strike, Precision Hits, Parry", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Silvershard",
+                    "id": "4f65-7abe-cd4c-f891",
+                    "description": "may exchange its Daemonic Great Weapon or Witstealer Sword for this relic",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "The Slothful Claw",
+                "id": "fe9e-2e57-44c8-cda6",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "7441-5339-e5af-1fa3",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "slaanesh",
+                        "childName": "slaanesh",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "The Slothful Claw",
+                    "id": "10b0-4bfa-8e97-85d9",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Slothful Claw",
+                    "id": "5633-e168-cb2e-53af",
+                    "description": "may exchange its Malefic Talon, Piercing Claws or Snapping Claws for this relic",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "The Endless Grimoire",
+                "id": "5a43-24bc-d832-86eb",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "0557-9049-efd0-0b3e",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 50}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "tzeentch",
+                        "childName": "tzeentch",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Endless Grimoire",
+                    "id": "1051-c394-fef6-3580",
+                    "description": "Once per game, a model with this relic can attempt to cast 1 Psycic Power or Psychic Weapon from any codex.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Mark of Chaos",
+        "id": "08ca-2ebc-2187-5afc",
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "7966-23e7-330d-196e",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "The Mark of Tzeentch", "id": "f446-37e3-eaf1-65c7", "hidden": false, "targetId": "8cbd-930e-704b-b337", "type": "selectionEntry"},
+          {"name": "The Mark of Slaanesh", "id": "8a12-fec7-2b4b-1077", "hidden": false, "targetId": "7e6c-73ce-f18e-2f52", "type": "selectionEntry"},
+          {"name": "The Mark of Chaos Undivided", "id": "c28e-6d21-7946-9311", "hidden": false, "targetId": "0b52-6f97-ed7d-d8a6", "type": "selectionEntry"},
+          {
+            "name": "The Mark of Khorne",
+            "id": "2697-349b-99b9-4b1e",
+            "hidden": false,
+            "targetId": "d7c9-bd72-2650-52d3",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "4e4d-1694-c7c7-88b1",
+                    "childName": "Psyker",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "The Mark of Nurgle", "id": "b18d-9896-c73f-8195", "hidden": false, "targetId": "a70f-07f4-5c21-cc20", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Psychic Powers",
+        "id": "b112-82f8-c4f4-5ade",
+        "collapsible": true,
+        "flatten": true,
+        "hidden": false,
+        "selectionEntryGroups": [{"name": "New", "id": "c977-11c3-c927-eb49", "hidden": false}]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "catalogue": {
+    "name": "Chaos - Chaos Space Marines",
+    "id": "d8cd-cdb0-4f9c-c75a",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 9,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue"
+  }
+}
