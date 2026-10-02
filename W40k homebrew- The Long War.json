@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 9,
+    "revision": 10,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -1713,6 +1713,82 @@
               }
             ]
           }
+        ]
+      },
+      {
+        "name": "Force Organization: Dedicated Transport",
+        "id": "ba61-a73f-f059-cf58",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "8cca-c37b-0514-ba63", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
+          {"field": "category", "scope": "unit", "type": "set-primary", "value": "cb56-41eb-9b8c-2a8c"}
+        ]
+      },
+      {
+        "name": "Force Organization: Elite",
+        "id": "c9f9-3940-2fc2-709e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "89e8-1968-9f29-3be1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
+          {"field": "category", "scope": "unit", "type": "set-primary", "value": "f907-c80d-2520-e7f7"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
+        ]
+      },
+      {
+        "name": "Force Organization: Heavy Support",
+        "id": "1e8e-a64f-440c-fe54",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "bae1-a876-7f39-d3bc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
+          {"field": "category", "scope": "unit", "type": "set-primary", "value": "c831-e8d6-bb33-52b3"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
+        ]
+      },
+      {
+        "name": "Force Organization: Troop",
+        "id": "cd9e-d590-95bd-2dfd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "cb08-2e6c-140a-e86f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
+          {"field": "category", "scope": "unit", "type": "set-primary", "value": "9f3a-4892-68dc-2701"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
         ]
       }
     ],
