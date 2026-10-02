@@ -202,7 +202,8 @@
       {"name": "M35", "id": "eac0-484c-93fc-4466", "hidden": false},
       {"name": "Artillery", "id": "4a96-1c0b-540e-a5d7", "hidden": false},
       {"name": "M37+", "id": "266a-a317-a50a-0784", "hidden": false},
-      {"name": "Tech-Priest", "id": "69c3-b571-197c-4f99", "hidden": false}
+      {"name": "Tech-Priest", "id": "69c3-b571-197c-4f99", "hidden": false},
+      {"name": "Chaos", "id": "4c48-b09a-ec4a-cf19", "hidden": false}
     ],
     "costTypes": [
       {

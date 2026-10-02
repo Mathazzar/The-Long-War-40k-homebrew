@@ -28,7 +28,19 @@
       {"name": "Rotigus Rainfather", "id": "8b91-4f66-93d4-a300", "hidden": false},
       {"name": "Shelaxi Hellbane", "id": "3948-1782-aa1b-f3d3", "hidden": false},
       {"name": "Kairos Fateweaver", "id": "1787-594d-13fc-1bc1", "hidden": false},
-      {"name": "Be’lakor", "id": "7277-6d69-047b-d6e2", "hidden": false}
+      {"name": "Be’lakor", "id": "7277-6d69-047b-d6e2", "hidden": false},
+      {"name": "Samus", "id": "8585-9abc-394e-b27b", "hidden": false},
+      {"name": "Uraka the Warfiend", "id": "c062-0a93-1615-e552", "hidden": false},
+      {"name": "Cor’bax Utterblight", "id": "c526-87e2-562d-e24c", "hidden": false},
+      {"name": "Skulltaker", "id": "4dc8-c6fc-5d15-b21f", "hidden": false},
+      {"name": "Epidemius", "id": "7fc0-ced2-4e2f-e62c", "hidden": false},
+      {"name": "Masque of Slaanesh", "id": "b334-69d3-98fe-e0e6", "hidden": false},
+      {"name": "The Changeling", "id": "f72b-7821-3b11-00bd", "hidden": false},
+      {"name": "Furies", "id": "120c-e997-9e72-cd2b", "hidden": false},
+      {"name": "Bloodletters", "id": "aea1-46f7-ab20-fd2e", "hidden": false},
+      {"name": "Plaguebearers", "id": "9fe8-1061-7b46-a9f5", "hidden": false},
+      {"name": "Nurglings", "id": "bfbb-e848-ec4f-075d", "hidden": false},
+      {"name": "Daemonettes", "id": "a1be-cad4-62ae-7faa", "hidden": false}
     ],
     "publications": [{"name": "The Long War - Codex Chaos Daemons", "id": "b30d-99de-ef25-ed03", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
@@ -104,7 +116,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "b677-d4b6-6770-da27", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "4991-57a1-2fbd-433d", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Fortification", "id": "9d60-e3e9-3c57-0a2a", "hidden": false, "primary": true, "targetId": "afd1-1404-6ffb-02d8"}
+          {"name": "Fortification", "id": "9d60-e3e9-3c57-0a2a", "hidden": false, "primary": true, "targetId": "afd1-1404-6ffb-02d8"},
+          {"name": "Chaos", "id": "8277-bfbc-9d33-2299", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "eff3-5c03-f97f-be1a", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -126,7 +139,8 @@
           {"name": "HQ", "id": "cc85-eea5-b025-7c66", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
           {"name": "Daemon", "id": "890a-1067-83e3-d98f", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
           {"name": "Daemon Prince", "id": "5af1-984e-ef3d-301d", "hidden": false, "primary": false, "targetId": "2f32-89f4-934a-3e5f"},
-          {"name": "Monster", "id": "bb3a-c588-c662-272b", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"}
+          {"name": "Monster", "id": "bb3a-c588-c662-272b", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
+          {"name": "Chaos", "id": "0aef-5243-2b41-76ff", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "constraints": [{"id": "3597-332c-1286-e642", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 135}],
@@ -329,7 +343,8 @@
           {"name": "Greater Daemon", "id": "d771-a76f-e062-b50f", "hidden": false, "primary": false, "targetId": "6677-e6b3-1183-a723"},
           {"name": "Khorne", "id": "1270-41bd-3fc8-c882", "hidden": false, "primary": false, "targetId": "baf3-e3a8-5dda-fc45"},
           {"name": "Monster", "id": "a575-9af2-c36f-dc92", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
-          {"name": "Bloodthirster", "id": "1e60-4e77-60cc-f736", "hidden": false, "primary": false, "targetId": "b0ba-dfb4-0fb2-abdc"}
+          {"name": "Bloodthirster", "id": "1e60-4e77-60cc-f736", "hidden": false, "primary": false, "targetId": "b0ba-dfb4-0fb2-abdc"},
+          {"name": "Chaos", "id": "ef58-a6d2-1775-3f5f", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "constraints": [{"id": "4957-83ae-7ddb-e18f", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 220}],
@@ -538,7 +553,8 @@
           {"name": "Psyker", "id": "8201-bbab-5070-32cb", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
           {"name": "Nurgle", "id": "1e52-7992-b359-22f2", "hidden": false, "primary": false, "targetId": "1739-c92f-edf1-0754"},
           {"name": "Monster", "id": "f8ca-d40b-47bc-a1cf", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
-          {"name": "Great Unclean One", "id": "eda5-31b2-e01e-830a", "hidden": false, "primary": false, "targetId": "539e-c25e-0173-8c90"}
+          {"name": "Great Unclean One", "id": "eda5-31b2-e01e-830a", "hidden": false, "primary": false, "targetId": "539e-c25e-0173-8c90"},
+          {"name": "Chaos", "id": "59a3-cfd3-a6cb-7c52", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "constraints": [{"id": "a247-e6ba-040f-8eb1", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 210}],
@@ -699,7 +715,8 @@
           {"name": "Psyker", "id": "b96e-43bc-7a76-e32e", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
           {"name": "Slaanesh", "id": "51d2-e2c1-f4cd-2032", "hidden": false, "primary": false, "targetId": "aa44-f9ed-c483-8c97"},
           {"name": "Keeper of Secrets", "id": "9aa0-65cc-68ce-e945", "hidden": false, "primary": false, "targetId": "7645-5fc2-8838-3172"},
-          {"name": "Monster", "id": "ad27-c934-e93d-05f8", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"}
+          {"name": "Monster", "id": "ad27-c934-e93d-05f8", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
+          {"name": "Chaos", "id": "4e6d-906b-f0ad-e054", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "constraints": [{"id": "7576-ff0f-9b03-14db", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 225}],
@@ -868,7 +885,8 @@
           {"name": "Psyker", "id": "bac2-4a9f-f8b0-5012", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
           {"name": "Tzeentch", "id": "adec-eb76-b2e0-8274", "hidden": false, "primary": false, "targetId": "b73b-d185-5635-38fe"},
           {"name": "Monster", "id": "036c-f6c6-3da0-5cfa", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
-          {"name": "Lord of Change", "id": "9227-b764-2dc8-0c11", "hidden": false, "primary": false, "targetId": "680b-6dcf-d397-1736"}
+          {"name": "Lord of Change", "id": "9227-b764-2dc8-0c11", "hidden": false, "primary": false, "targetId": "680b-6dcf-d397-1736"},
+          {"name": "Chaos", "id": "ecf2-f962-110f-47f4", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "constraints": [{"id": "4647-1788-288d-6e8d", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 205}],
@@ -1021,7 +1039,8 @@
           {"name": "Daemon", "id": "fb4f-f87f-caf3-acc2", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
           {"name": "Khorne", "id": "c689-3f9d-04c1-ef58", "hidden": false, "primary": false, "targetId": "baf3-e3a8-5dda-fc45"},
           {"name": "Infantry", "id": "42e9-27ca-2bad-d3af", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Herald of Khorne", "id": "33fc-8ccf-0fa0-1e51", "hidden": false, "primary": false, "targetId": "4f53-3c43-e9c9-f669"}
+          {"name": "Herald of Khorne", "id": "33fc-8ccf-0fa0-1e51", "hidden": false, "primary": false, "targetId": "4f53-3c43-e9c9-f669"},
+          {"name": "Chaos", "id": "6a9d-5fa9-2882-b869", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 65}],
         "entryLinks": [
@@ -1030,21 +1049,13 @@
           {"name": "Relic", "id": "82b1-7cd5-90a3-e17e", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
         ],
         "infoLinks": [
+          {"name": "Locus of Khorne", "id": "5e33-e441-eae9-af38", "hidden": true, "targetId": "97b8-ae9b-337a-4e02", "type": "rule"},
           {"name": "Deep Strike", "id": "8f0a-1d35-863e-2821", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Furious Charge (x)", "id": "d6a4-6171-3d99-d016", "hidden": false, "targetId": "7c71-ce9d-5649-36e8", "type": "rule"},
           {"name": "Daemonic Instability", "id": "d982-4f50-b4b2-a406", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
           {"name": "Warp Surge", "id": "584c-76c7-bfa8-cf2e", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
           {"name": "Character", "id": "c3c8-5cfb-3364-39fc", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
           {"name": "Daemon", "id": "6aa9-d07d-2974-b69b", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"}
-        ],
-        "rules": [
-          {
-            "name": "Locus of Khorne",
-            "id": "97b8-ae9b-337a-4e02",
-            "comment": "todo: No way to take rule provided in reference",
-            "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to an 8.",
-            "hidden": true
-          }
         ],
         "selectionEntries": [
           {
@@ -1128,7 +1139,8 @@
           {"name": "Nurgle", "id": "8552-4605-89db-bd0d", "hidden": false, "primary": false, "targetId": "1739-c92f-edf1-0754"},
           {"name": "Psyker", "id": "ba97-5621-fc73-938d", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
           {"name": "Infantry", "id": "97ea-cdb5-cb08-75d5", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Herald of Nurgle", "id": "04d8-7f38-7de0-3eb8", "hidden": false, "primary": false, "targetId": "b7ad-5f1f-3941-9045"}
+          {"name": "Herald of Nurgle", "id": "04d8-7f38-7de0-3eb8", "hidden": false, "primary": false, "targetId": "b7ad-5f1f-3941-9045"},
+          {"name": "Chaos", "id": "7d4c-d46d-c78e-a569", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 75}],
         "entryLinks": [
@@ -1229,7 +1241,51 @@
               {"name": "Warlord Trait", "id": "05cc-fa8e-e0b9-65b6", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
               {"name": "Psychic Powers", "id": "ac92-7287-4f15-bd90", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
               {"name": "Warlord", "id": "b180-67e2-1cad-78e4", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-              {"name": "Relic", "id": "2005-6c54-2574-fa2f", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
+              {"name": "Relic", "id": "2005-6c54-2574-fa2f", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"},
+              {"name": "Warlord", "id": "fa01-6b61-5e30-8b59", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+              {
+                "name": "Psychic Powers",
+                "id": "0d0f-2dbc-e76b-8c37",
+                "hidden": false,
+                "import": true,
+                "targetId": "b112-82f8-c4f4-5ade",
+                "type": "selectionEntryGroup",
+                "entryLinks": [
+                  {"name": "Warlord Trait", "id": "5884-73ff-6cc1-71c9", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
+                  {"name": "Psychic Powers", "id": "3562-ac57-5a0a-3a4a", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
+                  {"name": "Warlord", "id": "d2ee-60f9-d1a2-c42a", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+                  {"name": "Relic", "id": "f3f0-79ce-3031-008e", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Psyker (x)",
+                    "id": "f5c8-8812-da75-6600",
+                    "hidden": false,
+                    "targetId": "dbd6-a688-796e-e22e",
+                    "type": "rule",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "4fb9-efa8-fe40-14cc",
+                            "childName": "Bale Sword",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"name": "Character", "id": "b93e-5095-139b-4415", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+                ]
+              }
             ],
             "infoLinks": [
               {
@@ -1258,7 +1314,84 @@
                   }
                 ]
               },
-              {"name": "Character", "id": "6dec-16cf-81df-6565", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+              {"name": "Character", "id": "6dec-16cf-81df-6565", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+              {"name": "Character", "id": "35f9-03fb-8bf3-b2e7", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+              {"name": "Locus of Nurgle", "id": "92f1-7768-bd7c-fce6", "hidden": true, "targetId": "fdd7-a211-a0db-83d8", "type": "rule"}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Worthy Trophies",
+                "id": "a8dc-f308-c0ac-b948",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "76c3-0fb2-295f-c87c-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 0
+                  },
+                  {
+                    "id": "76c3-0fb2-295f-c87c-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 0
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "76c3-0fb2-295f-c87c-min",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "da73-92e8-6d36-176a",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "76c3-0fb2-295f-c87c-max",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "da73-92e8-6d36-176a",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Worthy Trophies",
+                    "id": "ad2a-1274-ce8f-fb89",
+                    "description": "If Skulltaker is your Warlord, he and any attached unit gain the Preferred Enemy (Infantry) special rule. In addition, each time an enemy unit is slain as a result of wounds inflicted by Skulltaker, rolls a D6. On a 1, Skulltaker does not find a worthy skull and nothing happens. On a 6, a worthy Trophy is found and Skulltaker and his attached unit gain the Preferred Enemy special rule for the rest of the game.",
+                    "hidden": false
+                  }
+                ]
+              }
             ]
           },
           {
@@ -1306,6 +1439,7 @@
           }
         ],
         "infoLinks": [
+          {"name": "Locus of Nurgle", "id": "d0d5-2e4e-b947-7949", "hidden": true, "targetId": "fdd7-a211-a0db-83d8", "type": "rule"},
           {"name": "Deep Strike", "id": "9ff8-d5e0-ec5e-b250", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Feel no Pain", "id": "fcd9-facd-89c3-4e52", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
           {"name": "Daemonic Instability", "id": "2bf7-3079-64a2-e2b5", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
@@ -1337,15 +1471,6 @@
                 ]
               }
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Locus of Nurgle",
-            "id": "fdd7-a211-a0db-83d8",
-            "comment": "todo: No way to take rule provided in reference",
-            "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to a 7.",
-            "hidden": true
           }
         ],
         "selectionEntries": [
@@ -1510,7 +1635,8 @@
           {"name": "Slaanesh", "id": "ae44-7352-b898-f0df", "hidden": false, "primary": false, "targetId": "aa44-f9ed-c483-8c97"},
           {"name": "Psyker", "id": "a968-6206-906e-f57d", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
           {"name": "Infantry", "id": "c961-4203-bb1b-80d1", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Herald of Slaanesh", "id": "8aae-2b7c-382e-3a99", "hidden": false, "primary": false, "targetId": "c56b-518b-8862-e2ba"}
+          {"name": "Herald of Slaanesh", "id": "8aae-2b7c-382e-3a99", "hidden": false, "primary": false, "targetId": "c56b-518b-8862-e2ba"},
+          {"name": "Chaos", "id": "d1a2-b2d8-fb08-cc7f", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 75}],
         "entryLinks": [
@@ -1520,6 +1646,7 @@
           {"name": "Relic", "id": "8826-f9ea-bd42-063b", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
         ],
         "infoLinks": [
+          {"name": "Locus of Slaanesh", "id": "0478-3c35-89f8-793b", "hidden": true, "targetId": "2c92-7005-65a0-347c", "type": "rule"},
           {"name": "Deep Strike", "id": "067f-53c6-6bed-899f", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "975f-2454-4856-0509", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Sudden Strike", "id": "5565-9123-d6bb-d8dd", "hidden": false, "targetId": "e8ec-274c-8bea-40d2", "type": "rule"},
@@ -1527,15 +1654,6 @@
           {"name": "Psyker (x)", "id": "bde3-536b-ac13-5988", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
           {"name": "Character", "id": "1d6a-6142-3373-38d6", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
           {"name": "Daemonic Instability", "id": "70d8-676e-1ad5-0e26", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"}
-        ],
-        "rules": [
-          {
-            "name": "Locus of Slaanesh",
-            "id": "2c92-7005-65a0-347c",
-            "comment": "todo: No way to take rule provided in reference",
-            "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to a 6.",
-            "hidden": true
-          }
         ],
         "selectionEntries": [
           {
@@ -1667,7 +1785,8 @@
           {"name": "Tzeentch", "id": "cf83-5c2d-b402-74d4", "hidden": false, "primary": false, "targetId": "b73b-d185-5635-38fe"},
           {"name": "Psyker", "id": "6e3b-272f-2be3-8d9a", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
           {"name": "Infantry", "id": "13a6-bfce-f638-2b62", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Herald of Tzeentch", "id": "9bdc-2950-ef29-981d", "hidden": false, "primary": false, "targetId": "b88a-06b1-8e57-11c3"}
+          {"name": "Herald of Tzeentch", "id": "9bdc-2950-ef29-981d", "hidden": false, "primary": false, "targetId": "b88a-06b1-8e57-11c3"},
+          {"name": "Chaos", "id": "2c0e-cc1e-e5e6-f989", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 85}],
         "entryLinks": [
@@ -1677,21 +1796,13 @@
           {"name": "Relic", "id": "790b-917e-16d4-0af4", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
         ],
         "infoLinks": [
+          {"name": "Locus of Tzeentch", "id": "a172-e6bd-f179-5f19", "hidden": false, "targetId": "b941-35a3-c425-2ce2", "type": "rule"},
           {"name": "Deep Strike", "id": "d60f-8231-2ab6-7d06", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "a67d-96e6-7d3e-58d5", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "f384-5a46-782d-e27f", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
           {"name": "Warp Surge", "id": "d193-2ac9-23d6-1f3f", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
           {"name": "Psyker (x)", "id": "912c-cd71-6b64-4f84", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
           {"name": "Character", "id": "6cbb-18b4-e238-7108", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
-        ],
-        "rules": [
-          {
-            "name": "Locus of Tzeentch",
-            "id": "b941-35a3-c425-2ce2",
-            "comment": "todo: No way to take rule provided in reference",
-            "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to a 9.",
-            "hidden": false
-          }
         ],
         "selectionEntries": [
           {
@@ -1883,7 +1994,9 @@
           {"name": "Khorne", "id": "eca6-abe9-d93c-ac67", "hidden": false, "primary": false, "targetId": "baf3-e3a8-5dda-fc45"},
           {"name": "Unique", "id": "b7ad-3f93-48a4-c673", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
           {"name": "Monster", "id": "e705-9d72-9405-a3b7", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
-          {"name": "Skarbrand", "id": "8da8-cd53-b0cb-d800", "hidden": false, "primary": false, "targetId": "9278-6afe-143d-f826"}
+          {"name": "Skarbrand", "id": "8da8-cd53-b0cb-d800", "hidden": false, "primary": false, "targetId": "9278-6afe-143d-f826"},
+          {"name": "Chaos", "id": "aeb4-736e-6ea5-d57a", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Chaos", "id": "a89a-78a6-0253-4695", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 230}],
         "entryLinks": [{"name": "Warlord", "id": "1cdc-d024-d07e-13ad", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}],
@@ -2073,7 +2186,8 @@
           {"name": "Nurgle", "id": "9c74-7620-da28-9f34", "hidden": false, "primary": false, "targetId": "1739-c92f-edf1-0754"},
           {"name": "Monster", "id": "d611-6d16-9fee-eb5d", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
           {"name": "Unique", "id": "4a11-1f8c-971d-3578", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "Rotigus Rainfather", "id": "f811-d0b7-3888-869d", "hidden": false, "primary": false, "targetId": "8b91-4f66-93d4-a300"}
+          {"name": "Rotigus Rainfather", "id": "f811-d0b7-3888-869d", "hidden": false, "primary": false, "targetId": "8b91-4f66-93d4-a300"},
+          {"name": "Chaos", "id": "a3d7-61ba-8176-e157", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 265}],
         "entryLinks": [
@@ -2302,7 +2416,8 @@
           {"name": "Keeper of Secrets", "id": "db57-fa84-1cbb-13ab", "hidden": false, "primary": false, "targetId": "7645-5fc2-8838-3172"},
           {"name": "Monster", "id": "3a2e-a16a-9cd8-36e9", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
           {"name": "Unique", "id": "6cb4-e2f8-911f-5ccb", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "Shelaxi Hellbane", "id": "6a04-1f0b-048b-c6d1", "hidden": false, "primary": false, "targetId": "3948-1782-aa1b-f3d3"}
+          {"name": "Shelaxi Hellbane", "id": "6a04-1f0b-048b-c6d1", "hidden": false, "primary": false, "targetId": "3948-1782-aa1b-f3d3"},
+          {"name": "Chaos", "id": "f819-8fc1-cb39-92d0", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 255}],
         "entryLinks": [
@@ -2552,7 +2667,8 @@
           {"name": "Tzeentch", "id": "0884-1092-3058-ee53", "hidden": false, "primary": false, "targetId": "b73b-d185-5635-38fe"},
           {"name": "Monster", "id": "7e81-124c-a1a7-853b", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
           {"name": "Unique", "id": "bcd0-3c4e-0c0a-8339", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "Kairos Fateweaver", "id": "6ed5-1b4f-d033-6928", "hidden": false, "primary": false, "targetId": "1787-594d-13fc-1bc1"}
+          {"name": "Kairos Fateweaver", "id": "6ed5-1b4f-d033-6928", "hidden": false, "primary": false, "targetId": "1787-594d-13fc-1bc1"},
+          {"name": "Chaos", "id": "2670-bd71-8e59-19ab", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 250}],
         "entryLinks": [
@@ -2756,7 +2872,8 @@
           {"name": "Tzeentch", "id": "f8da-9e96-2aa9-d264", "hidden": false, "primary": false, "targetId": "b73b-d185-5635-38fe"},
           {"name": "Monster", "id": "c73b-17db-4a0c-9569", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
           {"name": "Unique", "id": "3755-f6b1-e0e0-dc59", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "Be’lakor", "id": "f88a-1df5-1de9-e0ab", "hidden": false, "primary": false, "targetId": "7277-6d69-047b-d6e2"}
+          {"name": "Be’lakor", "id": "f88a-1df5-1de9-e0ab", "hidden": false, "primary": false, "targetId": "7277-6d69-047b-d6e2"},
+          {"name": "Chaos", "id": "f69c-6ffb-fdf4-f287", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 260}],
         "entryLinks": [
@@ -2951,18 +3068,193 @@
         "id": "f989-a83d-c8af-2c79",
         "hidden": false,
         "import": true,
+        "page": "42",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "c056-2050-2905-6c88", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "HQ", "id": "b7e8-1e91-4508-1925", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Daemon", "id": "22cf-aa03-5170-e4e0", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
+          {"name": "Daemon", "id": "22cf-aa03-5170-e4e0", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Daemon Prince", "id": "f4fc-d9c3-5fb7-0335", "hidden": false, "primary": false, "targetId": "2f32-89f4-934a-3e5f"},
+          {"name": "Khorne", "id": "91dc-cce1-ae88-5899", "hidden": false, "primary": false, "targetId": "baf3-e3a8-5dda-fc45"},
+          {"name": "Monster", "id": "9d44-27d9-1baa-ae20", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
+          {"name": "Unique", "id": "f1e8-6ca9-17fc-5f10", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Samus", "id": "3323-d1d5-a2f9-db80", "hidden": false, "primary": false, "targetId": "8585-9abc-394e-b27b"},
+          {"name": "Chaos", "id": "290c-5c83-481d-7593", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 180}],
+        "entryLinks": [{"name": "Warlord", "id": "4f0e-cb3d-27e1-e65e", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "Deep Strike", "id": "c506-940c-bda9-bd09", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
-          {"name": "Daemon", "id": "8f29-8a20-17d5-3d85", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "99d5-f9a9-a908-b335", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "48d9-73b5-6644-71f0", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Warp Surge", "id": "48d9-73b5-6644-71f0", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Regeneration", "id": "a513-2d83-91ab-00e3", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Move through Cover", "id": "de06-814e-c9ca-a6e9", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "93a5-c78a-5b57-9832", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Character", "id": "e817-e768-dc60-312b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Daemon", "id": "d1ae-7d01-5744-6c9c", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
+          {"name": "Furious Charge (x)", "id": "0fc8-86fc-1815-b5d5", "hidden": false, "targetId": "7c71-ce9d-5649-36e8", "type": "rule"}
+        ],
+        "rules": [
+          {
+            "name": "Prince of the Ruinstorm",
+            "id": "7df7-f3fc-05e0-ca1c",
+            "description": "during deployment, you may place down 1 Rift Marker (See Incursion Rite of War) anywhere on the battlefield.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Whispers of Madness",
+            "id": "04b8-bc69-0ed1-7d42",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "ff81-ccd0-f247-4a97-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "ff81-ccd0-f247-4a97-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "ff81-ccd0-f247-4a97-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "ff81-ccd0-f247-4a97-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Whispers of Madness",
+                "id": "de77-05a9-2098-fc80",
+                "description": "Enemy units within 3” of Samus while he is your Warlord, halve their Leadership (LD) characteristic. This stacks with the effects of the Fear (x) special rule.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Samus",
+            "id": "663e-b0c0-b1c5-e5fa",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "d134-dc8a-026e-57cf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "d134-dc8a-026e-57cf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "The Mark of Khorne",
+                "id": "8b61-e764-9d5a-29ed",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d7c9-bd72-2650-52d3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "7689-668e-97aa-c9c7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7689-668e-97aa-c9c7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Samus",
+                "id": "8708-a4a7-419d-94f4",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "9", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "5", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "5", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Slaughtering Blade",
+                "id": "9ee0-0d48-b0f4-9112",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "9473-adcf-52ca-a047-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "9473-adcf-52ca-a047-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Slaughtering Blade",
+                    "id": "08bc-33a0-097a-2368",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Arcing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2970,18 +3262,189 @@
         "id": "b689-773b-43d1-19a2",
         "hidden": false,
         "import": true,
+        "page": "43",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "857f-79fe-3a8f-d8c1", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "HQ", "id": "8b6b-5da8-7d1f-10b2", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Daemon", "id": "98ae-6df6-40ee-7966", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
+          {"name": "Daemon", "id": "98ae-6df6-40ee-7966", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Daemon Prince", "id": "8ba9-29d8-7824-bc40", "hidden": false, "primary": false, "targetId": "2f32-89f4-934a-3e5f"},
+          {"name": "Khorne", "id": "7294-4b42-3a12-a46a", "hidden": false, "primary": false, "targetId": "baf3-e3a8-5dda-fc45"},
+          {"name": "Monster", "id": "f9b7-8f21-ed0c-8e60", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
+          {"name": "Unique", "id": "618b-498e-1cfe-055a", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Uraka the Warfiend", "id": "e870-0b28-6611-2db8", "hidden": false, "primary": false, "targetId": "c062-0a93-1615-e552"},
+          {"name": "Chaos", "id": "3879-a0eb-6645-9b28", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 170}],
+        "entryLinks": [{"name": "Warlord", "id": "fdc0-c747-7b52-b3e7", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"}],
         "infoLinks": [
-          {"name": "Deep Strike", "id": "f15e-642f-c388-3de2", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Deny the Witch", "id": "f15e-642f-c388-3de2", "hidden": false, "targetId": "8c5a-f37c-9230-be38", "type": "rule"},
           {"name": "Daemon", "id": "1a98-d6f2-891b-a96c", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "8c76-aff3-e6aa-fee5", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "b339-72de-5093-b377", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Warp Surge", "id": "b339-72de-5093-b377", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Regeneration", "id": "6f1b-7768-1e94-d22d", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Move through Cover", "id": "f9b0-02d8-cf50-f77b", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "715c-f143-2651-3e4e", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Furious Charge (x)", "id": "0c6d-4fa8-c587-038f", "hidden": false, "targetId": "7c71-ce9d-5649-36e8", "type": "rule"},
+          {"name": "Character", "id": "2517-14fe-8b64-cb56", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Deep Strike", "id": "c452-82d6-86d6-8041", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Adamantine Will", "id": "bbcf-83a3-a494-588d", "hidden": false, "targetId": "1f0e-f701-bd3a-3894", "type": "rule"},
+          {"name": "Monster Hunter", "id": "734c-358a-0569-da4c", "hidden": false, "targetId": "6222-c3f0-19bc-e061", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "The Warfiend",
+            "id": "01be-d528-25ff-493a",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "b008-e025-c3c4-b904-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "b008-e025-c3c4-b904-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "b008-e025-c3c4-b904-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "b008-e025-c3c4-b904-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Warfiend",
+                "id": "c2c0-5bff-3f75-6518",
+                "description": "If this unit is your Warlord, it and any attached unit always hits on a 3+ in the Combat Phase unless the target units Weapon Skill (WS) characteristic is double this units.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Uraka the Warfiend",
+            "id": "ffdc-369a-193e-d39e",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "7532-9c40-95a2-b58e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7532-9c40-95a2-b58e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "The Mark of Khorne",
+                "id": "d167-fcd3-9417-bc77",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d7c9-bd72-2650-52d3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "8103-b174-89f9-6bf4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "8103-b174-89f9-6bf4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Brass Armour", "id": "f772-b712-34df-c04c", "hidden": false, "import": true, "targetId": "f9bd-6a61-dcb0-1e12", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Uraka the Warfiend",
+                "id": "5981-e9a7-d5ac-f2c5",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "9", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "5", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "5", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "The Executioners Axe",
+                "id": "31c1-c49b-3b01-c3c6",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "827f-2424-882d-2e90-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "827f-2424-882d-2e90-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "The Executioners Axe",
+                    "id": "18fe-1645-ded3-8424",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Unwieldy, Crushing (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2989,18 +3452,191 @@
         "id": "dc43-8674-40d8-672a",
         "hidden": false,
         "import": true,
+        "page": "44",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "d580-3563-61e0-7052", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "HQ", "id": "1b84-db23-8bec-ac8e", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Daemon", "id": "fd66-e8f7-6668-b71b", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
+          {"name": "Daemon", "id": "fd66-e8f7-6668-b71b", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Daemon Prince", "id": "7a85-2f1c-afe2-28b2", "hidden": false, "primary": false, "targetId": "2f32-89f4-934a-3e5f"},
+          {"name": "Nurgle", "id": "4177-a108-e2c9-7a4b", "hidden": false, "primary": false, "targetId": "1739-c92f-edf1-0754"},
+          {"name": "Monster", "id": "76da-c361-cb96-7b70", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
+          {"name": "Unique", "id": "bfda-4fcb-82b3-f044", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Cor’bax Utterblight", "id": "1a45-e4f0-c56c-1811", "hidden": false, "primary": false, "targetId": "c526-87e2-562d-e24c"},
+          {"name": "Chaos", "id": "5378-151a-db91-fbb5", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 195}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "4518-e47e-28e4-df3d", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {
+            "name": "Virulent Touch",
+            "id": "124b-b82d-d6b6-d805",
+            "hidden": false,
+            "import": true,
+            "targetId": "2059-1da0-46b1-239b",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "602e-34e7-9495-b682-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "602e-34e7-9495-b682-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "602e-34e7-9495-b682-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "602e-34e7-9495-b682-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Psychic Powers", "id": "6459-cfd3-3f00-22f0", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "3425-5c06-8b90-19b3", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "0f72-a96f-7ec2-33ee", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "1157-55d7-eff3-905e", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "25ad-f547-91f5-39c7", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Warp Surge", "id": "25ad-f547-91f5-39c7", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Regeneration", "id": "0e1a-07d8-35fd-77e9", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Move through Cover", "id": "bbe4-e65a-6ef9-3424", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Fear (x)", "id": "1688-d80c-2774-c859", "hidden": false, "targetId": "719f-3e8c-b6f2-54ee", "type": "rule"},
+          {"name": "Character", "id": "7e99-bd70-0f00-af01", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "50b0-6928-b6a6-cd92", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Psyker (x)", "id": "3b97-6c08-56d5-ff58", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Feel no Pain", "id": "b59b-b0f3-1a96-81f9", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"}
+        ],
+        "rules": [
+          {
+            "name": "Tide of Flesh",
+            "id": "619e-8578-d21b-bd8c",
+            "description": "When this unit makes a Regeneration roll (see Regeneration Special rule), this unit may roll 2D6.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Cor’bax Utterblight",
+            "id": "5dcb-2108-c7b2-fec6",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "aea9-a9e7-2d5f-1850-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "aea9-a9e7-2d5f-1850-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "The Mark of Nurgle",
+                "id": "9911-038a-25a3-6e4a",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "a70f-07f4-5c21-cc20",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "7724-23a7-7ba0-4a12-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7724-23a7-7ba0-4a12-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Cor’bax Utterblight",
+                "id": "c048-a397-7443-5d16",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "9", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "5", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "5", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Gaping Maw",
+                "id": "fc60-47f4-622a-62b6",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "885b-7458-1ad9-7003-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "885b-7458-1ad9-7003-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Gaping Maw",
+                    "id": "2d12-cbc3-7218-3dc7",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Crushing (4+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3008,18 +3644,443 @@
         "id": "75d9-9b58-f718-0d9d",
         "hidden": false,
         "import": true,
+        "page": "45",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "a6a4-5ca4-975c-727e", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "HQ", "id": "7f95-a562-6dc2-0d6e", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Daemon", "id": "4737-d250-7e6a-1f37", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
+          {"name": "Daemon", "id": "4737-d250-7e6a-1f37", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Khorne", "id": "24d4-0d58-68e4-92c1", "hidden": false, "primary": false, "targetId": "baf3-e3a8-5dda-fc45"},
+          {"name": "Herald of Khorne", "id": "0bf3-12a6-e258-1f17", "hidden": false, "primary": false, "targetId": "4f53-3c43-e9c9-f669"},
+          {"name": "Infantry", "id": "e6c3-a663-d682-23eb", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Unique", "id": "e10f-37d4-194f-99df", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Skulltaker", "id": "538d-01a6-71ac-866b", "hidden": false, "primary": false, "targetId": "4dc8-c6fc-5d15-b21f"},
+          {"name": "Chaos", "id": "15eb-ea84-6411-f44d", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 85}],
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "3c86-5a79-1b0f-d86e",
+            "hidden": false,
+            "import": true,
+            "targetId": "da73-92e8-6d36-176a",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {"name": "Warlord", "id": "95ae-c8da-7e59-87de", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+              {
+                "name": "Psychic Powers",
+                "id": "b08c-53e7-144f-b54d",
+                "hidden": false,
+                "import": true,
+                "targetId": "b112-82f8-c4f4-5ade",
+                "type": "selectionEntryGroup",
+                "entryLinks": [
+                  {"name": "Warlord Trait", "id": "fbf3-58f2-c3be-280b", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
+                  {"name": "Psychic Powers", "id": "5d6d-7aff-d8d9-a8ca", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
+                  {"name": "Warlord", "id": "a137-9e4f-2fb8-196c", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+                  {"name": "Relic", "id": "4395-d1a0-18b5-0e92", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Psyker (x)",
+                    "id": "46c1-1b6c-0f0d-9554",
+                    "hidden": false,
+                    "targetId": "dbd6-a688-796e-e22e",
+                    "type": "rule",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "4fb9-efa8-fe40-14cc",
+                            "childName": "Bale Sword",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"name": "Character", "id": "05b6-1576-fd37-b4f7", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+                ]
+              }
+            ],
+            "infoLinks": [
+              {"name": "Character", "id": "5db6-a854-595f-4d8b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+              {"name": "Locus of Nurgle", "id": "84cd-e7ec-8b76-2e20", "hidden": true, "targetId": "fdd7-a211-a0db-83d8", "type": "rule"}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Worthy Trophies",
+                "id": "760f-fdfb-05c6-97d3",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "54e4-f5dd-b019-b6ec-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 0
+                  },
+                  {
+                    "id": "54e4-f5dd-b019-b6ec-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 0
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "54e4-f5dd-b019-b6ec-min",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "da73-92e8-6d36-176a",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "54e4-f5dd-b019-b6ec-max",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "da73-92e8-6d36-176a",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Worthy Trophies",
+                    "id": "d0a2-c262-122f-24dd",
+                    "description": "If Skulltaker is your Warlord, he and any attached unit gain the Preferred Enemy (Infantry) special rule. In addition, each time an enemy unit is slain as a result of wounds inflicted by Skulltaker, rolls a D6. On a 1, Skulltaker does not find a worthy skull and nothing happens. On a 6, a worthy Trophy is found and Skulltaker and his attached unit gain the Preferred Enemy special rule for the rest of the game.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "ceb7-4ae0-f9c3-9cc9", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
-          {"name": "Daemon", "id": "0ddb-c5ff-8d69-499c", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
+          {"name": "Hatred (x)", "id": "0ddb-c5ff-8d69-499c", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
           {"name": "Daemonic Instability", "id": "f1b9-5579-2a96-4cae", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "bd7a-d2df-119c-14cd", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Warp Surge", "id": "bd7a-d2df-119c-14cd", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Character", "id": "17a8-4c18-7b9b-0a94", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Locus of Khorne", "id": "28e2-e426-566b-9238", "hidden": true, "targetId": "97b8-ae9b-337a-4e02", "type": "rule"},
+          {"name": "Daemon", "id": "3563-f371-491d-a571", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
+          {"name": "Furious Charge (x)", "id": "99a7-553a-0ea1-ee29", "hidden": false, "targetId": "7c71-ce9d-5649-36e8", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Worthy Trophies",
+            "id": "3db1-b691-757a-269a",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "3278-77be-3e6b-5ffe-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "3278-77be-3e6b-5ffe-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {"name": "Warlord", "id": "f217-517c-91f2-085c", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+              {
+                "name": "Psychic Powers",
+                "id": "0142-c563-8ad6-7408",
+                "hidden": false,
+                "import": true,
+                "targetId": "b112-82f8-c4f4-5ade",
+                "type": "selectionEntryGroup",
+                "entryLinks": [
+                  {"name": "Warlord Trait", "id": "492a-460b-4265-1f8c", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
+                  {"name": "Psychic Powers", "id": "6550-4832-5a07-61a1", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
+                  {"name": "Warlord", "id": "950e-81e1-cdee-1035", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+                  {"name": "Relic", "id": "9456-cb38-16fa-3249", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Psyker (x)",
+                    "id": "f24f-1124-0674-6d69",
+                    "hidden": false,
+                    "targetId": "dbd6-a688-796e-e22e",
+                    "type": "rule",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "4fb9-efa8-fe40-14cc",
+                            "childName": "Bale Sword",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"name": "Character", "id": "b148-eddb-230c-3990", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+                ]
+              }
+            ],
+            "infoLinks": [
+              {"name": "Character", "id": "bb4c-9415-9ae2-6f6b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+              {"name": "Locus of Nurgle", "id": "e725-1200-cc77-b8fa", "hidden": true, "targetId": "fdd7-a211-a0db-83d8", "type": "rule"}
+            ],
+            "modifiers": [
+              {
+                "field": "3278-77be-3e6b-5ffe-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "3278-77be-3e6b-5ffe-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Worthy Trophies",
+                "id": "de7c-2f01-f459-c1fe",
+                "description": "If Skulltaker is your Warlord, he and any attached unit gain the Preferred Enemy (Infantry) special rule. In addition, each time an enemy unit is slain as a result of wounds inflicted by Skulltaker, rolls a D6. On a 1, Skulltaker does not find a worthy skull and nothing happens. On a 6, a worthy Trophy is found and Skulltaker and his attached unit gain the Preferred Enemy special rule for the rest of the game.",
+                "hidden": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Worthy Trophies",
+                "id": "3921-2159-16f1-cc94",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "55a2-f018-1dac-84af-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 0
+                  },
+                  {
+                    "id": "55a2-f018-1dac-84af-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 0
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "55a2-f018-1dac-84af-min",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "da73-92e8-6d36-176a",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "55a2-f018-1dac-84af-max",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "da73-92e8-6d36-176a",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Worthy Trophies",
+                    "id": "9736-b2f8-6d1b-ea36",
+                    "description": "If Skulltaker is your Warlord, he and any attached unit gain the Preferred Enemy (Infantry) special rule. In addition, each time an enemy unit is slain as a result of wounds inflicted by Skulltaker, rolls a D6. On a 1, Skulltaker does not find a worthy skull and nothing happens. On a 6, a worthy Trophy is found and Skulltaker and his attached unit gain the Preferred Enemy special rule for the rest of the game.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skulltaker",
+            "id": "dbbb-2c23-3b53-d9c1",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "0c98-04f2-375c-5ba9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0c98-04f2-375c-5ba9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "The Mark of Khorne",
+                "id": "8326-59d5-5119-d504",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d7c9-bd72-2650-52d3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2789-58ce-5c3a-254f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2789-58ce-5c3a-254f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Skulltaker",
+                "id": "724c-45b8-ad7a-c14b",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "The Slayer Sword",
+                "id": "0840-07a3-5e0a-7234",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "790b-eade-8c80-67bc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "790b-eade-8c80-67bc-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "The Slayer Sword",
+                    "id": "c799-2e42-f794-69c6",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Precision Hits, Murderous Strike (5+), Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3027,18 +4088,226 @@
         "id": "a99e-c034-0955-564c",
         "hidden": false,
         "import": true,
+        "page": "46",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "9586-81b9-d353-6841", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "HQ", "id": "d97c-dc28-87ef-0440", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Daemon", "id": "cc60-6b27-45c5-41d2", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
+          {"name": "Daemon", "id": "cc60-6b27-45c5-41d2", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Nurgle", "id": "9944-b4be-f490-ff7c", "hidden": false, "primary": false, "targetId": "1739-c92f-edf1-0754"},
+          {"name": "Herald of Nurgle", "id": "1150-392b-283e-f717", "hidden": false, "primary": false, "targetId": "b7ad-5f1f-3941-9045"},
+          {"name": "Psyker", "id": "9a62-50b7-0285-6760", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
+          {"name": "Infantry", "id": "b05c-28fa-5f28-a23a", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Unique", "id": "90cc-bdc3-25e5-6604", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Epidemius", "id": "549c-538d-4276-5c07", "hidden": false, "primary": false, "targetId": "7fc0-ced2-4e2f-e62c"},
+          {"name": "Chaos", "id": "7433-5e1a-0975-547a", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 75}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "41f0-2f31-38e9-0f1f", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {
+            "name": "Psychic Powers",
+            "id": "5297-2f49-8f43-c3e6",
+            "hidden": false,
+            "import": true,
+            "targetId": "b112-82f8-c4f4-5ade",
+            "type": "selectionEntryGroup",
+            "entryLinks": [
+              {"name": "Warlord Trait", "id": "2324-6533-d198-a8eb", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
+              {"name": "Psychic Powers", "id": "8c58-46e6-0cb8-069e", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
+              {"name": "Warlord", "id": "1513-e928-f8e5-4eef", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+              {"name": "Relic", "id": "1926-7532-4c07-584e", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
+            ],
+            "infoLinks": [
+              {
+                "name": "Psyker (x)",
+                "id": "024f-92e2-0c37-9868",
+                "hidden": false,
+                "targetId": "dbd6-a688-796e-e22e",
+                "type": "rule",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "4fb9-efa8-fe40-14cc",
+                        "childName": "Bale Sword",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Character", "id": "2b95-3269-1214-2eb1", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "67cb-5e0d-e691-f8f7", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "e469-cb14-eb70-996b", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
-          {"name": "Daemonic Instability", "id": "eec2-c0c5-0aba-893a", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "e209-cda0-73ac-7b04", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Feel no Pain", "id": "eec2-c0c5-0aba-893a", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Warp Surge", "id": "e209-cda0-73ac-7b04", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Character", "id": "30d7-50d2-289f-5dea", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Locus of Nurgle", "id": "44af-58b3-9421-6d70", "hidden": true, "targetId": "fdd7-a211-a0db-83d8", "type": "rule"},
+          {"name": "Daemonic Instability", "id": "4c79-fb10-81a2-02b8", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
+          {"name": "Psyker (x)", "id": "fec1-ebc2-18fe-8815", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Tally of Pestilence",
+            "id": "6cac-f196-3f2c-1f77",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "bc6b-8d84-a8b8-b453-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "bc6b-8d84-a8b8-b453-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "bc6b-8d84-a8b8-b453-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "bc6b-8d84-a8b8-b453-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Tally of Pestilence",
+                "id": "2035-de3a-92b8-4889",
+                "description": "If this unit is your Warlord, Epidemius and any attached unit gain the Arcing (6+) special rule. In addition, they gain the Shred special rule on all weapons they are equipped with that have the Poison (x) special rule.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Epidemius",
+            "id": "5cf1-95eb-09c4-fd04",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "cc26-0715-ba94-cf10-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "cc26-0715-ba94-cf10-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Close Combat Weapon",
+                "id": "b6b3-8437-336a-75c2",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d0e0-29c3-0d92-324d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "60e3-88f5-f015-ec04-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "60e3-88f5-f015-ec04-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "The Mark of Nurgle",
+                "id": "a093-5333-fba4-2966",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "a70f-07f4-5c21-cc20",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a7c1-25f0-9c5c-98c7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a7c1-25f0-9c5c-98c7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Bale Sword",
+                "id": "863d-9222-fc9b-cac7",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "4fb9-efa8-fe40-14cc",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "d62e-a2cd-4138-2a1f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d62e-a2cd-4138-2a1f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Epidemius",
+                "id": "9aad-2ead-096e-5279",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3046,18 +4315,203 @@
         "id": "ada4-fdbc-b132-b6b5",
         "hidden": false,
         "import": true,
+        "page": "47",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "9b70-b982-5097-a321", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "HQ", "id": "5197-cdd1-dd05-5d29", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Daemon", "id": "c2c9-e7fd-2d5b-5a31", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
+          {"name": "Daemon", "id": "c2c9-e7fd-2d5b-5a31", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Slaanesh", "id": "2af5-82d9-99dc-053e", "hidden": false, "primary": false, "targetId": "aa44-f9ed-c483-8c97"},
+          {"name": "Herald of Slaanesh", "id": "f10b-8e71-dbf7-a219", "hidden": false, "primary": false, "targetId": "c56b-518b-8862-e2ba"},
+          {"name": "Psyker", "id": "6a34-40fd-07b1-95db", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
+          {"name": "Infantry", "id": "14a3-1559-4389-31ad", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Unique", "id": "e888-dd46-c8e3-b0a5", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Masque of Slaanesh", "id": "be0b-c2b6-cfbc-22a2", "hidden": false, "primary": false, "targetId": "b334-69d3-98fe-e0e6"},
+          {"name": "Chaos", "id": "0fb6-294f-d5bf-2290", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Chaos", "id": "a663-6bc3-8ce7-0612", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Chaos", "id": "50cb-f4f2-ea80-20ad", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Chaos", "id": "b49d-794b-2fe7-a851", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "2694-6340-6a49-ec85", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {
+            "name": "Psychic Powers",
+            "id": "8360-0018-f413-1367",
+            "hidden": false,
+            "import": true,
+            "targetId": "b112-82f8-c4f4-5ade",
+            "type": "selectionEntryGroup",
+            "entryLinks": [
+              {"name": "Warlord Trait", "id": "69fe-8902-0ad9-0985", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
+              {"name": "Psychic Powers", "id": "3ca7-c636-9e7e-a367", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
+              {"name": "Warlord", "id": "7fb0-f458-8a4d-ea1a", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+              {"name": "Relic", "id": "01f8-873f-44ec-07de", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
+            ],
+            "infoLinks": [
+              {
+                "name": "Psyker (x)",
+                "id": "f2e2-2ebc-b7db-0e72",
+                "hidden": false,
+                "targetId": "dbd6-a688-796e-e22e",
+                "type": "rule",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "4fb9-efa8-fe40-14cc",
+                        "childName": "Bale Sword",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Character", "id": "2ea0-33ad-e3a7-6b52", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "b915-bbac-1eb7-a7f3", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "6177-0597-9384-8fd3", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
-          {"name": "Daemonic Instability", "id": "ed48-9749-ca61-d0d6", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "30db-25af-468b-98b2", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Sudden Strike", "id": "ed48-9749-ca61-d0d6", "hidden": false, "targetId": "e8ec-274c-8bea-40d2", "type": "rule"},
+          {"name": "Warp Surge", "id": "30db-25af-468b-98b2", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Character", "id": "ffb1-1285-cf28-23bd", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Psyker (x)", "id": "bdfa-a7a4-8f2e-60f7", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Locus of Slaanesh", "id": "4b6e-165e-70f5-3e40", "hidden": false, "targetId": "2c92-7005-65a0-347c", "type": "rule"},
+          {"name": "Daemonic Instability", "id": "ca33-f711-d9b4-a974", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"}
+        ],
+        "rules": [
+          {
+            "name": "Graceful Acrobatics",
+            "id": "8c10-6949-5ceb-90dc",
+            "description": "While this unit is within 3” of an enemy unit it gains a 4+ Invulnerable save.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "The Eternal Dance",
+            "id": "4460-5f64-9cdc-454a",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "614a-58ae-52ce-250d-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "614a-58ae-52ce-250d-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "614a-58ae-52ce-250d-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "614a-58ae-52ce-250d-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Eternal Dance",
+                "id": "b3d5-5109-e1b0-f4ec",
+                "description": "This units Movement (M) characteristic can never be modified negatively.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Masque of Slaanesh",
+            "id": "e0df-5cd2-82b8-6a2f",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "463f-6277-7c1f-3f83-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "463f-6277-7c1f-3f83-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Piercing Claws",
+                "id": "86c9-87df-7dd6-7de3",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "fd42-e0db-2edf-5727",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "8e4f-ff42-8bca-5837-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "8e4f-ff42-8bca-5837-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "The Mark of Slaanesh",
+                "id": "03a6-2016-1cbf-255f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "7e6c-73ce-f18e-2f52",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "47cd-e3cd-c4d3-5152-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "47cd-e3cd-c4d3-5152-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3065,18 +4519,218 @@
         "id": "5f2a-37e6-7a34-7bd1",
         "hidden": false,
         "import": true,
+        "page": "48",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "08f6-9f35-fe4c-c151", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "HQ", "id": "66bd-247d-1322-b4c5", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Daemon", "id": "0996-aed7-c4a4-6c1b", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
+          {"name": "Daemon", "id": "0996-aed7-c4a4-6c1b", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Tzeentch", "id": "bba4-d5e2-ad34-b943", "hidden": false, "primary": false, "targetId": "b73b-d185-5635-38fe"},
+          {"name": "Herald of Tzeentch", "id": "a98d-830b-8d22-2c07", "hidden": false, "primary": false, "targetId": "b88a-06b1-8e57-11c3"},
+          {"name": "Psyker", "id": "84ca-d428-3203-ac45", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
+          {"name": "Infantry", "id": "8508-ad8f-0f5e-16eb", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Unique", "id": "bf8f-bb68-b594-ca0a", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "The Changeling", "id": "7df7-6e57-ebc6-16c2", "hidden": false, "primary": false, "targetId": "f72b-7821-3b11-00bd"},
+          {"name": "Chaos", "id": "3aa9-591b-0065-2a3c", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Chaos", "id": "dbd8-d4ce-0f73-3bc3", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Chaos", "id": "7d0a-1a45-216e-eb4d", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 135}],
+        "entryLinks": [
+          {
+            "name": "Psychic Powers",
+            "id": "f988-983e-9eef-ad3d",
+            "hidden": false,
+            "import": true,
+            "targetId": "b112-82f8-c4f4-5ade",
+            "type": "selectionEntryGroup",
+            "entryLinks": [
+              {"name": "Warlord Trait", "id": "de73-ec5a-abb1-8c1e", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
+              {"name": "Psychic Powers", "id": "c2fd-8278-8957-7090", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
+              {"name": "Warlord", "id": "4096-6587-16e5-9715", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+              {"name": "Relic", "id": "e287-6dc7-a996-effe", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
+            ],
+            "infoLinks": [
+              {
+                "name": "Psyker (x)",
+                "id": "fc60-a5fe-c4c3-8f49",
+                "hidden": false,
+                "targetId": "dbd6-a688-796e-e22e",
+                "type": "rule",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "4fb9-efa8-fe40-14cc",
+                        "childName": "Bale Sword",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Character", "id": "71c1-4b88-f5f0-c045", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+            ]
+          },
+          {"name": "Warlord", "id": "b170-187d-6a27-5392", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {
+            "name": "Warp Tether",
+            "id": "5ad2-9458-46af-6b6b",
+            "hidden": false,
+            "import": true,
+            "targetId": "decb-b4ee-030e-3293",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "717b-edcf-80b5-cea9-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "717b-edcf-80b5-cea9-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "717b-edcf-80b5-cea9-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "717b-edcf-80b5-cea9-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "da73-92e8-6d36-176a",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "fc8b-6dc1-659b-8479", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "473a-a1b4-a2e2-d081", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "cc4c-2233-3f7c-c6f8", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "df01-de5e-7db1-1c39", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Warp Surge", "id": "df01-de5e-7db1-1c39", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Psyker (x)", "id": "9cdf-944f-c5cb-a88e", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Infiltrate", "id": "22a7-849c-fc91-39b2", "hidden": false, "targetId": "1f09-f0fd-d463-db52", "type": "rule"},
+          {"name": "Locus of Tzeentch", "id": "1fff-7b8a-323c-bf9b", "hidden": false, "targetId": "b941-35a3-c425-2ce2", "type": "rule"},
+          {"name": "Character", "id": "a5a0-a154-159a-d7cc", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+        ],
+        "rules": [
+          {
+            "name": "The Master of Illusions",
+            "id": "c765-90b5-20d1-a135",
+            "description": "This unit may opt to join and attach enemy units that do not already have an attached Character model. All of the normal rules for being attached apply and when targeted for attacks, the enemy unit may allocate attacks to the Changeling who may take saves as normal. An enemy unit that the Changeling is attached to suffers -1 to its Weapon Skill (WS), Ballistic Skill (BS), Attacks (A), Initiative (I), and Leadership (LD) characteristics. In addition, the enemy unit cannot contest or control objectives. While attached, the Changeling cannot attack the attached unit in any phase and must leave the attached unit before it can declare movements or charges.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "The Changeling",
+            "id": "adeb-94c8-c9d6-06a1",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "acd3-5996-fb30-0670-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "acd3-5996-fb30-0670-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "The Changeling",
+                "id": "c371-b405-bbc1-98e3",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "The Tricksters Staff",
+                "id": "db0a-2fc4-8dc3-4bd7",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "bdd0-e2e7-545b-a8b3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "bdd0-e2e7-545b-a8b3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "The Tricksters Staff",
+                    "id": "97e9-55b7-74ab-0a8c",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "*", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "*", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Morphing Form", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3084,19 +4738,91 @@
         "id": "5290-658e-ac3d-8357",
         "hidden": false,
         "import": true,
+        "page": "49",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "272c-e720-9022-07c0", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "dc86-ebf8-9ded-f4e6", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Troop", "id": "b1db-7ed0-e674-ee0a", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+          {"name": "Troop", "id": "b1db-7ed0-e674-ee0a", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Furies", "id": "627a-96b2-40ed-f786", "hidden": false, "primary": false, "targetId": "120c-e997-9e72-cd2b"},
+          {"name": "Infantry", "id": "2a63-fe76-969b-2242", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Chaos", "id": "5e82-1079-6e70-7350", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": -5}],
         "infoLinks": [
           {"name": "Deep Strike", "id": "00ad-25f8-4db3-093d", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "08ab-d81b-9426-c058", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "3687-7220-7d2d-c89c", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "4871-39d1-eeee-7baf", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
-          {"name": "Warp Surge", "id": "097f-11bd-85f2-e54d", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Fly", "id": "4871-39d1-eeee-7baf", "hidden": false, "targetId": "6848-5598-edc5-a56f", "type": "rule"},
+          {"name": "Warp Surge", "id": "097f-11bd-85f2-e54d", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "0c0c-1d07-0a71-426e", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Furies",
+            "id": "a06b-a86a-2d0a-6be8",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "c8bd-4c6e-db9f-ab7c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "8db8-7c8c-c65b-7103", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 15}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 17}],
+            "entryLinks": [
+              {
+                "name": "Hell Flame",
+                "id": "da93-4860-3613-0af2",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "2351-a2a7-6430-56e6",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "eeca-7309-c754-cf60-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "eeca-7309-c754-cf60-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Wings", "id": "f14d-5948-d87a-fad9", "hidden": false, "import": true, "targetId": "32f6-d80e-0d93-0348", "type": "selectionEntry"},
+              {
+                "name": "Close Combat Weapon",
+                "id": "61be-b722-e2f7-f5f5",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d0e0-29c3-0d92-324d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a131-f4d4-279f-3c13-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a131-f4d4-279f-3c13-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Mark of Chaos", "id": "f443-debd-ba84-4e55", "hidden": false, "import": true, "targetId": "08ca-2ebc-2187-5afc", "type": "selectionEntryGroup"}
+            ],
+            "profiles": [
+              {
+                "name": "Furies",
+                "id": "79e3-c11e-226e-4425",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "13", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "1", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3104,18 +4830,288 @@
         "id": "2d97-0658-56a8-bfa3",
         "hidden": false,
         "import": true,
+        "page": "50",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "265a-c52e-2627-a541", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "7e1a-1518-bf02-f831", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Troop", "id": "a9ca-f95f-93ed-c4aa", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+          {"name": "Troop", "id": "a9ca-f95f-93ed-c4aa", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Chaos", "id": "80df-c825-e4fc-ecbd", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Infantry", "id": "59cf-955e-dcca-a399", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Khorne", "id": "6c1b-dbcd-0ff0-3439", "hidden": false, "primary": false, "targetId": "baf3-e3a8-5dda-fc45"},
+          {"name": "Bloodletters", "id": "d541-e252-b51d-b415", "hidden": false, "primary": false, "targetId": "aea1-46f7-ab20-fd2e"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": -15}],
+        "entryLinks": [
+          {
+            "name": "Offhand",
+            "id": "ce6b-7dbd-a6cc-fd7a",
+            "hidden": false,
+            "import": true,
+            "targetId": "6583-e0f7-7c19-62a9",
+            "type": "selectionEntryGroup",
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [{"field": "cbdc-411c-cf55-3186", "type": "set", "value": 0}, {"affects": "9da8-916a-4b3d-61ce", "field": "hidden", "type": "set", "value": true}]
+              }
+            ]
+          }
         ],
         "infoLinks": [
-          {"name": "Deep Strike", "id": "4402-eb23-0d29-85dd", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Furious Charge (x)", "id": "4402-eb23-0d29-85dd", "hidden": false, "targetId": "7c71-ce9d-5649-36e8", "type": "rule"},
           {"name": "Daemon", "id": "b5ca-29ff-0d83-1ae7", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "485e-bd25-2e41-e5ee", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "6b7e-95ce-0214-d3d4", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Warp Surge", "id": "6b7e-95ce-0214-d3d4", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Deep Strike", "id": "cdd0-db1f-9186-b8f9", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Bloodletters",
+            "id": "6fc4-0a0a-9bf2-26c7",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "bdb9-4d71-71ad-d5e9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "e3d8-4545-c626-530d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 20}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 19}],
+            "entryLinks": [
+              {
+                "name": "The Mark of Khorne",
+                "id": "73d8-5e52-0213-82d3",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d7c9-bd72-2650-52d3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2acf-2d20-ac0b-593b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2acf-2d20-ac0b-593b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Hellblade",
+                "id": "b05a-3acd-4a4c-b1e4",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "8418-ff84-289e-c97d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "aa40-cf02-8610-92bf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "aa40-cf02-8610-92bf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Hell Flame",
+                "id": "e381-25a3-7c5c-2fed",
+                "hidden": false,
+                "import": true,
+                "targetId": "2351-a2a7-6430-56e6",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "1c0d-1f23-2c66-2cb3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "1c0d-1f23-2c66-2cb3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "1b88-f088-704d-50e2",
+                        "childName": "Hell Flame",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "1c0d-1f23-2c66-2cb3-min", "type": "set", "value": 0},
+                      {"field": "1c0d-1f23-2c66-2cb3-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Rift Barb",
+                "id": "aa41-4b6e-01b6-c4da",
+                "hidden": false,
+                "import": true,
+                "targetId": "4a97-6585-d7ab-0d84",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "1a4b-24cb-3cf7-e4e9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "1a4b-24cb-3cf7-e4e9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "9bae-8f08-818b-15b6",
+                        "childName": "Rift Barb",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "1a4b-24cb-3cf7-e4e9-min", "type": "set", "value": 0},
+                      {"field": "1a4b-24cb-3cf7-e4e9-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Spine Volley",
+                "id": "0c41-b807-8b74-0d65",
+                "hidden": false,
+                "import": true,
+                "targetId": "7ecd-7a53-0244-d6fd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "41ca-ab63-98a2-dabb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "41ca-ab63-98a2-dabb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "1632-8412-d59b-586c",
+                        "childName": "Spine Volley",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "41ca-ab63-98a2-dabb-min", "type": "set", "value": 0},
+                      {"field": "41ca-ab63-98a2-dabb-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Bloodletters",
+                "id": "c2d4-01e7-c93d-e828",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Daemonic Implements",
+                "id": "8cc5-e7da-d8b8-cf7e",
+                "defaultSelectionEntryId": "none",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "7e4a-8879-dbca-b0f3",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Daemonic Banner",
+                    "id": "5f6d-c6cb-1b22-cd38",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "8026-5b2a-1d04-6cb5",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "9ede-7a8a-147d-f0e2",
+                        "type": "increment",
+                        "value": 2,
+                        "repeats": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Instruments of Chaos",
+                    "id": "9df4-cda2-315d-6066",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "33dd-7cef-b4c7-4c25",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "00e2-9e8f-eb9b-588f",
+                        "type": "increment",
+                        "value": 2,
+                        "repeats": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3123,18 +5119,167 @@
         "id": "b92d-a534-8158-09e0",
         "hidden": false,
         "import": true,
+        "page": "51",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "3142-8b84-6031-7e14", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "03d2-4b0d-0a26-3f63", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Troop", "id": "91db-a5f3-43f2-dc06", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+          {"name": "Troop", "id": "91db-a5f3-43f2-dc06", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Chaos", "id": "0b8a-a8e6-caea-3dbd", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Nurgle", "id": "4ab6-5900-41d4-ab7c", "hidden": false, "primary": false, "targetId": "1739-c92f-edf1-0754"},
+          {"name": "Infantry", "id": "deb2-3bbb-4ef1-950c", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Plaguebearers", "id": "3eda-306b-e19c-28d9", "hidden": false, "primary": false, "targetId": "9fe8-1061-7b46-a9f5"}
         ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
         "infoLinks": [
           {"name": "Deep Strike", "id": "e1a7-afbf-3dca-ff50", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "df5c-6edc-cf90-b9c1", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
-          {"name": "Daemonic Instability", "id": "0e68-f23c-721f-8b3f", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "4a7f-3221-1654-2253", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Feel no Pain", "id": "0e68-f23c-721f-8b3f", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Warp Surge", "id": "4a7f-3221-1654-2253", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Daemonic Instability", "id": "c6ad-621a-f534-774b", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Plaguebearers",
+            "id": "4309-2e90-ce17-558e",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "bf29-6978-cbe8-8465", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "d336-8b7c-5f5c-ee6e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 20}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 14}],
+            "entryLinks": [
+              {
+                "name": "Plaguesword",
+                "id": "b440-385d-ae5f-2455",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "78f8-e7ff-992f-4280",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2fa1-16fb-23cb-6f65-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2fa1-16fb-23cb-6f65-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "The Mark of Nurgle",
+                "id": "50b3-4871-af3e-6e3f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "a70f-07f4-5c21-cc20",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "ba42-77d0-f757-b26b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ba42-77d0-f757-b26b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Plaguebearers",
+                "id": "621f-b139-dcca-e077",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Daemonic Implements",
+                "id": "0a2c-136e-6e83-d2e4",
+                "defaultSelectionEntryId": "none",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "dfa8-ae9f-c7d9-ccc8",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Daemonic Banner",
+                    "id": "b25a-9c80-49b6-69a2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "8026-5b2a-1d04-6cb5",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "9ede-7a8a-147d-f0e2",
+                        "type": "increment",
+                        "value": 2,
+                        "repeats": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Instruments of Chaos",
+                    "id": "0145-a18f-8409-065e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "33dd-7cef-b4c7-4c25",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "00e2-9e8f-eb9b-588f",
+                        "type": "increment",
+                        "value": 2,
+                        "repeats": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3142,18 +5287,92 @@
         "id": "bd80-8311-1053-2a8e",
         "hidden": false,
         "import": true,
+        "page": "52",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "d94b-0e51-3c7c-8e5f", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "bbb5-c4d5-6817-724f", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Troop", "id": "496e-26b8-356e-0416", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+          {"name": "Troop", "id": "496e-26b8-356e-0416", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Chaos", "id": "6f04-c5d9-73b7-3340", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Nurgle", "id": "88ca-51d0-6fe2-502a", "hidden": false, "primary": false, "targetId": "1739-c92f-edf1-0754"},
+          {"name": "Swarm", "id": "0c7c-490e-f8da-bbb4", "hidden": false, "primary": false, "targetId": "c476-cebb-6347-619c"},
+          {"name": "Nurglings", "id": "c0ba-24ba-c07a-52a3", "hidden": false, "primary": false, "targetId": "bfbb-e848-ec4f-075d"}
         ],
         "infoLinks": [
-          {"name": "Deep Strike", "id": "e945-104a-eb51-95f7", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Support Squad", "id": "e945-104a-eb51-95f7", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
           {"name": "Daemon", "id": "fb9e-d75b-5ba9-1fe2", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "a2cc-635c-ce3c-a5ea", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Warp Surge", "id": "cd6c-fe33-84bb-ed17", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+          {"name": "Warp Surge", "id": "cd6c-fe33-84bb-ed17", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Feel no Pain", "id": "62f4-feb7-0996-303f", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Deep Strike", "id": "1921-5191-eca0-647e", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Infiltrate", "id": "a53b-8015-c4fb-4190", "hidden": false, "targetId": "1f09-f0fd-d463-db52", "type": "rule"},
+          {"name": "Regeneration", "id": "8378-fa8f-5602-3591", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Hit & Run", "id": "bf2b-348a-6796-4256", "hidden": false, "targetId": "af6f-1809-3203-f730", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Nurglings",
+            "id": "9315-f97c-9ec2-18f5",
+            "defaultAmount": "3",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "9ec9-11de-56bb-1631", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 3},
+              {"id": "22d6-1abe-a7be-5160", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 9}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "entryLinks": [
+              {
+                "name": "The Mark of Nurgle",
+                "id": "a07f-cbff-cb44-7580",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "a70f-07f4-5c21-cc20",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "0685-e6ed-af45-c583-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "0685-e6ed-af45-c583-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Close Combat Weapon",
+                "id": "fe1b-e7a2-0219-d2de",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d0e0-29c3-0d92-324d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "f8ae-092e-2e0a-b7d6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f8ae-092e-2e0a-b7d6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Nurglings",
+                "id": "05b6-ea23-1d0e-416e",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "9", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "2", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "2", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "2", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "2", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "2", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3161,18 +5380,253 @@
         "id": "b380-ccb2-5f1f-1809",
         "hidden": false,
         "import": true,
+        "page": "53",
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "e4cb-5406-c410-0fd7", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "1df1-f022-6e47-6f8e", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Troop", "id": "34c1-8075-ee6d-24ab", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+          {"name": "Troop", "id": "34c1-8075-ee6d-24ab", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Chaos", "id": "7a69-ee30-9fec-4db8", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Slaanesh", "id": "e970-f489-b32d-1f09", "hidden": false, "primary": false, "targetId": "aa44-f9ed-c483-8c97"},
+          {"name": "Infantry", "id": "6c92-90ae-845d-b9d9", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Daemonettes", "id": "9fb9-dfc8-71fc-bad2", "hidden": false, "primary": false, "targetId": "a1be-cad4-62ae-7faa"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "entryLinks": [
+          {
+            "name": "Offhand",
+            "id": "1328-b3ff-4a95-9ff4",
+            "hidden": false,
+            "import": true,
+            "targetId": "6583-e0f7-7c19-62a9",
+            "type": "selectionEntryGroup",
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [{"field": "cbdc-411c-cf55-3186", "type": "set", "value": 0}, {"affects": "9da8-916a-4b3d-61ce", "field": "hidden", "type": "set", "value": true}]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "cd3e-c0c8-6d5a-1a43", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Daemon", "id": "b629-3060-11b1-c54d", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
           {"name": "Daemonic Instability", "id": "8c4f-c5cd-48a7-95b2", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
           {"name": "Warp Surge", "id": "cd5c-7b70-60b8-0d10", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Daemonettes",
+            "id": "e7cb-8438-5407-28bb",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "5783-b586-515d-4a89", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "7e47-208f-be4d-66a0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 20}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 14}],
+            "entryLinks": [
+              {
+                "name": "Hell Flame",
+                "id": "c9bf-8342-d61f-9586",
+                "hidden": false,
+                "import": true,
+                "targetId": "2351-a2a7-6430-56e6",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "e0a6-d75d-9834-bccd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "e0a6-d75d-9834-bccd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "1b88-f088-704d-50e2",
+                        "childName": "Hell Flame",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "e0a6-d75d-9834-bccd-min", "type": "set", "value": 0},
+                      {"field": "e0a6-d75d-9834-bccd-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Rift Barb",
+                "id": "d79e-d6d9-6a4c-82c0",
+                "hidden": false,
+                "import": true,
+                "targetId": "4a97-6585-d7ab-0d84",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "1da9-b3df-7730-cf8e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "1da9-b3df-7730-cf8e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "9bae-8f08-818b-15b6",
+                        "childName": "Rift Barb",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "1da9-b3df-7730-cf8e-min", "type": "set", "value": 0},
+                      {"field": "1da9-b3df-7730-cf8e-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Spine Volley",
+                "id": "83b6-adab-ecf6-80f2",
+                "hidden": false,
+                "import": true,
+                "targetId": "7ecd-7a53-0244-d6fd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "fdd7-6aaa-7780-e8ed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fdd7-6aaa-7780-e8ed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "1632-8412-d59b-586c",
+                        "childName": "Spine Volley",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "fdd7-6aaa-7780-e8ed-min", "type": "set", "value": 0},
+                      {"field": "fdd7-6aaa-7780-e8ed-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "The Mark of Slaanesh",
+                "id": "ad3d-3386-1c75-6bef",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "7e6c-73ce-f18e-2f52",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "f1bc-9a12-7a69-335b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f1bc-9a12-7a69-335b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Daemonic Implements",
+                "id": "742f-6594-2266-f802",
+                "defaultSelectionEntryId": "none",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "9efb-8cda-1cb9-bc80",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Daemonic Banner",
+                    "id": "c58c-7b53-1d24-c273",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "8026-5b2a-1d04-6cb5",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "9ede-7a8a-147d-f0e2",
+                        "type": "increment",
+                        "value": 2,
+                        "repeats": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Instruments of Chaos",
+                    "id": "3d7b-08a6-7982-3816",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "33dd-7cef-b4c7-4c25",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "00e2-9e8f-eb9b-588f",
+                        "type": "increment",
+                        "value": 2,
+                        "repeats": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3185,7 +5639,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "4cd6-cfe5-4e51-84ea", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "9f94-c40b-72e8-9ba1", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Troop", "id": "c6f6-12b9-9530-af95", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+          {"name": "Troop", "id": "c6f6-12b9-9530-af95", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Chaos", "id": "ffc3-7425-d34d-7813", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "fd0b-326f-07c7-bc69", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3204,7 +5659,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "0f6c-a4bc-55f5-c983", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "22ce-1851-e9ee-621b", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "1d0b-1dcb-b0ee-f73a", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "1d0b-1dcb-b0ee-f73a", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "612a-9652-78c3-927c", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "1db0-8f53-9475-27a9", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3223,7 +5679,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "1e70-0668-2d73-3837", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "5fc3-f140-5ab9-078e", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "017a-fbba-9d3d-ede0", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "017a-fbba-9d3d-ede0", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "4a39-3ff2-6700-2f67", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "e4fe-c148-f997-fa7a", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3242,7 +5699,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "9a2c-2cb6-c46e-990f", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "9f59-28ca-b28a-912b", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "a110-3677-d465-71f8", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "a110-3677-d465-71f8", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "d5d2-c54f-baee-8ce8", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "f229-fdd7-be2c-7810", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3261,7 +5719,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "a58e-2785-cdb2-8853", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "5593-ef77-8360-3534", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "ae98-7487-f9d3-c6bb", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "ae98-7487-f9d3-c6bb", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "39b2-2fac-aeb1-a188", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "a23d-1678-32a6-522f", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3280,7 +5739,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "bb05-0350-b6d6-b1dd", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "3334-0a65-3208-0240", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "d363-a811-9b73-b322", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "d363-a811-9b73-b322", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "0998-8ef7-5e62-8ada", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "8a1e-ed98-74ae-29ba", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3299,7 +5759,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "7732-86b5-dbd8-cd65", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "44c7-f05d-1ce1-a725", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "72b5-360b-8d97-06fa", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "72b5-360b-8d97-06fa", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "ada5-13b6-3be9-8674", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "d574-1a31-63c3-7acf", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3318,7 +5779,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "22c3-b7d6-d6d6-b6db", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "9647-1bf2-b79e-25c0", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "74f1-948e-4a00-7ff2", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "74f1-948e-4a00-7ff2", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "bc22-e8e9-da6c-4141", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "49ee-324a-9af9-ab94", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3338,7 +5800,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "af2d-3b2a-5f39-bd34", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "30e7-55fc-3da5-8ca8", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "1d60-a82f-5c7f-ccdb", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "1d60-a82f-5c7f-ccdb", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "9bd8-8be1-583f-d1d7", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "4661-9858-49d7-1271", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3357,7 +5820,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "43b2-4ce2-d3bc-1d4d", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "4bb3-6b73-a095-37c2", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Elite", "id": "16da-3cef-85ee-2c83", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+          {"name": "Elite", "id": "16da-3cef-85ee-2c83", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Chaos", "id": "4ee3-cdd7-a20c-925d", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "5d67-5ed9-c72b-b2f4", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3376,7 +5840,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "a2ae-1234-67b0-8aa3", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "61cc-7c96-223d-2226", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Fast", "id": "878f-d9a8-0be7-3791", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+          {"name": "Fast", "id": "878f-d9a8-0be7-3791", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"},
+          {"name": "Chaos", "id": "d465-1258-7fff-dc8e", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "2fb6-f761-c81a-fb48", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3395,7 +5860,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "9b00-e880-a84b-bdac", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "586a-ca4c-9d49-9164", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Fast", "id": "9fa2-613e-0c58-fd97", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+          {"name": "Fast", "id": "9fa2-613e-0c58-fd97", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"},
+          {"name": "Chaos", "id": "62a7-c93d-2b7e-0fc5", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "2789-9761-af84-aa82", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3414,7 +5880,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "2a7f-1e4b-1efd-4782", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "9143-1353-5359-e50e", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Fast", "id": "38ba-e053-6415-ccf5", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+          {"name": "Fast", "id": "38ba-e053-6415-ccf5", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"},
+          {"name": "Chaos", "id": "d469-bbb1-ceb1-07ec", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "59a6-45f8-9884-23ef", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3433,7 +5900,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "5bd3-f43f-680a-51d1", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "85e1-48b4-0988-469e", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Fast", "id": "83f7-0eae-7a4a-91f7", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+          {"name": "Fast", "id": "83f7-0eae-7a4a-91f7", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"},
+          {"name": "Chaos", "id": "96be-5111-e6de-616e", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "ca7e-e66e-2f5c-db80", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3452,7 +5920,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "5339-4e28-ae08-8c41", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "c383-18f9-c0af-96c5", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Fast", "id": "b047-eaad-bf4c-9479", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+          {"name": "Fast", "id": "b047-eaad-bf4c-9479", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"},
+          {"name": "Chaos", "id": "5d62-bbef-6202-0d84", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "ba50-d7e7-09d8-7a57", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3471,7 +5940,9 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "d485-3402-5c83-d72d", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "68fc-e9cb-a3b6-63e4", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Heavy", "id": "37fb-37c1-1e7a-97a5", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
+          {"name": "Heavy", "id": "37fb-37c1-1e7a-97a5", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
+          {"name": "Chaos", "id": "d38a-c98b-b550-1c99", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
+          {"name": "Chaos", "id": "e86a-03ee-f00d-2da3", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "1526-6419-d1a3-d5cc", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3490,7 +5961,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "63e5-ea1d-2bb0-6722", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "a179-0505-c951-b562", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Heavy", "id": "c76a-4811-5b12-6376", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
+          {"name": "Heavy", "id": "c76a-4811-5b12-6376", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
+          {"name": "Chaos", "id": "736c-546c-da55-d957", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "4a19-55e7-9246-93c3", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3509,7 +5981,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "4eab-fe4d-6e17-c1a4", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "ba52-6ab9-6cfe-ab88", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Heavy", "id": "8452-08cb-7d4c-2852", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
+          {"name": "Heavy", "id": "8452-08cb-7d4c-2852", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
+          {"name": "Chaos", "id": "ce7e-89a6-d59e-d4d1", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "77b3-d6c5-cd41-6eb6", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3528,7 +6001,8 @@
         "categoryLinks": [
           {"name": "Faction: Chaos Daemons", "id": "1f46-80d1-11ef-da1f", "hidden": false, "primary": false, "targetId": "5b64-9107-be38-9e1b"},
           {"name": "Daemon", "id": "3c79-459f-db92-1f0e", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
-          {"name": "Heavy", "id": "62c2-e418-4407-f486", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
+          {"name": "Heavy", "id": "62c2-e418-4407-f486", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
+          {"name": "Chaos", "id": "ef7c-10ca-e21b-c80e", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"}
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "096d-0f42-4982-1dcc", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -3576,6 +6050,40 @@
         "id": "fb8e-5c68-9f4d-43f8",
         "description": "When attempting to cast a Psychic Power or Psychic Weapon, a model equipped with this weapon may inflict 1 wound to itself. After allocating the wound and rolling to see if its ignored, the model may re-roll 1 dice when attempting to cast a Psychic Power.",
         "hidden": false
+      },
+      {
+        "name": "Locus of Khorne",
+        "id": "97b8-ae9b-337a-4e02",
+        "comment": "todo: No way to take rule provided in reference",
+        "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to an 8.",
+        "hidden": true
+      },
+      {
+        "name": "Locus of Nurgle",
+        "id": "fdd7-a211-a0db-83d8",
+        "comment": "todo: No way to take rule provided in reference",
+        "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to a 7.",
+        "hidden": true
+      },
+      {
+        "name": "Locus of Tzeentch",
+        "id": "b941-35a3-c425-2ce2",
+        "comment": "todo: No way to take rule provided in reference",
+        "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to a 9.",
+        "hidden": false
+      },
+      {
+        "name": "Locus of Slaanesh",
+        "id": "2c92-7005-65a0-347c",
+        "comment": "todo: No way to take rule provided in reference",
+        "description": "After rolling the on the Warp Surge table at the start of the battle round for the Warp Surge special rule, if a model with this special rule is on the battlefield and alive, you may change the result to a 6.",
+        "hidden": true
+      },
+      {
+        "name": "Morphing Form",
+        "id": "818f-e233-cb27-649e",
+        "description": "The stats of this weapon are equal to one weapon on an enemy model whose unit is engaged with this unit.",
+        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -3604,6 +6112,7 @@
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "upgrade",
         "constraints": [{"id": "00e2-9e8f-eb9b-588f", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
         "rules": [
           {
             "name": "Instruments of Chaos",
@@ -3622,6 +6131,7 @@
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "upgrade",
         "constraints": [{"id": "9ede-7a8a-147d-f0e2", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
         "rules": [
           {
             "name": "Daemonic Banner",
