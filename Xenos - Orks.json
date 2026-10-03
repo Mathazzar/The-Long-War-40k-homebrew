@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "[Klan]", "id": "5ee1-b487-b991-0e62", "hidden": false},
@@ -22,6 +22,7 @@
             "field": "selections",
             "includeChildForces": true,
             "includeChildSelections": true,
+            "message": "{force} requires {difference} more Fast Attack choices",
             "scope": "force",
             "shared": true,
             "type": "min",
@@ -36,7 +37,7 @@
             "scope": "force",
             "shared": true,
             "type": "max",
-            "value": 0
+            "value": -1
           }
         ],
         "modifiers": [
@@ -61,6 +62,19 @@
             "field": "50ed-7a7f-4b05-1027",
             "type": "increment",
             "value": 1,
+            "conditions": [
+              {
+                "childId": "f439-fa59-3a2c-bf5e",
+                "childName": "Kult of Speed",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
             "repeats": [
               {
                 "childId": "c831-e8d6-bb33-52b3",
@@ -75,6 +89,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "50ed-7a7f-4b05-1027",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "f439-fa59-3a2c-bf5e",
+                "childName": "Kult of Speed",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -85,7 +117,10 @@
         "name": "Kaptain Badrukk",
         "id": "a48a-6924-e476-eab1",
         "hidden": false,
-        "constraints": [{"id": "b2a2-0059-c659-0680", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0}],
+        "constraints": [
+          {"id": "b2a2-0059-c659-0680", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "d02c-7791-0bf5-7efc", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
         "modifiers": [
           {
             "field": "b2a2-0059-c659-0680",
@@ -153,7 +188,12 @@
       },
       {"name": "Mek Stompa", "id": "ee92-6ef7-e096-49ed", "hidden": false},
       {"name": "[Grot Revolutionary Committee]", "id": "760f-537a-c109-0aaa", "hidden": false},
-      {"name": "Da Red Gobbo", "id": "d9ec-3574-42d2-c56e", "hidden": false},
+      {
+        "name": "Da Red Gobbo",
+        "id": "d9ec-3574-42d2-c56e",
+        "hidden": false,
+        "constraints": [{"id": "81af-956d-dd9d-194d", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {
         "name": "Inf",
         "id": "e2b8-9ff5-22c8-934c",
@@ -304,17 +344,52 @@
           }
         ]
       },
-      {"name": "Mek Boss Buzzgob", "id": "94c9-60e4-7166-0cc8", "hidden": false},
+      {
+        "name": "Mek Boss Buzzgob",
+        "id": "94c9-60e4-7166-0cc8",
+        "hidden": false,
+        "constraints": [{"id": "160c-a6ab-9dca-a57d", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Goffs]", "id": "e71c-b010-98f4-5ff9", "hidden": false},
-      {"name": "Boss Zagstuk", "id": "a555-623f-30f3-d216", "hidden": false},
+      {
+        "name": "Boss Zagstuk",
+        "id": "a555-623f-30f3-d216",
+        "hidden": false,
+        "constraints": [{"id": "444c-a67a-cc6b-5fd6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Blood Axes]", "id": "eb67-b515-2ae8-89f9", "hidden": false},
-      {"name": "Boss Snikrot", "id": "0903-939a-23a9-c4af", "hidden": false},
+      {
+        "name": "Boss Snikrot",
+        "id": "0903-939a-23a9-c4af",
+        "hidden": false,
+        "constraints": [{"id": "2528-d019-6338-9ead", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Evil Sunz]", "id": "2074-5adf-d16b-c280", "hidden": false},
-      {"name": "Zhadsnark Da Rippa", "id": "e851-8a1a-aad2-0ba7", "hidden": false},
+      {
+        "name": "Zhadsnark Da Rippa",
+        "id": "e851-8a1a-aad2-0ba7",
+        "hidden": false,
+        "constraints": [{"id": "8c2e-9b3a-f043-a157", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Snake Bites]", "id": "7773-d277-f242-7f94", "hidden": false},
-      {"name": "Mozrog Skragbad", "id": "941e-1923-8041-a86c", "hidden": false},
-      {"name": "Zodgrod Wortsnagga", "id": "b985-2ce1-ead9-13df", "hidden": false},
-      {"name": "Ghazghkull Uruk Thraka", "id": "7d62-e006-110d-1d00", "hidden": false},
+      {
+        "name": "Mozrog Skragbad",
+        "id": "941e-1923-8041-a86c",
+        "hidden": false,
+        "constraints": [{"id": "f0ef-59fa-ad08-dd71", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Zodgrod Wortsnagga",
+        "id": "b985-2ce1-ead9-13df",
+        "hidden": false,
+        "constraints": [{"id": "db56-e18f-87b6-e714", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Ghazghkull Uruk Thraka",
+        "id": "7d62-e006-110d-1d00",
+        "hidden": false,
+        "constraints": [{"id": "1644-d5c6-56a2-d214", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Ork Boyz", "id": "b74f-e32a-5984-a903", "hidden": false},
       {"name": "Nob Mob", "id": "04b3-fb4a-7dbc-f182", "hidden": false},
       {"name": "Gretchin Mob", "id": "ee50-8707-5332-c9d4", "hidden": false},
@@ -773,7 +848,7 @@
                 "page": "21",
                 "publicationId": "3cdc-bfbe-759f-8d6b",
                 "type": "upgrade",
-                "modifiers": [{"affects": "d22f-83a4-1032-2783", "field": "category", "scope": "roster", "type": "add", "value": "5f4d-de3c-7e3f-bd20"}]
+                "modifiers": [{"affects": "self.entries.forces.recursive.d22f-83a4-1032-2783", "field": "category", "scope": "roster", "type": "add", "value": "5f4d-de3c-7e3f-bd20"}]
               },
               {
                 "name": "Squigpede",
@@ -4051,27 +4126,27 @@
             "import": true,
             "type": "model",
             "constraints": [
-              {"id": "c7df-73c0-5541-d7ed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "c7df-73c0-5541-d7ed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "0a7f-4ea7-48ec-0ef4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0a7f-4ea7-48ec-0ef4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
               {
                 "name": "He’avy Armour",
                 "id": "bd16-12d1-b12e-d91b",
                 "defaultAmount": "1",
-                "hidden": true,
+                "hidden": false,
                 "import": true,
                 "targetId": "388b-2df1-6738-66ff",
                 "type": "selectionEntry",
                 "constraints": [{"id": "874c-89fd-9972-df6f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
               },
-              {"name": "Stikk bombs", "id": "15ce-2032-ea4e-fc63", "hidden": true, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
+              {"name": "Stikk bombs", "id": "15ce-2032-ea4e-fc63", "hidden": false, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
               {
                 "name": "Force Field",
                 "id": "1034-2e9e-923c-77fa",
                 "defaultAmount": "1",
-                "hidden": true,
+                "hidden": false,
                 "import": true,
                 "targetId": "690e-2db0-52e2-0aba",
                 "type": "selectionEntry",
@@ -4082,7 +4157,7 @@
                 "name": "Grot Oiler",
                 "id": "86ec-7666-216e-585e",
                 "defaultAmount": "1",
-                "hidden": true,
+                "hidden": false,
                 "import": true,
                 "targetId": "9b3d-322b-85b9-4b4f",
                 "type": "selectionEntry",
@@ -16744,82 +16819,6 @@
         "publicationId": "3cdc-bfbe-759f-8d6b",
         "type": "upgrade",
         "rules": [{"name": "Brutal but Kunnin", "id": "24e5-401f-703c-51a0", "description": "The Warlord gains the Rage and Zealot special rules.", "hidden": false}]
-      },
-      {
-        "name": "Force Organization: Heavy Support",
-        "id": "1e8e-a64f-440c-fe54",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "bae1-a876-7f39-d3bc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
-          {"field": "category", "scope": "unit", "type": "set-primary", "value": "c831-e8d6-bb33-52b3"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
-        ]
-      },
-      {
-        "name": "Force Organization: Dedicated Transport",
-        "id": "ba61-a73f-f059-cf58",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "8cca-c37b-0514-ba63", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
-          {"field": "category", "scope": "unit", "type": "set-primary", "value": "cb56-41eb-9b8c-2a8c"}
-        ]
-      },
-      {
-        "name": "Force Organization: Troop",
-        "id": "cd9e-d590-95bd-2dfd",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "cb08-2e6c-140a-e86f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
-          {"field": "category", "scope": "unit", "type": "set-primary", "value": "9f3a-4892-68dc-2701"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
-        ]
-      },
-      {
-        "name": "Force Organization: Elite",
-        "id": "c9f9-3940-2fc2-709e",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "89e8-1968-9f29-3be1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
-          {"field": "category", "scope": "unit", "type": "set-primary", "value": "f907-c80d-2520-e7f7"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
-          {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
-        ]
       },
       {
         "name": "Lifta-Droppa (P)",

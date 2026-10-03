@@ -1,0 +1,12 @@
+{
+  "catalogue": {
+    "name": "Chaos - Renegades & Heretics",
+    "id": "f634-4ef7-932a-8dfa",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 9,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue"
+  }
+}
