@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 4,
     "library": true,
-    "revision": 4,
+    "revision": 5,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - Imperial Guard", "id": "70d5-ec7b-4e75-5145", "importRootEntries": false, "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"}],
     "categoryEntries": [
@@ -981,7 +981,18 @@
         "type": "upgrade",
         "constraints": [{"id": "e38b-8346-5422-7ab1", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-        "entryLinks": [{"name": "Jump Pack", "id": "0ddf-49d5-f58a-e39a", "hidden": false, "import": true, "targetId": "e6f7-2f81-de3b-88aa", "type": "selectionEntry"}],
+        "entryLinks": [
+          {
+            "name": "Jump Pack",
+            "id": "0ddf-49d5-f58a-e39a",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "6029-ff30-bd91-9976",
+            "type": "selectionEntry",
+            "constraints": [{"id": "a53c-e0fb-ccc6-f0a5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ],
         "modifierGroups": [
           {"type": "and", "modifiers": [{"affects": "entries.recursive.profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "unit", "type": "floor", "value": "12"}]}
         ],
@@ -1457,7 +1468,20 @@
               {"name": "Shadow Masters Cloak", "id": "0c7e-c2e8-e81e-a851", "hidden": false, "import": true, "targetId": "835f-838c-9a71-78c7", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "3be0-3ad3-7ec4-fd6a", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "7fe0-6e3a-a5b4-ff67", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
-              {"name": "Artificer Armour", "id": "825d-73d1-ddb2-0a79", "hidden": false, "import": true, "targetId": "0eb7-abdf-0480-6425", "type": "selectionEntry"}
+              {
+                "name": "Artificer Armour",
+                "id": "825d-73d1-ddb2-0a79",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "504d-7a9b-cb14-1472",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2b81-6daf-b82f-9810-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2b81-6daf-b82f-9810-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Iron Halo", "id": "abfa-bd15-cea4-8310", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -1527,17 +1551,6 @@
                     "description": "The Blackwing Mantle is a Jump Pack. It confers all the benefits of a Jump Pack. However, the unit’s Movement (M) characteristic is increased to 18” instead.",
                     "hidden": false
                   }
-                ]
-              },
-              {
-                "name": "Iron Halo",
-                "id": "8274-9fd8-efa6-9149",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "adb3-acaa-6d4d-3e18-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "adb3-acaa-6d4d-3e18-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               }
             ],
@@ -1694,7 +1707,16 @@
               {"name": "Smoke Launchers", "id": "24b1-4715-0e39-6dbe", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "4b4c-1106-633c-f81b", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "4edb-03ba-5a2a-4f0b", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
-              {"name": "Jump Pack", "id": "bdbb-1304-11e9-c0c9", "hidden": false, "import": true, "targetId": "e6f7-2f81-de3b-88aa", "type": "selectionEntry"},
+              {
+                "name": "Jump Pack",
+                "id": "bdbb-1304-11e9-c0c9",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "6029-ff30-bd91-9976",
+                "type": "selectionEntry",
+                "constraints": [{"id": "8437-7d64-df6b-dbd5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {"name": "Shard of Istvaan", "id": "df60-4f3e-bd83-70cb", "hidden": false, "import": true, "targetId": "3805-76c1-b6e7-2cef", "type": "selectionEntry"},
               {"name": "Shadow Masters Cloak", "id": "d03f-b302-5a63-877b", "hidden": false, "import": true, "targetId": "835f-838c-9a71-78c7", "type": "selectionEntry"},
               {
@@ -1706,7 +1728,8 @@
                 "targetId": "57f1-e1f2-d14b-2d76",
                 "type": "selectionEntry",
                 "constraints": [{"id": "46ed-3a18-d59b-5980", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
-              }
+              },
+              {"name": "Iron Halo", "id": "ac64-c4b0-fd08-2ab0", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -1730,18 +1753,6 @@
               }
             ],
             "selectionEntries": [
-              {
-                "name": "Iron Halo",
-                "id": "7b35-d04d-0cef-f29b",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "50ce-9f24-c6da-5d18-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "50ce-9f24-c6da-5d18-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
               {
                 "name": "Raven’s Talons",
                 "id": "5ebf-4af3-7a62-000a",
@@ -1994,7 +2005,19 @@
                   {"id": "7c75-eeb9-68cb-da55-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Artificer Armour", "id": "2bde-9d2c-8c28-8ae3", "hidden": false, "import": true, "targetId": "0eb7-abdf-0480-6425", "type": "selectionEntry"},
+              {
+                "name": "Artificer Armour",
+                "id": "2bde-9d2c-8c28-8ae3",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "504d-7a9b-cb14-1472",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c8e3-85e0-7156-17e1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c8e3-85e0-7156-17e1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
               {
                 "name": "Shadow Masters Cloak",
                 "id": "b020-24e3-5dfa-ef2b",
@@ -2197,14 +2220,23 @@
             "entryLinks": [
               {"name": "Krak Grenades", "id": "a1aa-7ee9-8e24-e30b", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "8fc5-cba9-0d06-00a6", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
-              {"name": "Jump Pack", "id": "3b9f-ebf1-d1c7-6714", "hidden": false, "import": true, "targetId": "e6f7-2f81-de3b-88aa", "type": "selectionEntry"},
+              {
+                "name": "Jump Pack",
+                "id": "3b9f-ebf1-d1c7-6714",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "6029-ff30-bd91-9976",
+                "type": "selectionEntry",
+                "constraints": [{"id": "f069-7efe-3549-5d0c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {
                 "name": "Melta Bomb",
                 "id": "66aa-ad8a-1bc7-1930",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "03b5-e8c3-1720-96a8",
+                "targetId": "3649-d648-4d6b-786f",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "2cc7-2963-5667-f2f0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -2224,7 +2256,8 @@
                   {"id": "c976-9507-bbdd-0594-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
-              }
+              },
+              {"name": "Iron Halo", "id": "e63d-aec6-1751-ed2d", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -2248,18 +2281,6 @@
               }
             ],
             "selectionEntries": [
-              {
-                "name": "Iron Halo",
-                "id": "7baf-7ff8-2502-ae7f",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "228d-0fce-6296-75ec-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "228d-0fce-6296-75ec-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
               {
                 "name": "Power Armour",
                 "id": "a178-2d8b-24f2-3ced",
@@ -2507,7 +2528,7 @@
                 "id": "757e-4b77-5741-d9d6",
                 "hidden": false,
                 "import": true,
-                "targetId": "03b5-e8c3-1720-96a8",
+                "targetId": "3649-d648-4d6b-786f",
                 "type": "selectionEntry",
                 "constraints": [{"id": "a064-3f15-276c-856b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
@@ -3102,7 +3123,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "03b5-e8c3-1720-96a8",
+                "targetId": "3649-d648-4d6b-786f",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "469e-4d67-419b-60ba-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -3130,6 +3151,19 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "0fb2-3156-fa17-8f54", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              },
+              {
+                "name": "Auspex Scanner",
+                "id": "dee3-3f1d-1943-0168",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c397-e8e5-f71d-2cb0",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "f22c-42c2-bb26-d93d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f22c-42c2-bb26-d93d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "profiles": [
@@ -3154,18 +3188,6 @@
               }
             ],
             "selectionEntries": [
-              {
-                "name": "Auspex Scanner",
-                "id": "0677-48dd-f9ab-78ad",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "3ade-86dd-1483-10cc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3ade-86dd-1483-10cc-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
               {
                 "name": "Digital Weapons",
                 "id": "f98f-d157-3582-ab6d",
@@ -3213,7 +3235,7 @@
                     "id": "68ed-faa3-9496-69c1",
                     "hidden": false,
                     "import": true,
-                    "targetId": "e6f7-2f81-de3b-88aa",
+                    "targetId": "6029-ff30-bd91-9976",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
                     "modifiers": [
@@ -3393,7 +3415,7 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
                   },
                   {"name": "Plasma Gun", "id": "184f-a506-b281-0462", "hidden": false, "import": true, "targetId": "c556-718e-4c41-5c19", "type": "selectionEntry"},
-                  {"name": "Meltagun", "id": "092b-8560-c0e5-4ec9", "hidden": false, "import": true, "targetId": "0c40-509d-54fe-f856", "type": "selectionEntry"},
+                  {"name": "Meltagun", "id": "092b-8560-c0e5-4ec9", "hidden": false, "import": true, "targetId": "6186-a63d-2245-c4bb", "type": "selectionEntry"},
                   {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "c182-edc4-2773-442f", "type": "selectionEntry"}
                 ],
                 "selectionEntries": [

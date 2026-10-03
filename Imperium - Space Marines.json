@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 8,
+    "revision": 9,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -16,7 +16,8 @@
         "importRootEntries": true,
         "targetId": "8d74-a408-f5f8-51c1",
         "type": "catalogue"
-      }
+      },
+      {"name": "Imperium - shared rules", "id": "4253-4e1d-f16f-62c6", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
@@ -2095,10 +2096,7 @@
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Captain", "id": "4c81-3065-3fff-8963", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"}],
         "entryLinks": [{"name": "Master of Command", "id": "3c1d-b580-415f-72b2", "hidden": false, "import": true, "targetId": "9ac7-8a44-d62f-19b9", "type": "selectionEntry"}],
-        "infoLinks": [
-          {"name": "And they shall know no Fear", "id": "39b5-9761-ed1d-88e9", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Iron Halo", "id": "6b81-f6d2-2eec-7625", "hidden": false, "targetId": "939f-f5d9-45bd-8ea1", "type": "rule"}
-        ]
+        "infoLinks": [{"name": "And they shall know no Fear", "id": "39b5-9761-ed1d-88e9", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}]
       },
       {
         "name": "Kayvaan Shrike",
@@ -2108,10 +2106,7 @@
         "targetId": "92ef-7855-2cec-80a8",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Captain", "id": "186e-ea35-bfe2-b05a", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"}],
-        "infoLinks": [
-          {"name": "Iron Halo", "id": "b06f-bead-8e31-5e06", "hidden": false, "targetId": "939f-f5d9-45bd-8ea1", "type": "rule"},
-          {"name": "And they shall know no Fear", "id": "d744-e4d2-ddf4-9fcd", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}
-        ]
+        "infoLinks": [{"name": "And they shall know no Fear", "id": "d744-e4d2-ddf4-9fcd", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}]
       },
       {
         "name": "Shadow Captain Solaq",
@@ -2134,7 +2129,6 @@
         "infoLinks": [
           {"name": "Thunder Hammer", "id": "71d4-ec1d-e125-fc36", "hidden": false, "targetId": "50ff-fc23-bc8a-fe34", "type": "profile"},
           {"name": "And they shall know no Fear", "id": "a6ba-d66a-8a95-32c7", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Iron Halo", "id": "a9fe-101d-dd7c-d7a5", "hidden": false, "targetId": "939f-f5d9-45bd-8ea1", "type": "rule"},
           {"name": "Digital Weapons", "id": "109d-80a2-a439-0b1a", "hidden": false, "targetId": "aeb5-4df4-329c-f4b5", "type": "rule"}
         ]
       },
@@ -5889,20 +5883,6 @@
     ],
     "sharedProfiles": [
       {
-        "name": "storm Gauntlet (melee)",
-        "id": "34cd-a6b9-1a0f-756f",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Unwieldy, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
         "name": "Veteran Sergeant",
         "id": "5cc4-7146-09a3-a8df",
         "hidden": false,
@@ -5981,36 +5961,6 @@
         ]
       },
       {
-        "name": "Flamer",
-        "id": "2a68-a7ea-6fa7-c9cf",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
-        "name": "Meltagun",
-        "id": "0890-7e89-f08b-968b",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
         "name": "Chainfist",
         "id": "5717-521b-140b-421f",
         "hidden": false,
@@ -6022,21 +5972,6 @@
           {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
           {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "Unwieldy, Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
-        "name": "Lascannon",
-        "id": "fa97-7830-a56b-2a42",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
         ]
       },
       {
@@ -6270,14 +6205,6 @@
     ],
     "sharedRules": [
       {
-        "name": "And they shall know no Fear",
-        "id": "f40b-cc5e-6659-c56e",
-        "description": "Space Marine units with this rule gain the following benefits:\n• Space Marine units automatically Rally at the start of your movement phase.\n• Space Marine units do not take any wounds when retreating from a model that performed a sweeping advance ending their sweeping advance within 1” of the Space Marine model.\n• If a Space Marine would undertake a Fall Back Move after failing a Panic test which would cause it to move off the board, it stops 1” away from the board edge and instead automatically rallies.",
-        "hidden": false,
-        "page": "7",
-        "publicationId": "1606-03fb-e01d-e0cf"
-      },
-      {
         "name": "None Wanting",
         "id": "75a8-963e-5640-3724",
         "description": "All Blood Ravens units in your army have the Stubborn and Adamantium Will special rules.",
@@ -6341,19 +6268,6 @@
         "name": "Void Shields (x)",
         "id": "bb6f-27b9-f7ca-253f",
         "description": "A unit with this wargear gains a number of Void Shield Tokens equal to the value of (x). Each time this unit takes a Penetrating Hit, if it has a Void Shield Token, you spend a token to ignore that Penetrating Hit. At the start of each Battle Round, you regain 1 spent Void Shield Token. Instead of setting to Overwatch, you can set to Recharge Voids. A unit that Recharges Voids, regains all of its Void Shield Tokens.",
-        "hidden": false
-      },
-      {"name": "Iron Halo", "id": "939f-f5d9-45bd-8ea1", "description": "A model with an Iron Halo has a 4+ Invulnerable save.", "hidden": false},
-      {
-        "name": "Digital Weapons",
-        "id": "aeb5-4df4-329c-f4b5",
-        "description": "A model with Digital weapons gains +1 to their Attacks (A) characteristic.",
-        "hidden": false
-      },
-      {
-        "name": "Auspex Scanner",
-        "id": "c18b-7a71-9264-538d",
-        "description": "Enemy units may not Infiltrate within 18” of a model equipped with this wargear.",
         "hidden": false
       },
       {"name": "Angels of Death", "id": "edfb-d641-ce62-8542", "comment": "todo: No profile provided in reference", "hidden": false}
@@ -6494,111 +6408,6 @@
         ]
       },
       {
-        "name": "Master of Command",
-        "id": "9ac7-8a44-d62f-19b9",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "7",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "9860-bc11-48f0-ccd0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "9860-bc11-48f0-ccd0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
-          {"id": "e910-9605-5108-8b6a", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Master of Command",
-            "id": "d4d4-4350-213c-409c",
-            "description": "You may only field 1 model in your army with this special rule. If your army includes a model with this special rule, they must be your Warlord.",
-            "hidden": false,
-            "page": "7",
-            "publicationId": "1606-03fb-e01d-e0cf"
-          }
-        ]
-      },
-      {
-        "name": "Smoke Launchers",
-        "id": "8ad7-47d2-21ea-3b33",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "6d27-07ae-907d-0e33-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "6d27-07ae-907d-0e33-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Smoke Launchers",
-            "id": "8643-98c3-a6d5-3359",
-            "description": "A model equipped with this Wargear can set to smoke instead of Overwatching. Until the start of its next turn, the model gains a 4+ Cover Save.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Auspex Scanner",
-        "id": "c397-e8e5-f71d-2cb0",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Auspex Scanner", "id": "4d38-6ccf-4ccd-26d5", "hidden": false, "targetId": "c18b-7a71-9264-538d", "type": "rule"}]
-      },
-      {
-        "name": "Iron Halo",
-        "id": "e4e6-277e-371d-1ba9",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Iron Halo", "id": "be2a-d1db-34ad-d2dc", "hidden": false, "targetId": "939f-f5d9-45bd-8ea1", "type": "rule"}]
-      },
-      {
-        "name": "Storm Shields",
-        "id": "f149-873d-0ef1-c92d",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Storm Shields",
-            "id": "8433-04af-2e05-2419",
-            "description": "Storm Shields provide the model equipped with the Storm Shield a 4+ Invulnerable save. A model with this wargear gains the Battle-Hardened special rule.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Refractor field",
-        "id": "440e-4a18-c4ad-6bb6",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [{"name": "Refractor field", "id": "cf17-699c-9515-4dd3", "description": "A model with a refractor Field has a 5+ Invulnerable save.", "hidden": false}]
-      },
-      {
-        "name": "Rosarius",
-        "id": "31c6-abad-342b-9638",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [{"name": "Rosarius", "id": "4147-8781-8f58-2d8d", "description": "A model with a Rosarius has a 4+ Invulnerable save.", "hidden": false}]
-      },
-      {
         "name": "Relic Shield",
         "id": "8734-9485-18c5-1b11",
         "collective": true,
@@ -6617,16 +6426,6 @@
         ]
       },
       {
-        "name": "Bionics",
-        "id": "ff88-5905-4bfe-7f3b",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [{"name": "Bionics", "id": "bef8-17ce-c2df-cffa", "description": "A model with this wargear gains the Feel no Pain (6+) special rule.", "hidden": false}]
-      },
-      {
         "name": "Camo Cloaks",
         "id": "e71a-93a2-ab63-9e13",
         "hidden": false,
@@ -6642,120 +6441,6 @@
             "hidden": false
           }
         ]
-      },
-      {
-        "name": "Combat Shields",
-        "id": "4254-8dcd-824b-e02d",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Combat Shields",
-            "id": "8bc4-4881-977d-56dc",
-            "description": "A model equipped with this wargear has a 6+ Invulnerable save. In addition, they gain +1 to their Armour Save Max 2+) in the Combat Phase.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Chapter Banner",
-        "id": "ff10-eb40-1ad8-0521",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Chapter Banner",
-            "id": "c0eb-d6fa-cbc6-4e16",
-            "description": "Friendly Space Marines units within 12” of the Banner can re-roll Pinning and Panic tests. In addition, when calculating the number of wounds caused in a combat for the purpose of determining if a unit within 12” of a model with this wargear has won or lost a combat, add 1 to the number of wounds caused by friendly Space Marine units within 12” of a model with this wargear.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Melta Bomb",
-        "id": "3649-d648-4d6b-786f",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Melta Bomb",
-            "id": "56d4-8f5a-662f-5872",
-            "description": "In combat, a model with this wargear may forgo its attacks and instead make a single Strength 8, AP1 attack with the Melta Special rule at Initiative step 1.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Teleport Homer",
-        "id": "1e1f-77bf-b9ab-f22f",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Teleport Homer",
-            "id": "78e4-0d9b-c468-8599",
-            "description": "A unit that arrives on the battlefield via Deep Strike within 12” of a unit with this wargear does not scatter.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Psychic Hood",
-        "id": "7290-e9c7-b7e0-950d",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Psychic Hood",
-            "id": "6738-1495-d5ce-72fa",
-            "description": "A unit that arrives on the battlefield via Deep Strike within 12” of a unit with this wargear does not scatter.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Narthecium",
-        "id": "f239-97a0-fdf2-e8c2",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Narthecium",
-            "id": "5bf2-dbf4-fee9-72bf",
-            "description": "A model with this Wargear and their attached unit gain Feel No Pain (5+) Special rule.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Digital Weapons",
-        "id": "7abf-e940-51aa-1a1e",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Digital Weapons", "id": "2027-5554-13b1-8164", "hidden": false, "targetId": "aeb5-4df4-329c-f4b5", "type": "rule"}],
-        "modifiers": [{"affects": "profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "model", "type": "increment", "value": 1}]
       },
       {
         "name": "Omni - Scrambler",
@@ -6836,18 +6521,6 @@
         ]
       },
       {
-        "name": "Power Armour",
-        "id": "8eb8-a457-ad6c-9266",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {"name": "Power Armour", "id": "ed81-ab55-a86d-d04f", "description": "Basic Power Armour used by most Astartes. It provides a 3+ Armour Save.", "hidden": false}
-        ]
-      },
-      {
         "name": "Scout Armour",
         "id": "a4ba-4903-d3aa-0406",
         "hidden": false,
@@ -6861,118 +6534,6 @@
             "name": "Scout Armour",
             "id": "1067-ff6e-5774-025d",
             "description": "Basic Armour used by Space Marine Scout forces. It's lightweight and easy to move in. It provides a 4+ Armour save and gives the wearer the Scout, Outflank and Skirmisher special rules.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Indomitus Terminator Armour",
-        "id": "5048-d77b-37d4-15b9",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "add", "value": "b2b5-3d4c-75aa-f071"},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Terminator", "type": "append", "value": "in Terminator Armour"},
-              {"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Indomitus Terminator Armour",
-            "id": "8f82-af01-b634-911b",
-            "description": "The Standard Terminator Armour used by most Astartes forces. It provides a 2+ Armour Save and a 5+ Invulnerable Save. The wearer gains the Relentless, Bulky (2) and Deep Strike special rule. Models equipped with this Armour may not perform Sweeping Advances. It grants the Terminator Keyword.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Dreadnought Plate",
-        "id": "4d42-d3d4-8133-9643",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "ee64-120e-5af1-f83b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "ee64-120e-5af1-f83b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "unit", "type": "set", "value": "2"}],
-        "rules": [
-          {
-            "name": "Dreadnought Plate",
-            "id": "2aa4-58cb-600c-37a0",
-            "description": "These ancient and powerful mechanised war suit encompasses a sarcophagus where an ancient warrior lay entombed. When combined, the warrior may take to the field again with a new body. It confers a 2+ Armour save.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Gravis Armour",
-        "id": "1618-4349-e229-5a93",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Gravis", "type": "append", "value": "in Gravis Armour"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Gravis Armour",
-            "id": "f4bb-6aa9-c55a-510d",
-            "description": "Gravis Armour is a bulk multi-layered heavy assault Armour for Primaris. It provides a 3+ Armour save and grants the wearer +1 to their Toughness (T) characteristic. The wearers Movement (M) Characteristic is decreased by 1”. The model gains the Bulky (2) special rule. If a model wearing Gravis Armour is hit by a weapon with the Blast or Large Blast special rule, decrease the AP of the weapon by 1 (e.g 3 becomes 4) for the purposes of resolving that hit. The model gains the Relentless Special rule.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Artificer Armour",
-        "id": "504d-7a9b-cb14-1472",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}],
-        "rules": [
-          {
-            "name": "Artificer Armour",
-            "id": "68fb-7288-2338-be94",
-            "description": "Master work Armour issued to veterans and champions. It provides a 2+ Armour Save.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Phobos Armour",
-        "id": "7bda-70a0-075d-1773",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Phobos Armour",
-            "id": "2bb3-d70f-d841-5a53",
-            "description": "A Stealth designed version of the standard power Armour for infiltration. It provides a 3+ Armour save and grants the wearer the Infiltrate special rule.",
             "hidden": false
           }
         ]
@@ -7050,32 +6611,6 @@
             "name": "Centurion Armour",
             "id": "6b8b-a5f2-18d2-457c",
             "description": "Centurion Armour is a massive, powered suit of Armour worn over normal power Armour. It provides a 2+ Armour save. In addition, it grants the wearer +1 to their Wound (W), Strength (S) and Toughness (T) characteristics, as well as the Relentless, Bulky (3) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 2”A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Jump Pack",
-        "id": "6029-ff30-bd91-9976",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "with Jump Pack"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "floor", "value": "12"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Jump Pack",
-            "id": "330d-feb4-48cf-52a7",
-            "description": "A unit that is equipped with a Jump Pack increases its Movement (M) characteristic to 12”. The model gains the Hammer of Wrath (1), Bulky (2), Fly and Deep Strike special rules.",
             "hidden": false
           }
         ]
@@ -7165,46 +6700,6 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Assault launchers",
-        "id": "9820-dc59-1694-96c5",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Assault launchers",
-            "id": "7290-68ed-6bac-4aa7",
-            "description": "A model equipped with this Wargear can make 1 additional Hammer of Wrath Attack.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Searchlight",
-        "id": "f73f-65da-ed30-45d5",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "ddc2-fe94-988e-18d7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "ddc2-fe94-988e-18d7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Searchlight",
-            "id": "03b1-2036-4356-38a3",
-            "description": "A model with this special rule gains the Night Vision special rule. Any unit that it targets in the Shooting Phase no longer gains the benefit of Night Fighting. Any attacks against this unit are not affected by Night Fighting.",
-            "hidden": false
           }
         ]
       },
@@ -7674,33 +7169,6 @@
         ]
       },
       {
-        "name": "Hand Flamer",
-        "id": "3d36-8e4a-4651-6e84",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Hand Flamer",
-            "id": "3e89-68d0-dc9b-381e",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Assault Bolters",
         "id": "8643-48b6-fe63-6d7c",
         "collective": true,
@@ -8084,108 +7552,6 @@
         ]
       },
       {
-        "name": "Linked Heavy Flamer",
-        "id": "813b-3d8e-9dcf-637e",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Heavy Flamer",
-            "id": "5b0d-0454-200a-d60b",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked, Spray", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Flamestorm Gauntlets",
-        "id": "b371-6dd1-80d7-d31d",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [
-          {
-            "name": "storm Gauntlet (melee)",
-            "id": "e58e-2f1d-6a72-f799",
-            "hidden": false,
-            "targetId": "34cd-a6b9-1a0f-756f",
-            "type": "profile",
-            "modifiers": [{"field": "name", "join": "", "type": "prepend", "value": "Flame"}]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Flamestorm Gauntlets (Shooting)",
-            "id": "5ae1-4918-9088-a5ec",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Heavy Flamer",
-        "id": "4b58-2b09-3805-2dab",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Heavy Flamer",
-            "id": "8159-0f28-f80b-35ed",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Flamer",
-        "id": "958b-0867-67db-e40a",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Flamer", "id": "1580-3bdb-7a7c-5ced", "hidden": false, "targetId": "2a68-a7ea-6fa7-c9cf", "type": "profile"}]
-      },
-      {
         "name": "Linked Storm Strike Missiles",
         "id": "455b-1dd1-6821-a970",
         "collective": true,
@@ -8213,179 +7579,6 @@
         ]
       },
       {
-        "name": "Heavy Stubber",
-        "id": "311c-6a4b-f092-bc5e",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Heavy Stubber",
-            "id": "6557-35aa-3446-ffca",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "4", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Inferno Pistol",
-        "id": "07c3-51cf-ed3b-a4eb",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Inferno Pistol",
-            "id": "661b-eb16-f1bd-3619",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Meltagun",
-        "id": "6186-a63d-2245-c4bb",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Meltagun", "id": "44d6-ea94-463e-43df", "hidden": false, "targetId": "0890-7e89-f08b-968b", "type": "profile"}]
-      },
-      {
-        "name": "Multi-Melta",
-        "id": "90c9-36e3-ba67-2cfc",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Multi-Melta",
-            "id": "58f9-02f3-c4cd-db44",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Linked Assault Cannon",
-        "id": "16cb-3c48-c3d0-fa6a",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Assault Cannon",
-            "id": "3aa1-d113-ab12-33dd",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "5", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Rending (6+), Pinning, Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Linked Icarus Storm Cannon",
-        "id": "0ded-701e-ee08-14af",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Icarus Storm Cannon",
-            "id": "629f-80ec-c986-0fdf",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Skyfire, Rending (5+), Pinning, Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Assault Cannon",
-        "id": "9788-7711-3998-b9c4",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Assault Cannon",
-            "id": "ddd4-d799-aee1-d34b",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "5", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Rending (6+), Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Reaper Autocannon",
         "id": "9c2e-1997-f72b-5b1e",
         "collective": true,
@@ -8408,60 +7601,6 @@
               {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Pinning, Linked, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Linked Autocannon",
-        "id": "5739-d53f-fe33-f250",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Autocannon",
-            "id": "1714-730a-6842-ad5e",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning, Rending (5+), Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Autocannon",
-        "id": "00a1-6b71-1433-4297",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Autocannon",
-            "id": "53b8-b618-c53a-0043",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -8782,33 +7921,6 @@
         ]
       },
       {
-        "name": "Linked Lascannon",
-        "id": "4b03-25f6-ae55-5068",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "16",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Lascannon",
-            "id": "8e6f-790a-c75f-2abb",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Grav Cannon",
         "id": "9bbd-1376-34f3-babf",
         "collective": true,
@@ -8991,17 +8103,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Lascannon",
-        "id": "2cfd-9f25-1c54-177a",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "16",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Lascannon", "id": "251b-b1f0-959f-3784", "hidden": false, "targetId": "fa97-7830-a56b-2a42", "type": "profile"}]
       },
       {
         "name": "Neo Volkite Pistol",
@@ -9705,33 +8806,6 @@
         ]
       },
       {
-        "name": "Fragstorm Grenade Launcher",
-        "id": "4c04-c034-c549-e60b",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "20",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Fragstorm Grenade Launcher",
-            "id": "00f5-6d36-de56-786c",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Chainfist",
         "id": "d8ec-e3b8-112b-1e9d",
         "collective": true,
@@ -10339,30 +9413,6 @@
         ]
       },
       {
-        "name": "Linked Heavy Stubber",
-        "id": "a753-10e0-1119-9d1b",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Heavy Stubber",
-            "id": "3863-8eb8-c68a-cb3b",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "4", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "2 Hunter-Killer Missiles",
         "id": "eb44-a9b5-7e6b-dd5d",
         "hidden": false,
@@ -10563,8 +9613,8 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "1045-a293-caf4-7131", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "12cf-2d27-04d3-9ea6", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "1045-a293-caf4-7131", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "12cf-2d27-04d3-9ea6", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "30ae-0023-6e65-b4ac",
@@ -11533,8 +10583,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
               },
-              {"name": "Searchlight", "id": "05b9-1486-8631-f9a4", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "142d-5937-294c-fd32", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "05b9-1486-8631-f9a4", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "142d-5937-294c-fd32", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "aecc-42fa-41d0-5234",
@@ -11720,7 +10770,7 @@
                   {"id": "878d-5a0c-08b0-0509-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Smoke Launchers", "id": "4b85-c1cc-74b3-64f9", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"}
+              {"name": "Smoke Launchers", "id": "4b85-c1cc-74b3-64f9", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -13662,8 +12712,8 @@
                   {"id": "20c1-5c52-3114-2374", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Searchlight", "id": "9ec1-ddf4-5176-3612", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "9c69-e780-42e5-96d6", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "9ec1-ddf4-5176-3612", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "9c69-e780-42e5-96d6", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "b7d6-df5b-74d8-8901",
@@ -17301,7 +16351,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "8ad7-47d2-21ea-3b33",
+                "targetId": "4662-0b45-17cd-f1ad",
                 "type": "selectionEntry"
               },
               {
@@ -17336,7 +16386,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "00a1-6b71-1433-4297",
+                "targetId": "2583-e542-e2d4-698d",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "562b-c6f0-d0c2-431d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -17417,7 +16467,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "00a1-6b71-1433-4297",
+                "targetId": "2583-e542-e2d4-698d",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "2497-c319-3339-b74b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -17592,11 +16642,11 @@
                 ],
                 "entryLinks": [
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "4e30-7107-1927-73a6",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
@@ -17780,11 +16830,11 @@
                   },
                   {"name": "Linked Assault Cannon", "id": "e5ad-30aa-192e-d445", "hidden": false, "import": true, "targetId": "16cb-3c48-c3d0-fa6a", "type": "selectionEntry"},
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "9bce-15e4-9564-eb04",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
@@ -18536,12 +17586,12 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
                     "entryLinks": [
                       {
-                        "name": "Linked Lascannon",
+                        "name": "Linked Las Cannon",
                         "id": "219a-4af2-23ea-1af9",
                         "defaultAmount": "2",
                         "hidden": false,
                         "import": true,
-                        "targetId": "4b03-25f6-ae55-5068",
+                        "targetId": "446b-047d-0872-5352",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "eef8-9af0-0df9-db92-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
@@ -18628,11 +17678,11 @@
                   },
                   {"name": "Linked Heavy Bolter", "id": "4651-1ace-fa3f-b38a", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"},
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "3280-f439-5047-50f8",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
                   },
@@ -18762,8 +17812,8 @@
                 "constraints": [{"id": "24a8-527f-196a-a5d0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "3691-ce50-ae13-375b", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "6d19-e754-51ee-8bc4", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "3691-ce50-ae13-375b", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "6d19-e754-51ee-8bc4", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "450f-e9a5-f4f0-e258",
@@ -18954,8 +18004,8 @@
                   {"id": "03ba-211b-ee3b-0f71-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Searchlight", "id": "2fbe-06cb-122e-d2e9", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "3ef6-2b79-2676-24b6", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "2fbe-06cb-122e-d2e9", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "3ef6-2b79-2676-24b6", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Assault launchers",
                 "id": "7738-eef1-955f-4fd7",
@@ -19326,12 +18376,13 @@
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "31c6-abad-342b-9638",
+                        "targetId": "7e34-a077-a241-e3b7",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "6285-fcf1-14be-35a2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                           {"id": "6285-fcf1-14be-35a2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ]
+                        ],
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
                       },
                       {"name": "Litany of Prayers", "id": "d183-d0e3-fdec-0f55", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
                     ],
@@ -20791,7 +19842,7 @@
                     "id": "ded2-8e91-a19d-0bd7",
                     "hidden": false,
                     "import": true,
-                    "targetId": "ff88-5905-4bfe-7f3b",
+                    "targetId": "f3dc-8d02-5045-67e3",
                     "type": "selectionEntry",
                     "constraints": [{"id": "2968-108e-44ea-4379", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
@@ -21157,7 +20208,7 @@
                     "id": "d393-4880-de9d-edbd",
                     "hidden": false,
                     "import": true,
-                    "targetId": "ff88-5905-4bfe-7f3b",
+                    "targetId": "f3dc-8d02-5045-67e3",
                     "type": "selectionEntry",
                     "constraints": [{"id": "9460-1e17-4833-38b2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
@@ -21641,7 +20692,7 @@
                     "id": "7b19-7476-d5e2-e9d4",
                     "hidden": false,
                     "import": true,
-                    "targetId": "ff88-5905-4bfe-7f3b",
+                    "targetId": "f3dc-8d02-5045-67e3",
                     "type": "selectionEntry",
                     "constraints": [{"id": "4dce-b48c-578d-294a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
@@ -22018,7 +21069,7 @@
                     "id": "bd69-e92b-4bba-7cf4",
                     "hidden": false,
                     "import": true,
-                    "targetId": "ff88-5905-4bfe-7f3b",
+                    "targetId": "f3dc-8d02-5045-67e3",
                     "type": "selectionEntry",
                     "constraints": [{"id": "7707-a867-7938-9066", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
@@ -24894,8 +23945,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
               },
-              {"name": "Searchlight", "id": "fb00-d55e-1702-fa85", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "4bfa-c3e9-7812-fa6a", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "fb00-d55e-1702-fa85", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "4bfa-c3e9-7812-fa6a", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "d4a4-dd98-89a2-a21f",
@@ -26815,7 +25866,7 @@
                   {"id": "0c54-6830-0793-687b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Smoke Launchers", "id": "91a2-3919-12ef-4aa9", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"}
+              {"name": "Smoke Launchers", "id": "91a2-3919-12ef-4aa9", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -27149,8 +26200,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "8454-d87c-32ab-0c88", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0a40-e70f-c76c-5804", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "8454-d87c-32ab-0c88", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "0a40-e70f-c76c-5804", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "0de0-9c90-1358-edda",
@@ -27294,7 +26345,7 @@
                   {"id": "130e-2b9a-583c-8729-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Searchlight", "id": "5674-2788-4d69-793f", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "5674-2788-4d69-793f", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
               {
                 "name": "Assault launchers",
                 "id": "3f2d-89f2-d6a9-c704",
@@ -27313,7 +26364,7 @@
                 "id": "a5d7-bae2-8bfc-ab07",
                 "hidden": false,
                 "import": true,
-                "targetId": "311c-6a4b-f092-bc5e",
+                "targetId": "b506-0546-369b-ee0c",
                 "type": "selectionEntry",
                 "constraints": [{"id": "18ee-acd5-1088-0055", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
@@ -27412,11 +26463,11 @@
                 ],
                 "entryLinks": [
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "7711-3f00-a12b-1815",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
                   },
@@ -27579,7 +26630,7 @@
                     "id": "935c-6903-f7e1-492b",
                     "hidden": false,
                     "import": true,
-                    "targetId": "311c-6a4b-f092-bc5e",
+                    "targetId": "b506-0546-369b-ee0c",
                     "type": "selectionEntry",
                     "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
                   }
@@ -27712,7 +26763,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "311c-6a4b-f092-bc5e",
+                "targetId": "b506-0546-369b-ee0c",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "2c79-5c98-3e33-9db1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2},
@@ -27721,7 +26772,7 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "f7b8-9aa4-d4d0-84ab", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "f7b8-9aa4-d4d0-84ab", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
               {
                 "name": "Linked Heavy Stubber",
                 "id": "9f1f-7e5b-df32-d841",
@@ -28902,12 +27953,12 @@
                         ]
                       },
                       {
-                        "name": "Linked Lascannon",
+                        "name": "Linked Las Cannon",
                         "id": "d8f9-125d-ecea-85ab",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "4b03-25f6-ae55-5068",
+                        "targetId": "446b-047d-0872-5352",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "b543-afc0-401d-3e3f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -29129,7 +28180,7 @@
                         "id": "1e3a-6567-cdfd-ff13",
                         "hidden": false,
                         "import": true,
-                        "targetId": "311c-6a4b-f092-bc5e",
+                        "targetId": "b506-0546-369b-ee0c",
                         "type": "selectionEntry",
                         "constraints": [{"id": "ea92-6c83-48f9-e9df", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
@@ -29415,8 +28466,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "4752-bdbb-6a8a-2550", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "ffe6-939c-57b8-f489", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "4752-bdbb-6a8a-2550", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "ffe6-939c-57b8-f489", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "4e3f-2ae3-2fef-c5c1",
@@ -29494,11 +28545,11 @@
                   },
                   {"name": "Linked Heavy Bolter", "id": "e9e1-9996-7bbf-9f25", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"},
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "b3e1-ee57-b60d-c3a8",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
@@ -29639,8 +28690,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "f825-e724-0322-f8b0", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "d0ec-8783-4827-2c83", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "f825-e724-0322-f8b0", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "d0ec-8783-4827-2c83", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "b39d-5b7b-3b0a-840c",
@@ -29736,15 +28787,15 @@
                 ],
                 "entryLinks": [
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "7151-617f-97da-f07a",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
-                  {"name": "Autocannon", "id": "47b3-c4a4-c179-59d7", "hidden": false, "import": true, "targetId": "00a1-6b71-1433-4297", "type": "selectionEntry"}
+                  {"name": "Autocannon", "id": "47b3-c4a4-c179-59d7", "hidden": false, "import": true, "targetId": "2583-e542-e2d4-698d", "type": "selectionEntry"}
                 ]
               }
             ]
@@ -29867,8 +28918,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
               },
-              {"name": "Searchlight", "id": "c9bf-ac40-fa43-9f83", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "529b-6265-d9f4-7c52", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "c9bf-ac40-fa43-9f83", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "529b-6265-d9f4-7c52", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "7504-76af-6ae5-7f46",
@@ -30760,7 +29811,7 @@
           {"name": "Tank", "id": "1016-beba-cb24-d953", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
           {"name": "[Chapter]", "id": "e66e-8d39-fbef-a66a", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
           {"name": "Vehicle", "id": "49a2-c5b5-8af1-de91", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
-          {"name": "m37+", "id": "1b0a-e3fe-6a71-32a8", "hidden": false, "primary": false, "targetId": "266a-a317-a50a-0784"},
+          {"name": "M37+", "id": "1b0a-e3fe-6a71-32a8", "hidden": false, "primary": false, "targetId": "266a-a317-a50a-0784"},
           {"name": "Land Raider Redeemer", "id": "1280-8a6d-9ca2-9c82", "hidden": false, "primary": false, "targetId": "cb98-681a-2899-71c4"}
         ],
         "constraints": [{"id": "753d-828d-708b-8dbc", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 2}],
@@ -30844,8 +29895,8 @@
               {"id": "7d10-5f65-84ae-2605-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
-              {"name": "Searchlight", "id": "f39a-8159-83c2-cf7b", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0ab6-741f-eb00-7f50", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "f39a-8159-83c2-cf7b", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "0ab6-741f-eb00-7f50", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "c244-75cb-fd2e-4777",
@@ -31030,8 +30081,8 @@
                   {"id": "399b-9d8f-0df5-f8b0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Searchlight", "id": "bea7-312e-be67-f0e1", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "5eb6-b924-af3b-4002", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "bea7-312e-be67-f0e1", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "5eb6-b924-af3b-4002", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Storm Bolter (S)",
                 "id": "7e5b-56f1-d581-63dd",
@@ -31195,12 +30246,12 @@
             "entryLinks": [
               {"name": "Storm Bolter (S)", "id": "5a5c-ee37-d418-7dd8", "hidden": false, "targetId": "f4e8-f405-8d57-e6b5", "type": "selectionEntryGroup"},
               {
-                "name": "Linked Lascannon",
+                "name": "Linked Las Cannon",
                 "id": "cac3-3b25-6ef1-27ed",
                 "defaultAmount": "2",
                 "hidden": false,
                 "import": true,
-                "targetId": "4b03-25f6-ae55-5068",
+                "targetId": "446b-047d-0872-5352",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "0494-91ad-4ee6-15b7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
@@ -31208,8 +30259,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
               },
-              {"name": "Searchlight", "id": "3af9-de2a-2937-5a15", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0bd5-b7cd-95cc-9953", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "3af9-de2a-2937-5a15", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "0bd5-b7cd-95cc-9953", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "2af9-8d96-0315-5338",
@@ -31391,15 +30442,15 @@
                   {"id": "638a-5f2a-7c33-aed9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Searchlight", "id": "8b14-d1ea-435e-7104", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "13c9-6d64-cdb1-587b", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "8b14-d1ea-435e-7104", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "13c9-6d64-cdb1-587b", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Autocannon",
                 "id": "7d87-70e6-af91-2892",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "00a1-6b71-1433-4297",
+                "targetId": "2583-e542-e2d4-698d",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "37e8-e11e-d3a5-0f53-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "min", "value": 1},
@@ -31423,7 +30474,7 @@
                     "id": "077e-fcf3-bc91-f118",
                     "hidden": false,
                     "import": true,
-                    "targetId": "00a1-6b71-1433-4297",
+                    "targetId": "2583-e542-e2d4-698d",
                     "type": "selectionEntry",
                     "constraints": [{"id": "76f6-5703-efc8-7fd5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 2}],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
@@ -31934,14 +30985,14 @@
                 "defaultAmount": "2",
                 "hidden": false,
                 "import": true,
-                "targetId": "311c-6a4b-f092-bc5e",
+                "targetId": "b506-0546-369b-ee0c",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "9559-215a-1445-4f5e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
                   {"id": "9559-215a-1445-4f5e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ]
               },
-              {"name": "Smoke Launchers", "id": "5149-59c9-4f22-14d6", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "5149-59c9-4f22-14d6", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {"name": "Dreadnought Plate", "id": "8ede-a5ac-92b1-e6ef", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"},
               {
                 "name": "Dreadnought Close Combat weapon",
@@ -33200,7 +32251,7 @@
                 "id": "8a52-b438-d584-c4aa",
                 "hidden": false,
                 "import": true,
-                "targetId": "311c-6a4b-f092-bc5e",
+                "targetId": "b506-0546-369b-ee0c",
                 "type": "selectionEntry",
                 "constraints": [{"id": "ec9a-c2d0-3036-1ab6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
@@ -33450,8 +32501,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
               },
-              {"name": "Searchlight", "id": "6c7d-6267-541a-9691", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "ea69-8489-0237-ae93", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "6c7d-6267-541a-9691", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "ea69-8489-0237-ae93", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "e9d6-dce2-a567-ea46",
@@ -34310,7 +33361,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "311c-6a4b-f092-bc5e",
+                "targetId": "b506-0546-369b-ee0c",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "fadc-a5ec-1005-5e36-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -34318,8 +33369,8 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "f5b0-60f3-e74e-27ee", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "646b-fafc-abd3-b281", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "f5b0-60f3-e74e-27ee", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "646b-fafc-abd3-b281", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Assault launchers",
                 "id": "3972-ab1a-702d-80be",
@@ -34961,12 +34012,12 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
                     "entryLinks": [
                       {
-                        "name": "Linked Lascannon",
+                        "name": "Linked Las Cannon",
                         "id": "9f20-e2ae-6a88-e30a",
                         "defaultAmount": "2",
                         "hidden": false,
                         "import": true,
-                        "targetId": "4b03-25f6-ae55-5068",
+                        "targetId": "446b-047d-0872-5352",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "d59b-18ee-d7df-a40a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
@@ -35093,8 +34144,8 @@
                   {"id": "7281-0399-001c-6c59", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Searchlight", "id": "6899-9638-5851-632d", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "eb5d-de69-56a3-faae", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "6899-9638-5851-632d", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "eb5d-de69-56a3-faae", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {"name": "(S)", "id": "cbe6-f0e6-8c93-74fb", "hidden": false, "import": true, "targetId": "349f-e2f6-cbb2-b4b3", "type": "selectionEntryGroup"},
               {
                 "name": "2 Lascannon Array (P)",
@@ -35282,8 +34333,8 @@
                   {"id": "f046-16f2-4bc1-8663-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Searchlight", "id": "c63f-e2d8-7482-5b82", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0ffc-dae0-ee3a-fd1a", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "c63f-e2d8-7482-5b82", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "0ffc-dae0-ee3a-fd1a", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "2 Lascannon Array (P)",
                 "id": "b731-6175-f060-5ed2",
@@ -36547,7 +35598,7 @@
                   {"id": "6ed4-ce20-cb92-5f48-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Smoke Launchers", "id": "224c-5a60-aeea-20fc", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "224c-5a60-aeea-20fc", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "02fd-555f-c9f7-d5b3",
@@ -36800,11 +35851,11 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "229e-d63b-ec50-b369",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
@@ -36955,8 +36006,8 @@
                 ]
               },
               {"name": "(S)", "id": "a59f-83a5-416c-111e", "hidden": false, "targetId": "349f-e2f6-cbb2-b4b3", "type": "selectionEntryGroup"},
-              {"name": "Searchlight", "id": "bc9e-3799-15bc-6126", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "d4f7-faac-9ccb-f695", "hidden": false, "import": true, "targetId": "8ad7-47d2-21ea-3b33", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "bc9e-3799-15bc-6126", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "d4f7-faac-9ccb-f695", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Assault launchers",
                 "id": "a7ee-218d-6a1c-3caf",
@@ -38027,11 +37078,11 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
                   {
-                    "name": "Linked Lascannon",
+                    "name": "Linked Las Cannon",
                     "id": "4450-4fd0-e6e2-096d",
                     "hidden": false,
                     "import": true,
-                    "targetId": "4b03-25f6-ae55-5068",
+                    "targetId": "446b-047d-0872-5352",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
@@ -38225,7 +37276,7 @@
                     "id": "ba48-ef26-b208-7c31",
                     "hidden": false,
                     "import": true,
-                    "targetId": "3d36-8e4a-4651-6e84",
+                    "targetId": "be5e-26aa-f44a-412c",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
@@ -39386,7 +38437,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "311c-6a4b-f092-bc5e",
+                "targetId": "b506-0546-369b-ee0c",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "dbcf-865f-bb80-88f8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -39394,7 +38445,7 @@
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
-              {"name": "Searchlight", "id": "24a1-1d7a-7c88-b09b", "hidden": false, "import": true, "targetId": "f73f-65da-ed30-45d5", "type": "selectionEntry"},
+              {"name": "Searchlight", "id": "24a1-1d7a-7c88-b09b", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "9691-9a55-ac77-c937",
@@ -39517,7 +38568,7 @@
                   }
                 ],
                 "entryLinks": [
-                  {"name": "Linked Lascannon", "id": "f98b-cf1e-b9f2-0559", "hidden": false, "import": true, "targetId": "4b03-25f6-ae55-5068", "type": "selectionEntry"},
+                  {"name": "Linked Las Cannon", "id": "f98b-cf1e-b9f2-0559", "hidden": false, "import": true, "targetId": "446b-047d-0872-5352", "type": "selectionEntry"},
                   {"name": "Linked Heavy Bolter", "id": "f7b0-4230-8e70-4980", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"}
                 ]
               },
@@ -40998,7 +40049,8 @@
             "import": true,
             "targetId": "6029-ff30-bd91-9976",
             "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "modifiers": [{"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "with Jump Pack"}]
           }
         ]
       },
@@ -41224,7 +40276,7 @@
             "id": "dca1-0d89-ee66-f1a6",
             "hidden": false,
             "import": true,
-            "targetId": "3d36-8e4a-4651-6e84",
+            "targetId": "be5e-26aa-f44a-412c",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
           }

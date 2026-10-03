@@ -7,8 +7,72 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
+    "publications": [{"name": "The Long War - Codex Imperial Agents", "id": "19c4-6ab7-10c5-8fbe", "hidden": false, "publisher": "5.0"}],
+    "sharedRules": [
+      {
+        "name": "Ion Shield",
+        "id": "5e68-787f-9a4a-0137",
+        "description": "A model with this special rule has a 4+ Invulnerable save against all Shooting Attacks resolved against its Front Armour Value (FA). In addition, you gain the Rotate Ion Shields Reaction (see below).\n\n\nRotate Ion Shields (Reaction): Instead of Setting to Overwatch, this unit may set to Rotate Ion Shields in its Shooting Phase. If you do so, the unit may still shoot in the Shooting Phase, but all attacks made by the unit are resolved as Snap Shots. At the end of your Opponent’s Charge Phase, you may select one of your units Armour Facings (FA/SA/RA). The units 4+ Invulnerable save from the Ion Shields special rule now applies to Shooting Attacks resolved against the chosen Armour Facing.",
+        "hidden": false
+      },
+      {
+        "name": "Special Issue Ammunition",
+        "id": "20e0-5740-eacd-3397",
+        "description": "A unit with this special rule when firing with an equipped Boltgun, Storm Bolter or Heavy Boltgun, Hurricane Bolter may apply one of the following special ammunition types. All models in the unit must use that same Ammo type during a Shooting Phase.\n• Kraken Rounds: The weapons gain the Rending (6+) special rule.\n• Dragonfire Rounds: The weapons gain the Ignores Cover special rule.\n• Hellfire Rounds: The weapons gain the Poison (4+) special rule this phase.",
+        "hidden": false
+      },
+      {
+        "name": "The Aegis",
+        "id": "d50b-c69f-49fc-df8d",
+        "description": "A unit with this special rule gains the Deny the Witch and Indomitable Spirit (4+) special rules. In addition, the unit’s range for Deny the Witch is 24” instead of 18”.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Boarding Shields",
+        "id": "a57d-606c-5014-f00a",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "a16e-ce34-1b38-118a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Boarding Shields",
+            "id": "bf75-95a5-b64e-bd71",
+            "description": "A model equipped with this wargear gains a 5+ Invulnerable save. If at least 3 models in a unit are equipped with Boarding Shields, all charges against the equipped unit are treated as Disordered Charges.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Rotor Cannon",
+        "id": "82ed-ec50-5420-edbb",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Rotor Cannon",
+            "id": "5289-1427-0aa4-89f6",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "5", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      }
+    ],
     "sharedSelectionEntryGroups": [
       {
         "name": "Warlord Trait",
