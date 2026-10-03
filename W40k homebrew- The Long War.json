@@ -562,9 +562,7 @@
                 ]
               }
             ]
-          },
-          {"field": "hidden", "type": "set", "value": true},
-          {"field": "hidden", "type": "set", "value": true}
+          }
         ]
       }
     ],
@@ -630,8 +628,8 @@
             "name": "Sv",
             "id": "c9ff-af68-092c-c4b3",
             "formatRules": [
-              {"name": "New Format Rule", "id": "a50b-f1ff-9132-3067", "comment": "Append SUFFIX", "hidden": false, "match": "([/s/S]*$)", "replace": "$1+", "type": "regex"},
               {"name": "New Format Rule", "id": "3b6c-7f78-e054-2a53", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
+              {"name": "New Format Rule", "id": "a50b-f1ff-9132-3067", "comment": "Append SUFFIX", "hidden": false, "match": "([^\\-]+$)", "replace": "$1+", "type": "regex"},
               {"name": "New Format Rule", "id": "e817-ce45-221f-3108", "comment": "Clean SUFFIX", "hidden": false, "match": "(\\+[+]+$)", "replace": "+", "type": "regex"}
             ]
           }
