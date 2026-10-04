@@ -7,8 +7,9 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
+    "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0e79-b452-6d4b-0244", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "sharedSelectionEntryGroups": [
       {
         "name": "Warlord Trait",

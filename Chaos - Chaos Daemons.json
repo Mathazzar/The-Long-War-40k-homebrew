@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Daemon", "id": "0ce8-e702-158f-a98d", "hidden": false},
@@ -553,20 +553,68 @@
           }
         ]
       },
-      {"name": "Skarbrand", "id": "9278-6afe-143d-f826", "hidden": false},
-      {"name": "Rotigus Rainfather", "id": "8b91-4f66-93d4-a300", "hidden": false},
-      {"name": "Shelaxi Hellbane", "id": "3948-1782-aa1b-f3d3", "hidden": false},
-      {"name": "Kairos Fateweaver", "id": "1787-594d-13fc-1bc1", "hidden": false},
-      {"name": "Be’lakor", "id": "7277-6d69-047b-d6e2", "hidden": false},
-      {"name": "Samus", "id": "8585-9abc-394e-b27b", "hidden": false},
-      {"name": "Uraka the Warfiend", "id": "c062-0a93-1615-e552", "hidden": false},
-      {"name": "Cor’bax Utterblight", "id": "c526-87e2-562d-e24c", "hidden": false},
-      {"name": "Skulltaker", "id": "4dc8-c6fc-5d15-b21f", "hidden": false},
+      {
+        "name": "Skarbrand",
+        "id": "9278-6afe-143d-f826",
+        "hidden": false,
+        "constraints": [{"id": "8334-3c91-51fa-194e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Rotigus Rainfather",
+        "id": "8b91-4f66-93d4-a300",
+        "hidden": false,
+        "constraints": [{"id": "53b1-a9ae-d114-83a9", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Shelaxi Hellbane",
+        "id": "3948-1782-aa1b-f3d3",
+        "hidden": false,
+        "constraints": [{"id": "71fe-d2b3-c13f-6ece", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Kairos Fateweaver",
+        "id": "1787-594d-13fc-1bc1",
+        "hidden": false,
+        "constraints": [{"id": "baf8-491a-4937-d7c4", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Be’lakor",
+        "id": "7277-6d69-047b-d6e2",
+        "hidden": false,
+        "constraints": [{"id": "652b-326a-4944-0d2c", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Samus",
+        "id": "8585-9abc-394e-b27b",
+        "hidden": false,
+        "constraints": [{"id": "2bd8-b1cd-bfb7-fdc6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Uraka the Warfiend",
+        "id": "c062-0a93-1615-e552",
+        "hidden": false,
+        "constraints": [{"id": "4eb7-88fe-3e08-913a", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Cor’bax Utterblight",
+        "id": "c526-87e2-562d-e24c",
+        "hidden": false,
+        "constraints": [{"id": "5cde-b4f7-2c26-8068", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Skulltaker",
+        "id": "4dc8-c6fc-5d15-b21f",
+        "hidden": false,
+        "constraints": [{"id": "a126-75df-dc22-a8f3", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {
         "name": "Epidemius",
         "id": "7fc0-ced2-4e2f-e62c",
         "hidden": false,
-        "constraints": [{"id": "343a-16ef-b448-886d", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0}],
+        "constraints": [
+          {"id": "343a-16ef-b448-886d", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "f07f-b14a-a596-df36", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
         "modifiers": [
           {
             "field": "343a-16ef-b448-886d",
@@ -623,8 +671,18 @@
           }
         ]
       },
-      {"name": "Masque of Slaanesh", "id": "b334-69d3-98fe-e0e6", "hidden": false},
-      {"name": "The Changeling", "id": "f72b-7821-3b11-00bd", "hidden": false},
+      {
+        "name": "Masque of Slaanesh",
+        "id": "b334-69d3-98fe-e0e6",
+        "hidden": false,
+        "constraints": [{"id": "9353-fb37-e923-b863", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "The Changeling",
+        "id": "f72b-7821-3b11-00bd",
+        "hidden": false,
+        "constraints": [{"id": "1615-9fb9-4a31-1ceb", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Furies", "id": "120c-e997-9e72-cd2b", "hidden": false},
       {"name": "Bloodletters", "id": "aea1-46f7-ab20-fd2e", "hidden": false},
       {"name": "Plaguebearers", "id": "9fe8-1061-7b46-a9f5", "hidden": false},
@@ -688,9 +746,24 @@
       {"name": "Plague Drones", "id": "6d3f-85f8-3aab-d986", "hidden": false},
       {"name": "Seekers of Slaanesh", "id": "0760-308d-25e0-d5fa", "hidden": false},
       {"name": "Flamers of Tzeentch", "id": "1a9a-88e7-b354-0dd5", "hidden": false},
-      {"name": "Karanak", "id": "5407-388e-3ff7-4af2", "hidden": false},
-      {"name": "Horticulus Slimux", "id": "4c90-067f-5a30-3ac4", "hidden": false},
-      {"name": "The Blue Scribes", "id": "bf1e-2bca-ee11-8902", "hidden": false},
+      {
+        "name": "Karanak",
+        "id": "5407-388e-3ff7-4af2",
+        "hidden": false,
+        "constraints": [{"id": "80d4-70a0-ac6e-ae63", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Horticulus Slimux",
+        "id": "4c90-067f-5a30-3ac4",
+        "hidden": false,
+        "constraints": [{"id": "6507-0fdd-e832-9f73", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "The Blue Scribes",
+        "id": "bf1e-2bca-ee11-8902",
+        "hidden": false,
+        "constraints": [{"id": "d2fc-f607-3339-b3bf", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Flesh Hounds", "id": "2e65-0c35-ebc6-f9e8", "hidden": false},
       {"name": "Beasts of Nurgle", "id": "14a9-5f70-05be-5917", "hidden": false},
       {"name": "Fiends of Slaanesh", "id": "8030-4f0d-5293-30ae", "hidden": false},
@@ -2470,7 +2543,7 @@
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "d0e0-29c3-0d92-324d",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "fc4d-7a9a-bcd1-37b1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -2501,7 +2574,7 @@
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "d0e0-29c3-0d92-324d",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "9bb4-37e0-934a-9736-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -2822,7 +2895,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "9d57-39f3-27e2-6e98-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -5347,7 +5420,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "60e3-88f5-f015-ec04-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -5978,7 +6051,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "a131-f4d4-279f-3c13-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -6555,7 +6628,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "f8ae-092e-2e0a-b7d6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -6962,7 +7035,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "5382-c056-367e-4121-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -7024,7 +7097,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "33eb-7c8d-2f6e-5925-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -7095,7 +7168,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "4d3e-b34d-b71c-8916-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -8127,7 +8200,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "e173-00eb-6875-7b93-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -8464,7 +8537,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "cc24-8f34-f4c4-02ca-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -9209,7 +9282,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "357d-0021-5724-5b96-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -9525,7 +9598,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "0f42-8f58-b250-406f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -9587,7 +9660,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "1a1b-01c6-4763-d6ec-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -10447,7 +10520,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "201c-6800-55ca-2f0c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -11493,7 +11566,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "d0e0-29c3-0d92-324d",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "1930-f733-4752-1466-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -12382,6 +12455,16 @@
                     "shared": true,
                     "type": "max",
                     "value": 1
+                  },
+                  {
+                    "id": "ad93-0631-93b2-b26b",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "message": "{unit} must have hellblade, daemonic great weapon, or axe of khorne equipped to take {this}",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 0
                   }
                 ],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
@@ -12401,6 +12484,48 @@
                         "shared": true,
                         "type": "notInstanceOf",
                         "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "ad93-0631-93b2-b26b",
+                    "type": "set",
+                    "value": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "0a6b-d6e9-9eb5-d80c",
+                            "childName": "Axe of Khorne",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "8418-ff84-289e-c97d",
+                            "childName": "Hellblade",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "4693-03e5-752c-835e",
+                            "childName": "Daemonic Great Weapon",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
                       }
                     ]
                   }
@@ -12546,6 +12671,16 @@
                     "shared": true,
                     "type": "max",
                     "value": 1
+                  },
+                  {
+                    "id": "18ca-0800-d501-7dc8",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "message": "{unit} must have daemonic great weapon or witstealer sword equipped to take {this}",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 0
                   }
                 ],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
@@ -12564,6 +12699,38 @@
                         "shared": true,
                         "type": "notInstanceOf",
                         "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "18ca-0800-d501-7dc8",
+                    "type": "set",
+                    "value": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "e7df-4b27-84d0-8573",
+                            "childName": "Witstealer Sword",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "4693-03e5-752c-835e",
+                            "childName": "Daemonic Great Weapon",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
                       }
                     ]
                   }
@@ -12611,6 +12778,16 @@
                     "shared": true,
                     "type": "max",
                     "value": 1
+                  },
+                  {
+                    "id": "26d6-929d-0fc9-98a2",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "message": "{unit} must have malefic talon, piercing claws, or snapping claws equipped to take {this}",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 0
                   }
                 ],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
@@ -12629,6 +12806,48 @@
                         "shared": true,
                         "type": "notInstanceOf",
                         "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "26d6-929d-0fc9-98a2",
+                    "type": "set",
+                    "value": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "c57e-7e2c-e900-7c28",
+                            "childName": "Snapping Claws",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "297c-f90c-659b-d781",
+                            "childName": "Malefic Talons",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "fd42-e0db-2edf-5727",
+                            "childName": "Piercing Claws",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
                       }
                     ]
                   }

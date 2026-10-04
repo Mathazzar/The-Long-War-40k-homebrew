@@ -804,6 +804,24 @@
         ]
       }
     ],
+    "sharedProfiles": [
+      {
+        "name": "Eviscerator",
+        "id": "ec36-ec28-f008-e96a",
+        "hidden": false,
+        "page": "12",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Shred, Sunder, Unwieldy, Two Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      }
+    ],
     "sharedRules": [
       {
         "name": "Adamantine Will",
@@ -1788,6 +1806,32 @@
           {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
           {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
           {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
+        ]
+      },
+      {
+        "name": "Close Combat Weapons",
+        "id": "ba4d-218f-3817-c775",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Close Combat Weapons",
+            "id": "0af7-4af2-0245-60aa",
+            "hidden": false,
+            "page": "15",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
         ]
       }
     ],
