@@ -2679,58 +2679,6 @@
             ]
           },
           {
-            "name": "Astartes Grenade Launcher",
-            "id": "ae62-9c4b-211e-db2f",
-            "hidden": false,
-            "targetId": "fa4a-4db2-5aba-246b",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "9ced-63c6-c053-2152",
-                    "childName": "Astartes Grenade Launcher",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Astartes Shotgun",
-            "id": "b85c-5955-b8c2-1aac",
-            "hidden": false,
-            "targetId": "804e-8cd0-4dda-2878",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "62c9-0552-5dd8-b91b",
-                    "childName": "Astartes Shotgun",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "name": "Grav Gun",
             "id": "fd78-b825-7db2-2557",
             "hidden": false,
@@ -3393,7 +3341,7 @@
                   {"id": "7aab-f14e-1e2b-f7eb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "94e9-4b66-7daa-2077", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "94e9-4b66-7daa-2077", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Artificer Armour",
                 "id": "7225-d4c7-4f85-556e",
@@ -3626,7 +3574,7 @@
                   {"id": "a302-0ecb-f53a-80c8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "6085-6e7b-96f2-1d0e", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"}
+              {"name": "Frag Grenades", "id": "6085-6e7b-96f2-1d0e", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -4067,7 +4015,7 @@
                   {"id": "40ad-1450-57ab-c0ab-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "7f56-ecd9-f2dd-d650", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "7f56-ecd9-f2dd-d650", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "a946-5d31-3ddf-6267", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Psychic Hood",
@@ -4344,7 +4292,7 @@
                   {"id": "ffc7-2216-bc43-88dc-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "a2f0-0d5b-ef2e-f5f9", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "a2f0-0d5b-ef2e-f5f9", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Iron Halo",
                 "id": "d110-2f0c-409c-071b",
@@ -4428,7 +4376,7 @@
                   {"id": "7c4a-b7ef-7938-2879-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "a582-06c1-538f-d0ee", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "a582-06c1-538f-d0ee", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "30f0-ab6f-d8ad-a376", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Iron Halo",
@@ -4897,7 +4845,7 @@
                   {"id": "7de3-8afa-46aa-cd6c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "ac01-b663-2462-4cac", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "ac01-b663-2462-4cac", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "66a1-13b8-dfeb-1bb7", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Iron Halo",
@@ -4926,12 +4874,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "850c-0236-d94a-1ee7",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "d47c-4734-f881-afe0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -5577,7 +5525,7 @@
                   {"id": "c082-96e2-0f1a-eb04-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "f2af-6b93-a567-22cc", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "f2af-6b93-a567-22cc", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "da71-0a9e-9ab9-a987", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Iron Halo",
@@ -5902,21 +5850,6 @@
         ]
       },
       {
-        "name": "Boltgun",
-        "id": "bee9-8218-8f32-a948",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
         "name": "Grenade Launcher",
         "id": "79db-30d4-936a-bf17",
         "hidden": false,
@@ -5946,21 +5879,6 @@
         ]
       },
       {
-        "name": "Storm Bolter",
-        "id": "2d40-d20d-b301-8589",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
         "name": "Chainfist",
         "id": "5717-521b-140b-421f",
         "hidden": false,
@@ -5972,21 +5890,6 @@
           {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
           {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "Unwieldy, Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
-        "name": "Plasma Gun",
-        "id": "3735-b78e-cd7d-d8e1",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
         ]
       },
       {
@@ -6099,35 +6002,6 @@
         ]
       },
       {
-        "name": "Grav Pistol",
-        "id": "07a5-2d88-7f0b-fdde",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
-        "name": "Power Lance",
-        "id": "ee2f-604a-3e7d-a55e",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Reach", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
         "name": "Neo Volkite Pistol",
         "id": "badb-ecc4-580a-7832",
         "hidden": false,
@@ -6155,51 +6029,6 @@
           {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
           {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
           {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
-        "name": "Astartes Grenade Launcher",
-        "id": "fa4a-4db2-5aba-246b",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
-        "name": "Astartes Shotgun",
-        "id": "804e-8cd0-4dda-2878",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Concussive", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
-        "name": "Grav Gun",
-        "id": "7d74-1b74-bb90-2e4f",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
         ]
       }
     ],
@@ -6458,16 +6287,6 @@
             "hidden": false
           }
         ]
-      },
-      {
-        "name": "Grav Chute",
-        "id": "caeb-c46e-9194-b2be",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [{"name": "Grav Chute", "id": "3c96-37cc-ae3a-d6d6", "description": "A model with a Grav Chute gains the Deep Strike Special rule.", "hidden": false}]
       },
       {
         "name": "Grapple Hooks",
@@ -7169,114 +6988,6 @@
         ]
       },
       {
-        "name": "Assault Bolters",
-        "id": "8643-48b6-fe63-6d7c",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Assault Bolters",
-            "id": "639a-5c9a-649c-9da9",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Bolt Sniper Rifle",
-        "id": "dc32-f7ae-ff6e-9920",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Bolt Sniper Rifle",
-            "id": "3097-acd8-4378-0be5",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Precision Hits, Rending (5+), Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Linked Boltgun",
-        "id": "c5c1-9a34-c9c5-0410",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Boltgun",
-            "id": "4170-d4d7-9a3e-54b3",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Linked Heavy Bolter",
-        "id": "7812-1637-a222-add0",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Heavy Bolter",
-            "id": "b258-6dfd-6d96-6e29",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked, Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Tempest Bolter",
         "id": "9061-f012-9622-cdf4",
         "collective": true,
@@ -7299,124 +7010,6 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hurricane Bolter",
-        "id": "8df1-2b7a-b2fa-fa8f",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Hurricane Bolter",
-            "id": "169d-adf1-2a6e-98ab",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Heavy Bolter",
-        "id": "78c1-9390-d6ec-04ff",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Heavy Bolter",
-            "id": "5302-d6cc-cdc7-d54d",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Boltstorm Gauntlet",
-        "id": "080c-97f8-39a3-3f2b",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [
-          {
-            "name": "storm Gauntlet (melee)",
-            "id": "a47f-c6c3-5e46-6eb5",
-            "hidden": false,
-            "targetId": "34cd-a6b9-1a0f-756f",
-            "type": "profile",
-            "modifiers": [{"field": "name", "join": "", "type": "prepend", "value": "Bolt"}]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Boltstorm Gauntlet (shooting)",
-            "id": "8da5-2381-b31f-726e",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Heavy Boltgun",
-        "id": "aee5-a896-164f-7f58",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Heavy Boltgun",
-            "id": "6039-f363-64f6-47eb",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -7471,55 +7064,6 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Storm Bolter",
-        "id": "c829-b809-d33d-4738",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Storm Bolter", "id": "8c28-6ea4-ccb1-3d6b", "hidden": false, "targetId": "2d40-d20d-b301-8589", "type": "profile"}]
-      },
-      {
-        "name": "Boltgun",
-        "id": "469c-f449-1e9e-1d6f",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Boltgun", "id": "c863-1214-22d1-8980", "hidden": false, "targetId": "bee9-8218-8f32-a948", "type": "profile"}]
-      },
-      {
-        "name": "Bolt Pistol",
-        "id": "ead9-8050-dca8-5b0f",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Bolt Pistol",
-            "id": "b7f8-30fb-9c47-6475",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -7687,33 +7231,6 @@
         ]
       },
       {
-        "name": "Storm Strike Missiles",
-        "id": "51fa-767e-5767-27e5",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "15",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Storm Strike Missiles",
-            "id": "d014-4446-635c-0739",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Typhoon Missile Launcher",
         "id": "1dd2-3fe5-299c-4e29",
         "collective": true,
@@ -7808,166 +7325,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Hunter-Killer Missile",
-        "id": "1a9c-6ba1-bbb9-0abb",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "15",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Hunter-Killer Missile",
-            "id": "5110-989c-f13c-1329",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Ammo (1)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Cyclone Missile Launcher",
-        "id": "c990-6a7a-e2d2-63af",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "15",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Cyclone Missile Launcher (Frag)",
-            "id": "7bc9-58a2-9742-54d9",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Barrage (2), Variable", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Cyclone Missile Launcher (Krak)",
-            "id": "d3c8-7f81-e004-8a46",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Missile Launcher",
-        "id": "6bc7-dc8c-099c-61ce",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "15",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Missile Launcher (Frag)",
-            "id": "0fca-edab-1359-7610",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Variable", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Missile Launcher (Krak)",
-            "id": "d79f-0979-590c-a829",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Grav Cannon",
-        "id": "9bbd-1376-34f3-babf",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "16",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Grav Cannon",
-            "id": "7c93-f9a2-e580-86c7",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Grav Gun",
-        "id": "c4da-fd1d-a542-d279",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "16",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Grav Gun", "id": "b9e3-2bde-4a4e-db96", "hidden": false, "targetId": "7d74-1b74-bb90-2e4f", "type": "profile"}]
-      },
-      {
-        "name": "Grav Pistol",
-        "id": "4095-0464-a8c4-96f1",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "16",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Grav Pistol", "id": "bd87-9c4e-c76f-1dce", "hidden": false, "targetId": "07a5-2d88-7f0b-fdde", "type": "profile"}]
       },
       {
         "name": "Las Fusil",
@@ -8116,33 +7473,6 @@
         "infoLinks": [{"name": "Neo Volkite Pistol", "id": "7d6b-cd6e-1753-c71d", "hidden": false, "targetId": "badb-ecc4-580a-7832", "type": "profile"}]
       },
       {
-        "name": "Plasma Pistol",
-        "id": "3407-02d2-18aa-4a22",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Plasma Pistol",
-            "id": "a73a-eee7-2644-1289",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Volkite Calivers",
         "id": "af1a-8de9-4e81-d699",
         "collective": true,
@@ -8208,44 +7538,6 @@
         ]
       },
       {
-        "name": "Plasma Gun",
-        "id": "db58-d2e2-0963-74bd",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Plasma Gun", "id": "e8c8-5d92-25a9-4ce9", "hidden": false, "targetId": "3735-b78e-cd7d-d8e1", "type": "profile"}]
-      },
-      {
-        "name": "Orbital Bombardment",
-        "id": "e4b2-4024-7ff4-318d",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Orbital Bombardment",
-            "id": "9744-3f64-992e-b2bf",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "12", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder, Ordnance, Blast (Large), Ammo (1)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Macro Plasma incinerator",
         "id": "1405-c572-c578-8d95",
         "collective": true,
@@ -8268,33 +7560,6 @@
               {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Large), Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Plasma Exterminator",
-        "id": "bd89-fdab-ad3f-2beb",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Plasma Exterminator",
-            "id": "be3f-6d4a-7c87-2566",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -8349,33 +7614,6 @@
               {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Plasma Cannon",
-        "id": "a976-9c82-b60a-5fc0",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Plasma Cannon",
-            "id": "f50d-f370-27c5-5bb9",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -8498,121 +7736,6 @@
         "infoLinks": [{"name": "Thunder Hammer", "id": "30da-b932-3b3d-5517", "hidden": false, "targetId": "50ff-fc23-bc8a-fe34", "type": "profile"}]
       },
       {
-        "name": "Power Fist",
-        "id": "e38e-0c5b-3e05-b098",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Power Fist",
-            "id": "bdd4-26c4-2ccc-87c6",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Specialist weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Power Lance",
-        "id": "a7ed-640e-8d57-4f6f",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Power Lance", "id": "1c67-c601-5914-2e46", "hidden": false, "targetId": "ee2f-604a-3e7d-a55e", "type": "profile"}]
-      },
-      {
-        "name": "Power Maul",
-        "id": "2607-4972-6fde-3757",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Power Maul",
-            "id": "5f9a-c54f-5324-ae21",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Concussive, Crushing (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Power Axe",
-        "id": "6dff-d1d6-7194-b1d0",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Power Axe",
-            "id": "2b24-4a39-41a1-8519",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Power Sword",
-        "id": "84dd-49d6-4915-6b09",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Power Sword",
-            "id": "5e46-6a39-a118-b9e2",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Rending (6+).", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Chainsword",
         "id": "2b71-b37e-49b9-5ca8",
         "collective": true,
@@ -8634,32 +7757,6 @@
               {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "Shred", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Force Sword",
-        "id": "896e-0836-daec-f0a8",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Force Sword",
-            "id": "efbc-acc3-cbc8-e8bb",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Force", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -8702,32 +7799,6 @@
         "infoLinks": [{"name": "Dreadnought Close Combat weapon", "id": "7460-3603-f813-37cd", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"}]
       },
       {
-        "name": "Marine Crew Weapons",
-        "id": "2bae-f8ee-dabc-33dc",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Marine Crew Weapons",
-            "id": "f307-71db-fa0a-dfd4",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "4", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Close Combat weapon",
         "id": "eb87-daa9-089f-a519",
         "collective": true,
@@ -8754,58 +7825,6 @@
         ]
       },
       {
-        "name": "Force Stave",
-        "id": "840b-c47a-0e8d-fa15",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Force Stave",
-            "id": "ffef-d94d-69c6-5565",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Force", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Force Axe",
-        "id": "3a5f-68dd-68b7-f2f4",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Force Axe",
-            "id": "ea18-5d42-4fab-302b",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Force", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Chainfist",
         "id": "d8ec-e3b8-112b-1e9d",
         "collective": true,
@@ -8815,17 +7834,6 @@
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
         "infoLinks": [{"name": "Chainfist", "id": "4416-741f-2aef-00c6", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"}]
-      },
-      {
-        "name": "Astartes Shotgun",
-        "id": "f426-979e-1b34-e351",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Astartes Shotgun", "id": "447e-b447-1341-1466", "hidden": false, "targetId": "804e-8cd0-4dda-2878", "type": "profile"}]
       },
       {
         "name": "Grenade Launcher",
@@ -8847,97 +7855,20 @@
         "page": "20",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
-        "infoLinks": [{"name": "Astartes Grenade Launcher", "id": "672a-c842-1f5d-9e74", "hidden": false, "targetId": "fa4a-4db2-5aba-246b", "type": "profile"}]
-      },
-      {
-        "name": "shock Grenades",
-        "id": "3fe2-fc57-6bb8-d551",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "20",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "e7e6-779d-1d3e-c500-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "e7e6-779d-1d3e-c500-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
         "profiles": [
           {
-            "name": "shock Grenades",
-            "id": "fe11-624b-728a-7063",
+            "name": "Astartes Grenade Launcher",
+            "id": "fa4a-4db2-5aba-246b",
             "hidden": false,
             "typeId": "4425-e2ff-1ce0-83c1",
             "typeName": "Ranged Weapons",
             "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "0", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blind", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Krak Grenades",
-        "id": "f388-1ad7-18d8-8a53",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "20",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "68f8-ae17-e37d-ea76-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "68f8-ae17-e37d-ea76-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Krak Grenades",
-            "id": "f986-13dd-7441-b7bc",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
               {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Frag Grenades",
-        "id": "d75a-747a-e1f5-5235",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "20",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "ed9f-4e94-5613-559b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "ed9f-4e94-5613-559b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Frag Grenades",
-            "id": "b865-598b-9042-2460",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -9097,174 +8028,6 @@
               {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "Unwieldy, Sunder", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Combi Flamer",
-        "id": "4055-8e1b-e950-5299",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "22",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Combi Flamer (Boltgun)",
-            "id": "fb50-b715-28c3-63b8",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Combi Flamer (Flamer)",
-            "id": "f27a-ead4-e9c6-c5e3",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Spray, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Combi Plasma",
-        "id": "8d0b-110a-173a-4ddd",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "22",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Combi Plasma (Boltgun)",
-            "id": "ab29-e2f4-f2ad-faa3",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Combi Plasma (Plasma)",
-            "id": "dd1a-6b6b-cf0e-7f07",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Gets Hot!, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Combi Grav",
-        "id": "b8b8-1bdb-b1a9-d4d9",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "22",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Combi Grav (Boltgun)",
-            "id": "5d96-0901-550a-d0b1",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Combi Grav (Grav)",
-            "id": "ce1a-4b5d-c856-d0bf",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Crushing (6+), Haywire (6+). Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Combi Melta",
-        "id": "0a47-4e41-d06f-dabf",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "22",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Combi Melta (Boltgun)",
-            "id": "e11a-d95f-dedc-7d38",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Combi Melta (Melta)",
-            "id": "f153-142a-b6fb-b9c1",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -9748,19 +8511,19 @@
             ],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "1476-61d4-5e18-3b2d",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "cd99-ebf1-c231-0436-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "cd99-ebf1-c231-0436-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "6edb-3790-9edd-15a7", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "6edb-3790-9edd-15a7", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "31ce-875f-9475-0980", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Power Armour",
@@ -10117,7 +8880,7 @@
                   {"id": "4ab5-4e87-875e-da13-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "acae-4920-5e8a-ba12", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "acae-4920-5e8a-ba12", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "d1ac-f218-166e-69fc", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Power Armour",
@@ -10238,12 +9001,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "3c69-75b6-1046-9b1d",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "2acc-3e9c-3b69-87ca-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -10918,7 +9681,7 @@
                   {"id": "f726-9753-e93f-6d93-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "a44c-da22-4e97-fbbf", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "a44c-da22-4e97-fbbf", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "ac5a-9351-997c-abcf", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Boltgun",
@@ -11712,7 +10475,7 @@
                   {"id": "4088-2fc2-7525-47e3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "e5f9-3448-52b2-948f", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "e5f9-3448-52b2-948f", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "40e8-e42a-494e-0dc3", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Boltgun",
@@ -12452,7 +11215,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
-                  {"name": "Close Combat weapon", "id": "494c-cf6d-12d2-5868", "hidden": false, "import": true, "targetId": "eb87-daa9-089f-a519", "type": "selectionEntry"},
+                  {"name": "Close Combat Weapons", "id": "494c-cf6d-12d2-5868", "hidden": false, "import": true, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"},
                   {
                     "name": "Power Sword",
                     "id": "c128-9bc7-992d-23f9",
@@ -13769,7 +12532,7 @@
             ],
             "entryLinks": [
               {"name": "Krak Grenades", "id": "6870-f5ce-aabc-557c", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "59aa-8dda-ba7e-b2fc", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "59aa-8dda-ba7e-b2fc", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Bolt Pistol", "id": "7336-b8ce-0631-85fa", "hidden": false, "import": true, "targetId": "c685-46c5-9410-190e", "type": "selectionEntryGroup"},
               {
                 "name": "Boltgun",
@@ -13957,7 +12720,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
                   },
-                  {"name": "Close Combat weapon", "id": "7550-06a3-4790-636b", "hidden": false, "import": true, "targetId": "eb87-daa9-089f-a519", "type": "selectionEntry"},
+                  {"name": "Close Combat Weapons", "id": "7550-06a3-4790-636b", "hidden": false, "import": true, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"},
                   {"name": "Chainsword", "id": "e856-737f-387f-8dbd", "hidden": false, "import": true, "targetId": "2b71-b37e-49b9-5ca8", "type": "selectionEntry"},
                   {
                     "name": "Power Sword",
@@ -14031,7 +12794,7 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
             "entryLinks": [
               {"name": "Krak Grenades", "id": "5c8f-80a7-6145-9d9d", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "cfa3-299c-deb9-48b1", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"}
+              {"name": "Frag Grenades", "id": "cfa3-299c-deb9-48b1", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"}
             ],
             "infoLinks": [{"name": "Marine", "id": "bcde-4884-88de-bb77", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
             "selectionEntryGroups": [
@@ -16394,12 +15157,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "1377-fd80-f3e3-9188",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "aac6-f3db-01cc-fef5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -16423,12 +15186,12 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 33}],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "332c-3b5a-1447-9122",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "1eb7-6e90-b376-c46f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -18730,11 +17493,11 @@
                       },
                       {"name": "Skirmisher", "id": "50a4-8875-f328-222f", "hidden": false, "targetId": "8bd6-1e91-b6da-5902", "type": "selectionEntry"},
                       {
-                        "name": "Grav Chute",
+                        "name": "Grav-Chute",
                         "id": "10b6-3522-0c44-97c7",
                         "hidden": false,
                         "import": true,
-                        "targetId": "caeb-c46e-9194-b2be",
+                        "targetId": "0c0f-9894-7a9b-277c",
                         "type": "selectionEntry",
                         "constraints": [{"id": "3cfc-28b6-d2bb-da4d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
@@ -18821,7 +17584,7 @@
                     "type": "selectionEntry",
                     "entryLinks": [
                       {"name": "Krak Grenades", "id": "abaf-7104-401e-d69f", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-                      {"name": "Frag Grenades", "id": "f3d9-080b-4a53-31af", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                      {"name": "Frag Grenades", "id": "f3d9-080b-4a53-31af", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Mobility", "id": "02d7-e66e-aee1-948c", "hidden": false, "import": true, "targetId": "801d-2543-53c9-8359", "type": "selectionEntryGroup"}
                     ],
                     "modifiers": [
@@ -18878,7 +17641,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
                     "entryLinks": [
-                      {"name": "Frag Grenades", "id": "f519-1240-7634-b535", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                      {"name": "Frag Grenades", "id": "f519-1240-7634-b535", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "a88b-d397-6869-c9c0", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
                     ],
                     "modifiers": [
@@ -19022,7 +17785,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
                     "entryLinks": [
-                      {"name": "Frag Grenades", "id": "b9d9-7cd9-1ec9-e266", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                      {"name": "Frag Grenades", "id": "b9d9-7cd9-1ec9-e266", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "55ef-b32e-feff-fe12", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
                     ],
                     "modifiers": [
@@ -19143,12 +17906,12 @@
                 ],
                 "entryLinks": [
                   {
-                    "name": "Close Combat weapon",
+                    "name": "Close Combat Weapons",
                     "id": "ea28-13d2-9b14-1531",
                     "hidden": false,
                     "import": true,
                     "sortIndex": 0,
-                    "targetId": "eb87-daa9-089f-a519",
+                    "targetId": "ba4d-218f-3817-c775",
                     "type": "selectionEntry",
                     "modifiers": [
                       {
@@ -19912,7 +18675,7 @@
                       }
                     ]
                   },
-                  {"name": "Frag Grenades", "id": "0cc8-80c7-38cd-ed9a", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                  {"name": "Frag Grenades", "id": "0cc8-80c7-38cd-ed9a", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                   {
                     "name": "Power Armour",
                     "id": "7713-9571-d882-5f24",
@@ -20278,7 +19041,7 @@
                       }
                     ]
                   },
-                  {"name": "Frag Grenades", "id": "7484-16e6-3adf-b16b", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                  {"name": "Frag Grenades", "id": "7484-16e6-3adf-b16b", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                   {
                     "name": "Power Armour",
                     "id": "ff14-4a8a-3a68-2dc0",
@@ -20583,12 +19346,12 @@
                     ],
                     "entryLinks": [
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "7990-1ecf-8714-b687",
                         "hidden": false,
                         "import": true,
                         "sortIndex": 0,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                       },
@@ -20762,7 +19525,7 @@
                       }
                     ]
                   },
-                  {"name": "Frag Grenades", "id": "2a68-7520-de75-2bc6", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                  {"name": "Frag Grenades", "id": "2a68-7520-de75-2bc6", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                   {
                     "name": "Power Armour",
                     "id": "bab7-76c8-f9fa-65f5",
@@ -21139,7 +19902,7 @@
                       }
                     ]
                   },
-                  {"name": "Frag Grenades", "id": "80dd-2b8f-3249-9a86", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                  {"name": "Frag Grenades", "id": "80dd-2b8f-3249-9a86", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                   {
                     "name": "Power Armour",
                     "id": "41da-725c-c74b-0517",
@@ -21425,12 +20188,12 @@
                     ],
                     "entryLinks": [
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "28ef-b7dc-5a00-68bc",
                         "hidden": false,
                         "import": true,
                         "sortIndex": 0,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                       },
@@ -21906,7 +20669,7 @@
                     "targetId": "1618-4349-e229-5a93",
                     "type": "selectionEntry",
                     "entryLinks": [
-                      {"name": "Frag Grenades", "id": "62dc-aae2-77ac-1eaa", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                      {"name": "Frag Grenades", "id": "62dc-aae2-77ac-1eaa", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "575f-3982-de1e-9204", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
                     ],
                     "modifiers": [
@@ -21939,7 +20702,7 @@
                     "targetId": "8eb8-a457-ad6c-9266",
                     "type": "selectionEntry",
                     "entryLinks": [
-                      {"name": "Frag Grenades", "id": "7d98-7b98-608d-d853", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                      {"name": "Frag Grenades", "id": "7d98-7b98-608d-d853", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "2f50-4c9c-b42b-b995", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
                       {"name": "Mobility", "id": "9218-625f-cd8e-e56d", "hidden": false, "import": true, "targetId": "801d-2543-53c9-8359", "type": "selectionEntryGroup"}
                     ],
@@ -21975,7 +20738,7 @@
                     "entryLinks": [
                       {"name": "Mobility", "id": "7169-153c-8c99-3adc", "hidden": false, "targetId": "801d-2543-53c9-8359", "type": "selectionEntryGroup"},
                       {"name": "Krak Grenades", "id": "6974-0b18-33f6-4829", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-                      {"name": "Frag Grenades", "id": "bf99-dfb2-f039-9de3", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"}
+                      {"name": "Frag Grenades", "id": "bf99-dfb2-f039-9de3", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"}
                     ],
                     "modifiers": [
                       {
@@ -22007,7 +20770,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
                     "entryLinks": [
-                      {"name": "Frag Grenades", "id": "adf1-26c8-5d21-ebac", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                      {"name": "Frag Grenades", "id": "adf1-26c8-5d21-ebac", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "0bc8-118c-06d9-73a0", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
                     ]
                   },
@@ -22021,7 +20784,7 @@
                     "targetId": "a4ba-4903-d3aa-0406",
                     "type": "selectionEntry",
                     "entryLinks": [
-                      {"name": "Frag Grenades", "id": "275f-8265-e74f-baba", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+                      {"name": "Frag Grenades", "id": "275f-8265-e74f-baba", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "c3c6-30b1-f577-48af", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
                     ]
                   },
@@ -22225,12 +20988,12 @@
                         ]
                       },
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "5471-8ed2-ebea-c6f3",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "6e93-20f5-9d61-31da-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -23249,12 +22012,12 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
                     "entryLinks": [
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "c962-6757-f229-1a2a",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "517a-91af-bee8-3d5c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -23381,12 +22144,12 @@
                         ]
                       },
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "9dbb-b4b8-cf3c-7fc7",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "e4f1-d51f-0c6b-5fdc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -23500,12 +22263,12 @@
                         ]
                       },
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "53f7-af51-764d-4b4b",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "fdd7-9384-d932-301f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -23619,12 +22382,12 @@
                         ]
                       },
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "3294-bae8-2fbe-7162",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "cc3a-af79-34a3-b38c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -23738,12 +22501,12 @@
                         ]
                       },
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "07ec-56be-9c3c-a0a0",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "0161-0cbc-ea34-21fe-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -24351,7 +23114,7 @@
                   {"id": "6c93-af02-d395-45d1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "2e7a-f31c-8c7b-38d4", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "2e7a-f31c-8c7b-38d4", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "da41-08ba-cbfa-b907", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Camo Cloaks",
@@ -24837,12 +23600,12 @@
                         ]
                       },
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "f464-9465-3454-c76b",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "bfaa-d638-bf3d-3bde-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -24881,7 +23644,7 @@
                   {"id": "5945-a1f7-cfd1-c50e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "f208-6efa-8434-217d", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "f208-6efa-8434-217d", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "213e-351e-81bc-32ef", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Bolt Pistol",
@@ -24938,12 +23701,12 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
                     "entryLinks": [
                       {
-                        "name": "Close Combat weapon",
+                        "name": "Close Combat Weapons",
                         "id": "d135-35b2-30ce-36c5",
                         "defaultAmount": "1",
                         "hidden": false,
                         "import": true,
-                        "targetId": "eb87-daa9-089f-a519",
+                        "targetId": "ba4d-218f-3817-c775",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "381b-221d-b9d5-8125-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -25470,7 +24233,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "bec4-cf77-a405-25db", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "3988-3a32-20db-eba7", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "3988-3a32-20db-eba7", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Bike",
                 "id": "db0b-eb9c-6e24-b1d4",
@@ -25486,12 +24249,12 @@
                 "modifiers": [{"affects": "self.entries.5d14-540c-0685-74c3", "field": "hidden", "type": "set", "value": false}]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "881a-3236-0e94-fa14",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "e1de-06ce-1f11-5e40-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -25554,7 +24317,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "ad59-2636-f3f0-cff3", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "620a-3087-f7c7-766f", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "620a-3087-f7c7-766f", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Bike",
                 "id": "a020-f801-d0c6-86e6",
@@ -25580,12 +24343,12 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "1c38-53f9-a3d4-a7d2",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "62c0-493b-8717-d389-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -27405,15 +26168,15 @@
                 "constraints": [{"id": "a60f-5b96-1b62-9497", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
-              {"name": "Frag Grenades", "id": "600b-4936-c5f7-f342", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "600b-4936-c5f7-f342", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "90bb-bdb3-35f6-9e51", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "shock Grenades", "id": "8420-dc2c-b797-e42a", "hidden": false, "import": true, "targetId": "3fe2-fc57-6bb8-d551", "type": "selectionEntry"},
               {
-                "name": "Grav Chute",
+                "name": "Grav-Chute",
                 "id": "c3ef-d728-82fa-649c",
                 "hidden": true,
                 "import": true,
-                "targetId": "caeb-c46e-9194-b2be",
+                "targetId": "0c0f-9894-7a9b-277c",
                 "type": "selectionEntry",
                 "constraints": [
                   {
@@ -27442,8 +26205,8 @@
                     "type": "and",
                     "conditions": [
                       {
-                        "childId": "caeb-c46e-9194-b2be",
-                        "childName": "Grav Chute",
+                        "childId": "bfc9-3176-f861-6b0a",
+                        "childName": "Grav-Chute",
                         "field": "selections",
                         "includeChildSelections": false,
                         "scope": "unit",
@@ -27487,12 +26250,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "2717-89b2-1cfe-ab61",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "6304-b542-dbd1-b7d7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -27595,15 +26358,15 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "82fb-ac4c-7d35-5cd9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
-              {"name": "Frag Grenades", "id": "4a4a-f5a1-695f-44a8", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "4a4a-f5a1-695f-44a8", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "6308-c731-4b96-0063", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "shock Grenades", "id": "54e6-eae9-6fe7-a6d0", "hidden": false, "import": true, "targetId": "3fe2-fc57-6bb8-d551", "type": "selectionEntry"},
               {
-                "name": "Grav Chute",
+                "name": "Grav-Chute",
                 "id": "7f99-bb4d-17b7-5103",
                 "hidden": true,
                 "import": true,
-                "targetId": "caeb-c46e-9194-b2be",
+                "targetId": "0c0f-9894-7a9b-277c",
                 "type": "selectionEntry",
                 "constraints": [
                   {
@@ -27632,8 +26395,8 @@
                     "type": "and",
                     "conditions": [
                       {
-                        "childId": "caeb-c46e-9194-b2be",
-                        "childName": "Grav Chute",
+                        "childId": "bfc9-3176-f861-6b0a",
+                        "childName": "Grav-Chute",
                         "field": "selections",
                         "includeChildSelections": false,
                         "scope": "unit",
@@ -27677,12 +26440,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "1222-37c2-df75-e67d",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "4db9-0dad-ac1f-9709-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -27774,11 +26537,11 @@
             ],
             "entryLinks": [
               {
-                "name": "Grav Chute",
+                "name": "Grav-Chute",
                 "id": "bfc9-3176-f861-6b0a",
                 "hidden": false,
                 "import": true,
-                "targetId": "caeb-c46e-9194-b2be",
+                "targetId": "0c0f-9894-7a9b-277c",
                 "type": "selectionEntry",
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
@@ -29146,12 +27909,12 @@
             ],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "ed7d-5ad4-bce2-4b16",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "e464-012f-b42a-b5cf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -29512,12 +28275,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "6b23-1f47-50c9-224e",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "27df-71f8-91f0-9b63-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -29677,12 +28440,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "0285-e290-0b60-f3fd",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "8339-cc82-4d72-1391-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -30719,12 +29482,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "c897-bfdf-9e6d-d9d0",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "cb76-50b9-92a8-6545-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -31185,12 +29948,12 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "2e01-c4a1-93ef-e127",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "76f4-c23a-496b-fae3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -31198,7 +29961,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "00e8-add5-209a-f203", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "4682-392a-4f91-fdd0", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "4682-392a-4f91-fdd0", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Linked Boltgun",
                 "id": "55bc-edaa-795b-0252",
@@ -31446,7 +30209,7 @@
                 "constraints": [{"id": "4d57-6865-e58c-2f14", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
-              {"name": "Frag Grenades", "id": "04c5-e8f4-c213-ba25", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "04c5-e8f4-c213-ba25", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "945b-d838-1897-4621", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Phobos Armour",
@@ -31488,12 +30251,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "676c-6ef3-74a0-ee13",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "6b98-40da-8ff7-6956-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -31536,7 +30299,7 @@
                 "constraints": [{"id": "cb04-d42f-618d-1b19", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
-              {"name": "Frag Grenades", "id": "2922-f0f3-791f-ac6d", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "2922-f0f3-791f-ac6d", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "6359-260d-21b7-02b3", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Phobos Armour",
@@ -31578,12 +30341,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "90c7-ede8-0376-62a5",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "9d30-1773-a4d6-13bc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -31681,19 +30444,19 @@
             "entryLinks": [
               {"name": "Divinator Auspex Array", "id": "81ad-3c3d-296a-db12", "hidden": false, "targetId": "0b16-cef7-fa02-77b3", "type": "selectionEntry"},
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "d575-f2cc-30bf-03aa",
                 "defaultAmount": "2",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "a629-eea7-0222-efef-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
                   {"id": "a629-eea7-0222-efef-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ]
               },
-              {"name": "Frag Grenades", "id": "3e4a-79bf-c0f6-ea3b", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "3e4a-79bf-c0f6-ea3b", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "9181-291f-346a-0714", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Phobos Armour",
@@ -31752,19 +30515,19 @@
             "entryLinks": [
               {"name": "Divinator Auspex Array", "id": "94b0-8906-4993-985f", "hidden": false, "targetId": "0b16-cef7-fa02-77b3", "type": "selectionEntry"},
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "a323-a159-a0c3-380b",
                 "defaultAmount": "2",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "4fd7-fbe8-8315-92a9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
                   {"id": "4fd7-fbe8-8315-92a9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ]
               },
-              {"name": "Frag Grenades", "id": "f660-b383-ee5d-5dde", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "f660-b383-ee5d-5dde", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "3bee-caff-9e03-eb40", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Phobos Armour",
@@ -32791,12 +31554,12 @@
             ],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "6928-e094-3b4b-9d22",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "7b59-4041-8234-d37b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -33017,12 +31780,12 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "bd92-8543-4210-cc38",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "be60-cbf1-2bda-f466-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -33658,7 +32421,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "72bf-3df3-e8d3-2a3f", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "2668-f96f-4162-5df7", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "2668-f96f-4162-5df7", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Bolt Pistol",
                 "id": "2c1d-fcb7-0e04-7291",
@@ -33673,12 +32436,12 @@
                 ]
               },
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "e0f2-0d24-653d-78b3",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "f1be-70b2-31cd-e17e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -34469,12 +33232,12 @@
             ],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "f6a5-c422-ca7a-aa01",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "d95c-3b15-511f-ec08-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -34482,7 +33245,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "6d35-58f8-f292-56ae", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "ddac-b9f6-0663-019f", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "ddac-b9f6-0663-019f", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Camo Cloaks",
                 "id": "be36-8fbe-7a0d-5e01",
@@ -34577,12 +33340,12 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "abe1-85b5-3d37-6fa9",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "4be7-8bda-0eae-7491-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -34590,7 +33353,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "9628-815a-65a1-9fab", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "d039-409b-584c-0a1b", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "d039-409b-584c-0a1b", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Camo Cloaks",
                 "id": "c30a-14ad-c09b-f8ba",
@@ -34918,19 +33681,19 @@
             ],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "b67d-126e-bbca-d1e1",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "d237-5c07-7ff7-24cd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "d237-5c07-7ff7-24cd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "b2fe-7d39-4ac8-7efd", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "b2fe-7d39-4ac8-7efd", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "0c31-4335-3270-4aca", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {
                 "name": "Power Armour",
@@ -35105,7 +33868,7 @@
                 "type": "selectionEntryGroup",
                 "modifiers": [{"affects": "3d36-8e4a-4651-6e84", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 0}]
               },
-              {"name": "Frag Grenades", "id": "a361-fb43-786f-f778", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "a361-fb43-786f-f778", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Melta Bomb",
                 "id": "8243-a417-3095-1be4",
@@ -35214,12 +33977,12 @@
             "entryLinks": [
               {"name": "Atomantic Shielding", "id": "98d5-a6be-beb2-664f", "hidden": false, "import": true, "targetId": "22bf-68df-6ed4-225d", "type": "selectionEntry"},
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "2b7e-8b71-e3e6-dbbb",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "bacf-e67a-6c96-d550-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -37231,7 +35994,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "76f4-690f-c668-f891", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "3758-4d22-675c-211a", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "3758-4d22-675c-211a", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Bike",
                 "id": "f4f1-1d6f-aafd-0e8c",
@@ -37695,7 +36458,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "a01a-be74-e43a-082b", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "749b-b1e2-bb58-16c4", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "749b-b1e2-bb58-16c4", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Bike",
                 "id": "9b3a-585d-fea2-0612",
@@ -37741,12 +36504,12 @@
                 ],
                 "entryLinks": [
                   {
-                    "name": "Close Combat weapon",
+                    "name": "Close Combat Weapons",
                     "id": "1bea-7dd2-080b-df48",
                     "defaultAmount": "1",
                     "hidden": false,
                     "import": true,
-                    "targetId": "eb87-daa9-089f-a519",
+                    "targetId": "ba4d-218f-3817-c775",
                     "type": "selectionEntry"
                   },
                   {
@@ -38211,12 +36974,12 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
             "entryLinks": [
               {
-                "name": "Close Combat weapon",
+                "name": "Close Combat Weapons",
                 "id": "006f-80e7-f473-f3fb",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "eb87-daa9-089f-a519",
+                "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "048b-b4d0-00a9-34c6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -38224,7 +36987,7 @@
                 ]
               },
               {"name": "Krak Grenades", "id": "03ff-56d1-e2c4-87df", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "8f5b-8a5f-00b4-2cd5", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "8f5b-8a5f-00b4-2cd5", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Bike",
                 "id": "e804-8887-cee4-240a",
@@ -39071,7 +37834,7 @@
                   {"id": "53cd-172d-ee6e-e0f3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "a0eb-c638-1bb7-b495", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "a0eb-c638-1bb7-b495", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Jump Pack",
                 "id": "97bc-32b5-6f4d-d073",
@@ -39282,7 +38045,7 @@
                   {"id": "689d-fe7b-912e-2703-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Frag Grenades", "id": "56a5-df85-81d7-4a74", "hidden": false, "import": true, "targetId": "d75a-747a-e1f5-5235", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "56a5-df85-81d7-4a74", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Jump Pack",
                 "id": "7d77-cc87-2abf-ea4d",
@@ -40467,7 +39230,7 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
           },
-          {"name": "Close Combat weapon", "id": "6fc3-0e6a-8447-88f0", "hidden": false, "import": true, "targetId": "eb87-daa9-089f-a519", "type": "selectionEntry"},
+          {"name": "Close Combat Weapons", "id": "6fc3-0e6a-8447-88f0", "hidden": false, "import": true, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"},
           {
             "name": "Power Sword",
             "id": "a454-8374-af91-fbd2",

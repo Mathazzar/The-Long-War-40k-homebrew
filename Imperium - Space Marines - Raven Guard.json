@@ -1466,7 +1466,7 @@
               },
               {"name": "Shard of Istvaan", "id": "6c80-ca8a-6c6a-cd15", "hidden": false, "import": true, "targetId": "3805-76c1-b6e7-2cef", "type": "selectionEntry"},
               {"name": "Shadow Masters Cloak", "id": "0c7e-c2e8-e81e-a851", "hidden": false, "import": true, "targetId": "835f-838c-9a71-78c7", "type": "selectionEntry"},
-              {"name": "Krak Grenades", "id": "3be0-3ad3-7ec4-fd6a", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "3be0-3ad3-7ec4-fd6a", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "7fe0-6e3a-a5b4-ff67", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Artificer Armour",
@@ -1589,7 +1589,7 @@
                     "defaultAmount": "2",
                     "hidden": false,
                     "import": true,
-                    "targetId": "6cc8-d566-80d2-bff3",
+                    "targetId": "ead9-8050-dca8-5b0f",
                     "type": "selectionEntry"
                   }
                 ]
@@ -1705,7 +1705,7 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
               },
               {"name": "Smoke Launchers", "id": "24b1-4715-0e39-6dbe", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {"name": "Krak Grenades", "id": "4b4c-1106-633c-f81b", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "4b4c-1106-633c-f81b", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "4edb-03ba-5a2a-4f0b", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Jump Pack",
@@ -1977,7 +1977,7 @@
             ],
             "entryLinks": [
               {"name": "Shard of Istvaan", "id": "ddff-b432-1ede-f70f", "hidden": false, "import": true, "targetId": "3805-76c1-b6e7-2cef", "type": "selectionEntry"},
-              {"name": "Krak Grenades", "id": "a95b-578e-1b1e-c139", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "a95b-578e-1b1e-c139", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "e1f1-e5f9-d19a-ed07", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Plasma Pistol",
@@ -1985,7 +1985,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "8ce9-f099-506c-30ca",
+                "targetId": "3407-02d2-18aa-4a22",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "0742-d581-0040-bfec-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -1998,7 +1998,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "5337-696b-f2ae-af61",
+                "targetId": "84dd-49d6-4915-6b09",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "7c75-eeb9-68cb-da55-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -2218,7 +2218,7 @@
               {"id": "e12c-9852-5d5a-34f9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
-              {"name": "Krak Grenades", "id": "a1aa-7ee9-8e24-e30b", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "a1aa-7ee9-8e24-e30b", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "8fc5-cba9-0d06-00a6", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Jump Pack",
@@ -2457,7 +2457,7 @@
             ],
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
             "entryLinks": [
-              {"name": "Krak Grenades", "id": "808b-a3c1-fc9d-290b", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "808b-a3c1-fc9d-290b", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "9db6-4308-47cc-5516", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Infravisor", "id": "2704-8eba-d260-c6de", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"},
               {"name": "Corvia", "id": "7f1d-af06-cc2e-4d5d", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"},
@@ -2533,7 +2533,7 @@
                 "constraints": [{"id": "a064-3f15-276c-856b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
               },
-              {"name": "Krak Grenades", "id": "f45f-4a7a-b070-d073", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "f45f-4a7a-b070-d073", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "ad0a-69e2-4ef2-93e1", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Corvia", "id": "20a8-0242-a48e-48ec", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"},
               {"name": "Infravisor", "id": "b66f-32cb-f9fa-a0e9", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"},
@@ -2598,7 +2598,7 @@
                     "id": "6a8c-7317-a56b-63ca",
                     "hidden": false,
                     "import": true,
-                    "targetId": "1ae0-ddba-17f8-9b80",
+                    "targetId": "e38e-0c5b-3e05-b098",
                     "type": "selectionEntry",
                     "constraints": [{"id": "bac7-5914-a427-b5fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
@@ -2622,7 +2622,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "ff5a-d956-17e2-c4c1",
+                                "childId": "6dff-d1d6-7194-b1d0",
                                 "childName": "Power Axe",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2642,7 +2642,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "5337-696b-f2ae-af61",
+                                "childId": "84dd-49d6-4915-6b09",
                                 "childName": "Power Sword",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2662,7 +2662,7 @@
                     "id": "3d88-cedc-7333-1147",
                     "hidden": false,
                     "import": true,
-                    "targetId": "ff5a-d956-17e2-c4c1",
+                    "targetId": "6dff-d1d6-7194-b1d0",
                     "type": "selectionEntry",
                     "constraints": [{"id": "de46-ffe7-1eda-88d3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "modifiers": [
@@ -2685,7 +2685,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "1ae0-ddba-17f8-9b80",
+                                "childId": "e38e-0c5b-3e05-b098",
                                 "childName": "Power Fist",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2705,7 +2705,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "5337-696b-f2ae-af61",
+                                "childId": "84dd-49d6-4915-6b09",
                                 "childName": "Power Sword",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2725,7 +2725,7 @@
                     "id": "72c1-3e25-6ccb-88e7",
                     "hidden": false,
                     "import": true,
-                    "targetId": "5337-696b-f2ae-af61",
+                    "targetId": "84dd-49d6-4915-6b09",
                     "type": "selectionEntry",
                     "constraints": [{"id": "9448-9f66-7bf6-55ca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "modifiers": [
@@ -2748,7 +2748,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "ff5a-d956-17e2-c4c1",
+                                "childId": "6dff-d1d6-7194-b1d0",
                                 "childName": "Power Axe",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2758,7 +2758,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "1ae0-ddba-17f8-9b80",
+                                "childId": "e38e-0c5b-3e05-b098",
                                 "childName": "Power Fist",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2788,7 +2788,7 @@
                     "id": "db4c-c41c-1db8-8f55",
                     "hidden": false,
                     "import": true,
-                    "targetId": "8ce9-f099-506c-30ca",
+                    "targetId": "3407-02d2-18aa-4a22",
                     "type": "selectionEntry",
                     "constraints": [{"id": "2fcf-b717-05cf-1329", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "modifiers": [
@@ -2844,7 +2844,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "8ce9-f099-506c-30ca",
+                                "childId": "3407-02d2-18aa-4a22",
                                 "childName": "Plasma Pistol",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2890,7 +2890,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "ff5a-d956-17e2-c4c1",
+                                "childId": "6dff-d1d6-7194-b1d0",
                                 "childName": "Power Axe",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2900,7 +2900,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "1ae0-ddba-17f8-9b80",
+                                "childId": "e38e-0c5b-3e05-b098",
                                 "childName": "Power Fist",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2920,7 +2920,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "5337-696b-f2ae-af61",
+                                "childId": "84dd-49d6-4915-6b09",
                                 "childName": "Power Sword",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2962,7 +2962,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "ff5a-d956-17e2-c4c1",
+                                "childId": "6dff-d1d6-7194-b1d0",
                                 "childName": "Power Axe",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2972,7 +2972,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "1ae0-ddba-17f8-9b80",
+                                "childId": "e38e-0c5b-3e05-b098",
                                 "childName": "Power Fist",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2982,7 +2982,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "5337-696b-f2ae-af61",
+                                "childId": "84dd-49d6-4915-6b09",
                                 "childName": "Power Sword",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -3014,7 +3014,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "8ce9-f099-506c-30ca",
+                                "childId": "3407-02d2-18aa-4a22",
                                 "childName": "Plasma Pistol",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -3115,7 +3115,7 @@
               {"id": "0fb4-57ec-f4fe-5ff9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
-              {"name": "Krak Grenades", "id": "d81a-44cb-352e-4678", "hidden": false, "import": true, "targetId": "5d94-02b5-df28-4d57", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "d81a-44cb-352e-4678", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "da89-997e-e4da-c8ae", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
                 "name": "Melta Bomb",
@@ -3286,7 +3286,7 @@
                     "id": "d06f-f2f1-d012-df3d",
                     "hidden": false,
                     "import": true,
-                    "targetId": "5337-696b-f2ae-af61",
+                    "targetId": "84dd-49d6-4915-6b09",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
@@ -3343,7 +3343,7 @@
                     "id": "457f-6074-bcb8-b241",
                     "hidden": false,
                     "import": true,
-                    "targetId": "8ce9-f099-506c-30ca",
+                    "targetId": "3407-02d2-18aa-4a22",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
@@ -3414,12 +3414,12 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
                   },
-                  {"name": "Plasma Gun", "id": "184f-a506-b281-0462", "hidden": false, "import": true, "targetId": "c556-718e-4c41-5c19", "type": "selectionEntry"},
+                  {"name": "Plasma Gun", "id": "184f-a506-b281-0462", "hidden": false, "import": true, "targetId": "db58-d2e2-0963-74bd", "type": "selectionEntry"},
                   {"name": "Meltagun", "id": "092b-8560-c0e5-4ec9", "hidden": false, "import": true, "targetId": "6186-a63d-2245-c4bb", "type": "selectionEntry"},
-                  {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "c182-edc4-2773-442f", "type": "selectionEntry"}
+                  {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "c182-edc4-2773-442f", "type": "selectionEntry"},
+                  {"name": "Astartes Shotgun", "id": "164c-0a72-defc-f68a", "hidden": false, "import": true, "targetId": "f426-979e-1b34-e351", "type": "selectionEntry"}
                 ],
                 "selectionEntries": [
-                  {"name": "Astartes Shotgun", "id": "62c9-0552-5dd8-b91b", "hidden": false, "import": true, "type": "upgrade"},
                   {"name": "Combi-Flamer", "id": "3f93-1f83-9331-3328", "hidden": false, "import": true, "type": "upgrade"},
                   {"name": "Combi-Plasma", "id": "8210-0145-0685-cc8f", "hidden": false, "import": true, "type": "upgrade"},
                   {
@@ -3431,9 +3431,35 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
                   {"name": "Combi-Grav", "id": "4d71-4cf4-aa3d-2edc", "hidden": false, "import": true, "type": "upgrade"},
-                  {"name": "Astartes Grenade Launcher", "id": "9ced-63c6-c053-2152", "hidden": false, "import": true, "type": "upgrade"},
                   {"name": "Volkite Caliver", "id": "d844-66d1-232f-6f12", "hidden": false, "import": true, "type": "upgrade"},
-                  {"name": "Grav Gun", "id": "0c79-cfb1-525b-e17f", "hidden": false, "import": true, "type": "upgrade"}
+                  {"name": "Grav Gun", "id": "0c79-cfb1-525b-e17f", "hidden": false, "import": true, "type": "upgrade"},
+                  {
+                    "name": "Astartes Grenade Launcher",
+                    "id": "f12c-3831-5d2e-8c29",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "page": "20",
+                    "publicationId": "1606-03fb-e01d-e0cf",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Astartes Grenade Launcher",
+                        "id": "cc5b-8358-81ef-2038",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -3655,7 +3681,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
                   },
-                  {"name": "Linked Heavy Bolter", "id": "a4b8-3e2d-bd97-803f", "hidden": false, "import": true, "targetId": "356c-7d84-36e9-6573", "type": "selectionEntry"}
+                  {"name": "Linked Heavy Bolter", "id": "a4b8-3e2d-bd97-803f", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"}
                 ],
                 "selectionEntries": [
                   {

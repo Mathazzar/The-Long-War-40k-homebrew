@@ -826,7 +826,7 @@
               {"id": "e382-6d0c-9e94-1f55-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "b779-121d-3fae-35fe", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "b779-121d-3fae-35fe", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Honour Blade", "id": "febb-a08a-7945-eff9", "hidden": false, "targetId": "956b-0c7a-be17-defa", "type": "profile"},
               {"name": "Recon Armour", "id": "4254-9ec2-1d59-fe76", "hidden": false, "targetId": "cc6a-5a3b-f567-4639", "type": "rule"}
             ],
@@ -866,7 +866,7 @@
               {"id": "255d-d625-eb9c-0c79-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "460d-89fc-900c-9c14", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "460d-89fc-900c-9c14", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Honour Blade", "id": "0a39-d670-49db-2021", "hidden": false, "targetId": "956b-0c7a-be17-defa", "type": "profile"},
               {"name": "Recon Armour", "id": "d528-698e-934e-fd19", "hidden": false, "targetId": "cc6a-5a3b-f567-4639", "type": "rule"}
             ],
@@ -1125,7 +1125,7 @@
               {"id": "bde4-441d-ce24-bf94-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "b11c-2cc8-aa1c-a90c", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "b11c-2cc8-aa1c-a90c", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "EMP Grenades", "id": "2a92-e919-cc1f-a30e", "hidden": false, "targetId": "75f9-3b00-7432-27ec", "type": "profile"},
               {"name": "Markerlight", "id": "6d31-6000-a695-dd83", "hidden": false, "targetId": "82d2-2668-b5cf-1e49", "type": "profile"},
               {"name": "Photon Grenades", "id": "f9b0-620e-b703-2f1c", "hidden": false, "targetId": "79f4-7323-a801-7d0e", "type": "profile"},
@@ -1466,7 +1466,7 @@
               }
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "28c6-f09b-e820-7cac", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "28c6-f09b-e820-7cac", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Missile Pod", "id": "0284-c61d-a98a-05ee", "hidden": false, "targetId": "bc45-2e97-17b6-53c8", "type": "profile"},
               {"name": "Pulse Pistol", "id": "f24f-10b6-2767-1942", "hidden": false, "targetId": "5c0a-80f7-30db-2d7c", "type": "profile"},
               {"name": "Blacksun Filter", "id": "9570-f2d2-8eab-e7bb", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"},
@@ -1639,7 +1639,7 @@
             "infoLinks": [
               {"name": "Blacksun Filter", "id": "d9c4-1879-9c35-7031", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"},
               {"name": "Heavy Plate", "id": "961d-fe76-fed1-3a06", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
-              {"name": "Close Combat Weapon", "id": "b34d-7331-7fe8-d753", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"}
+              {"name": "Close Combat Weapon", "id": "b34d-7331-7fe8-d753", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"}
             ],
             "selectionEntries": [
               {
@@ -2088,7 +2088,7 @@
               {"id": "5bfb-48bf-acfc-356f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "00d8-538a-9401-5ff7", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "00d8-538a-9401-5ff7", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "EMP Grenades", "id": "05c9-c536-14be-7981", "hidden": false, "targetId": "75f9-3b00-7432-27ec", "type": "profile"},
               {"name": "Markerlight", "id": "56cf-0268-ebb1-ba98", "hidden": false, "targetId": "82d2-2668-b5cf-1e49", "type": "profile"},
               {"name": "Photon Grenades", "id": "18ce-1118-1414-258b", "hidden": false, "targetId": "79f4-7323-a801-7d0e", "type": "profile"},
@@ -2503,7 +2503,7 @@
               {"name": "Fortifications", "typeId": "141a-54cb-187f-3966", "value": 0}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "8e89-3937-dd02-6911", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "8e89-3937-dd02-6911", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "EMP Grenades", "id": "ac36-4090-d28e-29ff", "hidden": false, "targetId": "75f9-3b00-7432-27ec", "type": "profile"},
               {"name": "Photon Grenades", "id": "4966-20f2-265d-33f8", "hidden": false, "targetId": "79f4-7323-a801-7d0e", "type": "profile"},
               {
@@ -2646,7 +2646,7 @@
             ],
             "infoLinks": [
               {"name": "Photon Grenades", "id": "5bcf-3f96-27a3-c45b", "hidden": false, "targetId": "79f4-7323-a801-7d0e", "type": "profile"},
-              {"name": "Close Combat Weapon", "id": "19b7-214d-f8e8-91b1", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "19b7-214d-f8e8-91b1", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "EMP Grenades", "id": "70c5-a1f3-0076-52ef", "hidden": false, "targetId": "75f9-3b00-7432-27ec", "type": "profile"},
               {"name": "Combat Armour", "id": "07b9-eeef-c6da-a2ff", "hidden": false, "targetId": "3ef7-0b1d-f640-1693", "type": "rule"},
               {
@@ -4157,7 +4157,7 @@
               {"name": "Pulse Blaster", "id": "b553-2b29-99df-89b0", "hidden": false, "targetId": "a545-87e7-2b24-9562", "type": "profile"},
               {"name": "Heavy Plate", "id": "842e-6c46-de48-0643", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Blacksun Filter", "id": "4dd5-1ead-8921-6e71", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"},
-              {"name": "Close Combat Weapon", "id": "2b01-b739-9613-62e1", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"}
+              {"name": "Close Combat Weapon", "id": "2b01-b739-9613-62e1", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"}
             ],
             "profiles": [
               {
@@ -4211,7 +4211,7 @@
               {"name": "Pulse Blaster", "id": "652c-6d2c-efcc-2156", "hidden": false, "targetId": "a545-87e7-2b24-9562", "type": "profile"},
               {"name": "Heavy Plate", "id": "7d7d-e2f4-34d1-d3ea", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Blacksun Filter", "id": "01f4-5bbb-90d0-8b9f", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"},
-              {"name": "Close Combat Weapon", "id": "4089-9906-24da-5de4", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"}
+              {"name": "Close Combat Weapon", "id": "4089-9906-24da-5de4", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"}
             ],
             "profiles": [
               {
@@ -4665,7 +4665,7 @@
             "infoLinks": [
               {"name": "Recon Armour", "id": "f6d5-aa88-ee34-6233", "hidden": false, "targetId": "cc6a-5a3b-f567-4639", "type": "rule"},
               {"name": "Photon Grenades", "id": "4ef0-3323-ad9d-4661", "hidden": false, "targetId": "79f4-7323-a801-7d0e", "type": "profile"},
-              {"name": "Close Combat Weapon", "id": "9e38-8188-3ab9-7354", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "9e38-8188-3ab9-7354", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "EMP Grenades", "id": "0ebd-1bde-b0bd-77ea", "hidden": false, "targetId": "75f9-3b00-7432-27ec", "type": "profile"}
             ],
             "profiles": [
@@ -4941,7 +4941,7 @@
             "infoLinks": [
               {"name": "Recon Armour", "id": "eeb4-2a9e-ade5-33ac", "hidden": false, "targetId": "cc6a-5a3b-f567-4639", "type": "rule"},
               {"name": "Photon Grenades", "id": "df43-ad66-2acd-a1a2", "hidden": false, "targetId": "79f4-7323-a801-7d0e", "type": "profile"},
-              {"name": "Close Combat Weapon", "id": "ab61-13df-5b0f-bfc8", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "ab61-13df-5b0f-bfc8", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "EMP Grenades", "id": "68a0-dac1-d630-89a7", "hidden": false, "targetId": "75f9-3b00-7432-27ec", "type": "profile"}
             ],
             "profiles": [
@@ -5581,7 +5581,7 @@
             "import": true,
             "type": "model",
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "55c8-8ff0-8eea-3f5c", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "55c8-8ff0-8eea-3f5c", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Heavy Plate", "id": "0fe0-2b65-8f6b-4d18", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Blacksun Filter", "id": "02c7-ea67-3009-30c0", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"},
               {"name": "Drone Controller", "id": "0c97-5034-7d56-ca17", "hidden": false, "targetId": "9452-0c66-ed58-de05", "type": "rule"}
@@ -5791,7 +5791,7 @@
             ],
             "infoLinks": [
               {"name": "Pulse Pistol", "id": "93c9-0c42-52fb-2006", "hidden": false, "targetId": "5c0a-80f7-30db-2d7c", "type": "profile"},
-              {"name": "Close Combat Weapon", "id": "e140-ed83-458f-2523", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "e140-ed83-458f-2523", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Markerlight", "id": "25f7-6611-0cc0-ae65", "hidden": false, "targetId": "82d2-2668-b5cf-1e49", "type": "profile"},
               {"name": "Combat Armour", "id": "338e-95de-c3bc-5b3a", "hidden": false, "targetId": "3ef7-0b1d-f640-1693", "type": "rule"},
               {"name": "Stealth Field", "id": "bcac-c2aa-7cb9-0b78", "hidden": false, "targetId": "499a-b06a-5a34-e436", "type": "rule"},
@@ -7726,7 +7726,7 @@
             ],
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 55}],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "a8f8-83a4-5298-dc3e", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "a8f8-83a4-5298-dc3e", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Super Heavy Plate", "id": "b287-dfb9-69dd-7587", "hidden": false, "targetId": "dfbe-c744-5683-db2b", "type": "rule"},
               {"name": "Blacksun Filter", "id": "5eb4-e823-cc71-7f72", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"}
             ],
@@ -8421,7 +8421,7 @@
               {"id": "4a1e-fae9-07f3-bd14-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "25a1-3ea1-cf78-38e9", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "25a1-3ea1-cf78-38e9", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Super Heavy Plate", "id": "abdf-a70a-06f6-a4e1", "hidden": false, "targetId": "dfbe-c744-5683-db2b", "type": "rule"},
               {"name": "Blacksun Filter", "id": "3e9e-6af4-6d4e-97a2", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"}
             ],
@@ -8740,7 +8740,7 @@
               {"id": "c500-e211-f2ae-19f4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "e4c4-4c59-9303-397e", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "e4c4-4c59-9303-397e", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Super Heavy Plate", "id": "a589-abaa-b008-21b4", "hidden": false, "targetId": "dfbe-c744-5683-db2b", "type": "rule"},
               {"name": "Blacksun Filter", "id": "9c70-173e-4e96-f814", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"}
             ],
@@ -8924,7 +8924,7 @@
               {"id": "321a-8ac8-ab55-76b6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "d2eb-3a4b-7289-e8bc", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "d2eb-3a4b-7289-e8bc", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Super Heavy Plate", "id": "c99f-617a-e403-af5b", "hidden": false, "targetId": "dfbe-c744-5683-db2b", "type": "rule"},
               {"name": "Blacksun Filter", "id": "b897-c016-4a7e-e8e0", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"},
               {"name": "Phased Plasma Flamer", "id": "a7a2-b681-091a-1951", "hidden": false, "targetId": "9400-d572-d7e3-6710", "type": "profile"},
@@ -9073,7 +9073,7 @@
             ],
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 95}],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "0029-cc64-c408-5fed", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "0029-cc64-c408-5fed", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Super Heavy Plate", "id": "fb72-8530-132e-a448", "hidden": false, "targetId": "dfbe-c744-5683-db2b", "type": "rule"},
               {"name": "Blacksun Filter", "id": "5b7f-cd24-5341-b8ff", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"}
             ],
@@ -10324,7 +10324,7 @@
             "infoLinks": [
               {"name": "Heavy Plate", "id": "760b-eca5-7339-3b34", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Drone Controller", "id": "1e14-fe6e-9648-6a82", "hidden": false, "targetId": "9452-0c66-ed58-de05", "type": "rule"},
-              {"name": "Close Combat Weapon", "id": "3766-0d17-616f-8b99", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"}
+              {"name": "Close Combat Weapon", "id": "3766-0d17-616f-8b99", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"}
             ],
             "profiles": [
               {
@@ -10855,7 +10855,7 @@
               {"name": "Knarloc Bite", "id": "7cc1-b76e-05aa-f3ff", "hidden": false, "targetId": "c67b-e889-5586-5fc2", "type": "profile"},
               {"name": "Kroot Pistol", "id": "fb54-7b02-3ded-d317", "hidden": false, "targetId": "2d58-c4ae-4d1c-2c66", "type": "profile"},
               {"name": "Repeater Cannon", "id": "5629-75ed-9ff7-cddb", "hidden": false, "targetId": "ee6f-0a40-6b72-b00c", "type": "profile"},
-              {"name": "Close Combat Weapon", "id": "ee76-1221-a2d6-cb82", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "ee76-1221-a2d6-cb82", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Kroot Combat Weapon", "id": "a344-9267-6702-8d03", "hidden": false, "targetId": "01ee-1642-fccb-2afc", "type": "profile"},
               {"name": "Greater Knarloc Bite", "id": "04d8-0597-de02-dfc0", "hidden": false, "targetId": "7c9f-ff9c-1d10-b688", "type": "profile"},
               {"name": "Kroot Rifle", "id": "7f5d-4440-3bf8-2be8", "hidden": false, "targetId": "d95b-baf6-a9db-6cef", "type": "profile"},
@@ -10956,7 +10956,7 @@
               {"name": "Knarloc Bite", "id": "9528-e55a-8938-fc96", "hidden": false, "targetId": "c67b-e889-5586-5fc2", "type": "profile"},
               {"name": "Kroot Pistol", "id": "4445-3f3f-1b21-77f3", "hidden": false, "targetId": "2d58-c4ae-4d1c-2c66", "type": "profile"},
               {"name": "Repeater Cannon", "id": "a6ec-c9ea-f848-dc69", "hidden": false, "targetId": "ee6f-0a40-6b72-b00c", "type": "profile"},
-              {"name": "Close Combat Weapon", "id": "fcdc-5c4a-8039-ab6b", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"}
+              {"name": "Close Combat Weapon", "id": "fcdc-5c4a-8039-ab6b", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"}
             ],
             "profiles": [
               {
@@ -14226,7 +14226,7 @@
         ],
         "infoLinks": [
           {"name": "Shield Drone", "id": "1336-e20c-e103-39e3", "hidden": false, "page": "", "targetId": "cbc0-5768-a7d7-fca9", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "d940-4a7c-008f-ce9a", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "d940-4a7c-008f-ce9a", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Shield Generator", "id": "689a-e9f3-286c-bd98", "hidden": false, "targetId": "37d7-7f1f-4449-66d7", "type": "rule"},
           {"name": "Supporting Fire", "id": "99b6-84bb-2e46-e2f6", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "5e54-23fd-590f-9361", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
@@ -14264,7 +14264,7 @@
         ],
         "infoLinks": [
           {"name": "Gun Drone", "id": "7481-ec77-5145-c211", "hidden": false, "page": "", "targetId": "6337-6601-52ea-9b69", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "1080-5bc0-cc99-2d2d", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "1080-5bc0-cc99-2d2d", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "60b6-72bf-0dd8-d1d6", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "0403-4834-6f13-e434", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "372a-8b89-2499-bdf6", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14302,7 +14302,7 @@
         ],
         "infoLinks": [
           {"name": "Sniper Drone", "id": "7a42-a356-86dd-db3d", "hidden": false, "page": "", "targetId": "2e11-be7f-81ce-4c56", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "9cf5-7816-9f5e-d98e", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "9cf5-7816-9f5e-d98e", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "350c-454b-d4e3-484d", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "d55d-8e7e-7527-0205", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "4ffb-5b37-245e-7ede", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14340,7 +14340,7 @@
         ],
         "infoLinks": [
           {"name": "Markerlight Drone", "id": "a79f-a800-eb75-b2b7", "hidden": false, "page": "", "targetId": "13e1-e8f5-2fcc-1e14", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "a03e-6baa-8def-cf54", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "a03e-6baa-8def-cf54", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "8cc8-b64a-43d4-c6b1", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "ebb8-010b-9dc1-d12b", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "9cf2-e3e1-d53f-e61b", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14378,7 +14378,7 @@
         ],
         "infoLinks": [
           {"name": "Missile Drone", "id": "62ef-3a54-b6fb-75fb", "hidden": false, "page": "", "targetId": "2a19-d0b2-315f-b5b3", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "33a7-9e18-3c6b-14fa", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "33a7-9e18-3c6b-14fa", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "ace5-487d-3973-3b3b", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "730b-7ebe-aac1-a1dc", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "f784-6caf-305e-a20b", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14416,7 +14416,7 @@
         ],
         "infoLinks": [
           {"name": "Stealth Drone", "id": "dbd2-47bc-9b6c-b2f3", "hidden": false, "page": "", "targetId": "7530-f6ae-897d-ef49", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "4894-1711-8d30-e474", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "4894-1711-8d30-e474", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "81d0-fc31-b3ec-515a", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "915f-3722-24d9-1d4b", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "58dc-120f-f31d-8052", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14454,7 +14454,7 @@
         ],
         "infoLinks": [
           {"name": "Missile Shield Drone", "id": "c4a2-a5a0-52b2-697c", "hidden": false, "page": "", "targetId": "a2a9-0fa7-6afc-cc94", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "dccf-b8c0-d585-d58b", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "dccf-b8c0-d585-d58b", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "ed5e-20f4-4392-90f1", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "a310-99fa-266a-80df", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "77da-6a0c-9fe8-9f1b", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14493,7 +14493,7 @@
         ],
         "infoLinks": [
           {"name": "Guardian Drone", "id": "180d-95b3-241e-3519", "hidden": false, "page": "", "targetId": "ed66-021a-a08a-83d4", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "950b-5aa0-8fd1-1492", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "950b-5aa0-8fd1-1492", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "47e7-a0cd-1c4a-134d", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "ccc4-4231-a6ba-9e25", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "280a-e3a0-d7b6-06c4", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14531,7 +14531,7 @@
         ],
         "infoLinks": [
           {"name": "Recon Drone", "id": "0989-3b81-ddb9-18cf", "hidden": false, "page": "", "targetId": "b3d4-93ba-815d-8985", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "81f2-f1b1-4ce7-46b3", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "81f2-f1b1-4ce7-46b3", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "0c4b-103d-6e22-fceb", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "a02d-1451-274d-53f1", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "962a-6d78-cc2c-da64", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14569,7 +14569,7 @@
         ],
         "infoLinks": [
           {"name": "Grav-Inhibitor Drone", "id": "ccfa-c795-e005-2d13", "hidden": false, "page": "", "targetId": "5137-f980-71ac-7ac3", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "554c-5c1e-1297-6993", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "554c-5c1e-1297-6993", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "161e-383a-816c-e8bc", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "9382-a9d9-2fcc-3245", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "2951-96b4-0b11-9154", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14606,7 +14606,7 @@
         ],
         "infoLinks": [
           {"name": "Pulse Accelerator Drone", "id": "1c17-b968-c5a3-d4d2", "hidden": false, "page": "", "targetId": "443a-a9c4-4d55-747a", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "6bad-fd03-a88d-7b53", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "6bad-fd03-a88d-7b53", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "bc62-d4d7-c83f-5b67", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "46d6-1cbd-8370-0ef5", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "54f0-be59-bc11-ae6e", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14644,7 +14644,7 @@
         ],
         "infoLinks": [
           {"name": "Interceptor Drone", "id": "36fb-07e3-6134-1863", "hidden": false, "page": "", "targetId": "b436-7c1b-9567-1402", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "d960-bc4e-372b-d374", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "d960-bc4e-372b-d374", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "412b-57ab-0c08-7e5e", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "247a-a0df-d93b-1172", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "b11e-f6c8-4777-718b", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14701,7 +14701,7 @@
         ],
         "infoLinks": [
           {"name": "Command Uplink Drone", "id": "25b1-8c3c-145d-3c2b", "hidden": false, "page": "", "targetId": "33ae-771f-7a92-b6c8", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "c898-9389-a27c-e1cb", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "c898-9389-a27c-e1cb", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "aa70-a658-427f-3229", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "572a-c597-5483-9e29", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "284a-b748-e24e-5571", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -14739,7 +14739,7 @@
         ],
         "infoLinks": [
           {"name": "Technical Drone", "id": "7dfa-9b7d-0307-bb6c", "hidden": false, "page": "", "targetId": "f633-2a5e-99dd-2665", "type": "profile"},
-          {"name": "Close Combat Weapon", "id": "acb0-589a-29b7-ed5f", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+          {"name": "Close Combat Weapon", "id": "acb0-589a-29b7-ed5f", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
           {"name": "Supporting Fire", "id": "e184-501b-2c2e-0e5d", "hidden": false, "targetId": "2743-afe5-7ded-2a33", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "23d3-280e-f252-b8e6", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "cdb9-55ad-7f0d-4679", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
@@ -15399,7 +15399,7 @@
               {"name": "Fortifications", "typeId": "141a-54cb-187f-3966", "value": 0}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "3b94-773d-d724-a27d", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "3b94-773d-d724-a27d", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Stealth Generator", "id": "d1ce-513c-7874-f768", "hidden": false, "targetId": "70eb-1d27-7288-f97f", "type": "rule"},
               {"name": "Heavy Plate", "id": "d0a0-8007-dc6e-ce08", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Homing Beacon", "id": "2943-fa21-5680-5e71", "hidden": false, "targetId": "91b2-cb70-7382-c456", "type": "rule"},
@@ -15482,7 +15482,7 @@
               {"name": "Fortifications", "typeId": "141a-54cb-187f-3966", "value": 0}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "9b64-d50f-7ca0-aa1d", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "9b64-d50f-7ca0-aa1d", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Stealth Generator", "id": "98b5-5cb5-c1cd-6ff0", "hidden": false, "targetId": "70eb-1d27-7288-f97f", "type": "rule"},
               {"name": "Heavy Plate", "id": "8c59-006c-eb89-7e4e", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Homing Beacon", "id": "4e98-914d-e0af-7bc9", "hidden": false, "targetId": "91b2-cb70-7382-c456", "type": "rule"},
@@ -15941,7 +15941,7 @@
               {"name": "Fortifications", "typeId": "141a-54cb-187f-3966", "value": 0}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "d05a-7cf3-af78-ddf9", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "d05a-7cf3-af78-ddf9", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Heavy Plate", "id": "a450-756b-5e8e-001e", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Blacksun Filter", "id": "5d06-6da1-995a-bdc1", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"}
             ],
@@ -16099,7 +16099,7 @@
               {"name": "Fortifications", "typeId": "141a-54cb-187f-3966", "value": 0}
             ],
             "infoLinks": [
-              {"name": "Close Combat Weapon", "id": "4836-d140-2664-3a9d", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "4836-d140-2664-3a9d", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Heavy Plate", "id": "48e1-6e0e-7940-61e3", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Blacksun Filter", "id": "d53f-ff09-5a67-59cf", "hidden": false, "targetId": "dfc2-7a44-82ed-b7e0", "type": "rule"}
             ],
@@ -16908,7 +16908,7 @@
             "infoLinks": [
               {"name": "Heavy Plate", "id": "6fc9-e0ed-66b6-6172", "hidden": false, "targetId": "b6a9-9c0a-a4e2-b1dd", "type": "rule"},
               {"name": "Drone Controller", "id": "7626-4f70-be97-81bf", "hidden": false, "targetId": "9452-0c66-ed58-de05", "type": "rule"},
-              {"name": "Close Combat Weapon", "id": "282a-8e25-e4ae-505f", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"}
+              {"name": "Close Combat Weapon", "id": "282a-8e25-e4ae-505f", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"}
             ],
             "profiles": [
               {
@@ -17058,7 +17058,7 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 50}],
             "infoLinks": [
               {"name": "Markerlight", "id": "8b64-01b9-bba9-0796", "hidden": false, "targetId": "82d2-2668-b5cf-1e49", "type": "profile"},
-              {"name": "Close Combat Weapon", "id": "5326-8fb8-25e8-c02f", "hidden": false, "targetId": "52db-e69b-f6f3-a488", "type": "profile"},
+              {"name": "Close Combat Weapon", "id": "5326-8fb8-25e8-c02f", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "profile"},
               {"name": "Stealth Field", "id": "9948-5318-4de3-621f", "hidden": false, "targetId": "499a-b06a-5a34-e436", "type": "rule"}
             ],
             "profiles": [

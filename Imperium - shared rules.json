@@ -186,6 +186,323 @@
           {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
           {"name": "Rules", "$text": "Rending (5+), Pinning", "typeId": "ba87-19e9-d692-6e30"}
         ]
+      },
+      {
+        "name": "Linked Grenade Launcher (Frag)",
+        "id": "8566-175e-9085-716d",
+        "hidden": false,
+        "page": "13",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Blast (Small), Linked", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Linked Grenade Launcher (Krak)",
+        "id": "29ed-5074-0729-14ab",
+        "hidden": false,
+        "page": "13",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Grenade Launcher (Frag)",
+        "id": "f329-8e0d-105d-1da3",
+        "hidden": false,
+        "page": "12",
+        "publicationId": "5b81-795c-38b3-285c",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assaut", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Blast (Small), Variable", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Grenade Launcher (Krak)",
+        "id": "86b3-d135-d892-f706",
+        "hidden": false,
+        "page": "12",
+        "publicationId": "5b81-795c-38b3-285c",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Shotgun",
+        "id": "867a-7c51-acfe-84dd",
+        "hidden": false,
+        "page": "12",
+        "publicationId": "5b81-795c-38b3-285c",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Concussive", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Boltgun",
+        "id": "bee9-8218-8f32-a948",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Storm Bolter",
+        "id": "2d40-d20d-b301-8589",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Bayonet",
+        "id": "f61d-f091-62a5-6e1e",
+        "hidden": false,
+        "page": "15",
+        "publicationId": "5b81-795c-38b3-285c",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "6", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Two-handed", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Chainsword",
+        "id": "1417-b0eb-6694-72c3",
+        "hidden": false,
+        "page": "15",
+        "publicationId": "5b81-795c-38b3-285c",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Shred", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Power Lance",
+        "id": "ee2f-604a-3e7d-a55e",
+        "hidden": false,
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Reach", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Paragon War Blade",
+        "id": "5511-134e-95d8-580f",
+        "hidden": false,
+        "page": "14",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+3", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Unwieldy, Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Paragon War Mace",
+        "id": "3631-49a3-5314-15bc",
+        "hidden": false,
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+3", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Unwieldy, Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Penitent Buzz Blade",
+        "id": "3bd0-c0c1-b650-66f5",
+        "hidden": false,
+        "page": "14",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Sunder, Shred", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Penitent Flail",
+        "id": "9692-9353-2272-c228",
+        "hidden": false,
+        "page": "14",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Arcing (5+), Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Death Cult Swords",
+        "id": "f729-e97c-6240-fd48",
+        "hidden": false,
+        "page": "14",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Rending (6+), Precision Hits, ,Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Plasma Gun",
+        "id": "3735-b78e-cd7d-d8e1",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Grav Pistol",
+        "id": "07a5-2d88-7f0b-fdde",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Grav Gun",
+        "id": "7d74-1b74-bb90-2e4f",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Hallowed Mace",
+        "id": "2f3e-a180-8e54-2686",
+        "hidden": false,
+        "page": "13",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Crushing (6+), Concussive", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Blessed Blades",
+        "id": "6a4b-ed78-f0ac-8f3f",
+        "hidden": false,
+        "page": "13",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
       }
     ],
     "sharedRules": [
@@ -575,11 +892,34 @@
       {
         "name": "Power Armour",
         "id": "8eb8-a457-ad6c-9266",
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "page": "9",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
+        "constraints": [
+          {
+            "id": "be61-f1a6-e87d-8282-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "be61-f1a6-e87d-8282-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
         "rules": [
           {"name": "Power Armour", "id": "ed81-ab55-a86d-d04f", "description": "Basic Power Armour used by most Astartes. It provides a 3+ Armour Save.", "hidden": false}
         ]
@@ -1419,6 +1759,1542 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frag Grenades",
+        "id": "d2ae-8075-6bc5-1bdd",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9c7e-324b-4a76-d4aa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9c7e-324b-4a76-d4aa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Frag Grenades",
+            "id": "a62d-1b1d-069e-901c",
+            "hidden": false,
+            "page": "12",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Krak Grenades",
+        "id": "f388-1ad7-18d8-8a53",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "68f8-ae17-e37d-ea76-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "68f8-ae17-e37d-ea76-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Krak Grenades",
+            "id": "f986-13dd-7441-b7bc",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "shock Grenades",
+        "id": "3fe2-fc57-6bb8-d551",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e7e6-779d-1d3e-c500-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "e7e6-779d-1d3e-c500-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "shock Grenades",
+            "id": "fe11-624b-728a-7063",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "0", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blind", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Grenade Launcher",
+        "id": "a88e-a221-d619-6cce",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "infoLinks": [
+          {"name": "Linked Grenade Launcher (Krak)", "id": "c313-be18-9ed3-8c0e", "hidden": false, "targetId": "29ed-5074-0729-14ab", "type": "profile"},
+          {"name": "Linked Grenade Launcher (Frag)", "id": "17f7-af6f-3d0a-fd5f", "hidden": false, "targetId": "8566-175e-9085-716d", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Grenade Launcher",
+        "id": "6d89-4fe1-9b27-affe",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Grenade Launcher (Frag)", "id": "000e-8bd7-cfb7-b972", "hidden": false, "targetId": "f329-8e0d-105d-1da3", "type": "profile"},
+          {"name": "Grenade Launcher (Krak)", "id": "2a9d-ebd6-a4d1-5318", "hidden": false, "targetId": "86b3-d135-d892-f706", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Shotgun",
+        "id": "a3a1-67c7-b802-00a3",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Shotgun", "id": "6614-ccd9-10cc-9ce0", "hidden": false, "targetId": "867a-7c51-acfe-84dd", "type": "profile"}]
+      },
+      {
+        "name": "Astartes Shotgun",
+        "id": "f426-979e-1b34-e351",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Astartes Shotgun",
+            "id": "804e-8cd0-4dda-2878",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Concussive", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sniper Rifle",
+        "id": "2b28-2be1-8fe9-0348",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Sniper Rifle",
+            "id": "dab8-029d-f993-11d1",
+            "hidden": false,
+            "page": "12",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Precision Hits, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Battle Cannon",
+        "id": "db17-ba36-4e15-830e",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Battle Cannon",
+            "id": "54e1-d15d-8bd5-38a3",
+            "hidden": false,
+            "page": "12",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Large), Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Taurox Battle Cannon",
+        "id": "e1d2-3fa6-1649-5f3b",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Taurox Battle Cannon",
+            "id": "035f-5cca-885d-dfce",
+            "hidden": false,
+            "page": "12",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortar",
+        "id": "a3df-7af7-f232-7324",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Mortar",
+            "id": "6a17-83e2-f2ad-ad21",
+            "hidden": false,
+            "page": "13",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12-48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small), Indirect Fire", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Orbital Bombardment",
+        "id": "e4b2-4024-7ff4-318d",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Orbital Bombardment",
+            "id": "9744-3f64-992e-b2bf",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "12", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Sunder, Ordnance, Blast (Large), Ammo (1)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bolt Pistol",
+        "id": "ead9-8050-dca8-5b0f",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bolt Pistol",
+            "id": "b7f8-30fb-9c47-6475",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boltgun",
+        "id": "469c-f449-1e9e-1d6f",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Boltgun", "id": "c863-1214-22d1-8980", "hidden": false, "targetId": "bee9-8218-8f32-a948", "type": "profile"}]
+      },
+      {
+        "name": "Blessed Bolter",
+        "id": "ee97-eadb-fda2-24ae",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Blessed Bolter",
+            "id": "d485-49cb-6304-95b1",
+            "hidden": false,
+            "page": "11",
+            "publicationId": "6f16-791a-3a26-4c72",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm Bolter",
+        "id": "c829-b809-d33d-4738",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Storm Bolter", "id": "8c28-6ea4-ccb1-3d6b", "hidden": false, "targetId": "2d40-d20d-b301-8589", "type": "profile"}]
+      },
+      {
+        "name": "Heavy Boltgun",
+        "id": "aee5-a896-164f-7f58",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Heavy Boltgun",
+            "id": "6039-f363-64f6-47eb",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boltstorm Gauntlet",
+        "id": "080c-97f8-39a3-3f2b",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [
+          {
+            "name": "storm Gauntlet (melee)",
+            "id": "a47f-c6c3-5e46-6eb5",
+            "hidden": false,
+            "targetId": "34cd-a6b9-1a0f-756f",
+            "type": "profile",
+            "modifiers": [{"field": "name", "join": "", "type": "prepend", "value": "Bolt"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Boltstorm Gauntlet (shooting)",
+            "id": "8da5-2381-b31f-726e",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Bolter",
+        "id": "78c1-9390-d6ec-04ff",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Heavy Bolter",
+            "id": "5302-d6cc-cdc7-d54d",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hurricane Bolter",
+        "id": "8df1-2b7a-b2fa-fa8f",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hurricane Bolter",
+            "id": "169d-adf1-2a6e-98ab",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Heavy Bolter",
+        "id": "7812-1637-a222-add0",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Heavy Bolter",
+            "id": "b258-6dfd-6d96-6e29",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked, Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Boltgun",
+        "id": "c5c1-9a34-c9c5-0410",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Boltgun",
+            "id": "4170-d4d7-9a3e-54b3",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bolt Sniper Rifle",
+        "id": "dc32-f7ae-ff6e-9920",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bolt Sniper Rifle",
+            "id": "3097-acd8-4378-0be5",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Precision Hits, Rending (5+), Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Assault Bolters",
+        "id": "8643-48b6-fe63-6d7c",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Assault Bolters",
+            "id": "639a-5c9a-649c-9da9",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Missile Launcher",
+        "id": "6bc7-dc8c-099c-61ce",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Missile Launcher (Frag)",
+            "id": "0fca-edab-1359-7610",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small), Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Missile Launcher (Krak)",
+            "id": "d79f-0979-590c-a829",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hunter-Killer Missile",
+        "id": "1a9c-6ba1-bbb9-0abb",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hunter-Killer Missile",
+            "id": "5110-989c-f13c-1329",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Ammo (1)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hellstrike Missile",
+        "id": "98a8-1834-d47e-33e3",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hellstrike Missile",
+            "id": "1243-1c0f-27e8-af07",
+            "hidden": false,
+            "page": "14",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Sunder, Ammo (1), Skyfire", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm Strike Missiles",
+        "id": "51fa-767e-5767-27e5",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Storm Strike Missiles",
+            "id": "d014-4446-635c-0739",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Sunder", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cyclone Missile Launcher",
+        "id": "c990-6a7a-e2d2-63af",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Cyclone Missile Launcher (Frag)",
+            "id": "7bc9-58a2-9742-54d9",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small), Barrage (2), Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Cyclone Missile Launcher (Krak)",
+            "id": "d3c8-7f81-e004-8a46",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Marine Crew Weapons",
+        "id": "2bae-f8ee-dabc-33dc",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Marine Crew Weapons",
+            "id": "f307-71db-fa0a-dfd4",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "4", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bayonet",
+        "id": "40db-d197-f4e5-3d52",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Bayonet", "id": "9c37-468d-a066-6e71", "hidden": false, "targetId": "f61d-f091-62a5-6e1e", "type": "profile"}]
+      },
+      {
+        "name": "Power Sword",
+        "id": "84dd-49d6-4915-6b09",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power Sword",
+            "id": "5e46-6a39-a118-b9e2",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Rending (6+).", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Maul",
+        "id": "2607-4972-6fde-3757",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power Maul",
+            "id": "5f9a-c54f-5324-ae21",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Concussive, Crushing (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Lance",
+        "id": "a7ed-640e-8d57-4f6f",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Power Lance", "id": "1c67-c601-5914-2e46", "hidden": false, "targetId": "ee2f-604a-3e7d-a55e", "type": "profile"}]
+      },
+      {
+        "name": "Power Fist",
+        "id": "e38e-0c5b-3e05-b098",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power Fist",
+            "id": "bdd4-26c4-2ccc-87c6",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Specialist weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Axe",
+        "id": "6dff-d1d6-7194-b1d0",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power Axe",
+            "id": "2b24-4a39-41a1-8519",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chainsword",
+        "id": "f82a-555a-d38f-b930",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Chainsword", "id": "5c0a-e844-6d0b-3344", "hidden": false, "targetId": "1417-b0eb-6694-72c3", "type": "profile"}]
+      },
+      {
+        "name": "Evicerator",
+        "id": "b997-ac09-b543-0e7d",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+        "infoLinks": [{"name": "Eviscerator", "id": "9f25-68ff-80e8-6251", "hidden": false, "targetId": "ec36-ec28-f008-e96a", "type": "profile"}]
+      },
+      {
+        "name": "Force Sword",
+        "id": "896e-0836-daec-f0a8",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Force Sword",
+            "id": "efbc-acc3-cbc8-e8bb",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Force", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Force Stave",
+        "id": "840b-c47a-0e8d-fa15",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Force Stave",
+            "id": "ffef-d94d-69c6-5565",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Force", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Force Axe",
+        "id": "3a5f-68dd-68b7-f2f4",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Force Axe",
+            "id": "ea18-5d42-4fab-302b",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Force", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lascutter",
+        "id": "e7a0-b1b7-e54b-7c99",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Lascutter",
+            "id": "c1ac-39ff-6f41-ca31",
+            "hidden": false,
+            "page": "16",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "9", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Sunder, Unwieldy, Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arco Flails",
+        "id": "2a87-6593-c18f-0393",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Arco Flails",
+            "id": "8d21-4804-bf7b-9b82",
+            "hidden": false,
+            "page": "14",
+            "publicationId": "6f16-791a-3a26-4c72",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "5", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Arcing (6+), Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Neural Whips",
+        "id": "6b0e-3247-d850-8a75",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Neural Whips",
+            "id": "f865-edda-de23-2877",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Swiftstrike", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Paragon War Mace",
+        "id": "0820-514f-a59a-4359",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "infoLinks": [{"name": "Paragon War Mace", "id": "0693-87db-e5d2-1633", "hidden": false, "targetId": "3631-49a3-5314-15bc", "type": "profile"}]
+      },
+      {
+        "name": "Paragon War Blade",
+        "id": "d7b0-65c9-b0e6-0663",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Paragon War Blade", "id": "150e-c6c6-b7a9-b9d5", "hidden": false, "targetId": "5511-134e-95d8-580f", "type": "profile"}]
+      },
+      {
+        "name": "Death Cult Swords",
+        "id": "919a-b98a-900f-5173",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Death Cult Swords", "id": "f947-3c44-da55-4800", "hidden": false, "targetId": "f729-e97c-6240-fd48", "type": "profile"}]
+      },
+      {
+        "name": "Plasma Pistol",
+        "id": "3407-02d2-18aa-4a22",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Plasma Pistol",
+            "id": "a73a-eee7-2644-1289",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grav Pistol",
+        "id": "4095-0464-a8c4-96f1",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "16",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Grav Pistol", "id": "bd87-9c4e-c76f-1dce", "hidden": false, "targetId": "07a5-2d88-7f0b-fdde", "type": "profile"}]
+      },
+      {
+        "name": "Grav Gun",
+        "id": "c4da-fd1d-a542-d279",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "16",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Grav Gun", "id": "b9e3-2bde-4a4e-db96", "hidden": false, "targetId": "7d74-1b74-bb90-2e4f", "type": "profile"}]
+      },
+      {
+        "name": "Grav Cannon",
+        "id": "9bbd-1376-34f3-babf",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "16",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Grav Cannon",
+            "id": "7c93-f9a2-e580-86c7",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Gun",
+        "id": "db58-d2e2-0963-74bd",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Plasma Gun", "id": "e8c8-5d92-25a9-4ce9", "hidden": false, "targetId": "3735-b78e-cd7d-d8e1", "type": "profile"}]
+      },
+      {
+        "name": "Plasma Exterminator",
+        "id": "bd89-fdab-ad3f-2beb",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Plasma Exterminator",
+            "id": "be3f-6d4a-7c87-2566",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Cannon",
+        "id": "a976-9c82-b60a-5fc0",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Plasma Cannon",
+            "id": "f50d-f370-27c5-5bb9",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small), Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anointed Halberd",
+        "id": "dfeb-c214-ec0e-901c",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "profiles": [
+          {
+            "name": "Anointed Halberd",
+            "id": "39f5-ccd1-adf9-b38f",
+            "hidden": false,
+            "page": "13",
+            "publicationId": "6f16-791a-3a26-4c72",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Reach", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spear of the Faithful",
+        "id": "ce78-488d-285f-7836",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "profiles": [
+          {
+            "name": "Spear of the Faithful",
+            "id": "cbf2-e014-eab0-08a6",
+            "hidden": false,
+            "page": "13",
+            "publicationId": "6f16-791a-3a26-4c72",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Reach", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hallowed Mace",
+        "id": "e8d7-39d3-9d73-7980",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "infoLinks": [{"name": "Hallowed Mace", "id": "9b98-0708-e877-4601", "hidden": false, "targetId": "2f3e-a180-8e54-2686", "type": "profile"}]
+      },
+      {
+        "name": "Blessed Blades",
+        "id": "b514-b4bb-cf50-8bed",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "infoLinks": [{"name": "Blessed Blades", "id": "a834-5eaf-614e-c4ec", "hidden": false, "targetId": "6a4b-ed78-f0ac-8f3f", "type": "profile"}]
+      },
+      {
+        "name": "Combi Flamer",
+        "id": "4055-8e1b-e950-5299",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "22",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi Flamer (Boltgun)",
+            "id": "fb50-b715-28c3-63b8",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Combi Flamer (Flamer)",
+            "id": "f27a-ead4-e9c6-c5e3",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Combi Grav",
+        "id": "b8b8-1bdb-b1a9-d4d9",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "22",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi Grav (Boltgun)",
+            "id": "5d96-0901-550a-d0b1",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Combi Grav (Grav)",
+            "id": "ce1a-4b5d-c856-d0bf",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Crushing (6+), Haywire (6+). Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Combi Melta",
+        "id": "0a47-4e41-d06f-dabf",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "22",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi Melta (Boltgun)",
+            "id": "e11a-d95f-dedc-7d38",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Combi Melta (Melta)",
+            "id": "f153-142a-b6fb-b9c1",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Melta, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Combi Plasma",
+        "id": "8d0b-110a-173a-4ddd",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "22",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi Plasma (Boltgun)",
+            "id": "ab29-e2f4-f2ad-faa3",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Combi Plasma (Plasma)",
+            "id": "dd1a-6b6b-cf0e-7f07",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Gets Hot!, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Condemnor Boltgun",
+        "id": "58d0-0d98-18ff-5135",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+        "profiles": [
+          {
+            "name": "Condemnor Boltgun (Boltgun)",
+            "id": "da11-c94a-56ae-90ae",
+            "hidden": false,
+            "page": "15",
+            "publicationId": "6f16-791a-3a26-4c72",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Condemnor Boltgun (stake)",
+            "id": "ec8c-a089-80d9-39e7",
+            "hidden": false,
+            "page": "15",
+            "publicationId": "6f16-791a-3a26-4c72",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Bane (Chaos), Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
