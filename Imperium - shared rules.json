@@ -6,8 +6,14 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 10,
     "library": true,
-    "revision": 1,
+    "revision": 3,
     "type": "catalogue",
+    "categoryEntries": [
+      {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
+      {"name": "Cult Ministorum", "id": "4e69-2b1d-e273-cb0b", "hidden": false},
+      {"name": "Redemptionists", "id": "83a2-37d7-3feb-4d96", "hidden": false},
+      {"name": "Captain", "id": "875f-9975-8052-0495", "hidden": false}
+    ],
     "sharedProfiles": [
       {
         "name": "Las Pistol",
@@ -503,6 +509,22 @@
           {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
         ]
+      },
+      {
+        "name": "Eviscerator",
+        "id": "ec36-ec28-f008-e96a",
+        "hidden": false,
+        "page": "12",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Shred, Sunder, Unwieldy, Two Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
       }
     ],
     "sharedRules": [
@@ -590,7 +612,8 @@
         "hidden": false,
         "page": "8",
         "publicationId": "5b81-795c-38b3-285c"
-      }
+      },
+      {"name": "Angels of Death", "id": "edfb-d641-ce62-8542", "comment": "todo: No profile provided in reference", "hidden": false}
     ],
     "sharedSelectionEntries": [
       {
@@ -620,7 +643,7 @@
                 "includeChildSelections": false,
                 "scope": "unit",
                 "shared": true,
-                "type": "notInstanceOf",
+                "type": "lessThan",
                 "value": 1
               }
             ]
@@ -640,6 +663,7 @@
       {
         "name": "Iron Halo",
         "id": "e4e6-277e-371d-1ba9",
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "page": "8",
@@ -892,34 +916,11 @@
       {
         "name": "Power Armour",
         "id": "8eb8-a457-ad6c-9266",
-        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "page": "9",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
-        "constraints": [
-          {
-            "id": "be61-f1a6-e87d-8282-min",
-            "automatic": true,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "min",
-            "value": 1
-          },
-          {
-            "id": "be61-f1a6-e87d-8282-max",
-            "automatic": true,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "max",
-            "value": 1
-          }
-        ],
         "rules": [
           {"name": "Power Armour", "id": "ed81-ab55-a86d-d04f", "description": "Basic Power Armour used by most Astartes. It provides a 3+ Armour Save.", "hidden": false}
         ]
@@ -1771,8 +1772,26 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "9c7e-324b-4a76-d4aa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "9c7e-324b-4a76-d4aa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {
+            "id": "9c7e-324b-4a76-d4aa-min",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "9c7e-324b-4a76-d4aa-max",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
         ],
         "profiles": [
           {
@@ -3296,6 +3315,745 @@
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Bane (Chaos), Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
             ]
+          }
+        ]
+      },
+      {
+        "name": "Rite of Immolation (Machine Rite)",
+        "id": "f37a-2f6b-c0ca-f251",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "8c6a-bb37-8dbe-a0f5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
+        "rules": [
+          {
+            "name": "Rite of Immolation (Machine Rite)",
+            "id": "3ae4-7091-b9b1-83e5",
+            "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit immediately suffers an Explodes result per the Vehicle Damage Chart, even if it would normally not.",
+            "hidden": false,
+            "page": "19",
+            "publicationId": "5b81-795c-38b3-285c"
+          }
+        ]
+      },
+      {
+        "name": "Rite of Repair (Machine Rite):",
+        "id": "9e4c-7de9-2a09-4097",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "64d6-bdd4-246f-e2e9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "rules": [
+          {
+            "name": "Rite of Repair (Machine Rite)",
+            "id": "e0f7-f59e-64bf-0b67",
+            "description": "When this Rite is performed successfully, select one of the following effects:\n• Select 1 Walker or Automata unit either within 3” or attached to the unit that is performing this rite. The target unit Heals 1 wound.\n• Select 1 Vehicle, Aircraft, Knight or Fortification either within 3”, attached to the unit performing this Rite or that this unit is embarked upon. Select 1 weapon that target unit is equipped with that has been destroyed. The chosen weapon is no longer destroyed.\n• Select 1 Vehicle or Knight either within 3”, attached to the unit performing this Rite or that this unit is embarked upon that is immobilized. That unit is no longer immobilized. If the unit has the Super Heavy (x) special rule and was Limping, it is no longer considered to be Limping.",
+            "hidden": false,
+            "page": "19",
+            "publicationId": "5b81-795c-38b3-285c"
+          }
+        ]
+      },
+      {
+        "name": "Litany of Focus (Prayer)",
+        "id": "a645-6155-b3a2-36e9",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "40f6-939d-008f-1e83", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
+        "rules": [
+          {
+            "name": "Litany of Foxus (Prayer)",
+            "id": "c0c1-9399-1f40-8f8e",
+            "description": "When this Prayer is performed, the Priest and any attached unit has the Indomitable Spirit (4+) special rule until the start of your next Shooting Phase.",
+            "hidden": false,
+            "page": "19",
+            "publicationId": "5b81-795c-38b3-285c"
+          }
+        ]
+      },
+      {
+        "name": "Litany of Hatred (Prayer)",
+        "id": "0a63-744b-fb9a-273d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "4e8d-e371-2e99-b2ee", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "rules": [
+          {
+            "name": "Litany of Hatred (Prayer)",
+            "id": "6a4b-25ab-7927-f29f",
+            "description": "When this Prayer is performed, the Priest and any attached unit gain the Hatred special rule until the start of your next Shooting Phase.",
+            "hidden": false,
+            "page": "19",
+            "publicationId": "5b81-795c-38b3-285c"
+          }
+        ]
+      },
+      {
+        "name": "Litany of Rage (Prayer)",
+        "id": "db15-079e-abae-3c2c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "458c-bc92-c4d8-a4b8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+        "rules": [
+          {
+            "name": "Litany of Rage (Prayer)",
+            "id": "abfc-2bd5-6a59-59b0",
+            "description": "When this Prayer is performed, the Priest and any attached unit gain the Fear (1) special rule until the start of your next Shooting Phase.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Litany of Strength (Prayer)",
+        "id": "c5cd-a8ab-85f6-ebf4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "477e-e587-8699-2cf3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "rules": [
+          {
+            "name": "Litany of Strength (Prayer)",
+            "id": "08f8-8492-f2ec-0307",
+            "description": "When this Prayer is performed, the Priest and any attached unit gain +1 to their Strength (S) characteristic until the start of your next Shooting Phase.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Rite of Consecration (Machine Rite)",
+        "id": "9048-fd1a-9e31-03aa",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "d1d9-13d8-28ff-6d9b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+        "rules": [
+          {
+            "name": "Rite of Consecration (Machine Rite)",
+            "id": "33bf-3d39-f019-7458",
+            "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit gains the Indomitable Spirit (6+) special rule until the start of your next Shooting Phase.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Rite of Reloading (Machine Rite)",
+        "id": "25fd-49a9-9aa5-385b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "e58a-c990-ff0b-5dea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "rules": [
+          {
+            "name": "Rite of Reloading (Machine Rite)",
+            "id": "dafa-a9b1-9757-2ab7",
+            "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit immediately makes a Shooting Attack with 1 weapon it is equipped with.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Zealous Congregation",
+        "id": "8eae-4f30-f15f-757c",
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "a0f9-1972-bb2e-9bd6", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "6349-607a-dd65-2085", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Zealous Congregation", "id": "9e69-7b64-5f19-a323", "hidden": false, "primary": false, "targetId": "eefe-f5c8-4604-3219"},
+          {"name": "Cult Ministorum", "id": "19ac-f080-3271-716c", "hidden": false, "primary": false, "targetId": "4e69-2b1d-e273-cb0b"},
+          {"name": "Troop", "id": "f41b-e10a-6e93-b1db", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+        ],
+        "infoLinks": [{"name": "Expendable", "id": "4d2b-cd8e-28a9-6ffa", "hidden": false, "targetId": "10fa-7459-7b04-1f93", "type": "rule"}],
+        "selectionEntries": [
+          {
+            "name": "Congregant",
+            "id": "db6a-d31a-fe8b-d27f",
+            "defaultAmount": "10",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "18bc-8b9c-0648-50fe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 10},
+              {"id": "0b65-39c2-cf52-5299", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 30}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 4}],
+            "infoLinks": [{"name": "Close Combat Weapons", "id": "5562-b572-dc96-1cc2", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Congregant",
+                "id": "758c-c18c-524a-6111",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "2", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "2", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "1", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "5", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stub Pistol",
+                "id": "7788-5172-d5e3-1ac5",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "1dbf-640c-5a63-3442-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "1dbf-640c-5a63-3442-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Stub Pistol",
+                    "id": "17fa-245f-752c-845f",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Flamer",
+                "id": "9b99-3cde-1b99-5824",
+                "defaultSelectionEntryId": "none",
+                "flatten": true,
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "3923-384f-14a0-8a79",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {"id": "1fb2-6903-a438-cc54", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Flamer",
+                    "id": "c37c-428d-b178-9d8f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "958b-0867-67db-e40a",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "1fb2-6903-a438-cc54",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Heavy Close Combat Weapon",
+                    "id": "f66f-57cc-f38e-9af9",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+                    "profiles": [
+                      {
+                        "name": "Heavy Close Combat Weapon",
+                        "id": "6226-b0f4-55d7-917a",
+                        "hidden": false,
+                        "typeId": "8fa1-1cd9-5ae1-0e93",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                          {"name": "AP", "$text": "5", "typeId": "65af-3e5a-1d24-5a74"},
+                          {"name": "Rules", "$text": "Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy Stubber",
+                    "id": "fbbe-0e8b-97cd-6a7b",
+                    "comment": "No profile provided in reference",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ]
+              },
+              {
+                "name": "Autogun",
+                "id": "add7-95af-0e56-4c5a",
+                "defaultSelectionEntryId": "none",
+                "flatten": true,
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "a0fe-7cb7-163f-50b9",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Autogun",
+                    "id": "d8bf-8b32-eab3-c62a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ef01-3ee1-ad5e-e0b8",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}]
+                  },
+                  {
+                    "name": "Shotgun",
+                    "id": "75e8-02b1-260c-ee38",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a3a1-67c7-b802-00a3",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Redemptionists",
+        "id": "c963-dd8b-22fb-19c3",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "0ca3-c546-e842-7597", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "00a6-f9a7-b75c-3493", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Cult Ministorum", "id": "3ff5-f2c0-be00-c485", "hidden": false, "primary": false, "targetId": "4e69-2b1d-e273-cb0b"},
+          {"name": "Redemptionists", "id": "86ba-2da3-fa3d-2724", "hidden": false, "primary": false, "targetId": "83a2-37d7-3feb-4d96"},
+          {"name": "Elite", "id": "13a0-1d1a-ca9a-2a6b", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+        "infoLinks": [
+          {"name": "Expendable", "id": "a5aa-8d10-24fd-83a7", "hidden": false, "targetId": "10fa-7459-7b04-1f93", "type": "rule"},
+          {"name": "Zealot", "id": "0c3a-055a-eabb-a2d0", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Redemptionists",
+            "id": "2a6f-82c9-94cc-bae6",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "fe7f-8fef-a0a5-5594", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "c291-166e-8306-1df4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 15}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 6}],
+            "entryLinks": [
+              {"name": "Flak Armour", "id": "885b-7e97-057a-346d", "hidden": false, "import": true, "targetId": "2848-dea5-099d-03ed", "type": "selectionEntry"},
+              {
+                "name": "Autopistol",
+                "id": "6f94-db8a-e7cb-2a4f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "bb43-52db-056f-d96d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "9408-8dba-f157-23a2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "9408-8dba-f157-23a2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "infoLinks": [{"name": "Close Combat Weapons", "id": "a66a-dd1d-04b4-5401", "hidden": false, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"}],
+            "selectionEntryGroups": [
+              {
+                "name": "Auto Pistol",
+                "id": "96db-23fb-4f6b-5909",
+                "defaultSelectionEntryId": "d3f0-03dc-7e7d-762e",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "9f95-1351-2899-516c-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "9f95-1351-2899-516c-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Flamer",
+                    "id": "d7ad-f2c1-7dec-9a30",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "958b-0867-67db-e40a",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {"name": "Autopistol", "id": "d3f0-03dc-7e7d-762e", "hidden": false, "import": true, "targetId": "bb43-52db-056f-d96d", "type": "selectionEntry"}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Chain Axe",
+                    "id": "5e1d-c172-5752-6884",
+                    "defaultAmount": "1",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "profiles": [
+                      {
+                        "name": "Chain Axe",
+                        "id": "2ed7-f1ef-6e21-f07b",
+                        "hidden": false,
+                        "typeId": "8fa1-1cd9-5ae1-0e93",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                          {"name": "AP", "$text": "5", "typeId": "65af-3e5a-1d24-5a74"},
+                          {"name": "Rules", "$text": "Shred, Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Autogun Combi-Flamer",
+                    "id": "7172-2ba3-d18f-3e84",
+                    "defaultAmount": "1",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "profiles": [
+                      {
+                        "name": "Autogun Combi-Flamer IAutogun)",
+                        "id": "341f-d456-43ca-c3ed",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      },
+                      {
+                        "name": "Autogun Combi-Flamer (Flamer)",
+                        "id": "a7fe-bc79-df61-258f",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Spray, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Shotgun Combi-Flamer",
+                    "id": "d392-86f5-6b13-3c56",
+                    "defaultAmount": "1",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "profiles": [
+                      {
+                        "name": "Shotgun Combi-Flamer (Flamer)",
+                        "id": "54d6-8627-7bb6-591c",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Spray, Ammo (2)", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      },
+                      {
+                        "name": "Shotgun Combi-Flamer (Shotgun)",
+                        "id": "b796-f847-fc8b-f3fa",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Concussive, Combi", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Redeemer",
+                    "id": "1bec-9b14-776b-399d",
+                    "defaultAmount": "1",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
+                    "profiles": [
+                      {
+                        "name": "Redeemer (Flamer)",
+                        "id": "1f1f-8c93-0e53-fd19",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "2", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      },
+                      {
+                        "name": "Redeemer (Eviscerator)",
+                        "id": "082f-92c6-d180-976a",
+                        "hidden": false,
+                        "typeId": "8fa1-1cd9-5ae1-0e93",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+                          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+                          {"name": "Rules", "$text": "Shred, Unwieldy, Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Breacher Charge",
+        "id": "c54b-a27f-62ce-0b95",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Breacher Charge",
+            "id": "0c95-c892-1ec4-57c9",
+            "hidden": false,
+            "page": "12",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "6", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Sunder, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Servo Arm",
+        "id": "f298-43ba-623e-e090",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Servo Arm",
+            "id": "d014-d13d-538c-edd0",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Cumbersome", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bike",
+        "id": "cd1c-37c9-b49b-eb52",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "entryLinks": [
+          {
+            "name": "Linked Boltgun",
+            "id": "8832-b581-3744-8919",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "c5c1-9a34-c9c5-0410",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "adcd-3ea6-a82d-f911-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "adcd-3ea6-a82d-f911-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
+              {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Bike", "type": "append", "value": "on Bike"},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
+              {"field": "category", "scope": "unit", "type": "add", "value": "fa9d-896e-a495-babb"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bike",
+            "id": "0bcc-982f-9273-fc54",
+            "description": "A unit that is equipped with a Bike becomes a Bike type unit. In addition, it gains +1 Toughness (T) Characteristics. A Space marine Bike is equipped with a Linked Boltgun.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Cataphractii Terminator Armour",
+        "id": "214e-0f39-2ccd-751e",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "unit", "type": "add", "value": "b2b5-3d4c-75aa-f071"},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1},
+              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "in Terminator Armour"},
+              {"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Cataphractii Terminator Armour",
+            "id": "dd4d-a4b5-dffc-b1f4",
+            "description": "An ancient heavier pattern of Terminator Armour rarely used. It provides a 2+ Armour save and a 4+ Invulnerable save. The Wearer gains the Relentless, Bulky (2) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 1”. It grants the Terminator Keyword.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Tartaros Terminator Armour",
+        "id": "7990-b949-e314-74dc",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "unit", "type": "add", "value": "b2b5-3d4c-75aa-f071"},
+              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "in Terminator Armour"},
+              {"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Tartaros Terminator Armour",
+            "id": "e90d-c0c3-fd59-6eac",
+            "description": "A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
+            "hidden": false
           }
         ]
       }

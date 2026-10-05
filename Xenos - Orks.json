@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 4,
+    "revision": 5,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "[Klan]", "id": "5ee1-b487-b991-0e62", "hidden": false},
@@ -1402,7 +1402,7 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
             "entryLinks": [
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "2c5a-2353-ea48-da13",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -1756,6 +1756,16 @@
                 "value": 0
               }
             ],
+            "infoLinks": [
+              {
+                "name": "WAAAGH!",
+                "id": "f821-6e8d-93d9-93d4",
+                "comment": "todo: rite makes this ability do nothing",
+                "hidden": false,
+                "targetId": "0e8a-6f5d-0dfe-df0f",
+                "type": "rule"
+              }
+            ],
             "modifiers": [
               {
                 "field": "5af5-d46b-44e0-b699-min",
@@ -1790,15 +1800,6 @@
                     "value": 1
                   }
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "WAAAGH!",
-                "id": "2b50-5b21-1b6b-501a",
-                "comment": "todo: rite makes this ability do nothing",
-                "description": "If this unit is your Warlord, you may declare a WAAAGH! Once per game at the start of your turn. This unit must be on the Battlefield or embarked on a Transport to activate this effect. Until the start of your next turn, all Ork [Klan] units gain the Stubborn, Fleet and Furious Charge special rules.",
-                "hidden": false
               }
             ]
           }
@@ -2396,7 +2397,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "ad87-5da5-e540-a416",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -3098,7 +3099,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "5b44-7dbe-ec14-058f",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -5399,7 +5400,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "d716-da22-e9d2-d118",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -6614,7 +6615,7 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
             "entryLinks": [
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "3d8b-ad96-b776-ca86",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -7027,7 +7028,7 @@
               },
               {"name": "Stikk bombs", "id": "2623-4613-6ba7-eb8f", "hidden": false, "import": true, "targetId": "cfe1-6df3-b93b-2693", "type": "selectionEntry"},
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "3c2b-ceb9-e944-ab87",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -7140,7 +7141,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "4670-4d57-0b0e-a46e",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -9843,7 +9844,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "6354-2f9d-4e64-2f16",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -14936,7 +14937,7 @@
         "constraints": [{"id": "f555-acdc-5298-0e0b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [
           {
-            "name": "Close Combat Weapon",
+            "name": "Close Combat Weapons",
             "id": "61eb-b0fa-aace-b02e",
             "hidden": false,
             "import": true,

@@ -2538,7 +2538,7 @@
                     "type": "upgrade",
                     "entryLinks": [
                       {
-                        "name": "Close Combat Weapon",
+                        "name": "Close Combat Weapons",
                         "id": "9e7b-ea6a-cc1f-b530",
                         "defaultAmount": "1",
                         "hidden": false,
@@ -2569,7 +2569,7 @@
                     "type": "upgrade",
                     "entryLinks": [
                       {
-                        "name": "Close Combat Weapon",
+                        "name": "Close Combat Weapons",
                         "id": "c7e2-7e09-db1a-864a",
                         "defaultAmount": "1",
                         "hidden": false,
@@ -2890,7 +2890,7 @@
             ],
             "entryLinks": [
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "62b3-25ab-49ee-caff",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -5415,7 +5415,7 @@
             ],
             "entryLinks": [
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "b6b3-8437-336a-75c2",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -6046,7 +6046,7 @@
               },
               {"name": "Wings", "id": "f14d-5948-d87a-fad9", "hidden": false, "import": true, "targetId": "32f6-d80e-0d93-0348", "type": "selectionEntry"},
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "61be-b722-e2f7-f5f5",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -6623,7 +6623,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "fe1b-e7a2-0219-d2de",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -7030,7 +7030,7 @@
             "constraints": [{"id": "5a77-67af-797b-177d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 0}],
             "entryLinks": [
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "7702-567a-ab61-e6a4",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -7092,7 +7092,7 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 14}],
             "entryLinks": [
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "e5b2-a47b-69bf-bbc9",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -7163,7 +7163,7 @@
             "constraints": [{"id": "0837-1935-d549-f202", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 0}],
             "entryLinks": [
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "562b-cf9d-4339-fc74",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -8195,7 +8195,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "a626-9bba-dc2f-a30e",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -8532,7 +8532,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "228b-4712-0324-45ee",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -9277,7 +9277,7 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "fe72-af0a-0de5-6e1b",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -9593,7 +9593,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "dc9b-831b-ed13-9467",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -9655,7 +9655,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "3646-c929-d67a-260f",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -10515,7 +10515,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "9c52-6ac5-03c4-a4b8",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -11561,7 +11561,7 @@
                 ]
               },
               {
-                "name": "Close Combat Weapon",
+                "name": "Close Combat Weapons",
                 "id": "7b3f-798b-fd09-7a3e",
                 "defaultAmount": "1",
                 "hidden": false,
@@ -12312,7 +12312,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]
@@ -12422,7 +12422,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]
@@ -12482,7 +12482,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]
@@ -12589,7 +12589,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]
@@ -12638,7 +12638,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]
@@ -12697,7 +12697,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]
@@ -12804,7 +12804,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]
@@ -12911,7 +12911,7 @@
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,
-                        "type": "notInstanceOf",
+                        "type": "lessThan",
                         "value": 1
                       }
                     ]

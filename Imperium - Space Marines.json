@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 9,
+    "revision": 10,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -21,76 +21,6 @@
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
-      {
-        "name": "Captain",
-        "id": "875f-9975-8052-0495",
-        "hidden": false,
-        "constraints": [{"id": "1cd0-5f8f-52b5-f2bd", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0}],
-        "modifiers": [
-          {
-            "field": "1cd0-5f8f-52b5-f2bd",
-            "type": "set",
-            "value": 1,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "field": "1cd0-5f8f-52b5-f2bd",
-            "type": "decrement",
-            "value": 1,
-            "conditions": [
-              {
-                "childId": "5917-3f8b-45a0-9158",
-                "childName": "The Decapitation Strike",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {
-                "childId": "5917-3f8b-45a0-9158",
-                "childName": "The Decapitation Strike",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ]
-      },
       {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false},
       {"name": "Lieutenant", "id": "7f3b-8dcd-3e9e-0d9c", "hidden": false},
       {"name": "Command Squad", "id": "3dcd-0520-4715-224e", "hidden": false},
@@ -1132,6 +1062,76 @@
                 "scope": "roster",
                 "shared": true,
                 "value": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cap",
+        "id": "8b8a-054f-901b-6e13",
+        "hidden": true,
+        "constraints": [{"id": "1cd0-5f8f-52b5-f2bd", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0}],
+        "modifiers": [
+          {
+            "field": "1cd0-5f8f-52b5-f2bd",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5917-3f8b-45a0-9158",
+                    "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "489e-a992-dc1d-e244",
+                    "childName": "Red Scorpions",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "1cd0-5f8f-52b5-f2bd",
+            "type": "decrement",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "5917-3f8b-45a0-9158",
+                "childName": "The Decapitation Strike",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {
+                "childId": "5917-3f8b-45a0-9158",
+                "childName": "The Decapitation Strike",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
               }
             ]
           }
@@ -3059,6 +3059,7 @@
             ]
           }
         ],
+        "modifiers": [{"affects": "entries.recursive.875f-9975-8052-0495", "field": "category", "scope": "roster", "type": "add", "value": "8b8a-054f-901b-6e13"}],
         "selectionEntryGroups": [
           {
             "name": "Chapter Allegiance",
@@ -3741,7 +3742,7 @@
             "id": "14d2-76cb-7d4c-490b",
             "hidden": false,
             "import": true,
-            "targetId": "da73-92e8-6d36-176a",
+            "targetId": "af31-89ae-7eb1-df93",
             "type": "selectionEntry",
             "constraints": [
               {"id": "6cad-ae0c-4b10-9cd4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -5988,20 +5989,6 @@
         ]
       },
       {
-        "name": "Thunder Hammer",
-        "id": "50ff-fc23-bc8a-fe34",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Unwieldy, Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
         "name": "Neo Volkite Pistol",
         "id": "badb-ecc4-580a-7832",
         "hidden": false,
@@ -6098,8 +6085,7 @@
         "id": "bb6f-27b9-f7ca-253f",
         "description": "A unit with this wargear gains a number of Void Shield Tokens equal to the value of (x). Each time this unit takes a Penetrating Hit, if it has a Void Shield Token, you spend a token to ignore that Penetrating Hit. At the start of each Battle Round, you regain 1 spent Void Shield Token. Instead of setting to Overwatch, you can set to Recharge Voids. A unit that Recharges Voids, regains all of its Void Shield Tokens.",
         "hidden": false
-      },
-      {"name": "Angels of Death", "id": "edfb-d641-ce62-8542", "comment": "todo: No profile provided in reference", "hidden": false}
+      }
     ],
     "sharedSelectionEntries": [
       {
@@ -6358,61 +6344,6 @@
         ]
       },
       {
-        "name": "Cataphractii Terminator Armour",
-        "id": "214e-0f39-2ccd-751e",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "add", "value": "b2b5-3d4c-75aa-f071"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "in Terminator Armour"},
-              {"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Cataphractii Terminator Armour",
-            "id": "dd4d-a4b5-dffc-b1f4",
-            "description": "An ancient heavier pattern of Terminator Armour rarely used. It provides a 2+ Armour save and a 4+ Invulnerable save. The Wearer gains the Relentless, Bulky (2) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 1”. It grants the Terminator Keyword.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Tartaros Terminator Armour",
-        "id": "7990-b949-e314-74dc",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "add", "value": "b2b5-3d4c-75aa-f071"},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "in Terminator Armour"},
-              {"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Tartaros Terminator Armour",
-            "id": "e90d-c0c3-fd59-6eac",
-            "description": "A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Centurion Armour",
         "id": "2b89-4fcf-b732-6351",
         "defaultAmount": "1",
@@ -6431,94 +6362,6 @@
             "id": "6b8b-a5f2-18d2-457c",
             "description": "Centurion Armour is a massive, powered suit of Armour worn over normal power Armour. It provides a 2+ Armour save. In addition, it grants the wearer +1 to their Wound (W), Strength (S) and Toughness (T) characteristics, as well as the Relentless, Bulky (3) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 2”A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
             "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Bike",
-        "id": "cd1c-37c9-b49b-eb52",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Bike", "type": "append", "value": "on Bike"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"},
-              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
-              {"field": "category", "scope": "unit", "type": "add", "value": "fa9d-896e-a495-babb"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Bike",
-            "id": "0bcc-982f-9273-fc54",
-            "description": "A unit that is equipped with a Bike becomes a Bike type unit. In addition, it gains +1 Toughness (T) Characteristics. A Space marine Bike is equipped with a Linked Boltgun.",
-            "hidden": false
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Linked Boltgun",
-            "id": "90af-8efb-7356-4b16",
-            "collapsible": true,
-            "defaultSelectionEntryId": "8832-b581-3744-8919",
-            "hidden": false,
-            "constraints": [
-              {
-                "id": "e7df-0618-1c7d-818a-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "e7df-0618-1c7d-818a-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "entryLinks": [
-              {
-                "name": "Linked Boltgun",
-                "id": "8832-b581-3744-8919",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c5c1-9a34-c9c5-0410",
-                "type": "selectionEntry"
-              },
-              {
-                "name": "Astartes Grenade Launcher",
-                "id": "8e11-77c9-2eaf-9a45",
-                "hidden": true,
-                "import": true,
-                "targetId": "5d14-540c-0685-74c3",
-                "type": "selectionEntry",
-                "constraints": [{"id": "8aa7-1ed8-5841-e98c", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
-                "modifiers": [
-                  {
-                    "field": "8aa7-1ed8-5841-e98c",
-                    "type": "increment",
-                    "value": 1,
-                    "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 3}]
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -7725,17 +7568,6 @@
         ]
       },
       {
-        "name": "Thunder Hammer",
-        "id": "4e5d-8e80-1671-f1f9",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Thunder Hammer", "id": "30da-b932-3b3d-5517", "hidden": false, "targetId": "50ff-fc23-bc8a-fe34", "type": "profile"}]
-      },
-      {
         "name": "Chainsword",
         "id": "2b71-b37e-49b9-5ca8",
         "collective": true,
@@ -7976,32 +7808,6 @@
               {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "Unwieldy, Concussive, Crushing (4+)", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Servo Arm",
-        "id": "f298-43ba-623e-e090",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Servo Arm",
-            "id": "d014-d13d-538c-edd0",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Cumbersome", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -24240,7 +24046,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "cd1c-37c9-b49b-eb52",
+                "targetId": "83e1-84d2-c4cc-87f8",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "3b69-8a82-7872-368a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -24324,7 +24130,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "cd1c-37c9-b49b-eb52",
+                "targetId": "83e1-84d2-c4cc-87f8",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "76fb-88f8-c806-1275", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -38482,6 +38288,127 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Warlord",
+        "id": "af31-89ae-7eb1-df93",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d347-4c86-1425-f52f", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "d9b2-a951-b2e3-ffe6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifierGroups": [{"type": "and", "modifiers": [{"field": "category", "type": "add", "value": "544d-0eb3-a4ab-4540"}]}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "24ec-3d2c-456d-fe9a",
+                "childName": "Allied Detatchment",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bike",
+        "id": "83e1-84d2-c4cc-87f8",
+        "comment": "scout",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
+              {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Bike", "type": "append", "value": "on Bike"},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
+              {"field": "category", "scope": "unit", "type": "add", "value": "fa9d-896e-a495-babb"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bike",
+            "id": "2672-5bed-587b-da94",
+            "description": "A unit that is equipped with a Bike becomes a Bike type unit. In addition, it gains +1 Toughness (T) Characteristics. A Space marine Bike is equipped with a Linked Boltgun.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Linked Boltgun",
+            "id": "9736-365d-7853-0084",
+            "collapsible": true,
+            "defaultSelectionEntryId": "8832-b581-3744-8919",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "84b7-3b50-7cbf-620f",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "aca8-d70f-baaa-e4c0",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Linked Boltgun",
+                "id": "0ad2-c962-2393-7c7b",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c5c1-9a34-c9c5-0410",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Astartes Grenade Launcher",
+                "id": "dbb5-72cf-24f4-8238",
+                "hidden": true,
+                "import": true,
+                "targetId": "5d14-540c-0685-74c3",
+                "type": "selectionEntry",
+                "constraints": [{"id": "e9e1-c5a0-f723-f951", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "modifiers": [
+                  {
+                    "field": "e9e1-c5a0-f723-f951",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 3}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -38630,75 +38557,11 @@
         "hidden": false,
         "page": "25",
         "publicationId": "1606-03fb-e01d-e0cf",
-        "selectionEntries": [
-          {
-            "name": "Litany of Rage (Prayer)",
-            "id": "db15-079e-abae-3c2c",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "458c-bc92-c4d8-a4b8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-            "rules": [
-              {
-                "name": "Litany of Rage (Prayer)",
-                "id": "abfc-2bd5-6a59-59b0",
-                "description": "When this Prayer is performed, the Priest and any attached unit gain the Fear (1) special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Litany of Hatred (Prayer)",
-            "id": "f36e-e74e-c714-79a4",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "bf09-0f70-e3a8-216b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "rules": [
-              {
-                "name": "Litany of Hatred (Prayer)",
-                "id": "1a1e-809e-ddc1-db30",
-                "description": "When this Prayer is performed, the Priest and any attached unit gain the Hatred special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Litany of Focus (Prayer)",
-            "id": "8f8d-b00f-9bb7-9e4e",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "43e0-f59f-1803-d02f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
-            "rules": [
-              {
-                "name": "Litany of Focus (Prayer)",
-                "id": "3ce5-ad71-d049-250d",
-                "description": "When this Prayer is performed, the Priest and any attached unit has the Indomitable Spirit (4+) special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Litany of Strength (Prayer)",
-            "id": "c5cd-a8ab-85f6-ebf4",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "477e-e587-8699-2cf3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-            "rules": [
-              {
-                "name": "Litany of Strength (Prayer)",
-                "id": "08f8-8492-f2ec-0307",
-                "description": "When this Prayer is performed, the Priest and any attached unit gain +1 to their Strength (S) characteristic until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          }
+        "entryLinks": [
+          {"name": "Litany of Strength (Prayer)", "id": "8653-549c-d57d-5b28", "hidden": false, "targetId": "c5cd-a8ab-85f6-ebf4", "type": "selectionEntry"},
+          {"name": "Litany of Rage (Prayer)", "id": "0eec-1a7c-eccf-0189", "hidden": false, "targetId": "db15-079e-abae-3c2c", "type": "selectionEntry"},
+          {"name": "Litany of Hatred (Prayer)", "id": "ee68-0e0f-9a84-710b", "hidden": false, "import": true, "targetId": "0a63-744b-fb9a-273d", "type": "selectionEntry"},
+          {"name": "Litany of Focus (Prayer)", "id": "28df-9171-ca7d-5e0b", "hidden": false, "import": true, "targetId": "a645-6155-b3a2-36e9", "type": "selectionEntry"}
         ]
       },
       {
@@ -38708,74 +38571,24 @@
         "hidden": false,
         "page": "26",
         "publicationId": "1606-03fb-e01d-e0cf",
-        "selectionEntries": [
+        "entryLinks": [
+          {"name": "Rite of Reloading (Machine Rite)", "id": "1f1d-90d4-38b0-ee3b", "hidden": false, "targetId": "25fd-49a9-9aa5-385b", "type": "selectionEntry"},
           {
-            "name": "Rite of Reloading (Machine Rite)",
-            "id": "25fd-49a9-9aa5-385b",
+            "name": "Rite of Repair (Machine Rite):",
+            "id": "ad4e-be91-96f7-0f32",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "e58a-c990-ff0b-5dea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-            "rules": [
-              {
-                "name": "Rite of Reloading (Machine Rite)",
-                "id": "dafa-a9b1-9757-2ab7",
-                "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit immediately makes a Shooting Attack with 1 weapon it is equipped with.",
-                "hidden": false
-              }
-            ]
+            "targetId": "9e4c-7de9-2a09-4097",
+            "type": "selectionEntry"
           },
-          {
-            "name": "Rite of Repair (Machine Rite)",
-            "id": "99f1-8529-e789-c6c6",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "78df-7b84-ea65-e1e8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "rules": [
-              {
-                "name": "Rite of Repair (Machine Rite)",
-                "id": "79b7-1890-bbf2-129d",
-                "description": "When this Rite is performed successfully, select one of the following effects:\n• Select 1 Walker or Automata unit either within 3” or attached to the unit that is performing this rite. The target unit Heals 1 wound.\n• Select 1 Vehicle, Aircraft, Knight or Fortification either within 3”, attached to the unit performing this Rite or that this unit is embarked upon. Select 1 weapon that target unit is equipped with that has been destroyed. The chosen weapon is no longer destroyed.\n• Select 1 Vehicle or Knight either within 3”, attached to the unit performing this Rite or that this unit is embarked upon that is immobilized. That unit is no longer immobilized. If the unit has the Super Heavy (x) special rule and was Limping, it is no longer considered to be Limping.",
-                "hidden": false
-              }
-            ]
-          },
+          {"name": "Rite of Consecration (Machine Rite)", "id": "5ccd-c1d3-7603-7b58", "hidden": false, "targetId": "9048-fd1a-9e31-03aa", "type": "selectionEntry"},
           {
             "name": "Rite of Immolation (Machine Rite)",
-            "id": "a078-70fa-555e-34a8",
+            "id": "df6e-a15c-4184-0d31",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "e772-7c99-3002-ee40", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
-            "rules": [
-              {
-                "name": "Rite of Immolation (Machine Rite)",
-                "id": "1caf-1dc7-6ddb-9549",
-                "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit immediately suffers an Explodes result per the Vehicle Damage Chart, even if it would normally not.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Rite of Consecration (Machine Rite)",
-            "id": "9048-fd1a-9e31-03aa",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "d1d9-13d8-28ff-6d9b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-            "rules": [
-              {
-                "name": "Rite of Consecration (Machine Rite)",
-                "id": "33bf-3d39-f019-7458",
-                "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit gains the Indomitable Spirit (6+) special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
+            "targetId": "f37a-2f6b-c0ca-f251",
+            "type": "selectionEntry"
           }
         ]
       },

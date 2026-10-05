@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 7,
+    "revision": 8,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -56025,32 +56025,6 @@
         ]
       },
       {
-        "name": "Breacher Charge",
-        "id": "c54b-a27f-62ce-0b95",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Breacher Charge",
-            "id": "0c95-c892-1ec4-57c9",
-            "hidden": false,
-            "page": "12",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "6", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Vulcan Mega Bolter",
         "id": "0e3f-6269-f4a1-9dbf",
         "collective": true,
@@ -56607,32 +56581,6 @@
               {"name": "Strength", "$text": "3", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Servo Arm",
-        "id": "0e63-d418-0676-1901",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Servo Arm",
-            "id": "5cda-90d9-f44b-6acd",
-            "hidden": false,
-            "page": "16",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Cumbersome, Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -60903,90 +60851,18 @@
         "name": "Machine Rites",
         "id": "2062-971c-6542-8cff",
         "hidden": false,
-        "selectionEntries": [
-          {
-            "name": "Rite of Repair (Machine Rite):",
-            "id": "9e4c-7de9-2a09-4097",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "64d6-bdd4-246f-e2e9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "rules": [
-              {
-                "name": "Rite of Repair (Machine Rite)",
-                "id": "e0f7-f59e-64bf-0b67",
-                "description": "When this Rite is performed successfully, select one of the following effects:\n• Select 1 Walker or Automata unit either within 3” or attached to the unit that is performing this rite. The target unit Heals 1 wound.\n• Select 1 Vehicle, Aircraft, Knight or Fortification either within 3”, attached to the unit performing this Rite or that this unit is embarked upon. Select 1 weapon that target unit is equipped with that has been destroyed. The chosen weapon is no longer destroyed.\n• Select 1 Vehicle or Knight either within 3”, attached to the unit performing this Rite or that this unit is embarked upon that is immobilized. That unit is no longer immobilized. If the unit has the Super Heavy (x) special rule and was Limping, it is no longer considered to be Limping.",
-                "hidden": false,
-                "page": "19",
-                "publicationId": "5b81-795c-38b3-285c"
-              }
-            ]
-          },
-          {
-            "name": "Rite of Immolation (Machine Rite)",
-            "id": "f37a-2f6b-c0ca-f251",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "8c6a-bb37-8dbe-a0f5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
-            "rules": [
-              {
-                "name": "Rite of Immolation (Machine Rite)",
-                "id": "3ae4-7091-b9b1-83e5",
-                "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit immediately suffers an Explodes result per the Vehicle Damage Chart, even if it would normally not.",
-                "hidden": false,
-                "page": "19",
-                "publicationId": "5b81-795c-38b3-285c"
-              }
-            ]
-          }
+        "entryLinks": [
+          {"name": "Rite of Repair (Machine Rite):", "id": "7f1b-77d8-0aea-4189", "hidden": false, "targetId": "9e4c-7de9-2a09-4097", "type": "selectionEntry"},
+          {"name": "Rite of Immolation (Machine Rite)", "id": "bde1-e6fc-2ca3-d5df", "hidden": false, "targetId": "f37a-2f6b-c0ca-f251", "type": "selectionEntry"}
         ]
       },
       {
         "name": "Litany of Prayers",
         "id": "611a-597a-eed8-cb87",
         "hidden": false,
-        "selectionEntries": [
-          {
-            "name": "Litany of Focus (Prayer)",
-            "id": "a645-6155-b3a2-36e9",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "40f6-939d-008f-1e83", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
-            "rules": [
-              {
-                "name": "Litany of Foxus (Prayer)",
-                "id": "c0c1-9399-1f40-8f8e",
-                "description": "When this Prayer is performed, the Priest and any attached unit has the Indomitable Spirit (4+) special rule until the start of your next Shooting Phase.",
-                "hidden": false,
-                "page": "19",
-                "publicationId": "5b81-795c-38b3-285c"
-              }
-            ]
-          },
-          {
-            "name": "Litany of Hatred (Prayer)",
-            "id": "0a63-744b-fb9a-273d",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "4e8d-e371-2e99-b2ee", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "rules": [
-              {
-                "name": "Litany of Hatred (Prayer)",
-                "id": "6a4b-25ab-7927-f29f",
-                "description": "When this Prayer is performed, the Priest and any attached unit gain the Hatred special rule until the start of your next Shooting Phase.",
-                "hidden": false,
-                "page": "19",
-                "publicationId": "5b81-795c-38b3-285c"
-              }
-            ]
-          }
+        "entryLinks": [
+          {"name": "Litany of Hatred (Prayer)", "id": "84e9-1e3b-1692-0075", "hidden": false, "targetId": "0a63-744b-fb9a-273d", "type": "selectionEntry"},
+          {"name": "Litany of Focus (Prayer)", "id": "12f4-c4bb-04cf-6688", "hidden": false, "targetId": "a645-6155-b3a2-36e9", "type": "selectionEntry"}
         ]
       },
       {
