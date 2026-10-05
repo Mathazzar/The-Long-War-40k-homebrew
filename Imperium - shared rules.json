@@ -525,6 +525,20 @@
           {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "Shred, Sunder, Unwieldy, Two Handed", "typeId": "cc29-b1e7-88e5-c90f"}
         ]
+      },
+      {
+        "name": "Thunder Hammer",
+        "id": "50ff-fc23-bc8a-fe34",
+        "hidden": false,
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Unwieldy, Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
       }
     ],
     "sharedRules": [
@@ -4053,6 +4067,114 @@
             "name": "Tartaros Terminator Armour",
             "id": "e90d-c0c3-fd59-6eac",
             "description": "A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Thunder Hammer",
+        "id": "4e5d-8e80-1671-f1f9",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Thunder Hammer", "id": "30da-b932-3b3d-5517", "hidden": false, "targetId": "50ff-fc23-bc8a-fe34", "type": "profile"}]
+      },
+      {
+        "name": "Lightning Claws",
+        "id": "7387-4d1b-e3e4-b301",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Lightning Claws",
+            "id": "c3da-674f-e831-b479",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Relic Blade",
+        "id": "a113-ba7f-4fb8-2b3c",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Relic Blade",
+            "id": "cf36-309f-122e-2332",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Murderous Strike (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Volkite Charger",
+        "id": "1879-2a4e-1150-0b85",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Volkite Charger",
+            "id": "8acf-f3c6-2984-8dea",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "25", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Relic Shield",
+        "id": "8734-9485-18c5-1b11",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Relic Shield",
+            "id": "a910-16af-90f0-2b8a",
+            "description": "A Model with a Relic Shield has a 4+ Invulnerable save and gains the Adamantium Will and Indomitable Will (3+) special rule.",
             "hidden": false
           }
         ]

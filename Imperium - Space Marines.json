@@ -2141,177 +2141,9 @@
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Vetrans", "id": "f25e-94b3-7eeb-938e", "hidden": false, "primary": false, "targetId": "6ce5-b373-d16a-52f6"}],
         "constraints": [{"id": "2897-e066-a084-6413", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0}],
-        "entryLinks": [
-          {
-            "name": "Lightning Claws",
-            "id": "7b10-54ea-32f6-b3b3",
-            "hidden": false,
-            "import": true,
-            "targetId": "7387-4d1b-e3e4-b301",
-            "type": "selectionEntry",
-            "constraints": [
-              {
-                "id": "4b1d-df7f-ee86-04e5-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "4b1d-df7f-ee86-04e5-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifiers": [
-              {
-                "field": "4b1d-df7f-ee86-04e5-min",
-                "type": "increment",
-                "value": 1,
-                "repeats": [
-                  {
-                    "childId": "4d57-49cc-1061-a34c",
-                    "childName": "Lightning Claw",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "repeats": 1,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  },
-                  {
-                    "childId": "3131-a027-9617-5ad1",
-                    "childName": "Dark Fury",
-                    "field": "selections",
-                    "repeats": 2,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "field": "4b1d-df7f-ee86-04e5-max",
-                "type": "increment",
-                "value": 1,
-                "repeats": [
-                  {
-                    "childId": "4d57-49cc-1061-a34c",
-                    "childName": "Lightning Claw",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "repeats": 1,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  },
-                  {
-                    "childId": "3131-a027-9617-5ad1",
-                    "childName": "Dark Fury",
-                    "field": "selections",
-                    "repeats": 2,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "1bf4-060e-26bd-4335", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Combat Squads", "id": "23a1-d883-0fdb-16c2", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"},
-          {
-            "name": "Power Lance",
-            "id": "56fb-3db6-40ae-8a36",
-            "hidden": false,
-            "targetId": "ee2f-604a-3e7d-a55e",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "9c4c-3a81-5c03-8cd0",
-                    "childName": "Power Lance",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Thunder Hammer",
-            "id": "b227-1417-5b49-7e05",
-            "hidden": false,
-            "targetId": "50ff-fc23-bc8a-fe34",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "8693-38fb-977b-f668",
-                    "childName": "Thunder Hammer",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Grav Pistol",
-            "id": "ec98-55df-0a17-9211",
-            "hidden": false,
-            "targetId": "07a5-2d88-7f0b-fdde",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "d280-d593-d8cb-7a26",
-                    "childName": "Grav Pistol",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
+          {"name": "Combat Squads", "id": "23a1-d883-0fdb-16c2", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}
         ],
         "modifiers": [
           {
@@ -6223,24 +6055,6 @@
         ]
       },
       {
-        "name": "Relic Shield",
-        "id": "8734-9485-18c5-1b11",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Relic Shield",
-            "id": "a910-16af-90f0-2b8a",
-            "description": "A Model with a Relic Shield has a 4+ Invulnerable save and gains the Adamantium Will and Indomitable Will (3+) special rule.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Camo Cloaks",
         "id": "e71a-93a2-ab63-9e13",
         "hidden": false,
@@ -7327,33 +7141,6 @@
         "infoLinks": [{"name": "Volkite Calivers", "id": "3199-822b-7e82-06a7", "hidden": false, "targetId": "e864-f861-a0ce-862e", "type": "profile"}]
       },
       {
-        "name": "Volkite Charger",
-        "id": "1879-2a4e-1150-0b85",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Volkite Charger",
-            "id": "8acf-f3c6-2984-8dea",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "25", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Volkite Culverin",
         "id": "2851-7115-5fcd-3a4d",
         "collective": true,
@@ -7462,32 +7249,6 @@
         ]
       },
       {
-        "name": "Lightning Claws",
-        "id": "7387-4d1b-e3e4-b301",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Lightning Claws",
-            "id": "c3da-674f-e831-b479",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Demolisher cannon",
         "id": "6979-0abd-2178-164e",
         "collective": true,
@@ -7537,32 +7298,6 @@
               {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Small), Indirect Fire, Barrage (3)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Relic Blade",
-        "id": "a113-ba7f-4fb8-2b3c",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Relic Blade",
-            "id": "cf36-309f-122e-2332",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Two-Handed, Murderous Strike (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
