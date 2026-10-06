@@ -156,6 +156,52 @@
     "publications": [{"name": "The Long War - Codex Imperial Agents", "id": "19c4-6ab7-10c5-8fbe", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
       {
+        "name": "Rites of War",
+        "id": "f98f-6da6-5896-60a6",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Rite of War", "id": "45ed-bd1c-5c52-5d54", "hidden": false, "primary": true, "targetId": "be3a-e529-69f3-b6b9"}],
+        "constraints": [
+          {"id": "09c2-fdd3-994d-e901-min", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "09c2-fdd3-994d-e901-max", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Rite of War",
+            "id": "1a95-063b-7708-d263",
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "8724-eca3-f991-d60a",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {"name": "Witch Hunter Convent", "id": "b1da-bd28-818c-54d9", "hidden": false, "import": true, "type": "upgrade"},
+              {"name": "Deathwatch Kill Force", "id": "a544-4439-7751-5faa", "hidden": false, "import": true, "type": "upgrade"},
+              {"name": "Grey Knights Strike Force", "id": "50bb-1156-b21e-d24a", "hidden": false, "import": true, "type": "upgrade"},
+              {
+                "name": "Imperial Knight Household",
+                "id": "d38d-d0f6-98ee-1934",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "modifiers": [{"affects": "entries.recursive.b5e2-1434-0c5d-3e0e", "field": "category", "scope": "roster", "type": "add", "value": "f28f-44a5-401b-6dbd"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Watch Captain Artemis",
         "id": "e817-d64a-534d-b6eb",
         "hidden": false,
@@ -181,7 +227,8 @@
           {"name": "Allegiance: Ordo Xenos", "id": "2b06-af42-6e31-4d6b", "hidden": false, "targetId": "5a90-0c1d-5ed4-4fa8", "type": "rule"},
           {"name": "Special Issue Ammunition", "id": "06ed-d642-28ad-324e", "hidden": false, "targetId": "20e0-5740-eacd-3397", "type": "rule"},
           {"name": "And they shall know no Fear", "id": "57a1-4ed3-454e-4aec", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Character", "id": "266d-3c87-516f-a83f", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+          {"name": "Character", "id": "266d-3c87-516f-a83f", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Ordo Xenos", "id": "0d9c-08f1-b2b2-f561", "hidden": false, "targetId": "a710-aa98-ea7c-0d3b", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -618,7 +665,8 @@
           {"name": "Deep Strike", "id": "ce1c-f2da-a863-9f7e", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Relentless", "id": "05fb-4ac5-fe7f-acdc", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
           {"name": "Bulky (x)", "id": "0da3-4af6-4234-edef", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
-          {"name": "Psyker (x)", "id": "6f27-f7eb-f5f2-e517", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+          {"name": "Psyker (x)", "id": "6f27-f7eb-f5f2-e517", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Ordo Malleus", "id": "ab75-154d-4107-780d", "hidden": false, "targetId": "3bc4-e67a-25fc-667a", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -835,7 +883,8 @@
           {"name": "And they shall know no Fear", "id": "f1ac-55bd-6836-8936", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
           {"name": "The Aegis", "id": "a298-3d5f-ea88-8781", "hidden": false, "targetId": "d50b-c69f-49fc-df8d", "type": "rule"},
           {"name": "Psyker (x)", "id": "3448-dcc9-d18e-833e", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
-          {"name": "Stubborn", "id": "de21-64b9-1fa5-cea7", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"}
+          {"name": "Stubborn", "id": "de21-64b9-1fa5-cea7", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
+          {"name": "Ordo Malleus", "id": "3e7a-f3e5-a3f0-8709", "hidden": false, "targetId": "3bc4-e67a-25fc-667a", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -1020,7 +1069,8 @@
           {"name": "Stubborn", "id": "258e-6db1-d7a0-d72e", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
           {"name": "Zealot", "id": "5170-37fc-18b6-1f3e", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"},
           {"name": "Psyker (x)", "id": "8ce4-d5fd-5130-82af", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
-          {"name": "Allegiance: Ordo Malleus", "id": "2818-cf74-92d6-e62a", "hidden": false, "targetId": "c329-684a-8c8c-7faa", "type": "rule"}
+          {"name": "Allegiance: Ordo Malleus", "id": "2818-cf74-92d6-e62a", "hidden": false, "targetId": "c329-684a-8c8c-7faa", "type": "rule"},
+          {"name": "Ordo Malleus", "id": "2b45-00d2-a098-cac4", "hidden": false, "targetId": "3bc4-e67a-25fc-667a", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -1224,7 +1274,8 @@
           {"name": "Deep Strike", "id": "1389-d604-1625-2f78", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Relentless", "id": "4e4f-43f8-c3d0-0b6b", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
           {"name": "Bulky (x)", "id": "cac3-100a-f061-5a84", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
-          {"name": "Psyker (x)", "id": "0b01-2c5d-e8d4-d73b", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+          {"name": "Psyker (x)", "id": "0b01-2c5d-e8d4-d73b", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Ordo Malleus", "id": "2965-ce1f-ed44-8132", "hidden": false, "targetId": "3bc4-e67a-25fc-667a", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -4623,7 +4674,10 @@
             ]
           }
         ],
-        "infoLinks": [{"name": "Support Squad", "id": "ac12-6e52-66c0-66d3", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Support Squad", "id": "ac12-6e52-66c0-66d3", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
+          {"name": "Allegiance", "id": "f41b-a986-23ed-2c36", "hidden": false, "targetId": "4f20-48f0-ec6a-ad7e", "type": "infoGroup"}
+        ],
         "rules": [
           {
             "name": "Daemonic Host",
@@ -5625,7 +5679,8 @@
           {"name": "Allegiance: Ordo Xenos", "id": "fe92-a941-a3b5-bfbb", "hidden": false, "targetId": "5a90-0c1d-5ed4-4fa8", "type": "rule"},
           {"name": "And they shall know no Fear", "id": "173e-70e6-ee72-4f66", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
           {"name": "Special Issue Ammunition", "id": "4294-468b-63c9-e4eb", "hidden": false, "targetId": "20e0-5740-eacd-3397", "type": "rule"},
-          {"name": "Character", "id": "98bc-6b97-534a-1a10", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+          {"name": "Character", "id": "98bc-6b97-534a-1a10", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Ordo Xenos", "id": "ad56-01df-4e87-74ed", "hidden": false, "targetId": "a710-aa98-ea7c-0d3b", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -6778,7 +6833,8 @@
           {"name": "Allegiance: Ordo Malleus", "id": "6990-5c34-ceea-93a2", "hidden": false, "targetId": "c329-684a-8c8c-7faa", "type": "rule"},
           {"name": "Deep Strike", "id": "0f72-b1cb-fda3-5033", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Relentless", "id": "9415-d583-8136-9ac7", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Bulky (x)", "id": "b6c5-bf15-223f-9ddc", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"}
+          {"name": "Bulky (x)", "id": "b6c5-bf15-223f-9ddc", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Ordo Malleus", "id": "554e-4272-59ba-c5f6", "hidden": false, "targetId": "3bc4-e67a-25fc-667a", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -7032,7 +7088,8 @@
           {"name": "Character", "id": "547f-5d3f-e792-27e7", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
           {"name": "Hatred (x)", "id": "2da9-9580-4c07-66de", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
           {"name": "Stubborn", "id": "f4a1-d042-a773-f723", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
-          {"name": "Deny the Witch", "id": "10d1-4af0-2dfb-9afe", "hidden": false, "targetId": "8c5a-f37c-9230-be38", "type": "rule"}
+          {"name": "Deny the Witch", "id": "10d1-4af0-2dfb-9afe", "hidden": false, "targetId": "8c5a-f37c-9230-be38", "type": "rule"},
+          {"name": "Ordo Hereticus", "id": "bbcc-726e-a986-b42e", "hidden": false, "targetId": "e6e4-d112-4bcf-fd53", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -7279,7 +7336,8 @@
           {"name": "Character", "id": "7d19-abcd-46eb-9339", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
           {"name": "Allegiance: Ordo Hereticus", "id": "9b17-5fbb-cab4-6b9e", "hidden": false, "targetId": "0c3b-0013-8bf9-71f6", "type": "rule"},
           {"name": "Relentless", "id": "bcc6-bf55-3aab-e947", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "3bc9-5f00-2c7d-0ffa", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"}
+          {"name": "Hammer of Wrath (x)", "id": "3bc9-5f00-2c7d-0ffa", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Ordo Hereticus", "id": "eb5c-d7f9-bece-b1ef", "hidden": false, "targetId": "e6e4-d112-4bcf-fd53", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -7498,7 +7556,8 @@
           {"name": "Allegiance: Ordo Malleus", "id": "14be-8d76-27ea-1229", "hidden": false, "targetId": "c329-684a-8c8c-7faa", "type": "rule"},
           {"name": "Stubborn", "id": "a633-f93f-34ae-a6df", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
           {"name": "Hatred (x)", "id": "7d93-fbb9-bbae-3349", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
-          {"name": "Character", "id": "aa72-bcbd-7619-6f0a", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+          {"name": "Character", "id": "aa72-bcbd-7619-6f0a", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Ordo Malleus", "id": "d167-3cc8-e6b3-f3f2", "hidden": false, "targetId": "3bc4-e67a-25fc-667a", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -7803,7 +7862,8 @@
           {"name": "Allegiance: Ordo Xenos", "id": "e444-8153-5c75-8fd7", "hidden": false, "targetId": "5a90-0c1d-5ed4-4fa8", "type": "rule"},
           {"name": "Hatred (x)", "id": "d535-ea76-1ac1-adff", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
           {"name": "Stubborn", "id": "abbe-f914-0490-56a7", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
-          {"name": "Psyker (x)", "id": "726f-7117-d81a-8ed5", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+          {"name": "Psyker (x)", "id": "726f-7117-d81a-8ed5", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Ordo Xenos", "id": "3290-93cb-09fd-ff83", "hidden": false, "targetId": "a710-aa98-ea7c-0d3b", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -7970,7 +8030,8 @@
           {"name": "Fleet", "id": "68d6-d3f8-73c8-0cd4", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
           {"name": "Relentless", "id": "9e2b-0e63-0fed-ef7e", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
           {"name": "Fade & Fire", "id": "2646-fca3-e9ed-caf5", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
-          {"name": "Monster Hunter", "id": "83ee-b8a1-f3c6-6eba", "hidden": false, "targetId": "6222-c3f0-19bc-e061", "type": "rule"}
+          {"name": "Monster Hunter", "id": "83ee-b8a1-f3c6-6eba", "hidden": false, "targetId": "6222-c3f0-19bc-e061", "type": "rule"},
+          {"name": "Ordo Xenos", "id": "233e-fb9d-76ef-e011", "hidden": false, "targetId": "a710-aa98-ea7c-0d3b", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -8227,7 +8288,10 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 28}],
         "entryLinks": [{"name": "Bayonets", "id": "0e57-b5e2-30ec-e842", "hidden": false, "targetId": "8f4e-d3e7-92b1-c25a", "type": "selectionEntry"}],
-        "infoLinks": [{"name": "Night Vision", "id": "1afb-8a4b-c026-3020", "hidden": false, "targetId": "ab1c-d9d1-a94e-fefc", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Night Vision", "id": "1afb-8a4b-c026-3020", "hidden": false, "targetId": "ab1c-d9d1-a94e-fefc", "type": "rule"},
+          {"name": "Allegiance", "id": "04eb-3abd-68b4-eda9", "hidden": false, "targetId": "4f20-48f0-ec6a-ad7e", "type": "infoGroup"}
+        ],
         "selectionEntries": [
           {
             "name": "Scion",
@@ -9265,6 +9329,7 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 9}],
         "entryLinks": [{"name": "Bayonets", "id": "6808-123f-168c-eba4", "hidden": false, "import": true, "targetId": "8f4e-d3e7-92b1-c25a", "type": "selectionEntry"}],
+        "infoLinks": [{"name": "Allegiance", "id": "8f1e-e29b-2d84-5d3a", "hidden": false, "targetId": "4f20-48f0-ec6a-ad7e", "type": "infoGroup"}],
         "selectionEntries": [
           {
             "name": "Voidsmen",
@@ -9801,7 +9866,10 @@
           {"name": "Navy Breachers", "id": "9a44-a27e-1cfd-c6ba", "hidden": false, "primary": false, "targetId": "1b00-7773-75e0-0b9a"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 26}],
-        "infoLinks": [{"name": "Stubborn", "id": "9d63-11a2-2539-475b", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Stubborn", "id": "9d63-11a2-2539-475b", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
+          {"name": "Allegiance", "id": "6837-7344-d84f-8a99", "hidden": false, "targetId": "4f20-48f0-ec6a-ad7e", "type": "infoGroup"}
+        ],
         "selectionEntries": [
           {
             "name": "Navis Armsmen",
@@ -10172,7 +10240,8 @@
         "infoLinks": [
           {"name": "Allegiance: Ordo Hereticus", "id": "1f1c-7444-dc57-346d", "hidden": false, "targetId": "0c3b-0013-8bf9-71f6", "type": "rule"},
           {"name": "Shield of Faith", "id": "574e-9bc0-06a9-5d18", "hidden": false, "targetId": "2d05-bd56-3e0a-87b7", "type": "rule"},
-          {"name": "Support Squad", "id": "3a48-1437-05bb-798f", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"}
+          {"name": "Support Squad", "id": "3a48-1437-05bb-798f", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
+          {"name": "Ordo Hereticus", "id": "278b-0174-41ab-be2b", "hidden": false, "targetId": "e6e4-d112-4bcf-fd53", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -11947,7 +12016,8 @@
           {"name": "Support Squad", "id": "40c3-bff9-69b3-eb0c", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
           {"name": "Allegiance: Ordo Xenos", "id": "3b7f-49f0-a6b0-b52b", "hidden": false, "targetId": "5a90-0c1d-5ed4-4fa8", "type": "rule"},
           {"name": "And they shall know no Fear", "id": "0e45-77af-8b74-9512", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Special Issue Ammunition", "id": "c255-3046-dcf8-af6d", "hidden": false, "targetId": "20e0-5740-eacd-3397", "type": "rule"}
+          {"name": "Special Issue Ammunition", "id": "c255-3046-dcf8-af6d", "hidden": false, "targetId": "20e0-5740-eacd-3397", "type": "rule"},
+          {"name": "Ordo Xenos", "id": "6e80-6a8d-4ec0-ff01", "hidden": false, "targetId": "a710-aa98-ea7c-0d3b", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -13926,12 +13996,13 @@
         "name": "Allegiance",
         "id": "4f20-48f0-ec6a-ad7e",
         "hidden": false,
-        "infoGroups": [
+        "infoLinks": [
           {
             "name": "Ordo Xenos",
-            "id": "a710-aa98-ea7c-0d3b",
+            "id": "27c5-ae49-b50b-1658",
             "hidden": false,
-            "infoLinks": [{"name": "The Enemy Without", "id": "f852-0330-feef-04a3", "hidden": false, "targetId": "329c-3bf7-bea1-9a36", "type": "rule"}],
+            "targetId": "a710-aa98-ea7c-0d3b",
+            "type": "infoGroup",
             "modifiers": [
               {
                 "field": "hidden",
@@ -13955,9 +14026,10 @@
           },
           {
             "name": "Ordo Hereticus",
-            "id": "e6e4-d112-4bcf-fd53",
+            "id": "178b-bbf1-9666-fb6b",
             "hidden": false,
-            "infoLinks": [{"name": "The Enemy Within", "id": "4138-015d-e44b-4e41", "hidden": false, "targetId": "5552-d340-27a0-ade4", "type": "rule"}],
+            "targetId": "e6e4-d112-4bcf-fd53",
+            "type": "infoGroup",
             "modifiers": [
               {
                 "field": "hidden",
@@ -13981,9 +14053,10 @@
           },
           {
             "name": "Ordo Malleus",
-            "id": "3bc4-e67a-25fc-667a",
+            "id": "d193-00ae-412e-9d69",
             "hidden": false,
-            "infoLinks": [{"name": "The Enemy Beyond", "id": "f95f-3f6c-68c5-b7a2", "hidden": false, "targetId": "d3ab-6a65-bceb-bb6b", "type": "rule"}],
+            "targetId": "3bc4-e67a-25fc-667a",
+            "type": "infoGroup",
             "modifiers": [
               {
                 "field": "hidden",
@@ -14006,6 +14079,24 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Ordo Hereticus",
+        "id": "e6e4-d112-4bcf-fd53",
+        "hidden": false,
+        "infoLinks": [{"name": "The Enemy Within", "id": "4138-015d-e44b-4e41", "hidden": false, "targetId": "5552-d340-27a0-ade4", "type": "rule"}]
+      },
+      {
+        "name": "Ordo Malleus",
+        "id": "3bc4-e67a-25fc-667a",
+        "hidden": false,
+        "infoLinks": [{"name": "The Enemy Beyond", "id": "f95f-3f6c-68c5-b7a2", "hidden": false, "targetId": "d3ab-6a65-bceb-bb6b", "type": "rule"}]
+      },
+      {
+        "name": "Ordo Xenos",
+        "id": "a710-aa98-ea7c-0d3b",
+        "hidden": false,
+        "infoLinks": [{"name": "The Enemy Without", "id": "f852-0330-feef-04a3", "hidden": false, "targetId": "329c-3bf7-bea1-9a36", "type": "rule"}]
       }
     ],
     "sharedRules": [
