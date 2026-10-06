@@ -12,7 +12,8 @@
       {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
       {"name": "Cult Ministorum", "id": "4e69-2b1d-e273-cb0b", "hidden": false},
       {"name": "Redemptionists", "id": "83a2-37d7-3feb-4d96", "hidden": false},
-      {"name": "Captain", "id": "875f-9975-8052-0495", "hidden": false}
+      {"name": "Captain", "id": "875f-9975-8052-0495", "hidden": false},
+      {"name": "Vetrans", "id": "6ce5-b373-d16a-52f6", "hidden": false}
     ],
     "sharedProfiles": [
       {
@@ -538,6 +539,20 @@
           {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
           {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "Unwieldy, Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Chainfist",
+        "id": "5717-521b-140b-421f",
+        "hidden": false,
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Unwieldy, Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
         ]
       }
     ],
@@ -4176,6 +4191,44 @@
             "id": "a910-16af-90f0-2b8a",
             "description": "A Model with a Relic Shield has a 4+ Invulnerable save and gains the Adamantium Will and Indomitable Will (3+) special rule.",
             "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Chainfist",
+        "id": "d8ec-e3b8-112b-1e9d",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Chainfist", "id": "4416-741f-2aef-00c6", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"}]
+      },
+      {
+        "name": "Sarissa",
+        "id": "285c-8e7a-68a6-3af4",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
+        "profiles": [
+          {
+            "name": "Sarissa",
+            "id": "8056-ed67-6e4a-62dc",
+            "hidden": false,
+            "page": "14",
+            "publicationId": "6f16-791a-3a26-4c72",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "6", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
           }
         ]
       }

@@ -24,7 +24,6 @@
       {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false},
       {"name": "Lieutenant", "id": "7f3b-8dcd-3e9e-0d9c", "hidden": false},
       {"name": "Command Squad", "id": "3dcd-0520-4715-224e", "hidden": false},
-      {"name": "Vetrans", "id": "6ce5-b373-d16a-52f6", "hidden": false},
       {"name": "Damocles Command Rhino", "id": "3614-8382-22d8-a32e", "hidden": false},
       {"name": "[Crimson Fists]", "id": "c673-28a5-5572-1f3d", "hidden": false},
       {
@@ -5712,20 +5711,6 @@
         ]
       },
       {
-        "name": "Chainfist",
-        "id": "5717-521b-140b-421f",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Unwieldy, Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
         "name": "Sergeant",
         "id": "f345-9232-1970-d879",
         "hidden": false,
@@ -7390,17 +7375,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Chainfist",
-        "id": "d8ec-e3b8-112b-1e9d",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Chainfist", "id": "4416-741f-2aef-00c6", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"}]
       },
       {
         "name": "Grenade Launcher",

@@ -112,9 +112,9 @@
       {"name": "Sisters of Battle", "id": "b0e1-80b5-7f58-c88a", "hidden": false},
       {"name": "Celestians", "id": "afe6-3c95-583e-d568", "hidden": false},
       {
-        "name": "Vetrans",
+        "name": "VT",
         "id": "04fb-3d44-c212-594c",
-        "hidden": false,
+        "hidden": true,
         "constraints": [{"id": "2abf-ac1b-d5b5-d53e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0}],
         "modifiers": [
           {
@@ -7223,22 +7223,6 @@
         ]
       },
       {
-        "name": "Sarissa",
-        "id": "8056-ed67-6e4a-62dc",
-        "hidden": false,
-        "page": "14",
-        "publicationId": "6f16-791a-3a26-4c72",
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "6", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
         "name": "Condemnor Boltpistol (Boltgun)",
         "id": "d198-9506-a9a0-2898",
         "hidden": false,
@@ -8026,16 +8010,6 @@
         ]
       },
       {
-        "name": "Sarissa",
-        "id": "285c-8e7a-68a6-3af4",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
-        "infoLinks": [{"name": "Sarissa", "id": "76c0-b2f7-65f3-b41a", "hidden": false, "targetId": "8056-ed67-6e4a-62dc", "type": "profile"}]
-      },
-      {
         "name": "Simulacrum",
         "id": "2f42-a476-9664-caa7",
         "collective": true,
@@ -8121,9 +8095,9 @@
           {"name": "Imperium", "id": "70e0-a475-40ba-5912", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
           {"name": "Infantry", "id": "2628-db36-1ace-a700", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
           {"name": "Celestians", "id": "080f-3353-0a27-4718", "hidden": false, "primary": false, "targetId": "afe6-3c95-583e-d568"},
-          {"name": "Vetrans", "id": "d461-8a02-5966-83af", "hidden": false, "primary": false, "targetId": "04fb-3d44-c212-594c"},
           {"name": "M36", "id": "4085-d3a5-85f0-e3f2", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
-          {"name": "Adeptus Sororitas", "id": "fefb-0690-cbff-c58d", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"}
+          {"name": "Adeptus Sororitas", "id": "fefb-0690-cbff-c58d", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"},
+          {"name": "Vetrans", "id": "16bf-0862-e229-654b", "hidden": false, "primary": false, "targetId": "6ce5-b373-d16a-52f6"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}],
         "entryLinks": [{"name": "Incenser Cherubim", "id": "f796-e304-957d-37fd", "hidden": false, "import": true, "targetId": "b353-341f-dcba-7a16", "type": "selectionEntry"}],
@@ -8766,8 +8740,8 @@
           {"name": "Imperium", "id": "26ce-2223-5f5e-fbe0", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
           {"name": "Seraphim", "id": "ea0e-b41b-e5c1-3334", "hidden": false, "primary": false, "targetId": "0e59-a08c-b7b0-ff37"},
           {"name": "Infantry", "id": "0a32-a10e-e31c-b56e", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Vetrans", "id": "adfe-dc63-68fc-6669", "hidden": false, "primary": false, "targetId": "04fb-3d44-c212-594c"},
-          {"name": "M36", "id": "d264-36ef-4dab-2c95", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"}
+          {"name": "M36", "id": "d264-36ef-4dab-2c95", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
+          {"name": "Vetrans", "id": "99a7-c7bd-1aa4-72d5", "hidden": false, "primary": false, "targetId": "6ce5-b373-d16a-52f6"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
         "entryLinks": [{"name": "Power Armour", "id": "8231-afd0-40ae-0e50", "hidden": false, "import": true, "targetId": "8eb8-a457-ad6c-9266", "type": "selectionEntry"}],
@@ -9410,11 +9384,11 @@
           {"name": "[Order]", "id": "c3a4-2df4-6b73-2367", "hidden": false, "primary": false, "targetId": "d4d2-9552-882f-a8c9"},
           {"name": "Faction: Sisters of Battle", "id": "9e39-a449-bc51-6dea", "hidden": false, "primary": false, "targetId": "0832-420b-92b7-e210"},
           {"name": "Imperium", "id": "60d8-66ce-c7af-a7ff", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Vetrans", "id": "babc-30a6-d028-9c31", "hidden": false, "primary": false, "targetId": "04fb-3d44-c212-594c"},
           {"name": "Infantry", "id": "dff7-6821-b5a8-1c12", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
           {"name": "Paragon Warsuit", "id": "2847-6493-69e1-1db4", "hidden": false, "primary": false, "targetId": "ee22-1e0b-4930-ea68"},
           {"name": "M36", "id": "b739-cf55-53c2-8a21", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
-          {"name": "Adeptus Sororitas", "id": "45cc-cce6-3ad4-093c", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"}
+          {"name": "Adeptus Sororitas", "id": "45cc-cce6-3ad4-093c", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"},
+          {"name": "Vetrans", "id": "f576-7105-8ef0-fb2b", "hidden": false, "primary": false, "targetId": "6ce5-b373-d16a-52f6"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 63}],
         "infoGroups": [
@@ -11346,7 +11320,8 @@
                 "hidden": false,
                 "rules": [{"id": "7129-133c-99d8-bc50", "description": "Hammerheads can be Elites instead of Heavies", "hidden": false}]
               }
-            ]
+            ],
+            "modifiers": [{"affects": "entries.forces.recursive.6ce5-b373-d16a-52f6", "field": "category", "scope": "force", "type": "add", "value": "04fb-3d44-c212-594c"}]
           }
         ]
       },
