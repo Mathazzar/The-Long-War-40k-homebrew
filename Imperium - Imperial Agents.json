@@ -92,7 +92,8 @@
       {"name": "Tempestus Scion Squad", "id": "8cc3-e688-2322-c5df", "comment": "todo: merge with IG copy", "hidden": false},
       {"name": "Voidsmen-at-Arms", "id": "4af6-c94c-46b3-5710", "hidden": false},
       {"name": "Navy Breachers", "id": "1b00-7773-75e0-0b9a", "hidden": false},
-      {"name": "Celestians", "id": "4427-7876-a9bf-08de", "comment": "todo: merge with SoB copy", "hidden": false}
+      {"name": "Celestians", "id": "4427-7876-a9bf-08de", "comment": "todo: merge with SoB copy", "hidden": false},
+      {"name": "Deathwatch Kill Team", "id": "765f-01de-df6e-1119", "hidden": false}
     ],
     "entryLinks": [
       {
@@ -154,52 +155,6 @@
     ],
     "publications": [{"name": "The Long War - Codex Imperial Agents", "id": "19c4-6ab7-10c5-8fbe", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
-      {
-        "name": "Rites of War",
-        "id": "f98f-6da6-5896-60a6",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Rite of War", "id": "45ed-bd1c-5c52-5d54", "hidden": false, "primary": true, "targetId": "be3a-e529-69f3-b6b9"}],
-        "constraints": [
-          {"id": "09c2-fdd3-994d-e901-min", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
-          {"id": "09c2-fdd3-994d-e901-max", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Rite of War",
-            "id": "1a95-063b-7708-d263",
-            "defaultSelectionEntryId": "none",
-            "hidden": false,
-            "constraints": [
-              {
-                "id": "8724-eca3-f991-d60a",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "selectionEntries": [
-              {"name": "Witch Hunter Convent", "id": "b1da-bd28-818c-54d9", "hidden": false, "import": true, "type": "upgrade"},
-              {"name": "Deathwatch Kill Force", "id": "a544-4439-7751-5faa", "hidden": false, "import": true, "type": "upgrade"},
-              {"name": "Grey Knights Strike Force", "id": "50bb-1156-b21e-d24a", "hidden": false, "import": true, "type": "upgrade"},
-              {
-                "name": "Imperial Knight Household",
-                "id": "d38d-d0f6-98ee-1934",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "modifiers": [{"affects": "entries.recursive.b5e2-1434-0c5d-3e0e", "field": "category", "scope": "roster", "type": "add", "value": "f28f-44a5-401b-6dbd"}]
-              }
-            ]
-          }
-        ]
-      },
       {
         "name": "Watch Captain Artemis",
         "id": "e817-d64a-534d-b6eb",
@@ -11968,6 +11923,2002 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Deathwatch Kill Team",
+        "id": "cc19-b402-5ce3-eecf",
+        "hidden": false,
+        "import": true,
+        "page": "66",
+        "publicationId": "19c4-6ab7-10c5-8fbe",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "1028-d1d2-b9a1-834b", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Imperial Agents", "id": "8b91-2606-e343-c556", "hidden": false, "primary": false, "targetId": "e30f-ae34-8009-7158"},
+          {"name": "Infantry", "id": "752e-7766-6f26-cfa5", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "[Ordo Xenos]", "id": "cd78-755e-80f5-5152", "hidden": false, "primary": false, "targetId": "b352-a3f4-ae65-d292"},
+          {"name": "Deathwatch", "id": "e1e8-01eb-f68f-c041", "hidden": false, "primary": false, "targetId": "762d-113c-b32d-5dbb"},
+          {"name": "Faction: Space Marines", "id": "86dd-33b4-5b27-4013", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Troop", "id": "db1f-c1d6-0824-e278", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Deathwatch Kill Team", "id": "8f25-6d7b-423a-dfd1", "hidden": false, "primary": false, "targetId": "765f-01de-df6e-1119"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "infoLinks": [
+          {"name": "Support Squad", "id": "40c3-bff9-69b3-eb0c", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
+          {"name": "Allegiance: Ordo Xenos", "id": "3b7f-49f0-a6b0-b52b", "hidden": false, "targetId": "5a90-0c1d-5ed4-4fa8", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "0e45-77af-8b74-9512", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Special Issue Ammunition", "id": "c255-3046-dcf8-af6d", "hidden": false, "targetId": "20e0-5740-eacd-3397", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "b352-a3f4-ae65-d292",
+                "childName": "[Ordo Xenos]",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Mixed unit",
+            "id": "ecc8-e7c5-61c7-92b6",
+            "description": "This unit is always treated as an Infantry type unit unless the majority of models in the unit are equipped with Bikes. Models equipped with Bikes count as having the Bulky (3) special rule. This unit only gains the benefits of the Deep Strike, Outflank, Relentless and Infiltrate special rules of the majority of the models are equipped with Wargear that\nconfers it.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Deathwatch Veteran",
+            "id": "b177-819f-ed9c-e492",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "acb5-2f5d-a9b0-42c9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "1529-a191-a58e-b974", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 10}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 27}],
+            "modifiers": [{"field": "1529-a191-a58e-b974", "type": "decrement", "value": 1}],
+            "profiles": [
+              {
+                "name": "Deathwatch Veteran",
+                "id": "2c88-628f-fae2-c1db",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Black Shield",
+                "id": "498f-6bdd-7c5e-9782",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 0,
+                "type": "upgrade",
+                "constraints": [{"id": "21f7-400f-01fa-5f7b", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "profiles.Unit", "field": "name", "type": "set", "value": "Black Shield"},
+                      {"affects": "profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "type": "increment", "value": 1},
+                      {"affects": "profiles.Unit", "field": "bc55-c58d-b53a-233c", "type": "increment", "value": 1}
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Specialization",
+                    "id": "3695-fe9d-f809-5114",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "id": "8e92-4d73-2c9b-23d4",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Deathwatch Chaplain",
+                        "id": "d63b-5d42-ecaf-c88d",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+                        "infoLinks": [
+                          {"name": "Zealot", "id": "53bc-db43-8824-7e64", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"},
+                          {"name": "Priest (x)", "id": "ab9c-70d4-578d-8f19", "hidden": false, "targetId": "beb9-b346-8f52-63fe", "type": "rule"},
+                          {"name": "Stubborn", "id": "d8c5-573f-5e6e-fd90", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"}
+                        ],
+                        "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "f41c-295d-a9b1-b72c"}],
+                        "selectionEntries": [
+                          {
+                            "name": "Priest (2)",
+                            "id": "8728-feba-4dfb-04fc",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "constraints": [{"id": "7e26-3c0e-af9e-1e08", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Deathwatch Lexicanum",
+                        "id": "418d-a232-0ec7-82c5",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                        "infoLinks": [
+                          {"name": "Adamantine Will", "id": "1440-b713-5720-60cd", "hidden": false, "targetId": "1f0e-f701-bd3a-3894", "type": "rule"},
+                          {"name": "Psyker (x)", "id": "6a31-f1ad-0064-98c9", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+                        ],
+                        "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "4e4d-1694-c7c7-88b1"}],
+                        "selectionEntries": [
+                          {
+                            "name": "Psyker (2)",
+                            "id": "a412-82f3-dc61-d906",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "constraints": [{"id": "22be-bc98-2987-1c3e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Deathwatch Tech-Priest",
+                        "id": "d3cb-b040-3863-d448",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
+                        "entryLinks": [
+                          {
+                            "name": "Omnissian Axe",
+                            "id": "652a-2d35-e1a5-dd1a",
+                            "comment": "todo: No profile provided in reference",
+                            "defaultAmount": "1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "1045-91ce-a571-3484",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "651d-b83d-e56b-f5ac-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "651d-b83d-e56b-f5ac-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ]
+                          },
+                          {
+                            "name": "Servo Arm",
+                            "id": "209f-a2e2-38dc-88d3",
+                            "defaultAmount": "1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f298-43ba-623e-e090",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "fae1-16f9-518f-9c86-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "fae1-16f9-518f-9c86-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {"name": "Relentless", "id": "2ad3-a9bf-41cb-fba3", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+                          {"name": "Battle Smith (x)", "id": "0b8c-a220-4652-62a7", "hidden": false, "targetId": "1bae-372c-fb85-7975", "type": "rule"}
+                        ],
+                        "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "69c3-b571-197c-4f99"}],
+                        "selectionEntries": [
+                          {
+                            "name": "Battle Smith (2)",
+                            "id": "ccd2-52c0-3124-e409",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "constraints": [{"id": "e014-3122-f295-edba", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Servo Arm, Plasma Pistol, Flamer, and Firing Protocols (3)",
+                            "id": "77cc-5f23-4d3e-a108",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                            "entryLinks": [
+                              {
+                                "name": "Flamer",
+                                "id": "fd1b-8ef5-84c1-7b87",
+                                "defaultAmount": "1",
+                                "exportable": false,
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "958b-0867-67db-e40a",
+                                "type": "selectionEntry",
+                                "constraints": [
+                                  {"id": "e718-dc5d-bf0f-b78d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                                  {"id": "e718-dc5d-bf0f-b78d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                                ]
+                              },
+                              {
+                                "name": "Servo Arm",
+                                "id": "bc25-cccc-b966-bec8",
+                                "defaultAmount": "1",
+                                "exportable": false,
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "f298-43ba-623e-e090",
+                                "type": "selectionEntry",
+                                "constraints": [
+                                  {"id": "c63e-39cd-7587-281d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                                  {"id": "c63e-39cd-7587-281d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                                ]
+                              },
+                              {
+                                "name": "Plasma Pistol",
+                                "id": "6b5c-ab1a-09f3-f2c7",
+                                "defaultAmount": "1",
+                                "exportable": false,
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "3407-02d2-18aa-4a22",
+                                "type": "selectionEntry",
+                                "constraints": [
+                                  {"id": "e6f9-cad9-3a4d-e20c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                                  {"id": "e6f9-cad9-3a4d-e20c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                                ]
+                              }
+                            ],
+                            "infoLinks": [{"name": "Firing Protocols (x)", "id": "87b4-9fc1-5231-d0f1", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Extra",
+                    "id": "54db-995f-eb3f-9fe7",
+                    "defaultSelectionEntryId": "none",
+                    "flatten": true,
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "id": "ca30-c0a4-7188-0220",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Teleport Homer",
+                        "id": "f91b-ba09-1f29-fd67",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "1e1f-77bf-b9ab-f22f",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                      },
+                      {
+                        "name": "Melta Bomb",
+                        "id": "3c87-193c-752a-d4c4",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "3649-d648-4d6b-786f",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                      },
+                      {
+                        "name": "Auspex Scanner",
+                        "id": "52db-168f-b328-8427",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "c397-e8e5-f71d-2cb0",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Power Armour",
+                "id": "e48d-ee74-f96e-5a1f",
+                "defaultSelectionEntryId": "54d5-467d-2360-33d1",
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "id": "e0ae-a524-84ee-ae68-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "e0ae-a524-84ee-ae68-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Phobos Armour",
+                    "id": "5a41-1595-57a4-833d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7bda-70a0-075d-1773",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {
+                    "name": "Power Armour",
+                    "id": "54d5-467d-2360-33d1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "8eb8-a457-ad6c-9266",
+                    "type": "selectionEntry",
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Mobility",
+                        "id": "b97f-b8d2-16d5-cade",
+                        "defaultSelectionEntryId": "none",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "8f52-a809-5b63-7d8d",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {"name": "Jump Pack", "id": "b25c-72d3-9591-3f1b", "hidden": false, "import": true, "targetId": "6029-ff30-bd91-9976", "type": "selectionEntry"},
+                          {
+                            "name": "Bike",
+                            "id": "fe30-b009-26b5-124f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "cd1c-37c9-b49b-eb52",
+                            "type": "selectionEntry",
+                            "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "560f-2dca-57fb-5997"}]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Indomitus Terminator Armour",
+                    "id": "0e58-41cf-8904-acb1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "5048-d77b-37d4-15b9",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "entryLinks": [
+                      {
+                        "name": "Cyclone Missile Launcher",
+                        "id": "71a3-4745-61f6-f5c9",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "c990-6a7a-e2d2-63af",
+                        "type": "selectionEntry",
+                        "constraints": [{"id": "88ef-7074-567a-7deb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "cbdc-411c-cf55-3186",
+                        "type": "set",
+                        "value": 0,
+                        "conditions": [
+                          {
+                            "childId": "418d-a232-0ec7-82c5",
+                            "childName": "Deathwatch Lexicanum",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "field": "cbdc-411c-cf55-3186",
+                        "type": "set",
+                        "value": 10,
+                        "conditions": [
+                          {
+                            "childId": "d63b-5d42-ecaf-c88d",
+                            "childName": "Deathwatch Chaplain",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gravis Armour",
+                    "id": "975a-0bb7-67dd-8658",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "1618-4349-e229-5a93",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  }
+                ]
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "98af-25e9-5e0c-afb8",
+                "collapsible": true,
+                "defaultSelectionEntryId": "0b59-5b26-c4da-e884",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "076d-dd5c-61b4-ebed-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "076d-dd5c-61b4-ebed-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Neo Volkite Pistol",
+                    "id": "dfd1-a874-d55b-ff25",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f48c-fb97-f28e-27d3",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                  },
+                  {"name": "Bolt Pistol", "id": "0b59-5b26-c4da-e884", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"},
+                  {
+                    "name": "Plasma Pistol",
+                    "id": "35b4-7456-937a-ecf8",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "3407-02d2-18aa-4a22",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Hand Flamer",
+                    "id": "eefd-bd50-4335-3ce7",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "be5e-26aa-f44a-412c",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Grav Pistol",
+                    "id": "976a-7fca-f0de-08dd",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4095-0464-a8c4-96f1",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5048-d77b-37d4-15b9",
+                        "childName": "Indomitus Terminator Armour",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Boltgun and Close Combat Weapon",
+                "id": "5c67-3c3b-5784-672d",
+                "defaultSelectionEntryId": "2fce-83dc-198b-864f",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "0e18-5d7a-6c9b-3d8f-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "0e18-5d7a-6c9b-3d8f-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Heavy Bolter",
+                    "id": "1f8d-183b-1243-c37d",
+                    "comment": "Gravis",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "78c1-9390-d6ec-04ff",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "1618-4349-e229-5a93",
+                            "childName": "Gravis Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Infernus Heavy Bolter",
+                    "id": "d186-7bb4-8a41-c090",
+                    "comment": "Gravis",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "9d71-11d9-4003-bab4",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "1618-4349-e229-5a93",
+                            "childName": "Gravis Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Boltgun and Close Combat Weapon",
+                    "id": "2fce-83dc-198b-864f",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 0,
+                    "type": "upgrade",
+                    "entryLinks": [{"name": "Close Combat Weapon", "id": "49d4-2d72-9d9f-6acd", "hidden": false, "targetId": "d9cd-e07d-9ef0-6647", "type": "selectionEntryGroup"}],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "1618-4349-e229-5a93",
+                                "childName": "Gravis Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "d63b-5d42-ecaf-c88d",
+                                "childName": "Deathwatch Chaplain",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "5048-d77b-37d4-15b9",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Boltgun",
+                        "id": "5466-b349-7f78-a003",
+                        "comment": "DW PA",
+                        "defaultSelectionEntryId": "59c4-e8b0-3cd0-d13c",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "0a5a-9d40-7e90-09c3-min",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "0a5a-9d40-7e90-09c3-max",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Thunder Hammer",
+                            "id": "4c3f-f21d-74c6-ceb3",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4e5d-8e80-1671-f1f9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+                          },
+                          {
+                            "name": "Storm Bolter",
+                            "id": "67dc-0c9e-6fad-6de8",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "c829-b809-d33d-4738",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                          },
+                          {
+                            "name": "Astartes Shotgun",
+                            "id": "ed43-ce06-f588-eb96",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f426-979e-1b34-e351",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                          },
+                          {
+                            "name": "Bolt Sniper Rifle",
+                            "id": "656f-ef35-404d-47e0",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "dc32-f7ae-ff6e-9920",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Sniper Rifle",
+                            "id": "c47d-b14a-6944-85c0",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2b28-2be1-8fe9-0348",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Plasma Pistol",
+                            "id": "2524-9b7d-22c7-ab93",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "3407-02d2-18aa-4a22",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Hand Flamer",
+                            "id": "20fd-0f1a-0074-c375",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "be5e-26aa-f44a-412c",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Grav Pistol",
+                            "id": "8bd1-2792-d54d-fc2b",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4095-0464-a8c4-96f1",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Neo Volkite Pistol",
+                            "id": "4d4c-4b4f-fda9-e290",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f48c-fb97-f28e-27d3",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                          },
+                          {
+                            "name": "Combi Flamer",
+                            "id": "1053-7a4b-7a76-a69f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4055-8e1b-e950-5299",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Flamer",
+                            "id": "bf0c-3068-1200-025c",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "958b-0867-67db-e40a",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Combi Plasma",
+                            "id": "405c-1d1c-c262-147b",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8d0b-110a-173a-4ddd",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Plasma Gun",
+                            "id": "e3ec-1656-be4b-8db3",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "db58-d2e2-0963-74bd",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Combi Grav",
+                            "id": "b646-76ff-c7ff-a3bd",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "b8b8-1bdb-b1a9-d4d9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Grav Gun",
+                            "id": "a3a7-072f-1753-0f25",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "c4da-fd1d-a542-d279",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Combi Melta",
+                            "id": "97e6-620b-16b8-1bae",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "0a47-4e41-d06f-dabf",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Meltagun",
+                            "id": "f336-e8e4-495d-56a1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "6186-a63d-2245-c4bb",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Heavy Bolter",
+                            "id": "e12c-42fa-d5ce-93b1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "78c1-9390-d6ec-04ff",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Infernus Heavy Bolter",
+                            "id": "555d-402e-4fc5-8b34",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "9d71-11d9-4003-bab4",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Frag Cannon",
+                            "id": "21cd-d8e9-fa5c-0e61",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "1d9e-2012-c62e-4392",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Heavy Flamer",
+                            "id": "a2d6-434c-6f2e-7f47",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4b58-2b09-3805-2dab",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Grav Cannon",
+                            "id": "3259-8188-bc61-0d44",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "9bbd-1376-34f3-babf",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Plasma Cannon",
+                            "id": "4f9e-45a3-1b9d-ac04",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "a976-9c82-b60a-5fc0",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Missile Launcher",
+                            "id": "2bae-3d97-9e6e-c29c",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "6bc7-dc8c-099c-61ce",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Lascannon",
+                            "id": "9464-90e5-2943-a908",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2cfd-9f25-1c54-177a",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Multi-Melta",
+                            "id": "c882-63e6-4167-3e77",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "90c9-36e3-ba67-2cfc",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+                          },
+                          {"name": "Boltgun", "id": "59c4-e8b0-3cd0-d13c", "hidden": false, "import": true, "targetId": "469c-f449-1e9e-1d6f", "type": "selectionEntry"},
+                          {
+                            "name": "Power Sword",
+                            "id": "9be9-5165-48a4-99bc",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "84dd-49d6-4915-6b09",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Power Axe",
+                            "id": "bcaf-8dd9-ccdd-a9e5",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "6dff-d1d6-7194-b1d0",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Power Maul",
+                            "id": "cd99-69cd-0207-d0d3",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2607-4972-6fde-3757",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Power Lance",
+                            "id": "6c3e-1db4-455a-3d1e",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "a7ed-640e-8d57-4f6f",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Power Fist",
+                            "id": "2bef-41c2-c7f4-030f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "e38e-0c5b-3e05-b098",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Storm Shields",
+                            "id": "5ce2-3181-e708-1868",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f149-873d-0ef1-c92d",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {"name": "Chainsword", "id": "2dcf-13ae-bb42-5693", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Close Combat Weapon and Heavy Boltgun",
+                    "id": "2f7c-c993-e104-bb43",
+                    "comment": "Gravis",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 0,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {"name": "Close Combat Weapon", "id": "4c0e-da10-6749-4722", "hidden": false, "import": true, "targetId": "d9cd-e07d-9ef0-6647", "type": "selectionEntryGroup"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "1618-4349-e229-5a93",
+                            "childName": "Gravis Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Heavy Boltgun",
+                        "id": "d5c8-e099-a889-9cf3",
+                        "collapsible": true,
+                        "comment": "DW G",
+                        "defaultSelectionEntryId": "ec64-8dec-9cbe-aa18",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "6972-3744-222d-924d-min",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "6972-3744-222d-924d-max",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {"name": "Heavy Boltgun", "id": "ec64-8dec-9cbe-aa18", "hidden": false, "import": true, "targetId": "aee5-a896-164f-7f58", "type": "selectionEntry"},
+                          {
+                            "name": "Meltagun",
+                            "id": "9aee-0010-aa86-c7e8",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "6186-a63d-2245-c4bb",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Multi-Melta",
+                            "id": "ce03-1e95-f9fa-3b70",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "90c9-36e3-ba67-2cfc",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+                          }
+                        ],
+                        "selectionEntries": [
+                          {
+                            "name": "Jump Pack and 2 Plasma Exterminator",
+                            "id": "acd4-bbde-17f7-5093",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                            "entryLinks": [
+                              {
+                                "name": "Jump Pack",
+                                "id": "c86f-ced1-01b7-1597",
+                                "defaultAmount": "1",
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "6029-ff30-bd91-9976",
+                                "type": "selectionEntry",
+                                "constraints": [{"id": "7a17-571a-3a51-0b07", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+                              },
+                              {
+                                "name": "Plasma Exterminator",
+                                "id": "c685-de16-f938-9098",
+                                "defaultAmount": "2",
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "bd89-fdab-ad3f-2beb",
+                                "type": "selectionEntry",
+                                "constraints": [
+                                  {"id": "c821-4357-01a4-9de9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                                  {"id": "c821-4357-01a4-9de9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Jump Pack and 2 Assault Bolters",
+                            "id": "21ed-75cf-5bb8-1979",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                            "entryLinks": [
+                              {
+                                "name": "Jump Pack",
+                                "id": "35bf-352c-7123-c834",
+                                "defaultAmount": "1",
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "6029-ff30-bd91-9976",
+                                "type": "selectionEntry",
+                                "constraints": [{"id": "83a6-015e-ea0f-bac5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+                              },
+                              {
+                                "name": "Assault Bolters",
+                                "id": "dd88-33e6-c621-e58f",
+                                "defaultAmount": "2",
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "8643-48b6-fe63-6d7c",
+                                "type": "selectionEntry",
+                                "constraints": [
+                                  {"id": "5b2b-8760-b604-2dcf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                                  {"id": "5b2b-8760-b604-2dcf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm Bolter and Power Sword",
+                    "id": "381c-d69d-5ac4-0528",
+                    "comment": "Terminator",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 0,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Close Combat Weapon",
+                        "id": "fe60-725b-50b5-127d",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "d9cd-e07d-9ef0-6647",
+                        "type": "selectionEntryGroup",
+                        "modifierGroups": [
+                          {
+                            "comment": "Terminator",
+                            "type": "and",
+                            "modifiers": [
+                              {"affects": "4e5d-8e80-1671-f1f9", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 20},
+                              {"affects": "d8ec-e3b8-112b-1e9d", "field": "hidden", "type": "set", "value": false},
+                              {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true},
+                              {"affects": "30cd-ea7d-b624-eba3", "field": "hidden", "type": "set", "value": true},
+                              {"affects": "84dd-49d6-4915-6b09", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 0},
+                              {"affects": "6dff-d1d6-7194-b1d0", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "a7ed-640e-8d57-4f6f", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "2607-4972-6fde-3757", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 10},
+                              {"affects": "e38e-0c5b-3e05-b098", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 15},
+                              {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
+                              {"field": "defaultSelectionEntryId", "type": "set", "value": "291c-b201-4595-f9e6"},
+                              {"field": "name", "type": "set", "value": "Power Sword"}
+                            ]
+                          }
+                        ]
+                      },
+                      {"name": "Storm Bolter", "id": "ce29-adb4-8f27-cbc6", "hidden": false, "import": true, "targetId": "051b-6dd7-125b-b71f", "type": "selectionEntryGroup"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "418d-a232-0ec7-82c5",
+                                "childName": "Deathwatch Lexicanum",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "d63b-5d42-ecaf-c88d",
+                                "childName": "Deathwatch Chaplain",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "5048-d77b-37d4-15b9",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm Bolter and Power Maul",
+                    "id": "c0a9-552e-ab64-c236",
+                    "comment": "Terminator Chaplain",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 0,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {"name": "Storm Bolter", "id": "e8e3-a425-ff5e-b214", "hidden": false, "targetId": "051b-6dd7-125b-b71f", "type": "selectionEntryGroup"},
+                      {
+                        "name": "Power Maul",
+                        "id": "8f71-4a60-57db-6633",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2607-4972-6fde-3757",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "0b8d-2548-ed95-6a22-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "0b8d-2548-ed95-6a22-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "5048-d77b-37d4-15b9",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "d63b-5d42-ecaf-c88d",
+                                "childName": "Deathwatch Chaplain",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Boltstorm Gauntlets and Fragstorm Grenade Launcher",
+                    "id": "d496-29dc-b553-688f",
+                    "comment": "Gravis",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "entryLinks": [
+                      {
+                        "name": "Boltstorm Gauntlet",
+                        "id": "d69f-14be-38a6-c89f",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "080c-97f8-39a3-3f2b",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "a90d-dcc5-1a98-d583-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "a90d-dcc5-1a98-d583-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      },
+                      {
+                        "name": "Fragstorm Grenade Launcher",
+                        "id": "ddd0-37a1-7f93-7182",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4c04-c034-c549-e60b",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "8aeb-d17a-966e-b43b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "8aeb-d17a-966e-b43b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "1618-4349-e229-5a93",
+                            "childName": "Gravis Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Flamestorm Gauntlets",
+                    "id": "7dc7-6e6c-d0b8-fcd2",
+                    "comment": "Gravis",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "entryLinks": [
+                      {
+                        "name": "Flamestorm Gauntlets",
+                        "id": "8343-29b8-9cfa-eac9",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "b371-6dd1-80d7-d31d",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "249b-892b-9836-a7ea-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "249b-892b-9836-a7ea-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "1618-4349-e229-5a93",
+                            "childName": "Gravis Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Lightning Claws",
+                    "id": "03f9-5667-36a1-f422",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                    "entryLinks": [
+                      {
+                        "name": "Lightning Claws",
+                        "id": "8965-ecfc-7c76-eb86",
+                        "defaultAmount": "2",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "7387-4d1b-e3e4-b301",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "0466-60b8-3532-6dd9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "0466-60b8-3532-6dd9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "cbdc-411c-cf55-3186",
+                        "type": "set",
+                        "value": 0,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "5048-d77b-37d4-15b9",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "418d-a232-0ec7-82c5",
+                                "childName": "Deathwatch Lexicanum",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "d63b-5d42-ecaf-c88d",
+                                "childName": "Deathwatch Chaplain",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "cd1c-37c9-b49b-eb52",
+                                "childName": "Bike",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "1618-4349-e229-5a93",
+                                "childName": "Gravis Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "field": "cbdc-411c-cf55-3186",
+                        "type": "set",
+                        "value": 5,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditionGroups": [
+                              {
+                                "type": "or",
+                                "conditions": [
+                                  {
+                                    "childId": "418d-a232-0ec7-82c5",
+                                    "childName": "Deathwatch Lexicanum",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "model",
+                                    "shared": true,
+                                    "type": "atLeast",
+                                    "value": 1
+                                  },
+                                  {
+                                    "childId": "d63b-5d42-ecaf-c88d",
+                                    "childName": "Deathwatch Chaplain",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "model",
+                                    "shared": true,
+                                    "type": "atLeast",
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ],
+                            "conditions": [
+                              {
+                                "childId": "5048-d77b-37d4-15b9",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Boltgun and Power Maul",
+                    "id": "8764-f97c-858b-1805",
+                    "comment": "Chaplain",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 0,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Power Maul",
+                        "id": "02b6-1fbb-8f3f-9947",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2607-4972-6fde-3757",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "83f5-f7e4-ed93-1df8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "83f5-f7e4-ed93-1df8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "5048-d77b-37d4-15b9",
+                            "childName": "Indomitus Terminator Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Boltgun",
+                        "id": "a2c4-f65e-4d7f-c6ed",
+                        "comment": "DW PA",
+                        "defaultSelectionEntryId": "59c4-e8b0-3cd0-d13c",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "4c74-0d5c-1a9b-6ee8-min",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "4c74-0d5c-1a9b-6ee8-max",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Thunder Hammer",
+                            "id": "ce8d-e052-d9bf-8a60",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4e5d-8e80-1671-f1f9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+                          },
+                          {
+                            "name": "Storm Bolter",
+                            "id": "b674-607d-3e64-6e46",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "c829-b809-d33d-4738",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                          },
+                          {
+                            "name": "Astartes Shotgun",
+                            "id": "f721-52a6-3918-f575",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f426-979e-1b34-e351",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                          },
+                          {
+                            "name": "Bolt Sniper Rifle",
+                            "id": "c08a-2dc6-fa3c-416d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "dc32-f7ae-ff6e-9920",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Sniper Rifle",
+                            "id": "040d-d54d-1b98-7558",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2b28-2be1-8fe9-0348",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Plasma Pistol",
+                            "id": "c670-7454-e0ff-80e6",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "3407-02d2-18aa-4a22",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Hand Flamer",
+                            "id": "06e1-7a5e-a4fa-aca6",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "be5e-26aa-f44a-412c",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Grav Pistol",
+                            "id": "8c31-d26b-003b-512f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4095-0464-a8c4-96f1",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Neo Volkite Pistol",
+                            "id": "496e-5c14-a3f5-7e37",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f48c-fb97-f28e-27d3",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                          },
+                          {
+                            "name": "Combi Flamer",
+                            "id": "69bd-59c0-f92d-38c9",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4055-8e1b-e950-5299",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Flamer",
+                            "id": "2a16-c081-f552-eb63",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "958b-0867-67db-e40a",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Combi Plasma",
+                            "id": "6fe1-2e6b-b69c-514c",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8d0b-110a-173a-4ddd",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Plasma Gun",
+                            "id": "0ab7-e328-37ca-e312",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "db58-d2e2-0963-74bd",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Combi Grav",
+                            "id": "888b-ff51-5af2-9fef",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "b8b8-1bdb-b1a9-d4d9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Grav Gun",
+                            "id": "e533-7954-a52a-ed09",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "c4da-fd1d-a542-d279",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Combi Melta",
+                            "id": "1e8f-f340-40c5-0f38",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "0a47-4e41-d06f-dabf",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Meltagun",
+                            "id": "59ac-20d9-1107-f4b3",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "6186-a63d-2245-c4bb",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Heavy Bolter",
+                            "id": "4349-94a7-d79e-49c1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "78c1-9390-d6ec-04ff",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Infernus Heavy Bolter",
+                            "id": "3691-d915-c976-a353",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "9d71-11d9-4003-bab4",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Frag Cannon",
+                            "id": "15e2-0d08-7599-efa4",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "1d9e-2012-c62e-4392",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Heavy Flamer",
+                            "id": "66f9-e0e6-9ed7-b555",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4b58-2b09-3805-2dab",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Grav Cannon",
+                            "id": "e86a-f580-da1e-0e52",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "9bbd-1376-34f3-babf",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Plasma Cannon",
+                            "id": "b53d-e525-8cb8-0595",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "a976-9c82-b60a-5fc0",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Missile Launcher",
+                            "id": "8c61-d3ab-52ea-053b",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "6bc7-dc8c-099c-61ce",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Lascannon",
+                            "id": "cf7a-16bf-9df1-2022",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2cfd-9f25-1c54-177a",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Multi-Melta",
+                            "id": "6114-7553-44ae-9185",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "90c9-36e3-ba67-2cfc",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+                          },
+                          {"name": "Boltgun", "id": "c06f-89d3-9f48-7c21", "hidden": false, "import": true, "targetId": "469c-f449-1e9e-1d6f", "type": "selectionEntry"},
+                          {
+                            "name": "Power Sword",
+                            "id": "c4a9-af0c-b4bd-f5e2",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "84dd-49d6-4915-6b09",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                          },
+                          {
+                            "name": "Power Axe",
+                            "id": "b1c7-bf10-a398-f198",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "6dff-d1d6-7194-b1d0",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Power Maul",
+                            "id": "f9da-dcd2-5219-56a6",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2607-4972-6fde-3757",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Power Lance",
+                            "id": "90cf-b441-48b4-32be",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "a7ed-640e-8d57-4f6f",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Power Fist",
+                            "id": "c101-5aef-7aa4-c3ff",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "e38e-0c5b-3e05-b098",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {
+                            "name": "Storm Shields",
+                            "id": "9d77-8fc1-10f7-62d5",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f149-873d-0ef1-c92d",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                          },
+                          {"name": "Chainsword", "id": "7d8e-beb7-6d13-d1d4", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm Bolter and Close Combat Weapon",
+                    "id": "d760-4238-3c69-7b8d",
+                    "comment": "Terminator Lexicanum",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 0,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {"name": "Storm Bolter", "id": "872d-037a-9a62-ca66", "hidden": false, "targetId": "051b-6dd7-125b-b71f", "type": "selectionEntryGroup"},
+                      {"name": "Close Combat Weapon", "id": "51d6-1dab-e43d-81d9", "hidden": false, "import": true, "targetId": "d9cd-e07d-9ef0-6647", "type": "selectionEntryGroup"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "5048-d77b-37d4-15b9",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "418d-a232-0ec7-82c5",
+                                "childName": "Deathwatch Lexicanum",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedInfoGroups": [
@@ -14368,6 +16319,264 @@
                 "hidden": false
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Close Combat Weapon",
+        "id": "d9cd-e07d-9ef0-6647",
+        "defaultSelectionEntryId": "3189-f00d-94de-5559",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "065e-8428-ee55-7b7a-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "065e-8428-ee55-7b7a-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Xenophase Blade",
+            "id": "4e4f-17e0-44a6-b720",
+            "hidden": false,
+            "import": true,
+            "targetId": "30cd-ea7d-b624-eba3",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+          },
+          {"name": "Close Combat Weapons", "id": "3189-f00d-94de-5559", "hidden": false, "import": true, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"},
+          {"name": "Chainsword", "id": "5b2c-03ed-cb72-4671", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"},
+          {
+            "name": "Power Sword",
+            "id": "291c-b201-4595-f9e6",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 0,
+            "targetId": "84dd-49d6-4915-6b09",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {
+            "name": "Power Axe",
+            "id": "3583-fcb4-9112-8ea1",
+            "hidden": false,
+            "import": true,
+            "targetId": "6dff-d1d6-7194-b1d0",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Power Lance",
+            "id": "4682-7363-38d5-7f13",
+            "hidden": false,
+            "import": true,
+            "targetId": "a7ed-640e-8d57-4f6f",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Power Maul",
+            "id": "094d-a330-4551-a54d",
+            "hidden": false,
+            "import": true,
+            "targetId": "2607-4972-6fde-3757",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+          },
+          {
+            "name": "Chainfist",
+            "id": "0e32-05c2-9cad-bbc2",
+            "hidden": true,
+            "import": true,
+            "targetId": "d8ec-e3b8-112b-1e9d",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+          },
+          {
+            "name": "Thunder Hammer",
+            "id": "21c7-ed64-c0f7-59ea",
+            "hidden": false,
+            "import": true,
+            "targetId": "4e5d-8e80-1671-f1f9",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+          },
+          {
+            "name": "Power Fist",
+            "id": "f2a0-3330-bb86-e2ff",
+            "hidden": false,
+            "import": true,
+            "targetId": "e38e-0c5b-3e05-b098",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+          },
+          {
+            "name": "Force Stave",
+            "id": "58c2-aed6-3647-f5c1",
+            "hidden": true,
+            "import": true,
+            "targetId": "840b-c47a-0e8d-fa15",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Force Sword",
+            "id": "90c8-da0a-c813-117c",
+            "hidden": true,
+            "import": true,
+            "targetId": "896e-0836-daec-f0a8",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Force Axe",
+            "id": "6534-e75a-bcfd-aa2c",
+            "hidden": true,
+            "import": true,
+            "targetId": "3a5f-68dd-68b7-f2f4",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Lexicanum",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "418d-a232-0ec7-82c5",
+                "childName": "Deathwatch Lexicanum",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "model",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"affects": "840b-c47a-0e8d-fa15", "field": "hidden", "type": "set", "value": false},
+              {"affects": "896e-0836-daec-f0a8", "field": "hidden", "type": "set", "value": false},
+              {"affects": "3a5f-68dd-68b7-f2f4", "field": "hidden", "type": "set", "value": false}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm Bolter",
+        "id": "051b-6dd7-125b-b71f",
+        "comment": "DW T",
+        "defaultSelectionEntryId": "f546-4eec-a7e7-1830",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "df32-9408-3524-4053-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "df32-9408-3524-4053-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Storm Bolter",
+            "id": "6c01-3660-a88d-0758",
+            "hidden": false,
+            "import": true,
+            "targetId": "c829-b809-d33d-4738",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+          },
+          {
+            "name": "Combi Flamer",
+            "id": "175b-8cab-7d2e-f216",
+            "hidden": false,
+            "import": true,
+            "targetId": "4055-8e1b-e950-5299",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {
+            "name": "Combi Plasma",
+            "id": "d853-c545-5800-2d02",
+            "hidden": false,
+            "import": true,
+            "targetId": "8d0b-110a-173a-4ddd",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Combi Grav",
+            "id": "51f3-7c24-b0a7-db44",
+            "hidden": false,
+            "import": true,
+            "targetId": "b8b8-1bdb-b1a9-d4d9",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Combi Melta",
+            "id": "2f27-fbf1-b347-5a31",
+            "hidden": false,
+            "import": true,
+            "targetId": "0a47-4e41-d06f-dabf",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+          },
+          {
+            "name": "Heavy Flamer",
+            "id": "889b-52d5-abd8-4d4d",
+            "hidden": false,
+            "import": true,
+            "targetId": "4b58-2b09-3805-2dab",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {
+            "name": "Plasma Cannon",
+            "id": "4800-29ba-2157-2ee1",
+            "hidden": false,
+            "import": true,
+            "targetId": "a976-9c82-b60a-5fc0",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+          },
+          {
+            "name": "Storm Shields",
+            "id": "65b6-713b-1c84-a96e",
+            "hidden": false,
+            "import": true,
+            "targetId": "f149-873d-0ef1-c92d",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
           }
         ]
       }

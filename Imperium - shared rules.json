@@ -554,6 +554,21 @@
           {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "Unwieldy, Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
         ]
+      },
+      {
+        "name": "Neo Volkite Pistol",
+        "id": "badb-ecc4-580a-7832",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+        ]
       }
     ],
     "sharedRules": [
@@ -4228,6 +4243,43 @@
               {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "6", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Neo Volkite Pistol",
+        "id": "f48c-fb97-f28e-27d3",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Neo Volkite Pistol", "id": "7d6b-cd6e-1753-c71d", "hidden": false, "targetId": "badb-ecc4-580a-7832", "type": "profile"}]
+      },
+      {
+        "name": "Omnissian Axe",
+        "id": "1045-91ce-a571-3484",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Omnissian Axe",
+            "id": "e1f1-2391-8c83-101e",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
