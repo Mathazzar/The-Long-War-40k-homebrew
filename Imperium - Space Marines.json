@@ -21,7 +21,6 @@
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
-      {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false},
       {"name": "Lieutenant", "id": "7f3b-8dcd-3e9e-0d9c", "hidden": false},
       {"name": "Command Squad", "id": "3dcd-0520-4715-224e", "hidden": false},
       {"name": "Damocles Command Rhino", "id": "3614-8382-22d8-a32e", "hidden": false},
@@ -39,7 +38,6 @@
         "constraints": [{"id": "887f-a7af-62c5-efae", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
       },
       {"name": "[Red Scorpions]", "id": "94c6-d794-5572-523f", "hidden": false},
-      {"name": "Dreadnought", "id": "66b5-9c89-b1b9-fdff", "hidden": false},
       {
         "name": "Sevrin Loth",
         "id": "a62d-6d6f-0cbd-9f7c",
@@ -1363,9 +1361,62 @@
         "name": "Castraferrum Dreadnought",
         "id": "b651-f816-e7e3-1cb7",
         "hidden": false,
+        "page": "65",
+        "publicationId": "1606-03fb-e01d-e0cf",
         "targetId": "9fea-9580-3966-9896",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "618b-f561-d012-f9d1", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}]
+        "categoryLinks": [
+          {"name": "[Chapter]", "id": "0765-7e51-f726-a756", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
+          {"name": "Battle Line", "id": "e898-11ac-5070-cd2d", "hidden": false, "primary": false, "targetId": "52a4-b849-6620-8858"}
+        ],
+        "infoLinks": [{"name": "Allegiance", "id": "618b-f561-d012-f9d1", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f7ea-4caf-2ed7-469a",
+                    "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5917-3f8b-45a0-9158",
+                    "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Thunderhawk Gunship",
@@ -5697,20 +5748,6 @@
         ]
       },
       {
-        "name": "Dreadnought Close Combat weapon",
-        "id": "7b26-de61-6ee7-ee18",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Crushing (6+), Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
         "name": "Sergeant",
         "id": "f345-9232-1970-d879",
         "hidden": false,
@@ -7439,32 +7476,6 @@
               {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Conversion", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Seismic Hammer",
-        "id": "4167-b3b6-779e-7442",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Seismic Hammer",
-            "id": "2a2b-6d39-6c84-9e28",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Concussive, Crushing (4+)", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -35079,322 +35090,6 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
               },
               {"name": "2 Flamers, 2 Assault Drills, & Assault Launchers", "id": "670b-af82-5eb6-c84a", "hidden": false, "import": true, "type": "upgrade"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Castraferrum Dreadnought",
-        "id": "9fea-9580-3966-9896",
-        "hidden": false,
-        "import": true,
-        "page": "65",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Space Marines", "id": "3af8-a892-c387-82c3", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Imperium", "id": "f13b-2e39-3775-17e8", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Elite", "id": "85aa-e943-2e22-1ebc", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
-          {"name": "[Chapter]", "id": "ddcc-8f76-e57e-e414", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "Dreadnought", "id": "f91b-bde2-1258-e163", "hidden": false, "primary": false, "targetId": "66b5-9c89-b1b9-fdff"},
-          {"name": "M31", "id": "0a54-41e8-20d3-9b86", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Walker", "id": "4790-b505-0e01-fe91", "hidden": false, "primary": false, "targetId": "38cd-8c36-35cb-d825"},
-          {"name": "Battle Line", "id": "fa1e-8566-f23e-a176", "hidden": false, "primary": false, "targetId": "52a4-b849-6620-8858"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 105}],
-        "infoLinks": [
-          {"name": "Slow and purposeful", "id": "2cef-fce4-f062-b9e2", "hidden": false, "targetId": "5424-9bb7-d620-92b1", "type": "rule"},
-          {"name": "Relentless", "id": "59ad-1b18-5bcb-c9db", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "And they shall know no Fear", "id": "d1f1-dc2e-e5ec-493e", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "8504-ed2f-1e35-b22c", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "10fd-def4-da3c-9c48", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "f7ea-4caf-2ed7-469a",
-                    "childName": "Vanguard Support",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Castraferrum Dreadnought",
-            "id": "9eff-f9ea-e927-1843",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "3ce9-6900-b349-615f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "3ce9-6900-b349-615f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {"name": "2 Hunter-Killer Missiles", "id": "661a-1ce1-aad1-6325", "hidden": false, "targetId": "eb44-a9b5-7e6b-dd5d", "type": "selectionEntry"},
-              {"name": "Dreadnought Plate", "id": "c9f8-cc8b-3402-462b", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"},
-              {
-                "name": "Assault launchers",
-                "id": "706c-d01e-6bb9-b353",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "9820-dc59-1694-96c5",
-                "type": "selectionEntry",
-                "constraints": [{"id": "5dd4-3e4b-69a0-ef43", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Castraferrum Dreadnought",
-                "id": "d3ce-5b87-15af-a6e3",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "8", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "7", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Venerable",
-                "id": "deee-23e3-ffdc-367a",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [{"id": "235b-72c9-c091-8b44", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                "infoLinks": [{"name": "Feel no Pain", "id": "5f7e-2e86-8f54-598d", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"}],
-                "modifiers": [
-                  {"affects": "profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "scope": "model", "type": "increment", "value": 1},
-                  {"affects": "profiles.Unit", "field": "f7cb-9e55-a62c-25ed", "scope": "model", "type": "increment", "value": 1}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "2 Dreadnought Close Combat weapons & Storm Bolter",
-                "id": "5869-6411-bacf-aa26",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "0e6b-9a46-24f7-a23b-min",
-                    "automatic": false,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 2
-                  },
-                  {
-                    "id": "0e6b-9a46-24f7-a23b-max",
-                    "automatic": false,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 2
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Plasma Cannon",
-                    "id": "ad04-2ac3-1c78-72bc",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "a976-9c82-b60a-5fc0",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Assault Cannon",
-                    "id": "c147-c50c-2c42-fb89",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "9788-7711-3998-b9c4",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  },
-                  {
-                    "name": "Linked Autocannon",
-                    "id": "ef53-c0f6-62a3-d5b3",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "5739-d53f-fe33-f250",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  },
-                  {"name": "Linked Heavy Bolter", "id": "358f-04a5-75ed-193b", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"},
-                  {
-                    "name": "Hurricane Bolter",
-                    "id": "597c-5d65-abb8-85bb",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "8df1-2b7a-b2fa-fa8f",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Multi-Melta",
-                    "id": "87ea-f8d1-2c5d-0321",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "90c9-36e3-ba67-2cfc",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Missile Launcher",
-                    "id": "5a0e-e614-e2fe-c843",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "6bc7-dc8c-099c-61ce",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Linked Las Cannon",
-                    "id": "4450-4fd0-e6e2-096d",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "446b-047d-0872-5352",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Cyclone Missile Launcher",
-                    "id": "195b-6bde-d078-132d",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "c990-6a7a-e2d2-63af",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  },
-                  {"name": "Heavy Flamer", "id": "f070-9a1c-71e1-c807", "hidden": false, "import": true, "targetId": "4b58-2b09-3805-2dab", "type": "selectionEntry"},
-                  {
-                    "name": "Seismic Hammer",
-                    "id": "60fb-1612-fd22-a819",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "4167-b3b6-779e-7442",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Chainfist & Flamer",
-                    "id": "4241-5508-b835-119d",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "infoLinks": [
-                      {"name": "Chainfist", "id": "8121-7451-5f5b-1519", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"},
-                      {"name": "Flamer", "id": "a9bf-e570-6f17-dc37", "hidden": false, "targetId": "2a68-a7ea-6fa7-c9cf", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Dreadnought Close Combat weapon & Storm Bolter",
-                    "id": "4ba0-42b2-8c49-96d8",
-                    "defaultAmount": "2",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "73d7-ad49-7aca-ae33", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Storm Bolter", "id": "7f4a-0cb3-e827-27a9", "hidden": false, "targetId": "2d40-d20d-b301-8589", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Dreadnought Close Combat weapon & Flamer",
-                    "id": "3662-54fb-37c4-cfe4",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "4824-8e3c-bfe6-c844", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Flamer", "id": "32ab-c97b-c44d-03bd", "hidden": false, "targetId": "2a68-a7ea-6fa7-c9cf", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Dreadnought Close Combat weapon & Meltagun",
-                    "id": "bc41-69c9-75b9-f444",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "9841-9ed1-94e8-3ccf", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Meltagun", "id": "96a9-3e47-a226-0fea", "hidden": false, "targetId": "0890-7e89-f08b-968b", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Chainfist & Meltagun",
-                    "id": "b997-c30c-9f4c-cc29",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "infoLinks": [
-                      {"name": "Chainfist", "id": "42d6-cf17-dd70-69b5", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"},
-                      {"name": "Meltagun", "id": "63a5-4cf7-a6bb-7c79", "hidden": false, "targetId": "0890-7e89-f08b-968b", "type": "profile"}
-                    ]
-                  }
-                ]
-              }
             ]
           }
         ]

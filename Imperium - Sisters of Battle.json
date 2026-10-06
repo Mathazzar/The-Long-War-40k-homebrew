@@ -161,7 +161,6 @@
           }
         ]
       },
-      {"name": "Cult Delegation", "id": "a049-d976-50dd-c84d", "hidden": false},
       {"name": "Preacher", "id": "e6e2-ec04-446f-8b06", "hidden": false},
       {
         "name": "Astred Thurga & Agathe Dolan",
@@ -877,6 +876,35 @@
                     "value": 1
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cult Delegation",
+        "id": "eb16-65d0-3c02-80e2",
+        "hidden": false,
+        "page": "43",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "targetId": "dbe3-73a8-a348-d1e3",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Decree Passive", "id": "c463-67ee-b7f0-1b46", "hidden": false, "targetId": "06a3-fa3f-81e2-08f8", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "23f4-8329-a913-b207",
+                "childName": "Redeemer Cohort",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
               }
             ]
           }
@@ -5200,207 +5228,6 @@
         ]
       },
       {
-        "name": "Cult Delegation",
-        "id": "dbe3-73a8-a348-d1e3",
-        "hidden": false,
-        "import": true,
-        "page": "43",
-        "publicationId": "6f16-791a-3a26-4c72",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Imperium", "id": "cc8d-2d8f-6bdd-1c28", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Elite", "id": "1684-b184-c419-c92b", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
-          {"name": "Infantry", "id": "19a1-030a-582d-71aa", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Cult Delegation", "id": "e99d-de11-62e0-48af", "hidden": false, "primary": false, "targetId": "a049-d976-50dd-c84d"},
-          {"name": "M36", "id": "c096-f253-9601-d330", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
-          {"name": "Cult Ministorum", "id": "0d04-0fda-8e45-32b5", "hidden": false, "primary": false, "targetId": "4e69-2b1d-e273-cb0b"},
-          {"name": "Faction: Sisters of Battle", "id": "7f2c-0ffe-eb49-31ff", "hidden": false, "primary": false, "targetId": "0832-420b-92b7-e210"}
-        ],
-        "infoLinks": [
-          {"name": "Zealot", "id": "3d19-bd17-766e-b7b0", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"},
-          {"name": "Decree Passive", "id": "c463-67ee-b7f0-1b46", "hidden": false, "targetId": "06a3-fa3f-81e2-08f8", "type": "rule"},
-          {"name": "Shield of Faith", "id": "c5ef-e3e6-6d95-371c", "hidden": false, "targetId": "2d05-bd56-3e0a-87b7", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "23f4-8329-a913-b207",
-                "childName": "Redeemer Cohort",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Flagellant Protocols",
-            "id": "01c9-1bba-12c4-b83e",
-            "description": "Arco Flagellant models in this unit gain the benefit of the Frenzy, Rage and Feel no Pain (5+) special rules. However, Arco Flagellant models in this unit never benefit from the effects of Prayers.",
-            "hidden": false
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Delegation",
-            "id": "f2da-bc5b-b1b4-abdb",
-            "flatten": true,
-            "hidden": false,
-            "constraints": [{"id": "5585-3662-cc01-ecc4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 5}],
-            "selectionEntries": [
-              {
-                "name": "Crusaders",
-                "id": "ff85-4cd9-4308-2559",
-                "hidden": false,
-                "import": true,
-                "type": "model",
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                "entryLinks": [{"name": "Carapace Armour", "id": "12d5-1e74-049b-f55c", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"}],
-                "profiles": [
-                  {
-                    "name": "Crusaders",
-                    "id": "a3ab-1c42-797c-d7c2",
-                    "hidden": false,
-                    "typeId": "8460-92c9-82af-a787",
-                    "typeName": "Unit",
-                    "characteristics": [
-                      {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
-                      {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
-                      {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
-                      {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
-                      {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
-                      {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
-                      {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
-                      {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
-                      {"name": "LD", "$text": "7", "typeId": "bc55-c58d-b53a-233c"},
-                      {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Storm Shield",
-                    "id": "ae84-546f-00c6-b6da",
-                    "defaultAmount": "1",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "constraints": [
-                      {"id": "2026-74b2-4a42-8655-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                      {"id": "2026-74b2-4a42-8655-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ],
-                    "infoLinks": [{"name": "Battle Hardened", "id": "86cf-54b2-eb16-0ddc", "hidden": false, "targetId": "7b47-5df7-aa9c-4f63", "type": "rule"}],
-                    "rules": [
-                      {
-                        "name": "Storm Shield",
-                        "id": "782e-c474-de9d-95be",
-                        "description": "A model equipped with this wargear has a 4+ Invulnerable Save. A model equipped with this wargear gains the Battle-Hardened special rule",
-                        "hidden": false
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Arco Flagellants",
-                "id": "9266-869f-5935-7e87",
-                "hidden": false,
-                "import": true,
-                "type": "model",
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 11}],
-                "entryLinks": [
-                  {
-                    "name": "Arco Flails",
-                    "id": "c3af-d2f2-385e-57af",
-                    "defaultAmount": "2",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "2a87-6593-c18f-0393",
-                    "type": "selectionEntry",
-                    "constraints": [
-                      {"id": "98e0-6121-b8e7-ddc7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                      {"id": "98e0-6121-b8e7-ddc7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {"name": "Feel no Pain", "id": "b81e-0c6d-3723-64a5", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
-                  {"name": "Frenzy", "id": "b98d-4169-76bd-fb88", "hidden": false, "targetId": "391f-3c82-4940-3627", "type": "rule"},
-                  {"name": "Rage", "id": "3d37-e60e-ac05-5348", "hidden": false, "targetId": "6796-7bce-f463-d591", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Arco Flagellants",
-                    "id": "e202-b6b8-b138-5efa",
-                    "hidden": false,
-                    "typeId": "8460-92c9-82af-a787",
-                    "typeName": "Unit",
-                    "characteristics": [
-                      {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
-                      {"name": "WS", "$text": "3", "typeId": "bc69-d61f-afa3-0ebd"},
-                      {"name": "BS", "$text": "", "typeId": "f7cb-9e55-a62c-25ed"},
-                      {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
-                      {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
-                      {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
-                      {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
-                      {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
-                      {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
-                      {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Death Cult Assassins",
-                "id": "cf92-962f-bfb7-83a7",
-                "hidden": false,
-                "import": true,
-                "type": "model",
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 16}],
-                "entryLinks": [
-                  {
-                    "name": "Death Cult Swords",
-                    "id": "3460-992f-d8c8-1912",
-                    "defaultAmount": "2",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "919a-b98a-900f-5173",
-                    "type": "selectionEntry",
-                    "constraints": [
-                      {"id": "2133-9c6e-12b8-1e8f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                      {"id": "2133-9c6e-12b8-1e8f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Assassin Suit",
-                    "id": "2afc-cc62-f741-6f5d",
-                    "defaultAmount": "1",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "constraints": [
-                      {"id": "aa60-a7ad-7066-135e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                      {"id": "aa60-a7ad-7066-135e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ],
-                    "infoLinks": [{"name": "Assassin Suit", "id": "2de5-131f-4fbd-43b7", "hidden": false, "targetId": "617b-8949-345b-221f", "type": "rule"}]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Preacher",
         "id": "250d-2ec8-0be8-0c4b",
         "hidden": false,
@@ -7360,14 +7187,6 @@
         "description": "A unit that includes a model with this Wargear gains the Fear (1) special rule. In addition, enemy units gain -1 to Psychic Tests within 18” of the equipped unit.",
         "hidden": false,
         "page": "6",
-        "publicationId": "6f16-791a-3a26-4c72"
-      },
-      {
-        "name": "Assassin Suit",
-        "id": "617b-8949-345b-221f",
-        "description": "A skintight and flexible suit used by assassins that allows unparalleled movement. It confers a 6+ Armour save and a 5+ Invulnerable save.",
-        "hidden": false,
-        "page": "7",
         "publicationId": "6f16-791a-3a26-4c72"
       },
       {
