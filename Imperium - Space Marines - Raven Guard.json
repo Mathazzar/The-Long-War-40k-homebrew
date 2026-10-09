@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 4,
     "library": true,
-    "revision": 5,
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - Imperial Guard", "id": "70d5-ec7b-4e75-5145", "importRootEntries": false, "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"}],
     "categoryEntries": [
@@ -2612,7 +2612,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "8693-38fb-977b-f668",
+                                "childId": "4e5d-8e80-1671-f1f9",
                                 "childName": "Thunder Hammer",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2632,7 +2632,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "9c4c-3a81-5c03-8cd0",
+                                "childId": "a7ed-640e-8d57-4f6f",
                                 "childName": "Power Lance",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2675,7 +2675,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "8693-38fb-977b-f668",
+                                "childId": "4e5d-8e80-1671-f1f9",
                                 "childName": "Thunder Hammer",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2695,7 +2695,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "9c4c-3a81-5c03-8cd0",
+                                "childId": "a7ed-640e-8d57-4f6f",
                                 "childName": "Power Lance",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2738,7 +2738,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "8693-38fb-977b-f668",
+                                "childId": "4e5d-8e80-1671-f1f9",
                                 "childName": "Thunder Hammer",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2768,8 +2768,8 @@
                                 "value": 1
                               },
                               {
-                                "childId": "9c4c-3a81-5c03-8cd0",
-                                "childName": "Power Lance",
+                                "childId": "4e5d-8e80-1671-f1f9",
+                                "childName": "Thunder Hammer",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -2801,7 +2801,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "d280-d593-d8cb-7a26",
+                                "childId": "4095-0464-a8c4-96f1",
                                 "childName": "Grav Pistol",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2854,74 +2854,8 @@
                                 "value": 1
                               },
                               {
-                                "childId": "d280-d593-d8cb-7a26",
+                                "childId": "4095-0464-a8c4-96f1",
                                 "childName": "Grav Pistol",
-                                "field": "selections",
-                                "includeChildSelections": false,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {"name": "Lightning Claw", "id": "4d57-49cc-1061-a34c", "defaultAmount": "2", "hidden": false, "import": true, "type": "upgrade"},
-                  {
-                    "name": "Thunder Hammer",
-                    "id": "8693-38fb-977b-f668",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "constraints": [{"id": "4a13-f6ba-1ab1-f42a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "modifiers": [
-                      {
-                        "field": "4a13-f6ba-1ab1-f42a",
-                        "type": "decrement",
-                        "value": 1,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "6dff-d1d6-7194-b1d0",
-                                "childName": "Power Axe",
-                                "field": "selections",
-                                "includeChildSelections": false,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "e38e-0c5b-3e05-b098",
-                                "childName": "Power Fist",
-                                "field": "selections",
-                                "includeChildSelections": false,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "9c4c-3a81-5c03-8cd0",
-                                "childName": "Power Lance",
-                                "field": "selections",
-                                "includeChildSelections": false,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "84dd-49d6-4915-6b09",
-                                "childName": "Power Sword",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -2936,11 +2870,64 @@
                     ]
                   },
                   {
-                    "name": "Power Lance",
-                    "id": "9c4c-3a81-5c03-8cd0",
+                    "name": "Grav Pistol",
+                    "id": "9576-91c0-d0cf-823d",
                     "hidden": false,
                     "import": true,
-                    "type": "upgrade",
+                    "targetId": "4095-0464-a8c4-96f1",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "0d55-dd48-3482-0009", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "modifiers": [
+                      {
+                        "field": "0d55-dd48-3482-0009",
+                        "type": "decrement",
+                        "value": 1,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "3407-02d2-18aa-4a22",
+                                "childName": "Plasma Pistol",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "be5e-26aa-f44a-412c",
+                                "childName": "Hand Flamer",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Lightning Claws",
+                    "id": "a2a8-b92f-258c-4d64",
+                    "defaultAmount": "2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7387-4d1b-e3e4-b301",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Power Lance",
+                    "id": "c30e-762b-8ce9-3569",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a7ed-640e-8d57-4f6f",
+                    "type": "selectionEntry",
                     "constraints": [{"id": "97b5-1524-f45c-19d1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "modifiers": [
                       {
@@ -2952,7 +2939,7 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "8693-38fb-977b-f668",
+                                "childId": "4e5d-8e80-1671-f1f9",
                                 "childName": "Thunder Hammer",
                                 "field": "selections",
                                 "includeChildSelections": false,
@@ -2998,15 +2985,17 @@
                     ]
                   },
                   {
-                    "name": "Grav Pistol",
-                    "id": "d280-d593-d8cb-7a26",
+                    "name": "Thunder Hammer",
+                    "id": "139c-2afe-44f0-c53a",
                     "hidden": false,
                     "import": true,
-                    "type": "upgrade",
-                    "constraints": [{"id": "0d55-dd48-3482-0009", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "targetId": "4e5d-8e80-1671-f1f9",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "4a13-f6ba-1ab1-f42a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
                     "modifiers": [
                       {
-                        "field": "0d55-dd48-3482-0009",
+                        "field": "4a13-f6ba-1ab1-f42a",
                         "type": "decrement",
                         "value": 1,
                         "conditionGroups": [
@@ -3014,8 +3003,8 @@
                             "type": "or",
                             "conditions": [
                               {
-                                "childId": "3407-02d2-18aa-4a22",
-                                "childName": "Plasma Pistol",
+                                "childId": "6dff-d1d6-7194-b1d0",
+                                "childName": "Power Axe",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -3024,8 +3013,28 @@
                                 "value": 1
                               },
                               {
-                                "childId": "be5e-26aa-f44a-412c",
-                                "childName": "Hand Flamer",
+                                "childId": "e38e-0c5b-3e05-b098",
+                                "childName": "Power Fist",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "a7ed-640e-8d57-4f6f",
+                                "childName": "Power Lance",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "84dd-49d6-4915-6b09",
+                                "childName": "Power Sword",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -3416,7 +3425,7 @@
                   },
                   {"name": "Plasma Gun", "id": "184f-a506-b281-0462", "hidden": false, "import": true, "targetId": "db58-d2e2-0963-74bd", "type": "selectionEntry"},
                   {"name": "Meltagun", "id": "092b-8560-c0e5-4ec9", "hidden": false, "import": true, "targetId": "6186-a63d-2245-c4bb", "type": "selectionEntry"},
-                  {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "c182-edc4-2773-442f", "type": "selectionEntry"},
+                  {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "958b-0867-67db-e40a", "type": "selectionEntry"},
                   {"name": "Astartes Shotgun", "id": "164c-0a72-defc-f68a", "hidden": false, "import": true, "targetId": "f426-979e-1b34-e351", "type": "selectionEntry"}
                 ],
                 "selectionEntries": [

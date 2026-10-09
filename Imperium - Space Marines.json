@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 9,
+    "revision": 10,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -21,80 +21,8 @@
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
-      {
-        "name": "Captain",
-        "id": "875f-9975-8052-0495",
-        "hidden": false,
-        "constraints": [{"id": "1cd0-5f8f-52b5-f2bd", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0}],
-        "modifiers": [
-          {
-            "field": "1cd0-5f8f-52b5-f2bd",
-            "type": "set",
-            "value": 1,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "field": "1cd0-5f8f-52b5-f2bd",
-            "type": "decrement",
-            "value": 1,
-            "conditions": [
-              {
-                "childId": "5917-3f8b-45a0-9158",
-                "childName": "The Decapitation Strike",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {
-                "childId": "5917-3f8b-45a0-9158",
-                "childName": "The Decapitation Strike",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ]
-      },
-      {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false},
       {"name": "Lieutenant", "id": "7f3b-8dcd-3e9e-0d9c", "hidden": false},
       {"name": "Command Squad", "id": "3dcd-0520-4715-224e", "hidden": false},
-      {"name": "Vetrans", "id": "6ce5-b373-d16a-52f6", "hidden": false},
       {"name": "Damocles Command Rhino", "id": "3614-8382-22d8-a32e", "hidden": false},
       {"name": "[Crimson Fists]", "id": "c673-28a5-5572-1f3d", "hidden": false},
       {
@@ -110,7 +38,6 @@
         "constraints": [{"id": "887f-a7af-62c5-efae", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
       },
       {"name": "[Red Scorpions]", "id": "94c6-d794-5572-523f", "hidden": false},
-      {"name": "Dreadnought", "id": "66b5-9c89-b1b9-fdff", "hidden": false},
       {
         "name": "Sevrin Loth",
         "id": "a62d-6d6f-0cbd-9f7c",
@@ -572,15 +499,12 @@
       {"name": "Contemptor", "id": "9891-f932-73e3-f871", "hidden": false},
       {"name": "Redemptor", "id": "0f5c-2f4a-f828-f35c", "hidden": false},
       {"name": "Invictor Tactical Warsuit", "id": "4e12-4f3c-8352-aa1c", "hidden": false},
-      {"name": "Rhino", "id": "b616-9080-293e-0d6e", "hidden": false},
-      {"name": "Razorback", "id": "6c54-25e1-143c-9354", "hidden": false},
       {"name": "Land Speeder", "id": "67d9-aa34-4f79-0ba9", "hidden": false},
       {"name": "Land Speeder Storm", "id": "d25d-2ecd-1e14-b096", "hidden": false},
       {"name": "Drop Pod", "id": "2834-77bd-3c75-3d48", "hidden": false},
       {"name": "Impulsor", "id": "6566-a813-d3e0-ff7a", "hidden": false},
       {"name": "Stormhawk Interceptor", "id": "a13d-7258-d495-fb91", "hidden": false},
       {"name": "Stormtalon Gunship", "id": "fe0e-b6cf-c937-6c3c", "hidden": false},
-      {"name": "Stormraven Gunship", "id": "c276-3fa6-f364-135c", "hidden": false},
       {"name": "Storm Eagle Gunship", "id": "47c8-6520-d129-daed", "hidden": false},
       {"name": "Bike Squad", "id": "f7a6-38ad-b9fe-3b78", "hidden": false},
       {
@@ -1038,9 +962,6 @@
       {"name": "Hunter Tank", "id": "c2ca-05a1-b9bd-6ce3", "hidden": false},
       {"name": "Stalker Tank", "id": "5d9d-deb7-6abe-4f43", "hidden": false},
       {"name": "Gladiator Tank", "id": "368d-e246-c498-b627", "hidden": false},
-      {"name": "Land Raider", "id": "0eda-c168-0322-c649", "hidden": false},
-      {"name": "Land Raider Redeemer", "id": "cb98-681a-2899-71c4", "hidden": false},
-      {"name": "Land Raider Crusader", "id": "7790-4f61-9ccc-1699", "hidden": false},
       {"name": "Repulsor HIFV", "id": "3aab-fafd-7242-2b33", "hidden": false},
       {"name": "Repulsor Executioner", "id": "f171-b6e8-e6ec-845b", "hidden": false},
       {"name": "Deredeo", "id": "06cf-3110-67d4-a2be", "hidden": false},
@@ -1132,6 +1053,76 @@
                 "scope": "roster",
                 "shared": true,
                 "value": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cap",
+        "id": "8b8a-054f-901b-6e13",
+        "hidden": true,
+        "constraints": [{"id": "1cd0-5f8f-52b5-f2bd", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0}],
+        "modifiers": [
+          {
+            "field": "1cd0-5f8f-52b5-f2bd",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5917-3f8b-45a0-9158",
+                    "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "489e-a992-dc1d-e244",
+                    "childName": "Red Scorpions",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "1cd0-5f8f-52b5-f2bd",
+            "type": "decrement",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "5917-3f8b-45a0-9158",
+                "childName": "The Decapitation Strike",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {
+                "childId": "5917-3f8b-45a0-9158",
+                "childName": "The Decapitation Strike",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
               }
             ]
           }
@@ -1364,9 +1355,62 @@
         "name": "Castraferrum Dreadnought",
         "id": "b651-f816-e7e3-1cb7",
         "hidden": false,
+        "page": "65",
+        "publicationId": "1606-03fb-e01d-e0cf",
         "targetId": "9fea-9580-3966-9896",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "618b-f561-d012-f9d1", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}]
+        "categoryLinks": [
+          {"name": "[Chapter]", "id": "0765-7e51-f726-a756", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
+          {"name": "Battle Line", "id": "e898-11ac-5070-cd2d", "hidden": false, "primary": false, "targetId": "52a4-b849-6620-8858"}
+        ],
+        "infoLinks": [{"name": "Allegiance", "id": "618b-f561-d012-f9d1", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f7ea-4caf-2ed7-469a",
+                    "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5917-3f8b-45a0-9158",
+                    "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Thunderhawk Gunship",
@@ -1528,7 +1572,33 @@
         "hidden": false,
         "targetId": "7528-7e3e-806b-d225",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "7671-02bd-6fe2-90ea", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}]
+        "categoryLinks": [{"name": "[Chapter]", "id": "bc1b-c6e5-f34d-140b", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}],
+        "infoLinks": [{"name": "Allegiance", "id": "7671-02bd-6fe2-90ea", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Stormhawk Interceptor",
@@ -1717,7 +1787,78 @@
         "hidden": false,
         "targetId": "6ab7-8c03-cc6f-fbb2",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "351a-06d2-4be4-9954", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}]
+        "categoryLinks": [
+          {"name": "[Chapter]", "id": "7eca-ed5d-44c9-361a", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
+          {"name": "Faction: Space Marines", "id": "8357-9c97-918b-cb8e", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"}
+        ],
+        "infoLinks": [
+          {"name": "Allegiance", "id": "351a-06d2-4be4-9954", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"},
+          {
+            "name": "Outflank",
+            "id": "8e4d-1315-598d-d61e",
+            "hidden": false,
+            "targetId": "afef-1361-8dda-9d33",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "c058-a899-f8ed-cd40",
+                    "childName": "Mechanised Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Fade & Fire", "id": "eee5-f283-2219-99a3", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "0b50-9069-cef9-1d16", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f7ea-4caf-2ed7-469a",
+                    "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Storm Speeder",
@@ -1765,7 +1906,63 @@
         "hidden": false,
         "targetId": "cbb7-09e0-cc51-c721",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "d0b4-1f5d-8bc9-11c2", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}],
+        "categoryLinks": [
+          {"name": "Faction: Space Marines", "id": "73fb-9307-1d58-9ad1", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "[Chapter]", "id": "7aad-a4dc-12ad-a084", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
+        "infoLinks": [
+          {"name": "Allegiance", "id": "d0b4-1f5d-8bc9-11c2", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"},
+          {"name": "Fade & Fire", "id": "a3d2-24e6-0b3e-c55c", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "d635-1a5c-2f27-2bd0", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f7ea-4caf-2ed7-469a",
+                    "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5917-3f8b-45a0-9158",
+                    "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
         "selectionEntries": [
           {
             "name": "Free Force Org",
@@ -1907,7 +2104,74 @@
         "hidden": false,
         "targetId": "9748-241f-829a-336b",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "1caf-7201-c286-cefc", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}]
+        "categoryLinks": [
+          {"name": "Faction: Space Marines", "id": "ba0d-1450-7f1e-728e", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Fire Support", "id": "bf93-3ef8-82e2-869d", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
+          {"name": "[Chapter]", "id": "afa3-3ad9-ad98-891e", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ],
+        "infoLinks": [
+          {"name": "Allegiance", "id": "1caf-7201-c286-cefc", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"},
+          {"name": "Firing Protocols (x)", "id": "d8c9-d17e-a628-fa7f", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
+          {"name": "Fade & Fire", "id": "250e-9963-b43f-bda6", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "860a-da71-4255-6379",
+                    "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f7ea-4caf-2ed7-469a",
+                    "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5917-3f8b-45a0-9158",
+                    "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Repulsor Executioner",
@@ -1931,7 +2195,63 @@
         "hidden": false,
         "targetId": "e76a-94a2-9a77-aa11",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "6166-18be-c60e-c597", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}]
+        "categoryLinks": [
+          {"name": "Faction: Space Marines", "id": "1f5a-fb0c-6592-4b44", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Fire Support", "id": "ceb3-c6e2-f266-342d", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
+          {"name": "[Chapter]", "id": "6d36-c065-1a48-2fd5", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ],
+        "infoLinks": [
+          {"name": "Allegiance", "id": "6166-18be-c60e-c597", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"},
+          {"name": "Fade & Fire", "id": "e844-48ba-d9a4-4534", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "c2d3-c919-3006-692f", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "860a-da71-4255-6379",
+                    "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f7ea-4caf-2ed7-469a",
+                    "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Land Raider Redeemer",
@@ -1939,7 +2259,74 @@
         "hidden": false,
         "targetId": "e6d6-f337-37d5-7ea6",
         "type": "selectionEntry",
-        "infoLinks": [{"name": "Allegiance", "id": "5c82-e54f-ccd4-1905", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"}]
+        "categoryLinks": [
+          {"name": "Faction: Space Marines", "id": "88be-eeb7-f16e-1c73", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Fire Support", "id": "fe88-a953-1501-ab14", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
+          {"name": "[Chapter]", "id": "d8ec-1ad0-e54e-be96", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ],
+        "infoLinks": [
+          {"name": "Allegiance", "id": "5c82-e54f-ccd4-1905", "hidden": false, "targetId": "13db-00d4-7309-1f0e", "type": "infoGroup"},
+          {"name": "Fade & Fire", "id": "ea1c-c844-ae34-29f4", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "ece1-f290-4547-a8f8", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5bc5-fa86-1838-ee2e",
+                    "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "860a-da71-4255-6379",
+                    "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f7ea-4caf-2ed7-469a",
+                    "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5917-3f8b-45a0-9158",
+                    "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Predator MBT",
@@ -2141,177 +2528,9 @@
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Vetrans", "id": "f25e-94b3-7eeb-938e", "hidden": false, "primary": false, "targetId": "6ce5-b373-d16a-52f6"}],
         "constraints": [{"id": "2897-e066-a084-6413", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0}],
-        "entryLinks": [
-          {
-            "name": "Lightning Claws",
-            "id": "7b10-54ea-32f6-b3b3",
-            "hidden": false,
-            "import": true,
-            "targetId": "7387-4d1b-e3e4-b301",
-            "type": "selectionEntry",
-            "constraints": [
-              {
-                "id": "4b1d-df7f-ee86-04e5-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "4b1d-df7f-ee86-04e5-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifiers": [
-              {
-                "field": "4b1d-df7f-ee86-04e5-min",
-                "type": "increment",
-                "value": 1,
-                "repeats": [
-                  {
-                    "childId": "4d57-49cc-1061-a34c",
-                    "childName": "Lightning Claw",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "repeats": 1,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  },
-                  {
-                    "childId": "3131-a027-9617-5ad1",
-                    "childName": "Dark Fury",
-                    "field": "selections",
-                    "repeats": 2,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "field": "4b1d-df7f-ee86-04e5-max",
-                "type": "increment",
-                "value": 1,
-                "repeats": [
-                  {
-                    "childId": "4d57-49cc-1061-a34c",
-                    "childName": "Lightning Claw",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "repeats": 1,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  },
-                  {
-                    "childId": "3131-a027-9617-5ad1",
-                    "childName": "Dark Fury",
-                    "field": "selections",
-                    "repeats": 2,
-                    "roundUp": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "1bf4-060e-26bd-4335", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Combat Squads", "id": "23a1-d883-0fdb-16c2", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"},
-          {
-            "name": "Power Lance",
-            "id": "56fb-3db6-40ae-8a36",
-            "hidden": false,
-            "targetId": "ee2f-604a-3e7d-a55e",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "9c4c-3a81-5c03-8cd0",
-                    "childName": "Power Lance",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Thunder Hammer",
-            "id": "b227-1417-5b49-7e05",
-            "hidden": false,
-            "targetId": "50ff-fc23-bc8a-fe34",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "8693-38fb-977b-f668",
-                    "childName": "Thunder Hammer",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Grav Pistol",
-            "id": "ec98-55df-0a17-9211",
-            "hidden": false,
-            "targetId": "07a5-2d88-7f0b-fdde",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "d280-d593-d8cb-7a26",
-                    "childName": "Grav Pistol",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
+          {"name": "Combat Squads", "id": "23a1-d883-0fdb-16c2", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}
         ],
         "modifiers": [
           {
@@ -3059,6 +3278,7 @@
             ]
           }
         ],
+        "modifiers": [{"affects": "entries.recursive.875f-9975-8052-0495", "field": "category", "scope": "roster", "type": "add", "value": "8b8a-054f-901b-6e13"}],
         "selectionEntryGroups": [
           {
             "name": "Chapter Allegiance",
@@ -3741,7 +3961,7 @@
             "id": "14d2-76cb-7d4c-490b",
             "hidden": false,
             "import": true,
-            "targetId": "da73-92e8-6d36-176a",
+            "targetId": "af31-89ae-7eb1-df93",
             "type": "selectionEntry",
             "constraints": [
               {"id": "6cad-ae0c-4b10-9cd4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -5865,34 +6085,6 @@
         ]
       },
       {
-        "name": "Dreadnought Close Combat weapon",
-        "id": "7b26-de61-6ee7-ee18",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Crushing (6+), Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
-        "name": "Chainfist",
-        "id": "5717-521b-140b-421f",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Unwieldy, Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
         "name": "Sergeant",
         "id": "f345-9232-1970-d879",
         "hidden": false,
@@ -5988,35 +6180,6 @@
         ]
       },
       {
-        "name": "Thunder Hammer",
-        "id": "50ff-fc23-bc8a-fe34",
-        "hidden": false,
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Unwieldy, Crushing (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
-        "name": "Neo Volkite Pistol",
-        "id": "badb-ecc4-580a-7832",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
         "name": "Volkite Calivers",
         "id": "e864-f861-a0ce-862e",
         "hidden": false,
@@ -6080,26 +6243,7 @@
         "id": "efa0-976f-ffa4-74cb",
         "description": "During Deployment, any Space marine unit of 10 models or 6 models with this rule with this special rule can split its squad in half, becoming two separate units. The unit must be split in half rounding up and are treated as separate units from that point on.",
         "hidden": false
-      },
-      {
-        "name": "Reliable Machine Spirit",
-        "id": "bdf3-62d2-3342-08fe",
-        "description": "When a unit with this special rule would be destroyed. Embarked units are not required to roll for models inside being slain (see Rule 10.2 in the core rules).",
-        "hidden": false
-      },
-      {
-        "name": "Machine Spirit",
-        "id": "90e4-fe1e-9971-6663",
-        "description": "This unit may always set to Overwatch, even if it made a shooting attack in the Shooting phase.",
-        "hidden": false
-      },
-      {
-        "name": "Void Shields (x)",
-        "id": "bb6f-27b9-f7ca-253f",
-        "description": "A unit with this wargear gains a number of Void Shield Tokens equal to the value of (x). Each time this unit takes a Penetrating Hit, if it has a Void Shield Token, you spend a token to ignore that Penetrating Hit. At the start of each Battle Round, you regain 1 spent Void Shield Token. Instead of setting to Overwatch, you can set to Recharge Voids. A unit that Recharges Voids, regains all of its Void Shield Tokens.",
-        "hidden": false
-      },
-      {"name": "Angels of Death", "id": "edfb-d641-ce62-8542", "comment": "todo: No profile provided in reference", "hidden": false}
+      }
     ],
     "sharedSelectionEntries": [
       {
@@ -6237,24 +6381,6 @@
         ]
       },
       {
-        "name": "Relic Shield",
-        "id": "8734-9485-18c5-1b11",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Relic Shield",
-            "id": "a910-16af-90f0-2b8a",
-            "description": "A Model with a Relic Shield has a 4+ Invulnerable save and gains the Adamantium Will and Indomitable Will (3+) special rule.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Camo Cloaks",
         "id": "e71a-93a2-ab63-9e13",
         "hidden": false,
@@ -6358,61 +6484,6 @@
         ]
       },
       {
-        "name": "Cataphractii Terminator Armour",
-        "id": "214e-0f39-2ccd-751e",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "add", "value": "b2b5-3d4c-75aa-f071"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "in Terminator Armour"},
-              {"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Cataphractii Terminator Armour",
-            "id": "dd4d-a4b5-dffc-b1f4",
-            "description": "An ancient heavier pattern of Terminator Armour rarely used. It provides a 2+ Armour save and a 4+ Invulnerable save. The Wearer gains the Relentless, Bulky (2) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 1”. It grants the Terminator Keyword.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Tartaros Terminator Armour",
-        "id": "7990-b949-e314-74dc",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "add", "value": "b2b5-3d4c-75aa-f071"},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "in Terminator Armour"},
-              {"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Tartaros Terminator Armour",
-            "id": "e90d-c0c3-fd59-6eac",
-            "description": "A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Centurion Armour",
         "id": "2b89-4fcf-b732-6351",
         "defaultAmount": "1",
@@ -6431,94 +6502,6 @@
             "id": "6b8b-a5f2-18d2-457c",
             "description": "Centurion Armour is a massive, powered suit of Armour worn over normal power Armour. It provides a 2+ Armour save. In addition, it grants the wearer +1 to their Wound (W), Strength (S) and Toughness (T) characteristics, as well as the Relentless, Bulky (3) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 2”A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
             "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Bike",
-        "id": "cd1c-37c9-b49b-eb52",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
-              {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Bike", "type": "append", "value": "on Bike"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"},
-              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
-              {"field": "category", "scope": "unit", "type": "add", "value": "fa9d-896e-a495-babb"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Bike",
-            "id": "0bcc-982f-9273-fc54",
-            "description": "A unit that is equipped with a Bike becomes a Bike type unit. In addition, it gains +1 Toughness (T) Characteristics. A Space marine Bike is equipped with a Linked Boltgun.",
-            "hidden": false
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Linked Boltgun",
-            "id": "90af-8efb-7356-4b16",
-            "collapsible": true,
-            "defaultSelectionEntryId": "8832-b581-3744-8919",
-            "hidden": false,
-            "constraints": [
-              {
-                "id": "e7df-0618-1c7d-818a-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "e7df-0618-1c7d-818a-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "entryLinks": [
-              {
-                "name": "Linked Boltgun",
-                "id": "8832-b581-3744-8919",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c5c1-9a34-c9c5-0410",
-                "type": "selectionEntry"
-              },
-              {
-                "name": "Astartes Grenade Launcher",
-                "id": "8e11-77c9-2eaf-9a45",
-                "hidden": true,
-                "import": true,
-                "targetId": "5d14-540c-0685-74c3",
-                "type": "selectionEntry",
-                "constraints": [{"id": "8aa7-1ed8-5841-e98c", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
-                "modifiers": [
-                  {
-                    "field": "8aa7-1ed8-5841-e98c",
-                    "type": "increment",
-                    "value": 1,
-                    "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 3}]
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -7204,75 +7187,6 @@
         ]
       },
       {
-        "name": "Whirlwind Missile Launcher",
-        "id": "798b-9458-3d48-9507",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "15",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Whirlwind Missile Launcher",
-            "id": "b211-653c-47b4-7ae6",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large), Barrage (3),Pinning, Indirect Fire", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Typhoon Missile Launcher",
-        "id": "1dd2-3fe5-299c-4e29",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "15",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Typhoon Missile Launcher (Frag)",
-            "id": "8f1c-7d84-4f69-0929",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Barrage (3). Variable", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Typhoon Missile Launcher",
-            "id": "f404-c2cb-cad0-4382",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Skyhammer Missile Launcher",
         "id": "a998-7c02-c223-dc33",
         "collective": true,
@@ -7462,17 +7376,6 @@
         ]
       },
       {
-        "name": "Neo Volkite Pistol",
-        "id": "f48c-fb97-f28e-27d3",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Neo Volkite Pistol", "id": "7d6b-cd6e-1753-c71d", "hidden": false, "targetId": "badb-ecc4-580a-7832", "type": "profile"}]
-      },
-      {
         "name": "Volkite Calivers",
         "id": "af1a-8de9-4e81-d699",
         "collective": true,
@@ -7482,33 +7385,6 @@
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
         "infoLinks": [{"name": "Volkite Calivers", "id": "3199-822b-7e82-06a7", "hidden": false, "targetId": "e864-f861-a0ce-862e", "type": "profile"}]
-      },
-      {
-        "name": "Volkite Charger",
-        "id": "1879-2a4e-1150-0b85",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Volkite Charger",
-            "id": "8acf-f3c6-2984-8dea",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "25", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
       },
       {
         "name": "Volkite Culverin",
@@ -7565,33 +7441,6 @@
         ]
       },
       {
-        "name": "Linked Plasma Cannon",
-        "id": "3ffd-6bf5-4cb7-4787",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Plasma Cannon",
-            "id": "21e9-8121-8c86-b579",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Gets Hot!, Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Plasma Blaster",
         "id": "ea1b-7b48-daef-8265",
         "collective": true,
@@ -7614,32 +7463,6 @@
               {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lightning Claws",
-        "id": "7387-4d1b-e3e4-b301",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Lightning Claws",
-            "id": "c3da-674f-e831-b479",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -7699,43 +7522,6 @@
         ]
       },
       {
-        "name": "Relic Blade",
-        "id": "a113-ba7f-4fb8-2b3c",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Relic Blade",
-            "id": "cf36-309f-122e-2332",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Two-Handed, Murderous Strike (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Thunder Hammer",
-        "id": "4e5d-8e80-1671-f1f9",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "18",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Thunder Hammer", "id": "30da-b932-3b3d-5517", "hidden": false, "targetId": "50ff-fc23-bc8a-fe34", "type": "profile"}]
-      },
-      {
         "name": "Chainsword",
         "id": "2b71-b37e-49b9-5ca8",
         "collective": true,
@@ -7762,43 +7548,6 @@
         ]
       },
       {
-        "name": "Omnissian Axe",
-        "id": "1045-91ce-a571-3484",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Omnissian Axe",
-            "id": "e1f1-2391-8c83-101e",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Dreadnought Close Combat weapon",
-        "id": "d8c2-346b-04dd-3d87",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Dreadnought Close Combat weapon", "id": "7460-3603-f813-37cd", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"}]
-      },
-      {
         "name": "Close Combat weapon",
         "id": "eb87-daa9-089f-a519",
         "collective": true,
@@ -7823,17 +7572,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Chainfist",
-        "id": "d8ec-e3b8-112b-1e9d",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Chainfist", "id": "4416-741f-2aef-00c6", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"}]
       },
       {
         "name": "Grenade Launcher",
@@ -7950,58 +7688,6 @@
               {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Conversion", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Seismic Hammer",
-        "id": "4167-b3b6-779e-7442",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Seismic Hammer",
-            "id": "2a2b-6d39-6c84-9e28",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Concussive, Crushing (4+)", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Servo Arm",
-        "id": "f298-43ba-623e-e090",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Servo Arm",
-            "id": "d014-d13d-538c-edd0",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Cumbersome", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -15430,261 +15116,6 @@
         ]
       },
       {
-        "name": "Stormraven Gunship",
-        "id": "7528-7e3e-806b-d225",
-        "hidden": false,
-        "import": true,
-        "page": "76",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Flyer", "id": "64bb-40ba-b96f-9f00", "hidden": false, "primary": true, "targetId": "2285-8753-500e-a8f0"},
-          {"name": "Imperium", "id": "474d-9b34-5974-7c46", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Faction: Space Marines", "id": "1ba0-00d6-4c92-da19", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Transport", "id": "9d86-1df4-23f2-3236", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"},
-          {"name": "[Chapter]", "id": "8020-51a9-23bd-fb90", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "Stormraven Gunship", "id": "cab2-01d2-5eb7-bbf0", "hidden": false, "primary": false, "targetId": "c276-3fa6-f364-135c"},
-          {"name": "M36", "id": "c475-b223-a025-d6a5", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
-          {"name": "Aircraft", "id": "0351-ed43-ce1c-504c", "hidden": false, "primary": false, "targetId": "6af1-500e-865d-e08f"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 155}],
-        "infoLinks": [
-          {"name": "And they shall know no Fear", "id": "d5d7-923d-c3ba-1b68", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Machine Spirit", "id": "2ed6-27ff-75d8-863e", "hidden": false, "targetId": "90e4-fe1e-9971-6663", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "64cf-fbbd-6860-c618", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "Fleet", "id": "1c04-1dd9-089c-3085", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
-          {"name": "Fly", "id": "a31c-589a-b4d3-0482", "hidden": false, "targetId": "6848-5598-edc5-a56f", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "cb98-826f-a424-1701", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Outflank", "id": "b19a-9713-0538-8bbc", "hidden": false, "targetId": "afef-1361-8dda-9d33", "type": "rule"},
-          {"name": "Relentless", "id": "0133-24c3-a150-ed65", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hover", "id": "2631-800a-145f-7395", "hidden": false, "targetId": "e689-492e-d8a3-2868", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Transport",
-            "id": "ac58-a423-f95f-af9a",
-            "description": "This model can transport 10 Infantry models. It may also Transport 1 Dreadnought model.",
-            "hidden": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Stormraven Gunship",
-            "id": "86ea-caa7-9e21-863c",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "902a-1bf1-40bd-420f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "902a-1bf1-40bd-420f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {
-                "name": "Hurricane Bolter",
-                "id": "6a96-f85d-5291-db48",
-                "hidden": false,
-                "import": true,
-                "targetId": "8df1-2b7a-b2fa-fa8f",
-                "type": "selectionEntry",
-                "constraints": [{"id": "7a40-2b29-176a-9419", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              },
-              {
-                "name": "Storm Strike Missiles",
-                "id": "b7d0-e05b-e001-33fb",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "targetId": "51fa-767e-5767-27e5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "7736-5049-96c4-37ee-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "7736-5049-96c4-37ee-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Stormraven Gunship",
-                "id": "731c-f389-079c-4f9a",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "20-30", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "1", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "7", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "12", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "12", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "12", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "0", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "1", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "10/1", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Linked Assault Cannon (P)",
-                "id": "b514-05cb-e7a6-0aa3",
-                "defaultSelectionEntryId": "e5ad-30aa-192e-d445",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "07e1-5f59-4b62-8215-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "07e1-5f59-4b62-8215-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Linked Plasma Cannon",
-                    "id": "b3f4-c912-91d7-06db",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "3ffd-6bf5-4cb7-4787",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {"name": "Linked Assault Cannon", "id": "e5ad-30aa-192e-d445", "hidden": false, "import": true, "targetId": "16cb-3c48-c3d0-fa6a", "type": "selectionEntry"},
-                  {
-                    "name": "Linked Las Cannon",
-                    "id": "9bce-15e4-9564-eb04",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "446b-047d-0872-5352",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  }
-                ]
-              },
-              {
-                "name": "Typhoon Missile Launcher (P)",
-                "id": "9576-850d-0762-2894",
-                "defaultSelectionEntryId": "04f4-eb6a-6e62-47eb",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "8cbd-d67f-2792-6df4-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "8cbd-d67f-2792-6df4-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {"name": "Typhoon Missile Launcher", "id": "04f4-eb6a-6e62-47eb", "hidden": false, "import": true, "targetId": "1dd2-3fe5-299c-4e29", "type": "selectionEntry"}
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "2 Multi-Meltas (P)",
-                    "id": "7805-3c4b-8d6e-d578",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "entryLinks": [
-                      {
-                        "name": "Multi-Melta",
-                        "id": "7b1b-5381-270b-0066",
-                        "defaultAmount": "2",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "90c9-36e3-ba67-2cfc",
-                        "type": "selectionEntry",
-                        "constraints": [
-                          {"id": "562d-f6cb-b3a3-13b2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                          {"id": "562d-f6cb-b3a3-13b2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "2 Heavy Bolters (P)",
-                    "id": "bfa0-9e53-28e8-43fd",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "entryLinks": [
-                      {
-                        "name": "Heavy Bolter",
-                        "id": "4213-7b90-9cf3-59cc",
-                        "defaultAmount": "2",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "78c1-9390-d6ec-04ff",
-                        "type": "selectionEntry",
-                        "constraints": [
-                          {"id": "28eb-1670-043f-476a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                          {"id": "28eb-1670-043f-476a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Stormhawk Interceptor",
         "id": "7dcf-aa69-cdd1-bdf3",
         "hidden": false,
@@ -15749,6 +15180,20 @@
               {"id": "84ee-e639-0e5c-2c53-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "84ee-e639-0e5c-2c53-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
+            "entryLinks": [
+              {
+                "name": "Infernum Halo Launcher",
+                "id": "da6a-9251-fee1-f4fa",
+                "defaultAmount": "1",
+                "hidden": false,
+                "targetId": "efcf-eaf4-e26b-9df5",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "41d4-8caf-20e1-22a5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "41d4-8caf-20e1-22a5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
             "profiles": [
               {
                 "name": "Stormhawk",
@@ -15768,28 +15213,6 @@
                   {"name": "I", "$text": "1", "typeId": "7f1b-fabe-598c-f8de"},
                   {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
                   {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Infernum Halo Launcher",
-                "id": "efcf-eaf4-e26b-9df5",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "41d4-8caf-20e1-22a5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "41d4-8caf-20e1-22a5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "rules": [
-                  {
-                    "name": "Infernum Halo Launcher",
-                    "id": "07fa-b8ef-44b8-ca37",
-                    "description": "Instead of setting to Overwatch, this unit may set to Deploy Chaff. When this unit deploys Chaff, all attacks against this unit have -1 to all hit rolls until the start of this units next Shooing Phase.",
-                    "hidden": false
-                  }
                 ]
               }
             ],
@@ -24240,7 +23663,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "cd1c-37c9-b49b-eb52",
+                "targetId": "83e1-84d2-c4cc-87f8",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "3b69-8a82-7872-368a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -24324,7 +23747,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "cd1c-37c9-b49b-eb52",
+                "targetId": "83e1-84d2-c4cc-87f8",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "76fb-88f8-c806-1275", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -24827,177 +24250,6 @@
                       }
                     ]
                   }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rhino APC",
-        "id": "cbb7-09e0-cc51-c721",
-        "hidden": false,
-        "import": true,
-        "page": "69",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Space Marines", "id": "632c-4d93-bcac-4ed5", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Imperium", "id": "5e28-dc40-15af-2103", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Dedicated Transport", "id": "3a53-5108-fb39-5aff", "hidden": false, "primary": true, "targetId": "cb56-41eb-9b8c-2a8c"},
-          {"name": "[Chapter]", "id": "140b-d8e3-d57b-0c7f", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "Rhino", "id": "9e95-8859-0913-9103", "hidden": false, "primary": false, "targetId": "b616-9080-293e-0d6e"},
-          {"name": "Tank", "id": "efd3-e9df-a58d-0cfc", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
-          {"name": "Transport", "id": "0092-4cbe-4718-bda7", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"},
-          {"name": "Vehicle", "id": "0bca-9a08-0920-01cb", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
-          {"name": "M31", "id": "4c8c-5f3f-a0cb-5dd1", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
-        "infoLinks": [
-          {"name": "Reliable Machine Spirit", "id": "5530-669d-b92d-db31", "hidden": false, "targetId": "bdf3-62d2-3342-08fe", "type": "rule"},
-          {"name": "And they shall know no Fear", "id": "76a1-8de5-2782-54f7", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Relentless", "id": "e69d-6cb0-0bb4-1b3c", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "738e-11fb-b990-bf81", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "d635-1a5c-2f27-2bd0", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "Fade & Fire", "id": "a3d2-24e6-0b3e-c55c", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
-          {"name": "Fire Points (x)", "id": "145e-1df3-8321-bf12", "hidden": false, "targetId": "9776-c5c5-ae58-e003", "type": "rule"},
-          {
-            "name": "Fire Points (x)",
-            "id": "d052-52b1-a0b8-9c96",
-            "hidden": false,
-            "targetId": "9776-c5c5-ae58-e003",
-            "type": "rule",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "c058-a899-f8ed-cd40",
-                    "childName": "Mechanised Assault",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "f7ea-4caf-2ed7-469a",
-                    "childName": "Vanguard Support",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Rhino APC",
-            "id": "8cdf-b1fa-2dd9-68e8",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "393e-538b-55c0-510e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "393e-538b-55c0-510e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {
-                "name": "Storm Bolter",
-                "id": "45ed-c366-369e-a547",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c829-b809-d33d-4738",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "da69-e8db-80a0-596a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "da69-e8db-80a0-596a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
-              },
-              {"name": "Searchlight", "id": "8454-d87c-32ab-0c88", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0a40-e70f-c76c-5804", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {
-                "name": "Marine Crew Weapons",
-                "id": "0de0-9c90-1358-edda",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "2bae-f8ee-dabc-33dc",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "15f1-d922-23a5-d2e9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "15f1-d922-23a5-d2e9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Rhino APC",
-                "id": "0430-d1d9-c16b-fbb0",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "7", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "11", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "11", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "3", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "11", "typeId": "8058-3a16-8bc0-ad4b"}
                 ]
               }
             ]
@@ -27114,229 +26366,6 @@
         ]
       },
       {
-        "name": "Razorback IFV",
-        "id": "6ab7-8c03-cc6f-fbb2",
-        "hidden": false,
-        "import": true,
-        "page": "70",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Space Marines", "id": "9adf-ad6a-51a7-646a", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Imperium", "id": "f7e2-c6e4-b565-40f1", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Dedicated Transport", "id": "c7d8-a199-6cb0-1915", "hidden": false, "primary": true, "targetId": "cb56-41eb-9b8c-2a8c"},
-          {"name": "[Chapter]", "id": "120c-b75b-0b72-6575", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "Razorback", "id": "fbfb-fab4-08c4-6b29", "hidden": false, "primary": false, "targetId": "6c54-25e1-143c-9354"},
-          {"name": "Tank", "id": "14c8-6f28-831a-7ce7", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
-          {"name": "M36", "id": "48e2-7eaf-dbef-5bf8", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 55}],
-        "infoLinks": [
-          {"name": "And they shall know no Fear", "id": "35f2-d7a7-d55b-5ec3", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Relentless", "id": "9004-2d7b-2ea9-12af", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "a645-3191-c941-73e1", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "0b50-9069-cef9-1d16", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "Fade & Fire", "id": "eee5-f283-2219-99a3", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
-          {"name": "Reliable Machine Spirit", "id": "4fa3-b663-0c9f-ff42", "hidden": false, "targetId": "bdf3-62d2-3342-08fe", "type": "rule"},
-          {
-            "name": "Outflank",
-            "id": "8e4d-1315-598d-d61e",
-            "hidden": false,
-            "targetId": "afef-1361-8dda-9d33",
-            "type": "rule",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "c058-a899-f8ed-cd40",
-                    "childName": "Mechanised Assault",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "f7ea-4caf-2ed7-469a",
-                    "childName": "Vanguard Support",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Razorback",
-            "id": "196f-a6c0-8b79-4e63",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "9eb2-1df8-f79f-e65d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "9eb2-1df8-f79f-e65d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {
-                "name": "Storm Bolter",
-                "id": "171c-bed1-c65b-1c16",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c829-b809-d33d-4738",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "8f84-d065-8ad1-1358-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "8f84-d065-8ad1-1358-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
-              },
-              {"name": "Searchlight", "id": "4752-bdbb-6a8a-2550", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "ffe6-939c-57b8-f489", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {
-                "name": "Marine Crew Weapons",
-                "id": "4e3f-2ae3-2fef-c5c1",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "2bae-f8ee-dabc-33dc",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "e058-b253-dd22-18d8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "e058-b253-dd22-18d8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Razorback",
-                "id": "de6a-86fd-24ea-368e",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "7", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "11", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "11", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "3", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "6", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Linked Heavy Bolter (P)",
-                "id": "cff9-4158-6dd3-fbea",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "26c4-32c7-2ffb-a189-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildForces": false,
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "26c4-32c7-2ffb-a189-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildForces": false,
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Linked Assault Cannon",
-                    "id": "1b20-eaf9-776f-674b",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "16cb-3c48-c3d0-fa6a",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  },
-                  {"name": "Linked Heavy Bolter", "id": "e9e1-9996-7bbf-9f25", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"},
-                  {
-                    "name": "Linked Las Cannon",
-                    "id": "b3e1-ee57-b60d-c3a8",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "446b-047d-0872-5352",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Plasma Gun (P) and Lascannon (P)",
-                    "id": "b72f-637b-79d8-23ac",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                    "infoLinks": [
-                      {"name": "Lascannon", "id": "c382-93e5-6d03-ec23", "hidden": false, "targetId": "fa97-7830-a56b-2a42", "type": "profile"},
-                      {"name": "Plasma Gun", "id": "fe94-86ec-69d1-0391", "hidden": false, "targetId": "3735-b78e-cd7d-d8e1", "type": "profile"}
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Predator MBT",
         "id": "0992-f690-6fab-8cc8",
         "comment": "todo: Predator Tank, No profile provided in reference",
@@ -28551,540 +27580,6 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Land Raider Redeemer",
-        "id": "e6d6-f337-37d5-7ea6",
-        "hidden": false,
-        "import": true,
-        "page": "102",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Space Marines", "id": "df39-586e-841a-6922", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Imperium", "id": "37d7-387b-b785-7c00", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Heavy", "id": "b101-cccc-9e94-207d", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
-          {"name": "Fire Support", "id": "f8a7-8510-5a78-eb22", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
-          {"name": "Transport", "id": "5bb4-3775-680c-6d16", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"},
-          {"name": "Tank", "id": "1016-beba-cb24-d953", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
-          {"name": "[Chapter]", "id": "e66e-8d39-fbef-a66a", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "Vehicle", "id": "49a2-c5b5-8af1-de91", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
-          {"name": "M37+", "id": "1b0a-e3fe-6a71-32a8", "hidden": false, "primary": false, "targetId": "266a-a317-a50a-0784"},
-          {"name": "Land Raider Redeemer", "id": "1280-8a6d-9ca2-9c82", "hidden": false, "primary": false, "targetId": "cb98-681a-2899-71c4"}
-        ],
-        "constraints": [{"id": "753d-828d-708b-8dbc", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 2}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 150}],
-        "infoLinks": [
-          {"name": "And they shall know no Fear", "id": "d4d8-64ce-01ac-20bf", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Relentless", "id": "f31e-6371-e1b0-af04", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "1715-c5c8-0d95-b7b0", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Fade & Fire", "id": "ea1c-c844-ae34-29f4", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "ece1-f290-4547-a8f8", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "Machine Spirit", "id": "bb13-3f6e-50e9-8d4c", "hidden": false, "targetId": "90e4-fe1e-9971-6663", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "860a-da71-4255-6379",
-                    "childName": "Drop Pod Assault",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "f7ea-4caf-2ed7-469a",
-                    "childName": "Vanguard Support",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Land Raider Redeemer",
-            "id": "1163-d6f7-67d8-b2d5",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "7d10-5f65-84ae-2605-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "7d10-5f65-84ae-2605-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {"name": "Searchlight", "id": "f39a-8159-83c2-cf7b", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0ab6-741f-eb00-7f50", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {
-                "name": "Marine Crew Weapons",
-                "id": "c244-75cb-fd2e-4777",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "2bae-f8ee-dabc-33dc",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "177d-2266-5260-692f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "177d-2266-5260-692f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Heavy Flamer",
-                "id": "29c8-4a2a-0757-d00f",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "targetId": "4b58-2b09-3805-2dab",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "41eb-d41a-220b-6729-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "41eb-d41a-220b-6729-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              },
-              {
-                "name": "Linked Assault Cannon",
-                "id": "fde9-2c8d-00a5-90a5",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "16cb-3c48-c3d0-fa6a",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "ca71-4c46-7e7b-25b7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "ca71-4c46-7e7b-25b7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              },
-              {"name": "Storm Bolter (S)", "id": "f5fa-49f3-519b-9e68", "hidden": false, "import": true, "targetId": "f4e8-f405-8d57-e6b5", "type": "selectionEntryGroup"}
-            ],
-            "profiles": [
-              {
-                "name": "Land Raider Redeemer",
-                "id": "d624-4c29-f48c-75b8",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "8", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "14", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "14", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "14", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "4", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "12", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Land Raider Crusader",
-        "id": "e76a-94a2-9a77-aa11",
-        "hidden": false,
-        "import": true,
-        "page": "103",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Space Marines", "id": "a30b-42ab-463d-c614", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Imperium", "id": "c373-dcc5-c508-0487", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Heavy", "id": "e401-0a02-f683-8b07", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
-          {"name": "Fire Support", "id": "b457-06c3-6097-4740", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
-          {"name": "Transport", "id": "28b0-74c5-e23d-81a4", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"},
-          {"name": "Tank", "id": "5bac-b3c5-d7fa-c515", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
-          {"name": "[Chapter]", "id": "0c0f-e13f-9ff6-dd77", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "M41", "id": "0f04-5076-c4a9-2345", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
-          {"name": "Land Raider Crusader", "id": "0759-47c1-5f7b-ac5b", "hidden": false, "primary": false, "targetId": "7790-4f61-9ccc-1699"}
-        ],
-        "constraints": [{"id": "ad06-9d52-5fec-7e9f", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 2}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 145}],
-        "infoLinks": [
-          {"name": "And they shall know no Fear", "id": "b75f-37a5-cf81-64cb", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Relentless", "id": "096d-c36e-f574-6c07", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "b596-c337-b203-e912", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Fade & Fire", "id": "e844-48ba-d9a4-4534", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "c2d3-c919-3006-692f", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "Machine Spirit", "id": "d4c9-8281-b7f7-8d25", "hidden": false, "targetId": "90e4-fe1e-9971-6663", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "860a-da71-4255-6379",
-                    "childName": "Drop Pod Assault",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "f7ea-4caf-2ed7-469a",
-                    "childName": "Vanguard Support",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Land Raider Crusader",
-            "id": "29b6-eab6-923d-8005",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "73ab-9ca1-68cb-aac2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "73ab-9ca1-68cb-aac2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {
-                "name": "Linked Assault Cannon",
-                "id": "4c04-c577-7efc-1b88",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "16cb-3c48-c3d0-fa6a",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "d986-770f-7975-50a3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "d986-770f-7975-50a3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              },
-              {
-                "name": "Marine Crew Weapons",
-                "id": "9c82-fcb0-6a78-df73",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "2bae-f8ee-dabc-33dc",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "399b-9d8f-0df5-f8b0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "399b-9d8f-0df5-f8b0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {"name": "Searchlight", "id": "bea7-312e-be67-f0e1", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "5eb6-b924-af3b-4002", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {
-                "name": "Storm Bolter (S)",
-                "id": "7e5b-56f1-d581-63dd",
-                "hidden": false,
-                "import": true,
-                "targetId": "f4e8-f405-8d57-e6b5",
-                "type": "selectionEntryGroup",
-                "modifierGroups": [
-                  {
-                    "comment": "DNE",
-                    "type": "and",
-                    "modifiers": [
-                      {"affects": "90c9-36e3-ba67-2cfc", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 20},
-                      {"affects": "4055-8e1b-e950-5299", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 0},
-                      {"affects": "0a47-4e41-d06f-dabf", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 10},
-                      {"affects": "8d0b-110a-173a-4ddd", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Hurricane Bolter",
-                "id": "bbf8-d959-aede-ad72",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "targetId": "8df1-2b7a-b2fa-fa8f",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "cb6c-c083-719a-9961-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "cb6c-c083-719a-9961-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Land Raider Crusader",
-                "id": "8bd3-dea9-343d-c2b1",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "8", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "14", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "14", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "14", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "4", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "16", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Land Raider",
-        "id": "9748-241f-829a-336b",
-        "hidden": false,
-        "import": true,
-        "page": "101",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Space Marines", "id": "256d-58fb-1c71-b29e", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Imperium", "id": "cb93-266a-0e93-376d", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Heavy", "id": "5b0b-8c6f-9573-abe7", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
-          {"name": "Fire Support", "id": "1707-8e61-1461-718d", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
-          {"name": "Transport", "id": "162d-e1f7-7eaa-173c", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"},
-          {"name": "Tank", "id": "0df1-8bde-e769-d2cd", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
-          {"name": "[Chapter]", "id": "4fdb-512a-0e65-1532", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "Vehicle", "id": "f634-8ba0-b17a-ad87", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
-          {"name": "M31", "id": "f6cf-3ff8-ec77-af39", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Land Raider", "id": "fecc-6597-40c3-48dc", "hidden": false, "primary": false, "targetId": "0eda-c168-0322-c649"}
-        ],
-        "constraints": [{"id": "9f14-57f9-4431-6882", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 2}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 180}],
-        "infoLinks": [
-          {"name": "Machine Spirit", "id": "220e-80a2-118e-5b14", "hidden": false, "targetId": "90e4-fe1e-9971-6663", "type": "rule"},
-          {"name": "Relentless", "id": "f38a-99c5-9225-437e", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "02ea-b9a0-b42f-be42", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Fade & Fire", "id": "250e-9963-b43f-bda6", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "d8c9-d17e-a628-fa7f", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "And they shall know no Fear", "id": "f7c6-c230-3769-757c", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "860a-da71-4255-6379",
-                    "childName": "Drop Pod Assault",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "f7ea-4caf-2ed7-469a",
-                    "childName": "Vanguard Support",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Land Raider",
-            "id": "8262-c5b6-db29-fd02",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "4102-4aff-bc15-d230-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "4102-4aff-bc15-d230-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {"name": "Storm Bolter (S)", "id": "5a5c-ee37-d418-7dd8", "hidden": false, "targetId": "f4e8-f405-8d57-e6b5", "type": "selectionEntryGroup"},
-              {
-                "name": "Linked Las Cannon",
-                "id": "cac3-3b25-6ef1-27ed",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "targetId": "446b-047d-0872-5352",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "0494-91ad-4ee6-15b7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "0494-91ad-4ee6-15b7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              },
-              {"name": "Searchlight", "id": "3af9-de2a-2937-5a15", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0bd5-b7cd-95cc-9953", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {
-                "name": "Marine Crew Weapons",
-                "id": "2af9-8d96-0315-5338",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "2bae-f8ee-dabc-33dc",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "3766-5362-04d4-031a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3766-5362-04d4-031a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Whirlwind Missile Launcher",
-                "id": "fa1a-1641-aaed-6fc5",
-                "hidden": false,
-                "import": true,
-                "targetId": "798b-9458-3d48-9507",
-                "type": "selectionEntry",
-                "constraints": [{"id": "1330-1653-9af2-3389", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                "modifiers": [
-                  {"field": "name", "type": "append", "value": "(P)"},
-                  {"affects": "profiles.Vehicle", "field": "8058-3a16-8bc0-ad4b", "scope": "model", "type": "set", "value": "5"}
-                ]
-              },
-              {
-                "name": "Linked Heavy Bolter",
-                "id": "e075-1321-17ea-e758",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "7812-1637-a222-add0",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "0878-b6d0-cf57-cfb9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "0878-b6d0-cf57-cfb9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Land Raider",
-                "id": "3637-e664-bcfe-38cf",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "8", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "14", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "14", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "14", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "4", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "10", "typeId": "8058-3a16-8bc0-ad4b"}
                 ]
               }
             ]
@@ -35621,322 +34116,6 @@
         ]
       },
       {
-        "name": "Castraferrum Dreadnought",
-        "id": "9fea-9580-3966-9896",
-        "hidden": false,
-        "import": true,
-        "page": "65",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Space Marines", "id": "3af8-a892-c387-82c3", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Imperium", "id": "f13b-2e39-3775-17e8", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Elite", "id": "85aa-e943-2e22-1ebc", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
-          {"name": "[Chapter]", "id": "ddcc-8f76-e57e-e414", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
-          {"name": "Dreadnought", "id": "f91b-bde2-1258-e163", "hidden": false, "primary": false, "targetId": "66b5-9c89-b1b9-fdff"},
-          {"name": "M31", "id": "0a54-41e8-20d3-9b86", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Walker", "id": "4790-b505-0e01-fe91", "hidden": false, "primary": false, "targetId": "38cd-8c36-35cb-d825"},
-          {"name": "Battle Line", "id": "fa1e-8566-f23e-a176", "hidden": false, "primary": false, "targetId": "52a4-b849-6620-8858"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 105}],
-        "infoLinks": [
-          {"name": "Slow and purposeful", "id": "2cef-fce4-f062-b9e2", "hidden": false, "targetId": "5424-9bb7-d620-92b1", "type": "rule"},
-          {"name": "Relentless", "id": "59ad-1b18-5bcb-c9db", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "And they shall know no Fear", "id": "d1f1-dc2e-e5ec-493e", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "8504-ed2f-1e35-b22c", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "10fd-def4-da3c-9c48", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "childId": "5bc5-fa86-1838-ee2e",
-                    "childName": "Grey Shields",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "f7ea-4caf-2ed7-469a",
-                    "childName": "Vanguard Support",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Castraferrum Dreadnought",
-            "id": "9eff-f9ea-e927-1843",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "3ce9-6900-b349-615f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "3ce9-6900-b349-615f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {"name": "2 Hunter-Killer Missiles", "id": "661a-1ce1-aad1-6325", "hidden": false, "targetId": "eb44-a9b5-7e6b-dd5d", "type": "selectionEntry"},
-              {"name": "Dreadnought Plate", "id": "c9f8-cc8b-3402-462b", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"},
-              {
-                "name": "Assault launchers",
-                "id": "706c-d01e-6bb9-b353",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "9820-dc59-1694-96c5",
-                "type": "selectionEntry",
-                "constraints": [{"id": "5dd4-3e4b-69a0-ef43", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Castraferrum Dreadnought",
-                "id": "d3ce-5b87-15af-a6e3",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "8", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "7", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Venerable",
-                "id": "deee-23e3-ffdc-367a",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [{"id": "235b-72c9-c091-8b44", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                "infoLinks": [{"name": "Feel no Pain", "id": "5f7e-2e86-8f54-598d", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"}],
-                "modifiers": [
-                  {"affects": "profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "scope": "model", "type": "increment", "value": 1},
-                  {"affects": "profiles.Unit", "field": "f7cb-9e55-a62c-25ed", "scope": "model", "type": "increment", "value": 1}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "2 Dreadnought Close Combat weapons & Storm Bolter",
-                "id": "5869-6411-bacf-aa26",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "0e6b-9a46-24f7-a23b-min",
-                    "automatic": false,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 2
-                  },
-                  {
-                    "id": "0e6b-9a46-24f7-a23b-max",
-                    "automatic": false,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 2
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Plasma Cannon",
-                    "id": "ad04-2ac3-1c78-72bc",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "a976-9c82-b60a-5fc0",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Assault Cannon",
-                    "id": "c147-c50c-2c42-fb89",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "9788-7711-3998-b9c4",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  },
-                  {
-                    "name": "Linked Autocannon",
-                    "id": "ef53-c0f6-62a3-d5b3",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "5739-d53f-fe33-f250",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  },
-                  {"name": "Linked Heavy Bolter", "id": "358f-04a5-75ed-193b", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"},
-                  {
-                    "name": "Hurricane Bolter",
-                    "id": "597c-5d65-abb8-85bb",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "8df1-2b7a-b2fa-fa8f",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Multi-Melta",
-                    "id": "87ea-f8d1-2c5d-0321",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "90c9-36e3-ba67-2cfc",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Missile Launcher",
-                    "id": "5a0e-e614-e2fe-c843",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "6bc7-dc8c-099c-61ce",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Linked Las Cannon",
-                    "id": "4450-4fd0-e6e2-096d",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "446b-047d-0872-5352",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Cyclone Missile Launcher",
-                    "id": "195b-6bde-d078-132d",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "c990-6a7a-e2d2-63af",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  },
-                  {"name": "Heavy Flamer", "id": "f070-9a1c-71e1-c807", "hidden": false, "import": true, "targetId": "4b58-2b09-3805-2dab", "type": "selectionEntry"},
-                  {
-                    "name": "Seismic Hammer",
-                    "id": "60fb-1612-fd22-a819",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "4167-b3b6-779e-7442",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Chainfist & Flamer",
-                    "id": "4241-5508-b835-119d",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "infoLinks": [
-                      {"name": "Chainfist", "id": "8121-7451-5f5b-1519", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"},
-                      {"name": "Flamer", "id": "a9bf-e570-6f17-dc37", "hidden": false, "targetId": "2a68-a7ea-6fa7-c9cf", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Dreadnought Close Combat weapon & Storm Bolter",
-                    "id": "4ba0-42b2-8c49-96d8",
-                    "defaultAmount": "2",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "73d7-ad49-7aca-ae33", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Storm Bolter", "id": "7f4a-0cb3-e827-27a9", "hidden": false, "targetId": "2d40-d20d-b301-8589", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Dreadnought Close Combat weapon & Flamer",
-                    "id": "3662-54fb-37c4-cfe4",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "4824-8e3c-bfe6-c844", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Flamer", "id": "32ab-c97b-c44d-03bd", "hidden": false, "targetId": "2a68-a7ea-6fa7-c9cf", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Dreadnought Close Combat weapon & Meltagun",
-                    "id": "bc41-69c9-75b9-f444",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "9841-9ed1-94e8-3ccf", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Meltagun", "id": "96a9-3e47-a226-0fea", "hidden": false, "targetId": "0890-7e89-f08b-968b", "type": "profile"}
-                    ]
-                  },
-                  {
-                    "name": "Chainfist & Meltagun",
-                    "id": "b997-c30c-9f4c-cc29",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "infoLinks": [
-                      {"name": "Chainfist", "id": "42d6-cf17-dd70-69b5", "hidden": false, "targetId": "5717-521b-140b-421f", "type": "profile"},
-                      {"name": "Meltagun", "id": "63a5-4cf7-a6bb-7c79", "hidden": false, "targetId": "0890-7e89-f08b-968b", "type": "profile"}
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Bike Squad",
         "id": "1e58-6b09-0610-d6ba",
         "hidden": false,
@@ -38482,6 +36661,127 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Warlord",
+        "id": "af31-89ae-7eb1-df93",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d347-4c86-1425-f52f", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "d9b2-a951-b2e3-ffe6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifierGroups": [{"type": "and", "modifiers": [{"field": "category", "type": "add", "value": "544d-0eb3-a4ab-4540"}]}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "24ec-3d2c-456d-fe9a",
+                "childName": "Allied Detatchment",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bike",
+        "id": "83e1-84d2-c4cc-87f8",
+        "comment": "scout",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
+              {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Bike", "type": "append", "value": "on Bike"},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
+              {"field": "category", "scope": "unit", "type": "add", "value": "fa9d-896e-a495-babb"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bike",
+            "id": "2672-5bed-587b-da94",
+            "description": "A unit that is equipped with a Bike becomes a Bike type unit. In addition, it gains +1 Toughness (T) Characteristics. A Space marine Bike is equipped with a Linked Boltgun.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Linked Boltgun",
+            "id": "9736-365d-7853-0084",
+            "collapsible": true,
+            "defaultSelectionEntryId": "8832-b581-3744-8919",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "84b7-3b50-7cbf-620f",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "aca8-d70f-baaa-e4c0",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Linked Boltgun",
+                "id": "0ad2-c962-2393-7c7b",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c5c1-9a34-c9c5-0410",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Astartes Grenade Launcher",
+                "id": "dbb5-72cf-24f4-8238",
+                "hidden": true,
+                "import": true,
+                "targetId": "5d14-540c-0685-74c3",
+                "type": "selectionEntry",
+                "constraints": [{"id": "e9e1-c5a0-f723-f951", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "modifiers": [
+                  {
+                    "field": "e9e1-c5a0-f723-f951",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 3}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -38630,75 +36930,11 @@
         "hidden": false,
         "page": "25",
         "publicationId": "1606-03fb-e01d-e0cf",
-        "selectionEntries": [
-          {
-            "name": "Litany of Rage (Prayer)",
-            "id": "db15-079e-abae-3c2c",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "458c-bc92-c4d8-a4b8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-            "rules": [
-              {
-                "name": "Litany of Rage (Prayer)",
-                "id": "abfc-2bd5-6a59-59b0",
-                "description": "When this Prayer is performed, the Priest and any attached unit gain the Fear (1) special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Litany of Hatred (Prayer)",
-            "id": "f36e-e74e-c714-79a4",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "bf09-0f70-e3a8-216b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "rules": [
-              {
-                "name": "Litany of Hatred (Prayer)",
-                "id": "1a1e-809e-ddc1-db30",
-                "description": "When this Prayer is performed, the Priest and any attached unit gain the Hatred special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Litany of Focus (Prayer)",
-            "id": "8f8d-b00f-9bb7-9e4e",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "43e0-f59f-1803-d02f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
-            "rules": [
-              {
-                "name": "Litany of Focus (Prayer)",
-                "id": "3ce5-ad71-d049-250d",
-                "description": "When this Prayer is performed, the Priest and any attached unit has the Indomitable Spirit (4+) special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Litany of Strength (Prayer)",
-            "id": "c5cd-a8ab-85f6-ebf4",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "477e-e587-8699-2cf3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-            "rules": [
-              {
-                "name": "Litany of Strength (Prayer)",
-                "id": "08f8-8492-f2ec-0307",
-                "description": "When this Prayer is performed, the Priest and any attached unit gain +1 to their Strength (S) characteristic until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
-          }
+        "entryLinks": [
+          {"name": "Litany of Strength (Prayer)", "id": "8653-549c-d57d-5b28", "hidden": false, "targetId": "c5cd-a8ab-85f6-ebf4", "type": "selectionEntry"},
+          {"name": "Litany of Rage (Prayer)", "id": "0eec-1a7c-eccf-0189", "hidden": false, "targetId": "db15-079e-abae-3c2c", "type": "selectionEntry"},
+          {"name": "Litany of Hatred (Prayer)", "id": "ee68-0e0f-9a84-710b", "hidden": false, "import": true, "targetId": "0a63-744b-fb9a-273d", "type": "selectionEntry"},
+          {"name": "Litany of Focus (Prayer)", "id": "28df-9171-ca7d-5e0b", "hidden": false, "import": true, "targetId": "a645-6155-b3a2-36e9", "type": "selectionEntry"}
         ]
       },
       {
@@ -38708,74 +36944,24 @@
         "hidden": false,
         "page": "26",
         "publicationId": "1606-03fb-e01d-e0cf",
-        "selectionEntries": [
+        "entryLinks": [
+          {"name": "Rite of Reloading (Machine Rite)", "id": "1f1d-90d4-38b0-ee3b", "hidden": false, "targetId": "25fd-49a9-9aa5-385b", "type": "selectionEntry"},
           {
-            "name": "Rite of Reloading (Machine Rite)",
-            "id": "25fd-49a9-9aa5-385b",
+            "name": "Rite of Repair (Machine Rite):",
+            "id": "ad4e-be91-96f7-0f32",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "e58a-c990-ff0b-5dea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-            "rules": [
-              {
-                "name": "Rite of Reloading (Machine Rite)",
-                "id": "dafa-a9b1-9757-2ab7",
-                "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit immediately makes a Shooting Attack with 1 weapon it is equipped with.",
-                "hidden": false
-              }
-            ]
+            "targetId": "9e4c-7de9-2a09-4097",
+            "type": "selectionEntry"
           },
-          {
-            "name": "Rite of Repair (Machine Rite)",
-            "id": "99f1-8529-e789-c6c6",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "78df-7b84-ea65-e1e8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "rules": [
-              {
-                "name": "Rite of Repair (Machine Rite)",
-                "id": "79b7-1890-bbf2-129d",
-                "description": "When this Rite is performed successfully, select one of the following effects:\n• Select 1 Walker or Automata unit either within 3” or attached to the unit that is performing this rite. The target unit Heals 1 wound.\n• Select 1 Vehicle, Aircraft, Knight or Fortification either within 3”, attached to the unit performing this Rite or that this unit is embarked upon. Select 1 weapon that target unit is equipped with that has been destroyed. The chosen weapon is no longer destroyed.\n• Select 1 Vehicle or Knight either within 3”, attached to the unit performing this Rite or that this unit is embarked upon that is immobilized. That unit is no longer immobilized. If the unit has the Super Heavy (x) special rule and was Limping, it is no longer considered to be Limping.",
-                "hidden": false
-              }
-            ]
-          },
+          {"name": "Rite of Consecration (Machine Rite)", "id": "5ccd-c1d3-7603-7b58", "hidden": false, "targetId": "9048-fd1a-9e31-03aa", "type": "selectionEntry"},
           {
             "name": "Rite of Immolation (Machine Rite)",
-            "id": "a078-70fa-555e-34a8",
+            "id": "df6e-a15c-4184-0d31",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "e772-7c99-3002-ee40", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
-            "rules": [
-              {
-                "name": "Rite of Immolation (Machine Rite)",
-                "id": "1caf-1dc7-6ddb-9549",
-                "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit immediately suffers an Explodes result per the Vehicle Damage Chart, even if it would normally not.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Rite of Consecration (Machine Rite)",
-            "id": "9048-fd1a-9e31-03aa",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "d1d9-13d8-28ff-6d9b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-            "rules": [
-              {
-                "name": "Rite of Consecration (Machine Rite)",
-                "id": "33bf-3d39-f019-7458",
-                "description": "When this Rite is performed successfully, select 1 friendly Walker, Automata, Vehicle, Knight, Fortification or Aircraft unit within 6” of the unit performing this Rite or the unit performing the Rite is embarked upon. That unit gains the Indomitable Spirit (6+) special rule until the start of your next Shooting Phase.",
-                "hidden": false
-              }
-            ]
+            "targetId": "f37a-2f6b-c0ca-f251",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -39484,81 +37670,6 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
           },
           {"name": "Silentus Bolt Pistol", "id": "2fc2-74e3-e46c-1e3c", "hidden": true, "import": true, "targetId": "b651-fd85-152c-61af", "type": "selectionEntry"}
-        ]
-      },
-      {
-        "name": "Storm Bolter (S)",
-        "id": "f4e8-f405-8d57-e6b5",
-        "hidden": false,
-        "constraints": [
-          {
-            "id": "d491-5f3b-c660-fbc1-min",
-            "automatic": true,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "min",
-            "value": 1
-          },
-          {
-            "id": "d491-5f3b-c660-fbc1-max",
-            "automatic": true,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "max",
-            "value": 1
-          }
-        ],
-        "entryLinks": [
-          {
-            "name": "Combi Grav",
-            "id": "6823-9c3a-13bc-a453",
-            "hidden": false,
-            "import": true,
-            "targetId": "b8b8-1bdb-b1a9-d4d9",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-          },
-          {"name": "Storm Bolter", "id": "79bd-b459-a6e0-20cb", "hidden": false, "import": true, "targetId": "c829-b809-d33d-4738", "type": "selectionEntry"},
-          {
-            "name": "Combi Flamer",
-            "id": "96ab-2be4-a8a5-a14a",
-            "hidden": false,
-            "import": true,
-            "targetId": "4055-8e1b-e950-5299",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-          },
-          {
-            "name": "Multi-Melta",
-            "id": "e08b-5ca0-cece-8a1e",
-            "hidden": false,
-            "import": true,
-            "targetId": "90c9-36e3-ba67-2cfc",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
-          },
-          {
-            "name": "Combi Melta",
-            "id": "348c-4266-999b-2a89",
-            "hidden": false,
-            "import": true,
-            "targetId": "0a47-4e41-d06f-dabf",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-          },
-          {
-            "name": "Combi Plasma",
-            "id": "5dfe-329e-01bc-7288",
-            "hidden": false,
-            "import": true,
-            "targetId": "8d0b-110a-173a-4ddd",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-          }
         ]
       },
       {
