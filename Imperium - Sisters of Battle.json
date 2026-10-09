@@ -220,11 +220,9 @@
         ]
       },
       {"name": "Seraphim", "id": "0e59-a08c-b7b0-ff37", "hidden": false},
-      {"name": "Penitent Engines", "id": "0bf5-c753-2fb9-fbce", "hidden": false},
       {"name": "Mortifier", "id": "6698-14e6-32be-0484", "hidden": false},
       {"name": "Repressor IFV", "id": "aa36-caa4-578c-38a4", "hidden": false},
       {"name": "Retributors", "id": "ea48-a467-598d-aeeb", "hidden": false},
-      {"name": "Paragon Warsuit", "id": "ee22-1e0b-4930-ea68", "hidden": false},
       {
         "name": "Castigator",
         "id": "3dba-4e62-df71-3a78",
@@ -526,40 +524,50 @@
       },
       {
         "name": "Paragon Warsuits",
-        "id": "d59b-a079-b4ce-492f",
-        "hidden": false,
-        "import": true,
-        "targetId": "0f84-0fdb-7cdb-76e6",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Elite", "id": "4edd-4c95-1efc-d31e", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "3541-89aa-b209-4f18",
-                "childName": "Holy Retinue",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Paragon Warsuits",
         "id": "5552-b73f-c92d-b0d2",
         "hidden": false,
         "import": true,
         "targetId": "0f84-0fdb-7cdb-76e6",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Heavy", "id": "0e21-4c70-bdbf-f519", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}],
+        "categoryLinks": [
+          {"name": "[Order]", "id": "dea7-23db-32a5-0469", "hidden": false, "primary": false, "targetId": "d4d2-9552-882f-a8c9"},
+          {"name": "Faction: Sisters of Battle", "id": "f5c5-0cd3-b266-b2f5", "hidden": false, "primary": false, "targetId": "0832-420b-92b7-e210"},
+          {"name": "Adeptus Sororitas", "id": "d6f0-5ae2-9654-05fc", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"}
+        ],
+        "entryLinks": [
+          {
+            "name": "Force Organization: Elite",
+            "id": "2fb7-b162-ea60-8128",
+            "hidden": false,
+            "import": true,
+            "targetId": "c9f9-3940-2fc2-709e",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "3541-89aa-b209-4f18",
+                    "childName": "Holy Retinue",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Martyrdom", "id": "3b84-9a75-7e29-72ca", "hidden": false, "targetId": "e00d-87a4-2e5c-d758", "type": "rule"},
+          {"name": "Acts of Faith", "id": "64e4-2d70-8776-1319", "hidden": false, "targetId": "a200-8b33-29ef-3749", "type": "rule"},
+          {"name": "Allegiance", "id": "b5de-422c-e703-540a", "hidden": false, "targetId": "e726-f339-0a31-42c9", "type": "infoGroup"}
+        ],
         "modifiers": [
           {
             "field": "hidden",
@@ -966,6 +974,15 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Penitent Engines",
+        "id": "668c-0a2f-8ddc-b9ca",
+        "hidden": false,
+        "page": "50",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "targetId": "e6c5-9f87-5676-f74e",
+        "type": "selectionEntry"
       },
       {
         "name": "Sisters Repentia",
@@ -5833,96 +5850,6 @@
         ]
       },
       {
-        "name": "Penitent Engines",
-        "id": "e6c5-9f87-5676-f74e",
-        "hidden": false,
-        "import": true,
-        "page": "50",
-        "publicationId": "6f16-791a-3a26-4c72",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Imperium", "id": "e3ae-487f-bf4b-1743", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Fast", "id": "2087-f910-e172-ba58", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"},
-          {"name": "Penitent Engines", "id": "893e-df2f-1442-54b7", "hidden": false, "primary": false, "targetId": "0bf5-c753-2fb9-fbce"},
-          {"name": "Walker", "id": "85b9-6e8e-21b1-22aa", "hidden": false, "primary": false, "targetId": "38cd-8c36-35cb-d825"},
-          {"name": "Cult Ministorum", "id": "32c0-590c-d8c6-5e63", "hidden": false, "primary": false, "targetId": "4e69-2b1d-e273-cb0b"},
-          {"name": "M36", "id": "4c9c-1689-9495-49b1", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
-          {"name": "Faction: Sisters of Battle", "id": "6c8f-cab1-aaa4-8ba4", "hidden": false, "primary": false, "targetId": "0832-420b-92b7-e210"}
-        ],
-        "infoLinks": [
-          {"name": "Expendable", "id": "f265-d4d2-9232-39ec", "hidden": false, "targetId": "10fa-7459-7b04-1f93", "type": "rule"},
-          {"name": "Decree Passive", "id": "538d-30b0-5cde-cbed", "hidden": false, "targetId": "06a3-fa3f-81e2-08f8", "type": "rule"},
-          {"name": "Shield of Faith", "id": "9afa-8ccd-d1db-4bab", "hidden": false, "targetId": "2d05-bd56-3e0a-87b7", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "d3cf-6ad4-496c-4db5", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Relentless", "id": "471a-f76f-1c0a-6d3b", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "9c98-8a8b-ce26-87ea", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "Feel no Pain", "id": "5aba-31d0-af8e-ab83", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
-          {"name": "Fleet", "id": "abfb-9a2e-3083-69c6", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
-          {"name": "Zealot", "id": "f213-51fd-8c82-50b9", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"}
-        ],
-        "selectionEntries": [
-          {
-            "name": "Penitent Engines",
-            "id": "9341-07b3-9884-59e8",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "b086-4085-176f-e61a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "0bb0-1cd7-d677-d41c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}
-            ],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}],
-            "entryLinks": [
-              {
-                "name": "Heavy Flamer",
-                "id": "0203-1a7d-d59c-58e6",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "targetId": "4b58-2b09-3805-2dab",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "95ec-0bbb-83ed-a3a9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "95ec-0bbb-83ed-a3a9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
-              },
-              {
-                "name": "2 Penitent Buzz Blades",
-                "id": "0dc2-e13c-ff93-4d24",
-                "hidden": false,
-                "import": true,
-                "targetId": "f40d-3d30-9265-dd83",
-                "type": "selectionEntryGroup"
-              }
-            ],
-            "infoLinks": [{"name": "Penance Engine", "id": "35d5-1f43-2dba-cd2b", "hidden": false, "targetId": "a384-3e7b-18dd-3ed0", "type": "rule"}],
-            "profiles": [
-              {
-                "name": "Penitent Engines",
-                "id": "58b7-2020-dd9c-e03c",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "8", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "3", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "5", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "6", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Repressor IFV",
         "id": "4091-70e6-e952-ff92",
         "hidden": false,
@@ -5942,6 +5869,16 @@
           {"name": "Adeptus Sororitas", "id": "4fe8-3569-f009-a799", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}],
+        "entryLinks": [
+          {
+            "name": "Repressor IFV",
+            "id": "8f9a-4e9a-b288-fdda",
+            "hidden": false,
+            "targetId": "3aac-0dae-46e2-4837",
+            "type": "selectionEntry",
+            "infoLinks": [{"name": "Sisters Close Weapons", "id": "30f5-e2f3-ecc1-b3d1", "hidden": false, "targetId": "c25f-79f1-00c5-86d5", "type": "profile"}]
+          }
+        ],
         "infoLinks": [
           {"name": "Fire Points (x)", "id": "ffb7-c5de-af09-a6a7", "hidden": false, "targetId": "9776-c5c5-ae58-e003", "type": "rule"},
           {"name": "Shield of Faith", "id": "ff38-2761-f462-ce80", "hidden": false, "targetId": "2d05-bd56-3e0a-87b7", "type": "rule"},
@@ -6005,89 +5942,6 @@
                     "type": "atLeast",
                     "value": 1
                   }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Repressor IFV",
-            "id": "3aac-0dae-46e2-4837",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [{"id": "7ad4-33b5-b06d-1d0d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "entryLinks": [
-              {"name": "Hunter-Killer Missile", "id": "47c3-0300-bac4-8e88", "hidden": false, "import": true, "targetId": "0499-94c0-f9d2-8410", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "e8f4-2714-3bb4-e9de", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {"name": "Searchlight", "id": "b19c-7539-35a3-77d5", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {
-                "name": "Heavy Flamer",
-                "id": "6e60-a0c8-69d5-f2ce",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "4b58-2b09-3805-2dab",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "a98b-98fb-f459-8072-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "a98b-98fb-f459-8072-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              },
-              {
-                "name": "Storm Bolter",
-                "id": "065c-58ef-1f02-fa8d",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c829-b809-d33d-4738",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "c485-f0d6-7bb1-fd90-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "min", "value": 1},
-                  {"id": "c485-f0d6-7bb1-fd90-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
-              },
-              {
-                "name": "Storm Bolter",
-                "id": "6af4-b530-a4d1-6a4f",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c829-b809-d33d-4738",
-                "type": "selectionEntry",
-                "constraints": [{"id": "4846-53ce-7e70-2a64", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
-                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
-              }
-            ],
-            "infoLinks": [
-              {"name": "Sisters Close Weapons", "id": "30f5-e2f3-ecc1-b3d1", "hidden": false, "targetId": "c25f-79f1-00c5-86d5", "type": "profile"},
-              {"name": "Loud Hailers", "id": "2af7-3410-8e0e-7c18", "hidden": false, "targetId": "267f-53d8-b00c-7da8", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Repressor IFV",
-                "id": "4679-88b0-7495-d035",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "3", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "7", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "13", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "11", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "3", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "6", "typeId": "8058-3a16-8bc0-ad4b"}
                 ]
               }
             ]
@@ -6814,23 +6668,6 @@
         ]
       },
       {
-        "name": "Linked Storm Bolter",
-        "id": "9d78-b288-c147-203c",
-        "hidden": false,
-        "page": "11",
-        "publicationId": "6f16-791a-3a26-4c72",
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
         "name": "LinkedHeavy Flamer",
         "id": "4050-3824-4894-945a",
         "hidden": false,
@@ -7110,14 +6947,6 @@
         "publicationId": "6f16-791a-3a26-4c72"
       },
       {
-        "name": "Decree Passive",
-        "id": "06a3-fa3f-81e2-08f8",
-        "description": "You may only include 1 unit with the Cult Ministorum keyword for every 3 Adeptus Sororitas units in your army. Units with this special rule may not be your warlord unless there are no Adeptus Sororitas units in your army.",
-        "hidden": false,
-        "page": "5",
-        "publicationId": "6f16-791a-3a26-4c72"
-      },
-      {
         "name": "Digital Weapons",
         "id": "5671-2e3e-48ba-0463",
         "description": "A model with Digital weapons gains +1 to their Attacks (A) characteristic.",
@@ -7195,14 +7024,6 @@
         "description": "The armourer sarcophagus of this engine of penance provides protection to the pilot of this war machine. It confers a 3+ Armour save.",
         "hidden": false,
         "page": "7",
-        "publicationId": "6f16-791a-3a26-4c72"
-      },
-      {
-        "name": "Loud Hailers",
-        "id": "267f-53d8-b00c-7da8",
-        "description": "When a model with this wargear has the Fear (1) special rule.",
-        "hidden": false,
-        "page": "8",
         "publicationId": "6f16-791a-3a26-4c72"
       },
       {"name": "Allegiance: Our Martyred Lady", "id": "d8bf-02c6-6afc-9299", "hidden": false},
@@ -7637,15 +7458,6 @@
         ]
       },
       {
-        "name": "Linked Storm Bolter",
-        "id": "92e8-85e6-f26b-7361",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Linked Storm Bolter", "id": "1302-bf8f-f0f2-dea6", "hidden": false, "targetId": "9d78-b288-c147-203c", "type": "profile"}]
-      },
-      {
         "name": "Plasma Pistol",
         "id": "8af0-f277-c6aa-72d9",
         "collective": true,
@@ -7890,15 +7702,6 @@
           {"name": "Condemnor Boltpistol (stake)", "id": "3417-23c6-2cb2-3689", "hidden": false, "targetId": "f677-b47c-2138-f792", "type": "profile"},
           {"name": "Condemnor Boltpistol (Boltgun)", "id": "fec9-91b3-b429-6f4e", "hidden": false, "targetId": "d198-9506-a9a0-2898", "type": "profile"}
         ]
-      },
-      {
-        "name": "Hunter-Killer Missile",
-        "id": "0499-94c0-f9d2-8410",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
-        "infoLinks": [{"name": "Hunter-Killer Missile", "id": "0907-1795-b7f1-eadb", "hidden": false, "targetId": "ef24-451c-94f0-afce", "type": "profile"}]
       },
       {
         "name": "Celestians",
@@ -9192,639 +8995,6 @@
         ]
       },
       {
-        "name": "Paragon Warsuits",
-        "id": "0f84-0fdb-7cdb-76e6",
-        "hidden": false,
-        "import": true,
-        "page": "54",
-        "publicationId": "6f16-791a-3a26-4c72",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "[Order]", "id": "c3a4-2df4-6b73-2367", "hidden": false, "primary": false, "targetId": "d4d2-9552-882f-a8c9"},
-          {"name": "Faction: Sisters of Battle", "id": "9e39-a449-bc51-6dea", "hidden": false, "primary": false, "targetId": "0832-420b-92b7-e210"},
-          {"name": "Imperium", "id": "60d8-66ce-c7af-a7ff", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Infantry", "id": "dff7-6821-b5a8-1c12", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Paragon Warsuit", "id": "2847-6493-69e1-1db4", "hidden": false, "primary": false, "targetId": "ee22-1e0b-4930-ea68"},
-          {"name": "M36", "id": "b739-cf55-53c2-8a21", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
-          {"name": "Adeptus Sororitas", "id": "45cc-cce6-3ad4-093c", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"},
-          {"name": "Vetrans", "id": "f576-7105-8ef0-fb2b", "hidden": false, "primary": false, "targetId": "6ce5-b373-d16a-52f6"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 63}],
-        "infoGroups": [
-          {
-            "name": "Allegiance",
-            "id": "c581-0113-7c04-2652",
-            "hidden": false,
-            "infoGroups": [
-              {
-                "name": "Ebon Chalice",
-                "id": "c6a1-1bdf-99a7-50bc",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "a7ce-ca7f-1478-74a7",
-                        "childName": "Ebon Chalice",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Cleanse with Fire",
-                    "id": "3ad9-40a7-470c-5040",
-                    "description": "All Ebon Chalice units in your army gain the +1 to their Strength characteristic on all ‘Flamer’ weapons they are equipped with. For the purposes of this special rule a ‘Flamer’ weapon is any weapon listed Flamer category of the weapon section.",
-                    "hidden": false
-                  },
-                  {
-                    "name": "First of the Brides",
-                    "id": "bfed-a863-5092-5e31",
-                    "description": "Ebon Chalice armies may not include Cult Ministorum units and may not use\nthe Zealous Congregation Rite of War.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Argent Shroud",
-                "id": "bf44-3089-5750-6152",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "6b62-52a9-7225-9aeb",
-                        "childName": "Argent Shroud",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Deeds, Not Words",
-                    "id": "323d-2157-e8ea-f887",
-                    "description": "If your army is Argent Shroud, you do not generate any Faith Points from units with the Faith special rule in your army during the first battle round unless obtained via Relic Wargear.",
-                    "hidden": false
-                  },
-                  {
-                    "name": "Devout Belief",
-                    "id": "1c30-9983-3a8e-379e",
-                    "description": "Increase all Argent Shroud units’ Invulnerable saves by 1 from Shield of Faith special rule to a max of 4+. In addition, Argent Shroud units gain the Deny the Witch special rule.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Bloody Rose",
-                "id": "47c8-a2fc-c6b2-fd70",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "391e-ba30-7832-382b",
-                        "childName": "Bloody Rose",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {"name": "Quick to Anger", "id": "7eb4-6737-e81d-567c", "description": "Bloody Rose units gain the Frenzy special rules.", "hidden": false},
-                  {"name": "Impatient Fighters", "id": "3499-03e8-fec9-c2d3", "description": "Bloody Rose units may not set to Overwatch", "hidden": false}
-                ]
-              },
-              {
-                "name": "Our Martyred Lady",
-                "id": "5608-8347-eb8e-7457",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditionGroups": [
-                      {
-                        "type": "and",
-                        "conditions": [
-                          {
-                            "childId": "b1a3-4204-9c52-8cc1",
-                            "childName": "[Our Martyred Lady]",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "unit",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          },
-                          {
-                            "childId": "7971-043d-2982-8608",
-                            "childName": "Our Martyred Lady",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "roster",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Blood of Martyr’s",
-                    "id": "ac0b-6882-28b9-e948",
-                    "description": "All Our Martyred Lady Sisters of Battle, Dominions and Retributors units in your army gain the Martyrdom special rule.",
-                    "hidden": false
-                  },
-                  {
-                    "name": "Unto Death",
-                    "id": "4676-2e34-8507-d08a",
-                    "description": "Our Martyred Lady units may not perform Retreat moves in the Movement Phase.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Sacred Rose",
-                "id": "bcb3-7f62-8419-c3b3",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "b390-7f50-e40d-e8f0",
-                        "childName": "Sacred Rose",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {"name": "Meditative State", "id": "3912-90b3-51ec-d9c3", "description": "Sacred Rose units have -2” to all Charge rolls.", "hidden": false},
-                  {
-                    "name": "Serene Grace",
-                    "id": "b718-ef35-f0ec-5feb",
-                    "description": "Sacred Rose units gain the Indomitable Spirit (4+) and Stubborn special rules.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Valorous Heart",
-                "id": "cb1d-4b42-5fbd-6681",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "efab-fc12-84b5-618f",
-                        "childName": "Valorous Heart",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {"name": "Blind Faith", "id": "ac2d-78c7-cc58-4dee", "description": "Valorous Heart units gain the Zealot special rule.", "hidden": false},
-                  {
-                    "name": "Abandoned Light",
-                    "id": "9799-dd80-cb62-7b0f",
-                    "description": "Valorous Heart units with the Martyrdom special rule must roll a D6 each time the last model is slain and removed from play. Only on a 4+ do you gain a Faith Point.",
-                    "hidden": false
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {"name": "Relentless", "id": "0261-246d-6aad-7bed", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Acts of Faith", "id": "64e4-2d70-8776-1319", "hidden": false, "targetId": "a200-8b33-29ef-3749", "type": "rule"},
-          {"name": "Shield of Faith", "id": "34b2-01a9-7678-1137", "hidden": false, "targetId": "2d05-bd56-3e0a-87b7", "type": "rule"},
-          {"name": "Martyrdom", "id": "0b37-7799-2483-c0f2", "hidden": false, "targetId": "e00d-87a4-2e5c-d758", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "5fe4-90cf-bc07-ceec", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
-        ],
-        "rules": [
-          {
-            "name": "Blind Faith",
-            "id": "1ce4-41ed-c631-2443",
-            "description": "Valorous Heart units gain the Zealot special rule.",
-            "hidden": false,
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "efab-fc12-84b5-618f",
-                    "childName": "Valorous Heart",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Paragon Superior",
-            "id": "84dd-6ee0-1056-5684",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "e6ee-b6d5-e560-e052-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "e6ee-b6d5-e560-e052-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [{"name": "Paragon War Suit", "id": "889d-1948-ade7-81df", "hidden": false, "targetId": "b27c-3428-2fd1-010c", "type": "rule"}],
-            "profiles": [
-              {
-                "name": "Paragon Superior",
-                "id": "5a49-1d16-69fc-a60f",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "8", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Heavy Bolter",
-                "id": "f456-e64a-647f-f5d6",
-                "defaultSelectionEntryId": "5af8-d412-3670-d7fb",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "d671-3e55-75f8-89de-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "d671-3e55-75f8-89de-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Multi-Melta",
-                    "id": "a3ae-a7bf-a6d8-fae6",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "90c9-36e3-ba67-2cfc",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  },
-                  {"name": "Heavy Bolter", "id": "4eac-d9f4-2236-7cae", "hidden": false, "import": true, "targetId": "78c1-9390-d6ec-04ff", "type": "selectionEntry"},
-                  {
-                    "name": "Heavy Flamer",
-                    "id": "cf8b-48ba-5d4f-1bcc",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "4b58-2b09-3805-2dab",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
-                  }
-                ]
-              },
-              {
-                "name": "Linked Storm Bolter",
-                "id": "95ff-df08-019b-6570",
-                "defaultSelectionEntryId": "5af8-d412-3670-d7fb",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "c267-1ac4-ba3b-5770-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "c267-1ac4-ba3b-5770-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Linked Grenade Launcher",
-                    "id": "84f9-94dc-451e-ff76",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "a88e-a221-d619-6cce",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  },
-                  {"name": "Linked Storm Bolter", "id": "379d-7663-5f3f-57bb", "hidden": false, "import": true, "targetId": "92e8-85e6-f26b-7361", "type": "selectionEntry"}
-                ]
-              },
-              {
-                "name": "Paragon War Blade",
-                "id": "9e4a-450f-d4e1-573d",
-                "defaultSelectionEntryId": "9123-0ba7-8a6a-6e94",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "2af7-f992-52e0-87d0-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "2af7-f992-52e0-87d0-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Paragon War Mace",
-                    "id": "13f0-ec9d-7305-9cf1",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "infoLinks": [{"name": "Paragon War Mace", "id": "ccdf-6ac7-3417-e02c", "hidden": false, "targetId": "3631-49a3-5314-15bc", "type": "profile"}]
-                  },
-                  {
-                    "name": "Paragon War Blade",
-                    "id": "a176-cde0-8cdd-7b2d",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "infoLinks": [{"name": "Paragon War Blade", "id": "3953-dd0b-a5b4-8de8", "hidden": false, "targetId": "5511-134e-95d8-580f", "type": "profile"}]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Paragon Warsuits",
-            "id": "99fd-799c-a414-448d",
-            "defaultAmount": "3",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "85c1-75d7-f7c2-ac86", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-              {"id": "bfb9-e094-41bd-d924", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 5}
-            ],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 46}],
-            "infoLinks": [{"name": "Paragon War Suit", "id": "c0a4-bdf5-8b88-0094", "hidden": false, "targetId": "b27c-3428-2fd1-010c", "type": "rule"}],
-            "profiles": [
-              {
-                "name": "Paragon Warsuits",
-                "id": "341a-f32e-5778-fb5a",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "7", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Paragon War Blade",
-                "id": "3767-aacd-06c1-652a",
-                "defaultSelectionEntryId": "9123-0ba7-8a6a-6e94",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "f4e2-fcb2-edc3-74d1-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "f4e2-fcb2-edc3-74d1-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Paragon War Mace",
-                    "id": "2cd5-a408-43e9-6f04",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "infoLinks": [{"name": "Paragon War Mace", "id": "17c2-99c1-7185-922c", "hidden": false, "targetId": "3631-49a3-5314-15bc", "type": "profile"}]
-                  },
-                  {
-                    "name": "Paragon War Blade",
-                    "id": "387a-d453-1404-220e",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "infoLinks": [{"name": "Paragon War Blade", "id": "568e-6cb1-49b1-c9b1", "hidden": false, "targetId": "5511-134e-95d8-580f", "type": "profile"}]
-                  }
-                ]
-              },
-              {
-                "name": "Linked Storm Bolter",
-                "id": "29d9-911f-107b-5579",
-                "defaultSelectionEntryId": "5af8-d412-3670-d7fb",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "6253-96f8-e953-5d56-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "6253-96f8-e953-5d56-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Linked Grenade Launcher",
-                    "id": "06e1-d4a3-161f-e7e8",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "a88e-a221-d619-6cce",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  },
-                  {"name": "Linked Storm Bolter", "id": "c000-697e-44e9-ba74", "hidden": false, "import": true, "targetId": "92e8-85e6-f26b-7361", "type": "selectionEntry"}
-                ]
-              },
-              {
-                "name": "Heavy Bolter",
-                "id": "20b5-53cc-f73c-449e",
-                "defaultSelectionEntryId": "5af8-d412-3670-d7fb",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "9987-279b-0d00-b9c6-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "9987-279b-0d00-b9c6-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Multi-Melta",
-                    "id": "e5cf-fca3-be30-a1ae",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "90c9-36e3-ba67-2cfc",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  },
-                  {"name": "Heavy Bolter", "id": "7c5c-b84b-33e2-c0ea", "hidden": false, "import": true, "targetId": "78c1-9390-d6ec-04ff", "type": "selectionEntry"},
-                  {
-                    "name": "Heavy Flamer",
-                    "id": "6c16-1822-9d0b-3d56",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "4b58-2b09-3805-2dab",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Dominions",
         "id": "d379-ee9d-3c0e-0ec6",
         "hidden": false,
@@ -10316,7 +9486,16 @@
               {"id": "1bee-4c00-c128-a784-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
-              {"name": "Hunter-Killer Missile", "id": "b313-211e-bb17-d406", "hidden": false, "import": true, "targetId": "0499-94c0-f9d2-8410", "type": "selectionEntry"},
+              {
+                "name": "Hunter-Killer Missile",
+                "id": "b313-211e-bb17-d406",
+                "hidden": false,
+                "import": true,
+                "targetId": "1a9c-6ba1-bbb9-0abb",
+                "type": "selectionEntry",
+                "constraints": [{"id": "ccec-3b89-e550-7b03", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}]
+              },
               {"name": "Smoke Launchers", "id": "48ce-eba5-615a-3a12", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {"name": "Searchlight", "id": "975b-32de-70c1-7418", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
               {

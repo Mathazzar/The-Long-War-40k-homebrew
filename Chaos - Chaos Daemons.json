@@ -5750,49 +5750,7 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 135}],
         "entryLinks": [
-          {
-            "name": "Psychic Powers",
-            "id": "f988-983e-9eef-ad3d",
-            "hidden": false,
-            "import": true,
-            "targetId": "b112-82f8-c4f4-5ade",
-            "type": "selectionEntryGroup",
-            "entryLinks": [
-              {"name": "Warlord Trait", "id": "de73-ec5a-abb1-8c1e", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"},
-              {"name": "Psychic Powers", "id": "c2fd-8278-8957-7090", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
-              {"name": "Warlord", "id": "4096-6587-16e5-9715", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-              {"name": "Relic", "id": "e287-6dc7-a996-effe", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"}
-            ],
-            "infoLinks": [
-              {
-                "name": "Psyker (x)",
-                "id": "fc60-a5fe-c4c3-8f49",
-                "hidden": false,
-                "targetId": "dbd6-a688-796e-e22e",
-                "type": "rule",
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "4fb9-efa8-fe40-14cc",
-                        "childName": "Bale Sword",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {"name": "Character", "id": "71c1-4b88-f5f0-c045", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
-            ]
-          },
+          {"name": "Psychic Powers", "id": "f988-983e-9eef-ad3d", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
           {"name": "Warlord", "id": "b170-187d-6a27-5392", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
           {
             "name": "Warp Tether",
@@ -6933,6 +6891,27 @@
                 "constraints": [
                   {"id": "8d79-2fcb-2236-bc0c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "8d79-2fcb-2236-bc0c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Daemonettes",
+                "id": "1b73-3fa3-292a-9b30",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
                 ]
               }
             ]
@@ -11795,7 +11774,7 @@
       {
         "name": "Daemonic Instability",
         "id": "93c5-6fd7-fc6c-82ce",
-        "description": "A unit with this rule gains the Daemon Keyword. The Daemon unit has a 5+ Invulnerable save and the Fear (1) special rule. Daemon units have +1” to their Movement (M) characteristic. (This is included in unit data sheets that have the Daemon special rule by default)",
+        "description": "When a unit with this special rule fails a Panic test, instead of falling back the unit begins to flicker out of existence. Instead of Falling Back, the unit suffers D3 wounds with no saves of any kind which cannot be ignored. The unit then continues as normal as if it passed the Panic test.",
         "hidden": false,
         "page": "5",
         "publicationId": "b30d-99de-ef25-ed03"
@@ -12005,7 +11984,6 @@
       {
         "name": "Wings",
         "id": "32f6-d80e-0d93-0348",
-        "collective": true,
         "defaultAmount": "1",
         "hidden": false,
         "import": true,

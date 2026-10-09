@@ -3425,7 +3425,7 @@
                   },
                   {"name": "Plasma Gun", "id": "184f-a506-b281-0462", "hidden": false, "import": true, "targetId": "db58-d2e2-0963-74bd", "type": "selectionEntry"},
                   {"name": "Meltagun", "id": "092b-8560-c0e5-4ec9", "hidden": false, "import": true, "targetId": "6186-a63d-2245-c4bb", "type": "selectionEntry"},
-                  {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "c182-edc4-2773-442f", "type": "selectionEntry"},
+                  {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "958b-0867-67db-e40a", "type": "selectionEntry"},
                   {"name": "Astartes Shotgun", "id": "164c-0a72-defc-f68a", "hidden": false, "import": true, "targetId": "f426-979e-1b34-e351", "type": "selectionEntry"}
                 ],
                 "selectionEntries": [
