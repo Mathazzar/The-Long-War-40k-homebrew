@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 3,
+    "revision": 5,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -272,7 +272,6 @@
         ]
       },
       {"name": "Legion of the Damned", "id": "47cf-65da-c278-1ba0", "hidden": false},
-      {"name": "Daemon", "id": "5c4c-6cec-0e4c-b958", "comment": "todo: merge with C:D copy", "hidden": false},
       {"name": "Vindicare Assassin", "id": "67f6-08cc-b0c0-8169", "hidden": false},
       {"name": "Adeptus Assassinorum", "id": "3e4e-690f-8189-0b35", "hidden": false},
       {"name": "Eversor Assassin", "id": "0c2e-ee2b-be6a-da61", "hidden": false},
@@ -8587,7 +8586,7 @@
           {"name": "M42+", "id": "4be4-373a-4651-db87", "hidden": false, "primary": false, "targetId": "f012-d96a-f2a8-de0c"},
           {"name": "[Ordo Xenos]", "id": "cb94-572d-a8b6-3179", "hidden": false, "primary": false, "targetId": "b352-a3f4-ae65-d292"},
           {"name": "Unique", "id": "202c-69cf-391a-8792", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "Inquisitor Kyria Draxus", "id": "2b8d-9fa6-71ec-7ea4", "hidden": false, "primary": false, "targetId": "842e-12a5-4df8-7eda"}
+          {"name": "Inquisitor Draxus", "id": "2b8d-9fa6-71ec-7ea4", "hidden": false, "primary": false, "targetId": "842e-12a5-4df8-7eda"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 110}],
         "entryLinks": [
@@ -13871,7 +13870,7 @@
           {"name": "Faction: Space Marines", "id": "5fb6-37c6-ec6a-c9f2", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
           {"name": "Legion of the Damned", "id": "2351-0bda-a754-dedb", "hidden": false, "primary": false, "targetId": "47cf-65da-c278-1ba0"},
           {"name": "Elite", "id": "3c18-9e33-d7fc-bd82", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
-          {"name": "Daemon", "id": "829f-944b-bed7-6981", "hidden": false, "primary": false, "targetId": "5c4c-6cec-0e4c-b958"}
+          {"name": "Daemon", "id": "cd96-9aa3-f3d6-9c3d", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
         "infoLinks": [
@@ -20248,7 +20247,7 @@
               }
             ]
           },
-          {"field": "category", "type": "add", "value": "544d-0eb3-a4ab-4540"}
+          {"field": "category", "scope": "unit", "type": "add", "value": "544d-0eb3-a4ab-4540"}
         ]
       },
       {

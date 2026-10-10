@@ -1,0 +1,931 @@
+{
+  "catalogue": {
+    "name": "Xenos - Ynnari Eldar",
+    "id": "65c6-1042-18e2-6373",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 12,
+    "library": false,
+    "revision": 2,
+    "type": "catalogue",
+    "catalogueLinks": [
+      {"name": "Xenos - Craftworld Eldar", "id": "fe48-8901-73d5-b19c", "importRootEntries": false, "targetId": "2b4a-c7d5-3030-6002", "type": "catalogue"},
+      {"name": "Xenos - Dark Eldar", "id": "cb45-980b-bbd6-a62f", "importRootEntries": false, "targetId": "4263-1bad-6fa8-e501", "type": "catalogue"}
+    ],
+    "categoryEntries": [
+      {"name": "Yvraine, Herald of Ynnead", "id": "ca05-ad18-c4c3-36c6", "hidden": false},
+      {"name": "Visarch", "id": "4f86-78b1-6f7a-1fde", "hidden": false},
+      {"name": "The Yncarne, Avatar of Ynnead", "id": "b8ab-8013-6b6d-290b", "hidden": false}
+    ],
+    "selectionEntries": [
+      {
+        "name": "Rite of War",
+        "id": "8e44-1fb1-6be0-39e9",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Rite of War", "id": "e4f3-ed06-5760-4b50", "hidden": false, "primary": true, "targetId": "be3a-e529-69f3-b6b9"}],
+        "constraints": [
+          {
+            "id": "31ba-e136-c57a-89e3-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "31ba-e136-c57a-89e3-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ynnari Sect",
+            "id": "030f-4220-046c-2a45",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "page": "26",
+            "publicationId": "00c7-1ca1-5217-deec",
+            "type": "upgrade",
+            "constraints": [
+              {"id": "39cb-3706-ddd1-fbfa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "39cb-3706-ddd1-fbfa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yvraine, Herald of Ynnead",
+        "id": "f4ce-44d3-6d39-47ba",
+        "hidden": false,
+        "import": true,
+        "page": "28",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Faction: Ynnari", "id": "2a4b-1f19-663c-952e", "hidden": false, "primary": false, "targetId": "62e1-2ef6-a107-a32f"},
+          {"name": "HQ", "id": "8e98-1e73-46f5-37dd", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Psyker", "id": "80f8-30f6-9787-4458", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
+          {"name": "Infantry", "id": "60be-21e0-b16f-b9a8", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Unique", "id": "0781-3a1f-9f09-78a2", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Yvraine, Herald of Ynnead.", "id": "dc4c-0b51-7941-75f6", "hidden": false, "primary": false, "targetId": "ca05-ad18-c4c3-36c6"},
+          {"name": "Eldar", "id": "3a1b-68a8-d458-fdde", "hidden": false, "primary": false, "targetId": "81ca-5e36-e460-bc33"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "5539-ef0f-ba84-7bb4", "hidden": false, "import": true, "targetId": "413a-0d7d-82cd-ec9a", "type": "selectionEntry"},
+          {"name": "Revenant Disciplline", "id": "d0d8-525d-5408-9d5e", "hidden": false, "import": true, "targetId": "4e22-33e9-8a30-d4d5", "type": "selectionEntryGroup"},
+          {
+            "name": "Favoured of Ynnead",
+            "id": "8225-7575-38ef-f23a",
+            "hidden": false,
+            "import": true,
+            "targetId": "1a9d-1630-7672-d4ac",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "d77f-6d9d-b930-7262-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "d77f-6d9d-b930-7262-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "d77f-6d9d-b930-7262-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "d77f-6d9d-b930-7262-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "66fd-3c53-73f2-cd4e", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Strength from Death", "id": "763b-7eed-16bc-e0d3", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"},
+          {"name": "Strength from Death", "id": "1b9e-5dd2-9401-807c", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"},
+          {"name": "She Who Thirsts", "id": "db45-15a4-bde0-31ec", "hidden": false, "targetId": "3189-d509-57a0-892d", "type": "rule"},
+          {"name": "Night Vision", "id": "c065-828d-d7b1-ecbd", "hidden": false, "targetId": "ab1c-d9d1-a94e-fefc", "type": "rule"},
+          {"name": "Fleet", "id": "489e-c556-8525-bfdd", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
+          {"name": "Psyker (x)", "id": "738e-0ffb-23cf-8944", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+        ],
+        "rules": [
+          {"name": "Dodge (4+)", "id": "e8e3-ec13-09c8-621a", "description": "This unit has a 4+ Feel no Pain when engaged in Combat.", "hidden": false},
+          {
+            "name": "Herald of Ynnead",
+            "id": "15f4-3f24-fe97-2e3f",
+            "description": "When this unit benefits from the Strength from Death special rule, it gains +1 to its Weapon Skill (WS) characteristic in addition to other bonuses.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Yvraine",
+            "id": "f7ea-76ca-154e-868a",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "5de0-1b6d-3352-e842-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "5de0-1b6d-3352-e842-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Close Combat Weapons",
+                "id": "88bc-a791-459e-e342",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ba4d-218f-3817-c775",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "77b3-5958-6208-6365-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "77b3-5958-6208-6365-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Yvraine",
+                "id": "b518-7d8e-83a1-4d6a",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "7", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "8", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Kha-vir, The Sword of Sorrows",
+                "id": "8130-f82d-2008-c673",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "54f8-8377-e59a-45fb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "54f8-8377-e59a-45fb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Kha-vir, The Sword of Sorrows",
+                    "id": "b742-1c50-95f7-9ec1",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Rending (6+), Sorrow", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Runesuit",
+                "id": "0a5f-54fc-002b-dcda",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "3043-b40f-ba92-7393-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3043-b40f-ba92-7393-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "rules": [{"name": "Runesuit", "id": "f56b-7b88-18fc-d1be", "description": "A model equipped with this wargear has a 4+ Invulnerable Save.", "hidden": false}]
+              },
+              {
+                "name": "Gyrinx Familiar",
+                "id": "82fd-b961-b882-4deb",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "a122-44e5-7cbf-5be0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a122-44e5-7cbf-5be0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "rules": [
+                  {
+                    "name": "Gyrinx Familiar",
+                    "id": "8227-4b85-f84d-2dbe",
+                    "description": "Once per Battle Round, when this unit would suffer a Peril of the Warp, the Peril result is treated as having rolled a 1 on the chart.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Visarch",
+        "id": "f38b-144b-bb15-fbe1",
+        "hidden": false,
+        "import": true,
+        "page": "29",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "dcb5-36a8-0ac3-d9d1", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "99a1-c9c3-033c-795d", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Faction: Ynnari", "id": "4d4c-1bde-884c-b418", "hidden": false, "primary": false, "targetId": "62e1-2ef6-a107-a32f"},
+          {"name": "Unique", "id": "f118-7374-d08b-3dc5", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "Visarch", "id": "8e3b-7b4a-34e5-5bca", "hidden": false, "primary": false, "targetId": "4f86-78b1-6f7a-1fde"},
+          {"name": "Eldar", "id": "1f9b-02f8-5eac-497f", "hidden": false, "primary": false, "targetId": "81ca-5e36-e460-bc33"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 120}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "01d6-4d0c-cabc-fdb3", "hidden": false, "import": true, "targetId": "413a-0d7d-82cd-ec9a", "type": "selectionEntry"},
+          {
+            "name": "Master of Death",
+            "id": "69f5-061b-d858-3834",
+            "hidden": false,
+            "import": true,
+            "targetId": "1e02-dc61-96a4-beae",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "3245-eba1-388d-b4dd-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "3245-eba1-388d-b4dd-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "3245-eba1-388d-b4dd-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "3245-eba1-388d-b4dd-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "a89e-5f4d-36fd-f93a", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Strength from Death", "id": "3561-00e0-7462-acf1", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"},
+          {"name": "Strength from Death", "id": "c461-31de-d0d5-3d69", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"},
+          {"name": "She Who Thirsts", "id": "977f-1276-325e-b334", "hidden": false, "targetId": "3189-d509-57a0-892d", "type": "rule"},
+          {"name": "Night Vision", "id": "7630-42ae-1dd2-abc2", "hidden": false, "targetId": "ab1c-d9d1-a94e-fefc", "type": "rule"},
+          {"name": "Fleet", "id": "254e-6aa2-fd23-b1c5", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
+          {"name": "Furious Charge (x)", "id": "3633-c81a-f9ee-cb89", "hidden": false, "targetId": "7c71-ce9d-5649-36e8", "type": "rule"}
+        ],
+        "rules": [
+          {
+            "name": "Warden of Yvraine",
+            "id": "d2fa-9291-abfd-9651",
+            "description": "During deployment, if Yvraine, the Herald of Ynnead is in your army, you may permanently attach this unit to Yvraine, Herald of Ynnead. The two are now treated as 1 unit. This does not prevent the unit from Attaching to other eligible units during Deployment or the battle.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Visarch",
+            "id": "6167-9776-34d0-a2b9",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "19f9-2a2b-4cc3-5dc2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "19f9-2a2b-4cc3-5dc2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Visarch",
+                "id": "f613-ef20-d47a-a15c",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Asu-Var, The Sword of Silent Screams",
+                "id": "5c40-8fb0-9e4e-eb1a",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "8c96-c38b-9329-7c1c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "8c96-c38b-9329-7c1c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Asu-Var, The Sword of Silent Screams",
+                    "id": "8eb8-75b3-5721-ef7d",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Two-Handed, Silence", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ancient Warsuit",
+                "id": "3439-40cc-9cfe-ce1c",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "4339-796d-8377-f430-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "4339-796d-8377-f430-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "rules": [
+                  {
+                    "name": "Ancient Warsuit",
+                    "id": "acb0-3d0c-e055-7c53",
+                    "description": "A model equipped with this wargear has a 2+ Armour save and a 4+ Invulnerable Save.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Yncarne, Avatar of Ynnead",
+        "id": "bf6c-7665-7042-331a",
+        "hidden": false,
+        "import": true,
+        "page": "30",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Faction: Ynnari", "id": "1da3-d8db-2b2d-838b", "hidden": false, "primary": false, "targetId": "62e1-2ef6-a107-a32f"},
+          {"name": "Lord of War", "id": "fb84-efe5-7837-04c4", "hidden": false, "primary": true, "targetId": "acad-b629-5cd8-4c1f"},
+          {"name": "Primarch", "id": "6929-118d-31cb-d386", "hidden": false, "primary": false, "targetId": "256a-69fd-5b7a-de80"},
+          {"name": "Psyker", "id": "6525-1942-668f-ee7b", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
+          {"name": "Unique", "id": "d0c7-43f4-736d-a75a", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "The Yncarne, Avatar of Ynnead", "id": "b209-1d07-7891-c2f4", "hidden": false, "primary": false, "targetId": "b8ab-8013-6b6d-290b"},
+          {"name": "Daemon", "id": "3e82-4356-3e5a-59dc", "hidden": false, "primary": false, "targetId": "0ce8-e702-158f-a98d"},
+          {"name": "Eldar", "id": "d221-fec6-b506-2b00", "hidden": false, "primary": false, "targetId": "81ca-5e36-e460-bc33"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 235}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "d2ed-8eb6-29b4-1281", "hidden": false, "import": true, "targetId": "413a-0d7d-82cd-ec9a", "type": "selectionEntry"},
+          {"name": "Revenant Disciplline", "id": "45c9-0b09-120b-7ad7", "hidden": false, "import": true, "targetId": "4e22-33e9-8a30-d4d5", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "0860-a844-2dc6-1a95", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Strength from Death", "id": "838e-a3fa-fa2d-ef85", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"},
+          {"name": "She Who Thirsts", "id": "cf25-f382-5519-a500", "hidden": false, "targetId": "3189-d509-57a0-892d", "type": "rule"},
+          {"name": "Bulky (x)", "id": "5b1e-f57a-023d-1ffd", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Relentless", "id": "5cd6-5cbb-3260-0d4b", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Regeneration", "id": "e784-11f4-b751-ac25", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Move through Cover", "id": "d8c3-5343-97dc-802c", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Battle Hardened", "id": "cb74-1a30-46cc-9b51", "hidden": false, "targetId": "7b47-5df7-aa9c-4f63", "type": "rule"},
+          {"name": "Stubborn", "id": "b21c-68f8-2f05-306a", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "7f35-51ce-f392-c132", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
+          {"name": "Daemon", "id": "9953-5f98-cb20-8b00", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
+          {"name": "Psyker (x)", "id": "4eee-79bd-3d6d-b4ae", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Preferred enemy (x)", "id": "0486-b2d5-9985-038e", "hidden": false, "targetId": "da65-1f63-3fee-610a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Gaze of Ynnead",
+            "id": "972a-a74d-6e9b-d070",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Psychic Weapon, Bane", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Inevitable Death",
+            "id": "147b-31f1-63bf-2882",
+            "description": "Once per Battle Round, when any unit on the Battlefield would be slain and removed from play or become a wreck, before removing the model, you may remove the Yncarne from the battlefield. Place the Yncarne back on the Battlefield anywhere within 6” of the slain/wrecked model and then remove any slain models.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "The Yncarne, Avatar of Ynnead",
+            "id": "510c-a484-8319-8d71",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "0841-e645-6fc5-a33c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0841-e645-6fc5-a33c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "The Yncarne, Avatar of Ynnead",
+                "id": "5b11-09fe-b818-a589",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "7", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "8", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "5", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "6", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "10", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Spirit Storm",
+                "id": "036a-66f4-0f4b-e11c",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "172e-39bf-6448-e681-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "172e-39bf-6448-e681-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "rules": [{"name": "Spirit Storm", "id": "3cfa-12bd-be78-d4df", "description": "This model has a 3+ Armour Save.", "hidden": false}]
+              },
+              {
+                "name": "Vilith-Zar, The Sword of Souls",
+                "id": "749e-00d3-49ca-36bb",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "4526-82b3-d786-ff6a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "4526-82b3-d786-ff6a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Vilith-Zar, The Sword of Souls",
+                    "id": "e5d3-bc36-fc30-2c2b",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Murderous Strike (2+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Avatar of Ynnead",
+            "id": "6b95-18a4-ff88-0cc7",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "1bd0-28ba-5ece-7731-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "1bd0-28ba-5ece-7731-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "1bd0-28ba-5ece-7731-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "1bd0-28ba-5ece-7731-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Avatar of Ynnead",
+                "id": "d322-0aa1-7810-a957",
+                "description": "Ynnari Eldar units which can draw visibility to this model may use its Leadership (LD) characteristic instead of their own. In addition, the unit gains the Gaze of Ynnead Psychic Weapon.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Strength from Death",
+        "id": "a5d2-f6a4-2795-cf0a",
+        "description": "In a turn in which any unit dies (friend or foe), a unit with this special rule gains +1 to their Strength (S) and Toughness (T) characteristics until the start of the next turn.",
+        "hidden": false
+      },
+      {
+        "name": "Sorrow",
+        "id": "7cc1-e51a-d650-51c2",
+        "description": "If a unit suffers an un-saved wound inflicted by this weapon, it must make a Panic Test regardless of whether the target units side won the Combat.",
+        "hidden": false
+      },
+      {
+        "name": "Silence",
+        "id": "f210-f5e4-2497-d512",
+        "description": "A unit which suffers 1 or more hits from a weapon with this special rule halves their Leadership (LD) characteristic until the end of the Phase. In addition, units hit by this weapon do not gain the benefit of the Stubborn special rule.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Favoured of Ynnead",
+        "id": "1a9d-1630-7672-d4ac",
+        "hidden": false,
+        "import": true,
+        "page": "27",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Favoured of Ynnead",
+            "id": "8e67-8b9c-e9d2-ad3c",
+            "description": "A unit with this Warlord Trait and any attached unit always count as gaining the benefit of the Strength from Death.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Master of Death",
+        "id": "1e02-dc61-96a4-beae",
+        "hidden": false,
+        "import": true,
+        "page": "27",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "affects": "profiles.Melee Weapons",
+                "field": "ba87-19e9-d692-6e30",
+                "join": ", ",
+                "skipIfPresent": "Murderous Strike (6+)",
+                "type": "append",
+                "value": "Murderous Strike (6+)"
+              },
+              {
+                "affects": "profiles.Ranged Weapons",
+                "field": "ba87-19e9-d692-6e30",
+                "join": ", ",
+                "skipIfPresent": "Murderous Strike (6+)",
+                "type": "append",
+                "value": "Murderous Strike (6+)"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master of Death",
+            "id": "cd32-3e71-90fe-970b",
+            "description": "A model with this warlord trait gains the Murderous Strike (6+) on all weapons they are equipped with.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Lord of Rebirth",
+        "id": "590d-9294-7a0f-d9f1",
+        "hidden": false,
+        "import": true,
+        "page": "27",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Lord of Rebirth",
+            "id": "97f9-e270-8b08-a768",
+            "description": "A model with this trait gains the Regeneration and Feel no Pain (5+) special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Warlord",
+        "id": "413a-0d7d-82cd-ec9a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7c27-9500-6dc4-0b60", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "b3e0-43fb-c83f-d454", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "544d-0eb3-a4ab-4540"}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Revenant Disciplline",
+        "id": "4e22-33e9-8a30-d4d5",
+        "hidden": false,
+        "page": "27",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "selectionEntries": [
+          {
+            "name": "Storm of Whispers (Psychic Weapon)",
+            "id": "b206-4f8a-2c08-16f9",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "5753-8902-c89b-374c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "profiles": [
+              {
+                "name": "Storm of Whispers",
+                "id": "4bd6-d6cb-a67d-e60e",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "6", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Ignores Cover, Pinning, Psychic Weapon", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ancestors Grace (Psychic Power)",
+            "id": "8c53-e7d5-57d1-5433",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "840f-3370-d94c-6523", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Ancestors Grace",
+                "id": "c8df-68b5-415e-0e8d",
+                "description": "When this power is cast, select a single friendly unit within 24” of the Psyker. That unit counts as gaining the benefit of the Strength from Death special rule until the start of your next Shooting Phase even if no units were slain and removed from play this turn.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Word of the Pheonix (Psychic Power)",
+            "id": "f81f-b1f9-1aef-af1d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "f126-4039-f2db-33e2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Word of the Pheonix",
+                "id": "2241-86b0-70a1-4746",
+                "description": "When this power is cast, select a single friendly Infantry, Automata or Monster unit within 24” of the Psyker. One model in the target unit heals 1 wound. If the unit has no wounds to be healed, the unit regains 1 lost model with 1 wound remaining.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Shield of Ynnead (Psychic Power)",
+            "id": "738b-5a18-cdbf-6f51",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "11cf-5360-ddf2-f41a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "rules": [
+              {
+                "name": "Shield of Ynnead",
+                "id": "2c4b-8f16-30fe-4813",
+                "description": "When this power is cast, the Psyker and any attached unit gain a 4+ Invulnerable save until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Warlord Trait",
+        "id": "de95-dbf0-eef5-0bed",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "d8d3-199e-fdec-a1b7",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "Master of Death", "id": "fba3-1ccb-da98-fc5a", "hidden": false, "import": true, "targetId": "1e02-dc61-96a4-beae", "type": "selectionEntry"},
+          {"name": "Favoured of Ynnead", "id": "cda3-f288-aaad-cfac", "hidden": false, "import": true, "targetId": "1a9d-1630-7672-d4ac", "type": "selectionEntry"},
+          {"name": "Lord of Rebirth", "id": "b92f-9c3e-6ec7-4234", "hidden": false, "import": true, "targetId": "590d-9294-7a0f-d9f1", "type": "selectionEntry"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "544d-0eb3-a4ab-4540",
+                "childName": "Warlord",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

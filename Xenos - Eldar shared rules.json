@@ -1,0 +1,23 @@
+{
+  "catalogue": {
+    "name": "Xenos - Eldar shared rules",
+    "id": "7205-e9d7-ba5c-b84c",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 12,
+    "library": true,
+    "revision": 2,
+    "type": "catalogue",
+    "categoryEntries": [{"name": "Eldar", "id": "81ca-5e36-e460-bc33", "hidden": false}],
+    "sharedRules": [
+      {
+        "name": "She Who Thirsts",
+        "id": "3189-d509-57a0-892d",
+        "description": "Eldar units with this special rule have the Hatred (Slaanesh) special rule.",
+        "hidden": false,
+        "page": "3",
+        "publicationId": "00c7-1ca1-5217-deec"
+      }
+    ]
+  }
+}

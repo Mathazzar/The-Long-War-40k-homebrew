@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 10,
+    "revision": 11,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -3462,7 +3462,34 @@
               {"id": "55f8-15be-1883-4148-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
           },
-          {"name": "Force Organization: Troop", "id": "c978-b71b-7079-a6d1", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "c978-b71b-7079-a6d1",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "4a8a-9281-39fd-6b93", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoGroups": [
@@ -3698,7 +3725,34 @@
               {"id": "f7d0-7b41-066d-9f01-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
           },
-          {"name": "Force Organization: Troop", "id": "f0e2-eea6-fb74-1b04", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "f0e2-eea6-fb74-1b04",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoGroups": [{"name": "Allegiance", "id": "bbac-b53e-e578-26c0", "hidden": false, "infoGroups": [{"name": "Red Scorpions", "id": "83c0-b97a-4b55-54bb", "hidden": false}]}],
         "infoLinks": [
@@ -4162,7 +4216,34 @@
         "entryLinks": [
           {"name": "Sub Commander", "id": "3753-001a-1ae6-89a1", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"},
           {"name": "Warlord", "id": "a08c-d33b-fe85-5aaf", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "537e-7142-0f28-ec48", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "537e-7142-0f28-ec48",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "75b0-851e-8c1c-b255", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoGroups": [{"name": "Allegiance", "id": "9104-0afe-55fe-11a3", "hidden": false, "infoGroups": [{"name": "Red Scorpions", "id": "aae4-c8b4-9619-e442", "hidden": false}]}],
@@ -4413,7 +4494,34 @@
         "entryLinks": [
           {"name": "Warlord", "id": "5816-2c2c-bb18-6319", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
           {"name": "Master of Command", "id": "f8e3-9de8-f370-a96a", "hidden": false, "import": true, "targetId": "9ac7-8a44-d62f-19b9", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "fa89-c319-ff42-e82e", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "fa89-c319-ff42-e82e",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "fa42-5b5f-3cf6-6837", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoGroups": [{"name": "Allegiance", "id": "01c0-f8d2-1861-85cd", "hidden": false, "infoGroups": [{"name": "Red Scorpions", "id": "4251-4d89-3d79-7999", "hidden": false}]}],
@@ -4718,7 +4826,34 @@
         "entryLinks": [
           {"name": "Master of Command", "id": "1580-1d19-9b14-1704", "hidden": false, "import": true, "targetId": "9ac7-8a44-d62f-19b9", "type": "selectionEntry"},
           {"name": "Warlord", "id": "c0eb-47ae-5dac-4504", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "d941-00d0-ffb6-6b42", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "d941-00d0-ffb6-6b42",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoGroups": [
           {
@@ -4959,7 +5094,34 @@
         "entryLinks": [
           {"name": "Master of Command", "id": "21e0-0dbb-9667-566c", "hidden": false, "import": true, "targetId": "9ac7-8a44-d62f-19b9", "type": "selectionEntry"},
           {"name": "Warlord", "id": "67a7-d4c5-0459-db17", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "ed7c-90ef-0177-c9a1", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "ed7c-90ef-0177-c9a1",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "657d-0b6d-e044-9e6b", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoGroups": [
@@ -5186,7 +5348,34 @@
         "entryLinks": [
           {"name": "Warlord", "id": "e87f-21b8-baf4-a0ac", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
           {"name": "Master of Command", "id": "4577-8ffe-c01c-929b", "hidden": false, "import": true, "targetId": "9ac7-8a44-d62f-19b9", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "a933-29f7-36ba-bcc5", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "a933-29f7-36ba-bcc5",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoGroups": [
           {
@@ -5408,7 +5597,34 @@
         "entryLinks": [
           {"name": "Master of Command", "id": "c76f-3b6c-0727-05a7", "hidden": false, "import": true, "targetId": "9ac7-8a44-d62f-19b9", "type": "selectionEntry"},
           {"name": "Warlord", "id": "0f36-3c04-dbd9-4075", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "cd33-1d6a-c9f0-54fb", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "cd33-1d6a-c9f0-54fb",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoGroups": [
           {
@@ -5588,7 +5804,34 @@
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 145}],
         "entryLinks": [
           {"name": "Warlord", "id": "17f7-4d60-05dc-65b5", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "ed67-3289-b770-2f3f", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "ed67-3289-b770-2f3f",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "2078-e1f0-e339-5b96", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoGroups": [
@@ -8151,7 +8394,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "4157-892b-8b2b-0bc8", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "4157-892b-8b2b-0bc8",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "ad02-6547-29ce-a64f", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -9298,7 +9568,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 27}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "90d1-a52c-d645-73a7", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "90d1-a52c-d645-73a7",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "9012-f172-6270-4d3a", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
@@ -11536,7 +11833,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 47}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "11e0-a135-5fc0-2927", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "11e0-a135-5fc0-2927",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Deep Strike", "id": "68aa-a162-6585-1dca", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -14770,7 +15094,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 44}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "5145-0861-2dc6-b6ff", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "5145-0861-2dc6-b6ff",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "0c03-9532-a658-e71b", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -14952,7 +15303,7 @@
             "id": "2579-656f-59ea-8472",
             "hidden": false,
             "import": true,
-            "targetId": "a29e-a903-a853-cda5",
+            "targetId": "1e8e-a64f-440c-fe54",
             "type": "selectionEntry",
             "modifiers": [
               {
@@ -15908,7 +16259,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}],
         "entryLinks": [
-          {"name": "Force Organization: Elite", "id": "d602-21df-b1ce-9cce", "hidden": false, "import": true, "targetId": "14ad-1afd-a362-f5d2", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Elite",
+            "id": "d602-21df-b1ce-9cce",
+            "hidden": false,
+            "import": true,
+            "targetId": "c9f9-3940-2fc2-709e",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "6e72-4078-45eb-91e2",
+                    "childName": "Armoured Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "4095-0470-7b7c-e46a", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
@@ -16291,7 +16669,7 @@
             "id": "16f1-a584-4ffb-eaf2",
             "hidden": false,
             "import": true,
-            "targetId": "5dbd-b6e0-e62a-14aa",
+            "targetId": "cd9e-d590-95bd-2dfd",
             "type": "selectionEntry",
             "modifiers": [
               {
@@ -16307,6 +16685,24 @@
                     "scope": "unit",
                     "shared": true,
                     "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -17929,7 +18325,34 @@
             "constraints": [{"id": "7cad-d98a-244f-f877", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
           },
           {"name": "Warlord", "id": "6912-6846-22c7-9137", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-          {"name": "Force Organization: Troop", "id": "21a5-e982-0b72-c648", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "21a5-e982-0b72-c648",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Support Squad", "id": "a162-53a1-9f58-6697", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
@@ -19803,7 +20226,7 @@
             "id": "7c04-7282-80ae-2b65",
             "hidden": false,
             "import": true,
-            "targetId": "5dbd-b6e0-e62a-14aa",
+            "targetId": "cd9e-d590-95bd-2dfd",
             "type": "selectionEntry",
             "modifiers": [
               {
@@ -19819,6 +20242,24 @@
                     "scope": "unit",
                     "shared": true,
                     "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -22400,7 +22841,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 12}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "d275-8c6a-74fb-c803", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "d275-8c6a-74fb-c803",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {
             "name": "Vetran",
             "id": "16c3-1175-c175-bf6a",
@@ -23592,7 +24060,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "e1e3-0b87-fa60-eca9", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "e1e3-0b87-fa60-eca9",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "000d-fcf8-41f2-626f", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -24931,7 +25426,34 @@
               }
             ]
           },
-          {"name": "Force Organization: Troop", "id": "1b1a-f7b1-d593-67cc", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "1b1a-f7b1-d593-67cc",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Sprint (x)", "id": "25dc-a129-b5ff-683b", "hidden": false, "targetId": "a60e-abf9-0bfd-1a6f", "type": "rule"},
@@ -25366,7 +25888,7 @@
             "id": "f1c2-e2b6-692f-c84d",
             "hidden": false,
             "import": true,
-            "targetId": "5dbd-b6e0-e62a-14aa",
+            "targetId": "cd9e-d590-95bd-2dfd",
             "type": "selectionEntry",
             "modifiers": [
               {
@@ -25377,6 +25899,24 @@
                   {
                     "childId": "1a89-b9e7-f553-9a7d",
                     "childName": "Raven Guard",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26387,7 +26927,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 115}],
         "entryLinks": [
-          {"name": "Force Organization: Elite", "id": "e576-40a4-5641-eb2b", "hidden": false, "import": true, "targetId": "14ad-1afd-a362-f5d2", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Elite",
+            "id": "e576-40a4-5641-eb2b",
+            "hidden": false,
+            "import": true,
+            "targetId": "c9f9-3940-2fc2-709e",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "6e72-4078-45eb-91e2",
+                    "childName": "Armoured Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Tank Commander", "id": "9d6a-959c-f888-7f68", "hidden": false, "import": true, "targetId": "e808-93a0-5aa4-0d1b", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -28157,7 +28724,7 @@
             "name": "Force Organization: Heavy Support",
             "id": "c631-1e5e-04e4-a8df",
             "hidden": false,
-            "targetId": "a29e-a903-a853-cda5",
+            "targetId": "1e8e-a64f-440c-fe54",
             "type": "selectionEntry",
             "modifiers": [
               {
@@ -28883,7 +29450,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "63c9-9fb8-3cd8-d522", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "63c9-9fb8-3cd8-d522",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "933e-718a-9ce2-0097", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -29125,7 +29719,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 29}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "06b3-414e-69d9-53f4", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "06b3-414e-69d9-53f4",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "db0b-c355-09b6-b624", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -30001,7 +30622,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "3a16-942e-3657-a30b", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "3a16-942e-3657-a30b",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "0edc-bce2-095f-750e", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -30857,7 +31505,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "fdc9-1e50-75c8-2c43", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "fdc9-1e50-75c8-2c43",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "6787-fced-c65a-3ac5", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -31680,7 +32355,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "b0ef-67eb-0793-53cf", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "b0ef-67eb-0793-53cf",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "298d-209f-d773-6922", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -32155,7 +32857,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 95}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "f547-467a-3c36-f1c1", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "f547-467a-3c36-f1c1",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "46b6-3b4a-9079-a2f2", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -32401,7 +33130,34 @@
         "constraints": [{"id": "0d66-26c8-8bb9-701b", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 110}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "36d1-58f9-c4c9-5df9", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "36d1-58f9-c4c9-5df9",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Feel no Pain", "id": "6ca0-ff77-a1b2-bd73", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
@@ -32940,7 +33696,34 @@
         "constraints": [{"id": "8a95-d9ef-6f45-fa68", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 120}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "c6d5-a3ce-3742-aef2", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "c6d5-a3ce-3742-aef2",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Feel no Pain", "id": "ba4d-bf15-11ce-66d7", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
@@ -33357,7 +34140,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 50}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "753c-fdea-2ddd-6ad5", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "753c-fdea-2ddd-6ad5",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Firing Protocols (x)", "id": "a172-30bd-3048-f916", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
@@ -34135,7 +34945,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 19}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "3fe4-969d-da58-8539", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "3fe4-969d-da58-8539",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "1f04-91ea-175b-26e3", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -35101,7 +35938,34 @@
           {"name": "Bike", "id": "5b86-fadc-ae33-83a1", "hidden": false, "primary": false, "targetId": "fa9d-896e-a495-babb"}
         ],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "f01c-a0ed-2bb5-68b9", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "f01c-a0ed-2bb5-68b9",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Vetran", "id": "7698-99cd-830a-214d", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
         ],
         "infoLinks": [
@@ -35628,7 +36492,34 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 47}],
         "entryLinks": [
-          {"name": "Force Organization: Troop", "id": "22e8-10d5-dad4-016a", "hidden": false, "import": true, "targetId": "5dbd-b6e0-e62a-14aa", "type": "selectionEntry"}
+          {
+            "name": "Force Organization: Troop",
+            "id": "22e8-10d5-dad4-016a",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "a359-8eaa-743b-0fbc", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
@@ -35922,7 +36813,7 @@
             "id": "9e84-67e1-8cfe-0273",
             "hidden": false,
             "import": true,
-            "targetId": "5dbd-b6e0-e62a-14aa",
+            "targetId": "cd9e-d590-95bd-2dfd",
             "type": "selectionEntry",
             "modifiers": [
               {
@@ -35933,6 +36824,24 @@
                   {
                     "childId": "860a-da71-4255-6379",
                     "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "94da-d01e-4899-6ca8",
+                    "childName": "Pride of the Chapter",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -36546,118 +37455,6 @@
                   }
                 ]
               }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Force Organization: Troop",
-        "id": "5dbd-b6e0-e62a-14aa",
-        "hidden": true,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "9ffb-3641-9786-015c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "set-primary", "value": "9f3a-4892-68dc-2701"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": false,
-            "conditions": [
-              {
-                "childId": "94da-d01e-4899-6ca8",
-                "childName": "Pride of the Chapter",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Force Organization: Elite",
-        "id": "14ad-1afd-a362-f5d2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "da2c-852a-2beb-7435", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
-              {"field": "category", "scope": "unit", "type": "set-primary", "value": "f907-c80d-2520-e7f7"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "6e72-4078-45eb-91e2",
-                "childName": "Armoured Support",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Force Organization: Heavy Support",
-        "id": "a29e-a903-a853-cda5",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "dfea-434f-b8dd-0052", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
-              {"field": "category", "scope": "unit", "type": "set-primary", "value": "c831-e8d6-bb33-52b3"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
-              {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
             ]
           }
         ]

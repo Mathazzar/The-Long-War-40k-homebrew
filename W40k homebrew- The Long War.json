@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 12,
+    "revision": 13,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -196,7 +196,8 @@
       {"name": "M37+", "id": "266a-a317-a50a-0784", "hidden": false},
       {"name": "Tech-Priest", "id": "69c3-b571-197c-4f99", "hidden": false},
       {"name": "Chaos", "id": "4c48-b09a-ec4a-cf19", "hidden": false},
-      {"name": "Priest", "id": "f41c-295d-a9b1-b72c", "hidden": false}
+      {"name": "Priest", "id": "f41c-295d-a9b1-b72c", "hidden": false},
+      {"name": "Daemon", "id": "0ce8-e702-158f-a98d", "hidden": false}
     ],
     "costTypes": [
       {
@@ -715,6 +716,74 @@
           {"name": "I", "id": "7f1b-fabe-598c-f8de", "defaultValue": "3"},
           {"name": "LD", "id": "7b21-f3da-4802-3e38", "defaultValue": "7"},
           {"name": "Transport Capacity", "id": "8058-3a16-8bc0-ad4b", "defaultValue": "0"}
+        ]
+      },
+      {
+        "name": "Monster",
+        "id": "3563-e5b8-93ec-7b86",
+        "hidden": false,
+        "kind": "model",
+        "characteristicTypes": [
+          {
+            "name": "M",
+            "id": "308b-d2ca-3375-97ed",
+            "formatRules": [
+              {"name": "New Format Rule", "id": "3f0c-a300-0046-b796", "comment": "Append SUFFIX", "hidden": false, "match": "([/s/S]*$)", "replace": "$1\"", "type": "regex"},
+              {"name": "New Format Rule", "id": "6f18-e266-880b-a429", "comment": "Clean SUFFIX", "hidden": false, "match": "(\"[\"]+)", "replace": "\"", "type": "regex"}
+            ]
+          },
+          {
+            "name": "WS",
+            "id": "1a47-3bd1-4cf1-dd8f",
+            "formatRules": [{"name": "New Format Rule", "id": "07a8-a267-df72-98a1", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "BS",
+            "id": "48f1-8c2b-8a2b-e9b3",
+            "formatRules": [{"name": "New Format Rule", "id": "ad66-219f-c7f4-4901", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "S",
+            "id": "28ef-f6c8-2b44-8894",
+            "formatRules": [{"name": "New Format Rule", "id": "f32e-4fc9-bb03-4697", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "T",
+            "id": "82cc-19c4-cadc-b6b1",
+            "formatRules": [{"name": "New Format Rule", "id": "7725-04c6-3f64-d440", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "W",
+            "id": "05bd-39ae-7147-174d",
+            "formatRules": [{"name": "New Format Rule", "id": "fddb-115a-c694-659b", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "A",
+            "id": "b872-96a8-ff4a-5dc4",
+            "formatRules": [{"name": "New Format Rule", "id": "bb24-e152-393e-874c", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "I",
+            "id": "edb9-e6ab-2c64-4145",
+            "defaultValue": "\n",
+            "formatRules": [{"name": "New Format Rule", "id": "2c37-9c26-8839-3cfa", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "LD",
+            "id": "33a8-39c0-4848-9b0b",
+            "defaultValue": "\n",
+            "formatRules": [{"name": "New Format Rule", "id": "e625-bf42-48bd-957d", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          },
+          {
+            "name": "Sv",
+            "id": "bf3e-2485-2ce9-c616",
+            "formatRules": [
+              {"name": "New Format Rule", "id": "0bb3-9dbc-838b-8b70", "comment": "Append SUFFIX", "hidden": false, "match": "([/s/S]*$)", "replace": "$1+", "type": "regex"},
+              {"name": "New Format Rule", "id": "2da6-baec-05f8-5c00", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
+              {"name": "New Format Rule", "id": "38ac-4949-9c3a-eca5", "comment": "Clean SUFFIX", "hidden": false, "match": "(\\+[+]+$)", "replace": "+", "type": "regex"}
+            ]
+          },
+          {"name": "Transport Capacity", "id": "7115-9edc-c70a-a6d3", "defaultValue": "\n"}
         ]
       }
     ],
@@ -1557,6 +1626,14 @@
         "id": "2903-9df0-67ba-937c",
         "description": "If the target of this weapon is not within half of the weapons range when making an attack, the weapon gains +2 to its Strength characteristic.",
         "hidden": false
+      },
+      {
+        "name": "Daemon",
+        "id": "be8b-3155-d9be-22da",
+        "description": "A unit with this rule gains the Daemon Keyword. The Daemon unit has a 5+ Invulnerable save and the Fear (1) special rule. Daemon units have +1” to their Movement (M) characteristic. (This is included in unit data sheets that have the Daemon special rule by default)",
+        "hidden": false,
+        "page": "5",
+        "publicationId": "b30d-99de-ef25-ed03"
       }
     ],
     "sharedSelectionEntries": [
@@ -1808,6 +1885,26 @@
               {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
+        ]
+      },
+      {
+        "name": "Force Organization: Free",
+        "id": "4e6e-a84c-60c4-47e9",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "1ba8-0b03-c062-a783", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {"field": "category", "scope": "unit", "type": "set-primary", "value": "d6f4-f5a3-6dc4-1418"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "32ec-1b0c-3325-937c"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "9f3a-4892-68dc-2701"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "f907-c80d-2520-e7f7"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "d22f-83a4-1032-2783"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "c831-e8d6-bb33-52b3"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "2285-8753-500e-a8f0"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "acad-b629-5cd8-4c1f"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "afd1-1404-6ffb-02d8"},
+          {"field": "category", "scope": "unit", "type": "remove", "value": "cb56-41eb-9b8c-2a8c"}
         ]
       }
     ],
