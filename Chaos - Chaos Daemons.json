@@ -6,10 +6,9 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 2,
+    "revision": 4,
     "type": "catalogue",
     "categoryEntries": [
-      {"name": "Daemon", "id": "0ce8-e702-158f-a98d", "hidden": false},
       {"name": "Daemon Prince", "id": "2f32-89f4-934a-3e5f", "hidden": false},
       {"name": "Khorne", "id": "baf3-e3a8-5dda-fc45", "hidden": false},
       {"name": "Tzeentch", "id": "b73b-d185-5635-38fe", "hidden": false},
@@ -810,8 +809,26 @@
         "type": "upgrade",
         "categoryLinks": [{"name": "Rite of War", "id": "9868-0481-3bad-efbc", "hidden": false, "primary": true, "targetId": "be3a-e529-69f3-b6b9"}],
         "constraints": [
-          {"id": "6dfa-1cc7-b86a-e851-min", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
-          {"id": "6dfa-1cc7-b86a-e851-max", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+          {
+            "id": "6dfa-1cc7-b86a-e851-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "6dfa-1cc7-b86a-e851-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
         ],
         "selectionEntryGroups": [
           {
@@ -11775,14 +11792,6 @@
         "name": "Daemonic Instability",
         "id": "93c5-6fd7-fc6c-82ce",
         "description": "When a unit with this special rule fails a Panic test, instead of falling back the unit begins to flicker out of existence. Instead of Falling Back, the unit suffers D3 wounds with no saves of any kind which cannot be ignored. The unit then continues as normal as if it passed the Panic test.",
-        "hidden": false,
-        "page": "5",
-        "publicationId": "b30d-99de-ef25-ed03"
-      },
-      {
-        "name": "Daemon",
-        "id": "be8b-3155-d9be-22da",
-        "description": "A unit with this rule gains the Daemon Keyword. The Daemon unit has a 5+ Invulnerable save and the Fear (1) special rule. Daemon units have +1” to their Movement (M) characteristic. (This is included in unit data sheets that have the Daemon special rule by default)",
         "hidden": false,
         "page": "5",
         "publicationId": "b30d-99de-ef25-ed03"

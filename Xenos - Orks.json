@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 5,
+    "revision": 6,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "[Klan]", "id": "5ee1-b487-b991-0e62", "hidden": false},
@@ -690,76 +690,6 @@
               }
             ]
           }
-        ]
-      }
-    ],
-    "profileTypes": [
-      {
-        "name": "Monster",
-        "id": "3563-e5b8-93ec-7b86",
-        "hidden": false,
-        "kind": "model",
-        "characteristicTypes": [
-          {
-            "name": "M",
-            "id": "308b-d2ca-3375-97ed",
-            "formatRules": [
-              {"name": "New Format Rule", "id": "3f0c-a300-0046-b796", "comment": "Append SUFFIX", "hidden": false, "match": "([/s/S]*$)", "replace": "$1\"", "type": "regex"},
-              {"name": "New Format Rule", "id": "6f18-e266-880b-a429", "comment": "Clean SUFFIX", "hidden": false, "match": "(\"[\"]+)", "replace": "\"", "type": "regex"}
-            ]
-          },
-          {
-            "name": "WS",
-            "id": "1a47-3bd1-4cf1-dd8f",
-            "formatRules": [{"name": "New Format Rule", "id": "07a8-a267-df72-98a1", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "BS",
-            "id": "48f1-8c2b-8a2b-e9b3",
-            "formatRules": [{"name": "New Format Rule", "id": "ad66-219f-c7f4-4901", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "S",
-            "id": "28ef-f6c8-2b44-8894",
-            "formatRules": [{"name": "New Format Rule", "id": "f32e-4fc9-bb03-4697", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "T",
-            "id": "82cc-19c4-cadc-b6b1",
-            "formatRules": [{"name": "New Format Rule", "id": "7725-04c6-3f64-d440", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "W",
-            "id": "05bd-39ae-7147-174d",
-            "formatRules": [{"name": "New Format Rule", "id": "fddb-115a-c694-659b", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "A",
-            "id": "b872-96a8-ff4a-5dc4",
-            "formatRules": [{"name": "New Format Rule", "id": "bb24-e152-393e-874c", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "I",
-            "id": "edb9-e6ab-2c64-4145",
-            "defaultValue": "\n",
-            "formatRules": [{"name": "New Format Rule", "id": "2c37-9c26-8839-3cfa", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "LD",
-            "id": "33a8-39c0-4848-9b0b",
-            "defaultValue": "\n",
-            "formatRules": [{"name": "New Format Rule", "id": "e625-bf42-48bd-957d", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
-          },
-          {
-            "name": "Sv",
-            "id": "bf3e-2485-2ce9-c616",
-            "formatRules": [
-              {"name": "New Format Rule", "id": "0bb3-9dbc-838b-8b70", "comment": "Append SUFFIX", "hidden": false, "match": "([/s/S]*$)", "replace": "$1+", "type": "regex"},
-              {"name": "New Format Rule", "id": "2da6-baec-05f8-5c00", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"},
-              {"name": "New Format Rule", "id": "38ac-4949-9c3a-eca5", "comment": "Clean SUFFIX", "hidden": false, "match": "(\\+[+]+$)", "replace": "+", "type": "regex"}
-            ]
-          },
-          {"name": "Transport Capacity", "id": "7115-9edc-c70a-a6d3", "defaultValue": "\n"}
         ]
       }
     ],

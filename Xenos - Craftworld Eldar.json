@@ -7,8 +7,20 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
+    "catalogueLinks": [{"name": "New Catalogue (link)", "id": "c5da-a0aa-2802-2c16", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
+    "entryLinks": [
+      {
+        "name": "Webway Gate",
+        "id": "a0de-e5e8-5079-4c7f",
+        "hidden": false,
+        "import": true,
+        "targetId": "0dfc-2c96-f2d4-0434",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Craftworld Eldar", "id": "9c50-2a61-9622-7d5a", "hidden": false, "primary": false, "targetId": "23f5-3fd7-3858-7a3d"}]
+      }
+    ],
     "sharedSelectionEntryGroups": [
       {
         "name": "Warlord Trait",
