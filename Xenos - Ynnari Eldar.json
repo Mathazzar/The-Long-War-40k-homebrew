@@ -9,13 +9,152 @@
     "revision": 2,
     "type": "catalogue",
     "catalogueLinks": [
-      {"name": "Xenos - Craftworld Eldar", "id": "fe48-8901-73d5-b19c", "importRootEntries": false, "targetId": "2b4a-c7d5-3030-6002", "type": "catalogue"},
-      {"name": "Xenos - Dark Eldar", "id": "cb45-980b-bbd6-a62f", "importRootEntries": false, "targetId": "4263-1bad-6fa8-e501", "type": "catalogue"}
+      {"name": "Xenos - Dark Eldar", "id": "cb45-980b-bbd6-a62f", "importRootEntries": false, "targetId": "4263-1bad-6fa8-e501", "type": "catalogue"},
+      {"name": "Xenos - Craftworld Eldar", "id": "d1fb-ea97-357a-49cd", "targetId": "2b4a-c7d5-3030-6002", "type": "catalogue"}
     ],
     "categoryEntries": [
-      {"name": "Yvraine, Herald of Ynnead", "id": "ca05-ad18-c4c3-36c6", "hidden": false},
-      {"name": "Visarch", "id": "4f86-78b1-6f7a-1fde", "hidden": false},
-      {"name": "The Yncarne, Avatar of Ynnead", "id": "b8ab-8013-6b6d-290b", "hidden": false}
+      {
+        "name": "Yvraine, Herald of Ynnead",
+        "id": "ca05-ad18-c4c3-36c6",
+        "hidden": false,
+        "constraints": [{"id": "7e0d-839c-c49d-46a3", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Visarch",
+        "id": "4f86-78b1-6f7a-1fde",
+        "hidden": false,
+        "constraints": [{"id": "66fc-5071-8d7d-1190", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "The Yncarne, Avatar of Ynnead",
+        "id": "b8ab-8013-6b6d-290b",
+        "hidden": false,
+        "constraints": [{"id": "7e16-220e-f381-7635", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      }
+    ],
+    "entryLinks": [
+      {"name": "Reaper", "id": "8073-4892-9e30-d6ae", "hidden": false, "import": true, "targetId": "1ed7-58cc-cda7-0a7e", "type": "selectionEntry"},
+      {"name": "Webway Gate", "id": "c6f0-ed70-c14f-78d0", "hidden": false, "import": true, "targetId": "0dfc-2c96-f2d4-0434", "type": "selectionEntry"},
+      {
+        "name": "Archon",
+        "id": "1c80-45d5-b363-d561",
+        "hidden": false,
+        "import": true,
+        "targetId": "0554-68cd-b3a7-48fe",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord Trait", "id": "094e-ab60-3ffc-6305", "hidden": false, "import": true, "targetId": "de95-dbf0-eef5-0bed", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Strength from Death", "id": "6c44-f203-3f98-cf16", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Succubus",
+        "id": "dd7d-4bbe-c20e-985f",
+        "hidden": false,
+        "import": true,
+        "targetId": "85a2-194c-817f-a578",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord Trait", "id": "b7ff-123d-8368-87e4", "hidden": false, "import": true, "targetId": "de95-dbf0-eef5-0bed", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Strength from Death", "id": "d91e-d0d0-6e51-c51c", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Lelith Hexperax",
+        "id": "8d71-6c98-7803-2210",
+        "hidden": false,
+        "import": true,
+        "targetId": "1e29-a8c4-00ec-f444",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "178f-0f51-c05f-5b14", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Kabalites",
+        "id": "e0cf-5cf8-e2b1-2e2c",
+        "hidden": false,
+        "import": true,
+        "targetId": "7beb-7e39-6847-1b5a",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "3f7a-0b77-4b7b-9a06", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Wyches",
+        "id": "8c03-746b-b6c9-e7a2",
+        "hidden": false,
+        "import": true,
+        "targetId": "4e33-9c2d-379b-b83c",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "d658-e6a1-f266-a4cb", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Blood Brides",
+        "id": "870c-dcba-27b6-7fff",
+        "hidden": false,
+        "import": true,
+        "targetId": "6acd-a860-cd78-f484",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "f654-c995-654f-6a54", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Incubi",
+        "id": "c188-e7fa-8c1f-eda7",
+        "hidden": false,
+        "import": true,
+        "targetId": "f24d-b7b9-f5dc-2b44",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "a76b-340a-821d-35a8", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Court of the Archon", "id": "e325-ee1c-cfc6-f946", "hidden": false, "import": true, "targetId": "e86b-c464-953d-dcab", "type": "selectionEntry"},
+      {
+        "name": "Beast Master",
+        "id": "3b36-fcbe-d2a9-3fa6",
+        "hidden": false,
+        "import": true,
+        "targetId": "ace3-fcaa-59d3-33b6",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "0b96-3a2b-d0c5-cf6d", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Venom", "id": "5bce-8c32-04b2-1739", "hidden": false, "import": true, "targetId": "a5cd-bfbc-6f98-02a5", "type": "selectionEntry"},
+      {"name": "Raider", "id": "3544-47cd-55e5-fd86", "hidden": false, "import": true, "targetId": "cae3-ad33-3101-58d9", "type": "selectionEntry"},
+      {"name": "Tantalus", "id": "e009-6735-e1b6-b827", "hidden": false, "import": true, "targetId": "a8dc-7ef2-f8b4-0723", "type": "selectionEntry"},
+      {"name": "Razorwing Jetfighter", "id": "1110-268a-05d2-9dc6", "hidden": false, "import": true, "targetId": "64a0-3e2a-78d2-0bcb", "type": "selectionEntry"},
+      {"name": "Voidraven Bomber", "id": "b8e3-d528-73bd-52f7", "hidden": false, "import": true, "targetId": "9a95-ab1d-ba4b-5a0e", "type": "selectionEntry"},
+      {
+        "name": "Scourges",
+        "id": "9ee5-2dbd-dc28-883c",
+        "hidden": false,
+        "import": true,
+        "targetId": "68e6-25d3-c793-5212",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "87a4-222a-3111-ba61", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Reaver Jetbikes",
+        "id": "59a5-616b-d8e9-048e",
+        "hidden": false,
+        "import": true,
+        "targetId": "a4fc-3946-f388-05e4",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "5bfb-055d-8631-8987", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Hellions",
+        "id": "03bf-0e28-b03f-c84e",
+        "hidden": false,
+        "import": true,
+        "targetId": "0d95-f8e8-d1ef-51fd",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "9f3e-8814-bfd9-956c", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Razorwing Flocks", "id": "5d5a-165b-1230-d662", "hidden": false, "import": true, "targetId": "0a43-2d7d-bc59-2cd2", "type": "selectionEntry"},
+      {"name": "Khymerae Pack", "id": "0a64-89da-14e4-3289", "hidden": false, "import": true, "targetId": "e780-3c04-58c6-fc29", "type": "selectionEntry"},
+      {"name": "Clawed Fiend", "id": "3273-65db-2f32-668c", "hidden": false, "import": true, "targetId": "a7d5-d4ea-40f1-71cc", "type": "selectionEntry"},
+      {"name": "Ravager", "id": "528b-ad0d-05bc-32ea", "hidden": false, "import": true, "targetId": "cb7b-53e3-a27c-4ed3", "type": "selectionEntry"},
+      {
+        "name": "Kabalite True Born",
+        "id": "5095-73c9-62ef-0def",
+        "hidden": false,
+        "import": true,
+        "targetId": "b47b-2dd1-a5d9-42f7",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "d9eb-6319-14c1-0a6f", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      }
     ],
     "selectionEntries": [
       {
@@ -61,7 +200,8 @@
             "constraints": [
               {"id": "39cb-3706-ddd1-fbfa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "39cb-3706-ddd1-fbfa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ]
+            ],
+            "modifiers": [{"affects": "entries.81ca-5e36-e460-bc33", "field": "category", "scope": "force", "type": "add", "value": "62e1-2ef6-a107-a32f"}]
           }
         ]
       },
@@ -79,7 +219,7 @@
           {"name": "Psyker", "id": "80f8-30f6-9787-4458", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
           {"name": "Infantry", "id": "60be-21e0-b16f-b9a8", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
           {"name": "Unique", "id": "0781-3a1f-9f09-78a2", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "Yvraine, Herald of Ynnead.", "id": "dc4c-0b51-7941-75f6", "hidden": false, "primary": false, "targetId": "ca05-ad18-c4c3-36c6"},
+          {"name": "Yvraine, Herald of Ynnead", "id": "dc4c-0b51-7941-75f6", "hidden": false, "primary": false, "targetId": "ca05-ad18-c4c3-36c6"},
           {"name": "Eldar", "id": "3a1b-68a8-d458-fdde", "hidden": false, "primary": false, "targetId": "81ca-5e36-e460-bc33"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],

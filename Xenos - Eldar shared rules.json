@@ -8,7 +8,11 @@
     "library": true,
     "revision": 2,
     "type": "catalogue",
-    "categoryEntries": [{"name": "Eldar", "id": "81ca-5e36-e460-bc33", "hidden": false}],
+    "categoryEntries": [
+      {"name": "Eldar", "id": "81ca-5e36-e460-bc33", "hidden": false},
+      {"name": "Mercenary", "id": "c469-7342-ee43-06cf", "hidden": false},
+      {"name": "Webway Gate", "id": "ad25-2b94-85bb-fa8b", "hidden": false}
+    ],
     "sharedRules": [
       {
         "name": "She Who Thirsts",
@@ -17,6 +21,102 @@
         "hidden": false,
         "page": "3",
         "publicationId": "00c7-1ca1-5217-deec"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Webway Gate",
+        "id": "0dfc-2c96-f2d4-0434",
+        "hidden": false,
+        "import": true,
+        "page": "64",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Eldar", "id": "cf81-e532-416d-9d34", "hidden": false, "primary": false, "targetId": "81ca-5e36-e460-bc33"},
+          {"name": "Fortification", "id": "f5e9-5a6c-a265-0508", "hidden": false, "primary": true, "targetId": "afd1-1404-6ffb-02d8"},
+          {"name": "Mercenary", "id": "c91f-2ef3-3aa3-6dc3", "hidden": false, "primary": false, "targetId": "c469-7342-ee43-06cf"},
+          {"name": "Webway Gate", "id": "0c40-5be9-1fdb-b52c", "hidden": false, "primary": false, "targetId": "ad25-2b94-85bb-fa8b"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
+        "rules": [
+          {
+            "name": "Gate from beyond",
+            "id": "5ed7-1ac7-2577-950a",
+            "description": "When Eldar units arrive via Outflank, they may be placed wholly within 12” of a Webway gate piece so long as they are more than 3” from any enemy models",
+            "hidden": false
+          },
+          {
+            "name": "Hidden Webways",
+            "id": "b72a-960b-d72d-cd9b",
+            "description": "The Webway Gate model is made of 2 pieces. During deployment, you may place both pieces together in contact in your deployment zone or you can place 1 in your deployment zone and the other anywhere on the bord, more than 9” away from any enemy models.",
+            "hidden": false
+          },
+          {
+            "name": "Linked Gates",
+            "id": "5a94-d445-b065-d08a",
+            "description": "If, during deployment you opted to deploy your gate as 2 separate gates, they are considered Linked. During the Movement Phase, friendly Eldar models may embark on this model. The Eldar models may disembark per normal from any Webway gate piece on the board. There is no limit to the number of type of models that may embark on a Webway Gate.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Webway Gate",
+            "id": "a0de-e93e-5243-bc0d",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "0aab-073f-963d-15f4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0aab-073f-963d-15f4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Webway Gate",
+                "id": "a9bc-1dd4-3f15-8fbf",
+                "hidden": false,
+                "typeId": "9f3f-85d3-bf97-fcc9",
+                "typeName": "Vehicle",
+                "characteristics": [
+                  {"name": "M", "$text": "0", "typeId": "3206-9664-eeb3-26eb"},
+                  {"name": "WS", "$text": "0", "typeId": "b91a-6b4e-68f6-5398"},
+                  {"name": "BS", "$text": "0", "typeId": "ce2d-33a1-3626-3105"},
+                  {"name": "S", "$text": "6", "typeId": "605e-2df1-55c7-3d9d"},
+                  {"name": "Front", "$text": "10", "typeId": "65d6-7651-a40f-fcd5"},
+                  {"name": "Side", "$text": "10", "typeId": "570a-ef9c-8153-2bb7"},
+                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
+                  {"name": "A", "$text": "0", "typeId": "1a60-9cb9-3892-ac5a"},
+                  {"name": "I", "$text": "0", "typeId": "7f1b-fabe-598c-f8de"},
+                  {"name": "LD", "$text": "0", "typeId": "7b21-f3da-4802-3e38"},
+                  {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Mirage field",
+                "id": "b4d4-b8ee-0a3b-d2d0",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "ef7a-6ed5-90d8-279d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ef7a-6ed5-90d8-279d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "rules": [
+                  {
+                    "name": "Mirage field",
+                    "id": "1034-f6b0-4187-1bf7",
+                    "description": "This model may not be targeted for attacks unless the attacking model is within 6”. In addition, friendly Eldar units within 12” of the Webway Gate receive the benefit of Light Cover. If they are already benefiting from Light Cover, they gain the Benefit of Heavy Cover instead.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
