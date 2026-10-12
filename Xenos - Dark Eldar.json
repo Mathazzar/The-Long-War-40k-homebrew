@@ -4335,37 +4335,6 @@
     ],
     "sharedSelectionEntries": [
       {
-        "name": "Warlord",
-        "id": "1f5a-04f4-6ecd-2093",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "a4e7-fcd1-6a4f-8fd0", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
-          {"id": "0557-77cf-5ac2-752a", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "24ec-3d2c-456d-fe9a",
-                "childName": "Allied Detatchment",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          },
-          {"field": "category", "scope": "unit", "type": "add", "value": "544d-0eb3-a4ab-4540"}
-        ]
-      },
-      {
         "name": "Grisly Trophies",
         "id": "ce35-e51b-6474-402f",
         "hidden": false,
@@ -4378,17 +4347,6 @@
         "rules": [
           {"name": "Grisly Trophies", "id": "c479-1176-e4f8-3ad9", "description": "A model equipped with this Wargear gains the Fear (2) special rule.", "hidden": false}
         ]
-      },
-      {
-        "name": "Force Field",
-        "id": "b717-4d29-8eaf-119b",
-        "hidden": false,
-        "import": true,
-        "page": "6",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "constraints": [{"id": "e5c5-036e-78a7-a6c0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [{"name": "Force Field", "id": "32d9-cebb-63c3-7bff", "description": "This wargear confers a 4+ Invulnerable save.", "hidden": false}]
       },
       {
         "name": "Shadow Field",
@@ -4626,27 +4584,6 @@
             "name": "Armoured Carapace",
             "id": "9872-b317-10f0-b696",
             "description": "Engines of pain are often clad in finely wrought armoured shells. This confers a 3+ armour save.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Light Weight Plating",
-        "id": "5804-e7f9-3192-3169",
-        "hidden": false,
-        "import": true,
-        "page": "6",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "ac89-a2e7-0562-3a77-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "ac89-a2e7-0562-3a77-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Light Weight Plating",
-            "id": "3845-38ad-33eb-50d8",
-            "description": "Light Weight plating used in many Dark Eldar vehicles. It confers a 3+ Armour save.",
             "hidden": false
           }
         ]
@@ -5436,63 +5373,6 @@
         ]
       },
       {
-        "name": "Eldar Crew weapon",
-        "id": "6032-f099-86fc-8651",
-        "collective": true,
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "16da-3f40-95a5-73b1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "16da-3f40-95a5-73b1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Eldar Crew weapon",
-            "id": "105e-5ff4-7494-738c",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "3", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Power Sword",
-        "id": "a7f2-0e54-4bdf-7cfa",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Power Sword",
-            "id": "f0fd-3864-25b0-4574",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Rending (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Stun Claw",
         "id": "1115-810e-a617-0168",
         "collective": true,
@@ -5922,70 +5802,6 @@
               {"name": "Strength", "$text": "", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Haywire Grenades",
-        "id": "a7eb-898c-182b-9889",
-        "collective": true,
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "e10e-0012-6fbf-5a8b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "e10e-0012-6fbf-5a8b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Haywire Grenades",
-            "id": "c0bf-0da8-f134-33b2",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenades", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "46", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Haywire (4+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Plasma Grenades",
-        "id": "250f-ef3e-a835-bee7",
-        "collective": true,
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "fb6f-ea54-c6ff-1127-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "fb6f-ea54-c6ff-1127-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Plasma Grenades",
-            "id": "104c-a099-a2bc-7856",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenades", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
