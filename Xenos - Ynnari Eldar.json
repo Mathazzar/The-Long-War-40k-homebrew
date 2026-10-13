@@ -154,7 +154,251 @@
         "targetId": "b47b-2dd1-a5d9-42f7",
         "type": "selectionEntry",
         "infoLinks": [{"name": "Strength from Death", "id": "d9eb-6319-14c1-0a6f", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
-      }
+      },
+      {
+        "name": "Autarch",
+        "id": "c58b-bc21-7099-23ac",
+        "hidden": false,
+        "import": true,
+        "targetId": "2bc3-392c-0dcd-e36d",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord Trait", "id": "31ee-ec04-b0ec-656e", "hidden": false, "import": true, "targetId": "de95-dbf0-eef5-0bed", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Strength from Death", "id": "57e3-2feb-af21-887f", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Farseer",
+        "id": "16e0-7204-322c-4237",
+        "hidden": false,
+        "import": true,
+        "targetId": "d927-e72b-4a3a-cb5b",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord Trait", "id": "957a-935d-4313-739a", "hidden": false, "import": true, "targetId": "de95-dbf0-eef5-0bed", "type": "selectionEntryGroup"},
+          {"name": "Revenant Disciplline", "id": "aa42-384d-c300-45da", "hidden": false, "import": true, "targetId": "4e22-33e9-8a30-d4d5", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Strength from Death", "id": "7a72-c13a-63c1-d3eb", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Warlock",
+        "id": "49cf-171b-e43c-399c",
+        "hidden": false,
+        "import": true,
+        "targetId": "eb32-d663-902a-330b",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord Trait", "id": "18eb-cd41-bd00-5b0b", "hidden": false, "import": true, "targetId": "de95-dbf0-eef5-0bed", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Strength from Death", "id": "956a-d107-fcb4-b0be", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Jain Zar",
+        "id": "346b-20c4-616d-440b",
+        "hidden": false,
+        "import": true,
+        "targetId": "5e78-e774-7384-3789",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "6733-7059-d5ef-0abe", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Eldrad Ulthran",
+        "id": "043a-cd0f-8126-dedf",
+        "hidden": false,
+        "import": true,
+        "targetId": "6059-7e7c-8aa0-e1f7",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Revenant Disciplline", "id": "3dd4-ddf5-05b9-da9e", "hidden": false, "import": true, "targetId": "4e22-33e9-8a30-d4d5", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Strength from Death", "id": "99a1-44a5-4c25-2b4f", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Illic Nightspear",
+        "id": "4b19-7d54-2ae0-c2bb",
+        "hidden": false,
+        "import": true,
+        "targetId": "6c0d-2230-1d0a-d2f1",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "4466-6df9-4b8f-c730", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Prince Yriel",
+        "id": "2b90-81e7-f609-daab",
+        "hidden": false,
+        "import": true,
+        "targetId": "9667-f72d-4911-45ae",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "8c62-56eb-0ffc-7e80", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Guardians",
+        "id": "28c7-9e0f-2b20-1f2b",
+        "hidden": false,
+        "import": true,
+        "targetId": "1d45-0f75-c6f2-2de2",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "d5c4-065c-5608-44be", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Storm Guardians",
+        "id": "f049-1554-73bc-e306",
+        "hidden": false,
+        "import": true,
+        "targetId": "ea35-257b-1608-746f",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "f573-0fad-4c46-1536", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Phantom Titan", "id": "4e0a-2c0a-bcae-856d", "hidden": false, "import": true, "targetId": "ae7a-cd47-5591-b142", "type": "selectionEntry"},
+      {
+        "name": "Rangers",
+        "id": "cbd9-d4ea-1b07-5800",
+        "hidden": false,
+        "import": true,
+        "targetId": "9c40-6d5f-0424-31cf",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "5f64-4533-7051-933a", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Dire Avengers",
+        "id": "a22e-4070-730c-4de7",
+        "hidden": false,
+        "import": true,
+        "targetId": "d3d6-bd9b-33bb-0d90",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "6952-7bbf-09a3-d403", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Howling Banshee",
+        "id": "e306-1429-0fa4-4c6b",
+        "hidden": false,
+        "import": true,
+        "targetId": "62d4-8080-236a-569a",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "d9b7-dff4-ac9e-f457", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Striking Scorpions",
+        "id": "fde7-db73-7e3f-39b0",
+        "hidden": false,
+        "import": true,
+        "targetId": "2682-e999-7386-f006",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "4368-d649-3918-064f", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Fire Dragons",
+        "id": "9f57-369f-d4a6-ebf2",
+        "hidden": false,
+        "import": true,
+        "targetId": "6c18-5c54-43a0-767a",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "dfdb-3ac2-abc8-d2b3", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Wraith Guard", "id": "e68d-9676-9c10-d8c0", "hidden": false, "import": true, "targetId": "811a-82e8-a8ea-2dc0", "type": "selectionEntry"},
+      {"name": "Wraith Blades", "id": "67b8-642d-94d3-7c03", "hidden": false, "import": true, "targetId": "d8e6-563e-da3a-cc9a", "type": "selectionEntry"},
+      {"name": "Wraith Lord", "id": "9100-14e4-14e6-ac47", "hidden": false, "import": true, "targetId": "78a1-538c-8e4a-442e", "type": "selectionEntry"},
+      {"name": "Wraith Seer", "id": "1a25-69ee-2d55-a015", "hidden": false, "import": true, "targetId": "e2a2-d0c3-7a2a-7894", "type": "selectionEntry"},
+      {"name": "Wave Serpent", "id": "e1ad-789a-c445-5663", "hidden": false, "import": true, "targetId": "c4d0-7b69-5d30-02cd", "type": "selectionEntry"},
+      {"name": "Crimson Hunter", "id": "9afe-7384-a439-21f8", "hidden": false, "import": true, "targetId": "e4b7-400c-e1a3-f229", "type": "selectionEntry"},
+      {"name": "Hemlock Wraith Fighter", "id": "fdbe-7103-fe1e-6a98", "hidden": false, "import": true, "targetId": "09db-9ba4-4e3c-28a7", "type": "selectionEntry"},
+      {
+        "name": "Swooping Hawks",
+        "id": "3865-4092-3a3f-a2b1",
+        "hidden": false,
+        "import": true,
+        "targetId": "dfbe-ae9e-3906-6bd8",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "4c14-e323-116c-239c", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Warp Spiders",
+        "id": "c85f-7fb2-5fa1-ab4c",
+        "hidden": false,
+        "import": true,
+        "targetId": "fa19-7c94-f169-d262",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "b352-3ccb-0a4c-effa", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Shining Spears",
+        "id": "2051-b955-b184-bdcd",
+        "hidden": false,
+        "import": true,
+        "targetId": "2cc3-9a78-4eb5-20a0",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "39ba-e108-fad7-ba7b", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Shadow Specters",
+        "id": "21d3-efe3-ed1a-c91a",
+        "hidden": false,
+        "import": true,
+        "targetId": "b4b0-bb72-51f3-2d11",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "d09b-e039-f841-eefe", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Wind Riders",
+        "id": "597c-460a-b82a-e328",
+        "hidden": false,
+        "import": true,
+        "targetId": "192b-df82-eb32-65f6",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "c75e-a318-9892-bc44", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Vyper",
+        "id": "4a2c-d97c-1bbc-1695",
+        "hidden": false,
+        "import": true,
+        "targetId": "9eb1-2d33-73ad-078f",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "d251-0ef4-8156-35bb", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {
+        "name": "Shroud Runners",
+        "id": "ad2c-c4d2-e1c2-7f32",
+        "hidden": false,
+        "import": true,
+        "targetId": "5ac4-413b-d0e0-8593",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "4ffd-5c26-6bc1-1c6c", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Hornet", "id": "90a8-00b1-b838-cf99", "hidden": false, "import": true, "targetId": "477a-eec4-d228-218d", "type": "selectionEntry"},
+      {
+        "name": "Dark Reapers",
+        "id": "38c7-61bf-8c22-6a3f",
+        "hidden": false,
+        "import": true,
+        "targetId": "50d0-6d01-2ecc-a0ec",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "e5ee-b01d-197e-e411", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Falcon Grav Tank", "id": "276e-1a03-123e-19d5", "hidden": false, "import": true, "targetId": "8978-2fa8-cfda-6ddf", "type": "selectionEntry"},
+      {"name": "Firestorm Grav Tank", "id": "de8b-9ab4-f80e-a0b5", "hidden": false, "import": true, "targetId": "6068-1b04-1755-d00d", "type": "selectionEntry"},
+      {"name": "Fire Prism Grav Tank", "id": "00da-0cbc-8e01-44ad", "hidden": false, "import": true, "targetId": "d6fd-2819-f710-57d7", "type": "selectionEntry"},
+      {"name": "Night Spinner Grav Tank", "id": "0ed1-a874-d1a5-9119", "hidden": false, "import": true, "targetId": "f150-7249-0525-db72", "type": "selectionEntry"},
+      {"name": "Warp Hunter Grav Tank", "id": "7da4-ff3e-8522-5d3a", "hidden": false, "import": true, "targetId": "efe2-e9f3-8563-7c2a", "type": "selectionEntry"},
+      {"name": "Lynx Grav Tank", "id": "6ba2-0b52-6920-a965", "hidden": false, "import": true, "targetId": "4eae-842f-4aed-41ea", "type": "selectionEntry"},
+      {
+        "name": "Support Weapons",
+        "id": "6c97-009f-5435-eb14",
+        "hidden": false,
+        "import": true,
+        "targetId": "26c8-d7d5-999a-5616",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "1f37-aa3c-17f5-a489", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Wraith Knight", "id": "1e6c-45b3-8ca1-9daa", "hidden": false, "import": true, "targetId": "513d-cc52-a62d-757f", "type": "selectionEntry"},
+      {"name": "Cobra Heavy Tank", "id": "9bc6-11a0-cd28-8a3b", "hidden": false, "import": true, "targetId": "9932-98a2-2fbb-064d", "type": "selectionEntry"},
+      {"name": "Scorpion Heavy Grav Tank", "id": "b90f-8a72-3553-a4f7", "hidden": false, "import": true, "targetId": "2770-e510-ae39-e86d", "type": "selectionEntry"},
+      {
+        "name": "Vampire Raider",
+        "id": "16ca-0ff7-aae9-f356",
+        "hidden": false,
+        "import": true,
+        "targetId": "c4df-d621-3b6d-3a9d",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Strength from Death", "id": "0828-e372-9042-00c4", "hidden": false, "targetId": "a5d2-f6a4-2795-cf0a", "type": "rule"}]
+      },
+      {"name": "Revenant Titan", "id": "7eea-fc28-42b3-b0ee", "hidden": false, "import": true, "targetId": "37e9-f9e4-4512-9fa9", "type": "selectionEntry"}
     ],
     "selectionEntries": [
       {
