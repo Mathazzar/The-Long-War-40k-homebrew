@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 12,
+    "revision": 13,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -6949,7 +6949,7 @@
                     "value": 1,
                     "conditions": [
                       {
-                        "childId": "2b71-b37e-49b9-5ca8",
+                        "childId": "f82a-555a-d38f-b930",
                         "childName": "Chainsword",
                         "field": "selections",
                         "includeChildSelections": true,
@@ -7263,33 +7263,6 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Ignores Cover", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Combi Bolter",
-        "id": "b729-3d1e-1672-516b",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Combi Bolter",
-            "id": "c4cb-790d-95cf-1c22",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -7760,58 +7733,6 @@
               {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Small), Indirect Fire, Barrage (3)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Chainsword",
-        "id": "2b71-b37e-49b9-5ca8",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Chainsword",
-            "id": "9600-6ad1-e228-3d3f",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Shred", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Close Combat weapon",
-        "id": "eb87-daa9-089f-a519",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Close Combat weapon",
-            "id": "3e1e-db02-7f10-dafa",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -12731,7 +12652,7 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
                   },
                   {"name": "Close Combat Weapons", "id": "7550-06a3-4790-636b", "hidden": false, "import": true, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"},
-                  {"name": "Chainsword", "id": "e856-737f-387f-8dbd", "hidden": false, "import": true, "targetId": "2b71-b37e-49b9-5ca8", "type": "selectionEntry"},
+                  {"name": "Chainsword", "id": "e856-737f-387f-8dbd", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"},
                   {
                     "name": "Power Sword",
                     "id": "2c86-3216-3880-955a",
@@ -17772,7 +17693,7 @@
                     "id": "3a37-1d2c-16e8-6cc9",
                     "hidden": false,
                     "import": true,
-                    "targetId": "2b71-b37e-49b9-5ca8",
+                    "targetId": "f82a-555a-d38f-b930",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
                     "modifiers": [
@@ -21402,7 +21323,7 @@
                             "hidden": false,
                             "import": true,
                             "sortIndex": 0,
-                            "targetId": "2b71-b37e-49b9-5ca8",
+                            "targetId": "f82a-555a-d38f-b930",
                             "type": "selectionEntry",
                             "modifiers": [
                               {
@@ -23068,7 +22989,7 @@
                     "value": 1
                   }
                 ],
-                "entryLinks": [{"name": "Chainsword", "id": "6986-4e5f-0d74-76f6", "hidden": false, "import": true, "targetId": "2b71-b37e-49b9-5ca8", "type": "selectionEntry"}],
+                "entryLinks": [{"name": "Chainsword", "id": "6986-4e5f-0d74-76f6", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"}],
                 "selectionEntries": [
                   {
                     "name": "Boltgun and Close combat weapon",
@@ -23581,7 +23502,7 @@
                     "value": 1
                   }
                 ],
-                "entryLinks": [{"name": "Chainsword", "id": "725b-3174-7dd9-796a", "hidden": false, "import": true, "targetId": "2b71-b37e-49b9-5ca8", "type": "selectionEntry"}],
+                "entryLinks": [{"name": "Chainsword", "id": "725b-3174-7dd9-796a", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"}],
                 "selectionEntries": [
                   {
                     "name": "Boltgun and Close combat weapon",
@@ -28002,7 +27923,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "2b71-b37e-49b9-5ca8",
+                "targetId": "f82a-555a-d38f-b930",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "2d01-68b0-0d94-c4fc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -28536,7 +28457,7 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "2b71-b37e-49b9-5ca8",
+                "targetId": "f82a-555a-d38f-b930",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "d0e8-4797-4b78-8601-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -35037,7 +34958,7 @@
                     "id": "fc8c-f647-c762-3a13",
                     "hidden": false,
                     "import": true,
-                    "targetId": "2b71-b37e-49b9-5ca8",
+                    "targetId": "f82a-555a-d38f-b930",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}]
                   },
@@ -35533,7 +35454,7 @@
                     "id": "08db-a815-e741-4967",
                     "hidden": false,
                     "import": true,
-                    "targetId": "2b71-b37e-49b9-5ca8",
+                    "targetId": "f82a-555a-d38f-b930",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}]
                   }
@@ -37322,7 +37243,7 @@
                           }
                         ],
                         "entryLinks": [
-                          {"name": "Chainsword", "id": "dfa8-5caf-0f20-2486", "hidden": false, "import": true, "targetId": "2b71-b37e-49b9-5ca8", "type": "selectionEntry"},
+                          {"name": "Chainsword", "id": "dfa8-5caf-0f20-2486", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"},
                           {"name": "Bolt Pistol", "id": "b347-721e-d569-1085", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"},
                           {"name": "Silentus Bolt Pistol", "id": "d333-9208-6012-6eeb", "hidden": true, "import": true, "targetId": "b651-fd85-152c-61af", "type": "selectionEntry"}
                         ]
@@ -37967,7 +37888,7 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
           },
-          {"name": "Chainsword", "id": "4d0e-9c6f-245f-1627", "hidden": false, "import": true, "targetId": "2b71-b37e-49b9-5ca8", "type": "selectionEntry"}
+          {"name": "Chainsword", "id": "4d0e-9c6f-245f-1627", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"}
         ]
       },
       {
@@ -38323,7 +38244,7 @@
             "hidden": false,
             "import": true,
             "sortIndex": 0,
-            "targetId": "2b71-b37e-49b9-5ca8",
+            "targetId": "f82a-555a-d38f-b930",
             "type": "selectionEntry"
           },
           {

@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 5,
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -15002,7 +15002,15 @@
                   {"id": "75c4-fd4a-7641-233d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Synskin Bodyglove", "id": "7e0b-4039-a138-398d", "hidden": false, "import": true, "targetId": "cd6d-0537-f244-dbe1", "type": "selectionEntry"}
+              {"name": "Synskin Bodyglove", "id": "7e0b-4039-a138-398d", "hidden": false, "import": true, "targetId": "cd6d-0537-f244-dbe1", "type": "selectionEntry"},
+              {
+                "name": "Psyk-Out Grenades",
+                "id": "cd95-efcf-04a7-8549",
+                "hidden": false,
+                "targetId": "2c9c-03ad-4505-25ae",
+                "type": "selectionEntry",
+                "constraints": [{"id": "ff84-04e2-ddac-ac63-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              }
             ],
             "profiles": [
               {
@@ -15084,35 +15092,6 @@
                     "id": "2f4a-4aa3-1cd6-ce3b",
                     "description": "A weapon with this special rule always Wounds on a roll of a 2+ against a Psyker unit.",
                     "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Psyk-Out Grenades",
-                "id": "2c9c-03ad-4505-25ae",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "ff84-04e2-ddac-ac63-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "ff84-04e2-ddac-ac63-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Psyk-Out Grenades",
-                    "id": "c696-28aa-08c4-e9b2",
-                    "hidden": false,
-                    "typeId": "4425-e2ff-1ce0-83c1",
-                    "typeName": "Ranged Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                      {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-                      {"name": "Strength", "$text": "2", "typeId": "4e85-0d56-33e2-acca"},
-                      {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
-                      {"name": "Rules", "$text": "Psyk-Out", "typeId": "ba87-19e9-d692-6e30"}
-                    ]
                   }
                 ]
               }
@@ -19548,33 +19527,6 @@
               {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Rending (6+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Needle Pistol",
-        "id": "dee9-09f9-020d-c5b4",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "19",
-        "publicationId": "19c4-6ab7-10c5-8fbe",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Needle Pistol",
-            "id": "acd2-5646-509c-bbee",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Rending (4+), Precision Strikes, Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]

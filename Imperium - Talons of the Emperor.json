@@ -7,9 +7,2706 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 2,
+    "revision": 3,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "ebc0-ca6c-2f5c-465b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
+    "categoryEntries": [
+      {"name": "Custodes", "id": "17a6-9b1b-6610-defe", "hidden": false},
+      {"name": "Sagittarum Guard", "id": "bc72-c389-6204-dda3", "hidden": false},
+      {
+        "name": "Inf",
+        "id": "d347-06dc-ca02-b757",
+        "hidden": true,
+        "constraints": [
+          {
+            "id": "3efe-cd2d-6653-957e",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "message": "You must include {difference} more Infantry units for this many Jetbike units",
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "3efe-cd2d-6653-957e",
+            "type": "increment",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "09b2-9634-a52b-2dd9",
+                "childName": "Chamber of Oblivion",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "0709-887f-8d36-2d6b",
+                "childName": "Jetbike",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "Shield Captain", "id": "9fa3-ff5a-3f7f-2be5", "hidden": false},
+      {"name": "Knight-Centura", "id": "1639-0fdf-2a86-9b14", "hidden": false},
+      {"name": "Sisters of Silence", "id": "f917-2287-ecc5-67fa", "hidden": false}
+    ],
+    "publications": [{"name": "The Long War - Codex: Talons of the Emperor", "id": "dc2f-4748-e72e-f22e", "hidden": false, "publisher": "5.0"}],
+    "selectionEntries": [
+      {
+        "name": "Rite of War",
+        "id": "0c0d-2a8e-2cc3-9878",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Rite of War", "id": "a08f-c682-6df9-32a6", "hidden": false, "primary": true, "targetId": "be3a-e529-69f3-b6b9"}],
+        "constraints": [
+          {
+            "id": "a000-ffe7-2b72-03e3-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "a000-ffe7-2b72-03e3-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Rites of War",
+            "id": "ca98-f9b7-9e94-0ee5",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "ccc9-f48e-1c9b-2c95",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "The Tharantoi",
+                "id": "a165-035e-71f3-4a07",
+                "hidden": false,
+                "import": true,
+                "page": "16",
+                "publicationId": "dc2f-4748-e72e-f22e",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "560f-2dca-57fb-5997", "field": "hidden", "scope": "roster", "type": "set", "value": true},
+                      {"affects": "bc72-c389-6204-dda3", "field": "hidden", "scope": "roster", "type": "set", "value": false},
+                      {"affects": "0709-887f-8d36-2d6b", "field": "hidden", "scope": "roster", "type": "set", "value": true},
+                      {"affects": "b2b5-3d4c-75aa-f071", "field": "hidden", "scope": "roster", "type": "set", "value": false}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Chamber of Judgement",
+                "id": "09b2-9634-a52b-2dd9",
+                "hidden": false,
+                "import": true,
+                "page": "21",
+                "publicationId": "dc2f-4748-e72e-f22e",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "self.entries.forces.recursive.unit", "field": "hidden", "scope": "roster", "type": "set", "value": true},
+                      {"affects": "self.entries.forces.recursive.f917-2287-ecc5-67fa", "field": "hidden", "scope": "roster", "type": "set", "value": false}
+                    ]
+                  }
+                ]
+              },
+              {"name": "The Hykanatoi", "id": "c812-27e9-0867-30f3", "hidden": false, "import": true, "page": "15", "publicationId": "dc2f-4748-e72e-f22e", "type": "upgrade"},
+              {
+                "name": "The Kataphrktoi",
+                "id": "1131-e517-4b60-610c",
+                "hidden": false,
+                "import": true,
+                "page": "18",
+                "publicationId": "dc2f-4748-e72e-f22e",
+                "type": "upgrade"
+              },
+              {
+                "name": "Chamber of Oblivion",
+                "id": "098b-af5d-5421-6ce8",
+                "hidden": false,
+                "import": true,
+                "page": "19",
+                "publicationId": "dc2f-4748-e72e-f22e",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "self.entries.forces.recursive.560f-2dca-57fb-5997", "field": "category", "scope": "roster", "type": "add", "value": "d347-06dc-ca02-b757"},
+                      {"affects": "self.entries.forces.recursive.unit", "field": "hidden", "scope": "roster", "type": "set", "value": true},
+                      {"affects": "self.entries.forces.recursive.f917-2287-ecc5-67fa", "field": "hidden", "scope": "roster", "type": "set", "value": false}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Chamber of Vigilance",
+                "id": "a900-8502-6ada-30cd",
+                "hidden": false,
+                "import": true,
+                "page": "20",
+                "publicationId": "dc2f-4748-e72e-f22e",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "self.entries.forces.recursive.unit", "field": "hidden", "scope": "roster", "type": "set", "value": true},
+                      {"affects": "self.entries.forces.recursive.f917-2287-ecc5-67fa", "field": "hidden", "scope": "roster", "type": "set", "value": false}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sagittarum Guard",
+        "id": "3e88-8dd3-af33-947a",
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "d0b0-e488-089d-a90d", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "19e5-d54c-cd32-fc8f", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "97c4-4abc-61ce-2905", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Troop", "id": "207c-a436-a0fe-f046", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Custodes", "id": "3498-4c26-539c-84b8", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "M31", "id": "be9d-47ca-abb0-3607", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Sagittarum Guard", "id": "5d62-f62f-e0fc-38a8", "hidden": false, "primary": false, "targetId": "bc72-c389-6204-dda3"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "infoLinks": [
+          {"name": "Bulky (x)", "id": "b41b-4459-959f-ce17", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Emperors Own", "id": "a57d-47a0-4cf7-2b42", "hidden": false, "targetId": "54ae-4d42-12bc-3f73", "type": "rule"},
+          {"name": "The Sodality", "id": "fdfb-e77b-d8e0-d176", "hidden": false, "targetId": "9d36-17c3-cf2e-c059", "type": "rule"},
+          {"name": "Last Stand", "id": "551b-e4a0-07e5-f4c4", "hidden": false, "targetId": "d7a2-f172-14b5-a04c", "type": "rule"},
+          {"name": "Relentless", "id": "e8db-da59-950f-8f9a", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "a165-035e-71f3-4a07",
+                "childName": "The Tharantoi",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Sagittarum Guard",
+            "id": "bd76-e9ae-6aec-6f17",
+            "defaultAmount": "3",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "3b7c-82ab-85f7-91ff", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 3},
+              {"id": "4c09-6529-9af9-5fc2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 5}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 65}],
+            "entryLinks": [
+              {
+                "name": "Close Combat Weapons",
+                "id": "479e-2ee6-f845-a622",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ba4d-218f-3817-c775",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "202f-5400-a9b9-37a1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "202f-5400-a9b9-37a1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Artificer Armour",
+                "id": "9689-8150-60a8-933d",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "504d-7a9b-cb14-1472",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "de21-d528-3ba6-2eb9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "de21-d528-3ba6-2eb9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Refractor field",
+                "id": "25b4-d7d8-ead2-2029",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "7731-6c4d-7104-06b9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7731-6c4d-7104-06b9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Melta Bomb",
+                "id": "31f2-8ecc-984d-1ac5",
+                "hidden": false,
+                "import": true,
+                "targetId": "3649-d648-4d6b-786f",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {"name": "Frag Grenades", "id": "9c78-2497-ae30-36dd", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "2aab-2d2c-80dd-7042", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Sagittarum Guard",
+                "id": "96f6-50ca-436a-d707",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "5", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Adrastus Bolt Caliver",
+                "id": "6368-d2a9-70aa-1eb9",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "9241-c86e-f925-9a69-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "9241-c86e-f925-9a69-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Adrathic Destructor",
+                    "id": "522e-3074-e85a-923b",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4187-f4b5-153f-9ec4",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "e41b-752c-4afd-4038", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Adrastus Bolt Caliver",
+                    "id": "d7b2-3154-6a43-8721",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Adrastus Bolt Caliver (Bolt)",
+                        "id": "3e93-27e0-e766-767b",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Pinning, Combi", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      },
+                      {
+                        "name": "Adrastus Bolt Caliver (Adrastite)",
+                        "id": "8497-5c62-e62d-49de",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Combi", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ares Gunship",
+        "id": "523b-f212-83a8-87d5",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "67e0-c2ef-2679-b7a5", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "7603-8e47-0a20-2842", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Lord of War", "id": "3fa3-a9d7-42bf-a505", "hidden": false, "primary": true, "targetId": "acad-b629-5cd8-4c1f"},
+          {"name": "Aircraft", "id": "d044-54fb-7d03-f05d", "hidden": false, "primary": false, "targetId": "6af1-500e-865d-e08f"}
+        ]
+      },
+      {
+        "name": "Shield Captain",
+        "id": "6b52-f7af-c9de-6261",
+        "hidden": false,
+        "import": true,
+        "page": "24",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "e503-695d-0996-191f", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "15dc-df8c-07e7-f3d6", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "38d4-7aff-7b6d-b199", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "4c96-7d0d-d237-d015", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Custodes", "id": "00ae-7972-e710-36bc", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "M31", "id": "7d32-af1a-2094-3060", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Shield Captain", "id": "413c-1e9f-6c2d-beb8", "hidden": false, "primary": false, "targetId": "9fa3-ff5a-3f7f-2be5"}
+        ],
+        "constraints": [{"id": "1740-4a95-04bf-db28", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 105}],
+        "infoLinks": [
+          {"name": "Emperors Own", "id": "2694-824d-6d40-ddc1", "hidden": false, "targetId": "54ae-4d42-12bc-3f73", "type": "rule"},
+          {"name": "The Sodality", "id": "3cd0-d51d-3552-d064", "hidden": false, "targetId": "9d36-17c3-cf2e-c059", "type": "rule"},
+          {"name": "Last Stand", "id": "363d-113d-d6c8-7322", "hidden": false, "targetId": "d7a2-f172-14b5-a04c", "type": "rule"}
+        ],
+        "rules": [{"name": "Captain", "id": "741d-ec1a-1039-716d", "comment": "todo: No profile provided in reference", "hidden": false}],
+        "selectionEntries": [
+          {
+            "name": "Shield Captain",
+            "id": "4315-8a90-ce89-8d43",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "08b2-25ac-4756-415d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "08b2-25ac-4756-415d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Melta Bomb",
+                "id": "2b6d-a796-7c64-fc21",
+                "hidden": false,
+                "import": true,
+                "targetId": "3649-d648-4d6b-786f",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {"name": "Iron Halo", "id": "b5fa-ba36-619d-f736", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "54e2-c3b6-d200-9007", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
+              {"name": "Krak Grenades", "id": "6dfe-8bee-e2be-3bd9", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
+              {
+                "name": "Digital Weapons",
+                "id": "f6c6-220a-2daf-fb5f",
+                "hidden": false,
+                "import": true,
+                "targetId": "7abf-e940-51aa-1a1e",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Shield Captain",
+                "id": "42a4-bd89-ffb4-ccf3",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "5", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Artificer Armour",
+                "id": "96e3-b9a6-0671-46ff",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "4dcd-921f-9ba5-90c8-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "4dcd-921f-9ba5-90c8-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Artificer Armour",
+                    "id": "9ab8-aa2a-ca45-372e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "504d-7a9b-cb14-1472",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Dawn Eagle Jetbike",
+                        "id": "e11d-05a9-1831-6abf",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "60bf-5353-cbe8-58ce",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                        "entryLinks": [
+                          {
+                            "name": "Interceptor Lance",
+                            "id": "1c90-c01b-3016-d279",
+                            "defaultAmount": "1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "3d39-f15c-b9c9-26c0",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "cecc-e797-d33e-6970-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "cecc-e797-d33e-6970-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ]
+                          }
+                        ],
+                        "modifiers": [{"affects": "1cf3-eb11-21d3-e205", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 10}]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Bulky (x)", "id": "4631-d336-ccea-c6c3", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"}]
+                  },
+                  {
+                    "name": "Allarus Terminator Armor",
+                    "id": "3643-8e24-ad05-5b24",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b6eb-c009-79cb-1046",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  }
+                ]
+              },
+              {
+                "name": "Guardian Spear",
+                "id": "ca23-f93a-53cd-d10d",
+                "defaultSelectionEntryId": "ea96-7fc1-4ab4-e0fa",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "626d-f24a-4986-3c47-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "626d-f24a-4986-3c47-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Castellan Axe",
+                    "id": "cf58-80a2-c1cc-afd3",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "5160-f2c0-3dd3-a8f8",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {"name": "Guardian Spear", "id": "ea96-7fc1-4ab4-e0fa", "hidden": false, "import": true, "targetId": "65bc-c05f-71cd-61b4", "type": "selectionEntry"}
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "60bf-5353-cbe8-58ce",
+                        "childName": "Dawn Eagle Jetbike",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "626d-f24a-4986-3c47-min", "type": "set", "value": 0},
+                      {"field": "626d-f24a-4986-3c47-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Sentinel Blade and Storm Shield",
+                    "id": "a5f8-15e0-0720-afa8",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "entryLinks": [
+                      {
+                        "name": "Storm Shields",
+                        "id": "a128-e5a9-94d5-0722",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f149-873d-0ef1-c92d",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "a91f-0ca6-9639-48fa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "a91f-0ca6-9639-48fa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Sentinel Blade",
+                        "id": "798a-261d-1189-23fb",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "cf90-2477-2a3b-a5da",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "dbdb-4bcd-8cc0-a6f2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "dbdb-4bcd-8cc0-a6f2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Knight-Centura",
+        "id": "2f56-bc9f-a14e-e942",
+        "hidden": false,
+        "import": true,
+        "page": "25",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "85a8-df06-b8c3-0eba", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "4891-7aee-10f9-68b4", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "1a12-6296-bd19-1d29", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "92ea-ba9c-7885-ad28", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "M31", "id": "24c0-3e84-4edb-bdf9", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Knight-Centura", "id": "fdbf-8795-8d58-25d1", "hidden": false, "primary": false, "targetId": "1639-0fdf-2a86-9b14"},
+          {"name": "Sisters of Silence", "id": "92cf-3dd7-69a9-2ff8", "hidden": false, "primary": false, "targetId": "f917-2287-ecc5-67fa"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 110}],
+        "entryLinks": [
+          {"name": "Warlord Trait", "id": "54a4-61c2-c71e-6b66", "hidden": false, "import": true, "targetId": "c6f4-fb30-e407-766c", "type": "selectionEntryGroup"},
+          {"name": "Warlord", "id": "7f82-c68c-6866-959a", "hidden": false, "import": true, "targetId": "8d5b-1249-8270-f73e", "type": "selectionEntry"}
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "dd20-b7bb-6f53-7fdb", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Emperors Own", "id": "5814-1395-c988-6bc9", "hidden": false, "targetId": "54ae-4d42-12bc-3f73", "type": "rule"},
+          {"name": "Anathema", "id": "ebcf-2d66-863c-eee2", "hidden": false, "targetId": "7649-c7ee-054d-5e35", "type": "rule"},
+          {"name": "Fleet", "id": "ca31-90ed-b5c9-7b17", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
+          {"name": "Hatred (x)", "id": "bb4e-dba1-24a7-041b", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
+          {"name": "Fear (x)", "id": "961e-ca94-395d-a25f", "hidden": false, "targetId": "719f-3e8c-b6f2-54ee", "type": "rule"}
+        ],
+        "rules": [
+          {
+            "name": "Ex Oblivio",
+            "id": "a94c-ddde-d1cc-78d3",
+            "description": "Enemy units within 3” of this unit are treated as being -1 Weapon Skill (WS). In addition, all attacks made by this unit in the Combat Phase with Melee type weapons are resolved as if they had the Bane special rule.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Knight-Centura",
+            "id": "b2d8-07ba-ac64-ac6e",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "7167-4ef7-cca1-d934-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7167-4ef7-cca1-d934-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {"name": "Frag Grenades", "id": "a6b9-a6d3-be34-4efd", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
+              {
+                "name": "Artificer Armour",
+                "id": "f12a-eb5e-93db-c43f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "504d-7a9b-cb14-1472",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a18a-032e-3e70-9e43-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a18a-032e-3e70-9e43-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Psyk-Out Grenades",
+                "id": "4e39-1f1f-e29a-9eea",
+                "hidden": false,
+                "import": true,
+                "targetId": "2c9c-03ad-4505-25ae",
+                "type": "selectionEntry",
+                "constraints": [{"id": "2a3b-69bd-6b7c-2818", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Krak Grenades", "id": "81f3-d8a2-7d14-4d41", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Knight-Centura",
+                "id": "69b4-a855-b37b-cd19",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Voidscale Cloak",
+                "id": "a80b-594c-9bc1-b25f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "879d-37da-f15b-16a9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "879d-37da-f15b-16a9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "rules": [
+                  {
+                    "name": "Voidscale Cloak",
+                    "id": "6423-e16f-3cdc-acdb",
+                    "description": "A model with this wargear has a 5+ Invulnerable save and a 3+ Invulnerable save against wounds caused by weapons with the Blast (X) or Spray special rules.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Knight Abyssal",
+                "id": "5fc1-374d-91c4-193d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "4182-5929-ff53-a445", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "profiles.Unit", "field": "bc55-c58d-b53a-233c", "scope": "model", "type": "increment", "value": 1},
+                      {"affects": "model", "field": "name", "scope": "model", "type": "set", "value": "Knight Abyssal"},
+                      {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "set", "value": "Knight Abyssal"},
+                      {"affects": "profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "scope": "model", "type": "increment", "value": 1},
+                      {"affects": "profiles.Unit", "field": "f7cb-9e55-a62c-25ed", "scope": "model", "type": "increment", "value": 1},
+                      {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model", "type": "increment", "value": 1},
+                      {"affects": "profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "model", "type": "increment", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Bolt Pistol",
+                "id": "cac2-d5ff-06f1-0266",
+                "defaultSelectionEntryId": "d335-6b7d-ee02-e874",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "1530-bea5-5617-c0f0-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "1530-bea5-5617-c0f0-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Needle Pistol",
+                    "id": "7acd-ac7a-330c-036c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "dee9-09f9-020d-c5b4",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {"name": "Bolt Pistol", "id": "d335-6b7d-ee02-e874", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"},
+                  {
+                    "name": "Hand Flamer",
+                    "id": "b149-62e6-b457-68d5",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "be5e-26aa-f44a-412c",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Plasma Pistol",
+                    "id": "6354-5593-a356-8c07",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "3407-02d2-18aa-4a22",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ]
+              },
+              {
+                "name": "Execution Blade",
+                "id": "38f9-8680-aaa3-9c1e",
+                "defaultSelectionEntryId": "90e5-e4d3-e839-fd2b",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "ee9c-95d0-071e-356d-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "ee9c-95d0-071e-356d-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Proteus Neuro- Lash",
+                    "id": "37cf-f320-6fe0-24e6",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "c43a-ac90-395d-c3ce",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {"name": "Executioner Blade", "id": "90e5-e4d3-e839-fd2b", "hidden": false, "import": true, "targetId": "2c5d-1ec2-9f66-bee0", "type": "selectionEntry"},
+                  {"name": "Power Sword", "id": "453f-d68d-de00-f3fc", "hidden": false, "import": true, "targetId": "84dd-49d6-4915-6b09", "type": "selectionEntry"},
+                  {"name": "Power Axe", "id": "63cb-beaf-47a6-eb6e", "hidden": false, "import": true, "targetId": "6dff-d1d6-7194-b1d0", "type": "selectionEntry"},
+                  {
+                    "name": "Power Maul",
+                    "id": "b770-ea76-a0f1-9de7",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2607-4972-6fde-3757",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {"name": "Power Lance", "id": "6773-9cee-961a-e751", "hidden": false, "import": true, "targetId": "a7ed-640e-8d57-4f6f", "type": "selectionEntry"},
+                  {
+                    "name": "Power Fist",
+                    "id": "969c-31ee-9548-3227",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e38e-0c5b-3e05-b098",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Silent Judge",
+        "id": "54c4-9aeb-f2d6-be91",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "a88f-e613-1d8d-56fe", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "5170-a98e-25f8-d88b", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "043b-b5ef-035f-6321", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "7ba3-77b8-535e-a9f0", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"}
+        ]
+      },
+      {
+        "name": "Silent Fury",
+        "id": "0075-522f-329f-8f89",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "12d5-7a6c-30c9-4e10", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "ce73-ef0c-5eea-d1b0", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "6213-654d-aba3-8c5d", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "f13a-ec04-0402-e2a0", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"}
+        ]
+      },
+      {
+        "name": "Captain General Trajin Valoris",
+        "id": "35de-9108-dd7c-503b",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "cbf3-f37d-9930-56b1", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "af2a-ff46-a611-1b7e", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "86ab-1758-2109-e24a", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "fafe-e205-1c32-77f3", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"}
+        ]
+      },
+      {
+        "name": "Custodian Guard",
+        "id": "74ba-dd6b-2bad-ac97",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "ff3f-1a17-6786-9d79", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "0e46-9410-89e5-83e0", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "56c8-0a73-ebaf-ebfd", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Troop", "id": "f7aa-530b-944d-7490", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Custodes", "id": "adea-fe6d-f3c0-6586", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"}
+        ]
+      },
+      {
+        "name": "Null Maidens",
+        "id": "3b81-80ca-4266-a37d",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "0f71-f3bd-8973-ff8b", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "d3ca-c5e5-1f4d-7770", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "f488-5ebc-de78-d727", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Troop", "id": "5ae2-9c2c-6304-3fd6", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"}
+        ]
+      },
+      {
+        "name": "Allarus Terminator Custodians",
+        "id": "3a7b-9ac4-15d1-a47c",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "5636-004b-9d76-2ed8", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "5d59-08a3-50c0-694d", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "6a14-4807-d9e3-c4b6", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Custodes", "id": "0103-d9c6-59e5-09fd", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "Elite", "id": "a7b2-6016-2c9f-7964", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+        ]
+      },
+      {
+        "name": "Aquilon Terminator Custodians",
+        "id": "167e-361e-4065-baf2",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "e290-b139-037c-e587", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "953b-adae-0443-201e", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "5016-d81e-77c3-37a1", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Custodes", "id": "6732-4185-60a0-23b5", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "Elite", "id": "d97f-c3dc-f7ba-22c7", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"}
+        ]
+      },
+      {
+        "name": "Custodes Contemptor Dreadnought",
+        "id": "4f95-c712-b1ae-044a",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "080a-eeea-c623-5aae", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "054c-e7f0-d799-519e", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Custodes", "id": "a9bc-b01b-fedd-45a0", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "Elite", "id": "d806-2b1b-39d9-e59b", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Walker", "id": "c13f-3117-0fbf-44dc", "hidden": false, "primary": false, "targetId": "38cd-8c36-35cb-d825"}
+        ]
+      },
+      {
+        "name": "Oblivion Knights",
+        "id": "ce3a-da8a-8c58-8865",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "055c-dd74-ad17-8d7f", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "cb94-d17c-60c3-4a7b", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Elite", "id": "547a-fe3b-b1f6-5367", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Infantry", "id": "7bb6-67cb-5e08-068b", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ]
+      },
+      {
+        "name": "Eradicators",
+        "id": "03ff-dd17-f31e-9447",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "d09a-5319-2625-342e", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "1bb5-4edb-0130-1cd0", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Elite", "id": "4199-2ddc-84f6-3c23", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Infantry", "id": "d11e-7069-99c6-f929", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ]
+      },
+      {
+        "name": "Sanctioners",
+        "id": "4e19-f0de-247d-da54",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "dbe5-f3f7-7e5e-7b5c", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "ee93-e8e9-6f38-0188", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Elite", "id": "db01-7ccd-1887-390e", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Infantry", "id": "2edd-d398-cfe8-3f49", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+        ]
+      },
+      {
+        "name": "Null Maiden Rhino APC",
+        "id": "1612-db7e-4934-bf61",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "c7db-de34-b122-1ebb", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "4366-aefc-5ceb-4b53", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Vehicle", "id": "1b2c-ee3e-ba45-7204", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Dedicated Transport", "id": "ebb6-ba17-5f80-24a9", "hidden": false, "primary": false, "targetId": "cb56-41eb-9b8c-2a8c"},
+          {"name": "Transport", "id": "081e-2ac7-e174-5aed", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"}
+        ]
+      },
+      {
+        "name": "Coronis Grav Carrier",
+        "id": "6ac5-ec17-4335-8a2e",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "8a16-df17-8ee3-9fd0", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "9fae-bb82-3d33-1d59", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Vehicle", "id": "a3bc-f9f8-21cd-705a", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Dedicated Transport", "id": "05aa-68c9-27a8-14a7", "hidden": false, "primary": true, "targetId": "cb56-41eb-9b8c-2a8c"},
+          {"name": "Transport", "id": "2a58-39e0-a81a-bbd4", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"}
+        ]
+      },
+      {
+        "name": "Kharon Pattern Acquisitor",
+        "id": "1d20-de1c-61da-25c3",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "9a8b-090d-8a68-8e17", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "58b4-785b-5cc2-a3b6", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Vehicle", "id": "f717-b823-912c-80db", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Dedicated Transport", "id": "0d0e-fda9-1549-1877", "hidden": false, "primary": true, "targetId": "cb56-41eb-9b8c-2a8c"},
+          {"name": "Transport", "id": "6d31-5b63-5010-6b4f", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"}
+        ]
+      },
+      {
+        "name": "Kharon Pattern Acquisitor",
+        "id": "f025-3cec-563c-853c",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "4519-46b7-b1d2-f298", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "e48a-7cf0-8ad5-62fd", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Vehicle", "id": "188a-7643-5a8c-c597", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Dedicated Transport", "id": "78ec-d89b-6f84-afc5", "hidden": false, "primary": true, "targetId": "cb56-41eb-9b8c-2a8c"},
+          {"name": "Transport", "id": "851c-96ea-1b19-b543", "hidden": false, "primary": false, "targetId": "443e-8295-c60e-0b05"}
+        ]
+      },
+      {
+        "name": "Venatari Custodians",
+        "id": "6108-b2d6-f4e9-b714",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "faef-78d7-7e34-d649", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "65fb-a7f5-9687-d20b", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Custodes", "id": "51c3-2eb7-d995-35c1", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "Fast", "id": "3870-39fb-24ba-b31e", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+        ]
+      },
+      {
+        "name": "Vertus Praetors",
+        "id": "3095-647b-30d6-2a58",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "d90c-1f72-d6c9-4fb0", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "4910-8a7e-b748-70fc", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Custodes", "id": "c4b4-7fd8-6793-d036", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "Fast", "id": "4cc0-0c34-e9a5-9004", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+        ]
+      },
+      {
+        "name": "Agamatus Custodians",
+        "id": "d926-541d-3a37-c8a6",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "4627-c166-f3e9-3c6c", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "3e8e-b955-c40c-66eb", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Custodes", "id": "ab94-ffdb-6b0d-c2dd", "hidden": false, "primary": false, "targetId": "17a6-9b1b-6610-defe"},
+          {"name": "Fast", "id": "afe8-e2e9-4231-29f6", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+        ]
+      },
+      {
+        "name": "Pallas Grav-Attack",
+        "id": "5ffb-af49-264d-2b11",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "cf82-6e42-c0bc-ee8a", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "a0e0-bfcc-321b-4447", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Fast", "id": "6ef5-06fd-1168-ea2e", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+        ]
+      },
+      {
+        "name": "Pursuers",
+        "id": "2f05-332f-5b0a-55e8",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "a697-a5f3-d200-6833", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "febb-87cf-cbc0-4d1a", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Fast", "id": "205c-cdf2-d5fc-31d6", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+        ]
+      },
+      {
+        "name": "Subjugator",
+        "id": "e2c7-638c-e3c8-e409",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "b0d9-4a1d-76bd-94ae", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "467d-0ab5-bc85-b99b", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Fast", "id": "d88c-a090-800f-a047", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
+        ]
+      },
+      {
+        "name": "Land Raider",
+        "id": "cc25-819a-7b67-78cb",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "21a8-210a-d1b0-9be1", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "4b54-67cd-50e6-7012", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Vehicle", "id": "5329-6519-11cd-be37", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Heavy", "id": "bfeb-ee34-5986-9758", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
+        ]
+      },
+      {
+        "name": "Caladius Grav-Tank",
+        "id": "40c3-2970-de68-c4ff",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "0f5a-cdc8-48dc-9f72", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "ef0a-abf6-b9fd-0fce", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Vehicle", "id": "dd7e-9904-3d68-8d93", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Heavy", "id": "4484-6271-e2c1-d6f7", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
+        ]
+      },
+      {
+        "name": "Telemon Heavy Dreadnought",
+        "id": "a6a1-562e-3dc4-1ab5",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "917f-f0d1-c355-edfa", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "f1ef-83a0-2d45-d8a6", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Heavy", "id": "5282-9f45-51ba-062b", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
+          {"name": "Walker", "id": "f33c-040f-bf8a-cd64", "hidden": false, "primary": false, "targetId": "38cd-8c36-35cb-d825"}
+        ]
+      },
+      {
+        "name": "Expurgators",
+        "id": "ae8b-6c91-8d7c-eb2c",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "90e1-1720-fcc2-08b0", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "f6ac-a47c-b6b4-0ea9", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Heavy", "id": "f964-89d9-22db-e1dd", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
+        ]
+      },
+      {
+        "name": "Orion Assault Dropship",
+        "id": "578c-0a71-a02a-84ee",
+        "hidden": false,
+        "import": true,
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Imperium", "id": "1023-6439-2243-a8d2", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Talons of the Emperor", "id": "d1cb-98f2-196f-16c3", "hidden": false, "primary": false, "targetId": "1086-ab9a-d28a-9e33"},
+          {"name": "Lord of War", "id": "c26d-1413-518a-c71a", "hidden": false, "primary": true, "targetId": "acad-b629-5cd8-4c1f"},
+          {"name": "Aircraft", "id": "cc25-5ee6-0cc3-b96c", "hidden": false, "primary": false, "targetId": "6af1-500e-865d-e08f"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Anathema",
+        "id": "7649-c7ee-054d-5e35",
+        "description": "A unit with this special rule gains the following effects:\n• The unit cannot be affected by Psychic powers.\n• Units with this special rule cannot be targeted by weapons with the Psychic Weapon special rule.\n• Enemy units within 3” do not gain the benefits of any Psychic powers cast on them.\n• Units with this special rule may only be joined by units with the Sisters of Silence Keyword.",
+        "hidden": false,
+        "page": "4",
+        "publicationId": "dc2f-4748-e72e-f22e"
+      },
+      {
+        "name": "Emperors Own",
+        "id": "54ae-4d42-12bc-3f73",
+        "description": "A unit with this special rule has the Stubborn special rule and automatically Rally at the start of your movement phase. In addition, when a unit with this special rule conducting a Fall Back Move would move off the Battlefield edge, they instead stop 1” away and automatically rally.",
+        "hidden": false,
+        "page": "4",
+        "publicationId": "dc2f-4748-e72e-f22e"
+      },
+      {
+        "name": "The Sodality",
+        "id": "9d36-17c3-cf2e-c059",
+        "description": "Coherency for units with this special rule is 3” horizontal and 9” vertical instead of 2” horizontal and 6” vertical. In addition, units with this special rule always count as outnumbering enemy models when contesting objectives regardless of the number of enemy models that are actually contesting the objective.",
+        "hidden": false,
+        "page": "4",
+        "publicationId": "dc2f-4748-e72e-f22e"
+      },
+      {
+        "name": "Binding",
+        "id": "8b66-83a3-2d33-7b50",
+        "description": "When a weapon gets hit with this special rule, it must make a Toughness test. If the test is passed, nothing happens. If the test is failed, the unit that was hit by a weapon with this special rule is automatically Pinned. This does not affect Vehicles, Aircraft, Walker, Titan, or Knight type units.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Warlord",
+        "id": "8d5b-1249-8270-f73e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "daa3-514e-a39d-43f8", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "a600-5c62-5403-c4b9", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "24ec-3d2c-456d-fe9a",
+                "childName": "Allied Detatchment",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {"field": "category", "scope": "unit", "type": "add", "value": "544d-0eb3-a4ab-4540"}
+        ]
+      },
+      {
+        "name": "Lastrum Storm Bolter",
+        "id": "a71d-e71e-21ed-f6f4",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Lastrum Storm Bolter",
+            "id": "a82d-cc80-7b78-4730",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vexila Magnifica",
+        "id": "939a-019f-52fb-5bac",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "rules": [
+          {
+            "name": "Vexila Magnifica",
+            "id": "3ee5-8747-7e93-018f",
+            "description": "A model with this wargear and its unit may re-roll failed Pinning and Panic tests. In addition, the unit counts as having scored 1 additional wound in the Combat Phase for the purposes of determining\ncombat resolution.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Vexila Defensor",
+        "id": "be9f-ee77-6951-de07",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "rules": [
+          {
+            "name": "Vexila Defensor",
+            "id": "0c9e-46ab-d1cc-b47b",
+            "description": "A model with this wargear and its unit may Set to Defend even if they make a Shooting Attack in the Shooting Phase. A unit that Sets to Defend treats all Charges against it as being Disordered Charges.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Vexila Imperius",
+        "id": "1d76-d1a3-0d53-67b0",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "rules": [
+          {
+            "name": "Vexila Imperius",
+            "id": "5422-6201-b2f0-baff",
+            "description": "A model with this Wargear and its unit may Set to Overwatch even if they made a Shooting Attack in the Shooting Phase. All Overwatch attacks made by the unit are resolved as if they have the Gets Hot! Special rule if the unit made a Shooting Attack in its previous Shooting Phase.A model with this wargear and its unit may Set to Defend even if they make a Shooting Attack in the Shooting Phase. A unit that Sets to Defend treats all Charges against it as being Disordered Charges.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Aquilon Terminator Armor",
+        "id": "af87-756b-b017-8f97",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "712b-8752-35ec-578b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "712b-8752-35ec-578b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Aquilon Terminator Armor",
+            "id": "f947-c953-1efe-034a",
+            "description": "An ancient heavier pattern of Terminator Armour rarely used. It provides a 2+ Armour save and a 3+ Invulnerable save. The Wearer gains the Relentless, Slow & Purposeful, Bulky (3), and Deep Strike special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Allarus Terminator Armor",
+        "id": "b6eb-c009-79cb-1046",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Sprint (x)", "id": "bb43-9885-e274-c662", "hidden": false, "targetId": "a60e-abf9-0bfd-1a6f", "type": "rule"},
+          {"name": "Relentless", "id": "8ca2-c183-2568-0e66", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Bulky (x)", "id": "3e90-bad2-7ce4-f547", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Deep Strike", "id": "50b5-8860-0257-5ae8", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"}
+        ],
+        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}],
+        "rules": [
+          {
+            "name": "Allarus Terminator Armor",
+            "id": "7494-c3f1-163a-11e3",
+            "description": "A more mobile pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 4+ Invulnerable save. The Wearer gains Relentless, Bulky (3), Deep Strike and Sprint (1) special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Gyrfalcon Jetbike",
+        "id": "8111-6d63-3bc5-7961",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3c8e-4c54-281f-94de-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3c8e-4c54-281f-94de-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Gyrfalcon Jetbike",
+            "id": "b990-d39f-abdb-7224",
+            "description": "A unit that is equipped with a Jetbike becomes a Jetbike Type unit. In addition, it gains +1 its Toughness (T) & Wounds (W) Characteristics. A\nGyrfalcon Jetbike is armed with a Lastrum Bolt Cannon.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Lastrum Bolt Cannon",
+            "id": "688a-ba72-7243-b54a",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "4a87-c08d-18e3-e5da-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "4a87-c08d-18e3-e5da-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dawn Eagle Jetbike",
+        "id": "60bf-5353-cbe8-58ce",
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model", "type": "increment", "value": 1},
+              {"field": "category", "type": "add", "value": "0709-887f-8d36-2d6b"},
+              {"field": "category", "type": "remove", "value": "560f-2dca-57fb-5997"},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "14"},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Dawn Eagle Jetbike",
+            "id": "8de5-afe7-ae2f-ef3c",
+            "description": "A unit that is equipped with a Jetbike becomes a Jetbike type unit. In addition, it gains +1 to its Toughness (T) & Wounds (W) Characteristics. A Dawn Eagle Jetbike is armed with a Hurricane Bolter.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Hurricane Bolter",
+            "id": "302e-e9a5-e8d4-8eb3",
+            "defaultSelectionEntryId": "a021-f30b-c7e1-edbd",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "991c-c656-5108-2986-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "991c-c656-5108-2986-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {"name": "Hurricane Bolter", "id": "a021-f30b-c7e1-edbd", "hidden": false, "import": true, "targetId": "8df1-2b7a-b2fa-fa8f", "type": "selectionEntry"},
+              {
+                "name": "Salvo Launcher",
+                "id": "6bf7-5269-27ee-40a6",
+                "hidden": false,
+                "import": true,
+                "targetId": "1cf3-eb11-21d3-e205",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flare Shields",
+        "id": "afb3-3c38-1628-7240",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "4330-1531-0b21-53cb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "4330-1531-0b21-53cb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Flare Shields",
+            "id": "e32d-a026-2ba0-0acf",
+            "description": "A unit equipped with this wargear, reduces the Strength (S) characteristic of any weapons that resolve their hits against the Front Armour (FA) of the equipped unit by 1. If the Attack has the Blast or Large Blast special rule, its strength is reduced by 2.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Linked Lastrum Bolt Cannon",
+        "id": "a854-d78f-c7e0-742f",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Lastrum Bolt Cannon",
+            "id": "6ee3-c55d-8607-d81e",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked, Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lastrum Bolt Cannon",
+        "id": "8716-839c-443e-1fa3",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Lastrum Bolt Cannon",
+            "id": "45f1-a446-f07d-d087",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nemesis Boltgun",
+        "id": "0caa-adc8-e4f6-422d",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Nemesis Boltgun",
+            "id": "1b30-6895-a7f7-3aa2",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Precision Hits, Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Infernus Fire Pike",
+        "id": "bdb7-a145-149c-40e7",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Infernus Fire Pike",
+            "id": "ccf2-bd22-d870-c799",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Infernus Incinerator",
+        "id": "5fde-dcad-6b83-487a",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Infernus Incinerator",
+            "id": "a301-7f3a-2f8b-2d3b",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kinetic Destroyer",
+        "id": "7200-da8b-55a7-70bc",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Kinetic Destroyer",
+            "id": "c763-0755-4882-fc88",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Crushing (6+), Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Iliastus Accelerator Culverin",
+        "id": "d54f-122b-678e-28bc",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Iliastus Accelerator Culverin",
+            "id": "8f6c-9dc2-21f9-ab2c",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked, Crushing (6+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Las Pulsar",
+        "id": "83d7-d44d-569b-579c",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Las Pulsar",
+            "id": "7bad-3af6-a35a-a921",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iliastus Accelerator Culverin",
+        "id": "47b2-ee3e-f44b-48bf",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Iliastus Accelerator Culverin",
+            "id": "7eae-9fb1-c3b9-7629",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Crushing (6+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Arachnus Blaze Cannon",
+        "id": "4119-7df3-6688-9bca",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Arachnus Blaze Cannon (Burst)",
+            "id": "419a-4c6a-8390-ff23",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "4", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked, Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Linked Arachnus Blaze Cannon (Beam)",
+            "id": "6e47-a3b3-6347-c899",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked, Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salvo Launcher",
+        "id": "1cf3-eb11-21d3-e205",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Salvo Launcher",
+            "id": "97b5-c7d9-c5d1-a90c",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Adrathic Devastator",
+        "id": "6887-4562-994e-5efa",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Adrathic Devastator",
+            "id": "0302-c6c9-b0ab-1ba0",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Adrathic Destructor",
+        "id": "3f34-b3c8-589e-19cf",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Adrathic Destructor",
+            "id": "b9da-a72e-47f4-c8e2",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Guardian Spear",
+        "id": "65bc-c05f-71cd-61b4",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Guardian Spear (shooting)",
+            "id": "bfac-6d07-5802-e6da",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Guardian Spear (Melee)",
+            "id": "28e0-adcf-7345-f2a8",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Reach, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Adrasite Spear",
+        "id": "0010-ff28-39e1-e61a",
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Adrasite Spear (shooting)",
+            "id": "8b5a-0da0-2c71-1473",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Adrasite Spear (Melee)",
+            "id": "5cf5-b30e-25cc-50f2",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Reach, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castellan Axe",
+        "id": "5160-f2c0-3dd3-a8f8",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Castellan Axe (Shooting)",
+            "id": "9634-06df-ad22-4a0e",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Castellan Axe (Melee)",
+            "id": "5e33-9d78-8f03-ab88",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Unwieldy, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sentinel Blade",
+        "id": "cf90-2477-2a3b-a5da",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Sentinel Blade (shooting)",
+            "id": "91ab-a413-42d4-7242",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Sentinel Blade (Melee)",
+            "id": "e97f-64c6-772d-91b4",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Rending (6+), Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ventari Lance",
+        "id": "692f-ff04-f8ea-aa9d",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Ventari Lance (Shooting)",
+            "id": "e2d5-36e2-bcda-5923",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Ventari Lance (Melee)",
+            "id": "16bd-09c4-fabb-1fb6",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Reach, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Custodes Crew Weapons",
+        "id": "9f24-1bdb-35ee-f5f4",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "20bf-c7a7-b210-aa10-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "20bf-c7a7-b210-aa10-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Custodes Crew Weapons",
+            "id": "44ad-7a12-dc3d-915e",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "5", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sister of Silence Crew weapons",
+        "id": "7698-1075-197d-494d",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3b48-148a-db87-072d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3b48-148a-db87-072d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Sister of Silence Crew weapons",
+            "id": "450a-9bea-dbdf-24fb",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "3", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Interceptor Lance",
+        "id": "3d39-f15c-b9c9-26c0",
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Interceptor Lance",
+            "id": "57a3-8303-927c-3b5a",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+!", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Reach, Piercing, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Executioner Blade",
+        "id": "2c5d-1ec2-9f66-bee0",
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Executioner Blade",
+            "id": "e389-4932-94d8-a8a9",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Rending (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Snare Gun",
+        "id": "1bcc-68a5-16ad-71bc",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Snare Gun",
+            "id": "3d06-f545-4b8a-5746",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Binding", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Snare Cannon",
+        "id": "0324-f355-b57e-87d3",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Snare Cannon",
+            "id": "d6f3-a0bf-694f-61ad",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Binding", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Assault Needler",
+        "id": "c6ea-96ed-7f6f-ab92",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Assault Needler",
+            "id": "1a4b-5e54-6416-e5e0",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Rending (5+), Precision Strikes, Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Needle Cannon",
+        "id": "0424-0fcf-180d-71de",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Needle Cannon",
+            "id": "2829-e6fe-68c9-9dc6",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Rending (5+), Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Proteus Neuro- Lash",
+        "id": "c43a-ac90-395d-c3ce",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Proteus Neuro- Lash",
+            "id": "f3d0-af23-d8b6-3d3f",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Bane (Psyker), Reach, Concussive, Swift Strike", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solarite Power Gauntlet",
+        "id": "5e72-1860-7aeb-3691",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Solarite Power Gauntlet",
+            "id": "b96a-aa1f-49bf-2818",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "10", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Master-Crafted, Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solarite Power Talon",
+        "id": "9509-9167-62a8-3621",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Solarite Power Talon",
+            "id": "cd61-c866-379b-80b8",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Shred, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Master of Martial Strategy",
+        "id": "1b0e-9d94-6a01-f737",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Master of Martial Strategy",
+            "id": "2804-3d2b-e5d8-0c3d",
+            "description": "A model with this Warlord Trait and their Attached unit gains the Counter Attack and Hit & Run special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Peerless Warrior",
+        "id": "8628-2576-8ef0-5028",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "affects": "entries.recursive.profiles.Unit",
+                "field": "bc69-d61f-afa3-0ebd",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Precision Hits",
+                "type": "increment",
+                "value": 1
+              },
+              {
+                "affects": "entries.recursive.profiles.Melee Weapons",
+                "field": "cc29-b1e7-88e5-c90f",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Precision Hits",
+                "type": "append",
+                "value": "Precision Hits"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Peerless Warrior",
+            "id": "fd88-aa48-3ff4-1200",
+            "description": "A model with this Warlord trait treats all Melee type weapons they are equipped with as having the Precision Hits special rule. In addition, increase their Weapon Skill (WS) characteristic by 1.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Superior Creation",
+        "id": "16bf-0bc2-49da-09e1",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Superior Creation",
+            "id": "7bab-a751-febd-a2d5",
+            "description": "A model with this Warlord trait gains the Regeneration special rule. A model with this trait is immune to Instant Death.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Maiden of Blood",
+        "id": "df33-8b75-cdd9-f824",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Maiden of Blood",
+            "id": "13f4-1642-65b6-3867",
+            "description": "A Warlord with this trait gains the Furious Charge and Sudden Strike special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Maiden of Resolve",
+        "id": "e83b-ab6e-ba5a-1491",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "modifiers": [{"affects": "entries.recursive.profiles.Unit", "field": "bc55-c58d-b53a-233c", "scope": "unit", "type": "increment", "value": 1}],
+        "rules": [
+          {
+            "name": "Maiden of Resolve",
+            "id": "76ac-9437-5664-8a55",
+            "description": "A model with this Warlord trait gains the Feel no Pain (5+) special\nand increases their Leadership (LD) characteristic by 1.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Maiden of Sorrow",
+        "id": "7bb8-b334-2459-ef07",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Maiden of Sorrow",
+            "id": "615a-8fc6-9f16-b788",
+            "description": "Enemy units within 3” of a Warlord with this trait halve their Leadership (LD) characteristic.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Adrathic Destructor",
+        "id": "4187-f4b5-153f-9ec4",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Adrathic Destructor",
+            "id": "9e3d-d9b6-b50f-2248",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pyrithite Spear",
+        "id": "b2f9-cd65-e369-8a3b",
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "dc2f-4748-e72e-f22e",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Pyrithite Spear (Shooting)",
+            "id": "581c-0858-8ffc-9904",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Melta, Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Pyrithite Spear (melee)",
+            "id": "740e-8b28-5530-ae65",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Reach, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      }
+    ],
     "sharedSelectionEntryGroups": [
       {
         "name": "Warlord Trait",
@@ -17,7 +2714,70 @@
         "collapsible": true,
         "defaultSelectionEntryId": "none",
         "hidden": false,
-        "constraints": [{"id": "033e-eb7b-9146-e21b", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+        "constraints": [
+          {
+            "id": "033e-eb7b-9146-e21b",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "Maiden of Sorrow", "id": "43d4-e7e2-746a-dd6e", "hidden": false, "targetId": "7bb8-b334-2459-ef07", "type": "selectionEntry"},
+          {"name": "Peerless Warrior", "id": "e869-bf16-5f7a-2fc1", "hidden": false, "targetId": "8628-2576-8ef0-5028", "type": "selectionEntry"},
+          {"name": "Maiden of Resolve", "id": "cdd7-7f7e-46a7-c18f", "hidden": false, "targetId": "e83b-ab6e-ba5a-1491", "type": "selectionEntry"},
+          {"name": "Maiden of Blood", "id": "d37d-dc19-8e0e-8c32", "hidden": false, "targetId": "df33-8b75-cdd9-f824", "type": "selectionEntry"},
+          {"name": "Superior Creation", "id": "f514-98b7-64db-89fb", "hidden": false, "targetId": "16bf-0bc2-49da-09e1", "type": "selectionEntry"},
+          {"name": "Master of Martial Strategy", "id": "fc71-126f-9060-6e19", "hidden": false, "targetId": "1b0e-9d94-6a01-f737", "type": "selectionEntry"}
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Sisters of Silence",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "f917-2287-ecc5-67fa",
+                "childName": "Sisters of Silence",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"affects": "7bb8-b334-2459-ef07", "field": "hidden", "type": "set", "value": true},
+              {"affects": "df33-8b75-cdd9-f824", "field": "hidden", "type": "set", "value": true},
+              {"affects": "e83b-ab6e-ba5a-1491", "field": "hidden", "type": "set", "value": true}
+            ]
+          },
+          {
+            "comment": "Custodes",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "17a6-9b1b-6610-defe",
+                "childName": "Custodes",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"affects": "16bf-0bc2-49da-09e1", "field": "hidden", "type": "set", "value": true},
+              {"affects": "9ac7-8a44-d62f-19b9", "field": "hidden", "type": "set", "value": true},
+              {"affects": "8628-2576-8ef0-5028", "field": "hidden", "type": "set", "value": true}
+            ]
+          }
+        ]
       }
     ]
   }

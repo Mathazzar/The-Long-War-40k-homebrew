@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 10,
     "library": true,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
@@ -7129,6 +7129,86 @@
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
         "infoLinks": [{"name": "Dreadnought Close Combat weapon", "id": "7460-3603-f813-37cd", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"}]
+      },
+      {
+        "name": "Combi Bolter",
+        "id": "b729-3d1e-1672-516b",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi Bolter",
+            "id": "c4cb-790d-95cf-1c22",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Psyk-Out Grenades",
+        "id": "2c9c-03ad-4505-25ae",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "ff84-04e2-ddac-ac63-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "profiles": [
+          {
+            "name": "Psyk-Out Grenades",
+            "id": "c696-28aa-08c4-e9b2",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "2", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Psyk-Out", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Needle Pistol",
+        "id": "dee9-09f9-020d-c5b4",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "19c4-6ab7-10c5-8fbe",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Needle Pistol",
+            "id": "acd2-5646-509c-bbee",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Rending (4+), Precision Strikes, Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
