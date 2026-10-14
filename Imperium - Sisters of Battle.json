@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 9,
+    "revision": 10,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0b86-c521-be39-bdb4", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -5722,6 +5722,20 @@
           {"name": "Adeptus Sororitas", "id": "eede-a394-dd89-818d", "hidden": false, "primary": false, "targetId": "9433-127f-a5c9-3ec2"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
+        "entryLinks": [
+          {
+            "name": "Rhino APC",
+            "id": "44e7-fa1d-8a6f-8659",
+            "hidden": false,
+            "import": true,
+            "targetId": "8cdf-b1fa-2dd9-68e8",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {"name": "Loud Hailers", "id": "2413-6986-c026-77b7", "hidden": false, "import": true, "targetId": "a3a0-1bfc-3ff2-9e0e", "type": "selectionEntry"},
+              {"name": "Sisters Close Weapons", "id": "cad8-41d6-4929-ef1e", "hidden": false, "import": true, "targetId": "e72c-a866-1782-1663", "type": "selectionEntry"}
+            ]
+          }
+        ],
         "infoLinks": [
           {"name": "Fade & Fire", "id": "edb8-eba1-ea5b-f74e", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
           {"name": "Shield of Faith", "id": "da28-c679-0ad2-1f59", "hidden": false, "targetId": "2d05-bd56-3e0a-87b7", "type": "rule"},
@@ -5788,64 +5802,6 @@
             "id": "da6f-fee0-84c9-db44",
             "description": "When a unit with this special rule would be destroyed. Embarked units are not required to roll for models inside being slain",
             "hidden": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Rhino APC",
-            "id": "8c55-0d51-1305-5b83",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "c161-fa10-2a50-01fd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "c161-fa10-2a50-01fd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {"name": "Searchlight", "id": "21d2-2b8f-d46a-da3e", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "6f6f-39eb-5863-a861", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {
-                "name": "Storm Bolter",
-                "id": "63a5-bed7-e376-f991",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c829-b809-d33d-4738",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "bc9a-c7dc-08c3-68a2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "bc9a-c7dc-08c3-68a2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
-              }
-            ],
-            "infoLinks": [
-              {"name": "Sisters Close Weapons", "id": "54f6-2582-068a-cbcb", "hidden": false, "targetId": "c25f-79f1-00c5-86d5", "type": "profile"},
-              {"name": "Loud Hailers", "id": "244f-6dfa-0223-003c", "hidden": false, "targetId": "267f-53d8-b00c-7da8", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Rhino APC",
-                "id": "8c58-80c8-a0c7-5443",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "3", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "7", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "11", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "11", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "3", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "14", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "11", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ]
           }
         ]
       },
@@ -10118,6 +10074,19 @@
         "hidden": false,
         "import": true,
         "type": "upgrade"
+      },
+      {
+        "name": "Sisters Close Weapons",
+        "id": "e72c-a866-1782-1663",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "def2-880c-4f16-b1ad-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "def2-880c-4f16-b1ad-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Sisters Close Weapons", "id": "1dba-8b94-b5d1-bd4d", "hidden": false, "targetId": "c25f-79f1-00c5-86d5", "type": "profile"}]
       }
     ],
     "sharedSelectionEntryGroups": [

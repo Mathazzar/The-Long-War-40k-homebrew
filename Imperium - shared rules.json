@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 10,
     "library": true,
-    "revision": 3,
+    "revision": 5,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
@@ -27,7 +27,8 @@
       {"name": "Land Raider", "id": "0eda-c168-0322-c649", "hidden": false},
       {"name": "Land Raider Crusader", "id": "7790-4f61-9ccc-1699", "hidden": false},
       {"name": "Land Raider Redeemer", "id": "cb98-681a-2899-71c4", "hidden": false},
-      {"name": "Paragon Warsuit", "id": "ee22-1e0b-4930-ea68", "hidden": false}
+      {"name": "Paragon Warsuit", "id": "ee22-1e0b-4930-ea68", "hidden": false},
+      {"name": "Contemptor", "id": "9891-f932-73e3-f871", "hidden": false}
     ],
     "sharedProfiles": [
       {
@@ -5134,42 +5135,14 @@
           {"name": "Vehicle", "id": "0bca-9a08-0920-01cb", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
           {"name": "M31", "id": "4c8c-5f3f-a0cb-5dd1", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
         ],
-        "infoLinks": [
-          {"name": "Reliable Machine Spirit", "id": "5530-669d-b92d-db31", "hidden": false, "targetId": "bdf3-62d2-3342-08fe", "type": "rule"},
-          {"name": "And they shall know no Fear", "id": "76a1-8de5-2782-54f7", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Relentless", "id": "e69d-6cb0-0bb4-1b3c", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "738e-11fb-b990-bf81", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Fire Points (x)", "id": "145e-1df3-8321-bf12", "hidden": false, "targetId": "9776-c5c5-ae58-e003", "type": "rule"}
-        ],
-        "selectionEntries": [
+        "entryLinks": [
           {
             "name": "Rhino APC",
-            "id": "8cdf-b1fa-2dd9-68e8",
-            "defaultAmount": "1",
+            "id": "3022-dab4-57a9-6dac",
             "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "393e-538b-55c0-510e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "393e-538b-55c0-510e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
+            "targetId": "8cdf-b1fa-2dd9-68e8",
+            "type": "selectionEntry",
             "entryLinks": [
-              {
-                "name": "Storm Bolter",
-                "id": "45ed-c366-369e-a547",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c829-b809-d33d-4738",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "da69-e8db-80a0-596a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "da69-e8db-80a0-596a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
-              },
-              {"name": "Searchlight", "id": "8454-d87c-32ab-0c88", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0a40-e70f-c76c-5804", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Marine Crew Weapons",
                 "id": "0de0-9c90-1358-edda",
@@ -5183,30 +5156,15 @@
                   {"id": "15f1-d922-23a5-d2e9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               }
-            ],
-            "profiles": [
-              {
-                "name": "Rhino APC",
-                "id": "0430-d1d9-c16b-fbb0",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "7", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "11", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "11", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "3", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "11", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
             ]
           }
+        ],
+        "infoLinks": [
+          {"name": "Reliable Machine Spirit", "id": "5530-669d-b92d-db31", "hidden": false, "targetId": "bdf3-62d2-3342-08fe", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "76a1-8de5-2782-54f7", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Relentless", "id": "e69d-6cb0-0bb4-1b3c", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "738e-11fb-b990-bf81", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Fire Points (x)", "id": "145e-1df3-8321-bf12", "hidden": false, "targetId": "9776-c5c5-ae58-e003", "type": "rule"}
         ]
       },
       {
@@ -6234,18 +6192,7 @@
         "type": "model",
         "constraints": [{"id": "7ad4-33b5-b06d-1d0d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [
-          {
-            "name": "Loud Hailers",
-            "id": "4713-c762-2c62-c3bf",
-            "defaultAmount": "1",
-            "hidden": false,
-            "targetId": "a3a0-1bfc-3ff2-9e0e",
-            "type": "selectionEntry",
-            "constraints": [
-              {"id": "b6a8-466d-6003-d0f4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "b6a8-466d-6003-d0f4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ]
-          },
+          {"name": "Loud Hailers", "id": "4713-c762-2c62-c3bf", "hidden": false, "targetId": "a3a0-1bfc-3ff2-9e0e", "type": "selectionEntry"},
           {
             "name": "Hunter-Killer Missile",
             "id": "47c3-0300-bac4-8e88",
@@ -6334,9 +6281,14 @@
       {
         "name": "Loud Hailers",
         "id": "a3a0-1bfc-3ff2-9e0e",
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "constraints": [
+          {"id": "c870-45ec-2597-8cec-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c870-45ec-2597-8cec-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
         "infoLinks": [{"name": "Loud Hailers", "id": "2af7-3410-8e0e-7c18", "hidden": false, "targetId": "267f-53d8-b00c-7da8", "type": "rule"}]
       },
       {
@@ -6358,107 +6310,12 @@
         ],
         "constraints": [{"id": "9f14-57f9-4431-6882", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 2}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 180}],
+        "entryLinks": [{"name": "Land Raider", "id": "8cba-ac04-ce19-762c", "hidden": false, "targetId": "8262-c5b6-db29-fd02", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "Machine Spirit", "id": "220e-80a2-118e-5b14", "hidden": false, "targetId": "90e4-fe1e-9971-6663", "type": "rule"},
           {"name": "Relentless", "id": "f38a-99c5-9225-437e", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "02ea-b9a0-b42f-be42", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "And they shall know no Fear", "id": "f7c6-c230-3769-757c", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}
-        ],
-        "selectionEntries": [
-          {
-            "name": "Land Raider",
-            "id": "8262-c5b6-db29-fd02",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "4102-4aff-bc15-d230-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "4102-4aff-bc15-d230-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {"name": "Storm Bolter (S)", "id": "5a5c-ee37-d418-7dd8", "hidden": false, "targetId": "f4e8-f405-8d57-e6b5", "type": "selectionEntryGroup"},
-              {
-                "name": "Linked Las Cannon",
-                "id": "cac3-3b25-6ef1-27ed",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "targetId": "446b-047d-0872-5352",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "0494-91ad-4ee6-15b7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "0494-91ad-4ee6-15b7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              },
-              {"name": "Searchlight", "id": "3af9-de2a-2937-5a15", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
-              {"name": "Smoke Launchers", "id": "0bd5-b7cd-95cc-9953", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {
-                "name": "Marine Crew Weapons",
-                "id": "2af9-8d96-0315-5338",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "2bae-f8ee-dabc-33dc",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "3766-5362-04d4-031a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3766-5362-04d4-031a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Whirlwind Missile Launcher",
-                "id": "fa1a-1641-aaed-6fc5",
-                "hidden": false,
-                "import": true,
-                "targetId": "798b-9458-3d48-9507",
-                "type": "selectionEntry",
-                "constraints": [{"id": "1330-1653-9af2-3389", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                "modifiers": [
-                  {"field": "name", "type": "append", "value": "(P)"},
-                  {"affects": "profiles.Vehicle", "field": "8058-3a16-8bc0-ad4b", "scope": "model", "type": "set", "value": "5"}
-                ]
-              },
-              {
-                "name": "Linked Heavy Bolter",
-                "id": "e075-1321-17ea-e758",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "7812-1637-a222-add0",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "0878-b6d0-cf57-cfb9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "0878-b6d0-cf57-cfb9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Land Raider",
-                "id": "3637-e664-bcfe-38cf",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "8", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "14", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "14", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "14", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "4", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "10", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -7129,6 +6986,252 @@
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
         "infoLinks": [{"name": "Dreadnought Close Combat weapon", "id": "7460-3603-f813-37cd", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"}]
+      },
+      {
+        "name": "Combi Bolter",
+        "id": "b729-3d1e-1672-516b",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi Bolter",
+            "id": "c4cb-790d-95cf-1c22",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Psyk-Out Grenades",
+        "id": "2c9c-03ad-4505-25ae",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "ff84-04e2-ddac-ac63-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "profiles": [
+          {
+            "name": "Psyk-Out Grenades",
+            "id": "c696-28aa-08c4-e9b2",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "2", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Psyk-Out", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Needle Pistol",
+        "id": "dee9-09f9-020d-c5b4",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "19c4-6ab7-10c5-8fbe",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Needle Pistol",
+            "id": "acd2-5646-509c-bbee",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Rending (4+), Precision Strikes, Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atomantic Shielding",
+        "id": "22bf-68df-6ed4-225d",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d199-37de-ec76-2582-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d199-37de-ec76-2582-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Atomantic Shielding",
+            "id": "519f-55e2-bc83-27ac",
+            "description": "This confers a 5+ Invulnerable save. When a model with this wargear is slain and removed from play, the model suffers an Explodes result per the Vehicle damage chart before it is removed from play.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Rhino APC",
+        "id": "8cdf-b1fa-2dd9-68e8",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "constraints": [
+          {"id": "393e-538b-55c0-510e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "393e-538b-55c0-510e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "entryLinks": [
+          {
+            "name": "Storm Bolter",
+            "id": "45ed-c366-369e-a547",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "c829-b809-d33d-4738",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "da69-e8db-80a0-596a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "da69-e8db-80a0-596a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+          },
+          {"name": "Searchlight", "id": "8454-d87c-32ab-0c88", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+          {"name": "Smoke Launchers", "id": "0a40-e70f-c76c-5804", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"}
+        ],
+        "profiles": [
+          {
+            "name": "Rhino APC",
+            "id": "0430-d1d9-c16b-fbb0",
+            "hidden": false,
+            "typeId": "9f3f-85d3-bf97-fcc9",
+            "typeName": "Vehicle",
+            "characteristics": [
+              {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
+              {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
+              {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
+              {"name": "S", "$text": "7", "typeId": "605e-2df1-55c7-3d9d"},
+              {"name": "Front", "$text": "11", "typeId": "65d6-7651-a40f-fcd5"},
+              {"name": "Side", "$text": "11", "typeId": "570a-ef9c-8153-2bb7"},
+              {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
+              {"name": "A", "$text": "3", "typeId": "1a60-9cb9-3892-ac5a"},
+              {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
+              {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
+              {"name": "Transport Capacity", "$text": "11", "typeId": "8058-3a16-8bc0-ad4b"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Land Raider",
+        "id": "8262-c5b6-db29-fd02",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "constraints": [
+          {"id": "4102-4aff-bc15-d230-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "4102-4aff-bc15-d230-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "entryLinks": [
+          {"name": "Storm Bolter (S)", "id": "5a5c-ee37-d418-7dd8", "hidden": false, "targetId": "f4e8-f405-8d57-e6b5", "type": "selectionEntryGroup"},
+          {
+            "name": "Linked Las Cannon",
+            "id": "cac3-3b25-6ef1-27ed",
+            "defaultAmount": "2",
+            "hidden": false,
+            "import": true,
+            "targetId": "446b-047d-0872-5352",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "0494-91ad-4ee6-15b7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "0494-91ad-4ee6-15b7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+            ],
+            "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+          },
+          {"name": "Searchlight", "id": "3af9-de2a-2937-5a15", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+          {"name": "Smoke Launchers", "id": "0bd5-b7cd-95cc-9953", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
+          {
+            "name": "Marine Crew Weapons",
+            "id": "2af9-8d96-0315-5338",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "2bae-f8ee-dabc-33dc",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "3766-5362-04d4-031a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "3766-5362-04d4-031a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Whirlwind Missile Launcher",
+            "id": "fa1a-1641-aaed-6fc5",
+            "hidden": false,
+            "import": true,
+            "targetId": "798b-9458-3d48-9507",
+            "type": "selectionEntry",
+            "constraints": [{"id": "1330-1653-9af2-3389", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "modifiers": [
+              {"field": "name", "type": "append", "value": "(P)"},
+              {"affects": "profiles.Vehicle", "field": "8058-3a16-8bc0-ad4b", "scope": "model", "type": "set", "value": "5"}
+            ]
+          },
+          {
+            "name": "Linked Heavy Bolter",
+            "id": "e075-1321-17ea-e758",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "7812-1637-a222-add0",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "0878-b6d0-cf57-cfb9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0878-b6d0-cf57-cfb9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Land Raider",
+            "id": "3637-e664-bcfe-38cf",
+            "hidden": false,
+            "typeId": "9f3f-85d3-bf97-fcc9",
+            "typeName": "Vehicle",
+            "characteristics": [
+              {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
+              {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
+              {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
+              {"name": "S", "$text": "8", "typeId": "605e-2df1-55c7-3d9d"},
+              {"name": "Front", "$text": "14", "typeId": "65d6-7651-a40f-fcd5"},
+              {"name": "Side", "$text": "14", "typeId": "570a-ef9c-8153-2bb7"},
+              {"name": "Rear", "$text": "14", "typeId": "e3d1-4d87-d5c4-921c"},
+              {"name": "A", "$text": "4", "typeId": "1a60-9cb9-3892-ac5a"},
+              {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
+              {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
+              {"name": "Transport Capacity", "$text": "10", "typeId": "8058-3a16-8bc0-ad4b"}
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
