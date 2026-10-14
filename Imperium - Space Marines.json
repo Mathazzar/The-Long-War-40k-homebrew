@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 13,
+    "revision": 14,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -496,7 +496,6 @@
       {"name": "Tactical Terminator Squad", "id": "75a2-8dab-75cd-b717", "hidden": false},
       {"name": "Assault Terminator Squad", "id": "0498-fe7e-77f1-efd7", "hidden": false},
       {"name": "Relic Terminator Squad", "id": "0df9-79f3-7dfd-4994", "hidden": false},
-      {"name": "Contemptor", "id": "9891-f932-73e3-f871", "hidden": false},
       {"name": "Redemptor", "id": "0f5c-2f4a-f828-f35c", "hidden": false},
       {"name": "Invictor Tactical Warsuit", "id": "4e12-4f3c-8352-aa1c", "hidden": false},
       {"name": "Land Speeder", "id": "67d9-aa34-4f79-0ba9", "hidden": false},
@@ -7972,26 +7971,6 @@
               {"id": "eacf-ca6f-b8b3-bcda-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "eacf-ca6f-b8b3-bcda-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ]
-          }
-        ]
-      },
-      {
-        "name": "Atomantic Shielding",
-        "id": "22bf-68df-6ed4-225d",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "d199-37de-ec76-2582-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "d199-37de-ec76-2582-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Atomantic Shielding",
-            "id": "519f-55e2-bc83-27ac",
-            "description": "This confers a 5+ Invulnerable save. When a model with this wargear is slain and removed from play, the model suffers an Explodes result per the Vehicle damage chart before it is removed from play.",
-            "hidden": false
           }
         ]
       },

@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 6,
+    "revision": 7,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -15459,44 +15459,40 @@
           },
           {
             "name": "Cyber Mastiff",
-            "id": "249a-14cb-5096-2663",
+            "id": "4684-7d15-6955-b47c",
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
             "type": "model",
-            "constraints": [
-              {"id": "f453-f5d0-91d2-be0d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "f453-f5d0-91d2-be0d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
             "entryLinks": [
               {
                 "name": "Bionics",
-                "id": "b1e2-619a-2f73-9b06",
+                "id": "295a-36cc-28c4-bd83",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
                 "targetId": "f3dc-8d02-5045-67e3",
                 "type": "selectionEntry",
-                "constraints": [{"id": "bfa5-b723-8be7-416d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+                "constraints": [{"id": "4301-d0fc-abb8-33fc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Close Combat Weapons",
-                "id": "6ad1-6068-c533-aa5c",
+                "id": "3fed-9db4-2421-6a4c",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
                 "targetId": "ba4d-218f-3817-c775",
                 "type": "selectionEntry",
                 "constraints": [
-                  {"id": "ebff-31bc-d4d8-e53c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "ebff-31bc-d4d8-e53c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                  {"id": "c2c2-721c-477e-3f68", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "9494-5a50-10bb-0d5f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               }
             ],
             "profiles": [
               {
                 "name": "Cyber Mastiff",
-                "id": "143c-03b9-6374-825b",
+                "id": "ad08-0ecb-9087-2457",
                 "hidden": false,
                 "typeId": "8460-92c9-82af-a787",
                 "typeName": "Unit",
