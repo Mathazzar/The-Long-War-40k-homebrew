@@ -3,11 +3,10 @@
     "name": "Imperium - Imperial Agents",
     "id": "3a8c-a55f-a279-a31d",
     "battleScribeVersion": "2.03",
-    "comment": "todo: everything",
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 7,
+    "revision": 8,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -18925,33 +18924,6 @@
         ]
       },
       {
-        "name": "Rotor Cannon",
-        "id": "82ed-ec50-5420-edbb",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "11",
-        "publicationId": "19c4-6ab7-10c5-8fbe",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Rotor Cannon",
-            "id": "5289-1427-0aa4-89f6",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "5", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Vortex Grenade",
         "id": "1c8a-e33d-f872-df8e",
         "collective": true,
@@ -19002,33 +18974,6 @@
               {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Concussive, Shred", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Archeotech Pistol",
-        "id": "7341-3160-7729-7970",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "19c4-6ab7-10c5-8fbe",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Archeotech Pistol",
-            "id": "48fb-0091-ccaf-fb07",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "15", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]

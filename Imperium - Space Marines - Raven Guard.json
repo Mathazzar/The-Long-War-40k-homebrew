@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 4,
     "library": true,
-    "revision": 6,
+    "revision": 7,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - Imperial Guard", "id": "70d5-ec7b-4e75-5145", "importRootEntries": false, "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"}],
     "categoryEntries": [
@@ -3173,6 +3173,16 @@
                   {"id": "f22c-42c2-bb26-d93d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "f22c-42c2-bb26-d93d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Digital Weapons",
+                "id": "3c29-9f66-1c68-857a",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "7abf-e940-51aa-1a1e",
+                "type": "selectionEntry",
+                "constraints": [{"id": "4138-debc-6dd0-f34b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               }
             ],
             "profiles": [
@@ -3189,24 +3199,10 @@
                   {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
                   {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
                   {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
                   {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
                   {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
                   {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Digital Weapons",
-                "id": "f98f-d157-3582-ab6d",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "fcbc-034d-ed80-2fa8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "fcbc-034d-ed80-2fa8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               }
             ],
@@ -3364,24 +3360,24 @@
                     "targetId": "be5e-26aa-f44a-412c",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Grav Pistol",
-                    "id": "8d63-d0a8-353b-b6b9",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
                   {
                     "name": "Neo Volkite Pistol",
-                    "id": "2c7b-3518-43fc-7cbf",
+                    "id": "07bd-fd02-fe6a-1be5",
                     "hidden": false,
                     "import": true,
-                    "type": "upgrade",
+                    "targetId": "f48c-fb97-f28e-27d3",
+                    "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                  },
+                  {
+                    "name": "Grav Pistol",
+                    "id": "e363-1790-22f8-f8a9",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4095-0464-a8c4-96f1",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   }
                 ]
               },
@@ -3426,22 +3422,23 @@
                   {"name": "Plasma Gun", "id": "184f-a506-b281-0462", "hidden": false, "import": true, "targetId": "db58-d2e2-0963-74bd", "type": "selectionEntry"},
                   {"name": "Meltagun", "id": "092b-8560-c0e5-4ec9", "hidden": false, "import": true, "targetId": "6186-a63d-2245-c4bb", "type": "selectionEntry"},
                   {"name": "Flamer", "id": "73d1-e823-9f96-30df", "hidden": false, "import": true, "targetId": "958b-0867-67db-e40a", "type": "selectionEntry"},
-                  {"name": "Astartes Shotgun", "id": "164c-0a72-defc-f68a", "hidden": false, "import": true, "targetId": "f426-979e-1b34-e351", "type": "selectionEntry"}
-                ],
-                "selectionEntries": [
-                  {"name": "Combi-Flamer", "id": "3f93-1f83-9331-3328", "hidden": false, "import": true, "type": "upgrade"},
-                  {"name": "Combi-Plasma", "id": "8210-0145-0685-cc8f", "hidden": false, "import": true, "type": "upgrade"},
+                  {"name": "Astartes Shotgun", "id": "164c-0a72-defc-f68a", "hidden": false, "import": true, "targetId": "f426-979e-1b34-e351", "type": "selectionEntry"},
+                  {"name": "Volkite Calivers", "id": "c071-70ec-dccf-56eb", "hidden": false, "import": true, "targetId": "af1a-8de9-4e81-d699", "type": "selectionEntry"},
+                  {"name": "Combi Flamer", "id": "92cc-a61a-7e85-c8de", "hidden": false, "import": true, "targetId": "4055-8e1b-e950-5299", "type": "selectionEntry"},
+                  {"name": "Combi Grav", "id": "b7b9-cd52-2c90-a19c", "hidden": false, "import": true, "targetId": "b8b8-1bdb-b1a9-d4d9", "type": "selectionEntry"},
                   {
-                    "name": "Combi-Melta",
-                    "id": "5509-dafa-76cf-4149",
+                    "name": "Combi Melta",
+                    "id": "4fc1-8485-f1b1-1dd6",
                     "hidden": false,
                     "import": true,
-                    "type": "upgrade",
+                    "targetId": "0a47-4e41-d06f-dabf",
+                    "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
-                  {"name": "Combi-Grav", "id": "4d71-4cf4-aa3d-2edc", "hidden": false, "import": true, "type": "upgrade"},
-                  {"name": "Volkite Caliver", "id": "d844-66d1-232f-6f12", "hidden": false, "import": true, "type": "upgrade"},
-                  {"name": "Grav Gun", "id": "0c79-cfb1-525b-e17f", "hidden": false, "import": true, "type": "upgrade"},
+                  {"name": "Combi Plasma", "id": "fe6c-d5bc-665d-61b2", "hidden": false, "import": true, "targetId": "8d0b-110a-173a-4ddd", "type": "selectionEntry"},
+                  {"name": "Grav Gun", "id": "fa27-5004-fa38-0a57", "hidden": false, "import": true, "targetId": "c4da-fd1d-a542-d279", "type": "selectionEntry"}
+                ],
+                "selectionEntries": [
                   {
                     "name": "Astartes Grenade Launcher",
                     "id": "f12c-3831-5d2e-8c29",

@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "c5da-a0aa-2802-2c16", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -11037,6 +11037,7 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 545}],
         "infoLinks": [
+          {"name": "Flank Speed", "id": "e701-ef78-886a-386b", "hidden": false, "targetId": "f9a1-e19d-54a0-a889", "type": "rule"},
           {"name": "She Who Thirsts", "id": "a513-56f5-7fa2-2f62", "hidden": false, "targetId": "3189-d509-57a0-892d", "type": "rule"},
           {"name": "Super Heavy (x)", "id": "8745-b9e3-3ec0-f931", "hidden": false, "targetId": "35dc-0e82-3125-fe6f", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "dbb1-a975-0684-d382", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
@@ -11046,14 +11047,6 @@
           {"name": "Allegiance", "id": "225d-a22f-039d-9bfe", "hidden": false, "targetId": "2249-532e-04b4-500d", "type": "infoGroup"},
           {"name": "Deep Strike", "id": "e85b-eaa2-358f-2dd0", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
           {"name": "Scout", "id": "e999-0ec9-e4ed-5f24", "hidden": false, "targetId": "40e0-db51-99ce-684c", "type": "rule"}
-        ],
-        "rules": [
-          {
-            "name": "Flank Speed",
-            "id": "f9a1-e19d-54a0-a889",
-            "description": "When this unit performs an Advance move in the Movement Phase, it automatically adds 12” to its Movement (M) characteristic.",
-            "hidden": false
-          }
         ],
         "selectionEntries": [
           {

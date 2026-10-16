@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 14,
+    "revision": 15,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -2606,325 +2606,7 @@
             "value": 0
           }
         ],
-        "entryLinks": [
-          {
-            "name": "Combi Plasma",
-            "id": "76cc-bab2-57b9-80a7",
-            "hidden": false,
-            "import": true,
-            "targetId": "8d0b-110a-173a-4ddd",
-            "type": "selectionEntry",
-            "constraints": [
-              {
-                "id": "9d77-b674-8c49-cd2b-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "9d77-b674-8c49-cd2b-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "childId": "8210-0145-0685-cc8f",
-                    "childName": "Combi-Plasma",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ],
-                "modifiers": [
-                  {"field": "9d77-b674-8c49-cd2b-min", "type": "set", "value": 1},
-                  {"field": "9d77-b674-8c49-cd2b-max", "type": "set", "value": 1},
-                  {"field": "hidden", "type": "set", "value": true}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Combi Flamer",
-            "id": "f1ad-5188-2f40-b2fe",
-            "hidden": false,
-            "import": true,
-            "targetId": "4055-8e1b-e950-5299",
-            "type": "selectionEntry",
-            "constraints": [
-              {
-                "id": "679b-863e-84d5-aad3-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "679b-863e-84d5-aad3-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "childId": "3f93-1f83-9331-3328",
-                    "childName": "Combi-Flamer",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ],
-                "modifiers": [
-                  {"field": "hidden", "type": "set", "value": true},
-                  {"field": "679b-863e-84d5-aad3-min", "type": "set", "value": 1},
-                  {"field": "679b-863e-84d5-aad3-max", "type": "set", "value": 1}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Combi Grav",
-            "id": "87f3-79e1-8453-6746",
-            "hidden": false,
-            "import": true,
-            "targetId": "b8b8-1bdb-b1a9-d4d9",
-            "type": "selectionEntry",
-            "constraints": [
-              {
-                "id": "1e17-dc90-eedb-7f5e-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "1e17-dc90-eedb-7f5e-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "childId": "4d71-4cf4-aa3d-2edc",
-                    "childName": "Combi-Grav",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ],
-                "modifiers": [
-                  {"field": "hidden", "type": "set", "value": true},
-                  {"field": "1e17-dc90-eedb-7f5e-min", "type": "set", "value": 1},
-                  {"field": "1e17-dc90-eedb-7f5e-max", "type": "set", "value": 1}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Combi Melta",
-            "id": "4aa2-49c2-5604-e7fa",
-            "hidden": false,
-            "import": true,
-            "targetId": "0a47-4e41-d06f-dabf",
-            "type": "selectionEntry",
-            "constraints": [
-              {
-                "id": "2da8-a48d-eae0-7dcf-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "2da8-a48d-eae0-7dcf-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "childId": "5509-dafa-76cf-4149",
-                    "childName": "Combi-Melta",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ],
-                "modifiers": [
-                  {"field": "hidden", "type": "set", "value": true},
-                  {"field": "2da8-a48d-eae0-7dcf-min", "type": "set", "value": 1},
-                  {"field": "2da8-a48d-eae0-7dcf-max", "type": "set", "value": 1}
-                ]
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {"name": "And they shall know no Fear", "id": "d8dc-409b-e745-0e62", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {
-            "name": "Volkite Calivers",
-            "id": "cc46-3000-deed-77c7",
-            "hidden": false,
-            "targetId": "e864-f861-a0ce-862e",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "d844-66d1-232f-6f12",
-                    "childName": "Volkite Caliver",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Grav Pistol",
-            "id": "814a-7927-b08a-69a7",
-            "hidden": false,
-            "targetId": "07a5-2d88-7f0b-fdde",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "8d63-d0a8-353b-b6b9",
-                    "childName": "Grav Pistol",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Neo Volkite Pistol",
-            "id": "5066-256a-c009-a7cd",
-            "hidden": false,
-            "targetId": "badb-ecc4-580a-7832",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "2c7b-3518-43fc-7cbf",
-                    "childName": "Neo Volkite Pistol",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Grav Gun",
-            "id": "fd78-b825-7db2-2557",
-            "hidden": false,
-            "targetId": "7d74-1b74-bb90-2e4f",
-            "type": "profile",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "0c79-cfb1-525b-e17f",
-                    "childName": "Grav Gun",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {"name": "Auspex Scanner", "id": "8e23-abd6-81b9-aa89", "hidden": false, "targetId": "c18b-7a71-9264-538d", "type": "rule"},
-          {"name": "Digital Weapons", "id": "7966-cfeb-1896-aa79", "hidden": false, "targetId": "aeb5-4df4-329c-f4b5", "type": "rule"}
-        ]
+        "infoLinks": [{"name": "And they shall know no Fear", "id": "d8dc-409b-e745-0e62", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}]
       },
       {
         "name": "Dark Wing Storm Eagle Gunship",
@@ -6420,21 +6102,6 @@
           {"name": "LD", "$text": "6", "typeId": "bc55-c58d-b53a-233c"},
           {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
         ]
-      },
-      {
-        "name": "Volkite Calivers",
-        "id": "e864-f861-a0ce-862e",
-        "hidden": false,
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "15", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
-        ]
       }
     ],
     "sharedRules": [
@@ -7591,44 +7258,6 @@
         ]
       },
       {
-        "name": "Volkite Calivers",
-        "id": "af1a-8de9-4e81-d699",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Volkite Calivers", "id": "3199-822b-7e82-06a7", "hidden": false, "targetId": "e864-f861-a0ce-862e", "type": "profile"}]
-      },
-      {
-        "name": "Volkite Culverin",
-        "id": "2851-7115-5fcd-3a4d",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Volkite Culverin",
-            "id": "2c7e-2c01-5836-33bb",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Macro Plasma incinerator",
         "id": "1405-c572-c578-8d95",
         "collective": true,
@@ -7824,33 +7453,6 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Precision Hits, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Conversion Beamer",
-        "id": "5064-4f97-f4ab-1329",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Conversion Beamer",
-            "id": "3f3c-417a-c1a9-934d",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Conversion", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -11579,6 +11181,17 @@
                     "value": 1
                   }
                 ],
+                "entryLinks": [
+                  {
+                    "name": "Turbo Laser Destructor (P)",
+                    "id": "1b2a-f5e0-52a1-fb7a",
+                    "hidden": false,
+                    "targetId": "7f35-3207-b72d-7851",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                    "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                  }
+                ],
                 "selectionEntries": [
                   {
                     "name": "Thunderhawk Heavy Cannon (P)",
@@ -11600,31 +11213,6 @@
                           {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
                           {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
                           {"name": "Rules", "$text": "Blast (Large), Ordnance", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Turbo Laser Destructor (P)",
-                    "id": "7f35-3207-b72d-7851",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                    "profiles": [
-                      {
-                        "name": "Turbo Laser Destructor",
-                        "id": "57b4-e2da-49c0-8eea",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "16", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Sunder, Ordnance, Macro", "typeId": "ba87-19e9-d692-6e30"}
                         ]
                       }
                     ]
