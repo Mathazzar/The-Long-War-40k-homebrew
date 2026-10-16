@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 13,
+    "revision": 14,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -1634,6 +1634,12 @@
         "hidden": false,
         "page": "5",
         "publicationId": "b30d-99de-ef25-ed03"
+      },
+      {
+        "name": "Flank Speed",
+        "id": "f9a1-e19d-54a0-a889",
+        "description": "When this unit performs an Advance move in the Movement Phase, it automatically adds 12” to its Movement (M) characteristic.",
+        "hidden": false
       }
     ],
     "sharedSelectionEntries": [

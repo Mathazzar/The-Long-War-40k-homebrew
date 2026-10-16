@@ -3,11 +3,10 @@
     "name": "Imperium - Imperial Guard",
     "id": "ae00-f16b-1c93-5c92",
     "battleScribeVersion": "2.03",
-    "comment": "todo: in proggres",
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 8,
+    "revision": 9,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -55226,33 +55225,6 @@
         ]
       },
       {
-        "name": "Melta Cannon",
-        "id": "cb8f-33c9-642e-8785",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Melta Cannon",
-            "id": "8ef5-4977-c435-f603",
-            "hidden": false,
-            "page": "10",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Rapid Fire Grenade Launcher",
         "id": "b914-ed09-1bf1-cf9e",
         "collective": true,
@@ -55440,33 +55412,6 @@
               {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Small), Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Vulcan Mega Bolter",
-        "id": "0e3f-6269-f4a1-9dbf",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Vulcan Mega Bolter",
-            "id": "3aff-91b9-710d-4880",
-            "hidden": false,
-            "page": "14",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "10", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked, Pinning", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -55956,33 +55901,6 @@
               {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "Unwieldy, Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Plasma Blastgun",
-        "id": "ed92-6665-51e6-5ffd",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Plasma Blastgun",
-            "id": "f7c3-2d95-353b-f53a",
-            "hidden": false,
-            "page": "16",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large), Ordnance, Linked, Gets Hot!, Macro", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -59412,6 +59330,17 @@
                             "value": 1
                           }
                         ],
+                        "entryLinks": [
+                          {
+                            "name": "Volcano Cannon (P)",
+                            "id": "da45-d048-b53b-10f3",
+                            "hidden": false,
+                            "targetId": "dbbf-76fa-3b16-8381",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
+                            "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+                          }
+                        ],
                         "selectionEntries": [
                           {
                             "name": "Quake Cannon (P)",
@@ -59433,31 +59362,6 @@
                                   {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
                                   {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
                                   {"name": "Rules", "$text": "Ordnance, Macro", "typeId": "ba87-19e9-d692-6e30"}
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "name": "Volcano Cannon (P)",
-                            "id": "dbbf-76fa-3b16-8381",
-                            "hidden": false,
-                            "import": true,
-                            "type": "upgrade",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
-                            "profiles": [
-                              {
-                                "name": "Volcano Cannon",
-                                "id": "cbd2-7946-4f03-1e2a",
-                                "hidden": false,
-                                "typeId": "4425-e2ff-1ce0-83c1",
-                                "typeName": "Ranged Weapons",
-                                "characteristics": [
-                                  {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                                  {"name": "Range", "$text": "120", "typeId": "83a1-168d-3aa3-97f8"},
-                                  {"name": "Strength", "$text": "18", "typeId": "4e85-0d56-33e2-acca"},
-                                  {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-                                  {"name": "Rules", "$text": "Blast (Small), Ordnance, Macro", "typeId": "ba87-19e9-d692-6e30"}
                                 ]
                               }
                             ]
@@ -60027,6 +59931,34 @@
               {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
               {"name": "LD", "$text": "6", "typeId": "bc55-c58d-b53a-233c"},
               {"name": "Sv", "$text": "5", "typeId": "c9ff-af68-092c-c4b3"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Melta Cannon",
+        "id": "cb8f-33c9-642e-8785",
+        "collective": true,
+        "comment": "light",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Melta Cannon",
+            "id": "8ef5-4977-c435-f603",
+            "hidden": false,
+            "page": "10",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Melta, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]

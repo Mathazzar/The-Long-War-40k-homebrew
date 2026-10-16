@@ -3,11 +3,10 @@
     "name": "Imperium - Talons of the Emperor",
     "id": "6dd6-ae0e-57c0-a5f7",
     "battleScribeVersion": "2.03",
-    "comment": "todo: everything",
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "ebc0-ca6c-2f5c-465b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -6375,28 +6374,6 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Flare Shields",
-        "id": "afb3-3c38-1628-7240",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "6",
-        "publicationId": "dc2f-4748-e72e-f22e",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "4330-1531-0b21-53cb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "4330-1531-0b21-53cb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Flare Shields",
-            "id": "e32d-a026-2ba0-0acf",
-            "description": "A unit equipped with this wargear, reduces the Strength (S) characteristic of any weapons that resolve their hits against the Front Armour (FA) of the equipped unit by 1. If the Attack has the Blast or Large Blast special rule, its strength is reduced by 2.",
-            "hidden": false
           }
         ]
       },
