@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 12,
     "library": true,
-    "revision": 2,
+    "revision": 3,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Eldar", "id": "81ca-5e36-e460-bc33", "hidden": false},
@@ -179,32 +179,6 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Power Sword",
-        "id": "a7f2-0e54-4bdf-7cfa",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Power Sword",
-            "id": "f0fd-3864-25b0-4574",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Rending (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]

@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "8b91-df7f-5f7b-b9cc", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -2791,7 +2791,7 @@
                     "id": "4e64-859d-33ef-d5b4",
                     "hidden": false,
                     "import": true,
-                    "targetId": "a7f2-0e54-4bdf-7cfa",
+                    "targetId": "84dd-49d6-4915-6b09",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
@@ -6787,7 +6787,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
                   },
-                  {"name": "Power Sword", "id": "36ec-a7be-d2da-fdf3", "hidden": false, "import": true, "targetId": "a7f2-0e54-4bdf-7cfa", "type": "selectionEntry"},
+                  {"name": "Power Sword", "id": "36ec-a7be-d2da-fdf3", "hidden": false, "import": true, "targetId": "84dd-49d6-4915-6b09", "type": "selectionEntry"},
                   {
                     "name": "Electro Corrosive whip",
                     "id": "98da-580a-7547-be6e",
@@ -7999,7 +7999,7 @@
                         "exportable": false,
                         "hidden": false,
                         "import": true,
-                        "targetId": "a7f2-0e54-4bdf-7cfa",
+                        "targetId": "84dd-49d6-4915-6b09",
                         "type": "selectionEntry",
                         "constraints": [
                           {"id": "7689-2420-2136-ecc9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -11629,7 +11629,7 @@
                         "value": 1
                       },
                       {
-                        "childId": "a7f2-0e54-4bdf-7cfa",
+                        "childId": "84dd-49d6-4915-6b09",
                         "childName": "Power Sword",
                         "field": "selections",
                         "includeChildSelections": true,
@@ -11915,7 +11915,7 @@
             "id": "1e41-7629-5517-1e13",
             "hidden": false,
             "import": true,
-            "targetId": "a7f2-0e54-4bdf-7cfa",
+            "targetId": "84dd-49d6-4915-6b09",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
           },
@@ -11974,7 +11974,7 @@
             "id": "bb34-4712-36ad-3930",
             "hidden": false,
             "import": true,
-            "targetId": "a7f2-0e54-4bdf-7cfa",
+            "targetId": "84dd-49d6-4915-6b09",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
           }
@@ -12140,7 +12140,7 @@
             "id": "b5e4-9dfb-ca08-f7d1",
             "hidden": false,
             "import": true,
-            "targetId": "a7f2-0e54-4bdf-7cfa",
+            "targetId": "84dd-49d6-4915-6b09",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
           },
@@ -12341,7 +12341,7 @@
             "id": "3f41-72d0-1c43-b1b5",
             "hidden": false,
             "import": true,
-            "targetId": "a7f2-0e54-4bdf-7cfa",
+            "targetId": "84dd-49d6-4915-6b09",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
           }
