@@ -197,7 +197,8 @@
       {"name": "Tech-Priest", "id": "69c3-b571-197c-4f99", "hidden": false},
       {"name": "Chaos", "id": "4c48-b09a-ec4a-cf19", "hidden": false},
       {"name": "Priest", "id": "f41c-295d-a9b1-b72c", "hidden": false},
-      {"name": "Daemon", "id": "0ce8-e702-158f-a98d", "hidden": false}
+      {"name": "Daemon", "id": "0ce8-e702-158f-a98d", "hidden": false},
+      {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false}
     ],
     "costTypes": [
       {

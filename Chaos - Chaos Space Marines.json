@@ -15,9 +15,575 @@
         "id": "b4bf-365f-7ce7-1cc6",
         "hidden": true,
         "constraints": [{"id": "fac7-ef90-ca88-2368", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
-      }
+      },
+      {
+        "name": "Hvy",
+        "id": "b9b3-0436-0ac3-fdcf",
+        "hidden": true,
+        "constraints": [
+          {
+            "id": "2e8a-9e03-0925-a45a",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "message": "Your army must include {difference} more Fast Attack units for this many Heavy Support units.",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "2e8a-9e03-0925-a45a",
+            "type": "increment",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "a078-78d4-565e-33b1",
+                "childName": "Raptor Assault",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "d22f-83a4-1032-2783",
+                "childName": "Fast",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mon",
+        "id": "8fbe-309c-5b05-e162",
+        "hidden": true,
+        "constraints": [
+          {
+            "id": "c4fa-da08-a92e-019a",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "message": "Your army must include {difference} more Monster units.",
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "c4fa-da08-a92e-019a",
+            "type": "increment",
+            "value": 1,
+            "localConditionGroups": [
+              {
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "scope": "roster",
+                "type": "atLeast",
+                "value": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "5f24-e2f7-2017-690f",
+                        "childName": "Engine Horde",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {"childId": "unit", "childName": "unit", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "4e5f-994d-8fbf-50ba", "childName": "Monster", "field": "selections", "scope": "self", "shared": true, "type": "notInstanceOf", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Inf",
+        "id": "440f-54ea-d6f8-fd4d",
+        "hidden": true,
+        "constraints": [
+          {
+            "id": "d0fa-2ca6-e26a-44ab",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "message": "Your army must include {difference} more Infantry units.",
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "d0fa-2ca6-e26a-44ab",
+            "type": "increment",
+            "value": 1,
+            "localConditionGroups": [
+              {
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "scope": "roster",
+                "type": "atLeast",
+                "value": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "e177-bf4f-410b-4018",
+                        "childName": "Daemonkin Host",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {"childId": "unit", "childName": "unit", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "560f-2dca-57fb-5997", "childName": "Infantry", "field": "selections", "scope": "self", "shared": true, "type": "notInstanceOf", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trans",
+        "id": "eacf-3c44-adcd-78b8",
+        "hidden": true,
+        "constraints": [
+          {
+            "id": "48b1-cc0c-4daf-0e48",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "message": "Your army must include {difference} more Transport units of this many Despoiler units.",
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "48b1-cc0c-4daf-0e48",
+            "type": "increment",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "0f39-fcc0-f1c1-b60d",
+                "childName": "Heavy Mechanized Assault",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "f468-878c-c134-3ead",
+                "childName": "Despoiler",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "Despoiler", "id": "f468-878c-c134-3ead", "hidden": false},
+      {"name": "[Creations of Bile]", "id": "da55-41b8-7523-782a", "hidden": false},
+      {"name": "[Legion]", "id": "4bf9-b0c8-1bb4-b380", "hidden": false},
+      {"name": "[Black Legion]", "id": "ee38-7a4d-87fb-a2e3", "hidden": false},
+      {"name": "[Red Corsairs]", "id": "5998-f72a-bfd5-ee7b", "hidden": false}
     ],
     "publications": [{"name": "The Long War - Codex Chaos Space Marines", "id": "cd32-7680-79bc-f6c6", "hidden": false, "publisher": "5.0"}],
+    "selectionEntries": [
+      {
+        "name": "Rite of War",
+        "id": "cb7a-f086-90b9-44ac",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Rite of War", "id": "3ed8-fa48-0435-acc9", "hidden": false, "primary": true, "targetId": "be3a-e529-69f3-b6b9"}],
+        "constraints": [
+          {
+            "id": "4004-b6ff-12b0-1eaf-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "4004-b6ff-12b0-1eaf-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Rites of War",
+            "id": "93b2-c43e-fa9b-c8a1",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "02c7-caec-b877-0655",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Raptor Assault",
+                "id": "a078-78d4-565e-33b1",
+                "hidden": false,
+                "import": true,
+                "page": "27",
+                "publicationId": "cd32-7680-79bc-f6c6",
+                "type": "upgrade",
+                "modifiers": [{"affects": "self.entries.forces.recursive.8fbe-309c-5b05-e162", "field": "category", "scope": "roster", "type": "add", "value": "b9b3-0436-0ac3-fdcf"}]
+              },
+              {
+                "name": "Daemonkin Host",
+                "id": "e177-bf4f-410b-4018",
+                "hidden": false,
+                "import": true,
+                "page": "28",
+                "publicationId": "cd32-7680-79bc-f6c6",
+                "type": "upgrade",
+                "modifiers": [{"affects": "self.entries.forces.recursive.560f-2dca-57fb-5997", "field": "category", "scope": "roster", "type": "add", "value": "440f-54ea-d6f8-fd4d"}]
+              },
+              {
+                "name": "Engine Horde",
+                "id": "5f24-e2f7-2017-690f",
+                "hidden": false,
+                "import": true,
+                "page": "29",
+                "publicationId": "cd32-7680-79bc-f6c6",
+                "type": "upgrade",
+                "modifiers": [{"affects": "self.entries.forces.recursive.4e5f-994d-8fbf-50ba", "field": "category", "scope": "roster", "type": "add", "value": "8fbe-309c-5b05-e162"}]
+              },
+              {
+                "name": "Heavy Mechanized Assault",
+                "id": "0f39-fcc0-f1c1-b60d",
+                "hidden": false,
+                "import": true,
+                "page": "30",
+                "publicationId": "cd32-7680-79bc-f6c6",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "self.entries.forces.recursive.443e-8295-c60e-0b05", "field": "category", "scope": "roster", "type": "add", "value": "eacf-3c44-adcd-78b8"},
+                      {"affects": "self.entries.forces.recursive.6af1-500e-865d-e08f", "field": "category", "scope": "roster", "type": "remove", "value": "eacf-3c44-adcd-78b8"}
+                    ]
+                  }
+                ]
+              },
+              {"name": "Chosen Host", "id": "5215-91eb-f8ea-928c", "hidden": false, "import": true, "page": "31", "publicationId": "cd32-7680-79bc-f6c6", "type": "upgrade"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Legion Allegiance",
+        "id": "cc7e-3964-7dd1-8fb7",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "",
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Allegiance", "id": "57a8-9f42-aa9e-92e2", "hidden": false, "primary": true, "targetId": "803f-929f-0de3-bce7"}],
+        "constraints": [
+          {
+            "id": "9019-8969-27c0-14c2-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "9019-8969-27c0-14c2-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "infoLinks": [{"name": "Legion Allegiance", "id": "efc7-f80a-1a91-6c0f", "hidden": false, "targetId": "8366-29a8-8bac-155f", "type": "infoGroup"}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "entries.forces.recursive.da55-41b8-7523-782a", "field": "add-info", "scope": "force", "type": "add", "value": "61e8-94db-a6e9-288a"},
+              {"affects": "entries.forces.recursive.4bf9-b0c8-1bb4-b380", "field": "add-info", "scope": "force", "type": "add", "value": "8366-29a8-8bac-155f"},
+              {"affects": "entries.forces.recursive.ee38-7a4d-87fb-a2e3", "field": "add-info", "scope": "force", "type": "add", "value": "d01b-103c-6334-9a38"},
+              {"affects": "entries.forces.recursive.5998-f72a-bfd5-ee7b", "field": "add-info", "scope": "force", "type": "add", "value": "8b6f-1378-5a44-92df"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Legion Allegiance",
+            "id": "7a03-3296-d5a3-fff9",
+            "hidden": false,
+            "page": "32",
+            "publicationId": "cd32-7680-79bc-f6c6",
+            "constraints": [
+              {
+                "id": "fce6-6a7a-25dd-233a",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Black Legion",
+                "id": "a512-c675-5f38-ff23",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [
+                  {"name": "Black Crusaders", "id": "78e0-b9ae-99cc-86ae", "hidden": false, "targetId": "f641-b3bd-66a1-e10f", "type": "rule"},
+                  {"name": "10,000 Years of Hatred", "id": "2988-158b-43af-4f94", "hidden": false, "targetId": "5ddd-b752-ad94-9919", "type": "rule"}
+                ]
+              },
+              {
+                "name": "Red Corsairs",
+                "id": "26fc-8d5d-1284-cfa1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [
+                  {"name": "Tyrants of Badab", "id": "03ec-7079-68c4-dc25", "hidden": false, "targetId": "b657-d7e9-b217-5486", "type": "rule"},
+                  {"name": "Piratical Raiders", "id": "87cd-30e3-fb25-c42d", "hidden": false, "targetId": "a1f7-ee55-5702-ac5a", "type": "rule"}
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.forces.recursive", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.forces.recursive", "field": "hidden", "scope": "force", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Creations of Bile",
+                "id": "d15c-9f44-6e4f-0ef4",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [
+                  {"name": "Genomic Perfection", "id": "1158-cec0-be0a-bde4", "hidden": false, "targetId": "3c02-2134-32b6-ca68", "type": "rule"},
+                  {"name": "Faith is for fools", "id": "7f67-aa91-4214-d4f4", "hidden": false, "targetId": "5b72-25f6-898b-cb00", "type": "rule"}
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.forces.recursive.0ce8-e702-158f-a98d", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.forces.recursive.315a-a494-99c4-d7f0", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.forces.recursive.0b52-6f97-ed7d-d8a6", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.forces.recursive.d7c9-bd72-2650-52d3", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.forces.recursive.a70f-07f4-5c21-cc20", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.forces.recursive.7e6c-73ce-f18e-2f52", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.forces.recursive.8cbd-930e-704b-b337", "field": "hidden", "scope": "force", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedInfoGroups": [
+      {
+        "name": "Black Legion",
+        "id": "d01b-103c-6334-9a38",
+        "hidden": false,
+        "infoLinks": [
+          {"name": "Black Crusaders", "id": "e002-fbe9-e977-24fe", "hidden": false, "targetId": "f641-b3bd-66a1-e10f", "type": "rule"},
+          {"name": "10,000 Years of Hatred", "id": "fd73-e57c-ddf8-137e", "hidden": false, "targetId": "5ddd-b752-ad94-9919", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Creations of Bile",
+        "id": "61e8-94db-a6e9-288a",
+        "hidden": false,
+        "infoLinks": [
+          {"name": "Genomic Perfection", "id": "1176-7f19-f714-ad89", "hidden": false, "targetId": "3c02-2134-32b6-ca68", "type": "rule"},
+          {"name": "Faith is for fools", "id": "6dcd-16e6-e16c-8277", "hidden": false, "targetId": "5b72-25f6-898b-cb00", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Red Corsairs",
+        "id": "8b6f-1378-5a44-92df",
+        "hidden": false,
+        "infoLinks": [
+          {"name": "Tyrants of Badab", "id": "97fd-b7b6-bc07-c974", "hidden": false, "targetId": "b657-d7e9-b217-5486", "type": "rule"},
+          {"name": "Piratical Raiders", "id": "d318-c2ac-1c6c-95bf", "hidden": false, "targetId": "a1f7-ee55-5702-ac5a", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Legion Allegiance",
+        "id": "8366-29a8-8bac-155f",
+        "hidden": false,
+        "page": "32",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "infoLinks": [
+          {
+            "name": "Red Corsairs",
+            "id": "71fb-9a79-88de-917e",
+            "hidden": false,
+            "targetId": "8b6f-1378-5a44-92df",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "26fc-8d5d-1284-cfa1",
+                    "childName": "Red Corsairs",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Creations of Bile",
+            "id": "c4a6-3150-cc90-926f",
+            "hidden": false,
+            "targetId": "61e8-94db-a6e9-288a",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "d15c-9f44-6e4f-0ef4",
+                    "childName": "Creations of Bile",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Black Legion",
+            "id": "5b1d-9946-5be1-4e33",
+            "hidden": false,
+            "targetId": "d01b-103c-6334-9a38",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "a512-c675-5f38-ff23",
+                    "childName": "Black Legion",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "sharedRules": [
       {
         "name": "Chaos Boons",
@@ -42,6 +608,42 @@
         "hidden": false,
         "page": "6",
         "publicationId": "cd32-7680-79bc-f6c6"
+      },
+      {
+        "name": "10,000 Years of Hatred",
+        "id": "5ddd-b752-ad94-9919",
+        "description": "A Black Legion army must play 1 additional Battle Round when fighting an Imperium Keyword army. If Abaddon, the Despoiler is in your army, he must be your Warlord.",
+        "hidden": false
+      },
+      {
+        "name": "Black Crusaders",
+        "id": "f641-b3bd-66a1-e10f",
+        "description": "Black Legion units gain the Hatred (Imperium) special rule. In addition, all Black Legion units which arrive via Deep Strike, gain the Linked special rule on all equipped Shooting weapons they have until the start of their next turn.",
+        "hidden": false
+      },
+      {
+        "name": "Piratical Raiders",
+        "id": "a1f7-ee55-5702-ac5a",
+        "description": "Red Corsairs units gain the Sprint (1) special rule. If they already have the Sprint (x) special rule, increase the value of (x) by 1.",
+        "hidden": false
+      },
+      {
+        "name": "Tyrants of Badab",
+        "id": "b657-d7e9-b217-5486",
+        "description": "A Red Corsair army may not take Rapier Battery or Arquitor Bombards. If Huron Blackheart is in your army, he must be your Warlord.",
+        "hidden": false
+      },
+      {
+        "name": "Faith is for fools",
+        "id": "5b72-25f6-898b-cb00",
+        "description": "Creations of Bile armies cannot take units with the Daemon Keyword and may not have any Marks of Chaos. If Fabius Bile is in your army, he must be your Warlord",
+        "hidden": false
+      },
+      {
+        "name": "Genomic Perfection",
+        "id": "3c02-2134-32b6-ca68",
+        "description": "All Creations of Bile gain Hammer of Wrath (1). If the unit already has the Hammer of Wrath (X) special rule, it increases the value of X by 1.",
+        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -863,6 +1465,82 @@
             "id": "d8ee-1c41-8b14-e5e8",
             "description": "Enemy units within 3” of a model with this Warlord trait halve their Leadership (LD) characteristic",
             "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Vetran",
+        "id": "9864-0558-2674-2d8e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "4d5b-d0ae-2025-4a52", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "a8e1-6f24-8116-0570",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "entryLinks": [
+          {"name": "Force Organization: Troop", "id": "276c-da6f-cc02-5f6b", "hidden": false, "import": true, "targetId": "cd9e-d590-95bd-2dfd", "type": "selectionEntry"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "5215-91eb-f8ea-928c",
+                "childName": "Chosen Host",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "a8e1-6f24-8116-0570",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "9f3a-4892-68dc-2701",
+                    "childName": "Troop",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5215-91eb-f8ea-928c",
+                    "childName": "Chosen Host",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
