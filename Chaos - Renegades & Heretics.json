@@ -6,7 +6,41 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 1,
-    "type": "catalogue"
+    "revision": 2,
+    "type": "catalogue",
+    "catalogueLinks": [{"name": "Chaos - shared rules", "id": "63e7-0886-105d-c2d6", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
+    "sharedSelectionEntries": [
+      {
+        "name": "Warlord",
+        "id": "8112-5c05-c575-89ac",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8a5a-f353-0654-4509", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "ecc5-d68f-c530-0bd9", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "24ec-3d2c-456d-fe9a",
+                "childName": "Allied Detatchment",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {"field": "category", "scope": "unit", "type": "add", "value": "544d-0eb3-a4ab-4540"}
+        ]
+      }
+    ]
   }
 }

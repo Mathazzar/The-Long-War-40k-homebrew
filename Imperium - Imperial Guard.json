@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 9,
+    "revision": 10,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -34111,6 +34111,68 @@
                   {"id": "2a87-9476-c700-d66d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "2a87-9476-c700-d66d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Carapace Armour",
+                "id": "aab5-188c-3152-6f05",
+                "hidden": false,
+                "import": true,
+                "targetId": "2fdd-2493-ba54-c730",
+                "type": "selectionEntry",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "78bb-5c47-4561-241b",
+                        "childName": "Carapace Armour",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "hidden", "type": "set", "value": true},
+                      {"field": "9a1e-6798-e6e5-30f7-min", "type": "set", "value": 0},
+                      {"field": "defaultAmount", "type": "set", "value": "0"},
+                      {"field": "9a1e-6798-e6e5-30f7-max", "type": "set", "value": 0}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Flak Armour",
+                "id": "720f-c380-281e-1ef1",
+                "hidden": false,
+                "import": true,
+                "targetId": "2848-dea5-099d-03ed",
+                "type": "selectionEntry",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "cd03-9523-6821-617b",
+                        "childName": "Flak Armour",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "defb-d2b5-7eb9-ee72-min", "type": "set", "value": 0},
+                      {"field": "defaultAmount", "type": "set", "value": "0"},
+                      {"field": "hidden", "type": "set", "value": true},
+                      {"field": "defb-d2b5-7eb9-ee72-max", "type": "set", "value": 0}
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -34131,110 +34193,6 @@
                   {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
                   {"name": "LD", "$text": "7", "typeId": "bc55-c58d-b53a-233c"},
                   {"name": "Sv", "$text": "5", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Flak Armour",
-                "id": "d96a-0785-bee6-730d",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {
-                    "id": "a4bb-6779-2ab1-49c7-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "a4bb-6779-2ab1-49c7-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "fbcc-da3a-1745-4672",
-                        "childName": "Flak Armour",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ],
-                    "modifiers": [
-                      {"field": "a4bb-6779-2ab1-49c7-min", "type": "set", "value": 0},
-                      {"field": "a4bb-6779-2ab1-49c7-max", "type": "set", "value": 0},
-                      {"field": "hidden", "type": "set", "value": true}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Carapace Armour",
-                "id": "e60a-0736-baa3-9ee8",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {
-                    "id": "d65f-899d-f591-4f4d-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "d65f-899d-f591-4f4d-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "88bc-a8d1-f45a-3300",
-                        "childName": "Carapace Armour",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ],
-                    "modifiers": [
-                      {"field": "hidden", "type": "set", "value": true},
-                      {"field": "d65f-899d-f591-4f4d-min", "type": "set", "value": 0},
-                      {"field": "d65f-899d-f591-4f4d-max", "type": "set", "value": 0}
-                    ]
-                  }
                 ]
               }
             ]
@@ -34276,6 +34234,68 @@
                   {"id": "1abb-8826-2798-e502-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "1abb-8826-2798-e502-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Carapace Armour",
+                "id": "cd12-e044-7ee9-c3d9",
+                "hidden": false,
+                "import": true,
+                "targetId": "2fdd-2493-ba54-c730",
+                "type": "selectionEntry",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "78bb-5c47-4561-241b",
+                        "childName": "Carapace Armour",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "hidden", "type": "set", "value": true},
+                      {"field": "9a1e-6798-e6e5-30f7-min", "type": "set", "value": 0},
+                      {"field": "defaultAmount", "type": "set", "value": "0"},
+                      {"field": "9a1e-6798-e6e5-30f7-max", "type": "set", "value": 0}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Flak Armour",
+                "id": "28f6-8bad-980d-ce3b",
+                "hidden": false,
+                "import": true,
+                "targetId": "2848-dea5-099d-03ed",
+                "type": "selectionEntry",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "cd03-9523-6821-617b",
+                        "childName": "Flak Armour",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "defb-d2b5-7eb9-ee72-min", "type": "set", "value": 0},
+                      {"field": "defaultAmount", "type": "set", "value": "0"},
+                      {"field": "hidden", "type": "set", "value": true},
+                      {"field": "defb-d2b5-7eb9-ee72-max", "type": "set", "value": 0}
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -34298,110 +34318,6 @@
                   {"name": "Sv", "$text": "5", "typeId": "c9ff-af68-092c-c4b3"}
                 ]
               }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Carapace Armour",
-                "id": "ab24-41d4-4c92-37d8",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {
-                    "id": "1635-e7c8-a7fd-11bd-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "1635-e7c8-a7fd-11bd-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "88bc-a8d1-f45a-3300",
-                        "childName": "Carapace Armour",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ],
-                    "modifiers": [
-                      {"field": "hidden", "type": "set", "value": true},
-                      {"field": "1635-e7c8-a7fd-11bd-min", "type": "set", "value": 0},
-                      {"field": "1635-e7c8-a7fd-11bd-max", "type": "set", "value": 0}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Flak Armour",
-                "id": "7e0d-3f13-4f20-89f5",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {
-                    "id": "c698-97f7-935e-dd1f-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "c698-97f7-935e-dd1f-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "fbcc-da3a-1745-4672",
-                        "childName": "Flak Armour",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ],
-                    "modifiers": [
-                      {"field": "c698-97f7-935e-dd1f-min", "type": "set", "value": 0},
-                      {"field": "c698-97f7-935e-dd1f-max", "type": "set", "value": 0},
-                      {"field": "hidden", "type": "set", "value": true}
-                    ]
-                  }
-                ]
-              }
             ]
           }
         ],
@@ -34415,23 +34331,26 @@
               {"id": "bcc4-d1b9-3f2a-a3a7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "bcc4-d1b9-3f2a-a3a7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "selectionEntries": [
+            "entryLinks": [
               {
                 "name": "Carapace Armour",
-                "id": "88bc-a8d1-f45a-3300",
+                "id": "78bb-5c47-4561-241b",
+                "defaultAmount": "0",
                 "hidden": false,
                 "import": true,
-                "type": "upgrade",
+                "targetId": "2fdd-2493-ba54-c730",
+                "type": "selectionEntry",
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
-                "infoLinks": [{"name": "Carapace Armour", "id": "f4db-964a-6e07-f96f", "hidden": false, "targetId": "ac26-4d05-e7fe-9e4a", "type": "rule"}]
+                "modifiers": [{"field": "9a1e-6798-e6e5-30f7-min", "type": "set", "value": 0}]
               },
               {
                 "name": "Flak Armour",
-                "id": "fbcc-da3a-1745-4672",
+                "id": "cd03-9523-6821-617b",
                 "hidden": false,
                 "import": true,
-                "type": "upgrade",
-                "infoLinks": [{"name": "Flak Armour", "id": "772f-8418-95d9-1c0c", "hidden": false, "targetId": "4200-5430-89f4-54f0", "type": "rule"}]
+                "targetId": "2848-dea5-099d-03ed",
+                "type": "selectionEntry",
+                "modifiers": [{"field": "9a1e-6798-e6e5-30f7-min", "type": "set", "value": 0}]
               }
             ]
           }
@@ -55624,33 +55543,6 @@
         ]
       },
       {
-        "name": "Demolisher Cannon",
-        "id": "17d6-d86c-4379-05c6",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Demolisher Cannon",
-            "id": "383b-8e18-0f79-d632",
-            "hidden": false,
-            "page": "13",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Ordnance, Concussive, Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Mole Launcher",
         "id": "54ab-d298-26e3-0d59",
         "collective": true,
@@ -56716,10 +56608,23 @@
                 "import": true,
                 "type": "upgrade",
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                "infoLinks": [
-                  {"name": "Vanquisher Battle Cannon", "id": "a2f0-559f-5f9a-ceba", "hidden": false, "targetId": "c7b9-6b31-13bf-b312", "type": "profile"},
-                  {"name": "Autocannon", "id": "a092-1cb3-5f91-4364", "hidden": false, "targetId": "2ded-4dda-f74b-e906", "type": "profile"}
-                ]
+                "entryLinks": [
+                  {
+                    "name": "Autocannon",
+                    "id": "2f14-b0d9-f25f-8f71",
+                    "defaultAmount": "1",
+                    "exportable": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2583-e542-e2d4-698d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "72d2-de2e-cc24-8b53-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "72d2-de2e-cc24-8b53-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Vanquisher Battle Cannon", "id": "a2f0-559f-5f9a-ceba", "hidden": false, "targetId": "c7b9-6b31-13bf-b312", "type": "profile"}]
               }
             ]
           },
@@ -59332,7 +59237,7 @@
                         ],
                         "entryLinks": [
                           {
-                            "name": "Volcano Cannon (P)",
+                            "name": "Volcano Cannon",
                             "id": "da45-d048-b53b-10f3",
                             "hidden": false,
                             "targetId": "dbbf-76fa-3b16-8381",
@@ -60952,10 +60857,44 @@
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "infoLinks": [
-              {"name": "Bayonet", "id": "9f0c-0f03-32bd-4aa4", "hidden": false, "targetId": "f61d-f091-62a5-6e1e", "type": "profile"},
-              {"name": "Flak Armour", "id": "3a11-41f5-700c-81ac", "hidden": false, "targetId": "4200-5430-89f4-54f0", "type": "rule"},
-              {"name": "Ripper Gun", "id": "a97a-b59e-8f39-08d6", "hidden": false, "targetId": "73f0-986c-ebbf-094d", "type": "profile"}
+            "entryLinks": [
+              {
+                "name": "Bayonet",
+                "id": "2bc3-6d25-9d89-ec9f",
+                "defaultAmount": "1",
+                "exportable": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "40db-d197-f4e5-3d52",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "25b4-8bdd-4066-ffe5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "25b4-8bdd-4066-ffe5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Flak Armour",
+                "id": "8008-988d-1f39-2a3c",
+                "exportable": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2848-dea5-099d-03ed",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Ripper Gun",
+                "id": "8db3-2955-abee-10e3",
+                "defaultAmount": "1",
+                "exportable": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9c91-055a-4bef-667a",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "dd34-a366-a65b-b599-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "dd34-a366-a65b-b599-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
             ]
           },
           {

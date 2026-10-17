@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 15,
+    "revision": 16,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -2512,11 +2512,7 @@
         "targetId": "27d4-f055-4aa3-eb48",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Captain", "id": "84bc-365e-84fd-b22a", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"}],
-        "infoLinks": [
-          {"name": "Thunder Hammer", "id": "71d4-ec1d-e125-fc36", "hidden": false, "targetId": "50ff-fc23-bc8a-fe34", "type": "profile"},
-          {"name": "And they shall know no Fear", "id": "a6ba-d66a-8a95-32c7", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Digital Weapons", "id": "109d-80a2-a439-0b1a", "hidden": false, "targetId": "aeb5-4df4-329c-f4b5", "type": "rule"}
-        ]
+        "infoLinks": [{"name": "And they shall know no Fear", "id": "a6ba-d66a-8a95-32c7", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}]
       },
       {
         "name": "Dark Furies",
@@ -6988,33 +6984,6 @@
         ]
       },
       {
-        "name": "Reaper Autocannon",
-        "id": "9c2e-1997-f72b-5b1e",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Reaper Autocannon",
-            "id": "06d4-3fd8-1b0e-ebbe",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning, Linked, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Icarus Storm Cannon",
         "id": "e5ed-0a39-65ab-1b30",
         "collective": true,
@@ -7150,33 +7119,6 @@
         ]
       },
       {
-        "name": "Laser destroyer",
-        "id": "f220-e526-5902-34fa",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "16",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Laser destroyer",
-            "id": "0b7c-827e-1551-3192",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Linked Las Talon",
         "id": "2cc2-4849-bad0-ccf7",
         "collective": true,
@@ -7196,33 +7138,6 @@
               {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
               {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
               {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lascannon Array",
-        "id": "116c-89fa-1bbf-a5f4",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "16",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Lascannon Array",
-            "id": "cb5b-eea8-775e-7f3d",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
               {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
@@ -7548,10 +7463,23 @@
         "import": true,
         "type": "upgrade",
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-        "infoLinks": [
-          {"name": "Grenade Launcher", "id": "1c46-f8af-bfcc-0917", "hidden": false, "targetId": "79db-30d4-936a-bf17", "type": "profile"},
-          {"name": "Boltgun", "id": "335c-7a5c-41de-1a6f", "hidden": false, "targetId": "bee9-8218-8f32-a948", "type": "profile"}
-        ]
+        "entryLinks": [
+          {
+            "name": "Boltgun",
+            "id": "6911-b9f9-d20d-ecf3",
+            "defaultAmount": "1",
+            "exportable": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "469c-f449-1e9e-1d6f",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "f9b0-2909-e576-4d36-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f9b0-2909-e576-4d36-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Grenade Launcher", "id": "1c46-f8af-bfcc-0917", "hidden": false, "targetId": "79db-30d4-936a-bf17", "type": "profile"}]
       },
       {
         "name": "2 Lightning Claws",
@@ -11183,7 +11111,7 @@
                 ],
                 "entryLinks": [
                   {
-                    "name": "Turbo Laser Destructor (P)",
+                    "name": "Turbo Laser Destructor",
                     "id": "1b2a-f5e0-52a1-fb7a",
                     "hidden": false,
                     "targetId": "7f35-3207-b72d-7851",
@@ -27195,7 +27123,22 @@
                     "import": true,
                     "type": "upgrade",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
-                    "infoLinks": [{"name": "Meltagun", "id": "f8ad-7118-57a6-671f", "hidden": false, "targetId": "0890-7e89-f08b-968b", "type": "profile"}],
+                    "entryLinks": [
+                      {
+                        "name": "Meltagun",
+                        "id": "5caf-13f9-22c5-6087",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "6186-a63d-2245-c4bb",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4200-3d91-ce2c-bd03-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "4200-3d91-ce2c-bd03-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
                     "profiles": [
                       {
                         "name": "Leviathan Siege Drill",
@@ -27220,7 +27163,22 @@
                     "import": true,
                     "type": "upgrade",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                    "infoLinks": [{"name": "Meltagun", "id": "6e7a-3d8f-efa1-a5de", "hidden": false, "targetId": "0890-7e89-f08b-968b", "type": "profile"}],
+                    "entryLinks": [
+                      {
+                        "name": "Meltagun",
+                        "id": "9a03-a337-1893-b758",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "6186-a63d-2245-c4bb",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "8262-54d6-631b-22e2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "8262-54d6-631b-22e2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
                     "profiles": [
                       {
                         "name": "Leviathan Siege Claw",
@@ -33397,9 +33355,35 @@
                     "import": true,
                     "type": "upgrade",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "9201-20a3-d0f1-8792", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Flamer", "id": "07f9-a9d9-c376-9948", "hidden": false, "targetId": "2a68-a7ea-6fa7-c9cf", "type": "profile"}
+                    "entryLinks": [
+                      {
+                        "name": "Flamer",
+                        "id": "ad9f-4fd0-98a1-545a",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "958b-0867-67db-e40a",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "ceb3-cd8a-7d63-a8cb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "ceb3-cd8a-7d63-a8cb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Dreadnought Close Combat weapon",
+                        "id": "33de-fa83-8454-62e4",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "d8c2-346b-04dd-3d87",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "fd52-5130-eeec-978d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "fd52-5130-eeec-978d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
                     ]
                   },
                   {
@@ -33409,10 +33393,23 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "infoLinks": [
-                      {"name": "Dreadnought Close Combat weapon", "id": "eaa3-f604-42a9-771b", "hidden": false, "targetId": "7b26-de61-6ee7-ee18", "type": "profile"},
-                      {"name": "Storm Bolter", "id": "e17f-bbff-1457-111b", "hidden": false, "targetId": "2d40-d20d-b301-8589", "type": "profile"}
-                    ]
+                    "entryLinks": [
+                      {
+                        "name": "Dreadnought Close Combat weapon",
+                        "id": "25c8-b557-44a5-bf61",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "d8c2-346b-04dd-3d87",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "72dd-a647-f7a9-fe14-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "72dd-a647-f7a9-fe14-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Storm Bolter", "id": "e17f-bbff-1457-111b", "hidden": false, "targetId": "2d40-d20d-b301-8589", "type": "profile"}]
                   }
                 ]
               }
