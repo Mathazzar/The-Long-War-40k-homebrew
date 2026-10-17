@@ -6,7 +6,1206 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 1,
-    "type": "catalogue"
+    "revision": 2,
+    "type": "catalogue",
+    "catalogueLinks": [{"name": "Chaos - shared rules", "id": "e987-556f-6a19-3a66", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
+    "categoryEntries": [
+      {
+        "name": "LoD",
+        "id": "b4bf-365f-7ce7-1cc6",
+        "hidden": true,
+        "constraints": [{"id": "fac7-ef90-ca88-2368", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      }
+    ],
+    "publications": [{"name": "The Long War - Codex Chaos Space Marines", "id": "cd32-7680-79bc-f6c6", "hidden": false, "publisher": "5.0"}],
+    "sharedRules": [
+      {
+        "name": "Chaos Boons",
+        "id": "765a-5707-a8d1-6fed",
+        "description": "At the start of each Battle Round, you may select 1 Chaos Space Marine unit with this special rule. That unit may roll 2D6 on the Chaos Boon table below. That unit gains the listed benefit for the rest of the game. All effects stack if applicable:\n2. Warp Surge: The chosen unit gains +1 to its Movement (M) characteristic.\n3. Third Eye: The chosen unit gains +1 to its Ballistic Skill (BS) characteristic.\n4. Precognition: The chosen unit gains +1 to its Weapon Skill (WS) characteristic.\n5. Iron Muscles: The chosen unit gains +1 to its Strength (S) characteristic.\n6. Loping Grace: The chosen unit gains the Sprint (1) special rule. If they already have the Sprint (x) special rule, increase the value of X by 1.\n7. Unnatural Resilience: The chosen unit gains +1 to its Toughness (T) characteristic.\n8. Blood Rage: The chosen unit gains the Furious Charge special rule. If the unit already has the Furious Charge special rule, they instead gain +1 to their Attacks (A) characteristic.\n9. Mind Fortress: The chosen unit gains the Indomitable Spirit (3+) special rule.\n10. Hyper Reflexes: The chosen unit gains +1 to Initiative (I) characteristic.\n11. Possession: The chosen unit gains the Daemon Special rule.\n12. Champion of Chaos: The chosen unit may select which of the Chaos Boons above they receive.",
+        "hidden": false,
+        "page": "6",
+        "publicationId": "cd32-7680-79bc-f6c6"
+      },
+      {
+        "name": "Let the Galaxy Burn",
+        "id": "134b-7481-616b-feb6",
+        "description": "Chaos Space Marine unit with this rule gain +1 to the charge roll in the Charge Phase against a Charge Target for each of the following conditions met (to a max of +4. This is not cumulative with bonuses from the Sprint (x) special rule):\n• The Charge Target is Pinned.\n• The Charge Target is affected by Blind.\n• The Charge Target is affected by Concussive.\n• The Charge Target is Falling Back after failing a Panic test.\n• The Charge Target has a lower Leadership (LD) characteristic than the charging Chaos Space Marine unit.\n• The Charging Chaos Space Marine unit has more models in their unit than the Charge Target. (Bulky (x) units count as X number of models each for determining this bonus).",
+        "hidden": false,
+        "page": "6",
+        "publicationId": "cd32-7680-79bc-f6c6"
+      },
+      {
+        "name": "Lord of Damnation",
+        "id": "b258-eefa-7218-a179",
+        "description": "You may only field 1 model in your army with this special rule. If your army includes a model with this special rule, they must be your Warlord.",
+        "hidden": false,
+        "page": "6",
+        "publicationId": "cd32-7680-79bc-f6c6"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Warlord",
+        "id": "60a0-b1d7-e41b-5823",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "c363-a4c6-2a78-5d30", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "f663-7203-5d57-1968", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "b4bf-365f-7ce7-1cc6",
+                        "childName": "LoD",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "b4bf-365f-7ce7-1cc6",
+                        "childName": "LoD",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "24ec-3d2c-456d-fe9a",
+                    "childName": "Allied Detatchment",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"field": "category", "scope": "unit", "type": "add", "value": "544d-0eb3-a4ab-4540"}
+        ]
+      },
+      {
+        "name": "Icon of Chaos",
+        "id": "d2d9-063a-0bbb-bab0",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [{"id": "8da0-f6b6-30a6-5899", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Icon of Chaos",
+            "id": "d78d-b003-4022-ba25",
+            "description": "A unit that includes a model equipped with the Icon of Chaos always counts as scoring 1 additional Wound for the purposes of Combat resolution. Additionally, a unit that arrives on the battlefield via Deep Strike within 12” of a unit with this wargear does not scatter. Finally, when a unit which includes a model with this special rule would conduct a Fall Back Move which would cause it to move off the table, the unit instead stops 1” away from the table edge and automatically rallies in your next Movement Phase.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Bike",
+        "id": "298e-3a20-908d-ee52",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [{"id": "c694-aff0-f40e-ca1d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "on bike"},
+              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
+              {"field": "category", "scope": "unit", "type": "add", "value": "ba7d-58f2-ee40-fc55"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bike",
+            "id": "49a6-6aaf-9e08-4f61",
+            "description": "A unit that is equipped with a Bike becomes a Bike type unit. In addition, it gains +1 Toughness (T) Characteristics. A Space marine Bike is equipped with a Linked Boltgun.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Chaos Runes",
+        "id": "eb0b-0cfe-0bbd-8eac",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [{"id": "a7ff-d128-d38a-54bf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [{"name": "Chaos Runes", "id": "1641-1614-de8d-3280", "description": "A model with a Chaos Runes has a 6+ Invulnerable save.", "hidden": false}]
+      },
+      {
+        "name": "Wings",
+        "id": "e5bb-0158-ed34-dc00",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [{"id": "2b55-4985-eca9-e52b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "append", "value": "with wings"},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "12"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Wings",
+            "id": "1836-52b3-28a7-707a",
+            "description": "A unit that is equipped with Wings increases its Movement (M) characteristic to 12”. The model gains the Hammer of Wrath (1), Fly, and Deep strike special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Plasma Blaster",
+        "id": "6a6d-cf48-3956-9a6f",
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Plasma Blaster",
+            "id": "4858-950d-502a-e618",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magma Cutter",
+        "id": "72fc-27e9-f3a6-4622",
+        "hidden": false,
+        "import": true,
+        "page": "13",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Magma Cutter",
+            "id": "19fe-68bb-e246-8aa1",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "6", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reaper Chain Cannon",
+        "id": "7d83-2ab8-9e01-97bc",
+        "hidden": false,
+        "import": true,
+        "page": "13",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Reaper Chain Cannon",
+            "id": "d0e0-0a69-2684-f65b",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "5", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "14", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Volkite Pistol",
+        "id": "4cab-9ba5-7965-9c72",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Volkite Pistol",
+            "id": "bde6-cb30-1128-23ac",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Volkite Charger",
+        "id": "cf37-6b1d-d19c-fb73",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Volkite Charger",
+            "id": "d9a0-1cb2-7cf0-023f",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grav Cannon",
+        "id": "fafc-8f10-8b53-4309",
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Grav Cannon",
+            "id": "0d8d-4bf7-86cc-8bfc",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Crushing (5+), Haywire (5+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quad Launcher",
+        "id": "a83c-be47-98b5-b106",
+        "hidden": false,
+        "import": true,
+        "page": "16",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Quad Launcher",
+            "id": "a234-ad17-2582-645f",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Large), Barrage (3)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hideous Mutations",
+        "id": "1997-f913-52c0-cee5",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hideous Mutations",
+            "id": "52d1-d924-0ecb-2089",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Rending (5+)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Scourge",
+        "id": "d8c1-1386-8c0b-f6fb",
+        "hidden": false,
+        "import": true,
+        "page": "16",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power Scourge",
+            "id": "4cee-dc8e-77ea-cb3d",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "user", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Sweeping (3)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Headsmen Axe",
+        "id": "4a15-c3bb-9415-cfac",
+        "hidden": false,
+        "import": true,
+        "page": "16",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Headsmen Axe",
+            "id": "0e55-d8af-b2b8-51aa",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Unwieldy, Precision Hits", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chaos Marine Crew Weapons",
+        "id": "7c57-d087-8ff6-6aba",
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Chaos Marine Crew Weapons",
+            "id": "09b8-d4c4-928c-8a1a",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "4", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chainsword",
+        "id": "da26-790e-31da-79e9",
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Chainsword",
+            "id": "d235-7be6-3f86-90a3",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "5", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Shred", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chain Glaive",
+        "id": "844e-1c32-6ece-f797",
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Chain Glaive",
+            "id": "7d9d-3db9-8d85-b174",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Reach, Shred", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daemon Weapon of Undivided",
+        "id": "0bc7-93c5-7882-d189",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Daemon Weapon of Undivided",
+            "id": "fc5e-cdec-bfd7-a58d",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Murderous Strike (6+), Gets Hot!", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daemon Weapon of Tzeentch",
+        "id": "b5c5-a828-25a4-f84b",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Daemon Weapon of Tzeentch",
+            "id": "f46b-6fb7-0016-20c0",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Bane, Gets Hot!", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daemon Weapon of Nurgle",
+        "id": "c27c-90c3-6a95-5636",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Daemon Weapon of Nurgle",
+            "id": "a56f-a0d2-fb87-9d5f",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Poison (2+), Gets Hot!", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daemon Weapon of Khorne",
+        "id": "68dc-cb9c-afbd-7263",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Daemon Weapon of Khorne",
+            "id": "5372-1805-f5a7-68c0",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Parry, Gets Hot!", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daemon Weapon of Slaanesh",
+        "id": "1d7a-5ae4-cd52-2278",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Daemon Weapon of Slaanesh",
+            "id": "e96c-ff4f-8f41-6c96",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Swiftstrike, Gets Hot!", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eviscerating Claws",
+        "id": "c325-6e42-c58e-218a",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Eviscerating Claws",
+            "id": "d706-5bc6-74bc-b768",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Claws",
+        "id": "c13a-78d2-3b5a-b876",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Iron Claws",
+            "id": "259b-cbed-6158-72aa",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Crushing (4+), Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daemonic Great Weapon",
+        "id": "314f-23a7-b554-6064",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Daemonic Great Weapon",
+            "id": "fd9b-21ed-1403-7cd6",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Two-Handed, Crushing (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Excruciator Cannons",
+        "id": "ec3f-66a6-878f-80db",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Excruciator Cannons",
+            "id": "45ee-6f1c-ef0e-6d49",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flames of Spite",
+        "id": "b916-dad4-e98d-9f17",
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "affects": "entries.recursive.profiles.Melee Weapons",
+                "field": "cc29-b1e7-88e5-c90f",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Deflagrate",
+                "type": "append",
+                "value": "Deflagrate"
+              },
+              {
+                "affects": "entries.recursive.profiles.Melee Weapons",
+                "arg": "Arcing (4+)",
+                "field": "cc29-b1e7-88e5-c90f",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Arcing",
+                "type": "replace",
+                "value": "Arcing (.3+)"
+              },
+              {
+                "affects": "entries.recursive.profiles.Melee Weapons",
+                "arg": "Arcing (5+)",
+                "field": "cc29-b1e7-88e5-c90f",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Arcing",
+                "type": "replace",
+                "value": "Arcing (.4+)"
+              },
+              {
+                "affects": "entries.recursive.profiles.Melee Weapons",
+                "arg": "Arcing (6+)",
+                "field": "cc29-b1e7-88e5-c90f",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Arcing",
+                "type": "replace",
+                "value": "Arcing (.5+)"
+              },
+              {
+                "affects": "entries.recursive.profiles.Melee Weapons",
+                "field": "cc29-b1e7-88e5-c90f",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Arcing",
+                "type": "append",
+                "value": "Arcing (.5+)"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Flames of Spite",
+            "id": "94f6-b12d-b641-d4fa",
+            "description": "A model with this Warlord trait gains the Arcing (5+) and Deflagrate special rules on all Melee type weapons they are equipped with. If the Warlord weapon already has the Arcing (x) special rule, increase the value of X by 1 to a max of 3+.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Gaze of the Gods",
+        "id": "006f-37fc-3784-8cb0",
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "The Gaze of the Gods",
+            "id": "7cd5-0f40-ffa1-9d99",
+            "description": "The Warlord may roll on the Chaos Boon table during deployment, even if it was not selected to receive a Chaos Boon. This Chaos Boon is in addition to any other Chaos Boons your army receives. If the Warlord was already selected to receive a Chaos Boon, they may roll again with this Warlord Trait and receive a second Boon (Max 2).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Lord of Terror",
+        "id": "bf63-4c4e-f74e-262d",
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "The Lord of Terror",
+            "id": "d8ee-1c41-8b14-e5e8",
+            "description": "Enemy units within 3” of a model with this Warlord trait halve their Leadership (LD) characteristic",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Relic",
+        "id": "f93b-9192-3b56-736b",
+        "collapsible": true,
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "9a14-6605-1dbd-928a",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "The Warp’s Malice",
+            "id": "e0c2-2f6a-09d5-380a",
+            "hidden": false,
+            "import": true,
+            "page": "11",
+            "publicationId": "cd32-7680-79bc-f6c6",
+            "type": "upgrade",
+            "constraints": [{"id": "8d25-74a1-fcdd-4eb6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "profiles": [
+              {
+                "name": "The Warp’s Malice",
+                "id": "e05d-19ff-8a59-ff76",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Master-Crafted, Pinning", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ],
+            "rules": [{"name": "The Warp’s Malice", "id": "1438-0b84-ce25-8ac8", "description": "may exchange their Bolt Pistol for this Relic", "hidden": false}]
+          },
+          {
+            "name": "Gorget of Eternal Hate",
+            "id": "d8f8-a240-1f82-39ab",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "cd32-7680-79bc-f6c6",
+            "type": "upgrade",
+            "constraints": [{"id": "90bd-bf06-3200-adbe", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+            "rules": [
+              {
+                "name": "Gorget of Eternal Hate",
+                "id": "2eae-3476-e0f1-5113",
+                "description": "A model equipped with this relic wargear gains a 4+ Invulnerable save and the Last Stand special rule.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Scrolls of Magnus",
+            "id": "630c-7394-0ee3-23a9",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "cd32-7680-79bc-f6c6",
+            "type": "upgrade",
+            "constraints": [{"id": "3fb7-b413-92de-1f5a", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
+            "rules": [
+              {
+                "name": "Scrolls of Magnus",
+                "id": "d32b-8ee5-82d4-646f",
+                "description": "Once per game, a model with this relic may automatically cast 1 Psychic\nPower or Psychic Weapon from the Lore of Tzeentch automatically even if they do not have the Psyker (x) special rule or Tzeentch Keyword.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Dimensional Key",
+            "id": "1e34-1efd-a21d-9b25",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "cd32-7680-79bc-f6c6",
+            "type": "upgrade",
+            "constraints": [{"id": "bda6-ee7d-8690-a56b", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Dimensional Key",
+                "id": "0676-2267-964b-99db",
+                "description": "Friendly units which arrive via Deep Strike wholly within 12” of a model equipped with this wargear do not roll for scatter and automatically arrive with a Perfect Landing.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Black Mace",
+            "id": "9ad3-1ae2-2101-8ce4",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "cd32-7680-79bc-f6c6",
+            "type": "upgrade",
+            "constraints": [{"id": "a9e7-3a8a-cf8b-5a39", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "profiles": [
+              {
+                "name": "The Black Mace",
+                "id": "0028-c004-3824-1d0b",
+                "hidden": false,
+                "typeId": "8fa1-1cd9-5ae1-0e93",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                  {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                  {"name": "Strength", "$text": "+3", "typeId": "a10f-8fce-fc56-cafc"},
+                  {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                  {"name": "Rules", "$text": "Master-Crafted, Concussive, Murderous MurderousStrike (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "The Black Mace", "id": "bcd6-d460-9445-47ff", "description": "may exchange their Power Maul or Daemonic Great Weapon for this Relic", "hidden": false}
+            ]
+          },
+          {
+            "name": "The Blade of the Relentless",
+            "id": "7147-837b-45e9-a45f",
+            "hidden": false,
+            "import": true,
+            "page": "11",
+            "publicationId": "cd32-7680-79bc-f6c6",
+            "type": "upgrade",
+            "constraints": [{"id": "0ed2-d275-0948-be94", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "profiles": [
+              {
+                "name": "The Blade of the Relentless",
+                "id": "710a-2a62-f9a8-9304",
+                "hidden": false,
+                "typeId": "8fa1-1cd9-5ae1-0e93",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                  {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                  {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                  {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                  {"name": "Rules", "$text": "Master-Crafted, Rending (6+), Parry", "typeId": "cc29-b1e7-88e5-c90f"}
+                ]
+              }
+            ],
+            "rules": [{"name": "The Blade of the Relentless", "id": "21f0-c06a-8923-e230", "description": "may exchange their Power Sword for this Relic", "hidden": false}]
+          }
+        ]
+      },
+      {
+        "name": "Warlord Trait",
+        "id": "487e-6816-07e9-a388",
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "f354-c482-2fc2-af6f",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "The Lord of Terror", "id": "71c5-46f6-25b8-0cca", "hidden": false, "targetId": "bf63-4c4e-f74e-262d", "type": "selectionEntry"},
+          {"name": "The Gaze of the Gods", "id": "3785-8529-3754-6fb9", "hidden": false, "targetId": "006f-37fc-3784-8cb0", "type": "selectionEntry"},
+          {"name": "Flames of Spite", "id": "363f-4c40-8256-752f", "hidden": false, "targetId": "b916-dad4-e98d-9f17", "type": "selectionEntry"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "544d-0eb3-a4ab-4540",
+                "childName": "Warlord",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Prayers to the Dark Gods",
+        "id": "4d66-041c-4443-36d3",
+        "collapsible": true,
+        "hidden": false,
+        "page": "25",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "entryLinks": [
+          {"name": "Litany of Hatred (Prayer)", "id": "b001-2139-e47a-32ef", "hidden": false, "import": true, "targetId": "0a63-744b-fb9a-273d", "type": "selectionEntry"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Benediction of Darkness (Prayer)",
+            "id": "a611-654f-bc9e-a4b9",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "887a-d552-7a2b-e646", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [
+              {
+                "name": "Benediction of Darkness",
+                "id": "6b48-d066-7b44-cd00",
+                "description": "When this Prayer is performed, the Priest and any attached unit gain the benefits of Light Cover until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Plea of Restoration (Prayer)",
+            "id": "0226-066e-8c1a-a093",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "2729-867a-85ba-a36c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Plea of Restoration",
+                "id": "3f61-1cc4-dfb4-784c",
+                "description": "If this Prayer is answered, the Priest Heals 1 wound. If the Priest has no allocated wounds, you may heal 1 wound on an attached unit. If the attached unit has no allocated wounds but has slain models, you may return 1 model back to the unit with 1 wound remaining.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Litany of Despair (Prayer)",
+            "id": "2bc0-36db-922a-df4c",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "5f44-5a6d-2079-27d3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "rules": [
+              {
+                "name": "Litany of Despair",
+                "id": "2f5d-79d5-5dac-f464",
+                "description": "When this Prayer is performed, all enemy units within 3” of the Priest and any attached unit suffer -1 to their Leadership (LD) characteristic until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Machine Rites",
+        "id": "4fea-15c0-1ba4-854f",
+        "collapsible": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Rite of Repair (Machine Rite):",
+            "id": "57d7-ab77-7fee-9d0c",
+            "hidden": false,
+            "import": true,
+            "targetId": "9e4c-7de9-2a09-4097",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Rite of Iron Boons (Machine Rite)",
+            "id": "9bba-1ebd-b4dd-476e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "9c02-e53a-c439-0180", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Rite of Iron Boons",
+                "id": "71ee-6926-c467-8eb0",
+                "description": "When this Rite is performed successfully, select 1 friendly Vehicle, Aircraft, Automata, or Knight unit within 3” of the unit performing this Rite. The target unit gains +1 to its Ballistic Skill (BS) until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Rite of Corruption (Machine Rite)",
+            "id": "13ba-fbef-7985-6565",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "161e-c721-3ada-6a6c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "rules": [
+              {
+                "name": "Rite of Corruption",
+                "id": "3e45-4ee2-730b-6452",
+                "description": "When this Rite is performed successfully, select 1 enemy Vehicle, Aircraft, Automata, Drone, Battlesuit or Knight unit within 24” of the unit performing this Rite. Select 1 weapon that unit is equipped with. It may only make Snap Shots with that weapon until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Rite of Scrap Code (Machine Rite)",
+            "id": "fe55-d62e-6386-707d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "edbe-acfa-b45e-c706", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [
+              {
+                "name": "Rite of Scrap Code",
+                "id": "5b6a-9993-77ad-f4ee",
+                "description": "When this Rite is performed successfully, select 1 enemy Vehicle, Aircraft, Automata, Drone, Battlesuit or Knight unit within 12” of the unit performing this Rite. That target unit takes D6, Strength 1, AP-, Haywire (5+) Automatic Hits.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

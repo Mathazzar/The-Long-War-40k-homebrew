@@ -1,0 +1,902 @@
+{
+  "catalogue": {
+    "name": "Chaos - shared rules",
+    "id": "168b-7a05-c2ee-575e",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 14,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue",
+    "categoryEntries": [
+      {"name": "Khorne", "id": "baf3-e3a8-5dda-fc45", "hidden": false},
+      {"name": "Nurgle", "id": "1739-c92f-edf1-0754", "hidden": false},
+      {"name": "Slaanesh", "id": "aa44-f9ed-c483-8c97", "hidden": false},
+      {"name": "Tzeentch", "id": "b73b-d185-5635-38fe", "hidden": false},
+      {"name": "Undivided", "id": "144d-d9de-4f53-b263", "hidden": false}
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Chaos Sigil",
+        "id": "3ef1-4a3f-8b3b-a400",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [{"id": "30a8-f135-b55d-379e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [{"name": "Chaos Sigil", "id": "0a5a-3a71-69dc-86b3", "description": "A model with a Chaos Sigil has a 4+ Invulnerable save.", "hidden": false}]
+      },
+      {
+        "name": "Daemonic Steed",
+        "id": "8d5c-b442-42df-c25b",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [{"id": "4648-c527-7e7d-b567", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Daemonic Steed",
+            "id": "cdce-6a95-349e-d790",
+            "description": "A unit that is equipped with a Daemonic Steed becomes a Cavalry type unit. In addition, it gains +1 Strength (S), Toughness (T) and Wounds (W) Characteristics.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Aura of Dark Glory",
+        "id": "39d3-a2de-ee94-d97f",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [{"id": "b590-d1d3-82ff-f8d7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [{"name": "Aura of Dark Glory", "id": "ab76-4d87-048a-c6ae", "description": "A model with a Aura of Dark Glory has a 5+ Invulnerable save.", "hidden": false}]
+      },
+      {
+        "name": "Chaos Familiar",
+        "id": "1660-1303-28db-06e4",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [{"id": "85d6-a7b8-03ef-ba3c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Chaos Familiar",
+            "id": "22cd-c935-0f9b-1bfa",
+            "description": "A model with Chaos Familiar gains +1 to their Attacks (A) characteristic.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Warp Armour",
+        "id": "6141-c0a9-b20e-b536",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [{"id": "7e72-c115-4587-5ecc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model-self", "type": "set", "value": "3"}],
+        "rules": [
+          {"name": "Warp Armour", "id": "7589-b78f-19a9-f181", "description": "Armour forged within the immaterial realm. It confers a 3+ Armour save.", "hidden": false}
+        ]
+      },
+      {
+        "name": "Daemon Engine Armour",
+        "id": "8c69-6fdc-d50d-1370",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "cd32-7680-79bc-f6c6",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f439-3e60-0e76-c45c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f439-3e60-0e76-c45c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Daemon Engine Armour",
+            "id": "1479-ffa9-5b62-14b9",
+            "description": "The living armoured skin of the Dameon engines crafted by Chaos artifice. It confers a 3+ armour save.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Chaos Undivided",
+        "id": "0b52-6f97-ed7d-d8a6",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "144d-d9de-4f53-b263"}],
+        "rules": [
+          {
+            "name": "The Mark of Chaos Undivided",
+            "id": "d2f0-26cb-212c-2e62",
+            "description": "• A unit with this Mark gains the Undivided Keyword and may only be joined by units with the Undivided, Khorne, Tzeentch, Nurgle or Slaanesh keywords.\n• A unit with this Mark gains the Fear (1) special rule. If the unit already has the Fear (x) special rule, increase the value of X by 1.\n• In addition, if the unit would fail a Panic test, instead of Falling Back, the unit takes D3 wounds with no saves or mitigation rolls allowed.\n• A unit with this wargear gains access to the Lore of Slaanesh, Nurgle and Tzeentch Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Khorne",
+        "id": "d7c9-bd72-2650-52d3",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "aa58-0e4f-ac1f-e586",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "unit",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "rules": [
+          {
+            "name": "The Mark of Khorne",
+            "id": "c49c-5204-67c0-9521",
+            "description": "• A unit with this Mark gains the Khorne Keyword and may only join or be joined by units with the Khorne or Undivided Keywords.\n• A unit with this mark gains the Furious Charge special rule. If the unit already has the Furious Charge special rule it gains +1 to its Attack (A) characteristic.\n• A unit with the Psyker (x) special rule may not purchase this wargear.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Nurgle",
+        "id": "a70f-07f4-5c21-cc20",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "daab-8f69-2ef7-75b6",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "unit",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "rules": [
+          {
+            "name": "The Mark of Nurgle",
+            "id": "d707-b941-3716-44dc",
+            "description": "• A unit with this Mark gains the Nurgle Keyword and may only join or be joined by units with the Nurgle or Undivided Keywords.\n• A unit with this mark gains the Feel no Pain (5+) special rule. If the unit does not have a Wounds (W) characteristic, it instead always gains the Benefits of Heavy Cover.\n• A unit with this wargear gains access to the Lore of Nurgle Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Slaanesh",
+        "id": "7e6c-73ce-f18e-2f52",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "78f6-cb4c-b69b-6287",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "unit",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "rules": [
+          {
+            "name": "The Mark of Slaanesh",
+            "id": "df64-7d6f-f4db-4e18",
+            "description": "• A unit with this Mark gains the Slaanesh Keyword and may only join or be joined by units with the Slaanesh or Undivided Keywords.\n• A unit with this mark gains +1 to their Initiative (I) characteristic.\n• A unit with this Mark gains the Sudden Strike special rule.\n• A unit with this wargear gains access to the Lore of Slaanesh Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "The Mark of Tzeentch",
+        "id": "8cbd-930e-704b-b337",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1039-5feb-57da-ad4c",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "unit",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "rules": [
+          {
+            "name": "The Mark of Tzeentch",
+            "id": "d7f6-724a-40ba-fae1",
+            "description": "• A unit with this Mark gains the Tzeentch Keyword and may only join or be joined by units with the Tzeentch or Undivided Keywords.\n• A unit with this mark gains +1 to their Invulnerable saves (to a max of 3+). If they do not have an Invulnerable save, they gain a 6+ Invulnerable save.\n• In addition, A unit with this wargear and the Psyker (x) special rule may re-roll 1 dice when making a Psychic Test.\n• A unit with this wargear gains access to the Tzeentch Psychic Powers if they have the Psyker (x) special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Rift Barb",
+        "id": "4a97-6585-d7ab-0d84",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Rift Barb",
+            "id": "30fc-f2bc-6d6c-fa15",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "User", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Rending (6+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hell Flame",
+        "id": "2351-a2a7-6430-56e6",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hell Flame",
+            "id": "97b0-9965-abf1-6ab1",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "User", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spine Volley",
+        "id": "7ecd-7a53-0244-d6fd",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Spine Volley",
+            "id": "5722-3d18-2b9a-b208",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "4", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "User", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hellfire",
+        "id": "9da8-916a-4b3d-61ce",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hellfire",
+            "id": "dbb4-a8a8-2ff9-eefd",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Malefic Talons",
+        "id": "297c-f90c-659b-d781",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Malefic Talons",
+            "id": "cdc1-169d-4c32-6365",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Shred", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Warp Bolter",
+        "id": "0cfe-7d13-dca0-8504",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Warp Bolter",
+            "id": "9b27-5e23-54e7-3623",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Mark of Chaos",
+        "id": "315a-a494-99c4-d7f0",
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "page": "7",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "constraints": [
+          {
+            "id": "97e7-6ef8-1919-a97b",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "The Mark of Tzeentch",
+            "id": "b8f2-e946-b475-a170",
+            "hidden": false,
+            "import": true,
+            "targetId": "8cbd-930e-704b-b337",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "b73b-d185-5635-38fe"}]
+          },
+          {
+            "name": "The Mark of Slaanesh",
+            "id": "446f-7319-2122-d64b",
+            "hidden": false,
+            "import": true,
+            "targetId": "7e6c-73ce-f18e-2f52",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {"affects": "self.entries.recursive.profiles.Unit", "field": "6bc7-a391-2ba3-44f9", "scope": "unit-self", "type": "increment", "value": 1},
+                  {"field": "category", "scope": "unit", "type": "add", "value": "aa44-f9ed-c483-8c97"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Mark of Khorne",
+            "id": "f376-d723-3cae-77f2",
+            "hidden": false,
+            "import": true,
+            "targetId": "d7c9-bd72-2650-52d3",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "a598-e974-8870-262c",
+                "field": "selections",
+                "includeChildSelections": false,
+                "message": "{parent} is a psyker, and may not bear {this}",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "baf3-e3a8-5dda-fc45"}]
+          },
+          {
+            "name": "The Mark of Nurgle",
+            "id": "5213-ae9b-e764-72c0",
+            "hidden": false,
+            "import": true,
+            "targetId": "a70f-07f4-5c21-cc20",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "1739-c92f-edf1-0754"}]
+          }
+        ]
+      },
+      {
+        "name": "Psychic Powers",
+        "id": "b112-82f8-c4f4-5ade",
+        "collapsible": true,
+        "flatten": true,
+        "hidden": false,
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "4e4d-1694-c7c7-88b1",
+                "childName": "Psyker",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Lore of Nurgle Psychic Powers",
+            "id": "c977-11c3-c927-eb49",
+            "collapsible": true,
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "page": "18",
+            "publicationId": "b30d-99de-ef25-ed03",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "1739-c92f-edf1-0754",
+                    "childName": "Nurgle",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Plague Wind (Psychic Weapon)",
+                "id": "b851-2db0-cf30-ce83",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "8fe0-15db-1d3b-956d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                "profiles": [
+                  {
+                    "name": "Plague Wind",
+                    "id": "ac37-4ee6-2a8a-71ff",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "Blast (Large), Poison (4+), Deflagrate, Psychic Weapon", "typeId": "ba87-19e9-d692-6e30"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Blades of Putrefaction (Psychic Power)",
+                "id": "5bc3-c5a7-a2f8-14d2",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "b382-2df2-1cb5-99b8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "rules": [
+                  {
+                    "name": "Blades of Putrefaction (Psychic Power)",
+                    "id": "5f49-fc6f-a823-4389",
+                    "description": "When this power is cast, the Psyker and any attached unit gain the Poison (4+) special rule on all Melee weapons they are equipped with until the start of your next Shooting Phase. If an effected model is equipped with a Melee type weapon with the Poison (x) special rule, it becomes Poison (2+) instead.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Nurgles Rot (Psychic Power)",
+                "id": "b362-14ef-7ae3-9528",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "4434-2703-8142-9d2b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
+                  {
+                    "name": "Nurgles Rot (Psychic Power)",
+                    "id": "01e4-84be-fad1-969f",
+                    "description": "When this power is cast, target 1 enemy unit within 12” of the Psyker. The target unit takes 2D6, Strength 2, AP-, automatic hits.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Fleshy Abundance (Psychic Power)",
+                "id": "cd84-562a-4449-1611",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "0d40-050b-b13b-d32d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "rules": [
+                  {
+                    "name": "Fleshy Abundance (Psychic Power)",
+                    "id": "c60b-59c7-9a97-5479",
+                    "description": "When this power is cast, the Psyker or 1 friendly model within 24” Heals 1 lost Wound.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Curse of the Leper (Psychic Power)",
+                "id": "5ab2-36b3-d02d-745a",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "95cb-2efb-0fa3-c02a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                "rules": [
+                  {
+                    "name": "Curse of the Leper (Psychic Power)",
+                    "id": "bd39-aaae-debb-7286",
+                    "description": "When this power is cast, target 1 enemy unit within 18” of the Psyker. The target unit suffers -1 to its Strength (S) & Toughness (T) characteristic until the start of your next Shooting Phase.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lore of Slaanesh Psychic Powers",
+            "id": "a017-cb3a-2f8a-a6a2",
+            "collapsible": true,
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "page": "19",
+            "publicationId": "b30d-99de-ef25-ed03",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "aa44-f9ed-c483-8c97",
+                    "childName": "Slaanesh",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Sensory Overload (Psychic Power)",
+                "id": "61f7-738d-6d6b-df75",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "52f8-a87d-1ee0-1326", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "profiles": [
+                  {
+                    "name": "Sensory Overload (Psychic Power)",
+                    "id": "1e88-6eb5-c1cd-6106",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "4", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "2", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "Blind, Concussive, Pinning, Psychic Weapon", "typeId": "ba87-19e9-d692-6e30"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Hysterical Frenzy (Psychic Power)",
+                "id": "dcb0-4b11-f952-cb58",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "1f26-9d68-7070-d7b0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "rules": [
+                  {
+                    "name": "Hysterical Frenzy (Psychic Power)",
+                    "id": "2402-0bfa-2ac0-0f9a",
+                    "description": "When this power is cast, the Psyker and any attached unit gain the Arcing (6+) special rule on all melee weapons they are equipped with until the start of your next Shooting Phase. If the unit already has Arcing (x), improve Arcing (x) by 1 to a max of 3+.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Delightful Agonies (Psychic Power)",
+                "id": "c029-9f9a-f02a-63be",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "4d6e-7b03-8ffe-518d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "rules": [
+                  {
+                    "name": "Delightful Agonies (Psychic Power)",
+                    "id": "7350-0ea9-da0c-09f9",
+                    "description": "When this power is cast, the Psyker and any attached unit gain the Feel no Pain (5+) special rule until the start of your next Shooting Phase.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Symphony of Pain (Psychic Power)",
+                "id": "4fdb-950d-e8f4-c6e1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "9400-44c5-1568-a26b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                "rules": [
+                  {
+                    "name": "Symphony of Pain (Psychic Power)",
+                    "id": "d99e-0f67-0741-82dd",
+                    "description": "When this power is cast, target 1 enemy unit within 18” of the Psyker. The target unit suffers -1 to their Weapon Skill (WS) and Ballistic Skill (BS) characteristic until the start of your next Shooting Phase.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Sonic Shockwave (Psychic Power)",
+                "id": "641d-c530-0a3a-ca8a",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "e74e-947d-bfd9-983c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "profiles": [
+                  {
+                    "name": "Sonic Shockwave",
+                    "id": "57ac-3168-3bfd-7819",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "D6+2", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "Ignores Cover, Psychic Weapon", "typeId": "ba87-19e9-d692-6e30"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lore of Tzeentch Psychic Powers",
+            "id": "5996-7130-46c6-d3d3",
+            "collapsible": true,
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b73b-d185-5635-38fe",
+                    "childName": "Tzeentch",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Bolt of Change (Psychic Weapon)",
+                "id": "c606-c597-372f-8c07",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "8305-9cb9-8f99-5308", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                "profiles": [
+                  {
+                    "name": "Bolt of Change (Psychic Weapon)",
+                    "id": "c475-1621-21d3-60e6",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "+2", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "Psychic Weapon", "typeId": "ba87-19e9-d692-6e30"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Boon of Change (Psychic Power)",
+                "id": "92a9-74a8-50ff-11ad",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "f76b-09bb-115e-1090", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "rules": [
+                  {
+                    "name": "Boon of Change (Psychic Power)",
+                    "id": "673d-80e9-9d92-188b",
+                    "description": "When this power is cast, the Psyker and their attached unit must pick to gain one of the following until the start of your next Shooting Phase:\n• +1 to its Attack (A) characteristic\n• +1 to its Strength (S) characteristic.\n• +1 to its Initiative (I) characteristic\nThis power may be cast any number of times by a Psyker in the Shooting Phase if they can cast multiple times.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Siphon Magic (Psychic Power)",
+                "id": "956e-f2b8-65ed-b1eb",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "ddcf-3b94-b891-c234", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
+                "rules": [
+                  {
+                    "name": "Siphon Magic (Psychic Power)",
+                    "id": "b224-ca13-a3c6-775b",
+                    "description": "When this power is cast, select 1 enemy unit with the Psyker (x) special rule within 18” of the Psyker. The target unit may not cast any make any Psychic tests to cast Psychic Powers or Psychic Weapons until the start of your next Shooting Phase. In addition, if the target unit has any Psychic Powers or Psychic Weapons in effect, including Force, that effect is negated.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Treason of Tzeentch (Psychic Power)",
+                "id": "cb4e-a20a-ef17-5368",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "6661-344a-98c5-c937", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "rules": [
+                  {
+                    "name": "Treason of Tzeentch (Psychic Power)",
+                    "id": "612e-2b3b-a5e7-0f06",
+                    "description": "When this Power is cast, select 1 enemy unit within 24” of the Psyker that is not an Automata or Drone Type. Immediately make a single Shooting Attack with the targeted unit as if it were your own. The unit is treated as your own for the purposes of determining friendly and enemy targets. The Shooting Attack by the controlled target unit are resolved as Snap Shots. The target unit is treated as an enemy unit immediately after its Shooting Attack is resolved.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Baleful Devolution (Psychic Power)",
+                "id": "bf6b-7727-c7e7-b173",
+                "comment": "todo: No Chaos Spawn profile in reference",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "1ae7-2cac-f650-a2ce", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
+                "rules": [
+                  {
+                    "name": "Baleful Devolution (Psychic Power)",
+                    "id": "8c08-bb09-b6b8-d48c",
+                    "description": "When this power is cast, target 1 enemy unit within 18” of the Psyker. The target unit takes 2D6, Strength 4, AP4 Automatic Hits. If any models are slain in the target unit as a result of wounds inflicted by this Psychic Power, immediately summon a Chaos Spawn more than 3” away from the targeted enemy unit.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 4,
     "library": true,
-    "revision": 7,
+    "revision": 8,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - Imperial Guard", "id": "70d5-ec7b-4e75-5145", "importRootEntries": false, "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"}],
     "categoryEntries": [
@@ -2257,7 +2257,29 @@
                 ],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
               },
-              {"name": "Iron Halo", "id": "e63d-aec6-1751-ed2d", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"}
+              {"name": "Iron Halo", "id": "e63d-aec6-1751-ed2d", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
+              {
+                "name": "Thunder Hammer",
+                "id": "5f33-8483-7657-9c0e",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "4e5d-8e80-1671-f1f9",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3749-9555-ce87-2d05-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3749-9555-ce87-2d05-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Digital Weapons",
+                "id": "f71f-7703-30f7-e26e",
+                "hidden": false,
+                "import": true,
+                "targetId": "7abf-e940-51aa-1a1e",
+                "type": "selectionEntry",
+                "constraints": [{"id": "9d34-dd32-f310-c2cb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              }
             ],
             "profiles": [
               {
@@ -2273,7 +2295,7 @@
                   {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
                   {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
                   {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "5", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
                   {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
                   {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
                   {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
@@ -2291,30 +2313,6 @@
                 "constraints": [
                   {"id": "2c4c-6188-f0a7-c591-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "2c4c-6188-f0a7-c591-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Thunder Hammer",
-                "id": "0d00-19ed-d479-0642",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "dcc8-99a0-989a-f1e7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "dcc8-99a0-989a-f1e7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Digital Weapons",
-                "id": "6475-af54-d717-85d0",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "1a50-1e39-b03d-3373-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "1a50-1e39-b03d-3373-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               }
             ]
