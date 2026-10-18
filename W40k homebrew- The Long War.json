@@ -199,7 +199,11 @@
       {"name": "Priest", "id": "f41c-295d-a9b1-b72c", "hidden": false},
       {"name": "Daemon", "id": "0ce8-e702-158f-a98d", "hidden": false},
       {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false},
-      {"name": "Dreadnought", "id": "66b5-9c89-b1b9-fdff", "hidden": false}
+      {"name": "Dreadnought", "id": "66b5-9c89-b1b9-fdff", "hidden": false},
+      {"name": "Vetrans", "id": "6ce5-b373-d16a-52f6", "hidden": false},
+      {"name": "Rhino", "id": "b616-9080-293e-0d6e", "hidden": false},
+      {"name": "Land Raider", "id": "0eda-c168-0322-c649", "hidden": false},
+      {"name": "Storm Eagle Gunship", "id": "47c8-6520-d129-daed", "hidden": false}
     ],
     "costTypes": [
       {
@@ -1641,6 +1645,18 @@
         "name": "Flank Speed",
         "id": "f9a1-e19d-54a0-a889",
         "description": "When this unit performs an Advance move in the Movement Phase, it automatically adds 12” to its Movement (M) characteristic.",
+        "hidden": false
+      },
+      {
+        "name": "Reliable Machine Spirit",
+        "id": "bdf3-62d2-3342-08fe",
+        "description": "When a unit with this special rule would be destroyed. Embarked units are not required to roll for models inside being slain (see Rule 10.2 in the core rules).",
+        "hidden": false
+      },
+      {
+        "name": "Machine Spirit",
+        "id": "90e4-fe1e-9971-6663",
+        "description": "This unit may always set to Overwatch, even if it made a shooting attack in the Shooting phase.",
         "hidden": false
       }
     ],
@@ -3855,6 +3871,137 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Precision Hits, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Las Pistol",
+        "id": "c468-84ae-6ed3-1806",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Las Pistol",
+            "id": "7247-8f86-e6e4-aaa8",
+            "hidden": false,
+            "page": "10",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atomantic Shielding",
+        "id": "22bf-68df-6ed4-225d",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "d199-37de-ec76-2582-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d199-37de-ec76-2582-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Atomantic Shielding",
+            "id": "519f-55e2-bc83-27ac",
+            "description": "This confers a 5+ Invulnerable save. When a model with this wargear is slain and removed from play, the model suffers an Explodes result per the Vehicle damage chart before it is removed from play.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Havoc Launcher",
+        "id": "8c6f-6b61-8f08-04c2",
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "6d84-fac5-77c6-2cdc",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Havoc Launcher",
+            "id": "8eca-148f-480d-8e18",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vengeance Launcher (P)",
+        "id": "8bc9-9d7e-5b09-9e3d",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8ec0-c321-27d4-d5de-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "8ec0-c321-27d4-d5de-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Vengeance Launcher",
+            "id": "a96d-5e0d-b941-bc5c",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Large Blast, Barrage (2)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Hellstrike Launchers",
+        "id": "ba39-1444-a1bf-16d3",
+        "defaultAmount": "2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3013-4776-e1e9-b3db-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "3013-4776-e1e9-b3db-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+        ],
+        "profiles": [
+          {
+            "name": "Linked Hellstrike Launchers",
+            "id": "c2ee-90ae-0f58-b64e",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Sunder", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]

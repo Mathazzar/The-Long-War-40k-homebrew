@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0e79-b452-6d4b-0244", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -13062,32 +13062,6 @@
               {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Skyfire", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Havoc Launcher",
-        "id": "8c6f-6b61-8f08-04c2",
-        "hidden": false,
-        "import": true,
-        "page": "17",
-        "publicationId": "6d84-fac5-77c6-2cdc",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Havoc Launcher",
-            "id": "8eca-148f-480d-8e18",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]

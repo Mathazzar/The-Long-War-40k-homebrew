@@ -504,7 +504,6 @@
       {"name": "Impulsor", "id": "6566-a813-d3e0-ff7a", "hidden": false},
       {"name": "Stormhawk Interceptor", "id": "a13d-7258-d495-fb91", "hidden": false},
       {"name": "Stormtalon Gunship", "id": "fe0e-b6cf-c937-6c3c", "hidden": false},
-      {"name": "Storm Eagle Gunship", "id": "47c8-6520-d129-daed", "hidden": false},
       {"name": "Bike Squad", "id": "f7a6-38ad-b9fe-3b78", "hidden": false},
       {
         "name": "Scout Bike Squad",
@@ -15448,6 +15447,7 @@
               {"id": "b3cc-a139-0ed5-3a19-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b3cc-a139-0ed5-3a19-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
+            "entryLinks": [{"name": "Vengeance Launcher (P)", "id": "23a0-b309-9f16-42a4", "hidden": false, "targetId": "8bc9-9d7e-5b09-9e3d", "type": "selectionEntry"}],
             "profiles": [
               {
                 "name": "Storm Eagle",
@@ -15467,37 +15467,6 @@
                   {"name": "I", "$text": "1", "typeId": "7f1b-fabe-598c-f8de"},
                   {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
                   {"name": "Transport Capacity", "$text": "22", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Vengeance Launcher (P)",
-                "id": "8bc9-9d7e-5b09-9e3d",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "8ec0-c321-27d4-d5de-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "8ec0-c321-27d4-d5de-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Vengeance Launcher",
-                    "id": "a96d-5e0d-b941-bc5c",
-                    "hidden": false,
-                    "typeId": "4425-e2ff-1ce0-83c1",
-                    "typeName": "Ranged Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                      {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                      {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-                      {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-                      {"name": "Rules", "$text": "Large Blast, Barrage (2)", "typeId": "ba87-19e9-d692-6e30"}
-                    ]
-                  }
                 ]
               }
             ],
@@ -15542,6 +15511,7 @@
                         "name": "Linked Las Cannon",
                         "id": "219a-4af2-23ea-1af9",
                         "defaultAmount": "2",
+                        "exportable": false,
                         "hidden": false,
                         "import": true,
                         "targetId": "446b-047d-0872-5352",
@@ -15559,35 +15529,14 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "selectionEntries": [
+                    "entryLinks": [
                       {
                         "name": "Linked Hellstrike Launchers",
-                        "id": "ba39-1444-a1bf-16d3",
-                        "defaultAmount": "2",
+                        "id": "5fd1-e6bd-b947-48c9",
+                        "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
-                        "constraints": [
-                          {"id": "3013-4776-e1e9-b3db-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                          {"id": "3013-4776-e1e9-b3db-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Linked Hellstrike Launchers",
-                            "id": "c2ee-90ae-0f58-b64e",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Sunder", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
-                        ]
+                        "targetId": "ba39-1444-a1bf-16d3",
+                        "type": "selectionEntry"
                       }
                     ]
                   }

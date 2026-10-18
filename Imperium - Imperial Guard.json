@@ -56065,10 +56065,23 @@
                 "type": "upgrade",
                 "constraints": [{"id": "9cbb-7a9f-3c10-d57a", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                "infoLinks": [
-                  {"name": "Las Pistol", "id": "4c6e-795c-c69f-36d9", "hidden": false, "targetId": "7247-8f86-e6e4-aaa8", "type": "profile"},
-                  {"name": "Med Kit", "id": "bf02-d42a-052e-c928", "hidden": false, "targetId": "72e8-2b0c-6ab0-22b5", "type": "rule"}
-                ]
+                "entryLinks": [
+                  {
+                    "name": "Las Pistol",
+                    "id": "d9b2-f105-bbb9-81b3",
+                    "defaultAmount": "1",
+                    "exportable": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "c468-84ae-6ed3-1806",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d1c4-7453-b26f-dfb7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "d1c4-7453-b26f-dfb7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Med Kit", "id": "bf02-d42a-052e-c928", "hidden": false, "targetId": "72e8-2b0c-6ab0-22b5", "type": "rule"}]
               }
             ]
           }

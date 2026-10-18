@@ -752,7 +752,26 @@
               }
             ],
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "baf3-e3a8-5dda-fc45"}]
+            "modifiers": [
+              {"field": "category", "scope": "unit", "type": "add", "value": "baf3-e3a8-5dda-fc45"},
+              {
+                "field": "a598-e974-8870-262c",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "4e4d-1694-c7c7-88b1",
+                    "childName": "Psyker",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "The Mark of Chaos Undivided",

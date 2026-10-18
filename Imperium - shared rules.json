@@ -13,39 +13,19 @@
       {"name": "Cult Ministorum", "id": "4e69-2b1d-e273-cb0b", "hidden": false},
       {"name": "Redemptionists", "id": "83a2-37d7-3feb-4d96", "hidden": false},
       {"name": "Captain", "id": "875f-9975-8052-0495", "hidden": false},
-      {"name": "Vetrans", "id": "6ce5-b373-d16a-52f6", "hidden": false},
       {"name": "Cult Delegation", "id": "a049-d976-50dd-c84d", "hidden": false},
       {"name": "Chimera", "id": "90d5-2c7e-fd37-47d8", "hidden": false},
       {"name": "Taurox", "id": "402c-0171-03d4-5b2f", "hidden": false},
-      {"name": "Rhino", "id": "b616-9080-293e-0d6e", "hidden": false},
       {"name": "Razorback", "id": "6c54-25e1-143c-9354", "hidden": false},
       {"name": "Stormraven Gunship", "id": "c276-3fa6-f364-135c", "hidden": false},
       {"name": "Penitent Engines", "id": "0bf5-c753-2fb9-fbce", "hidden": false},
       {"name": "Cyclops Demolition Vehicle", "id": "d34d-e1bc-130f-53f9", "hidden": false},
-      {"name": "Land Raider", "id": "0eda-c168-0322-c649", "hidden": false},
       {"name": "Land Raider Crusader", "id": "7790-4f61-9ccc-1699", "hidden": false},
       {"name": "Land Raider Redeemer", "id": "cb98-681a-2899-71c4", "hidden": false},
       {"name": "Paragon Warsuit", "id": "ee22-1e0b-4930-ea68", "hidden": false},
       {"name": "Contemptor", "id": "9891-f932-73e3-f871", "hidden": false}
     ],
     "sharedProfiles": [
-      {
-        "name": "Las Pistol",
-        "id": "7247-8f86-e6e4-aaa8",
-        "hidden": false,
-        "page": "10",
-        "publicationId": "5b81-795c-38b3-285c",
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
       {
         "name": "Las Gun",
         "id": "00ca-a2cc-8f12-0108",
@@ -471,18 +451,6 @@
       },
       {"name": "Angels of Death", "id": "edfb-d641-ce62-8542", "comment": "todo: No profile provided in reference", "hidden": false},
       {
-        "name": "Reliable Machine Spirit",
-        "id": "bdf3-62d2-3342-08fe",
-        "description": "When a unit with this special rule would be destroyed. Embarked units are not required to roll for models inside being slain (see Rule 10.2 in the core rules).",
-        "hidden": false
-      },
-      {
-        "name": "Machine Spirit",
-        "id": "90e4-fe1e-9971-6663",
-        "description": "This unit may always set to Overwatch, even if it made a shooting attack in the Shooting phase.",
-        "hidden": false
-      },
-      {
         "name": "Decree Passive",
         "id": "06a3-fa3f-81e2-08f8",
         "description": "You may only include 1 unit with the Cult Ministorum keyword for every 3 Adeptus Sororitas units in your army. Units with this special rule may not be your warlord unless there are no Adeptus Sororitas units in your army.",
@@ -835,15 +803,6 @@
             "hidden": false
           }
         ]
-      },
-      {
-        "name": "Las Pistol",
-        "id": "c468-84ae-6ed3-1806",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Las Pistol", "id": "0a98-b3f2-8b1a-83b0", "hidden": false, "targetId": "7247-8f86-e6e4-aaa8", "type": "profile"}]
       },
       {
         "name": "Las Gun",
@@ -5516,26 +5475,6 @@
               {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Rending (4+), Precision Strikes, Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
-          }
-        ]
-      },
-      {
-        "name": "Atomantic Shielding",
-        "id": "22bf-68df-6ed4-225d",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "d199-37de-ec76-2582-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "d199-37de-ec76-2582-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Atomantic Shielding",
-            "id": "519f-55e2-bc83-27ac",
-            "description": "This confers a 5+ Invulnerable save. When a model with this wargear is slain and removed from play, the model suffers an Explodes result per the Vehicle damage chart before it is removed from play.",
-            "hidden": false
           }
         ]
       },
