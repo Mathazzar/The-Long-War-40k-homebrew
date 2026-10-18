@@ -198,7 +198,8 @@
       {"name": "Chaos", "id": "4c48-b09a-ec4a-cf19", "hidden": false},
       {"name": "Priest", "id": "f41c-295d-a9b1-b72c", "hidden": false},
       {"name": "Daemon", "id": "0ce8-e702-158f-a98d", "hidden": false},
-      {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false}
+      {"name": "Terminator", "id": "b2b5-3d4c-75aa-f071", "hidden": false},
+      {"name": "Dreadnought", "id": "66b5-9c89-b1b9-fdff", "hidden": false}
     ],
     "costTypes": [
       {
@@ -3722,6 +3723,139 @@
             "hidden": false,
             "page": "19",
             "publicationId": "5b81-795c-38b3-285c"
+          }
+        ]
+      },
+      {
+        "name": "Frag Grenades",
+        "id": "d2ae-8075-6bc5-1bdd",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9c7e-324b-4a76-d4aa-min",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "9c7e-324b-4a76-d4aa-max",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Frag Grenades",
+            "id": "a62d-1b1d-069e-901c",
+            "hidden": false,
+            "page": "12",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Krak Grenades",
+        "id": "f388-1ad7-18d8-8a53",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "68f8-ae17-e37d-ea76-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "68f8-ae17-e37d-ea76-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Krak Grenades",
+            "id": "f986-13dd-7441-b7bc",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lightning Claws",
+        "id": "7387-4d1b-e3e4-b301",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Lightning Claws",
+            "id": "c3da-674f-e831-b479",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Shred, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sniper Rifle",
+        "id": "2b28-2be1-8fe9-0348",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Sniper Rifle",
+            "id": "dab8-029d-f993-11d1",
+            "hidden": false,
+            "page": "12",
+            "publicationId": "5b81-795c-38b3-285c",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Precision Hits, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
           }
         ]
       }

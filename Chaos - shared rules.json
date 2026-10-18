@@ -13,7 +13,8 @@
       {"name": "Nurgle", "id": "1739-c92f-edf1-0754", "hidden": false},
       {"name": "Slaanesh", "id": "aa44-f9ed-c483-8c97", "hidden": false},
       {"name": "Tzeentch", "id": "b73b-d185-5635-38fe", "hidden": false},
-      {"name": "Undivided", "id": "144d-d9de-4f53-b263", "hidden": false}
+      {"name": "Undivided", "id": "144d-d9de-4f53-b263", "hidden": false},
+      {"name": "Daemon Prince", "id": "2f32-89f4-934a-3e5f", "hidden": false}
     ],
     "sharedSelectionEntries": [
       {
@@ -37,6 +38,54 @@
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "upgrade",
         "constraints": [{"id": "4648-c527-7e7d-b567", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model", "type": "increment", "value": "1"},
+              {
+                "affects": "profiles.Unit",
+                "field": "e165-c63b-1720-081f",
+                "scope": "model",
+                "type": "set",
+                "value": "12",
+                "conditions": [
+                  {
+                    "childId": "0ce8-e702-158f-a98d",
+                    "childName": "Daemon",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "affects": "profiles.Unit",
+                "field": "e165-c63b-1720-081f",
+                "scope": "model",
+                "type": "set",
+                "value": "13",
+                "conditions": [
+                  {
+                    "childId": "0ce8-e702-158f-a98d",
+                    "childName": "Daemon",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {"affects": "profiles.Unit", "field": "0ad1-8e51-6f8f-ec14", "scope": "model", "type": "increment", "value": "1"},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": "1"}
+            ]
+          }
+        ],
         "rules": [
           {
             "name": "Daemonic Steed",
@@ -73,22 +122,6 @@
             "description": "A model with Chaos Familiar gains +1 to their Attacks (A) characteristic.",
             "hidden": false
           }
-        ]
-      },
-      {
-        "name": "Warp Armour",
-        "id": "6141-c0a9-b20e-b536",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "6",
-        "publicationId": "b30d-99de-ef25-ed03",
-        "type": "upgrade",
-        "constraints": [{"id": "7e72-c115-4587-5ecc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model-self", "type": "set", "value": "3"}],
-        "rules": [
-          {"name": "Warp Armour", "id": "7589-b78f-19a9-f181", "description": "Armour forged within the immaterial realm. It confers a 3+ Armour save.", "hidden": false}
         ]
       },
       {
@@ -406,6 +439,248 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Daemon Prince",
+        "id": "3bf0-1cb0-6f5b-8c20",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "constraints": [
+          {"id": "936f-1950-1405-6ea6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "936f-1950-1405-6ea6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "entryLinks": [
+          {
+            "name": "Wings",
+            "id": "367f-e566-8418-2189",
+            "defaultAmount": "0",
+            "hidden": false,
+            "import": true,
+            "targetId": "32f6-d80e-0d93-0348",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "affects": "profiles.Unit",
+                    "field": "e165-c63b-1720-081f",
+                    "scope": "model-self",
+                    "type": "floor",
+                    "value": "13",
+                    "conditions": [
+                      {
+                        "childId": "0ce8-e702-158f-a98d",
+                        "childName": "Daemon",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "affects": "profiles.Unit",
+                    "field": "e165-c63b-1720-081f",
+                    "scope": "model-self",
+                    "type": "floor",
+                    "value": "12",
+                    "conditions": [
+                      {
+                        "childId": "0ce8-e702-158f-a98d",
+                        "childName": "Daemon",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {"field": "b0aa-dd58-2b64-a2ca", "type": "set", "value": 0},
+                  {"affects": "profiles.Unit", "field": "name", "scope": "model-self", "type": "append", "value": "with wings"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Malefic Talons",
+            "id": "6f5f-4ac4-fe4b-023a",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "297c-f90c-659b-d781",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "c407-b219-b8f8-de87-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "min", "value": 1},
+              {"id": "c407-b219-b8f8-de87-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Daemon Prince",
+            "id": "f7c6-0d46-e84d-50be",
+            "hidden": false,
+            "typeId": "8460-92c9-82af-a787",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "9", "typeId": "e165-c63b-1720-081f"},
+              {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+              {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+              {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+              {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
+              {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+              {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+              {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+              {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+              {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Psyker",
+            "id": "e576-bb74-9225-812a",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "79de-9945-2a19-2133", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "infoLinks": [{"name": "Psyker (x)", "id": "65bf-8916-3dcd-c123", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "baf3-e3a8-5dda-fc45",
+                    "childName": "Khorne",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {"field": "category", "scope": "unit", "type": "add", "value": "4e4d-1694-c7c7-88b1"},
+              {
+                "field": "79de-9945-2a19-2133",
+                "type": "set",
+                "value": 2,
+                "conditions": [
+                  {
+                    "childId": "b73b-d185-5635-38fe",
+                    "childName": "Tzeentch",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Offhand",
+            "id": "2bf4-53ab-7709-a97f",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "7eac-0231-6d2d-a3e0",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Hellfire",
+                "id": "669b-875d-5e7b-7eac",
+                "hidden": false,
+                "import": true,
+                "targetId": "9da8-916a-4b3d-61ce",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Rift Barb",
+                "id": "af56-abfa-3d81-8733",
+                "hidden": false,
+                "import": true,
+                "targetId": "4a97-6585-d7ab-0d84",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+              },
+              {
+                "name": "Hell Flame",
+                "id": "25be-2593-1441-28a4",
+                "hidden": false,
+                "import": true,
+                "targetId": "2351-a2a7-6430-56e6",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+              },
+              {
+                "name": "Spine Volley",
+                "id": "de93-95bc-035f-bcd6",
+                "hidden": false,
+                "import": true,
+                "targetId": "7ecd-7a53-0244-d6fd",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}]
+              },
+              {
+                "name": "Warp Bolter",
+                "id": "2e5d-2c8e-8d33-5ec0",
+                "hidden": false,
+                "import": true,
+                "targetId": "0cfe-7d13-dca0-8504",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wings",
+        "id": "32f6-d80e-0d93-0348",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b0aa-dd58-2b64-a2ca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "79e2-8d35-ce39-764b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Wings",
+            "id": "7310-9beb-d806-ba49",
+            "description": "A model with this wargear increases their Movement (M) characteristic to 12”. It gains the Hammer of Wrath (1), Fly and Deep strike special rules.",
+            "hidden": false
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -480,8 +755,17 @@
             "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "baf3-e3a8-5dda-fc45"}]
           },
           {
-            "name": "The Mark of Nurgle",
+            "name": "The Mark of Chaos Undivided",
             "id": "5213-ae9b-e764-72c0",
+            "hidden": false,
+            "import": true,
+            "targetId": "0b52-6f97-ed7d-d8a6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "The Mark of Nurgle",
+            "id": "6f5e-d130-bc29-3349",
             "hidden": false,
             "import": true,
             "targetId": "a70f-07f4-5c21-cc20",

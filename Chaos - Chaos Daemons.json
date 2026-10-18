@@ -10,7 +10,6 @@
     "type": "catalogue",
     "catalogueLinks": [{"name": "Chaos - shared rules", "id": "db84-5ff1-0ca9-946f", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
     "categoryEntries": [
-      {"name": "Daemon Prince", "id": "2f32-89f4-934a-3e5f", "hidden": false},
       {
         "name": "Greater Daemon",
         "id": "6677-e6b3-1183-a723",
@@ -1024,148 +1023,15 @@
         "constraints": [{"id": "3597-332c-1286-e642", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 135}],
         "entryLinks": [
-          {"name": "Psychic Powers", "id": "f82a-2f85-4e10-34e2", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
-          {"name": "Warlord", "id": "9b9a-c99f-3f3e-3f50", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
-          {"name": "Relic", "id": "72bd-39b6-a448-a7d0", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"},
-          {"name": "Warlord Trait", "id": "1e17-abe2-de97-c4f8", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"}
-        ],
-        "infoLinks": [
-          {"name": "Deep Strike", "id": "024a-8a40-0618-9358", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
-          {"name": "Warp Surge", "id": "4836-f176-86a1-7bbe", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
-          {"name": "Daemonic Instability", "id": "5094-80e4-5654-8137", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
-          {"name": "Character", "id": "1246-72a3-9d0c-57de", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
-          {"name": "Daemon", "id": "d3bd-698d-ae26-b690", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
-          {"name": "Regeneration", "id": "855c-2124-5a05-b784", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
-          {"name": "Move through Cover", "id": "2588-d029-49de-903a", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
-          {"name": "Hammer of Wrath (x)", "id": "c5da-873d-4e44-2e0f", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"}
-        ],
-        "selectionEntries": [
           {
             "name": "Daemon Prince",
-            "id": "3bf0-1cb0-6f5b-8c20",
-            "defaultAmount": "1",
+            "id": "c146-3e4f-b088-dc62",
             "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "936f-1950-1405-6ea6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "936f-1950-1405-6ea6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
+            "targetId": "3bf0-1cb0-6f5b-8c20",
+            "type": "selectionEntry",
             "entryLinks": [
-              {
-                "name": "Offhand",
-                "id": "9776-011a-2cb0-3d1f",
-                "hidden": false,
-                "targetId": "6583-e0f7-7c19-62a9",
-                "type": "selectionEntryGroup",
-                "entryLinks": [
-                  {
-                    "name": "Warp Bolter",
-                    "id": "c8d3-23be-852b-360e",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "0cfe-7d13-dca0-8504",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}]
-                  }
-                ]
-              },
               {"name": "Mark of Chaos", "id": "c001-d112-6fa1-4033", "hidden": false, "import": true, "targetId": "08ca-2ebc-2187-5afc", "type": "selectionEntryGroup"},
-              {
-                "name": "Wings",
-                "id": "367f-e566-8418-2189",
-                "defaultAmount": "0",
-                "hidden": false,
-                "import": true,
-                "targetId": "32f6-d80e-0d93-0348",
-                "type": "selectionEntry",
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                "modifiers": [{"field": "b0aa-dd58-2b64-a2ca", "type": "set", "value": 0}]
-              },
-              {
-                "name": "Malefic Talons",
-                "id": "6f5f-4ac4-fe4b-023a",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "297c-f90c-659b-d781",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "c407-b219-b8f8-de87-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "min", "value": 1},
-                  {"id": "c407-b219-b8f8-de87-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 1}
-                ]
-              },
               {"name": "Warp Armour", "id": "8041-d4f4-6ee2-e9b8", "hidden": false, "import": true, "targetId": "6141-c0a9-b20e-b536", "type": "selectionEntry"}
-            ],
-            "profiles": [
-              {
-                "name": "Daemon Prince",
-                "id": "f7c6-0d46-e84d-50be",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "9", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "6", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Psyker",
-                "id": "e576-bb74-9225-812a",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [{"id": "79de-9945-2a19-2133", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                "infoLinks": [{"name": "Psyker (x)", "id": "65bf-8916-3dcd-c123", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "baf3-e3a8-5dda-fc45",
-                        "childName": "Khorne",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  },
-                  {"field": "category", "scope": "unit", "type": "add", "value": "4e4d-1694-c7c7-88b1"},
-                  {
-                    "field": "79de-9945-2a19-2133",
-                    "type": "set",
-                    "value": 2,
-                    "conditions": [
-                      {
-                        "childId": "b73b-d185-5635-38fe",
-                        "childName": "Tzeentch",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              }
             ],
             "selectionEntryGroups": [
               {
@@ -1210,7 +1076,21 @@
                 ]
               }
             ]
-          }
+          },
+          {"name": "Psychic Powers", "id": "f82a-2f85-4e10-34e2", "hidden": false, "import": true, "targetId": "b112-82f8-c4f4-5ade", "type": "selectionEntryGroup"},
+          {"name": "Warlord", "id": "9b9a-c99f-3f3e-3f50", "hidden": false, "import": true, "targetId": "da73-92e8-6d36-176a", "type": "selectionEntry"},
+          {"name": "Relic", "id": "72bd-39b6-a448-a7d0", "hidden": false, "import": true, "targetId": "1719-44d6-6ec9-b171", "type": "selectionEntry"},
+          {"name": "Warlord Trait", "id": "1e17-abe2-de97-c4f8", "hidden": false, "import": true, "targetId": "26a7-c0e9-cc90-9e25", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Deep Strike", "id": "024a-8a40-0618-9358", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Warp Surge", "id": "4836-f176-86a1-7bbe", "hidden": false, "targetId": "e1d7-28f8-a7ae-82ad", "type": "rule"},
+          {"name": "Daemonic Instability", "id": "5094-80e4-5654-8137", "hidden": false, "targetId": "93c5-6fd7-fc6c-82ce", "type": "rule"},
+          {"name": "Character", "id": "1246-72a3-9d0c-57de", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Daemon", "id": "d3bd-698d-ae26-b690", "hidden": false, "targetId": "be8b-3155-d9be-22da", "type": "rule"},
+          {"name": "Regeneration", "id": "855c-2124-5a05-b784", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Move through Cover", "id": "2588-d029-49de-903a", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "c5da-873d-4e44-2e0f", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"}
         ]
       },
       {
@@ -11972,29 +11852,6 @@
         ]
       },
       {
-        "name": "Wings",
-        "id": "32f6-d80e-0d93-0348",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "6",
-        "publicationId": "b30d-99de-ef25-ed03",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "b0aa-dd58-2b64-a2ca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "79e2-8d35-ce39-764b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "modifiers": [{"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model-self", "type": "floor", "value": "13"}],
-        "rules": [
-          {
-            "name": "Wings",
-            "id": "7310-9beb-d806-ba49",
-            "description": "A model with this wargear increases their Movement (M) characteristic to 12”. It gains the Hammer of Wrath (1), Fly and Deep strike special rules.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Relic",
         "id": "1719-44d6-6ec9-b171",
         "collapsible": true,
@@ -14042,6 +13899,22 @@
             "description": "A model equipped with a Disc increases its Movement (M) characteristic to 13” (This includes the bonus from the Daemon special rule) and gains the Hammer of Wrath (1) & Fly special rule.",
             "hidden": false
           }
+        ]
+      },
+      {
+        "name": "Warp Armour",
+        "id": "6141-c0a9-b20e-b536",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "b30d-99de-ef25-ed03",
+        "type": "upgrade",
+        "constraints": [{"id": "7e72-c115-4587-5ecc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model-self", "type": "set", "value": "3"}],
+        "rules": [
+          {"name": "Warp Armour", "id": "7589-b78f-19a9-f181", "description": "Armour forged within the immaterial realm. It confers a 3+ Armour save.", "hidden": false}
         ]
       }
     ],
