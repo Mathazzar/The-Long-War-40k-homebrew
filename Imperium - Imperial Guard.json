@@ -55399,33 +55399,6 @@
         "infoLinks": [{"name": "Ripper Gun", "id": "5af0-bd75-ba32-7e2f", "hidden": false, "targetId": "73f0-986c-ebbf-094d", "type": "profile"}]
       },
       {
-        "name": "Battle Cannon",
-        "id": "f47c-01cb-6481-fc86",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Battle Cannon",
-            "id": "0172-19f2-7fae-6623",
-            "hidden": false,
-            "page": "12",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Vanquisher Battle Cannon",
         "id": "320a-810e-2427-908c",
         "collective": true,
@@ -56065,10 +56038,23 @@
                 "type": "upgrade",
                 "constraints": [{"id": "9cbb-7a9f-3c10-d57a", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                "infoLinks": [
-                  {"name": "Las Pistol", "id": "4c6e-795c-c69f-36d9", "hidden": false, "targetId": "7247-8f86-e6e4-aaa8", "type": "profile"},
-                  {"name": "Med Kit", "id": "bf02-d42a-052e-c928", "hidden": false, "targetId": "72e8-2b0c-6ab0-22b5", "type": "rule"}
-                ]
+                "entryLinks": [
+                  {
+                    "name": "Las Pistol",
+                    "id": "d9b2-f105-bbb9-81b3",
+                    "defaultAmount": "1",
+                    "exportable": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "c468-84ae-6ed3-1806",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d1c4-7453-b26f-dfb7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "d1c4-7453-b26f-dfb7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Med Kit", "id": "bf02-d42a-052e-c928", "hidden": false, "targetId": "72e8-2b0c-6ab0-22b5", "type": "rule"}]
               }
             ]
           }
@@ -59836,34 +59822,6 @@
               {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
               {"name": "LD", "$text": "6", "typeId": "bc55-c58d-b53a-233c"},
               {"name": "Sv", "$text": "5", "typeId": "c9ff-af68-092c-c4b3"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Melta Cannon",
-        "id": "cb8f-33c9-642e-8785",
-        "collective": true,
-        "comment": "light",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Melta Cannon",
-            "id": "8ef5-4977-c435-f603",
-            "hidden": false,
-            "page": "10",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
