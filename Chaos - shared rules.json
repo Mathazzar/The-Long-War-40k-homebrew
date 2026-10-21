@@ -127,6 +127,7 @@
       {
         "name": "Daemon Engine Armour",
         "id": "8c69-6fdc-d50d-1370",
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "page": "8",

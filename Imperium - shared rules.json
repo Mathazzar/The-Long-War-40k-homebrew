@@ -465,12 +465,6 @@
         "hidden": false,
         "page": "8",
         "publicationId": "6f16-791a-3a26-4c72"
-      },
-      {
-        "name": "Void Shields (x)",
-        "id": "bb6f-27b9-f7ca-253f",
-        "description": "A unit with this wargear gains a number of Void Shield Tokens equal to the value of (x). Each time this unit takes a Penetrating Hit, if it has a Void Shield Token, you spend a token to ignore that Penetrating Hit. At the start of each Battle Round, you regain 1 spent Void Shield Token. Instead of setting to Overwatch, you can set to Recharge Voids. A unit that Recharges Voids, regains all of its Void Shield Tokens.",
-        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -1219,33 +1213,6 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Shotgun", "id": "6614-ccd9-10cc-9ce0", "hidden": false, "targetId": "867a-7c51-acfe-84dd", "type": "profile"}]
-      },
-      {
-        "name": "Astartes Shotgun",
-        "id": "f426-979e-1b34-e351",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Astartes Shotgun",
-            "id": "804e-8cd0-4dda-2878",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Concussive", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
       },
       {
         "name": "Linked Battle Cannon",
@@ -5750,30 +5717,6 @@
               {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Large), Ordnance, Linked, Gets Hot!, Macro", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Turbo Laser Destructor",
-        "id": "7f35-3207-b72d-7851",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Turbo Laser Destructor",
-            "id": "57b4-e2da-49c0-8eea",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "16", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder, Ordnance, Macro", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
