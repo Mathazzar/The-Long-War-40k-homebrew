@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 5,
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Chaos - shared rules", "id": "db84-5ff1-0ca9-946f", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
     "categoryEntries": [
@@ -12554,6 +12554,7 @@
         "name": "Daemonic Great Weapon",
         "id": "4693-03e5-752c-835e",
         "collective": true,
+        "comment": "Daemon",
         "hidden": false,
         "import": true,
         "page": "11",
@@ -12603,33 +12604,6 @@
         ]
       },
       {
-        "name": "Phlegm Bombardment",
-        "id": "11c6-c50b-1977-fb1a",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "11",
-        "publicationId": "b30d-99de-ef25-ed03",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Phlegm Bombardment",
-            "id": "ee2b-a703-7aa6-1b4b",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Close Combat Weapon",
         "id": "d0e0-29c3-0d92-324d",
         "collective": true,
@@ -12659,6 +12633,7 @@
         "name": "Iron Claws",
         "id": "d4c3-d320-5650-3a74",
         "collective": true,
+        "comment": "Daemon",
         "hidden": false,
         "import": true,
         "page": "11",
@@ -12677,33 +12652,6 @@
               {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "Crushing (4+), Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Harvester Cannon",
-        "id": "8ba9-bcac-6945-ef50",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "11",
-        "publicationId": "b30d-99de-ef25-ed03",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Harvester Cannon",
-            "id": "be67-9f80-13a5-e89d",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Crushing (5+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -14155,20 +14103,7 @@
             "targetId": "8d5c-b442-42df-c25b",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "modifiers": [
-                  {"affects": "profiles.Unit", "field": "name", "scope": "model-self", "type": "append", "value": "on Daemonic Steed"},
-                  {"affects": "profiles.Unit", "field": "0ad1-8e51-6f8f-ec14", "scope": "model-self", "type": "increment", "value": 1},
-                  {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model-self", "type": "increment", "value": 1},
-                  {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model-self", "type": "increment", "value": 1},
-                  {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model-self", "type": "set", "value": "13"},
-                  {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
-                  {"field": "category", "scope": "unit", "type": "add", "value": "ba7d-58f2-ee40-fc55"}
-                ]
-              }
-            ]
+            "modifiers": [{"affects": "profiles.Unit", "field": "name", "scope": "model-self", "type": "append", "value": "on Daemonic Steed"}]
           }
         ]
       },

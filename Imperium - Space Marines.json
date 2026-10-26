@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 16,
+    "revision": 17,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -8697,12 +8697,12 @@
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
               },
               {
-                "name": "Demolisher cannon",
+                "name": "Demolisher Cannon",
                 "id": "4489-c943-afdf-18f1",
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "6979-0abd-2178-164e",
+                "targetId": "17d6-d86c-4379-05c6",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "c540-ca92-33a7-1aac-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -15622,7 +15622,7 @@
                 "defaultAmount": "2",
                 "hidden": false,
                 "import": true,
-                "targetId": "0ded-701e-ee08-14af",
+                "targetId": "0bc1-fbfa-8f8b-fd00",
                 "type": "selectionEntry",
                 "constraints": [
                   {"id": "d8a9-6408-458b-65e5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
@@ -32421,9 +32421,22 @@
                           {"id": "72dd-a647-f7a9-fe14-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                           {"id": "72dd-a647-f7a9-fe14-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
+                      },
+                      {
+                        "name": "Storm Bolter",
+                        "id": "29f0-6c49-8d89-312c",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "c829-b809-d33d-4738",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "a901-f0eb-aff9-b58a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "a901-f0eb-aff9-b58a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
                       }
-                    ],
-                    "infoLinks": [{"name": "Storm Bolter", "id": "e17f-bbff-1457-111b", "hidden": false, "targetId": "2d40-d20d-b301-8589", "type": "profile"}]
+                    ]
                   }
                 ]
               }
@@ -36049,6 +36062,34 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Linked Icarus Storm Cannon",
+        "id": "0bc1-fbfa-8f8b-fd00",
+        "collective": true,
+        "comment": "SM",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Icarus Storm Cannon",
+            "id": "2525-f47d-dbdb-b21f",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Skyfire, Rending (5+), Pinning, Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -36214,7 +36255,7 @@
         "entryLinks": [
           {"name": "Rite of Reloading (Machine Rite)", "id": "1f1d-90d4-38b0-ee3b", "hidden": false, "targetId": "25fd-49a9-9aa5-385b", "type": "selectionEntry"},
           {
-            "name": "Rite of Repair (Machine Rite):",
+            "name": "Rite of Repair (Machine Rite)",
             "id": "ad4e-be91-96f7-0f32",
             "hidden": false,
             "import": true,

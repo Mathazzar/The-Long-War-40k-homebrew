@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 10,
+    "revision": 11,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0b86-c521-be39-bdb4", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -9922,7 +9922,21 @@
               {"id": "6bf8-6d3c-b168-3a7b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 20}
             ],
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 26}],
-            "infoLinks": [{"name": "Eviscerator", "id": "8438-1a17-fe28-503c", "hidden": false, "targetId": "ec36-ec28-f008-e96a", "type": "profile"}],
+            "entryLinks": [
+              {
+                "name": "Evicerator",
+                "id": "a28f-edfb-3242-c942",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "b997-ac09-b543-0e7d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "4cc8-cd93-ed6f-018d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "4cc8-cd93-ed6f-018d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
             "profiles": [
               {
                 "name": "Repentia",
@@ -11059,7 +11073,15 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
           },
-          {"name": "Evicerator", "id": "6807-8bff-2a04-7215", "hidden": false, "import": true, "targetId": "b997-ac09-b543-0e7d", "type": "selectionEntry"},
+          {
+            "name": "Evicerator",
+            "id": "6807-8bff-2a04-7215",
+            "hidden": false,
+            "import": true,
+            "targetId": "b997-ac09-b543-0e7d",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+          },
           {
             "name": "Power Sword",
             "id": "e2ac-1707-ffc0-9377",

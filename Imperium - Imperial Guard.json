@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 10,
+    "revision": 11,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -4643,7 +4643,15 @@
               {"name": "Frag Grenades", "id": "aca4-8569-4d96-221e", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Carapace Armour", "id": "ff29-5528-6f61-81ad", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
               {"name": "Close Combat Weapons", "id": "fbfc-9034-5c9f-ca9c", "hidden": false, "import": true, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"},
-              {"name": "Mount", "id": "9346-492d-39ef-87f1", "hidden": false, "import": true, "targetId": "d036-3775-c05d-e646", "type": "selectionEntry"}
+              {
+                "name": "Mount",
+                "id": "9346-492d-39ef-87f1",
+                "hidden": false,
+                "import": true,
+                "targetId": "d036-3775-c05d-e646",
+                "type": "selectionEntry",
+                "constraints": [{"id": "64ac-8176-b632-e1cc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              }
             ],
             "profiles": [
               {
@@ -4654,11 +4662,11 @@
                 "typeName": "Unit",
                 "characteristics": [
                   {"name": "M", "$text": "12", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "WS", "$text": "3", "typeId": "bc69-d61f-afa3-0ebd"},
                   {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
                   {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
                   {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
                   {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
                   {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
                   {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
@@ -6317,8 +6325,37 @@
             "import": true,
             "type": "model",
             "entryLinks": [
-              {"name": "Mount", "id": "f15e-cee8-af53-c33f", "hidden": false, "import": true, "targetId": "d036-3775-c05d-e646", "type": "selectionEntry"},
+              {
+                "name": "Mount",
+                "id": "f15e-cee8-af53-c33f",
+                "hidden": false,
+                "import": true,
+                "targetId": "d036-3775-c05d-e646",
+                "type": "selectionEntry",
+                "constraints": [{"id": "4c31-8eae-5180-f86b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {"name": "Carapace Armour", "id": "65b3-034d-1239-9afd", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Lord Solar Leontus",
+                "id": "46fa-d56a-2314-d766",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
             ],
             "selectionEntries": [
               {
@@ -7139,7 +7176,15 @@
               },
               {"name": "Carapace Armour", "id": "365c-4664-148e-2de5", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
               {"name": "Refractor field", "id": "d997-6fd0-79cc-bcd9", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
-              {"name": "Mount", "id": "2f5c-bffb-247b-ea84", "hidden": false, "import": true, "targetId": "d036-3775-c05d-e646", "type": "selectionEntry"},
+              {
+                "name": "Mount",
+                "id": "2f5c-bffb-247b-ea84",
+                "hidden": false,
+                "import": true,
+                "targetId": "d036-3775-c05d-e646",
+                "type": "selectionEntry",
+                "constraints": [{"id": "b7d8-9cad-5d79-e813", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {
                 "name": "Hot-Shot Las Pistol",
                 "id": "0273-c057-38ca-3343",
@@ -7524,7 +7569,15 @@
               {"name": "Frag Grenades", "id": "1089-390b-f0e5-1097", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Carapace Armour", "id": "1efb-ba73-c09a-7a47", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
               {"name": "Close Combat Weapons", "id": "6da5-732e-19e8-13b4", "hidden": false, "import": true, "targetId": "ba4d-218f-3817-c775", "type": "selectionEntry"},
-              {"name": "Mount", "id": "62d4-591c-3116-41c5", "hidden": false, "import": true, "targetId": "d036-3775-c05d-e646", "type": "selectionEntry"}
+              {
+                "name": "Mount",
+                "id": "62d4-591c-3116-41c5",
+                "hidden": false,
+                "import": true,
+                "targetId": "d036-3775-c05d-e646",
+                "type": "selectionEntry",
+                "constraints": [{"id": "f0f4-a3e9-b761-99c2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              }
             ],
             "profiles": [
               {
@@ -7616,6 +7669,15 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "1fc0-1467-f734-8294", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
+              {
+                "name": "Mount",
+                "id": "b689-cb87-c48a-78cc",
+                "hidden": false,
+                "import": true,
+                "targetId": "d036-3775-c05d-e646",
+                "type": "selectionEntry",
+                "constraints": [{"id": "f5e4-481e-798b-166e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               }
             ],
             "profiles": [
@@ -25066,457 +25128,13 @@
           {"name": "M35", "id": "2002-8d81-40d4-b71b", "hidden": false, "primary": false, "targetId": "eac0-484c-93fc-4466"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 135}],
-        "infoGroups": [
-          {
-            "name": "Regiment Allegiance",
-            "id": "0cc8-d8c4-6367-0919",
-            "comment": "Wouldin't it be nice if Shared Info Groups were a thing?",
-            "hidden": false,
-            "infoGroups": [
-              {
-                "name": "Unremembered Regiment",
-                "id": "f7b8-baec-8e6b-b4d7",
-                "hidden": false,
-                "infoLinks": [
-                  {
-                    "name": "Wave Tactics",
-                    "id": "cc8e-4727-13f1-7030",
-                    "hidden": false,
-                    "targetId": "2659-0dcb-6da3-b414",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "2a61-8e51-9663-2092",
-                            "childName": "Wave Tactics",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Blitzkrieg",
-                    "id": "2796-be75-60df-1661",
-                    "hidden": false,
-                    "targetId": "8e3d-df24-492c-2487",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "e410-a8c0-4a59-d4b1",
-                            "childName": "Blitzkrieg",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Buzzsaw",
-                    "id": "9c02-40aa-89eb-5c14",
-                    "hidden": false,
-                    "targetId": "963d-ec4d-e947-f497",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "d207-e5da-1cdd-1928",
-                            "childName": "Buzzsaw",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Jury Rig",
-                    "id": "8b0b-a933-f9f2-2324",
-                    "hidden": false,
-                    "targetId": "b223-435b-5d8f-d4cf",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "f6df-1c08-a883-df73",
-                            "childName": "Jury Rig",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "440f-5556-e496-937a",
-                        "childName": "Unremembered Regiment",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Cadian Shock Troopers",
-                "id": "ccce-e373-c3b3-2af4",
-                "hidden": false,
-                "infoLinks": [{"name": "Disciplined Reserves", "id": "33fa-7091-416b-0a4a", "hidden": false, "targetId": "3d9b-7b32-caad-1b52", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "3eee-9a69-6123-47cb",
-                        "childName": "Cadian Shock Troopers",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Armageddon Steel Legion",
-                "id": "5fe8-0425-82f7-8ea0",
-                "hidden": false,
-                "infoLinks": [{"name": "Armoured Raiders", "id": "b16b-d695-57ea-6e8f", "hidden": false, "targetId": "af8a-fafe-dacd-7a6e", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "3d4b-c504-87e0-dfea",
-                        "childName": "Armageddon Steel Legion",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Catachan Jungle Fighters",
-                "id": "8d8d-8ff2-3971-518e",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "6aca-ee84-c4e8-9f37",
-                        "childName": "Catachan Jungle Fighters",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Death Korp of Krieg",
-                "id": "f238-133e-6957-08d7",
-                "hidden": false,
-                "infoLinks": [{"name": "Suicidal Determination", "id": "c3a8-3df4-e3d9-518c", "hidden": false, "targetId": "2cdf-74b8-a403-1ac0", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "cfc2-4aad-5139-5d0a",
-                        "childName": "Death Korp of Krieg",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Elysian Drop Troops",
-                "id": "6a35-e58d-8e69-6062",
-                "hidden": false,
-                "infoLinks": [{"name": "Screened Drop", "id": "4c95-b135-986e-14e2", "hidden": false, "targetId": "2339-5c99-af8c-ff7b", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "118e-5fd6-c7ab-50e4",
-                        "childName": "Elysian Drop Troops",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Tallarn Desert Fighters",
-                "id": "a40a-c64f-d32d-be74",
-                "hidden": false,
-                "infoLinks": [{"name": "Armoured Fighters", "id": "e808-cfcd-5be6-d21b", "hidden": false, "targetId": "573f-57ec-8613-0bf8", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "07ce-2d49-1cd7-e6e6",
-                        "childName": "Tallarn Desert Fighters",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Mordian Iron Guard",
-                "id": "ce99-94e2-bd56-c71f",
-                "hidden": false,
-                "infoLinks": [{"name": "Parade Discipline", "id": "dbfe-fe33-6450-5e9c", "hidden": false, "targetId": "05a9-0a39-7e57-86ce", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "1fde-465b-05c7-aac2",
-                        "childName": "Mordian Iron Guard",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Valhallan Ice Warriors",
-                "id": "646b-30d5-2e8d-6f53",
-                "hidden": false,
-                "infoLinks": [{"name": "Against the Odds", "id": "f835-c839-85e5-8d2c", "hidden": false, "targetId": "a88e-3da2-be86-72e1", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "0497-e2fe-b5f4-3621",
-                        "childName": "Valhallan Ice Warriors",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Vostroyan First Born",
-                "id": "92cc-153c-5171-e823",
-                "hidden": false,
-                "infoLinks": [
-                  {"name": "Classist Soldiery", "id": "144b-71a9-2863-372a", "hidden": false, "targetId": "b105-1a15-f133-3cc7", "type": "rule"},
-                  {"name": "Heirloom Weapons", "id": "9bc4-adfd-dada-5102", "hidden": false, "targetId": "2fc5-dec2-454a-f2b8", "type": "rule"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "083c-e65e-33dc-155c",
-                        "childName": "Vostroyan First Born",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Savlar Chem Dogs",
-                "id": "764b-80f3-61c3-f90a",
-                "hidden": false,
-                "infoLinks": [
-                  {"name": "Penal Battalions", "id": "df70-457e-3bf0-e3e2", "hidden": false, "targetId": "e639-7303-d8de-fd87", "type": "rule"},
-                  {"name": "Chemical Mental Boosters", "id": "9f9b-b550-723b-ad9c", "hidden": false, "targetId": "5406-b48a-6102-a1ba", "type": "rule"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "aa7d-ee2f-77de-b610",
-                        "childName": "Savlar Chem Dogs",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Attilan Rough Riders",
-                "id": "b53b-b234-2355-4f9d",
-                "hidden": false,
-                "infoLinks": [{"name": "Light Horsemen", "id": "05f0-9926-70c1-c865", "hidden": false, "targetId": "142d-b7c7-cc4f-e049", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "4264-0df4-aa7a-9f12",
-                        "childName": "Attilan Rough Riders",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Tanith First & Only",
-                "id": "fc16-d4df-a375-2ab2",
-                "hidden": false,
-                "infoLinks": [{"name": "Light Infantry Tactics", "id": "2bb7-983c-c6ca-3bce", "hidden": false, "targetId": "21f3-834d-78f9-1148", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "5927-f46b-1cae-b8b1",
-                        "childName": "Tanith First & Only",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {"name": "Overburdened Engine", "id": "fbe5-8c34-45a1-9c29", "hidden": false, "targetId": "5ec2-c440-0f93-c9da", "type": "rule"},
           {"name": "Fade & Fire", "id": "4f66-6641-1ae8-789d", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
           {"name": "Firing Protocols (x)", "id": "83d4-794a-23ad-0da8", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "7951-b1d9-fba2-9fbe", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Relentless", "id": "f9c6-5ad0-8c56-667a", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"}
+          {"name": "Relentless", "id": "f9c6-5ad0-8c56-667a", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Regiment Allegiance", "id": "5331-bc43-93e2-683a", "hidden": false, "targetId": "bcdf-880d-668d-b0a0", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -25707,457 +25325,13 @@
           {"name": "M35", "id": "a11f-85ec-8042-f03d", "hidden": false, "primary": false, "targetId": "eac0-484c-93fc-4466"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 185}],
-        "infoGroups": [
-          {
-            "name": "Regiment Allegiance",
-            "id": "1558-5f80-d7c6-ecf8",
-            "comment": "Wouldin't it be nice if Shared Info Groups were a thing?",
-            "hidden": false,
-            "infoGroups": [
-              {
-                "name": "Unremembered Regiment",
-                "id": "3d4b-247a-2baa-1e18",
-                "hidden": false,
-                "infoLinks": [
-                  {
-                    "name": "Wave Tactics",
-                    "id": "f50f-b80d-3f7f-170e",
-                    "hidden": false,
-                    "targetId": "2659-0dcb-6da3-b414",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "2a61-8e51-9663-2092",
-                            "childName": "Wave Tactics",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Blitzkrieg",
-                    "id": "a883-4a75-7802-de6c",
-                    "hidden": false,
-                    "targetId": "8e3d-df24-492c-2487",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "e410-a8c0-4a59-d4b1",
-                            "childName": "Blitzkrieg",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Buzzsaw",
-                    "id": "39a6-45a9-7ffa-c1e5",
-                    "hidden": false,
-                    "targetId": "963d-ec4d-e947-f497",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "d207-e5da-1cdd-1928",
-                            "childName": "Buzzsaw",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Jury Rig",
-                    "id": "458a-6f51-c762-b890",
-                    "hidden": false,
-                    "targetId": "b223-435b-5d8f-d4cf",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "f6df-1c08-a883-df73",
-                            "childName": "Jury Rig",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "440f-5556-e496-937a",
-                        "childName": "Unremembered Regiment",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Cadian Shock Troopers",
-                "id": "84d7-e379-42be-1270",
-                "hidden": false,
-                "infoLinks": [{"name": "Disciplined Reserves", "id": "6201-ce83-6e71-8d01", "hidden": false, "targetId": "3d9b-7b32-caad-1b52", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "3eee-9a69-6123-47cb",
-                        "childName": "Cadian Shock Troopers",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Armageddon Steel Legion",
-                "id": "b041-9a6c-079e-a5af",
-                "hidden": false,
-                "infoLinks": [{"name": "Armoured Raiders", "id": "28ec-ba4c-6505-f3d0", "hidden": false, "targetId": "af8a-fafe-dacd-7a6e", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "3d4b-c504-87e0-dfea",
-                        "childName": "Armageddon Steel Legion",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Catachan Jungle Fighters",
-                "id": "b38e-1620-9d2d-7f7b",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "6aca-ee84-c4e8-9f37",
-                        "childName": "Catachan Jungle Fighters",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Death Korp of Krieg",
-                "id": "74b7-81f2-b89f-69ca",
-                "hidden": false,
-                "infoLinks": [{"name": "Suicidal Determination", "id": "c86d-48c9-51d9-7e48", "hidden": false, "targetId": "2cdf-74b8-a403-1ac0", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "cfc2-4aad-5139-5d0a",
-                        "childName": "Death Korp of Krieg",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Elysian Drop Troops",
-                "id": "815f-3713-0699-e672",
-                "hidden": false,
-                "infoLinks": [{"name": "Screened Drop", "id": "cf91-6f02-6f44-e9cd", "hidden": false, "targetId": "2339-5c99-af8c-ff7b", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "118e-5fd6-c7ab-50e4",
-                        "childName": "Elysian Drop Troops",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Tallarn Desert Fighters",
-                "id": "0693-ceeb-6595-6531",
-                "hidden": false,
-                "infoLinks": [{"name": "Armoured Fighters", "id": "c08e-8e67-ed15-5a4d", "hidden": false, "targetId": "573f-57ec-8613-0bf8", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "07ce-2d49-1cd7-e6e6",
-                        "childName": "Tallarn Desert Fighters",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Mordian Iron Guard",
-                "id": "0a69-a821-54ee-11d3",
-                "hidden": false,
-                "infoLinks": [{"name": "Parade Discipline", "id": "96c5-30e4-129b-5b43", "hidden": false, "targetId": "05a9-0a39-7e57-86ce", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "1fde-465b-05c7-aac2",
-                        "childName": "Mordian Iron Guard",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Valhallan Ice Warriors",
-                "id": "af71-5dd8-d928-d696",
-                "hidden": false,
-                "infoLinks": [{"name": "Against the Odds", "id": "09d0-7e4a-1bd0-5154", "hidden": false, "targetId": "a88e-3da2-be86-72e1", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "0497-e2fe-b5f4-3621",
-                        "childName": "Valhallan Ice Warriors",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Vostroyan First Born",
-                "id": "e7c1-542c-5033-6238",
-                "hidden": false,
-                "infoLinks": [
-                  {"name": "Classist Soldiery", "id": "bbbd-1a6b-d23a-63e9", "hidden": false, "targetId": "b105-1a15-f133-3cc7", "type": "rule"},
-                  {"name": "Heirloom Weapons", "id": "fc4c-66d8-ebfe-c968", "hidden": false, "targetId": "2fc5-dec2-454a-f2b8", "type": "rule"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "083c-e65e-33dc-155c",
-                        "childName": "Vostroyan First Born",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Savlar Chem Dogs",
-                "id": "20f2-d2f6-7a2f-616a",
-                "hidden": false,
-                "infoLinks": [
-                  {"name": "Penal Battalions", "id": "a7ab-67cf-c580-186d", "hidden": false, "targetId": "e639-7303-d8de-fd87", "type": "rule"},
-                  {"name": "Chemical Mental Boosters", "id": "b20a-a970-6fd0-d8d3", "hidden": false, "targetId": "5406-b48a-6102-a1ba", "type": "rule"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "aa7d-ee2f-77de-b610",
-                        "childName": "Savlar Chem Dogs",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Attilan Rough Riders",
-                "id": "548c-5254-c8b9-cea6",
-                "hidden": false,
-                "infoLinks": [{"name": "Light Horsemen", "id": "9a8f-98a4-1194-9f74", "hidden": false, "targetId": "142d-b7c7-cc4f-e049", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "4264-0df4-aa7a-9f12",
-                        "childName": "Attilan Rough Riders",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Tanith First & Only",
-                "id": "c034-91d6-2778-ae0b",
-                "hidden": false,
-                "infoLinks": [{"name": "Light Infantry Tactics", "id": "75f2-1202-cb9a-c785", "hidden": false, "targetId": "21f3-834d-78f9-1148", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "5927-f46b-1cae-b8b1",
-                        "childName": "Tanith First & Only",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {"name": "Fade & Fire", "id": "154a-28f7-8128-f15d", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
           {"name": "Firing Protocols (x)", "id": "afe0-62d6-ac4e-ebfa", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "b3a0-7b87-2b89-f5dc", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Overburdened Engine", "id": "2209-1cec-fa84-3249", "hidden": false, "targetId": "5ec2-c440-0f93-c9da", "type": "rule"},
-          {"name": "Relentless", "id": "ed8d-96f5-c3ca-a075", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"}
+          {"name": "Relentless", "id": "ed8d-96f5-c3ca-a075", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Regiment Allegiance", "id": "8b4e-7028-a5b4-9995", "hidden": false, "targetId": "bcdf-880d-668d-b0a0", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -30666,457 +29840,13 @@
           {"name": "Malcador Annihilator Tank", "id": "d0fb-51ee-4bea-4f9b", "hidden": false, "primary": false, "targetId": "0a3c-9658-7eee-2a71"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 160}],
-        "infoGroups": [
-          {
-            "name": "Regiment Allegiance",
-            "id": "fd4f-6915-cbd1-fd07",
-            "comment": "Wouldin't it be nice if Shared Info Groups were a thing?",
-            "hidden": false,
-            "infoGroups": [
-              {
-                "name": "Unremembered Regiment",
-                "id": "63c2-c62c-e0c5-1776",
-                "hidden": false,
-                "infoLinks": [
-                  {
-                    "name": "Wave Tactics",
-                    "id": "2aa6-a247-2c34-972b",
-                    "hidden": false,
-                    "targetId": "2659-0dcb-6da3-b414",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "2a61-8e51-9663-2092",
-                            "childName": "Wave Tactics",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Blitzkrieg",
-                    "id": "6992-311f-8113-aec6",
-                    "hidden": false,
-                    "targetId": "8e3d-df24-492c-2487",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "e410-a8c0-4a59-d4b1",
-                            "childName": "Blitzkrieg",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Buzzsaw",
-                    "id": "ff1b-b70d-6b90-d126",
-                    "hidden": false,
-                    "targetId": "963d-ec4d-e947-f497",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "d207-e5da-1cdd-1928",
-                            "childName": "Buzzsaw",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Jury Rig",
-                    "id": "9802-583b-f11b-acd4",
-                    "hidden": false,
-                    "targetId": "b223-435b-5d8f-d4cf",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "f6df-1c08-a883-df73",
-                            "childName": "Jury Rig",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "440f-5556-e496-937a",
-                        "childName": "Unremembered Regiment",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Cadian Shock Troopers",
-                "id": "3e19-45fb-4aa5-451a",
-                "hidden": false,
-                "infoLinks": [{"name": "Disciplined Reserves", "id": "226d-4f41-73f4-6070", "hidden": false, "targetId": "3d9b-7b32-caad-1b52", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "3eee-9a69-6123-47cb",
-                        "childName": "Cadian Shock Troopers",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Armageddon Steel Legion",
-                "id": "5d7e-6b96-b366-e90e",
-                "hidden": false,
-                "infoLinks": [{"name": "Armoured Raiders", "id": "6057-eb1d-1e16-9c73", "hidden": false, "targetId": "af8a-fafe-dacd-7a6e", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "3d4b-c504-87e0-dfea",
-                        "childName": "Armageddon Steel Legion",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Catachan Jungle Fighters",
-                "id": "9fea-6602-cc6e-0bef",
-                "hidden": false,
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "6aca-ee84-c4e8-9f37",
-                        "childName": "Catachan Jungle Fighters",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Death Korp of Krieg",
-                "id": "dc08-3710-2937-dbdf",
-                "hidden": false,
-                "infoLinks": [{"name": "Suicidal Determination", "id": "fc45-7476-6401-e9ad", "hidden": false, "targetId": "2cdf-74b8-a403-1ac0", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "cfc2-4aad-5139-5d0a",
-                        "childName": "Death Korp of Krieg",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Elysian Drop Troops",
-                "id": "9388-343c-aec8-859f",
-                "hidden": false,
-                "infoLinks": [{"name": "Screened Drop", "id": "dcfe-2296-5402-cab8", "hidden": false, "targetId": "2339-5c99-af8c-ff7b", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "118e-5fd6-c7ab-50e4",
-                        "childName": "Elysian Drop Troops",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Tallarn Desert Fighters",
-                "id": "c3dd-bfbb-5eab-01a2",
-                "hidden": false,
-                "infoLinks": [{"name": "Armoured Fighters", "id": "d1d4-0c66-430d-b03a", "hidden": false, "targetId": "573f-57ec-8613-0bf8", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "07ce-2d49-1cd7-e6e6",
-                        "childName": "Tallarn Desert Fighters",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Mordian Iron Guard",
-                "id": "bf57-dd62-8029-1e8c",
-                "hidden": false,
-                "infoLinks": [{"name": "Parade Discipline", "id": "85f2-859a-4dd2-b51b", "hidden": false, "targetId": "05a9-0a39-7e57-86ce", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "1fde-465b-05c7-aac2",
-                        "childName": "Mordian Iron Guard",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Valhallan Ice Warriors",
-                "id": "9311-4d65-22da-0d46",
-                "hidden": false,
-                "infoLinks": [{"name": "Against the Odds", "id": "fa74-ef0a-bf4a-c706", "hidden": false, "targetId": "a88e-3da2-be86-72e1", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "0497-e2fe-b5f4-3621",
-                        "childName": "Valhallan Ice Warriors",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Vostroyan First Born",
-                "id": "2f70-d84c-526d-e6f9",
-                "hidden": false,
-                "infoLinks": [
-                  {"name": "Classist Soldiery", "id": "d292-292f-9de7-8609", "hidden": false, "targetId": "b105-1a15-f133-3cc7", "type": "rule"},
-                  {"name": "Heirloom Weapons", "id": "1180-1ddb-1bdb-8a19", "hidden": false, "targetId": "2fc5-dec2-454a-f2b8", "type": "rule"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "083c-e65e-33dc-155c",
-                        "childName": "Vostroyan First Born",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Savlar Chem Dogs",
-                "id": "29d1-d4a1-1892-dfe2",
-                "hidden": false,
-                "infoLinks": [
-                  {"name": "Penal Battalions", "id": "16bd-d5aa-d43f-6b32", "hidden": false, "targetId": "e639-7303-d8de-fd87", "type": "rule"},
-                  {"name": "Chemical Mental Boosters", "id": "20da-0c35-4033-a5b3", "hidden": false, "targetId": "5406-b48a-6102-a1ba", "type": "rule"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "aa7d-ee2f-77de-b610",
-                        "childName": "Savlar Chem Dogs",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Attilan Rough Riders",
-                "id": "15d5-c4e2-d896-8a39",
-                "hidden": false,
-                "infoLinks": [{"name": "Light Horsemen", "id": "f4a5-1b54-21c7-0283", "hidden": false, "targetId": "142d-b7c7-cc4f-e049", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "4264-0df4-aa7a-9f12",
-                        "childName": "Attilan Rough Riders",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Tanith First & Only",
-                "id": "dacf-1378-61d5-7e92",
-                "hidden": false,
-                "infoLinks": [{"name": "Light Infantry Tactics", "id": "9dcb-8b02-53ca-87c6", "hidden": false, "targetId": "21f3-834d-78f9-1148", "type": "rule"}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "5927-f46b-1cae-b8b1",
-                        "childName": "Tanith First & Only",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "lessThan",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {"name": "Fade & Fire", "id": "8ac4-1051-2bdb-0128", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
           {"name": "Firing Protocols (x)", "id": "9595-c214-aa1b-f2ed", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "821f-454e-a4cc-c23a", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Relentless", "id": "3721-a04d-9f75-9590", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Overburdened Engine", "id": "d6de-f7fa-640b-4276", "hidden": false, "targetId": "5ec2-c440-0f93-c9da", "type": "rule"}
+          {"name": "Overburdened Engine", "id": "d6de-f7fa-640b-4276", "hidden": false, "targetId": "5ec2-c440-0f93-c9da", "type": "rule"},
+          {"name": "Regiment Allegiance", "id": "9cb2-de59-4831-3fbc", "hidden": false, "targetId": "bcdf-880d-668d-b0a0", "type": "infoGroup"}
         ],
         "modifiers": [
           {
@@ -36193,11 +34923,35 @@
                           {"id": "0768-7291-c530-d197-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                           {"id": "0768-7291-c530-d197-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
+                      },
+                      {
+                        "name": "Shotgun",
+                        "id": "96c3-c226-e4c1-ea83",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "a3a1-67c7-b802-00a3",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "679a-1649-7148-faaf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "679a-1649-7148-faaf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Chainsword",
+                        "id": "d5be-f760-bd41-2952",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f82a-555a-d38f-b930",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "8c8e-c193-28d8-6a8d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "8c8e-c193-28d8-6a8d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
                       }
-                    ],
-                    "infoLinks": [
-                      {"name": "Chainsword", "id": "2bf4-29e4-bf1d-8ecb", "hidden": false, "targetId": "1417-b0eb-6694-72c3", "type": "profile"},
-                      {"name": "Shotgun", "id": "be2b-aea1-11d4-a7a1", "hidden": false, "targetId": "867a-7c51-acfe-84dd", "type": "profile"}
                     ]
                   },
                   {
@@ -36206,9 +34960,35 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "infoLinks": [
-                      {"name": "Chainsword", "id": "8c5b-18f6-03b5-4864", "hidden": false, "targetId": "1417-b0eb-6694-72c3", "type": "profile"},
-                      {"name": "Autopistol", "id": "8058-e213-18ec-4f10", "hidden": false, "targetId": "9319-debb-05b7-08a1", "type": "profile"}
+                    "entryLinks": [
+                      {
+                        "name": "Autopistol",
+                        "id": "386d-e0cd-d552-024f",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "bb43-52db-056f-d96d",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "e137-82d4-9238-e188-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e137-82d4-9238-e188-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Chainsword",
+                        "id": "874d-3f70-b566-d123",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f82a-555a-d38f-b930",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "5508-0e6d-8215-ad55-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "5508-0e6d-8215-ad55-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
                     ]
                   },
                   {
@@ -36217,10 +34997,49 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "infoLinks": [
-                      {"name": "Chainsword", "id": "a910-75d8-1dcb-6939", "hidden": false, "targetId": "1417-b0eb-6694-72c3", "type": "profile"},
-                      {"name": "Autogun", "id": "f609-eba8-26fc-b28e", "hidden": false, "targetId": "28cd-a853-6f78-4263", "type": "profile"},
-                      {"name": "Autopistol", "id": "61d3-3859-adcf-8370", "hidden": false, "targetId": "9319-debb-05b7-08a1", "type": "profile"}
+                    "entryLinks": [
+                      {
+                        "name": "Autopistol",
+                        "id": "b56c-6a79-b9b7-5af4",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "bb43-52db-056f-d96d",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "e6e4-8c94-f7a9-d454-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e6e4-8c94-f7a9-d454-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Autogun",
+                        "id": "8017-85f5-b6a0-76ca",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ef01-3ee1-ad5e-e0b8",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "aa48-9e34-90ab-e6fd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "aa48-9e34-90ab-e6fd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Chainsword",
+                        "id": "9b4c-32e6-894d-ed5b",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f82a-555a-d38f-b930",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "6f3b-62a4-2b64-5a66-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "6f3b-62a4-2b64-5a66-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -48739,10 +47558,20 @@
                     "type": "upgrade",
                     "constraints": [{"id": "061a-a0aa-2604-9b10", "field": "selections", "includeChildSelections": false, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "infoLinks": [
-                      {"name": "Hot-Shot Las Pistol", "id": "eae6-680f-052c-756e", "hidden": false, "targetId": "6be9-a881-915e-dd71", "type": "profile"},
-                      {"name": "Med Kit", "id": "f762-251c-e23a-a471", "hidden": false, "targetId": "72e8-2b0c-6ab0-22b5", "type": "rule"}
-                    ]
+                    "entryLinks": [
+                      {
+                        "name": "Med Kit",
+                        "id": "6824-e84e-8d17-55ff",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "fca4-1a76-e181-9a7e",
+                        "type": "selectionEntry",
+                        "constraints": [{"id": "b353-6cbe-ae1b-13e4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Hot-Shot Las Pistol", "id": "eae6-680f-052c-756e", "hidden": false, "targetId": "6be9-a881-915e-dd71", "type": "profile"}]
                   }
                 ]
               }
@@ -54560,23 +53389,6 @@
         ]
       },
       {
-        "name": "Vanquisher Battle Cannon",
-        "id": "c7b9-6b31-13bf-b312",
-        "hidden": false,
-        "page": "12",
-        "publicationId": "5b81-795c-38b3-285c",
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Sunder, Crushing (5+)", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      },
-      {
         "name": "Tarantula Gun",
         "id": "2883-529a-18a9-e35e",
         "hidden": false,
@@ -54796,12 +53608,6 @@
       },
       {"name": "Allegiance: Tallarn Desert Fighters", "id": "0bb4-1cd8-d196-e9ca", "hidden": false},
       {
-        "name": "Overburdened Engine",
-        "id": "5ec2-c440-0f93-c9da",
-        "description": "When this unit suffers a Crew Injured Result, instead of halving this models Movement (M) characteristic, it is instead reduced to 2”.",
-        "hidden": false
-      },
-      {
         "name": "Stalling Machine Spirit",
         "id": "0ed7-8559-ccfc-f7c2",
         "description": "Each time this unit attempts to perform a Retreat Move in the Movement Phase, it must perform a Leadership test. If the test is failed, the unit may not perform the move and must remain stationary that Movement Phase. If the test is passed, the unit may perform the Retreat Move as normal.",
@@ -54896,28 +53702,6 @@
             "name": "Platoon Standard",
             "id": "21eb-1f48-a3e1-c094",
             "description": "Friendly imperial Guard units within 18” of a model equipped with this wargear may re-roll Pinning and Panic tests. In addition, friendly Imperial Guard units within 18” count as having scored 1 additional wound in combat for the purposes of determining who won combat.",
-            "hidden": false,
-            "page": "8",
-            "publicationId": "5b81-795c-38b3-285c"
-          }
-        ]
-      },
-      {
-        "name": "Armoured Plate",
-        "id": "a8c0-ad07-77d1-f6c7",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "2571-6b89-1544-cca6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "2571-6b89-1544-cca6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Armoured Plate",
-            "id": "159c-28df-7f4e-f864",
-            "description": "Heavy Armoured plating protects the armoured walking vehicles of the Guard. It confers a 3+ Armour save.",
             "hidden": false,
             "page": "8",
             "publicationId": "5b81-795c-38b3-285c"
@@ -55063,33 +53847,6 @@
         ]
       },
       {
-        "name": "Inferno Cannon",
-        "id": "e668-3305-6db4-2a4f",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Inferno Cannon",
-            "id": "09c0-6f40-4686-2198",
-            "hidden": false,
-            "page": "10",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Heavy Las Cannon",
         "id": "3e24-3de5-f411-87cd",
         "collective": true,
@@ -55112,33 +53869,6 @@
               {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Sunder, Ordnance", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Chem Cannon",
-        "id": "b5e4-62ea-1605-913e",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Chem Cannon",
-            "id": "5849-6564-7948-8d0a",
-            "hidden": false,
-            "page": "10",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Spray, Poison (3+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -55224,33 +53954,6 @@
         ]
       },
       {
-        "name": "Punisher Gatling Cannon",
-        "id": "0bbb-c7c9-f342-688c",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Punisher Gattling Cannon",
-            "id": "a87d-00f7-0fee-418b",
-            "hidden": false,
-            "page": "11",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "8", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Hydra Quad Cannon",
         "id": "ef7a-87e9-c074-97a3",
         "collective": true,
@@ -55268,38 +53971,11 @@
             "typeName": "Ranged Weapons",
             "characteristics": [
               {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "A", "$text": "6", "typeId": "0048-3de8-a98b-d7dd"},
               {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
               {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Linked, Skyfire, Pinning, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Exterminator Autocannon",
-        "id": "e35d-0099-02ac-fd18",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Exterminator Autocannon",
-            "id": "473a-85ef-82cc-3da0",
-            "hidden": false,
-            "page": "11",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Rending (5+), Pinning, Linked", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -55336,60 +54012,6 @@
         ]
       },
       {
-        "name": "Linked Vanquisher Battle Cannon",
-        "id": "5b94-47a7-773f-6bc9",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Vanquisher Battle Cannon",
-            "id": "7d02-ecef-05bf-8cd2",
-            "hidden": false,
-            "page": "12",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder, Crushing (5+), Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Eradicator Nova Cannon",
-        "id": "242d-6a43-8d26-2a19",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Eradicator Nova Cannon",
-            "id": "4602-5de1-c5cd-9af5",
-            "hidden": false,
-            "page": "12",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large), Ignores Cover", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Ripper Gun",
         "id": "9c91-055a-4bef-667a",
         "collective": true,
@@ -55397,15 +54019,6 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Ripper Gun", "id": "5af0-bd75-ba32-7e2f", "hidden": false, "targetId": "73f0-986c-ebbf-094d", "type": "profile"}]
-      },
-      {
-        "name": "Vanquisher Battle Cannon",
-        "id": "320a-810e-2427-908c",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Vanquisher Battle Cannon", "id": "e827-e628-4ef5-148a", "hidden": false, "targetId": "c7b9-6b31-13bf-b312", "type": "profile"}]
       },
       {
         "name": "Multi-Missile Launcher",
@@ -55457,60 +54070,6 @@
               {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Small), Indirect Fire", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Wyvern Quad Stormshard Mortar",
-        "id": "6680-c383-b280-b7f6",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Wyvern Quad Stormshard Mortar",
-            "id": "886f-21d3-e165-f6d4",
-            "hidden": false,
-            "page": "13",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12-48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Shred, Indirect Fire, Barrage (3)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Earthshaker Cannon",
-        "id": "068a-73ce-806f-902e",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Earthshaker Cannon",
-            "id": "6ef6-30d8-b70f-11a4",
-            "hidden": false,
-            "page": "13",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "98", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large), Ordnance, Indirect Fire", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -55691,32 +54250,6 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Bullgryn Maul", "id": "6459-08ef-b52e-39bd", "hidden": false, "targetId": "ba26-0485-7b53-2857", "type": "profile"}]
-      },
-      {
-        "name": "Sentinel Stomps",
-        "id": "9fd2-0023-1d82-79bf",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Sentinel Stomps",
-            "id": "a7ce-45d2-dfa1-829f",
-            "hidden": false,
-            "page": "15",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Cumbersome", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
       },
       {
         "name": "Guard Crew Weapons",
@@ -56052,9 +54585,19 @@
                       {"id": "d1c4-7453-b26f-dfb7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "d1c4-7453-b26f-dfb7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ]
+                  },
+                  {
+                    "name": "Med Kit",
+                    "id": "4853-bb74-375d-e446",
+                    "defaultAmount": "1",
+                    "exportable": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "fca4-1a76-e181-9a7e",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "c852-e4b9-dd25-3496", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
                   }
-                ],
-                "infoLinks": [{"name": "Med Kit", "id": "bf02-d42a-052e-c928", "hidden": false, "targetId": "72e8-2b0c-6ab0-22b5", "type": "rule"}]
+                ]
               }
             ]
           }
@@ -56417,10 +54960,35 @@
         "import": true,
         "type": "upgrade",
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-        "infoLinks": [
-          {"name": "Grenade Launcher (Krak)", "id": "900a-5f2f-91ec-3388", "hidden": false, "targetId": "86b3-d135-d892-f706", "type": "profile"},
-          {"name": "Las Gun", "id": "d218-62db-0525-c252", "hidden": false, "targetId": "00ca-a2cc-8f12-0108", "type": "profile"},
-          {"name": "Grenade Launcher (Frag)", "id": "fa36-eb62-9e39-797f", "hidden": false, "targetId": "f329-8e0d-105d-1da3", "type": "profile"}
+        "entryLinks": [
+          {
+            "name": "Las Gun",
+            "id": "d458-0a6e-ac38-7157",
+            "defaultAmount": "1",
+            "exportable": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8731-bbdc-a71e-bf77",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "ce35-2c8d-10e1-fdaa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "ce35-2c8d-10e1-fdaa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Grenade Launcher",
+            "id": "d240-1345-c68e-4d96",
+            "defaultAmount": "1",
+            "exportable": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6d89-4fe1-9b27-affe",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "d7e7-3a40-c464-a22c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "d7e7-3a40-c464-a22c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
         ]
       },
       {
@@ -56608,9 +55176,22 @@
                       {"id": "72d2-de2e-cc24-8b53-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "72d2-de2e-cc24-8b53-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ]
+                  },
+                  {
+                    "name": "Vanquisher Battle Cannon",
+                    "id": "2e23-954e-a6eb-b6f6",
+                    "defaultAmount": "1",
+                    "exportable": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "320a-810e-2427-908c",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "ba0b-2113-e4f7-908f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "ba0b-2113-e4f7-908f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
                   }
-                ],
-                "infoLinks": [{"name": "Vanquisher Battle Cannon", "id": "a2f0-559f-5f9a-ceba", "hidden": false, "targetId": "c7b9-6b31-13bf-b312", "type": "profile"}]
+                ]
               }
             ]
           },
@@ -59996,7 +58577,7 @@
         "id": "2062-971c-6542-8cff",
         "hidden": false,
         "entryLinks": [
-          {"name": "Rite of Repair (Machine Rite):", "id": "7f1b-77d8-0aea-4189", "hidden": false, "targetId": "9e4c-7de9-2a09-4097", "type": "selectionEntry"},
+          {"name": "Rite of Repair (Machine Rite)", "id": "7f1b-77d8-0aea-4189", "hidden": false, "targetId": "9e4c-7de9-2a09-4097", "type": "selectionEntry"},
           {"name": "Rite of Immolation (Machine Rite)", "id": "bde1-e6fc-2ca3-d5df", "hidden": false, "targetId": "f37a-2f6b-c0ca-f251", "type": "selectionEntry"}
         ]
       },

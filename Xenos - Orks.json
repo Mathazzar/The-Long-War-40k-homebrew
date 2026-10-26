@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 6,
+    "revision": 7,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "[Klan]", "id": "5ee1-b487-b991-0e62", "hidden": false},
@@ -14575,18 +14575,6 @@
         ]
       },
       {
-        "name": "Scrap Armour",
-        "id": "8626-5e63-0597-5402",
-        "hidden": false,
-        "import": true,
-        "page": "7",
-        "publicationId": "3cdc-bfbe-759f-8d6b",
-        "type": "upgrade",
-        "constraints": [{"id": "0ef2-2d07-b186-58af", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "6"}],
-        "rules": [{"name": "Scrap Armour", "id": "b11e-f62d-645a-57c9", "description": "This confers a 6+ Armour Save.", "hidden": false, "page": ""}]
-      },
-      {
         "name": "He’avy Armour",
         "id": "388b-2df1-6738-66ff",
         "hidden": false,
@@ -14845,16 +14833,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Close Combat Weapon",
-        "id": "777e-a4fd-c9a5-ebea",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "publicationId": "3cdc-bfbe-759f-8d6b",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Close Combat Weapon", "id": "0ed3-a4c3-6f79-d920", "hidden": false, "targetId": "9496-4936-f853-97ae", "type": "profile"}]
       },
       {
         "name": "Squigasaur",
