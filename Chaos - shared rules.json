@@ -748,6 +748,7 @@
         "publicationId": "b30d-99de-ef25-ed03",
         "type": "upgrade",
         "constraints": [{"id": "e8d0-7bea-0557-193a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [{"affects": "profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "model", "type": "set", "value": "2"}],
         "rules": [
           {
             "name": "Warp Armour",
