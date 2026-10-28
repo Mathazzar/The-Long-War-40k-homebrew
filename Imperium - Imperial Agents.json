@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 8,
+    "revision": 9,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -124,9 +124,7 @@
       {"name": "Knight House Guard", "id": "3aa5-4c70-205a-5897", "hidden": false},
       {"name": "Knight Armiger", "id": "0f5a-0ff9-3f0e-729c", "hidden": false},
       {"name": "Knight Dominus", "id": "e532-db62-6c01-1ec0", "hidden": false},
-      {"name": "Knight Cerastus", "id": "18c7-6fcd-08f3-6429", "hidden": false},
       {"name": "Knight Bellatus", "id": "96de-94de-aa75-2ea8", "hidden": false},
-      {"name": "Knight Acastus", "id": "500b-e936-7e86-96e2", "hidden": false},
       {"name": "Inquisitor", "id": "c23d-8426-e179-145f", "hidden": false},
       {"name": "[Ordo Hereticus]", "id": "8837-f637-2e1e-9e53", "hidden": false},
       {"name": "[Ordo]", "id": "91ce-fd87-60cf-30ef", "hidden": false},
@@ -3223,6 +3221,7 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
         "infoLinks": [
+          {"name": "Ion Deflector", "id": "97bc-5cd4-2ce1-4e79", "hidden": false, "targetId": "8a65-9152-aba7-0cc0", "type": "rule"},
           {"name": "Relentless", "id": "0acd-5b98-4b29-a0d2", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "5c4e-f738-8dac-9c43", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"}
         ],
@@ -3246,7 +3245,6 @@
             ]
           }
         ],
-        "rules": [{"name": "Ion Deflector", "id": "8a65-9152-aba7-0cc0", "description": "This unit confers a 5+ Invulnerable Save.", "hidden": false}],
         "selectionEntries": [
           {
             "name": "Knight Armiger",
@@ -3512,6 +3510,19 @@
               {"id": "b975-9c36-5089-454a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
+              {
+                "name": "Linked Meltagun",
+                "id": "5b0e-15ba-a867-94fb",
+                "defaultAmount": "2",
+                "hidden": false,
+                "targetId": "b860-0640-b7aa-aa75",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c1b9-991a-a731-9013-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "c1b9-991a-a731-9013-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ],
+                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
               {"name": "Knight Stomps", "id": "417d-4a24-cc8c-eefb", "hidden": false, "import": true, "targetId": "c53f-43df-9920-e699", "type": "selectionEntry"},
               {
                 "name": "Siege Breaker Cannon",
@@ -3549,37 +3560,6 @@
                 ]
               }
             ],
-            "selectionEntries": [
-              {
-                "name": "Linked Meltagun (S)",
-                "id": "b860-0640-b7aa-aa75",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "c1b9-991a-a731-9013-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "c1b9-991a-a731-9013-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "profiles": [
-                  {
-                    "name": "Linked Meltagun",
-                    "id": "d275-7ff7-56c4-0709",
-                    "hidden": false,
-                    "typeId": "4425-e2ff-1ce0-83c1",
-                    "typeName": "Ranged Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                      {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-                      {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-                      {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-                      {"name": "Rules", "$text": "Melta, Linked", "typeId": "ba87-19e9-d692-6e30"}
-                    ]
-                  }
-                ]
-              }
-            ],
             "selectionEntryGroups": [
               {
                 "name": "Conflagration Cannon (P)",
@@ -3608,32 +3588,9 @@
                     "value": 1
                   }
                 ],
-                "entryLinks": [{"name": "Plasma Decimator", "id": "4f11-6040-aff7-c8e8", "hidden": false, "targetId": "3964-e52d-223c-6d20", "type": "selectionEntry"}],
-                "selectionEntries": [
-                  {
-                    "name": "Conflagration Cannon",
-                    "id": "100a-a482-be0e-be07",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "profiles": [
-                      {
-                        "name": "Conflagration Cannon",
-                        "id": "cde7-30f2-e907-1223",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Spray, Linked", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  }
+                "entryLinks": [
+                  {"name": "Conflagration Cannon", "id": "0315-e257-ce84-fbf4", "hidden": false, "targetId": "100a-a482-be0e-be07", "type": "selectionEntry"},
+                  {"name": "Plasma Decimator", "id": "4f11-6040-aff7-c8e8", "hidden": false, "targetId": "3964-e52d-223c-6d20", "type": "selectionEntry"}
                 ]
               },
               {
@@ -3663,56 +3620,9 @@
                     "value": 1
                   }
                 ],
-                "selectionEntries": [
-                  {
-                    "name": "Thundercoil Harpoon",
-                    "id": "fcfa-55e5-72d3-de68",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "profiles": [
-                      {
-                        "name": "Thundercoil Harpoon",
-                        "id": "a409-78de-e13c-b169",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "12", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Sunder, Macro", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Volcano Lance",
-                    "id": "3ffd-e0c3-7544-fb60",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "profiles": [
-                      {
-                        "name": "Volcano Lance",
-                        "id": "def0-d6d3-5387-2dae",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "14", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Melta, Macro", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  }
+                "entryLinks": [
+                  {"name": "Volcano Lance", "id": "5b7e-601a-da68-3d9e", "hidden": false, "targetId": "3ffd-e0c3-7544-fb60", "type": "selectionEntry"},
+                  {"name": "Thundercoil Harpoon", "id": "f88d-e24f-098b-d0f1", "hidden": false, "targetId": "fcfa-55e5-72d3-de68", "type": "selectionEntry"}
                 ]
               },
               {
@@ -3749,34 +3659,18 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "selectionEntries": [
+                    "entryLinks": [
                       {
                         "name": "Shield Breaker Missile",
-                        "id": "d926-d828-9d7e-38f6",
+                        "id": "a1e9-e31b-c167-d1f6",
                         "defaultAmount": "4",
+                        "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "d926-d828-9d7e-38f6",
+                        "type": "selectionEntry",
                         "constraints": [
                           {"id": "2f63-d8ef-7aba-91bc-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4},
                           {"id": "2f63-d8ef-7aba-91bc-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 4}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Shield Breaker Missile",
-                            "id": "9346-d930-bbe6-1cf1",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Indirect Fire, Bane, Ammo (1)", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
                         ]
                       }
                     ]
@@ -3929,6 +3823,19 @@
                     "type": "upgrade",
                     "entryLinks": [
                       {
+                        "name": " Acheron Chainfist",
+                        "id": "4645-5788-1d18-9ce7",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "targetId": "87d2-38ef-7ec0-72a6",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "e1c4-7a23-dd62-3a5d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "ef88-4a7d-a05b-0588", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
                         "name": "Linked Heavy Bolter",
                         "id": "96e8-18f2-3e66-11bf",
                         "defaultAmount": "1",
@@ -3941,66 +3848,18 @@
                           {"id": "5021-c7a3-00a9-6bd9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                           {"id": "5021-c7a3-00a9-6bd9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
-                      }
-                    ],
-                    "selectionEntries": [
-                      {
-                        "name": " Acheron Chainfist",
-                        "id": "87d2-38ef-7ec0-72a6",
-                        "defaultAmount": "1",
-                        "exportable": false,
-                        "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
-                        "constraints": [
-                          {"id": "8b7a-a8b9-a7fb-d20d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "8b7a-a8b9-a7fb-d20d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": " Acheron Chainfist",
-                            "id": "25c6-0b71-fda5-1d18",
-                            "hidden": false,
-                            "typeId": "8fa1-1cd9-5ae1-0e93",
-                            "typeName": "Melee Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-                              {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
-                              {"name": "Rules", "$text": "Shred, Unwieldy, Sunder", "typeId": "cc29-b1e7-88e5-c90f"}
-                            ]
-                          }
-                        ]
                       },
                       {
                         "name": "Acheron Flame Cannon",
-                        "id": "97be-d97f-3b8b-f373",
+                        "id": "b0aa-aa0a-3a9b-425c",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "97be-d97f-3b8b-f373",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "6d75-77ef-4d67-d8cf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "6d75-77ef-4d67-d8cf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Acheron Flame Cannon",
-                            "id": "680b-16c5-d67e-f343",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Spray, Linked", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
+                          {"id": "79c8-f12c-f948-c370", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "2a59-d9a9-e3aa-880c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
                       }
                     ]
@@ -4012,64 +3871,31 @@
                     "import": true,
                     "type": "upgrade",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
-                    "selectionEntries": [
+                    "entryLinks": [
                       {
-                        "name": "Graviton Singularity Cannon",
-                        "id": "f775-3c52-92f1-9812",
+                        "name": "Atropos Cutter Laser",
+                        "id": "d206-8b24-1094-f69b",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "ab5c-cedc-f19e-d53f",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "3c08-4997-9741-19a6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "3c08-4997-9741-19a6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Graviton Singularity Cannon",
-                            "id": "3ed7-5801-1f7b-4c99",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Blast (Large), Bane", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
+                          {"id": "920f-9477-0a76-1a8c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "c3d1-66e3-0daf-690d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
                       },
                       {
-                        "name": "Atropos Cutter Laser",
-                        "id": "ab5c-cedc-f19e-d53f",
+                        "name": "Graviton Singularity Cannon",
+                        "id": "3b66-9b31-227d-3ff4",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "f775-3c52-92f1-9812",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "9d19-563e-270d-ead2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "9d19-563e-270d-ead2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Atropos Lascutter",
-                            "id": "43d5-b5d2-ad2d-9dad",
-                            "hidden": false,
-                            "typeId": "8fa1-1cd9-5ae1-0e93",
-                            "typeName": "Melee Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                              {"name": "Strength", "$text": "9", "typeId": "a10f-8fce-fc56-cafc"},
-                              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-                              {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
-                            ]
-                          }
+                          {"id": "4ca3-c969-ffe1-0a64", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "2f9c-d47b-7cf1-ec63", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
                       }
                     ]
@@ -4080,64 +3906,31 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "selectionEntries": [
+                    "entryLinks": [
                       {
-                        "name": "Tempest Warblade",
-                        "id": "0443-2795-3053-0f45",
+                        "name": "Castigator Bolt Cannon",
+                        "id": "cf18-a904-f55b-1ea7",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "ce4e-ce60-019a-942c",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "f4bc-3cfc-9293-9d0b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "f4bc-3cfc-9293-9d0b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Tempest Warblade",
-                            "id": "d80f-652a-c99b-cec7",
-                            "hidden": false,
-                            "typeId": "8fa1-1cd9-5ae1-0e93",
-                            "typeName": "Melee Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-                              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-                              {"name": "Rules", "$text": "Sweeping (3)", "typeId": "cc29-b1e7-88e5-c90f"}
-                            ]
-                          }
+                          {"id": "2d9b-aa3b-3b59-760c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "fee1-6b21-16b9-b01c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
                       },
                       {
-                        "name": "Castigator Bolt Cannon",
-                        "id": "ce4e-ce60-019a-942c",
+                        "name": "Tempest Warblade",
+                        "id": "7618-2dcb-3c6c-70f7",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "0443-2795-3053-0f45",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "a478-e867-ba5a-6fbd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "a478-e867-ba5a-6fbd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Castigator Bolt Cannon",
-                            "id": "ae70-82f8-226c-14b7",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "10", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Pinning, Rending (6+)", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
+                          {"id": "f4bc-3cfc-9293-9d0b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "f4bc-3cfc-9293-9d0b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
                       }
                     ]
@@ -4149,48 +3942,31 @@
                     "import": true,
                     "type": "upgrade",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "selectionEntries": [
+                    "entryLinks": [
                       {
                         "name": "Ion Shield Gauntlet",
-                        "id": "4461-8d79-8dc2-a57f",
+                        "id": "4345-9661-0f14-d263",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "4461-8d79-8dc2-a57f",
+                        "type": "selectionEntry",
                         "constraints": [
                           {"id": "9df8-3927-cd1c-1fdd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                           {"id": "9df8-3927-cd1c-1fdd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "rules": [{"name": "Ion Gauntlet Shield", "id": "2349-bdc1-5e7b-d6b5", "description": "A model with this wargear has a 5+ Invulnerable save.", "hidden": false}]
+                        ]
                       },
                       {
                         "name": "Shock Lance",
-                        "id": "f69f-3b79-b5bb-abda",
+                        "id": "2e2e-a0eb-bd49-53e4",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "f69f-3b79-b5bb-abda",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "a113-adb5-beba-b3aa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "a113-adb5-beba-b3aa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Shock Lance",
-                            "id": "5d54-771b-7447-3616",
-                            "hidden": false,
-                            "typeId": "8fa1-1cd9-5ae1-0e93",
-                            "typeName": "Melee Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-                              {"name": "AP", "$text": "5", "typeId": "65af-3e5a-1d24-5a74"},
-                              {"name": "Rules", "$text": "Haywire (3+), Arcing (4+), Reach", "typeId": "cc29-b1e7-88e5-c90f"}
-                            ]
-                          }
+                          {"id": "a113-adb5-beba-b3aa-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
+                          {"id": "a113-adb5-beba-b3aa-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}
                         ]
                       }
                     ]
@@ -4509,95 +4285,44 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "selectionEntries": [
-                      {
-                        "name": "Linked Conversion Beamer",
-                        "id": "e6c3-0d06-1b20-d5ae",
-                        "defaultAmount": "2",
-                        "exportable": false,
-                        "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
-                        "constraints": [
-                          {"id": "45ff-b41e-0465-d821-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                          {"id": "45ff-b41e-0465-d821-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Linked Conversion Beamer",
-                            "id": "7b9d-f47a-f7a4-68c7",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Linked, Conversion", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
-                        ]
-                      },
+                    "entryLinks": [
                       {
                         "name": "Karacnos Mortar Battery",
-                        "id": "037b-2472-f30b-21b9",
+                        "id": "0e81-9a6a-ebe5-4094",
                         "defaultAmount": "1",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "037b-2472-f30b-21b9",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "2ba8-29df-8fa7-101b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "2ba8-29df-8fa7-101b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Karacnos Mortar Battery",
-                            "id": "5030-cd59-d9b1-346e",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "12-72", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Blast (Large), Ordnance, Barrage (3), Indirect Fire", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
+                          {"id": "2ba8-29df-8fa7-101b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
+                          {"id": "2ba8-29df-8fa7-101b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Linked Conversion Beamer",
+                        "id": "982b-b298-e4e8-be77",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "targetId": "e6c3-0d06-1b20-d5ae",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "8e46-521b-c34f-bbd6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "cdbd-895d-48c6-6b30", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                         ]
                       },
                       {
                         "name": "Volkite Culverin",
-                        "id": "688f-efd9-408a-f9df",
+                        "id": "17db-582d-fa64-e702",
                         "defaultAmount": "2",
                         "exportable": false,
                         "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
+                        "targetId": "688f-efd9-408a-f9df",
+                        "type": "selectionEntry",
                         "constraints": [
-                          {"id": "5943-2b2e-b711-4289-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                          {"id": "5943-2b2e-b711-4289-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Volkite Culverin",
-                            "id": "c08f-9e91-ed15-5703",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Arcing (5+)", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
+                          {"id": "634a-51ed-f92e-13e4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "3991-6cd4-dc3d-7f94", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                         ]
                       }
                     ]
@@ -4610,6 +4335,19 @@
                     "type": "upgrade",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
                     "entryLinks": [
+                      {
+                        "name": "Linked Magna Lascannons",
+                        "id": "de18-e009-a872-c0f5",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "targetId": "af23-9cbc-e9f6-bc1c",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "b0c5-b7a8-55ef-2c16-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "b0c5-b7a8-55ef-2c16-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      },
                       {
                         "name": "Ironstorm Missile Launcher",
                         "id": "4532-bb31-37b8-3c66",
@@ -4633,38 +4371,6 @@
                         "constraints": [
                           {"id": "bcc4-db7c-fa89-9cd0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
                           {"id": "bcc4-db7c-fa89-9cd0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                        ]
-                      }
-                    ],
-                    "selectionEntries": [
-                      {
-                        "name": "Linked Magna Lascannons",
-                        "id": "af23-9cbc-e9f6-bc1c",
-                        "defaultAmount": "2",
-                        "exportable": false,
-                        "hidden": false,
-                        "import": true,
-                        "type": "upgrade",
-                        "constraints": [
-                          {"id": "b0c5-b7a8-55ef-2c16-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                          {"id": "b0c5-b7a8-55ef-2c16-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Linked Magna Lascannons",
-                            "id": "086f-b49a-3013-8402",
-                            "hidden": false,
-                            "typeId": "4425-e2ff-1ce0-83c1",
-                            "typeName": "Ranged Weapons",
-                            "characteristics": [
-                              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                              {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-                              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-                              {"name": "Rules", "$text": "Linked, Sunder, Macro", "typeId": "ba87-19e9-d692-6e30"}
-                            ]
-                          }
                         ]
                       }
                     ]
@@ -5590,8 +5296,7 @@
                     "constraints": [
                       {"id": "ee1f-cb35-2f9f-b5b3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "ee1f-cb35-2f9f-b5b3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ],
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+                    ]
                   },
                   {"name": "Flak Armour", "id": "7215-b43e-ce96-58c4", "hidden": false, "import": true, "targetId": "2848-dea5-099d-03ed", "type": "selectionEntry"},
                   {"name": "Frag Grenades", "id": "fdf0-98a8-180d-7b65", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"}
@@ -18528,6 +18233,14 @@
                 ],
                 "entryLinks": [
                   {
+                    "name": "Las Impulsor",
+                    "id": "c895-2297-d54c-ed79",
+                    "hidden": false,
+                    "targetId": "218d-398e-8c4a-70d2",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
                     "name": "Plasma Decimator",
                     "id": "b30c-378d-768d-4f0a",
                     "hidden": false,
@@ -18573,33 +18286,6 @@
                     "targetId": "1169-fdf1-008c-21cb",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Las Impulsor",
-                    "id": "218d-398e-8c4a-70d2",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                    "profiles": [
-                      {
-                        "name": "Las Impulsor",
-                        "id": "b2f5-74ac-fca7-c3b8",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "12", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
                   }
                 ]
               },
@@ -18662,6 +18348,7 @@
                   }
                 ],
                 "entryLinks": [
+                  {"name": "Stormspear Rocket Pod", "id": "7033-b0c8-c6d6-20f7", "hidden": false, "targetId": "fc2c-4ff6-b894-592f", "type": "selectionEntry"},
                   {
                     "name": "Linked Icarus Storm Cannon",
                     "id": "1498-7fe1-c2c1-2844",
@@ -18683,30 +18370,6 @@
                   }
                 ],
                 "selectionEntries": [
-                  {
-                    "name": "Stormspear Rocket Pod",
-                    "id": "fc2c-4ff6-b894-592f",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "profiles": [
-                      {
-                        "name": "Stormspear Rocket Pod",
-                        "id": "defe-9042-5ac1-ff15",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  },
                   {
                     "name": "Void Shied Generator",
                     "id": "1e9e-bc95-b3fd-1c8c",
@@ -18832,12 +18495,6 @@
       }
     ],
     "sharedRules": [
-      {
-        "name": "Ion Shield",
-        "id": "5e68-787f-9a4a-0137",
-        "description": "A model with this special rule has a 4+ Invulnerable save against all Shooting Attacks resolved against its Front Armour Value (FA). In addition, you gain the Rotate Ion Shields Reaction (see below).\n\n\nRotate Ion Shields (Reaction): Instead of Setting to Overwatch, this unit may set to Rotate Ion Shields in its Shooting Phase. If you do so, the unit may still shoot in the Shooting Phase, but all attacks made by the unit are resolved as Snap Shots. At the end of your Opponent’s Charge Phase, you may select one of your units Armour Facings (FA/SA/RA). The units 4+ Invulnerable save from the Ion Shields special rule now applies to Shooting Attacks resolved against the chosen Armour Facing.",
-        "hidden": false
-      },
       {
         "name": "Special Issue Ammunition",
         "id": "20e0-5740-eacd-3397",
@@ -20208,81 +19865,6 @@
         ]
       },
       {
-        "name": "Reaper Chain Glaive",
-        "id": "f2dc-62f8-109f-d04e",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Reaper Chain Glaive",
-            "id": "4195-9c34-5fc8-d27f",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Shred, Reach, Sweeping (2)", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Knight Stomps",
-        "id": "c53f-43df-9920-e699",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "5b0d-5d67-57ed-8517-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "5b0d-5d67-57ed-8517-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Knight Stomps",
-            "id": "bab3-9eec-7763-8988",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Crushing (4+), Unwieldy, Cumbersome", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Siege Breaker Cannon",
-        "id": "22ab-40f4-6ce6-37f6",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Siege Breaker Cannon",
-            "id": "2bb9-ae1f-fc83-03b2",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Bayonets",
         "id": "8f4e-d3e7-92b1-c25a",
         "hidden": false,
@@ -20508,80 +20090,6 @@
         "infoLinks": [{"name": "Deep Strike", "id": "6da9-811c-dea5-3c84", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"}]
       },
       {
-        "name": "Plasma Decimator",
-        "id": "3964-e52d-223c-6d20",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-        "profiles": [
-          {
-            "name": "Plasma Decimator",
-            "id": "a9ae-a574-b46f-d6d7",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large), Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Ironstorm Missile Launcher",
-        "id": "34ad-8bcf-dd16-068a",
-        "exportable": false,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Ironstorm Missile Launcher",
-            "id": "95f0-905e-5e70-7c96",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Indirect Fire", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Avenger Gatling Cannon",
-        "id": "3433-020f-2072-5952",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Avenger Gatling Cannon",
-            "id": "2a76-261b-3d07-b049",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "10", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning, Rending (6+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Conversion Magna Beamer",
         "id": "1169-fdf1-008c-21cb",
         "hidden": false,
@@ -20601,77 +20109,6 @@
               {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Conversion", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rapid Fire Battle Cannon",
-        "id": "7342-5979-cbab-3b6e",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Rapid Fire Battle Cannon",
-            "id": "add7-c60d-e808-a0e6",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Large), Barrage (1)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Thermal Cannon",
-        "id": "e877-e167-d762-e7aa",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Thermal Cannon",
-            "id": "e265-5241-fe0b-e999",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta, Macro", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Thunderstrike Gauntlet",
-        "id": "8c3c-0db4-0c45-c463",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Thunderstrike Gauntlet",
-            "id": "d0fa-8f98-2195-ccf1",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Crushing (4+), Macro", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -21390,7 +20827,7 @@
             "type": "selectionEntry"
           },
           {
-            "name": "Rite of Repair (Machine Rite):",
+            "name": "Rite of Repair (Machine Rite)",
             "id": "97d0-b1a5-d545-4bf4",
             "hidden": false,
             "import": true,

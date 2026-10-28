@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 4,
+    "revision": 5,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0e79-b452-6d4b-0244", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -92,9 +92,6 @@
       {"name": "[Forge World]", "id": "b4e5-a996-0dd7-6a4e", "hidden": false},
       {"name": "Secutarii Hoplites", "id": "22d5-2bbb-70ee-73fa", "hidden": false},
       {"name": "Secutarii Peltasts", "id": "aa1c-efea-cc7f-0758", "hidden": false},
-      {"name": "Titan Legion", "id": "facd-b533-40e8-1126", "hidden": false},
-      {"name": "Warhound Scout Titan", "id": "ac92-8230-0703-f946", "hidden": false},
-      {"name": "Reaver Battle Titan", "id": "a5d4-c4ab-d72f-0ed8", "hidden": false},
       {
         "name": "Tech-Priest Dominus",
         "id": "a0e4-a21f-8019-48c3",
@@ -1871,6 +1868,7 @@
                   {"id": "864f-5f5a-1014-6217-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ],
                 "entryLinks": [
+                  {"name": "Inferno Gun", "id": "0c6a-4cfe-a9d6-baf8", "hidden": false, "targetId": "b62b-356c-ef9f-9483", "type": "selectionEntry"},
                   {
                     "name": "Vulcan Mega Bolter",
                     "id": "738c-173f-fc4f-708c",
@@ -1897,32 +1895,6 @@
                     "targetId": "ed92-6665-51e6-5ffd",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Inferno Gun",
-                    "id": "b62b-356c-ef9f-9483",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "profiles": [
-                      {
-                        "name": "Inferno Gun",
-                        "id": "5c05-a9e3-9cd9-a924",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Spray, Ordnance", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
                   }
                 ]
               }
@@ -1980,7 +1952,10 @@
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "entryLinks": [{"name": "Titanic Stomp", "id": "e465-af24-0ad9-53ff", "hidden": false, "import": true, "targetId": "09db-47f7-779e-0d76", "type": "selectionEntry"}],
+            "entryLinks": [
+              {"name": "Apocalypse Launcher (P)", "id": "6f74-1541-2fe0-8e69", "hidden": false, "targetId": "d111-a685-6893-be98", "type": "selectionEntry"},
+              {"name": "Titanic Stomp", "id": "e465-af24-0ad9-53ff", "hidden": false, "import": true, "targetId": "09db-47f7-779e-0d76", "type": "selectionEntry"}
+            ],
             "profiles": [
               {
                 "name": "Reaver Battle Titan",
@@ -2004,35 +1979,6 @@
               }
             ],
             "selectionEntries": [
-              {
-                "name": "Apocalypse Launcher (P)",
-                "id": "d111-a685-6893-be98",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "1f43-8d9e-15a8-a8a4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "1f43-8d9e-15a8-a8a4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Apocalypse Launcher",
-                    "id": "3bab-0d86-89ad-828d",
-                    "hidden": false,
-                    "typeId": "4425-e2ff-1ce0-83c1",
-                    "typeName": "Ranged Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                      {"name": "Range", "$text": "24-100", "typeId": "83a1-168d-3aa3-97f8"},
-                      {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-                      {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-                      {"name": "Rules", "$text": "Blast (Large), Indirect Fire, Barrage (3)", "typeId": "ba87-19e9-d692-6e30"}
-                    ]
-                  }
-                ]
-              },
               {
                 "name": "Void Shields (3)",
                 "id": "fef2-a19a-79f6-8d7c",
@@ -2058,6 +2004,9 @@
                   {"id": "a34e-3c69-ecb7-5bce-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ],
                 "entryLinks": [
+                  {"name": "Gatling Blaster", "id": "db31-d41e-73c3-c381", "hidden": false, "targetId": "bce7-89fb-9f28-082c", "type": "selectionEntry"},
+                  {"name": "Melta Cannon", "id": "2e2b-cbae-3d2d-ae44", "hidden": false, "targetId": "4d1d-4dd2-af39-f1f8", "type": "selectionEntry"},
+                  {"name": "Laser Blaster", "id": "9f85-5059-7e50-02ac", "hidden": false, "targetId": "ddb3-a6cf-ed1d-9f3e", "type": "selectionEntry"},
                   {
                     "name": "Volcano Cannon",
                     "id": "cf64-c0b9-79ad-8841",
@@ -2066,83 +2015,6 @@
                     "targetId": "dbbf-76fa-3b16-8381",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 80}]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Melta Cannon",
-                    "id": "4d1d-4dd2-af39-f1f8",
-                    "comment": "titanic",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
-                    "profiles": [
-                      {
-                        "name": "Melta Cannon",
-                        "id": "3559-50f8-0dcf-e76c",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "12", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Blast (Small), Melta, Ordnance, Macro", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Gatling Blaster",
-                    "id": "bce7-89fb-9f28-082c",
-                    "defaultAmount": "2",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "profiles": [
-                      {
-                        "name": "Gatling Blaster",
-                        "id": "f06c-6549-9dcd-f967",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "8", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "60", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Laser Blaster",
-                    "id": "ddb3-a6cf-ed1d-9f3e",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "profiles": [
-                      {
-                        "name": "Laser Blaster",
-                        "id": "e8a3-c1b2-0262-03c5",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "16", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Blast (Small), Ordnance, Macro", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
                   }
                 ]
               }
@@ -13587,34 +13459,6 @@
         ]
       },
       {
-        "name": "Titanic Stomp",
-        "id": "09db-47f7-779e-0d76",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "ae30-d663-5e98-091e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "ae30-d663-5e98-091e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Titanic Stomp",
-            "id": "16b7-fc88-34df-95d6",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Crushing (4+), Unwieldy, Cumbersome", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Macro Stubber",
         "id": "0fa5-cf04-0726-7487",
         "hidden": false,
@@ -13850,26 +13694,6 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Voltaghiest Field",
-        "id": "0f30-6ea7-aebe-9d80",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "81f7-8b8b-0ff6-aa6e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "81f7-8b8b-0ff6-aa6e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Voltaghiest Field",
-            "id": "f8de-c05b-509e-bc36",
-            "description": "A model with this wargear has a 5+ Invulnerable save. A model with this special rule gains the Hammer of Wrath (1) special rule. The first time this unit would win Combat in the Combat Phase when calculating Combat Resolution, this unit’s Invulnerable save increases to 4+ for the rest of the battle.",
-            "hidden": false
           }
         ]
       },
@@ -14879,7 +14703,7 @@
             "type": "selectionEntry"
           },
           {
-            "name": "Rite of Repair (Machine Rite):",
+            "name": "Rite of Repair (Machine Rite)",
             "id": "42cc-5c77-f40e-5270",
             "hidden": false,
             "import": true,

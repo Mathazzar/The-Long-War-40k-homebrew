@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 5,
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "c5da-a0aa-2802-2c16", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -14299,7 +14299,8 @@
                   {"id": "7809-785b-54a4-446e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ]
               },
-              {"name": "Wraithbone plate", "id": "0879-f124-7891-ebeb", "hidden": false, "import": true, "targetId": "4f82-4edf-c1ee-0dc4", "type": "selectionEntry"}
+              {"name": "Wraithbone plate", "id": "0879-f124-7891-ebeb", "hidden": false, "import": true, "targetId": "4f82-4edf-c1ee-0dc4", "type": "selectionEntry"},
+              {"name": "Knight Stomps", "id": "c2ab-ff34-ffd8-3164", "hidden": false, "import": true, "targetId": "c53f-43df-9920-e699", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -14320,36 +14321,6 @@
                   {"name": "I", "$text": "3", "typeId": "7f1b-fabe-598c-f8de"},
                   {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
                   {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Knight Stomps",
-                "id": "9e54-b8f9-95c8-65de",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "a3e6-fc3e-f2b3-35ab-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "a3e6-fc3e-f2b3-35ab-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Knight Stomps",
-                    "id": "99f6-88a4-00ae-9c08",
-                    "hidden": false,
-                    "typeId": "8fa1-1cd9-5ae1-0e93",
-                    "typeName": "Melee Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                      {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
-                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-                      {"name": "Rules", "$text": "Crushing (4+), Unwieldy, Cumbersome", "typeId": "cc29-b1e7-88e5-c90f"}
-                    ]
-                  }
                 ]
               }
             ],
