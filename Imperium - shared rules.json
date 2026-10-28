@@ -14,8 +14,6 @@
       {"name": "Redemptionists", "id": "83a2-37d7-3feb-4d96", "hidden": false},
       {"name": "Captain", "id": "875f-9975-8052-0495", "hidden": false},
       {"name": "Cult Delegation", "id": "a049-d976-50dd-c84d", "hidden": false},
-      {"name": "Chimera", "id": "90d5-2c7e-fd37-47d8", "hidden": false},
-      {"name": "Taurox", "id": "402c-0171-03d4-5b2f", "hidden": false},
       {"name": "Razorback", "id": "6c54-25e1-143c-9354", "hidden": false},
       {"name": "Stormraven Gunship", "id": "c276-3fa6-f364-135c", "hidden": false},
       {"name": "Penitent Engines", "id": "0bf5-c753-2fb9-fbce", "hidden": false},
@@ -255,12 +253,6 @@
         "publicationId": "6f16-791a-3a26-4c72"
       },
       {
-        "name": "Digital Weapons",
-        "id": "aeb5-4df4-329c-f4b5",
-        "description": "A model with Digital weapons gains +1 to their Attacks (A) characteristic.",
-        "hidden": false
-      },
-      {
         "name": "Paragon War Suit",
         "id": "b27c-3428-2fd1-010c",
         "description": "These ancient mechanical walker suits provide a high degree of protection to their pilot through various armour panels over the pilots standard Power armour and strong energy shields. It confers a 2+ Armour save and a 4+ Invulnerable save. The equipped model gains +1 Strength (S) and +2 to its Toughness (T) characteristic. The equipped model gains the Firing Protocols (2) and Relentless special rule.",
@@ -462,18 +454,6 @@
             "hidden": false
           }
         ]
-      },
-      {
-        "name": "Digital Weapons",
-        "id": "7abf-e940-51aa-1a1e",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [{"id": "9ee2-6881-76e6-19a8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "infoLinks": [{"name": "Digital Weapons", "id": "2027-5554-13b1-8164", "hidden": false, "targetId": "aeb5-4df4-329c-f4b5", "type": "rule"}],
-        "modifiers": [{"affects": "profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "model", "type": "increment", "value": 1}]
       },
       {
         "name": "Refractor field",
@@ -1762,6 +1742,14 @@
                 ],
                 "entryLinks": [
                   {
+                    "name": "Chain Axe",
+                    "id": "49b2-0fff-fef0-aea7",
+                    "hidden": false,
+                    "targetId": "5e1d-c172-5752-6884",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
                     "name": "Flamer",
                     "id": "d7ad-f2c1-7dec-9a30",
                     "hidden": false,
@@ -1773,31 +1761,6 @@
                   {"name": "Autopistol", "id": "d3f0-03dc-7e7d-762e", "hidden": false, "import": true, "targetId": "bb43-52db-056f-d96d", "type": "selectionEntry"}
                 ],
                 "selectionEntries": [
-                  {
-                    "name": "Chain Axe",
-                    "id": "5e1d-c172-5752-6884",
-                    "defaultAmount": "1",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                    "profiles": [
-                      {
-                        "name": "Chain Axe",
-                        "id": "2ed7-f1ef-6e21-f07b",
-                        "hidden": false,
-                        "typeId": "8fa1-1cd9-5ae1-0e93",
-                        "typeName": "Melee Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
-                          {"name": "AP", "$text": "5", "typeId": "65af-3e5a-1d24-5a74"},
-                          {"name": "Rules", "$text": "Shred, Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
-                        ]
-                      }
-                    ]
-                  },
                   {
                     "name": "Autogun Combi-Flamer",
                     "id": "7172-2ba3-d18f-3e84",

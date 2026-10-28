@@ -393,7 +393,6 @@
       {"name": "Rapier Battery", "id": "914d-32f1-5be3-3786", "hidden": false},
       {"name": "Defiler", "id": "738b-832a-fea1-9fce", "hidden": false},
       {"name": "Arquitor Bombard", "id": "c859-6854-cd94-c053", "hidden": false},
-      {"name": "Noctolith Crown", "id": "7dd3-4e52-a97d-6d88", "hidden": false},
       {
         "name": "LR",
         "id": "5b58-3ece-64a8-5d19",
@@ -511,6 +510,17 @@
               }
             ]
           }
+        ]
+      },
+      {
+        "name": "Noctolith Crown",
+        "id": "afae-c4bc-bfe6-1c39",
+        "hidden": false,
+        "targetId": "e879-1bf6-8c3b-04ed",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Faction: Chaos Space Marines", "id": "c004-5a08-6dea-b3cc", "hidden": false, "primary": false, "targetId": "11e2-ca18-cb50-280c"},
+          {"name": "[Legion]", "id": "c016-9fcf-c836-3582", "hidden": false, "primary": false, "targetId": "4bf9-b0c8-1bb4-b380"}
         ]
       }
     ],
@@ -1010,63 +1020,6 @@
           {"name": "Hammer of Wrath (x)", "id": "655c-c31a-c6bb-961b", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
           {"name": "Move through Cover", "id": "5dbf-effe-3302-3381", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
           {"name": "Regeneration", "id": "aeee-d8e2-6145-cdee", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"}
-        ]
-      },
-      {
-        "name": "Noctolith Crown",
-        "id": "e879-1bf6-8c3b-04ed",
-        "hidden": false,
-        "import": true,
-        "page": "100",
-        "publicationId": "cd32-7680-79bc-f6c6",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Chaos", "id": "47e3-7a13-af2d-41df", "hidden": false, "primary": false, "targetId": "4c48-b09a-ec4a-cf19"},
-          {"name": "Faction: Chaos Space Marines", "id": "2d60-65a5-1fae-1b9e", "hidden": false, "primary": false, "targetId": "11e2-ca18-cb50-280c"},
-          {"name": "[Legion]", "id": "2c85-5145-aa69-e5ee", "hidden": false, "primary": false, "targetId": "4bf9-b0c8-1bb4-b380"},
-          {"name": "M31", "id": "2326-abf7-fb1f-e3df", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Fortification", "id": "449d-2259-d2a2-3d0b", "hidden": false, "primary": true, "targetId": "afd1-1404-6ffb-02d8"},
-          {"name": "Noctolith Crown", "id": "c770-0981-77a1-2682", "hidden": false, "primary": false, "targetId": "7dd3-4e52-a97d-6d88"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
-        "entryLinks": [{"name": "Mark of Chaos", "id": "cef5-9b4e-e667-1744", "hidden": false, "import": true, "targetId": "315a-a494-99c4-d7f0", "type": "selectionEntryGroup"}],
-        "infoLinks": [{"name": "Deny the Witch", "id": "699b-592e-8414-b8bd", "hidden": false, "targetId": "8c5a-f37c-9230-be38", "type": "rule"}],
-        "rules": [{"name": "Aura of Chaos", "id": "d9c9-2552-54e8-3d62", "description": "Friendly Chaos models within 12” gain a 6+ Invulnerable save.", "hidden": false}],
-        "selectionEntries": [
-          {
-            "name": "Noctolith Crown",
-            "id": "2a22-9477-b3aa-efe4",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "0128-07ae-c822-0251-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "0128-07ae-c822-0251-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "profiles": [
-              {
-                "name": "Noctolith Crown",
-                "id": "1ed1-a56d-58f1-f652",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "0", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "0", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "0", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "0", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "12", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "12", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "12", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "0", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "0", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {

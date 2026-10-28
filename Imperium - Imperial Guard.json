@@ -187,14 +187,12 @@
       {"name": "Tempestus Scion Squad", "id": "e7b0-1aff-e917-14d0", "hidden": false},
       {"name": "Taurox Prime", "id": "b7ca-0025-0c4e-bf9e", "hidden": false},
       {"name": "Field Battery", "id": "ffa9-f0e8-0ce9-8bb8", "hidden": false},
-      {"name": "Earthshaker Carriage", "id": "f62c-a7de-5753-63ab", "hidden": false},
       {"name": "Krieg Quarter Master", "id": "8204-42d1-8678-8a1b", "hidden": false},
       {"name": "Krieg Field Battery", "id": "ed39-3d97-71c6-a43c", "hidden": false},
       {"name": "Elysian Sniper Team", "id": "f5b6-a703-58c9-194d", "hidden": false},
       {"name": "[Elysian Drop Troopers]", "id": "9c74-a929-de7c-2797", "hidden": false},
       {"name": "Armageddon Pattern Centaur RSV", "id": "1a7e-da91-423d-7ab0", "hidden": false},
       {"name": "Line", "id": "245c-d22e-d970-8080", "hidden": false},
-      {"name": "Centaur Light Carrier", "id": "950e-ef46-b29b-3c15", "hidden": false},
       {"name": "Gorgon Transport", "id": "5068-3cab-6fd6-032a", "hidden": false},
       {"name": "Hades Breaching Drill", "id": "bde5-3a3d-1a84-cfb9", "hidden": false},
       {
@@ -227,8 +225,6 @@
       {"name": "Vulture Gunship", "id": "6b81-627b-d9f2-45e4", "hidden": false},
       {"name": "Marauder Bomber", "id": "0ef8-0073-d528-66fd", "hidden": false},
       {"name": "Marauder Destroyer", "id": "d2c6-702a-d580-fa6d", "hidden": false},
-      {"name": "Sentinel", "id": "1700-62c6-d4f9-55d7", "hidden": false},
-      {"name": "Hell Hound", "id": "93b8-34c2-3029-96d3", "hidden": false},
       {"name": "Salamander Scout Tank", "id": "a533-2188-eaf3-b3a2", "hidden": false},
       {"name": "Hippogriff AFV", "id": "7cac-9bf1-f627-ce23", "hidden": false},
       {"name": "Griffon Mortar Carrier", "id": "ef0f-21a0-ae30-90c2", "hidden": false},
@@ -368,24 +364,14 @@
         ]
       },
       {"name": "Heavy Weapons Squad", "id": "4be3-0a55-9bf9-1467", "hidden": false},
-      {"name": "Leman Russ Battle Tank", "id": "2944-53cc-9899-ed07", "hidden": false},
-      {"name": "Hydra Flak Tank", "id": "52d7-cb37-fadc-2205", "hidden": false},
-      {"name": "Wyvern Suppression Tank", "id": "120f-7f7b-9409-b02b", "hidden": false},
-      {"name": "Basalisk Artillery Gun", "id": "1516-09bf-8dc8-5d62", "hidden": false},
-      {"name": "Malcador Assault Tank", "id": "4532-27d2-8985-3d86", "hidden": false},
-      {"name": "Malcador Annihilator Tank", "id": "0a3c-9658-7eee-2a71", "hidden": false},
-      {"name": "Malcador Defender Tank", "id": "8c2c-ff3f-a571-fcc4", "hidden": false},
-      {"name": "Macharius Heavy Tank", "id": "ec3b-99c1-fefd-86c8", "hidden": false},
       {"name": "Rogal Dorn Heavy Tank", "id": "b88b-2cde-687d-8185", "hidden": false},
       {"name": "Thunderer Siege Tank", "id": "a05f-6e53-bfdb-c23f", "hidden": false},
       {"name": "Manticore Missile Launcher", "id": "56d3-16b2-7ca4-0e04", "hidden": false},
       {"name": "Deathstrike Missile Launcher", "id": "3c9c-3193-a30b-afac", "hidden": false},
       {"name": "Colossus Bombard", "id": "f324-520c-4adb-7201", "hidden": false},
       {"name": "Tarantula Battery", "id": "2cf2-d2e6-b8b6-79cb", "hidden": false},
-      {"name": "Baneblade Super Heavy Tank", "id": "2b63-9fdf-2bc0-e561", "hidden": false},
       {"name": "Sly Marbo", "id": "54c6-9047-a341-d711", "hidden": false},
       {"name": "Fortification Section", "id": "c301-2e5c-2f12-3c7c", "hidden": false},
-      {"name": "Bastion", "id": "69af-8155-3254-e7f3", "hidden": false},
       {"name": "Point Defence Turrets", "id": "87f0-6bfa-745d-1dfd", "hidden": false},
       {"name": "Firestorm Redoubt", "id": "456c-0506-05ba-3eb3", "hidden": false},
       {
@@ -23704,7 +23690,8 @@
                   {"id": "200b-e95c-fbee-4532-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "200b-e95c-fbee-4532-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
-              }
+              },
+              {"name": "Heavy Bolter (P)", "id": "360d-9027-bc6f-6698", "hidden": false, "import": true, "targetId": "ce2e-dd24-4524-5ca6", "type": "selectionEntryGroup"}
             ],
             "profiles": [
               {
@@ -23725,40 +23712,6 @@
                   {"name": "I", "$text": "3", "typeId": "7f1b-fabe-598c-f8de"},
                   {"name": "LD", "$text": "7", "typeId": "7b21-f3da-4802-3e38"},
                   {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Heavy Bolter (P)",
-                "id": "336a-bacd-be50-f621",
-                "defaultSelectionEntryId": "1c56-d655-f905-629d",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "d40a-6abe-3f5d-bb15-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "d40a-6abe-3f5d-bb15-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {"name": "Heavy Flamer", "id": "385e-9c2b-5634-b4cd", "hidden": false, "import": true, "targetId": "4b58-2b09-3805-2dab", "type": "selectionEntry"},
-                  {"name": "Heavy Bolter", "id": "1c56-d655-f905-629d", "hidden": false, "import": true, "targetId": "78c1-9390-d6ec-04ff", "type": "selectionEntry"}
                 ]
               }
             ]
@@ -24369,7 +24322,8 @@
                   {"id": "b2fd-649f-1d26-7012-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
-              }
+              },
+              {"name": "Heavy Bolter (P)", "id": "a024-192c-a7c8-7f49", "hidden": false, "import": true, "targetId": "ce2e-dd24-4524-5ca6", "type": "selectionEntryGroup"}
             ],
             "profiles": [
               {
@@ -24390,40 +24344,6 @@
                   {"name": "I", "$text": "3", "typeId": "7f1b-fabe-598c-f8de"},
                   {"name": "LD", "$text": "7", "typeId": "7b21-f3da-4802-3e38"},
                   {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Heavy Bolter (P)",
-                "id": "6a7d-5f96-2e3d-2dc0",
-                "defaultSelectionEntryId": "1c56-d655-f905-629d",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "afd3-c770-9899-b060-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "afd3-c770-9899-b060-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {"name": "Heavy Flamer", "id": "baa4-ec7b-d4fe-b882", "hidden": false, "import": true, "targetId": "4b58-2b09-3805-2dab", "type": "selectionEntry"},
-                  {"name": "Heavy Bolter", "id": "fe08-72b9-78d3-328e", "hidden": false, "import": true, "targetId": "78c1-9390-d6ec-04ff", "type": "selectionEntry"}
                 ]
               }
             ]
@@ -25008,7 +24928,8 @@
                   {"id": "ca15-0bfd-66f2-6440-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
-              }
+              },
+              {"name": "Heavy Bolter (P)", "id": "6822-a777-1dd1-2c39", "hidden": false, "import": true, "targetId": "ce2e-dd24-4524-5ca6", "type": "selectionEntryGroup"}
             ],
             "profiles": [
               {
@@ -25033,38 +24954,6 @@
               }
             ],
             "selectionEntryGroups": [
-              {
-                "name": "Heavy Bolter (P)",
-                "id": "89da-59e9-5311-389d",
-                "defaultSelectionEntryId": "1c56-d655-f905-629d",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "0cb7-3b6c-0caa-6b66-min",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "0cb7-3b6c-0caa-6b66-max",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {"name": "Heavy Flamer", "id": "0382-a225-c540-3036", "hidden": false, "import": true, "targetId": "4b58-2b09-3805-2dab", "type": "selectionEntry"},
-                  {"name": "Heavy Bolter", "id": "6bfc-5bf1-23ca-d5d3", "hidden": false, "import": true, "targetId": "78c1-9390-d6ec-04ff", "type": "selectionEntry"}
-                ]
-              },
               {
                 "name": "Earthshaker Cannon (P)",
                 "id": "09c9-4acd-ab54-c5da",
@@ -29549,6 +29438,7 @@
               {"id": "dae2-1495-adb6-ef5f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
+              {"name": "Hidden Entrances", "id": "6df3-f486-9a34-029d", "hidden": false, "targetId": "77f7-d38e-51ee-2560", "type": "selectionEntry"},
               {
                 "name": "Heavy Bolter",
                 "id": "e0cf-4f10-1d49-5836",
@@ -29583,25 +29473,6 @@
                   {"name": "I", "$text": "0", "typeId": "7f1b-fabe-598c-f8de"},
                   {"name": "LD", "$text": "\n", "typeId": "7b21-f3da-4802-3e38"},
                   {"name": "Transport Capacity", "$text": "22", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Hidden Entrances",
-                "id": "77f7-d38e-51ee-2560",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [{"id": "f343-bf4f-32e4-c269", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                "rules": [
-                  {
-                    "name": "Hidden Entrances",
-                    "id": "6bce-5207-850e-ccd3",
-                    "description": "When a unit with this special rule would be destroyed. Embarked units are not required to roll for models inside being slain (see Rule 10.2 in the core rules).",
-                    "hidden": false
-                  }
                 ]
               }
             ],
@@ -40907,7 +40778,18 @@
                   {"id": "cf51-c1b8-bd1a-e861-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Gas Bombs", "id": "8f49-daee-b751-7598", "hidden": false, "import": true, "targetId": "ce20-6bb2-c73d-bd95", "type": "selectionEntry"},
+              {
+                "name": "Gas Bombs",
+                "id": "8f49-daee-b751-7598",
+                "hidden": false,
+                "import": true,
+                "targetId": "ce20-6bb2-c73d-bd95",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "65ae-6252-a968-a612-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "65ae-6252-a968-a612-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
               {
                 "name": "Shotgun",
                 "id": "8736-5739-f92d-c5e6",
@@ -41024,7 +40906,18 @@
                 ]
               },
               {"name": "Carapace Armour", "id": "9705-6990-f08a-6a91", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
-              {"name": "Gas Bombs", "id": "f75c-a2c3-2a25-da75", "hidden": false, "import": true, "targetId": "ce20-6bb2-c73d-bd95", "type": "selectionEntry"},
+              {
+                "name": "Gas Bombs",
+                "id": "f75c-a2c3-2a25-da75",
+                "hidden": false,
+                "import": true,
+                "targetId": "ce20-6bb2-c73d-bd95",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "daa0-2bf9-bb9f-b246-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "daa0-2bf9-bb9f-b246-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
               {
                 "name": "Vox Caster",
                 "id": "e1f6-0f01-2275-9993",
@@ -41147,7 +41040,18 @@
               },
               {"name": "Carapace Armour", "id": "478c-244f-40ab-3b8b", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "8312-6dc4-5bb8-2291", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
-              {"name": "Gas Bombs", "id": "d58d-9e1c-824c-7b82", "hidden": false, "import": true, "targetId": "ce20-6bb2-c73d-bd95", "type": "selectionEntry"},
+              {
+                "name": "Gas Bombs",
+                "id": "d58d-9e1c-824c-7b82",
+                "hidden": false,
+                "import": true,
+                "targetId": "ce20-6bb2-c73d-bd95",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2052-ece0-4bd6-be8c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2052-ece0-4bd6-be8c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
               {"name": "Autopistol", "id": "50cd-e47d-673f-1f8d", "hidden": false, "import": true, "targetId": "f8ac-1e95-63c9-7ea6", "type": "selectionEntryGroup"}
             ],
             "profiles": [
@@ -53570,19 +53474,7 @@
       {"name": "Allegiance: Catachan Jungle Fighters", "id": "1376-5d86-5e5f-176b", "hidden": false},
       {"name": "Allegiance: Death Korp of Krieg", "id": "eb23-6fd7-6c1a-8143", "hidden": false},
       {"name": "Allegiance: Valhallan Ice Warriors", "id": "789a-e8b5-88c5-2470", "hidden": false},
-      {
-        "name": "Morale Officer",
-        "id": "8278-d596-a274-ec43",
-        "description": "This unit and any attached unit have the Stubborn special rule. This unit and any attached unit count as scoring 1 additional wound in the Combat Phase when determining who won combat.",
-        "hidden": false
-      },
       {"name": "Allegiance: Tanith First & Only", "id": "7c17-a0f5-35c7-0756", "hidden": false},
-      {
-        "name": "Execution",
-        "id": "1b28-0361-ab88-9f3f",
-        "description": "When any attached unit would fail a Pinning or Panic test, you can opt to slay 1 friendly model from the attached unit. That is considered to have passed the Pinning and Panic test.",
-        "hidden": false
-      },
       {"name": "Allegiance: Mordian Iron Guard", "id": "023a-95c9-ec87-89d0", "hidden": false},
       {"name": "Allegiance: Savlar Chem Dogs", "id": "3ae7-925a-38cf-8ca2", "hidden": false},
       {
@@ -53592,12 +53484,6 @@
         "hidden": false,
         "page": "8",
         "publicationId": "5b81-795c-38b3-285c"
-      },
-      {
-        "name": "Field Piece",
-        "id": "2224-c4b8-1719-8427",
-        "description": "This unit may only embark on the Centaur Light Carrier and may only do so if the unit size is 1 model.",
-        "hidden": false
       },
       {"name": "Allegiance: Elysian Drop Troopers", "id": "e2b9-b487-4ea2-a789", "hidden": false},
       {
@@ -53611,12 +53497,6 @@
         "name": "Stalling Machine Spirit",
         "id": "0ed7-8559-ccfc-f7c2",
         "description": "Each time this unit attempts to perform a Retreat Move in the Movement Phase, it must perform a Leadership test. If the test is failed, the unit may not perform the move and must remain stationary that Movement Phase. If the test is passed, the unit may perform the Retreat Move as normal.",
-        "hidden": false
-      },
-      {
-        "name": "Icarus Defences",
-        "id": "d7ab-07c9-a52f-619c",
-        "description": "Any Linked Autocannon or Linked Las Cannon that the Bastion is equipped with gains the Skyfire special rule.",
         "hidden": false
       }
     ],
@@ -53949,64 +53829,6 @@
               {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hydra Quad Cannon",
-        "id": "ef7a-87e9-c074-97a3",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Hydra Quad Cannon",
-            "id": "eb4d-8ebd-6277-5b0f",
-            "hidden": false,
-            "page": "11",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "6", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked, Skyfire, Pinning, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Gas Bombs",
-        "id": "ce20-6bb2-c73d-bd95",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "18b5-1ceb-752d-8f35-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "18b5-1ceb-752d-8f35-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Gas Bombs",
-            "id": "1ee9-e399-e94c-c646",
-            "hidden": false,
-            "page": "12",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Poison (2+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -55981,42 +55803,6 @@
         ]
       },
       {
-        "name": "Target Finders",
-        "id": "7ed7-6c7e-5304-79ab",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "3aa2-df2b-25da-b4c8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "3aa2-df2b-25da-b4c8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Target Finder",
-            "id": "4f00-213b-6ee7-e456",
-            "description": "A model equipped with this wargear gains +1 to their Ballistic Skill (BS) characteristic. Per the core rules, multiple of this effect do not stack.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Sensor Relay",
-        "id": "f7cd-11ca-0a24-a2de",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-        "rules": [
-          {
-            "name": "Sensor Relay",
-            "id": "223b-e559-ddf8-f33d",
-            "description": "Enemy units may not arrive from Deep Strike within 9” of a model equipped with this Wargear.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Salamander Scout Tank",
         "id": "f3ce-0d87-a157-ae55",
         "hidden": false,
@@ -57493,7 +57279,51 @@
                 ]
               },
               {"name": "Smoke Launchers", "id": "4875-e2fd-6015-eba6", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {"name": "Searchlight", "id": "02ca-5f22-1f84-afca", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"}
+              {"name": "Searchlight", "id": "02ca-5f22-1f84-afca", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {
+                "name": "Heavy Stubber (S)",
+                "id": "9a29-5eff-ef27-0dec",
+                "hidden": false,
+                "import": true,
+                "targetId": "260b-2c07-2f2e-b1e9",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "17ef-2d4c-c964-69b2-min",
+                    "type": "set",
+                    "value": 3,
+                    "conditions": [
+                      {
+                        "childId": "576e-3d9a-2282-ad1b",
+                        "childName": "Support Tank",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "17ef-2d4c-c964-69b2-max",
+                    "type": "set",
+                    "value": 3,
+                    "conditions": [
+                      {
+                        "childId": "576e-3d9a-2282-ad1b",
+                        "childName": "Support Tank",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -57573,74 +57403,6 @@
             ],
             "selectionEntryGroups": [
               {
-                "name": "Heavy Stubber (S)",
-                "id": "161a-831e-d293-9825",
-                "defaultSelectionEntryId": "cc75-6b6c-0d7c-1776",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "4280-2166-2942-7d9c-min",
-                    "automatic": false,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "min",
-                    "value": 1
-                  },
-                  {
-                    "id": "4280-2166-2942-7d9c-max",
-                    "automatic": false,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {"name": "Storm Bolter", "id": "d696-d1de-a001-52e0", "hidden": false, "import": true, "targetId": "c829-b809-d33d-4738", "type": "selectionEntry"},
-                  {"name": "Heavy Stubber", "id": "e3ca-9bde-2e24-d0f4", "hidden": false, "import": true, "targetId": "b506-0546-369b-ee0c", "type": "selectionEntry"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "4280-2166-2942-7d9c-min",
-                    "type": "set",
-                    "value": 3,
-                    "conditions": [
-                      {
-                        "childId": "576e-3d9a-2282-ad1b",
-                        "childName": "Support Tank",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  },
-                  {
-                    "field": "4280-2166-2942-7d9c-max",
-                    "type": "set",
-                    "value": 3,
-                    "conditions": [
-                      {
-                        "childId": "576e-3d9a-2282-ad1b",
-                        "childName": "Support Tank",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
                 "name": "Hull Variant",
                 "id": "1e87-0a42-2ca7-d94b",
                 "defaultSelectionEntryId": "9557-0e7b-ffa6-ebd9",
@@ -57691,7 +57453,7 @@
                       {
                         "name": "Baneblade Cannon (P)",
                         "id": "3a2d-f789-494f-771e",
-                        "defaultSelectionEntryId": "acaf-f7ec-247d-1f92",
+                        "defaultSelectionEntryId": "9702-74fa-4b1e-4f8f",
                         "hidden": false,
                         "constraints": [
                           {
@@ -57715,55 +57477,9 @@
                             "value": 1
                           }
                         ],
-                        "selectionEntries": [
-                          {
-                            "name": "Baneblade Cannon (P)",
-                            "id": "acaf-f7ec-247d-1f92",
-                            "hidden": false,
-                            "import": true,
-                            "type": "upgrade",
-                            "profiles": [
-                              {
-                                "name": "Baneblade Cannon",
-                                "id": "a728-6bac-bf98-0037",
-                                "hidden": false,
-                                "typeId": "4425-e2ff-1ce0-83c1",
-                                "typeName": "Ranged Weapons",
-                                "characteristics": [
-                                  {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                                  {"name": "Range", "$text": "72", "typeId": "83a1-168d-3aa3-97f8"},
-                                  {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-                                  {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                                  {"name": "Rules", "$text": "Blast (Large)", "typeId": "ba87-19e9-d692-6e30"}
-                                ]
-                              }
-                            ]
-                          }
-                        ],
-                        "selectionEntryGroups": [
-                          {
-                            "name": "Hell Cannon (P)",
-                            "id": "055f-f944-056e-6bfb",
-                            "hidden": false,
-                            "profiles": [
-                              {
-                                "name": "Hell Cannon",
-                                "id": "3389-1bb2-6694-22a8",
-                                "hidden": false,
-                                "typeId": "4425-e2ff-1ce0-83c1",
-                                "typeName": "Ranged Weapons",
-                                "characteristics": [
-                                  {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                                  {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                                  {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-                                  {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                                  {"name": "Rules", "$text": "Blast (Large), Ignores Cover", "typeId": "ba87-19e9-d692-6e30"}
-                                ]
-                              }
-                            ]
-                          }
+                        "entryLinks": [
+                          {"name": "Hell Cannon (P)", "id": "7d3a-e43f-9ef9-4116", "hidden": false, "targetId": "f634-cc15-1dbb-e4cb", "type": "selectionEntry"},
+                          {"name": "Baneblade Cannon (P)", "id": "9702-74fa-4b1e-4f8f", "hidden": false, "targetId": "acaf-f7ec-247d-1f92", "type": "selectionEntry"}
                         ]
                       }
                     ]
@@ -57803,6 +57519,9 @@
                           }
                         ],
                         "entryLinks": [
+                          {"name": "Tremor Cannon (P)", "id": "fb6c-83c0-2084-52f6", "hidden": false, "targetId": "db87-8186-634c-50a5", "type": "selectionEntry"},
+                          {"name": "Quake Cannon (P)", "id": "e021-6d01-f592-25c2", "hidden": false, "targetId": "bb5a-d2e2-3d56-4062", "type": "selectionEntry"},
+                          {"name": "Storm Sword Siege Cannon (P)", "id": "6392-6f42-8ba9-b97d", "hidden": false, "targetId": "895b-839a-56b6-4f73", "type": "selectionEntry"},
                           {
                             "name": "Volcano Cannon",
                             "id": "da45-d048-b53b-10f3",
@@ -57811,82 +57530,6 @@
                             "type": "selectionEntry",
                             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
                             "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-                          }
-                        ],
-                        "selectionEntries": [
-                          {
-                            "name": "Quake Cannon (P)",
-                            "id": "bb5a-d2e2-3d56-4062",
-                            "hidden": false,
-                            "import": true,
-                            "type": "upgrade",
-                            "profiles": [
-                              {
-                                "name": "Quake Cannon",
-                                "id": "7031-599d-d77b-ca92",
-                                "hidden": false,
-                                "typeId": "4425-e2ff-1ce0-83c1",
-                                "typeName": "Ranged Weapons",
-                                "characteristics": [
-                                  {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                                  {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                                  {"name": "Range", "$text": "120", "typeId": "83a1-168d-3aa3-97f8"},
-                                  {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-                                  {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-                                  {"name": "Rules", "$text": "Ordnance, Macro", "typeId": "ba87-19e9-d692-6e30"}
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "name": "Tremor Cannon (P)",
-                            "id": "db87-8186-634c-50a5",
-                            "hidden": false,
-                            "import": true,
-                            "type": "upgrade",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
-                            "profiles": [
-                              {
-                                "name": "Tremor Cannon",
-                                "id": "4bee-0d69-0044-326f",
-                                "hidden": false,
-                                "typeId": "4425-e2ff-1ce0-83c1",
-                                "typeName": "Ranged Weapons",
-                                "characteristics": [
-                                  {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                                  {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                                  {"name": "Strength", "$text": "12", "typeId": "4e85-0d56-33e2-acca"},
-                                  {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                                  {"name": "Rules", "$text": "Blast (Large), Ordnance, Concussive", "typeId": "ba87-19e9-d692-6e30"}
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "name": "Storm Sword Siege Cannon (P)",
-                            "id": "895b-839a-56b6-4f73",
-                            "hidden": false,
-                            "import": true,
-                            "type": "upgrade",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
-                            "profiles": [
-                              {
-                                "name": "Storm Sword Siege Cannon",
-                                "id": "5cd9-e7c5-5aa4-a9c5",
-                                "hidden": false,
-                                "typeId": "4425-e2ff-1ce0-83c1",
-                                "typeName": "Ranged Weapons",
-                                "characteristics": [
-                                  {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                                  {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                                  {"name": "Strength", "$text": "12", "typeId": "4e85-0d56-33e2-acca"},
-                                  {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-                                  {"name": "Rules", "$text": "Ordnance, Blast (Small), Macro, Sunder", "typeId": "ba87-19e9-d692-6e30"}
-                                ]
-                              }
-                            ]
                           }
                         ]
                       },
@@ -57904,11 +57547,12 @@
                             "type": "upgrade",
                             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
                             "entryLinks": [
-                              {"name": "Target Finders", "id": "8cb4-6228-497f-8d0d", "hidden": false, "targetId": "7ed7-6c7e-5304-79ab", "type": "selectionEntry"},
+                              {"name": "Target Finders", "id": "8cb4-6228-497f-8d0d", "exportable": false, "hidden": false, "targetId": "7ed7-6c7e-5304-79ab", "type": "selectionEntry"},
                               {
                                 "name": "Linked Heavy Bolter",
                                 "id": "d68d-6f61-03ed-9cc7",
                                 "defaultAmount": "2",
+                                "exportable": false,
                                 "hidden": false,
                                 "import": true,
                                 "targetId": "7812-1637-a222-add0",
@@ -57928,11 +57572,12 @@
                             "type": "upgrade",
                             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
                             "entryLinks": [
-                              {"name": "Target Finders", "id": "cd1f-9f0e-6df5-3fe5", "hidden": false, "targetId": "7ed7-6c7e-5304-79ab", "type": "selectionEntry"},
+                              {"name": "Target Finders", "id": "cd1f-9f0e-6df5-3fe5", "exportable": false, "hidden": false, "targetId": "7ed7-6c7e-5304-79ab", "type": "selectionEntry"},
                               {
                                 "name": "Linked Heavy Flamer",
                                 "id": "d968-fd3e-7a7d-1d10",
                                 "defaultAmount": "2",
+                                "exportable": false,
                                 "hidden": false,
                                 "import": true,
                                 "targetId": "813b-3d8e-9dcf-637e",
@@ -58007,6 +57652,14 @@
                         ],
                         "entryLinks": [
                           {
+                            "name": "Magma Cannon",
+                            "id": "837b-c737-88ce-5e2b",
+                            "hidden": false,
+                            "targetId": "55ce-6c7c-39c6-6737",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}]
+                          },
+                          {
                             "name": "Plasma Blastgun",
                             "id": "f24b-e41d-7237-f2db",
                             "hidden": false,
@@ -58016,33 +57669,6 @@
                             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}]
                           },
                           {"name": "Vulcan Mega Bolter", "id": "144a-b6c7-0044-bed0", "hidden": false, "import": true, "targetId": "0e3f-6269-f4a1-9dbf", "type": "selectionEntry"}
-                        ],
-                        "selectionEntries": [
-                          {
-                            "name": "Magma Cannon",
-                            "id": "55ce-6c7c-39c6-6737",
-                            "hidden": false,
-                            "import": true,
-                            "type": "upgrade",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
-                            "profiles": [
-                              {
-                                "name": "Magma Cannon",
-                                "id": "9d38-30bb-9dcd-5306",
-                                "hidden": false,
-                                "typeId": "4425-e2ff-1ce0-83c1",
-                                "typeName": "Ranged Weapons",
-                                "characteristics": [
-                                  {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                                  {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-                                  {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-                                  {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-                                  {"name": "Rules", "$text": "Melta, Macro, Blast (Large)", "typeId": "ba87-19e9-d692-6e30"}
-                                ]
-                              }
-                            ]
-                          }
                         ]
                       }
                     ]

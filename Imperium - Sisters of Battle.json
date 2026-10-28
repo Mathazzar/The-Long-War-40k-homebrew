@@ -256,7 +256,6 @@
         "constraints": [{"id": "5863-2fa4-b0a4-d8e0", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
       },
       {"name": "Adeptus Sororitas", "id": "9433-127f-a5c9-3ec2", "hidden": false},
-      {"name": "Iron Crawler", "id": "db48-7610-f6a7-46fd", "hidden": false},
       {"name": "[Valorous Heart]", "id": "3259-7973-4e6d-a63b", "hidden": false},
       {"name": "[Argent Shroud]", "id": "ae8a-b15a-b9f1-d8d1", "hidden": false},
       {"name": "[Bloody Rose]", "id": "d33c-ee93-fbda-fbd4", "hidden": false},

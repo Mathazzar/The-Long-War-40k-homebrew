@@ -13698,26 +13698,6 @@
         ]
       },
       {
-        "name": "Voltaghiest Field",
-        "id": "0f30-6ea7-aebe-9d80",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "81f7-8b8b-0ff6-aa6e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "81f7-8b8b-0ff6-aa6e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Voltaghiest Field",
-            "id": "f8de-c05b-509e-bc36",
-            "description": "A model with this wargear has a 5+ Invulnerable save. A model with this special rule gains the Hammer of Wrath (1) special rule. The first time this unit would win Combat in the Combat Phase when calculating Combat Resolution, this unit’s Invulnerable save increases to 4+ for the rest of the battle.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Sicarian Alpha",
         "id": "0b5f-c54b-1e3c-c3e4",
         "defaultAmount": "1",
