@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 16,
+    "revision": 17,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -7227,6 +7227,29 @@
             "id": "223b-e559-ddf8-f33d",
             "description": "Enemy units may not arrive from Deep Strike within 9” of a model equipped with this Wargear.",
             "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Enhanced Bionics",
+        "id": "e4b6-a746-d25a-10e7",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "6d84-fac5-77c6-2cdc",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "db52-3aac-dfcf-09ac-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "db52-3aac-dfcf-09ac-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Enhanced Bionics",
+            "id": "9310-e177-80b5-e2de",
+            "description": "A model equipped with this wargear gains the Feel No Pain (5+) special rule.",
+            "hidden": false,
+            "page": ""
           }
         ]
       }

@@ -7,7 +7,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 5,
+    "publicationId": "00c7-1ca1-5217-deec",
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "8b91-df7f-5f7b-b9cc", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [

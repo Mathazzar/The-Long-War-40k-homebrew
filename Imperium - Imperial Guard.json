@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 11,
+    "publicationId": "5b81-795c-38b3-285c",
+    "revision": 12,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -43,26 +44,86 @@
       {"name": "Rough Rider Command Squad", "id": "f485-d60c-52ec-7589", "hidden": false},
       {"name": "Leman Russ Tank Commander", "id": "b6b2-a364-9912-df88", "hidden": false},
       {"name": "Rogal Dorn Heavy Tank Commander", "id": "8840-0aa9-06f9-7908", "hidden": false},
-      {"name": "Lord Solar Leontus", "id": "03fc-2c2d-d87c-2ebe", "hidden": false},
+      {
+        "name": "Lord Solar Leontus",
+        "id": "03fc-2c2d-d87c-2ebe",
+        "hidden": false,
+        "constraints": [{"id": "a75b-50d7-5fc4-f9d2", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Cadian Shock Troopers]", "id": "cbaf-7cc3-ad72-ea85", "hidden": false},
-      {"name": "Lord Castellan Creed & Colour Sergeant Kell", "id": "dccc-feb4-9bdf-b239", "hidden": false},
-      {"name": "Lord Castellan Ursula Creed", "id": "f0ae-aae1-92ae-618c", "hidden": false},
-      {"name": "Knight Commander Pask in Leman Russ Tank", "id": "af1f-086f-79eb-429c", "hidden": false},
+      {
+        "name": "Lord Castellan Creed & Colour Sergeant Kell",
+        "id": "dccc-feb4-9bdf-b239",
+        "hidden": false,
+        "constraints": [{"id": "0cb4-b87d-c8df-cfb0", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Lord Castellan Ursula Creed",
+        "id": "f0ae-aae1-92ae-618c",
+        "hidden": false,
+        "constraints": [{"id": "87a2-b509-e486-3eff", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Knight Commander Pask in Leman Russ Tank",
+        "id": "af1f-086f-79eb-429c",
+        "hidden": false,
+        "constraints": [{"id": "16c5-b44c-762c-91ee", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Armageddon Steel Legion]", "id": "28a3-c3e1-fb6b-55d0", "hidden": false},
-      {"name": "Commissar Yarrick", "id": "94c9-8152-ceb3-e1c7", "hidden": false},
-      {"name": "Colonel “Iron Hand” Straken", "id": "79a0-b3f0-353b-9421", "hidden": false},
+      {
+        "name": "Commissar Yarrick",
+        "id": "94c9-8152-ceb3-e1c7",
+        "hidden": false,
+        "constraints": [{"id": "3f3a-5a34-79c9-2e3f", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Colonel “Iron Hand” Straken",
+        "id": "79a0-b3f0-353b-9421",
+        "hidden": false,
+        "constraints": [{"id": "5fe2-51d6-ec8d-9d0c", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Catachan Jungle Fighters]", "id": "b0a4-a647-14d8-968a", "hidden": false},
       {"name": "[Death Korp of Krieg]", "id": "82a7-74a2-c54b-517f", "hidden": false},
-      {"name": "Marshal Karis Venner", "id": "7f07-dbcb-b13c-71f6", "hidden": false},
-      {"name": "Lord Marshal Varnan Dreir", "id": "70a7-c450-7da5-5150", "hidden": false},
+      {
+        "name": "Marshal Karis Venner",
+        "id": "7f07-dbcb-b13c-71f6",
+        "hidden": false,
+        "constraints": [{"id": "8419-76f1-af47-b72f", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Lord Marshal Varnan Dreir",
+        "id": "70a7-c450-7da5-5150",
+        "hidden": false,
+        "constraints": [{"id": "3113-4dbf-b737-5e50", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Death Rider Command Squad", "id": "1e13-3cb4-856c-64c2", "hidden": false},
-      {"name": "Commander Kubrik Chenkov", "id": "6d0b-d02a-41fb-0ef9", "hidden": false},
+      {
+        "name": "Commander Kubrik Chenkov",
+        "id": "6d0b-d02a-41fb-0ef9",
+        "hidden": false,
+        "constraints": [{"id": "7432-18a7-5cfe-4cc9", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Valhallan Ice Warriors]", "id": "45a5-dfef-ff17-2c00", "hidden": false},
       {"name": "Commissar", "id": "46de-5f9b-d600-d22e", "hidden": false},
-      {"name": "Commissar Ciaphas Cain & Jurgen", "id": "9a6d-0fd4-00c5-9c16", "hidden": false},
-      {"name": "Commissar Ibram Gaunt", "id": "b236-2d26-835c-e210", "hidden": false},
+      {
+        "name": "Commissar Ciaphas Cain & Jurgen",
+        "id": "9a6d-0fd4-00c5-9c16",
+        "hidden": false,
+        "constraints": [{"id": "3f55-85c1-07be-30ea", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Commissar Ibram Gaunt",
+        "id": "b236-2d26-835c-e210",
+        "hidden": false,
+        "constraints": [{"id": "f654-2cf5-57d6-dc1c", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Tanith First & Only]", "id": "ba04-86da-92a0-c518", "hidden": false},
-      {"name": "Commissar Thenia Graves", "id": "f4f6-fd4b-ba4a-10fe", "hidden": false},
+      {
+        "name": "Commissar Thenia Graves",
+        "id": "f4f6-fd4b-ba4a-10fe",
+        "hidden": false,
+        "constraints": [{"id": "dc85-4cde-665a-59dd", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Guardsmen Squad", "id": "0f5b-a735-8b0e-3df9", "hidden": false},
       {"name": "Veteran Squad", "id": "b902-7ce1-c03c-f340", "hidden": false},
       {"name": "Conscript Squad", "id": "bab5-156c-7838-f5a7", "hidden": false},

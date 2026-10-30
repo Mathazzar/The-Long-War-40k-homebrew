@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 4,
+    "publicationId": "dc2f-4748-e72e-f22e",
+    "revision": 5,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "ebc0-ca6c-2f5c-465b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -190,7 +191,12 @@
           }
         ]
       },
-      {"name": "Trajin Valoris", "id": "531d-4f15-ab35-11bc", "hidden": false},
+      {
+        "name": "Trajin Valoris",
+        "id": "531d-4f15-ab35-11bc",
+        "hidden": false,
+        "constraints": [{"id": "f646-6dd9-fa82-d06c", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {
         "name": "Custodian Guard",
         "id": "9b5d-a315-634c-6489",

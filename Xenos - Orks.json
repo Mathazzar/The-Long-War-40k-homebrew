@@ -7,7 +7,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 7,
+    "publicationId": "3cdc-bfbe-759f-8d6b",
+    "revision": 8,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "[Klan]", "id": "5ee1-b487-b991-0e62", "hidden": false},

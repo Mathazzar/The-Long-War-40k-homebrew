@@ -7,7 +7,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 2,
+    "publicationId": "6d0a-fada-b76c-024b",
+    "revision": 3,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Xenos - Eldar shared rules", "id": "fba9-9664-ad36-0f84", "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -382,7 +383,7 @@
         ]
       },
       {
-        "name": "Allegiance",
+        "name": "Masque Allegiance",
         "id": "5d32-6031-d15e-1ea3",
         "defaultAmount": "1",
         "hidden": false,
@@ -417,7 +418,7 @@
         "modifiers": [{"affects": "entries.recursive.aafd-33da-ca60-4fef", "field": "add-info", "scope": "force", "type": "add", "value": "c9ef-7877-7ac6-49eb"}],
         "selectionEntryGroups": [
           {
-            "name": "Allegiances",
+            "name": "Masque Allegiances",
             "id": "8bf2-deeb-16ec-caa7",
             "hidden": false,
             "constraints": [
@@ -2698,7 +2699,7 @@
           {"name": "Faction: Harlequin", "id": "75cf-cd1e-aef1-f318", "hidden": false, "primary": false, "targetId": "1ce1-32fd-9639-15ae"},
           {"name": "Fast", "id": "2505-65c6-a50e-ff4c", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"},
           {"name": "Jetbike", "id": "4209-9386-6acd-7962", "hidden": false, "primary": false, "targetId": "0709-887f-8d36-2d6b"},
-          {"name": "Sky Weaver", "id": "5271-9f4e-c8ec-ad97", "hidden": false, "primary": false, "targetId": "16af-8fa7-8d34-819a"}
+          {"name": "Sky Weavers", "id": "5271-9f4e-c8ec-ad97", "hidden": false, "primary": false, "targetId": "16af-8fa7-8d34-819a"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
         "entryLinks": [
