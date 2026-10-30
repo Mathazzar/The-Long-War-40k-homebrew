@@ -6,12 +6,13 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 12,
     "library": true,
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Eldar", "id": "81ca-5e36-e460-bc33", "hidden": false},
       {"name": "Mercenary", "id": "c469-7342-ee43-06cf", "hidden": false},
-      {"name": "Webway Gate", "id": "ad25-2b94-85bb-fa8b", "hidden": false}
+      {"name": "Webway Gate", "id": "ad25-2b94-85bb-fa8b", "hidden": false},
+      {"name": "Wraith", "id": "6aca-b7e7-2f1b-5fce", "hidden": false}
     ],
     "sharedRules": [
       {
@@ -21,7 +22,20 @@
         "hidden": false,
         "page": "3",
         "publicationId": "00c7-1ca1-5217-deec"
-      }
+      },
+      {
+        "name": "Jetbike",
+        "id": "8e1c-e4ef-0bdb-145a",
+        "description": "A model that is equipped with Jetbike becomes the Jetbike type. The Jetbike increases the models Toughness (T) by 1. The Jetbike is equipped with Linked Shuriken Catapults.",
+        "hidden": false
+      },
+      {
+        "name": "Monofilament",
+        "id": "fe7f-f424-2856-ab7f",
+        "description": "When rolling to wound or penetrate against a target with this weapon, instead of using the targets Toughness (T) characteristic roll to wound by comparing the targets Initiative (I) characteristic to the weapons Strength (S) characteristic on the wound chart. Monofilament weapons are resolved against the AV of Vehicles, Fortifications, Titans, Knights and Aircraft type units as normal. For Instant Death, the weapon is Instant Death if its Strength (S) characteristic is double the targets Initiative (I) characteristic.",
+        "hidden": false
+      },
+      {"name": "Eldar Reflexes", "id": "bf1b-9d95-bc18-891b", "comment": "todo: No profile provided in reference", "hidden": false}
     ],
     "sharedSelectionEntries": [
       {
@@ -187,6 +201,7 @@
         "name": "Haywire Grenades",
         "id": "a7eb-898c-182b-9889",
         "collective": true,
+        "comment": "S0AP-",
         "defaultAmount": "1",
         "hidden": false,
         "import": true,
@@ -208,8 +223,8 @@
               {"name": "Type", "$text": "Grenades", "typeId": "96e6-b391-984f-0904"},
               {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
               {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "46", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Strength", "$text": "\n", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "\n", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Haywire (4+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
@@ -275,6 +290,280 @@
             ]
           },
           {"field": "category", "scope": "unit", "type": "add", "value": "544d-0eb3-a4ab-4540"}
+        ]
+      },
+      {
+        "name": "Wraithbone plate",
+        "id": "4f82-4edf-c1ee-0dc4",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "40cc-577c-611c-9bed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "40cc-577c-611c-9bed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [{"name": "Wraithbone plate", "id": "efe5-b004-e13c-2489", "description": "A living heavy organic armour plate. Confers a 2+ armour save.", "hidden": false}]
+      },
+      {
+        "name": "Shuriken Cannon",
+        "id": "da42-2ff9-2af4-da04",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Shuriken Cannon",
+            "id": "64d4-bc5a-35a3-437f",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Haywire cannon",
+        "id": "651f-72b1-6085-9b96",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Haywire cannon",
+            "id": "43fa-3b59-2c0b-0871",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Haywire (4+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vectored Engines",
+        "id": "8e18-8a6d-d211-b7aa",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e7d1-fe22-5306-3770-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "e7d1-fe22-5306-3770-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [{"name": "Vectored Engines", "id": "b847-eca0-31dd-814a", "description": "A model with this wargear gains the Deep Strike special rule.", "hidden": false}]
+      },
+      {
+        "name": "Star Engines",
+        "id": "fd88-42d4-50f4-5caf",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "94c6-9d66-8b0c-a156-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "94c6-9d66-8b0c-a156-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {"name": "Star Engines", "id": "4d5c-43fd-589b-44e8", "description": "Increase a model with this wargear’s Movement (M) characteristic by 2”", "hidden": false}
+        ]
+      },
+      {
+        "name": "Shuriken Pistol",
+        "id": "626b-4a32-93b2-1d49",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Shuriken Pistol",
+            "id": "a5cc-6d65-593a-e7f2",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fusion Pistol",
+        "id": "f410-a441-c644-b8d9",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Fusion Pistol",
+            "id": "1c02-07bb-54ea-cae7",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phantasm Grenades",
+        "id": "7ba2-4ba0-6383-3cf8",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "13",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "upgrade",
+        "constraints": [{"id": "17a8-85ed-4797-780b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+        "profiles": [
+          {
+            "name": "Phantasm Grenades",
+            "id": "9d4a-273f-2514-859c",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ghost Glaive",
+        "id": "b625-7cd1-4804-957d",
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Ghost Glaive",
+            "id": "c4e6-2fd7-ee0f-15fa",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Sweeping (2)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Neuro Disruptor",
+        "id": "8f51-3ed7-3c75-c107",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "14",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Neuro Disruptor",
+            "id": "52d2-87a0-9845-c963",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Bane", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aeldari Missile Launcher",
+        "id": "06af-85e5-35a5-a7f7",
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Aeldari Missile Launcher (Sunburst)",
+            "id": "4c96-15bc-9c82-9836",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Small), Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Aeldari Missile Launcher (Starshot)",
+            "id": "0457-2969-a210-0a7c",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
         ]
       }
     ]

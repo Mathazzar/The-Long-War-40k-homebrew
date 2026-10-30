@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 6,
+    "revision": 7,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "c5da-a0aa-2802-2c16", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -725,7 +725,6 @@
         ]
       },
       {"name": "War Walker", "id": "cda0-3edd-1acd-81ba", "hidden": false},
-      {"name": "Wraith", "id": "6aca-b7e7-2f1b-5fce", "hidden": false},
       {
         "name": "Wraith Guard",
         "id": "ccda-f648-8323-d808",
@@ -4299,12 +4298,6 @@
         "publicationId": "26ce-f822-8c36-1287"
       },
       {
-        "name": "Monofilament",
-        "id": "fe7f-f424-2856-ab7f",
-        "description": "When rolling to wound or penetrate against a target with this weapon, instead of using the targets Toughness (T) characteristic roll to wound by comparing the targets Initiative (I) characteristic to the weapons Strength (S) characteristic on the wound chart. Monofilament weapons are resolved against the AV of Vehicles, Fortifications, Titans, Knights and Aircraft type units as normal. For Instant Death, the weapon is Instant Death if its Strength (S) characteristic is double the targets Initiative (I) characteristic.",
-        "hidden": false
-      },
-      {
         "name": "Wild Host",
         "id": "0949-e7f3-5deb-7927",
         "description": "Saim-Hann units gain the Furious Charge special rule.",
@@ -4406,12 +4399,6 @@
         "name": "Skyleap",
         "id": "eefe-cd19-d0d8-084a",
         "description": "Instead of setting to Overwatch, this unit may set to Skyleap instead. If a unit sets to Skyleap, it may be removed from the board and placed in reserves at the end of the Charge Phase. It may arrive again later in the game via the Deep Strike special rule. The unit scatters as normal but is never treated as having rolled a Mishap on the Deep Strike Table. If a Mishap result is rolled, treat it as Minimal Deviation roll instead",
-        "hidden": false
-      },
-      {
-        "name": "Jetbike",
-        "id": "8e1c-e4ef-0bdb-145a",
-        "description": "A model that is equipped with Jetbike becomes the Jetbike type. The Jetbike increases the models Toughness (T) by 1. The Jetbike is equipped with Linked Shuriken Catapults.",
         "hidden": false
       }
     ],
@@ -4521,32 +4508,6 @@
             "id": "0dfa-838e-75d0-3662",
             "description": "A unit which includes a model equipped with this wargear reduces the Initiative (I) of enemy units within 3” by 1.",
             "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Shuriken Pistol",
-        "id": "626b-4a32-93b2-1d49",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Shuriken Pistol",
-            "id": "a5cc-6d65-593a-e7f2",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-            ]
           }
         ]
       },
@@ -4679,21 +4640,6 @@
         ]
       },
       {
-        "name": "Wraithbone plate",
-        "id": "4f82-4edf-c1ee-0dc4",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "6",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "40cc-577c-611c-9bed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "40cc-577c-611c-9bed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [{"name": "Wraithbone plate", "id": "efe5-b004-e13c-2489", "description": "A living heavy organic armour plate. Confers a 2+ armour save.", "hidden": false}]
-      },
-      {
         "name": "Swooping Hawk Wings",
         "id": "988f-46a2-b6dc-72dc",
         "defaultAmount": "1",
@@ -4752,59 +4698,6 @@
         ]
       },
       {
-        "name": "Star Engines",
-        "id": "fd88-42d4-50f4-5caf",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "7",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "94c6-9d66-8b0c-a156-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "94c6-9d66-8b0c-a156-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {"name": "Star Engines", "id": "4d5c-43fd-589b-44e8", "description": "Increase a model with this wargear’s Movement (M) characteristic by 2”", "hidden": false}
-        ]
-      },
-      {
-        "name": "Jetbike",
-        "id": "f1ae-a0bb-59d7-2e24",
-        "hidden": false,
-        "import": true,
-        "page": "7",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "entryLinks": [
-          {
-            "name": "Linked Shuriken Catapult",
-            "id": "2091-c376-d087-aa26",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "targetId": "f179-7916-8dc3-b101",
-            "type": "selectionEntry",
-            "constraints": [
-              {"id": "47fc-759e-b30d-2d71-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "47fc-759e-b30d-2d71-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ]
-          }
-        ],
-        "infoLinks": [{"name": "Jetbike", "id": "deee-b56d-a354-8263", "hidden": false, "targetId": "8e1c-e4ef-0bdb-145a", "type": "rule"}],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
-              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "14"},
-              {"field": "category", "scope": "unit", "type": "add", "value": "0709-887f-8d36-2d6b"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Spirit Stones",
         "id": "d6ae-153c-5893-2e95",
         "defaultAmount": "1",
@@ -4827,21 +4720,6 @@
         ]
       },
       {
-        "name": "Vectored Engines",
-        "id": "8e18-8a6d-d211-b7aa",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "7",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "e7d1-fe22-5306-3770-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "e7d1-fe22-5306-3770-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [{"name": "Vectored Engines", "id": "b847-eca0-31dd-814a", "description": "A model with this wargear gains the Deep Strike special rule.", "hidden": false}]
-      },
-      {
         "name": "Wire Weave Net",
         "id": "6593-87ee-9711-5e90",
         "hidden": false,
@@ -4855,32 +4733,6 @@
             "id": "a192-f9cc-eee6-4dbd",
             "description": "A unit that contains a model equipped with this wargear always counts any charges made against it as Disordered.",
             "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Linked Shuriken Catapult",
-        "id": "f179-7916-8dc3-b101",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Linked Shuriken Catapult",
-            "id": "53b0-e776-8200-e863",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
-            ]
           }
         ]
       },
@@ -4906,84 +4758,6 @@
               {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Fusion Pistol",
-        "id": "f410-a441-c644-b8d9",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Fusion Pistol",
-            "id": "1c02-07bb-54ea-cae7",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Linked Shuriken Cannon",
-        "id": "1b7e-7196-5447-b1ae",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Shuriken Cannon",
-            "id": "4ade-1df0-6a39-2cfb",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Linked, Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Flamer",
-        "id": "dba4-3860-4a08-2491",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Flamer",
-            "id": "fcfd-42f2-4f0c-38c1",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -5036,32 +4810,6 @@
               {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Shuriken Cannon",
-        "id": "da42-2ff9-2af4-da04",
-        "hidden": false,
-        "import": true,
-        "page": "10",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Shuriken Cannon",
-            "id": "64d4-bc5a-35a3-437f",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -5244,47 +4992,6 @@
               {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Blast (Large)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Aeldari Missile Launcher",
-        "id": "06af-85e5-35a5-a7f7",
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Aeldari Missile Launcher (Sunburst)",
-            "id": "4c96-15bc-9c82-9836",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Variable", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          },
-          {
-            "name": "Aeldari Missile Launcher (Starshot)",
-            "id": "0457-2969-a210-0a7c",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Variable", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -6175,31 +5882,6 @@
         ]
       },
       {
-        "name": "Ghost Glaive",
-        "id": "b625-7cd1-4804-957d",
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Ghost Glaive",
-            "id": "c4e6-2fd7-ee0f-15fa",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Sweeping (2)", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Mirror Sword",
         "id": "053d-db54-f0dd-dc93",
         "hidden": false,
@@ -6888,7 +6570,7 @@
                     "id": "9a07-be51-f6dc-8f35",
                     "hidden": false,
                     "import": true,
-                    "targetId": "dba4-3860-4a08-2491",
+                    "targetId": "958b-0867-67db-e40a",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
@@ -14770,7 +14452,7 @@
                     "id": "44f8-bb0a-18cf-e965",
                     "hidden": false,
                     "import": true,
-                    "targetId": "dba4-3860-4a08-2491",
+                    "targetId": "958b-0867-67db-e40a",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
@@ -15132,6 +14814,94 @@
                   }
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Jetbike",
+        "id": "f1ae-a0bb-59d7-2e24",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "entryLinks": [
+          {
+            "name": "Linked Shuriken Catapult",
+            "id": "2091-c376-d087-aa26",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "f179-7916-8dc3-b101",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "47fc-759e-b30d-2d71-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "47fc-759e-b30d-2d71-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Jetbike", "id": "deee-b56d-a354-8263", "hidden": false, "targetId": "8e1c-e4ef-0bdb-145a", "type": "rule"}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "unit", "type": "remove", "value": "560f-2dca-57fb-5997"},
+              {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "set", "value": "14"},
+              {"field": "category", "scope": "unit", "type": "add", "value": "0709-887f-8d36-2d6b"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Shuriken Catapult",
+        "id": "f179-7916-8dc3-b101",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Linked Shuriken Catapult",
+            "id": "53b0-e776-8200-e863",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Linked Shuriken Cannon",
+        "id": "1b7e-7196-5447-b1ae",
+        "hidden": false,
+        "import": true,
+        "page": "10",
+        "publicationId": "26ce-f822-8c36-1287",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Shuriken Cannon",
+            "id": "4ade-1df0-6a39-2cfb",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Linked, Pinning", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
