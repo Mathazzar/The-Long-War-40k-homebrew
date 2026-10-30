@@ -7,7 +7,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 4,
+    "revision": 5,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "8b91-df7f-5f7b-b9cc", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -1904,7 +1904,7 @@
               },
               {"name": "Eldar Crew weapon", "id": "7c50-dfa0-ac3b-c0f3", "hidden": false, "import": true, "targetId": "6032-f099-86fc-8651", "type": "selectionEntry"},
               {"name": "Plasma Grenades", "id": "3a7b-fc40-0678-4e36", "hidden": false, "import": true, "targetId": "250f-ef3e-a835-bee7", "type": "selectionEntry"},
-              {"name": "Haywire Grenades", "id": "efff-4b97-3938-a206", "hidden": false, "import": true, "targetId": "a7eb-898c-182b-9889", "type": "selectionEntry"},
+              {"name": "Haywire Grenades", "id": "efff-4b97-3938-a206", "hidden": false, "import": true, "targetId": "4f8a-79b9-7853-79be", "type": "selectionEntry"},
               {"name": "Enhanced Either Sails", "id": "31d7-630a-b266-d89c", "hidden": false, "import": true, "targetId": "8d9c-3507-70b4-b1ea", "type": "selectionEntry"},
               {"name": "Retro Fire Jets", "id": "90bc-2475-71fa-ae21", "hidden": false, "import": true, "targetId": "7d58-07c5-f22c-9ead", "type": "selectionEntry"},
               {"name": "Splinter Racks", "id": "c283-f1b4-4b30-3bd8", "hidden": false, "import": true, "targetId": "2818-91b6-7678-45e3", "type": "selectionEntry"}
@@ -4330,8 +4330,7 @@
         "id": "6ff7-b402-c829-f532",
         "description": "At the start of the combat phase, select a single enemy model in Melee range. Halve its Weapon Skill (WS) characteristic until the end of the phase.",
         "hidden": false
-      },
-      {"name": "Eldar Reflexes", "id": "bf1b-9d95-bc18-891b", "comment": "todo: No profile provided in reference", "hidden": false}
+      }
     ],
     "sharedSelectionEntries": [
       {
@@ -5319,33 +5318,6 @@
         ]
       },
       {
-        "name": "Haywire cannon",
-        "id": "651f-72b1-6085-9b96",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "11",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Haywire cannon",
-            "id": "43fa-3b59-2c0b-0871",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Haywire (4+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Haywire Blaster",
         "id": "3b55-7d90-cffd-94e7",
         "collective": true,
@@ -5778,35 +5750,6 @@
         ]
       },
       {
-        "name": "Phantasm Grenades",
-        "id": "7ba2-4ba0-6383-3cf8",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "13",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "constraints": [{"id": "17a8-85ed-4797-780b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-        "profiles": [
-          {
-            "name": "Phantasm Grenades",
-            "id": "9d4a-273f-2514-859c",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Pinning", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Talos Ichor Injector",
         "id": "aa4a-4aed-7696-7ae3",
         "collective": true,
@@ -6117,33 +6060,6 @@
               {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Precision Hits", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Neuro Disruptor",
-        "id": "8f51-3ed7-3c75-c107",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "00c7-1ca1-5217-deec",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Neuro Disruptor",
-            "id": "52d2-87a0-9845-c963",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Bane", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
@@ -10510,7 +10426,7 @@
                 "type": "selectionEntry",
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
-              {"name": "Haywire Grenades", "id": "e2b4-d099-c290-c7e4", "hidden": false, "import": true, "targetId": "a7eb-898c-182b-9889", "type": "selectionEntry"},
+              {"name": "Haywire Grenades", "id": "e2b4-d099-c290-c7e4", "hidden": false, "import": true, "targetId": "4f8a-79b9-7853-79be", "type": "selectionEntry"},
               {"name": "Wych Suit", "id": "4f39-b3d3-ffd2-2bb7", "hidden": false, "import": true, "targetId": "3d7e-10de-d6df-9bdb", "type": "selectionEntry"}
             ],
             "profiles": [
@@ -11445,6 +11361,39 @@
                   {"name": "Sv", "$text": "6", "typeId": "c9ff-af68-092c-c4b3"}
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Haywire Grenades",
+        "id": "4f8a-79b9-7853-79be",
+        "collective": true,
+        "comment": "S6AP5",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "13",
+        "publicationId": "00c7-1ca1-5217-deec",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f607-e473-4bdc-e65a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "30bc-f46e-3b32-726c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Haywire Grenades",
+            "id": "5c3d-1433-afa1-81dd",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Grenades", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Haywire (4+)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]
