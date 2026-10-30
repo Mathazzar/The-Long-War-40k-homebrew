@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 5,
+    "publicationId": "6d84-fac5-77c6-2cdc",
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0e79-b452-6d4b-0244", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -11151,29 +11152,6 @@
             "name": "Blessed Autosimulacra",
             "id": "3ec2-4c4f-3df8-7dac",
             "description": "A model equipped with this wargear gains the Regeneration Special rule. In addition, each time the unit suffers a wound or Penetrating hit, it can roll a D6. On a 5+ that wound or Penetrating hit is ignored.",
-            "hidden": false,
-            "page": ""
-          }
-        ]
-      },
-      {
-        "name": "Enhanced Bionics",
-        "id": "e4b6-a746-d25a-10e7",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "5",
-        "publicationId": "6d84-fac5-77c6-2cdc",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "db52-3aac-dfcf-09ac-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "db52-3aac-dfcf-09ac-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Enhanced Bionics",
-            "id": "9310-e177-80b5-e2de",
-            "description": "A model equipped with this wargear gains the Feel No Pain (5+) special rule.",
             "hidden": false,
             "page": ""
           }

@@ -7,7 +7,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 7,
+    "publicationId": "26ce-f822-8c36-1287",
+    "revision": 8,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "c5da-a0aa-2802-2c16", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -301,12 +302,27 @@
       {"name": "Warp Spiders", "id": "6c56-907c-21ac-b8da", "hidden": false},
       {"name": "Irilyth", "id": "8f73-0491-3dc0-308f", "hidden": false},
       {"name": "[Ulthwe]", "id": "a1ee-80a1-657f-468c", "hidden": false},
-      {"name": "Eldrad Ulthran", "id": "ebf3-87f4-ad62-fb1f", "hidden": false},
+      {
+        "name": "Eldrad Ulthran",
+        "id": "ebf3-87f4-ad62-fb1f",
+        "hidden": false,
+        "constraints": [{"id": "cd35-469f-2532-f2a1", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Alaitoc]", "id": "9729-8ca5-0a13-2d60", "hidden": false},
-      {"name": "Illic Nightspear", "id": "3689-c0b6-6bd8-34bf", "hidden": false},
+      {
+        "name": "Illic Nightspear",
+        "id": "3689-c0b6-6bd8-34bf",
+        "hidden": false,
+        "constraints": [{"id": "b1d4-b6ef-9335-0643", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "[Iyanden]", "id": "f276-1231-065c-4871", "hidden": false},
       {"name": "Corsair Prince", "id": "b3fd-9232-822d-df5f", "hidden": false},
-      {"name": "Prince Yriel", "id": "0d6a-3334-04ee-9f20", "hidden": false},
+      {
+        "name": "Prince Yriel",
+        "id": "0d6a-3334-04ee-9f20",
+        "hidden": false,
+        "constraints": [{"id": "753d-bf8f-693c-e1b2", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {
         "name": "Militia",
         "id": "53aa-6dac-08ba-3ec2",
@@ -1002,7 +1018,12 @@
       {"name": "Lynx", "id": "0c04-dcd9-a888-4634", "hidden": false},
       {"name": "Weapons Platform", "id": "d7dd-90c1-f852-5e77", "hidden": false},
       {"name": "Wraith Knight", "id": "68df-98a5-075f-96ed", "hidden": false},
-      {"name": "Avatar of Khaine", "id": "73f3-847a-3753-ebe2", "hidden": false},
+      {
+        "name": "Avatar of Khaine",
+        "id": "73f3-847a-3753-ebe2",
+        "hidden": false,
+        "constraints": [{"id": "3178-ba87-b0b9-d793", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Cobra", "id": "110a-c6a8-7b98-0c94", "hidden": false},
       {"name": "Scorpion", "id": "c475-0ed5-4e00-6019", "hidden": false},
       {"name": "Vampire Raider", "id": "088e-ed2a-9f8e-ca5a", "hidden": false},

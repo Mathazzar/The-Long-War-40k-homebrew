@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 4,
     "library": true,
-    "revision": 8,
+    "publicationId": "2341-8754-2493-838d",
+    "revision": 9,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - Imperial Guard", "id": "70d5-ec7b-4e75-5145", "importRootEntries": false, "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"}],
     "categoryEntries": [

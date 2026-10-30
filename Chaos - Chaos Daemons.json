@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 6,
+    "publicationId": "b30d-99de-ef25-ed03",
+    "revision": 7,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Chaos - shared rules", "id": "db84-5ff1-0ca9-946f", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
     "categoryEntries": [

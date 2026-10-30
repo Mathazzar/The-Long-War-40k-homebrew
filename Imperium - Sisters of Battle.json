@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 11,
+    "publicationId": "6f16-791a-3a26-4c72",
+    "revision": 12,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0b86-c521-be39-bdb4", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [

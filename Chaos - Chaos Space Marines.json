@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 3,
+    "publicationId": "cd32-7680-79bc-f6c6",
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Chaos - shared rules", "id": "e987-556f-6a19-3a66", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
     "categoryEntries": [
@@ -263,12 +264,37 @@
       {"name": "[Red Corsairs]", "id": "5998-f72a-bfd5-ee7b", "hidden": false},
       {"name": "Chaos Lord", "id": "3e5b-c056-7d36-01f9", "hidden": false},
       {"name": "Chaos Champion", "id": "16e2-f582-924c-6c4e", "hidden": false},
-      {"name": "Haarken World Claimer", "id": "25fb-3033-0275-2cb9", "hidden": false},
-      {"name": "Abaddon, the Despoiler", "id": "f318-ef3e-1f88-0ebf", "hidden": false},
-      {"name": "Huron Blackheart", "id": "558c-92cc-a785-f8c7", "hidden": false},
-      {"name": "Fabius Bile", "id": "d918-6c5a-c4bf-2516", "hidden": false},
+      {
+        "name": "Haarken World Claimer",
+        "id": "25fb-3033-0275-2cb9",
+        "hidden": false,
+        "constraints": [{"id": "ca24-1cdc-c59c-ed45", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Abaddon, the Despoiler",
+        "id": "f318-ef3e-1f88-0ebf",
+        "hidden": false,
+        "constraints": [{"id": "0148-e665-37af-4f2e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Huron Blackheart",
+        "id": "558c-92cc-a785-f8c7",
+        "hidden": false,
+        "constraints": [{"id": "6c07-4fdf-c22c-99de", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Fabius Bile",
+        "id": "d918-6c5a-c4bf-2516",
+        "hidden": false,
+        "constraints": [{"id": "fdbd-4687-bf47-5fb1", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Fallen", "id": "9a0f-b06b-c674-694b", "hidden": false},
-      {"name": "Cypher", "id": "0945-41db-6c5e-211e", "hidden": false},
+      {
+        "name": "Cypher",
+        "id": "0945-41db-6c5e-211e",
+        "hidden": false,
+        "constraints": [{"id": "6374-9cf2-db7a-a9e7", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Inductii", "id": "9790-8c96-9b84-3b23", "hidden": false},
       {"name": "Legionnaire Squad", "id": "a2db-fed9-5b35-024f", "hidden": false},
       {

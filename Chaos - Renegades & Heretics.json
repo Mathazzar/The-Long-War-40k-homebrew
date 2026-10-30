@@ -6,7 +6,8 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 9,
     "library": false,
-    "revision": 3,
+    "publicationId": "37ca-6494-9a87-a7cb",
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Chaos - shared rules", "id": "63e7-0886-105d-c2d6", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
     "categoryEntries": [
@@ -105,7 +106,12 @@
           }
         ]
       },
-      {"name": "Vashtorr the Arkifane", "id": "ef6d-4792-74e4-f271", "hidden": false},
+      {
+        "name": "Vashtorr the Arkifane",
+        "id": "ef6d-4792-74e4-f271",
+        "hidden": false,
+        "constraints": [{"id": "5e19-90ea-5174-2156", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {"name": "Renegade Malcador Command Tank", "id": "4630-4f1f-8c7a-180c", "hidden": false},
       {"name": "Enslaver", "id": "5aae-afd6-fa43-f046", "hidden": false},
       {"name": "Enslaver Behemoth", "id": "48f0-892f-c696-2751", "hidden": false},
@@ -216,9 +222,24 @@
       {"name": "Mind Witch", "id": "95a4-e68f-f221-b196", "hidden": false},
       {"name": "Heretek Priest", "id": "06f7-7fec-f323-3fa4", "hidden": false},
       {"name": "Tzaangor Shaman", "id": "c59a-2bff-87d2-9f08", "hidden": false},
-      {"name": "Mamon the Transfigured", "id": "4ab8-bb5e-51bc-6824", "hidden": false},
-      {"name": "Archon Urlock Ghaur", "id": "b9a3-53e4-6def-5013", "hidden": false},
-      {"name": "Vulgrar Thrice Cursed", "id": "a141-cea3-945a-9669", "hidden": false},
+      {
+        "name": "Mamon the Transfigured",
+        "id": "4ab8-bb5e-51bc-6824",
+        "hidden": false,
+        "constraints": [{"id": "5618-1e12-f074-d25e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Archon Urlock Ghaur",
+        "id": "b9a3-53e4-6def-5013",
+        "hidden": false,
+        "constraints": [{"id": "f32c-ef8a-a82e-d287", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Vulgrar Thrice Cursed",
+        "id": "a141-cea3-945a-9669",
+        "hidden": false,
+        "constraints": [{"id": "6e97-fa99-b33b-19fc", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}]
+      },
       {
         "name": "Cultist Mob",
         "id": "21fd-d7b8-1cf7-929b",
@@ -1646,7 +1667,7 @@
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
         "entryLinks": [
           {
-            "name": "Renegade Malcador Command Tank",
+            "name": "Malcador",
             "id": "0bdd-0ae3-c4aa-1f99",
             "hidden": false,
             "targetId": "5b03-e199-32b1-0ae6",
