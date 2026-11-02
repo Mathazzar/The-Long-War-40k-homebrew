@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 17,
+    "revision": 18,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -1739,7 +1739,8 @@
         "id": "d7ab-07c9-a52f-619c",
         "description": "Any Linked Autocannon or Linked Las Cannon that the Bastion is equipped with gains the Skyfire special rule.",
         "hidden": false
-      }
+      },
+      {"name": "Questing Tendrils", "id": "978a-a3a2-d225-13c9", "description": "Kraken units gain the Crusader special rule.", "hidden": false}
     ],
     "sharedSelectionEntries": [
       {
