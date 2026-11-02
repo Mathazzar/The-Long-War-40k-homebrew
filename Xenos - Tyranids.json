@@ -969,26 +969,34 @@
             "publicationId": "845e-2c61-98f7-8572",
             "constraints": [
               {
-                "id": "5eff-18bb-0d42-b1b4-min",
+                "id": "5eff-18bb-0d42-b1b4",
                 "automatic": true,
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "5eff-18bb-0d42-b1b4-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
                 "shared": true,
                 "type": "max",
                 "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "warning",
+                "type": "add",
+                "value": "Select an effect for {this}",
+                "conditions": [
+                  {
+                    "childId": "7493-c7e9-c487-65e5",
+                    "childName": "Adaptive Physiology",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "selectionEntries": [
@@ -1664,9 +1672,352 @@
           {"name": "Synapse", "id": "6f80-fdc1-ba3d-1291", "hidden": false, "primary": false, "targetId": "7150-9e0a-c94f-c255"},
           {"name": "M41", "id": "05e7-53f8-5d42-48a9", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
           {"name": "Hive Tyrant", "id": "2aff-122d-d840-7a25", "hidden": false, "primary": false, "targetId": "8041-0ca6-56eb-829c"},
-          {"name": "Monster", "id": "47d7-be0c-2036-6fb6", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"}
+          {"name": "Monster", "id": "47d7-be0c-2036-6fb6", "hidden": false, "primary": false, "targetId": "4e5f-994d-8fbf-50ba"},
+          {"name": "AdaptivePhysiology", "id": "2e39-db78-2357-2e7f", "hidden": false, "primary": false, "targetId": "cd3a-500c-6521-abb6"}
         ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}]
+        "constraints": [{"id": "478b-8014-2c1b-7c0a", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
+        "entryLinks": [
+          {
+            "name": "Tyranid Psychic Powers",
+            "id": "abac-7069-43f3-ef88",
+            "hidden": false,
+            "import": true,
+            "targetId": "a643-fa96-5620-8cab",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Warlord", "id": "1e6b-95e5-5bf3-6b6b", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
+          {"name": "Warlord Trait", "id": "2edb-d517-6b71-5422", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"},
+          {"name": "Relic", "id": "1cad-55ef-5455-7693", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Brood Guard", "id": "ccd9-1921-5f11-9858", "hidden": false, "targetId": "4cb5-2114-d9ef-06d7", "type": "rule"},
+          {"name": "Psychic Barrier", "id": "c9f9-294b-7854-adfb", "hidden": false, "targetId": "2572-29af-819f-271f", "type": "rule"},
+          {"name": "Character", "id": "4ce0-ae54-a61f-b6e9", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Synapse", "id": "93d6-a298-df1c-0139", "hidden": false, "targetId": "d8e2-597a-1dce-4295", "type": "rule"},
+          {"name": "The Swarm Descends", "id": "02a6-813e-760e-7d7e", "hidden": false, "targetId": "f0d3-fbf1-7852-7a39", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "9bd9-9641-aa5a-1937", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Move through Cover", "id": "d09c-d19a-4287-720d", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Regeneration", "id": "719f-8e69-ee7c-12e1", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "e76d-8df9-897d-d2bb", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
+          {"name": "Psyker (x)", "id": "70bf-fc74-f576-19e5", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Hive Tyrant",
+            "id": "b751-48da-5916-3c5e",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "6253-d111-9c98-08bf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "6253-d111-9c98-08bf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Prehensile Tail",
+                "id": "d363-d595-3dc2-e739",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ebb1-c0c7-7a6c-030f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "58e7-e5b1-7336-3ecf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "58e7-e5b1-7336-3ecf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Bonded Exoskeleton", "id": "1d4a-b31d-43c2-2181", "hidden": false, "import": true, "targetId": "708a-3a70-bf2a-6413", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Hive Tyrant",
+                "id": "dfb2-93e6-e5ae-92e8",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "8", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "7", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Swarmlord",
+                "id": "7352-a725-b36e-0ab9",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "9bb5-d86d-3556-dd1f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
+                "entryLinks": [
+                  {
+                    "name": "Bone Sabres",
+                    "id": "99d6-4987-c506-d68c",
+                    "defaultAmount": "2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "63e8-dbc2-d4f3-2d1b",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "8fb6-92ec-0463-0da5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                      {"id": "8fb6-92ec-0463-0da5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "model", "type": "increment", "value": 1},
+                      {"field": "category", "scope": "unit", "type": "add", "value": "5537-d172-0654-67ea"},
+                      {"affects": "profiles.Unit", "field": "name", "scope": "model", "type": "set", "value": "Swarmlord"},
+                      {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model", "type": "increment", "value": 1},
+                      {"field": "name", "scope": "model", "type": "set", "value": "Swarmlord"},
+                      {"affects": "entries.95c0-cb53-400b-7c6b", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Swarmlord",
+                    "id": "968e-09b2-844b-8e22",
+                    "description": "A Hive Tyrant with this upgrade becomes the Swarmlord. The unit increases its Psyker (x) special rule by 1 and exchanges its 2 Monsterous Scything Talons for 2 Bone Sabres. The unit gains the Battle-Hardened special rule and +1 to its Wounds (W) and Attacks (A) characteristics. The Swarmlord gains the Unique Keyword (cannot take Relics or Warlord Traits).",
+                    "hidden": false
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "2 Monstrous Scything Talons",
+                "id": "5e62-dbe7-88c7-bbb4",
+                "comment": "todo: Division of options makes no sense",
+                "hidden": false,
+                "constraints": [
+                  {"id": "c70a-536e-28e5-5e09-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "c70a-536e-28e5-5e09-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Wings",
+                    "id": "41c6-09ff-1c1d-00a3",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6ba7-e6fe-5ff6-f2c5",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
+                    "name": "Monstrous Scything Talons",
+                    "id": "f942-7aea-008f-d410",
+                    "defaultAmount": "2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "c83b-54c6-0026-e9a2",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Stranglethorn Cannon",
+                    "id": "3658-823e-107c-3748",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d4c2-1855-4ed1-853c",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "646e-c4cc-e53d-5fa3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "646e-c4cc-e53d-5fa3",
+                        "type": "decrement",
+                        "value": 1,
+                        "conditions": [
+                          {
+                            "childId": "2df4-9313-02a6-46ca",
+                            "childName": "Heavy Venom Cannon",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Monstrous Rending claws",
+                    "id": "61f1-75e5-e4fe-cf73",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ad50-d648-ed80-c7b6",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Monstrous Bonesword",
+                    "id": "90e5-c4d2-88b6-df95",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "1ea0-ea21-635e-dc5e",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {
+                    "name": "Heavy Venom Cannon",
+                    "id": "e5c3-6eee-c117-31c0",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2df4-9313-02a6-46ca",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "c212-7115-39e1-8c8f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "modifiers": [
+                      {
+                        "field": "c212-7115-39e1-8c8f",
+                        "type": "decrement",
+                        "value": 1,
+                        "conditions": [
+                          {
+                            "childId": "d4c2-1855-4ed1-853c",
+                            "childName": "Stranglethorn Cannon",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "7352-a725-b36e-0ab9",
+                        "childName": "Swarmlord",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "c70a-536e-28e5-5e09-min", "type": "set", "value": 0},
+                      {"field": "c70a-536e-28e5-5e09-max", "type": "set", "value": 0},
+                      {"field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Lash whip and Monstrous Bonesword",
+                    "id": "5155-cb77-6332-be74",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "entryLinks": [
+                      {
+                        "name": "Monstrous Bonesword",
+                        "id": "cc27-8881-effd-7802",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "1ea0-ea21-635e-dc5e",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "e57b-dce2-8a18-6db0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e57b-dce2-8a18-6db0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Lash Whip",
+                        "id": "9a80-5f7e-f16a-594f",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "8c3c-21b9-fa3e-e590",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "c8d4-5967-b0cb-45d2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "c8d4-5967-b0cb-45d2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Devourers with Brain Leech worms",
+                    "id": "2aa0-c8bf-deb8-523b",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "entryLinks": [
+                      {
+                        "name": "Devourers with Brain leech worms",
+                        "id": "af7c-b9ee-809f-a23f",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4748-6d71-14c8-2ee8",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "2a9c-c734-01e6-39c5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "2a9c-c734-01e6-39c5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Deathspitters with Maggot Worms",
+                    "id": "41be-192f-e671-243d",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                    "entryLinks": [
+                      {
+                        "name": "Deathspitters with Slimer Maggots",
+                        "id": "41d7-6483-96cf-f15e",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "26f3-2e0c-90df-7fc7",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d847-06d5-a9fd-54a9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "d847-06d5-a9fd-54a9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Broodlord",
@@ -1685,9 +2036,33 @@
           {"name": "M35", "id": "b510-544a-34dd-09cd", "hidden": false, "primary": false, "targetId": "eac0-484c-93fc-4466"},
           {"name": "Broodlord", "id": "0c9a-1155-15e5-f2b7", "hidden": false, "primary": false, "targetId": "600a-75c4-3113-b651"},
           {"name": "Psyker", "id": "18aa-4536-015f-f3ec", "hidden": false, "primary": false, "targetId": "4e4d-1694-c7c7-88b1"},
-          {"name": "Infantry", "id": "272d-e06c-4a0e-4fd6", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+          {"name": "Infantry", "id": "272d-e06c-4a0e-4fd6", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "AdaptivePhysiology", "id": "2664-e42e-de0c-83c7", "hidden": false, "primary": false, "targetId": "cd3a-500c-6521-abb6"}
         ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}]
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 100}],
+        "entryLinks": [
+          {"name": "Relic", "id": "715a-7e4a-c8b2-e789", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
+          {
+            "name": "Tyranid Psychic Powers",
+            "id": "2aae-9869-4641-57f6",
+            "hidden": false,
+            "import": true,
+            "targetId": "a643-fa96-5620-8cab",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Warlord Trait", "id": "fa92-0828-acaa-e830", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Fleet", "id": "17b2-7f2c-60bc-d447", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
+          {"name": "Lightning-Fast Reaction", "id": "e593-0484-d8f6-79d9", "hidden": false, "targetId": "e210-c18b-19ca-44ba", "type": "rule"},
+          {"name": "Move through Cover", "id": "12fe-a68d-c13c-6278", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Psyker (x)", "id": "edd1-8bf9-7783-f564", "hidden": false, "targetId": "dbd6-a688-796e-e22e", "type": "rule"},
+          {"name": "Synapse", "id": "28d5-bd06-0186-65c1", "hidden": false, "targetId": "d8e2-597a-1dce-4295", "type": "rule"},
+          {"name": "The Swarm Descends", "id": "c830-6a35-707a-b72d", "hidden": false, "targetId": "f0d3-fbf1-7852-7a39", "type": "rule"},
+          {"name": "Character", "id": "9877-a89d-68f9-c2a7", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Bulky (x)", "id": "4ae3-f780-7d0a-8538", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"}
+        ],
+        "rules": [{"name": "Brood Telepathy", "id": "2f0d-0f72-e022-8f12", "description": "This unit can only join units of Genestealer Broods.", "hidden": false}]
       },
       {
         "name": "Tervigon",
@@ -2912,7 +3287,16 @@
         "id": "47aa-12e6-d9cd-0d46",
         "description": "Kronos units must attempt to charge any units with the Psyker (x) rule or units with models with the Psyker (x) rule in them if they are eligible to charge in the charge Phase unless another unit is closer.",
         "hidden": false
-      }
+      },
+      {"name": "Questing Tendrils", "id": "978a-a3a2-d225-13c9", "description": "Kraken units gain the Crusader special rule.", "hidden": false},
+      {"name": "Psychic Barrier", "id": "2572-29af-819f-271f", "description": "This unit has a 4+ Invulnerable save.", "hidden": false},
+      {
+        "name": "Brood Guard",
+        "id": "4cb5-2114-d9ef-06d7",
+        "description": "This unit may join units of Tyrant Guard even though they do not have the Monster type. If this unit is equipped with Wings, it may not join Tyrant Guard units but may join units of Gargoyles instead.",
+        "hidden": false
+      },
+      {"name": "Lightning-Fast Reaction", "id": "e210-c18b-19ca-44ba", "description": "This unit has a 5+ Invulnerable save.", "hidden": false}
     ],
     "sharedSelectionEntries": [
       {
