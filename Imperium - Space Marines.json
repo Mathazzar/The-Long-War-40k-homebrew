@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 17,
+    "revision": 18,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -16115,19 +16115,7 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
                     "entryLinks": [
                       {"name": "Skirmisher", "id": "7cc8-d1e6-4050-54d6", "hidden": false, "import": true, "targetId": "8bd6-1e91-b6da-5902", "type": "selectionEntry"},
-                      {
-                        "name": "Camo Cloaks",
-                        "id": "f15f-820d-4bfd-503c",
-                        "defaultAmount": "1",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "e71a-93a2-ab63-9e13",
-                        "type": "selectionEntry",
-                        "constraints": [
-                          {"id": "a97d-07d0-f922-2c32-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                          {"id": "a97d-07d0-f922-2c32-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                        ]
-                      }
+                      {"name": "Camo Cloaks", "id": "f15f-820d-4bfd-503c", "hidden": false, "import": true, "targetId": "4aaa-4cad-ce29-b8ef", "type": "selectionEntry"}
                     ],
                     "modifierGroups": [
                       {
@@ -22103,12 +22091,13 @@
               {
                 "name": "Camo Cloaks",
                 "id": "d9fe-e1de-6ed9-0f59",
+                "defaultAmount": "0",
                 "hidden": false,
                 "import": true,
-                "targetId": "e71a-93a2-ab63-9e13",
+                "targetId": "4aaa-4cad-ce29-b8ef",
                 "type": "selectionEntry",
-                "constraints": [{"id": "c0c2-eb25-a4db-ec46", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                "modifiers": [{"field": "02aa-1b7d-baac-f8a2-min", "type": "set", "value": 0}]
               },
               {
                 "name": "Melta Bomb",
@@ -31045,19 +31034,7 @@
               },
               {"name": "Krak Grenades", "id": "6d35-58f8-f292-56ae", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "ddac-b9f6-0663-019f", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
-              {
-                "name": "Camo Cloaks",
-                "id": "be36-8fbe-7a0d-5e01",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "e71a-93a2-ab63-9e13",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "b4d2-9ebb-4a56-e3a4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "b4d2-9ebb-4a56-e3a4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
+              {"name": "Camo Cloaks", "id": "be36-8fbe-7a0d-5e01", "hidden": false, "import": true, "targetId": "4aaa-4cad-ce29-b8ef", "type": "selectionEntry"},
               {
                 "name": "Phobos Armour",
                 "id": "827c-b37e-327a-b9dd",
@@ -31153,19 +31130,7 @@
               },
               {"name": "Krak Grenades", "id": "9628-815a-65a1-9fab", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Frag Grenades", "id": "d039-409b-584c-0a1b", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
-              {
-                "name": "Camo Cloaks",
-                "id": "c30a-14ad-c09b-f8ba",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "e71a-93a2-ab63-9e13",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "fc20-f220-abf8-dbd0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "fc20-f220-abf8-dbd0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
+              {"name": "Camo Cloaks", "id": "c30a-14ad-c09b-f8ba", "hidden": false, "import": true, "targetId": "4aaa-4cad-ce29-b8ef", "type": "selectionEntry"},
               {
                 "name": "Phobos Armour",
                 "id": "699a-b7eb-5cb9-ef98",

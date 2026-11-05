@@ -8,7 +8,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "26ce-f822-8c36-1287",
-    "revision": 8,
+    "revision": 9,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "c5da-a0aa-2802-2c16", "importRootEntries": false, "targetId": "7205-e9d7-ba5c-b84c", "type": "catalogue"}],
     "categoryEntries": [
@@ -4545,28 +4545,6 @@
             "name": "Shimmer Shield",
             "id": "24ae-df51-42b1-417e",
             "description": "This wargear confers a 4+ Invulnerable save to the equipped model and their entire unit.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Camo Cloak",
-        "id": "bfb5-080b-15b2-1feb",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "6",
-        "publicationId": "26ce-f822-8c36-1287",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "fd49-f12f-7d24-02d7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "fd49-f12f-7d24-02d7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Camo Cloak",
-            "id": "390e-33c1-4d42-e912",
-            "description": "A model equipped with this wargear always receives the benefit of Light Cover. A model with this wargear already receiving the benefit of Light Cover, gains the benefit of Heavy Cover instead. If a model is already benefiting from Heavy Cover, it gains a 4+ Cover save.",
             "hidden": false
           }
         ]
@@ -9367,7 +9345,7 @@
                 ]
               },
               {"name": "Mesh Armour", "id": "682f-96a7-9e55-43f9", "hidden": false, "import": true, "targetId": "b079-22c0-3e36-f1a6", "type": "selectionEntry"},
-              {"name": "Camo Cloak", "id": "794a-4835-f0bf-fc4d", "hidden": false, "import": true, "targetId": "bfb5-080b-15b2-1feb", "type": "selectionEntry"},
+              {"name": "Camo Cloaks", "id": "794a-4835-f0bf-fc4d", "hidden": false, "import": true, "targetId": "4aaa-4cad-ce29-b8ef", "type": "selectionEntry"},
               {
                 "name": "Shuriken Pistol",
                 "id": "901c-12ae-a0e3-ab54",
@@ -10509,7 +10487,7 @@
                 ]
               },
               {"name": "Mesh Armour", "id": "2510-b940-4b31-283a", "hidden": false, "import": true, "targetId": "b079-22c0-3e36-f1a6", "type": "selectionEntry"},
-              {"name": "Camo Cloak", "id": "8e06-f203-32d4-f2c8", "hidden": false, "import": true, "targetId": "bfb5-080b-15b2-1feb", "type": "selectionEntry"},
+              {"name": "Camo Cloaks", "id": "8e06-f203-32d4-f2c8", "hidden": false, "import": true, "targetId": "4aaa-4cad-ce29-b8ef", "type": "selectionEntry"},
               {
                 "name": "Shuriken Pistol",
                 "id": "814e-882f-48e5-3a62",
@@ -11345,7 +11323,7 @@
                 ]
               },
               {"name": "Mesh Armour", "id": "4b83-ab9c-6ca0-a5b9", "hidden": false, "import": true, "targetId": "b079-22c0-3e36-f1a6", "type": "selectionEntry"},
-              {"name": "Camo Cloak", "id": "15f0-fa1c-0e43-f4be", "hidden": false, "import": true, "targetId": "bfb5-080b-15b2-1feb", "type": "selectionEntry"},
+              {"name": "Camo Cloaks", "id": "15f0-fa1c-0e43-f4be", "hidden": false, "import": true, "targetId": "4aaa-4cad-ce29-b8ef", "type": "selectionEntry"},
               {
                 "name": "Shroud Runner Jetbike",
                 "id": "67a0-5b1a-5a63-3ecb",

@@ -7,7 +7,7 @@
     "gameSystemRevision": 9,
     "library": false,
     "publicationId": "37ca-6494-9a87-a7cb",
-    "revision": 4,
+    "revision": 5,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Chaos - shared rules", "id": "63e7-0886-105d-c2d6", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
     "categoryEntries": [
@@ -16985,32 +16985,6 @@
             "id": "2182-a15b-5ab1-d288",
             "description": "The Warlord becomes a Psyker. They gain the Psyker (1) special rule. If the Warlord already has the Psyker (x) special rule, increase the value of (x) by 1.",
             "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Blasting Charge",
-        "id": "9ab9-1189-36a7-3b0a",
-        "hidden": false,
-        "import": true,
-        "page": "14",
-        "publicationId": "37ca-6494-9a87-a7cb",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Blasting Charge",
-            "id": "8fd3-a48f-271e-22ff",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-            ]
           }
         ]
       },

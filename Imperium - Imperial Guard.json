@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "5b81-795c-38b3-285c",
-    "revision": 12,
+    "revision": 13,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -53574,28 +53574,6 @@
           {"id": "9e65-0e63-1960-b901-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [{"name": "Refractor field", "id": "8ecb-ac82-48bd-ca85", "hidden": false, "targetId": "49ca-6024-1fe5-1f91", "type": "rule"}]
-      },
-      {
-        "name": "Camo Cloaks",
-        "id": "4aaa-4cad-ce29-b8ef",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "02aa-1b7d-baac-f8a2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "02aa-1b7d-baac-f8a2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Camo Cloaks",
-            "id": "a67f-4a8a-e311-ff32",
-            "description": "A Model with a Camo Cloak gains the benefit of Light Cover even if they would not normally do so. In addition, if they are already benefiting from Light Cover, they receive Heavy Cover instead. A model with this wargear gains a 4+ Cover save if it is already receiving the benefit of Heavy Cover.",
-            "hidden": false,
-            "page": "8",
-            "publicationId": "5b81-795c-38b3-285c"
-          }
-        ]
       },
       {
         "name": "Slab Shield",

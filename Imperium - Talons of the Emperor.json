@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "dc2f-4748-e72e-f22e",
-    "revision": 5,
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "ebc0-ca6c-2f5c-465b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -5960,12 +5960,6 @@
         "hidden": false,
         "page": "4",
         "publicationId": "dc2f-4748-e72e-f22e"
-      },
-      {
-        "name": "Binding",
-        "id": "8b66-83a3-2d33-7b50",
-        "description": "When a weapon gets hit with this special rule, it must make a Toughness test. If the test is passed, nothing happens. If the test is failed, the unit that was hit by a weapon with this special rule is automatically Pinned. This does not affect Vehicles, Aircraft, Walker, Titan, or Knight type units.",
-        "hidden": false
       },
       {
         "name": "Ex Oblivio",
