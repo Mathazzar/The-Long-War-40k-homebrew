@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 17,
+    "revision": 18,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -725,7 +725,11 @@
           {"name": "Range", "id": "181e-655a-ab11-3e00", "defaultValue": "Melee"},
           {"name": "Strength", "id": "a10f-8fce-fc56-cafc"},
           {"name": "AP", "id": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "id": "cc29-b1e7-88e5-c90f"}
+          {
+            "name": "Rules",
+            "id": "cc29-b1e7-88e5-c90f",
+            "formatRules": [{"name": "New Format Rule", "id": "9e91-aa3c-c513-f6b4", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          }
         ]
       },
       {
