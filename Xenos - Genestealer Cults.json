@@ -9,11 +9,191 @@
     "publicationId": "b130-8bb7-8c88-c520",
     "revision": 2,
     "type": "catalogue",
-    "catalogueLinks": [{"name": "Tyranids - shared rules", "id": "07c6-d097-6732-93db", "targetId": "49fd-4bf7-ea02-368d", "type": "catalogue"}],
+    "catalogueLinks": [
+      {"name": "Imperium - Imperial Guard", "id": "07c6-d097-6732-93db", "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"},
+      {"name": "Tyranids - shared rules", "id": "2577-e716-9843-bc36", "targetId": "92ed-eaa1-ec06-0f9a", "type": "catalogue"}
+    ],
     "categoryEntries": [
-      {"name": "Magus", "id": "7227-9e26-ea0e-6ee7", "hidden": false},
-      {"name": "Patriarch", "id": "fe1f-2cc1-50ae-2ab3", "hidden": false},
-      {"name": "Primus", "id": "c54a-c5c2-3ed0-ea52", "hidden": false}
+      {
+        "name": "Magus",
+        "id": "7227-9e26-ea0e-6ee7",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "93c1-f3dd-6e07-ef25",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "93c1-f3dd-6e07-ef25",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "2920-221d-2048-291d",
+                    "childName": "Brood Brother Revolution",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "b762-819c-f93c-9101",
+                    "childName": "Heart of the Cult",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Patriarch",
+        "id": "fe1f-2cc1-50ae-2ab3",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "84a4-08cc-cdcb-75b1",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "84a4-08cc-cdcb-75b1",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "b762-819c-f93c-9101",
+                "childName": "Heart of the Cult",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Primus",
+        "id": "c54a-c5c2-3ed0-ea52",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "4aad-8522-9749-eb9f",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "4aad-8522-9749-eb9f",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "5174-77b9-c541-a061",
+                    "childName": "5174-77b9-c541-a061",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "b762-819c-f93c-9101",
+                    "childName": "Heart of the Cult",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Abominant",
+        "id": "8c34-c170-326e-4551",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "3660-3ecc-7b80-6bca",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "3660-3ecc-7b80-6bca",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "b762-819c-f93c-9101",
+                "childName": "Heart of the Cult",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
     ],
     "publications": [{"name": "The Long War – Codex Genestealer Cults", "id": "b130-8bb7-8c88-c520", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
@@ -26,7 +206,7 @@
         "page": "20",
         "publicationId": "b130-8bb7-8c88-c520",
         "type": "upgrade",
-        "categoryLinks": [{"name": "Allegiance", "id": "81f1-accd-1d66-5e97", "hidden": false, "primary": true, "targetId": "803f-929f-0de3-bce7"}],
+        "categoryLinks": [{"name": "Allegiance", "id": "7cfc-e68b-1b21-583f", "hidden": false, "primary": true, "targetId": "803f-929f-0de3-bce7"}],
         "constraints": [
           {
             "id": "50f2-bf79-b7a2-77e1-min",
@@ -151,6 +331,207 @@
                 ]
               },
               {"name": "Void Station", "id": "6443-d620-f51f-5e85", "hidden": false, "import": true, "type": "upgrade"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rite of War",
+        "id": "5335-dcea-58a3-3dba",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Rite of War", "id": "daa7-7f66-e918-9481", "hidden": false, "primary": true, "targetId": "be3a-e529-69f3-b6b9"}],
+        "constraints": [
+          {
+            "id": "e838-044e-ccfe-940d-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "e838-044e-ccfe-940d-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Rites of War",
+            "id": "c3f0-e90b-0330-4669",
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "1bac-fcc8-eae5-8463",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Heart of the Cult",
+                "id": "b762-819c-f93c-9101",
+                "hidden": false,
+                "import": true,
+                "page": "21",
+                "publicationId": "b130-8bb7-8c88-c520",
+                "type": "upgrade"
+              },
+              {
+                "name": "Anointed Throng",
+                "id": "d4da-50dd-3d25-7b0a",
+                "hidden": false,
+                "import": true,
+                "page": "22",
+                "publicationId": "b130-8bb7-8c88-c520",
+                "type": "upgrade"
+              },
+              {
+                "name": "Deliverance Blood Surge",
+                "id": "5174-77b9-c541-a061",
+                "hidden": false,
+                "import": true,
+                "page": "24",
+                "publicationId": "b130-8bb7-8c88-c520",
+                "type": "upgrade",
+                "modifiers": [{"affects": "entries", "field": "add-info", "scope": "force", "type": "add", "value": "bc0d-14d9-6f1a-a4dd"}]
+              },
+              {
+                "name": "Jackal Pack",
+                "id": "b0aa-5e1a-78a9-0335",
+                "hidden": false,
+                "import": true,
+                "page": "23",
+                "publicationId": "b130-8bb7-8c88-c520",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.0177-02e2-2373-23eb", "field": "hidden", "scope": "force", "type": "set", "value": false},
+                      {"affects": "entries.unit", "field": "hidden", "scope": "force", "type": "set", "value": true},
+                      {"affects": "entries.fa9d-896e-a495-babb", "field": "hidden", "scope": "force", "type": "set", "value": false},
+                      {"affects": "entries.ba7d-58f2-ee40-fc55", "field": "hidden", "scope": "force", "type": "set", "value": false}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Warriors of the Star God",
+                "id": "f055-bde2-6ef7-efe7",
+                "hidden": false,
+                "import": true,
+                "page": "25",
+                "publicationId": "b130-8bb7-8c88-c520",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "field": "error",
+                        "type": "add",
+                        "value": "Your army must contain at least 2 units from Codex – Tyranids",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "a3ec-9102-8e04-5ab2",
+                                "childName": "Faction: Tyranids",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 2
+                              },
+                              {
+                                "childId": "f055-bde2-6ef7-efe7",
+                                "childName": "Warriors of the Star God",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {"affects": "entries.fe1f-2cc1-50ae-2ab3", "field": "hidden", "scope": "force", "type": "set", "value": true}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Brood Brother Revolution",
+                "id": "2920-221d-2048-291d",
+                "hidden": false,
+                "import": true,
+                "page": "26",
+                "publicationId": "b130-8bb7-8c88-c520",
+                "type": "upgrade",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "field": "error",
+                        "type": "add",
+                        "value": "Your army must contain at least 2 units from Codex – Imperial Guard",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "c97a-f2a9-b9c5-1141",
+                                "childName": "Faction: Imperial Guard",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 2
+                              },
+                              {
+                                "childId": "2920-221d-2048-291d",
+                                "childName": "Warriors of the Star God",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {"affects": "entries.c97a-f2a9-b9c5-1141", "field": "category", "scope": "force", "type": "add", "value": "21a1-f338-83b7-d0b7"}
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -302,7 +683,8 @@
             "type": "and",
             "conditions": [
               {
-                "childId": "any",
+                "childId": "6443-d620-f51f-5e85",
+                "childName": "Void Station",
                 "field": "selections",
                 "includeChildForces": true,
                 "includeChildSelections": true,
@@ -415,21 +797,80 @@
           {"id": "6d6c-0250-592d-8152", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
           {"id": "c83a-ec59-2886-fb39", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
         ],
+        "modifierGroups": [
+          {
+            "comment": "Anointed Throng",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d4da-50dd-3d25-7b0a",
+                "childName": "Anointed Throng",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"affects": "entries.recursive.profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "0ad1-8e51-6f8f-ec14", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "unit", "type": "increment", "value": 1}
+            ]
+          }
+        ],
         "modifiers": [
           {
             "field": "hidden",
             "type": "set",
             "value": true,
-            "conditions": [
+            "conditionGroups": [
               {
-                "childId": "24ec-3d2c-456d-fe9a",
-                "childName": "Allied Detatchment",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
+                "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "8c34-c170-326e-4551",
+                        "childName": "Abominant",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "d4da-50dd-3d25-7b0a",
+                        "childName": "Anointed Throng",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "24ec-3d2c-456d-fe9a",
+                    "childName": "Allied Detatchment",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -1291,7 +1732,7 @@
         "id": "29dd-538e-9064-380e",
         "collapsible": true,
         "defaultSelectionEntryId": "none",
-        "hidden": false,
+        "hidden": true,
         "constraints": [{"id": "d415-e0c2-39ab-d278", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [
           {"name": "Psychic Conduit", "id": "dda7-13f3-7919-9cd9", "hidden": false, "targetId": "a0d8-fb17-797a-52e8", "type": "selectionEntry"},
@@ -1371,17 +1812,77 @@
           {
             "field": "hidden",
             "type": "set",
-            "value": true,
-            "conditions": [
+            "value": false,
+            "conditionGroups": [
               {
-                "childId": "544d-0eb3-a4ab-4540",
-                "childName": "Warlord",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "unit",
-                "shared": true,
-                "type": "notInstanceOf",
-                "value": 1
+                "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "c54a-c5c2-3ed0-ea52",
+                            "childName": "Primus",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "fe1f-2cc1-50ae-2ab3",
+                            "childName": "Patriarch",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "7227-9e26-ea0e-6ee7",
+                            "childName": "Magus",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "b762-819c-f93c-9101",
+                        "childName": "Heart of the Cult",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
               }
             ]
           }
