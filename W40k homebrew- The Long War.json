@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 19,
+    "revision": 20,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -7271,6 +7271,7 @@
         "page": "8",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
+        "constraints": [{"id": "8404-f866-505d-befe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "rules": [{"name": "Refractor field", "id": "cf17-699c-9515-4dd3", "description": "A model with a refractor Field has a 5+ Invulnerable save.", "hidden": false}]
       },
       {

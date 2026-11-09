@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 18,
+    "revision": 19,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -15945,7 +15945,6 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [{"id": "24b2-56c9-fd2a-d95e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
               {

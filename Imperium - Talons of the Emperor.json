@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "dc2f-4748-e72e-f22e",
-    "revision": 6,
+    "revision": 7,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "ebc0-ca6c-2f5c-465b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -633,10 +633,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "7731-6c4d-7104-06b9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "7731-6c4d-7104-06b9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "7731-6c4d-7104-06b9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Melta Bomb",
@@ -2185,10 +2182,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "51e3-10fb-0a10-eb58-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "51e3-10fb-0a10-eb58-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "51e3-10fb-0a10-eb58-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Artificer Armour",
@@ -2331,10 +2325,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "5e6c-fd38-2cf3-ac98-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "5e6c-fd38-2cf3-ac98-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "5e6c-fd38-2cf3-ac98-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Melta Bomb",
@@ -4293,10 +4284,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "4030-6455-12be-4de6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "4030-6455-12be-4de6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "4030-6455-12be-4de6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Artificer Armour",
@@ -4503,10 +4491,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "89ad-038f-e145-a6eb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "89ad-038f-e145-a6eb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "89ad-038f-e145-a6eb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Dawn Eagle Jetbike",
@@ -4592,10 +4577,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "00ed-daff-90f0-7a29-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "00ed-daff-90f0-7a29-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "00ed-daff-90f0-7a29-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Artificer Armour",
@@ -4665,10 +4647,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "7363-1223-d3e8-949a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "7363-1223-d3e8-949a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "7363-1223-d3e8-949a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {"name": "Searchlight", "id": "181d-9fe3-7d36-ade2", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
               {

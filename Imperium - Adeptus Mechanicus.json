@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "6d84-fac5-77c6-2cdc",
-    "revision": 6,
+    "revision": 7,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0e79-b452-6d4b-0244", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -2476,10 +2476,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "681b-342c-7625-6eb5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "681b-342c-7625-6eb5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "681b-342c-7625-6eb5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Data Spike",
@@ -4032,11 +4029,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "14b0-c498-6c69-d148", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "b188-61c8-3f60-5e87-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "b188-61c8-3f60-5e87-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "14b0-c498-6c69-d148", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Artificer Armour",
@@ -4192,10 +4185,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "42dd-ca9f-e1bc-2c50-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "42dd-ca9f-e1bc-2c50-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "42dd-ca9f-e1bc-2c50-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {"name": "Enhanced Bionics", "id": "2c37-87d3-fe69-f6f1", "hidden": false, "import": true, "targetId": "e4b6-a746-d25a-10e7", "type": "selectionEntry"},
               {

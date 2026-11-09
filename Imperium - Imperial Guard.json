@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "5b81-795c-38b3-285c",
-    "revision": 13,
+    "revision": 14,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -7149,7 +7149,16 @@
                 ]
               },
               {"name": "Carapace Armour", "id": "365c-4664-148e-2de5", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
-              {"name": "Refractor field", "id": "d997-6fd0-79cc-bcd9", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "d997-6fd0-79cc-bcd9",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "c0a6-80c1-beef-c876", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {
                 "name": "Mount",
                 "id": "2f5c-bffb-247b-ea84",
@@ -8093,7 +8102,16 @@
             "entryLinks": [
               {"name": "Frag Grenades", "id": "ccd3-b6ff-8a67-5fda", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Carapace Armour", "id": "290d-e1e0-433f-189d", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
-              {"name": "Refractor field", "id": "01cc-e15e-49c0-f716", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "01cc-e15e-49c0-f716",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "a112-a549-9a94-8dbc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {"name": "Camo Cloaks", "id": "7750-6122-e359-f0c6", "hidden": false, "import": true, "targetId": "4aaa-4cad-ce29-b8ef", "type": "selectionEntry"},
               {
                 "name": "Bolt Pistol",
@@ -12578,7 +12596,16 @@
                   {"id": "e909-6b70-c8fb-0cf4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Refractor field", "id": "61cb-23b5-ca58-31cb", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "61cb-23b5-ca58-31cb",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "d351-9e5a-99fb-b6bf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {"name": "Flak Armour", "id": "049f-3bd9-8220-7dbb", "hidden": false, "import": true, "targetId": "2848-dea5-099d-03ed", "type": "selectionEntry"},
               {
                 "name": "Plasma Pistol",
@@ -12989,7 +13016,16 @@
             ],
             "entryLinks": [
               {"name": "Carapace Armour", "id": "a74b-b8bb-3126-e4b0", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
-              {"name": "Refractor field", "id": "6584-d9c2-2df7-9362", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "6584-d9c2-2df7-9362",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "7b4a-e8aa-764e-b388", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {
                 "name": "Bolt Pistol",
                 "id": "3e70-447e-0914-fa2d",
@@ -13453,7 +13489,16 @@
                     ],
                     "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
                   },
-                  {"name": "Refractor field", "id": "c338-bf76-1423-4030", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+                  {
+                    "name": "Refractor field",
+                    "id": "c338-bf76-1423-4030",
+                    "defaultAmount": "1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "440e-4a18-c4ad-6bb6",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "994c-b92e-f0c6-b72c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+                  },
                   {"name": "Searchlight", "id": "8394-bb42-8d5d-c3f3", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
                   {
                     "name": "Bolt Pistol",
@@ -13531,7 +13576,15 @@
                   {"name": "Manus Mortis", "id": "7521-6dfa-675d-3b0b", "hidden": false, "import": true, "targetId": "7677-d424-5962-f0a3", "type": "selectionEntry"},
                   {"name": "Frag Grenades", "id": "0d5a-a828-3eaa-69cc", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                   {"name": "Carapace Armour", "id": "042d-6b81-8681-bbec", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
-                  {"name": "Refractor field", "id": "c542-efed-970e-be41", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+                  {
+                    "name": "Refractor field",
+                    "id": "c542-efed-970e-be41",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "440e-4a18-c4ad-6bb6",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "6f32-85b9-cc35-d43e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+                  },
                   {
                     "name": "Bolt Pistol",
                     "id": "4eeb-5be8-8ad1-3047",
@@ -13848,7 +13901,16 @@
                   {"id": "1cc3-6d60-5845-70dd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Refractor field", "id": "b585-6cbf-2849-f027", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "b585-6cbf-2849-f027",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "99c2-359c-ed4d-e8f0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {
                 "name": "Bolt Pistol",
                 "id": "c182-9b0e-6d2b-e9bf",
@@ -17374,7 +17436,16 @@
                   {"id": "95fa-9cd6-548a-64a3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Refractor field", "id": "3141-bea0-393b-583f", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "3141-bea0-393b-583f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "15bf-c382-a1d4-e7b5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {"name": "Carapace Armour", "id": "bb4e-bc7b-4617-c385", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"}
             ],
             "profiles": [
@@ -17726,7 +17797,16 @@
                   {"id": "12c2-0e7c-6669-4d0a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ]
               },
-              {"name": "Refractor field", "id": "302e-0b19-ff5d-e939", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "302e-0b19-ff5d-e939",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "ecd8-6047-6e96-3dd2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {"name": "Carapace Armour", "id": "c1af-8474-43f1-e775", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
               {
                 "name": "Power Sword",
@@ -18094,7 +18174,16 @@
                 ]
               },
               {"name": "Carapace Armour", "id": "fa4a-ac49-cfbd-aa2f", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
-              {"name": "Refractor field", "id": "5a3e-518a-4852-22bf", "hidden": false, "import": true, "targetId": "c616-50a8-8cb7-2952", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "5a3e-518a-4852-22bf",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "0718-b442-43e7-452a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
               {
                 "name": "Hot-Shot Las Pistol",
                 "id": "c383-0e87-2ec5-1afd",
@@ -20161,12 +20250,9 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "c616-50a8-8cb7-2952",
+                "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "e491-3b55-1a04-82f4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "e491-3b55-1a04-82f4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "e491-3b55-1a04-82f4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {"name": "Frag Grenades", "id": "9c18-01c2-a4d9-6b9e", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {
@@ -24186,14 +24272,6 @@
       {"name": "Allegiance: Tanith First & Only", "id": "7c17-a0f5-35c7-0756", "hidden": false},
       {"name": "Allegiance: Mordian Iron Guard", "id": "023a-95c9-ec87-89d0", "hidden": false},
       {"name": "Allegiance: Savlar Chem Dogs", "id": "3ae7-925a-38cf-8ca2", "hidden": false},
-      {
-        "name": "Refractor field",
-        "id": "49ca-6024-1fe5-1f91",
-        "description": "A model with a refractor Field has a 5+ Invulnerable save.",
-        "hidden": false,
-        "page": "8",
-        "publicationId": "5b81-795c-38b3-285c"
-      },
       {"name": "Allegiance: Elysian Drop Troopers", "id": "e2b9-b487-4ea2-a789", "hidden": false},
       {
         "name": "Scholar Drilled",
@@ -24210,19 +24288,6 @@
       }
     ],
     "sharedSelectionEntries": [
-      {
-        "name": "Refractor field",
-        "id": "c616-50a8-8cb7-2952",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "9e65-0e63-1960-b901-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "9e65-0e63-1960-b901-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [{"name": "Refractor field", "id": "8ecb-ac82-48bd-ca85", "hidden": false, "targetId": "49ca-6024-1fe5-1f91", "type": "rule"}]
-      },
       {
         "name": "Slab Shield",
         "id": "8d24-472c-5f10-6cb1",
@@ -25518,18 +25583,6 @@
             "hidden": false
           }
         ]
-      },
-      {
-        "name": "Refractor field",
-        "id": "3412-7e7f-42a8-1a86",
-        "comment": "optional",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "07dc-e8c6-9d2d-0bf1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-        "infoLinks": [{"name": "Refractor field", "id": "af2b-e24c-6d1c-57c7", "hidden": false, "targetId": "49ca-6024-1fe5-1f91", "type": "rule"}]
       },
       {
         "name": "Shield Plate",
@@ -29811,12 +29864,9 @@
                 "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
-                "targetId": "c616-50a8-8cb7-2952",
+                "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "a415-0c8c-06e4-06ac-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "a415-0c8c-06e4-06ac-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "a415-0c8c-06e4-06ac-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Carapace Armour",
@@ -29915,7 +29965,15 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
               },
               {"name": "Flak Armour", "id": "c618-b25b-c4e1-6178", "hidden": false, "import": true, "targetId": "2848-dea5-099d-03ed", "type": "selectionEntry"},
-              {"name": "Refractor field", "id": "a3d5-aca5-61f1-e734", "hidden": false, "import": true, "targetId": "3412-7e7f-42a8-1a86", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "a3d5-aca5-61f1-e734",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
               {
                 "name": "Bionics",
                 "id": "7da7-5708-65a9-ef39",
@@ -34712,7 +34770,15 @@
                 "type": "selectionEntry",
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
               },
-              {"name": "Refractor field", "id": "ef64-f4ea-c718-ba71", "hidden": false, "import": true, "targetId": "3412-7e7f-42a8-1a86", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "ef64-f4ea-c718-ba71",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
               {"name": "Flak Armour", "id": "7ba6-6feb-4354-0376", "hidden": false, "import": true, "targetId": "2848-dea5-099d-03ed", "type": "selectionEntry"}
             ],
             "profiles": [
@@ -34837,7 +34903,15 @@
                 "constraints": [{"id": "3e17-5bbd-3768-5673", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
               },
-              {"name": "Refractor field", "id": "8088-d2bb-0b1b-8653", "hidden": false, "import": true, "targetId": "3412-7e7f-42a8-1a86", "type": "selectionEntry"}
+              {
+                "name": "Refractor field",
+                "id": "8088-d2bb-0b1b-8653",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              }
             ],
             "profiles": [
               {
@@ -35905,9 +35979,10 @@
                 "id": "1713-21f1-a324-c2fd",
                 "hidden": false,
                 "import": true,
-                "targetId": "3412-7e7f-42a8-1a86",
+                "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [{"id": "9934-c379-4c1a-21d6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                "constraints": [{"id": "9934-c379-4c1a-21d6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
               {
                 "name": "Melta Bomb",
@@ -36040,7 +36115,15 @@
               },
               {"name": "Las Pistol", "id": "a4aa-6755-89e8-9e4e", "hidden": false, "import": true, "targetId": "c468-84ae-6ed3-1806", "type": "selectionEntry"},
               {"name": "Flak Armour", "id": "1883-daf7-05e4-1e6e", "hidden": false, "import": true, "targetId": "2848-dea5-099d-03ed", "type": "selectionEntry"},
-              {"name": "Refractor field", "id": "a5f5-d44c-10eb-4ba2", "hidden": false, "import": true, "targetId": "3412-7e7f-42a8-1a86", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "a5f5-d44c-10eb-4ba2",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
               {
                 "name": "Bionics",
                 "id": "c77f-c80b-abf7-e28d",
