@@ -754,15 +754,15 @@
               }
             ]
           },
-          {"name": "WS", "id": "b91a-6b4e-68f6-5398", "defaultValue": "2"},
+          {"name": "WS", "id": "b91a-6b4e-68f6-5398", "defaultValue": "3"},
           {"name": "BS", "id": "ce2d-33a1-3626-3105", "defaultValue": "3"},
           {"name": "S", "id": "605e-2df1-55c7-3d9d"},
           {"name": "Front", "id": "65d6-7651-a40f-fcd5"},
           {"name": "Side", "id": "570a-ef9c-8153-2bb7"},
           {"name": "Rear", "id": "e3d1-4d87-d5c4-921c"},
           {"name": "A", "id": "1a60-9cb9-3892-ac5a"},
-          {"name": "I", "id": "7f1b-fabe-598c-f8de", "defaultValue": "2"},
-          {"name": "LD", "id": "7b21-f3da-4802-3e38", "defaultValue": "0"},
+          {"name": "I", "id": "7f1b-fabe-598c-f8de", "defaultValue": "3"},
+          {"name": "LD", "id": "7b21-f3da-4802-3e38", "defaultValue": "7"},
           {"name": "Transport Capacity", "id": "8058-3a16-8bc0-ad4b", "defaultValue": "0"}
         ]
       },
@@ -927,7 +927,7 @@
       {
         "name": "Assault Vehicle",
         "id": "31ee-5ec6-e44a-3d39",
-        "description": "Models Embarked in a transport with this special rule\nare subject to the following:\n● Embarked models can shoot and Fight in the shooting Phase and Combat Phase while embarked as normal.\n● All measurement and line of sight is measured from the Vehicles hull.\n● Units embarked can only ever make 1 attack in the combat phase.\n● Unless the embarked unit disembarks during the turn, the embarked unit is considered to have made the same type of movement as the transport for the purposes of determining modifiers and eligibility to shoot.\n● When a transport is slain, destroyed, wrecked or explodes with this special rule. Models that disembark are slain on a roll of a 1 or a 2 instead of a 1.\n● If a Transport with this special rule is Pinned, the embarked models count as being Pinned as well.",
+        "description": "Models Embarked in a transport with this special rule are subject to the following:\n● Embarked models can shoot and Fight in the shooting Phase and Combat Phase while embarked as normal.\n● All measurement and line of sight is measured from the Vehicles hull.\n● Units embarked can only ever make 1 attack in the combat phase.\n● Unless the embarked unit disembarks during the turn, the embarked unit is considered to have made the same type of movement as the transport for the purposes of determining modifiers and eligibility to shoot.\n● When a transport is slain, destroyed, wrecked or explodes with this special rule. Models that disembark are slain on a roll of a 1 or a 2 instead of a 1.\n● If a Transport with this special rule is Pinned, the embarked models count as being Pinned as well.",
         "hidden": false,
         "page": "36",
         "publicationId": "2f45-00bc-b53c-c859"
@@ -2080,7 +2080,18 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "constraints": [{"id": "be91-2e38-8c13-6192-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "constraints": [
+          {
+            "id": "be91-2e38-8c13-6192-max",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
         "rules": [
           {
             "name": "Bionics",

@@ -527,7 +527,6 @@
         "hidden": false,
         "targetId": "22e8-02bc-ea6a-5938",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Heavy", "id": "4938-e106-6b9b-0bf4", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}],
         "modifiers": [
           {
             "field": "hidden",
@@ -1632,7 +1631,35 @@
         "page": "89",
         "targetId": "b783-082f-af37-ccfd",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Flyer", "id": "b78d-fbb4-8fe0-bcc8", "hidden": false, "primary": true, "targetId": "2285-8753-500e-a8f0"}]
+        "entryLinks": [
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "94ba-28ce-60a3-b7cc",
+            "hidden": false,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "6b80-004d-2370-9a5c",
+                    "childName": "Airborne Company",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Gorgon Transport",
@@ -1690,33 +1717,6 @@
                     "value": 1
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Air Section",
-        "id": "df0f-1c1a-f519-5bd9",
-        "hidden": false,
-        "targetId": "b783-082f-af37-ccfd",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Heavy", "id": "b648-d795-a909-7c33", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "6b80-004d-2370-9a5c",
-                "childName": "Airborne Company",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
               }
             ]
           }
@@ -25905,7 +25905,8 @@
           {"name": "[Regiment]", "id": "cd42-a09c-179c-145a", "hidden": false, "primary": false, "targetId": "60cd-2858-1bf3-8543"},
           {"name": "Tarantula Battery", "id": "c392-a163-34a7-ced2", "hidden": false, "primary": false, "targetId": "2cf2-d2e6-b8b6-79cb"},
           {"name": "M35", "id": "7e67-d2d7-b718-624f", "hidden": false, "primary": false, "targetId": "eac0-484c-93fc-4466"},
-          {"name": "Automata", "id": "126a-07d5-62c5-1580", "hidden": false, "primary": false, "targetId": "0fec-1996-2577-4109"}
+          {"name": "Automata", "id": "126a-07d5-62c5-1580", "hidden": false, "primary": false, "targetId": "0fec-1996-2577-4109"},
+          {"name": "Heavy", "id": "35cb-dd73-484e-c148", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 65}],
         "entryLinks": [
@@ -27128,7 +27129,8 @@
         "categoryLinks": [
           {"name": "Faction: Imperial Guard", "id": "8282-76be-ad97-6828", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"},
           {"name": "Imperium", "id": "6316-1e2f-e05e-b99d", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Air Section", "id": "a14e-b7aa-b76b-b2ac", "hidden": false, "primary": false, "targetId": "b218-286d-ab1f-892a"}
+          {"name": "Air Section", "id": "a14e-b7aa-b76b-b2ac", "hidden": false, "primary": false, "targetId": "b218-286d-ab1f-892a"},
+          {"name": "Flyer", "id": "2aa7-1641-9088-ddae", "hidden": false, "primary": true, "targetId": "2285-8753-500e-a8f0"}
         ],
         "entryLinks": [
           {

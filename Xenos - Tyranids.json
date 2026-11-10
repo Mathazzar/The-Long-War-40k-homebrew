@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 2,
+    "revision": 3,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "AdaptivePhysiology", "id": "cd3a-500c-6521-abb6", "hidden": true},
@@ -957,11 +957,55 @@
     "entryLinks": [
       {"name": "Barbgaunt Brood", "id": "4a12-31e7-1f48-7154", "hidden": false, "targetId": "bff9-31e2-6620-175a", "type": "selectionEntry"},
       {"name": "Biovore", "id": "d814-fc63-219f-ca81", "hidden": false, "targetId": "9b85-1618-89dd-57ab", "type": "selectionEntry"},
-      {"name": "Tyranid Prime", "id": "9231-c86a-8d66-33c5", "hidden": false, "targetId": "92bf-c77d-60ba-daec", "type": "selectionEntry"},
-      {"name": "Tervigon", "id": "6e7c-92c2-ec8c-0ee8", "hidden": false, "targetId": "f001-3e53-975b-d415", "type": "selectionEntry"},
+      {
+        "name": "Tyranid Prime",
+        "id": "9231-c86a-8d66-33c5",
+        "hidden": false,
+        "targetId": "92bf-c77d-60ba-daec",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord", "id": "1573-e62e-9bd6-c5cf", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
+          {"name": "Relic", "id": "7e0c-ca98-a6b8-891a", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
+          {"name": "Warlord Trait", "id": "2318-b741-a0b6-3e64", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Tervigon",
+        "id": "6e7c-92c2-ec8c-0ee8",
+        "hidden": false,
+        "targetId": "f001-3e53-975b-d415",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord", "id": "73f0-269b-7027-807b", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
+          {"name": "Relic", "id": "4e58-85df-e3ab-328e", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
+          {"name": "Warlord Trait", "id": "f07f-c58a-71f1-af72", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
+        ]
+      },
       {"name": "Sporocyst", "id": "7b36-1fb7-ef6b-4865", "hidden": false, "targetId": "8302-b8d0-b0bd-c7c8", "type": "selectionEntry"},
-      {"name": "Broodlord", "id": "ad84-1c8b-be1a-88e7", "hidden": false, "targetId": "e446-d251-70da-b665", "type": "selectionEntry"},
-      {"name": "Hive Tyrant", "id": "2421-4877-e471-7bb0", "hidden": false, "targetId": "fd49-c8ab-0a35-e968", "type": "selectionEntry"},
+      {
+        "name": "Broodlord",
+        "id": "ad84-1c8b-be1a-88e7",
+        "hidden": false,
+        "targetId": "e446-d251-70da-b665",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord", "id": "aee2-7b2b-1222-701b", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
+          {"name": "Relic", "id": "e910-acbc-b959-e565", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
+          {"name": "Warlord Trait", "id": "fa92-0828-acaa-e830", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Hive Tyrant",
+        "id": "2421-4877-e471-7bb0",
+        "hidden": false,
+        "targetId": "fd49-c8ab-0a35-e968",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord", "id": "1e6b-95e5-5bf3-6b6b", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
+          {"name": "Warlord Trait", "id": "2edb-d517-6b71-5422", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"},
+          {"name": "Relic", "id": "1cad-55ef-5455-7693", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"}
+        ]
+      },
       {
         "name": "Zoanthropes",
         "id": "d5f2-016e-4ec6-caa8",
@@ -1074,12 +1118,33 @@
         ]
       },
       {"name": "Venomthropes", "id": "b2d4-1737-bd7a-3fcc", "hidden": false, "targetId": "e581-506c-a8e2-3dea", "type": "selectionEntry"},
-      {"name": "Ravener Prime", "id": "178b-ec78-30f0-9e54", "hidden": false, "targetId": "a86b-83a7-29f3-6e1c", "type": "selectionEntry"},
+      {
+        "name": "Ravener Prime",
+        "id": "178b-ec78-30f0-9e54",
+        "hidden": false,
+        "targetId": "a86b-83a7-29f3-6e1c",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord", "id": "e185-c3b0-4cdf-6b61", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
+          {"name": "Relic", "id": "75a3-d580-d38d-5f82", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
+          {"name": "Warlord Trait", "id": "c35b-f797-9557-3d3b", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
+        ]
+      },
       {"name": "Tyrant Guard", "id": "7a6e-7346-cc67-eeab", "hidden": false, "targetId": "2fa6-84d2-cda4-7b33", "type": "selectionEntry"},
-      {"name": "Deathleaper", "id": "79c5-0b41-91b2-feed", "hidden": false, "targetId": "5225-6863-fc8b-3987", "type": "selectionEntry"},
       {"name": "Tyrannofex", "id": "05d9-e2bc-f7d8-8854", "hidden": false, "targetId": "9233-b6aa-7702-6c9d", "type": "selectionEntry"},
       {"name": "Tyrannocyte", "id": "5348-9dfb-047c-2901", "hidden": false, "targetId": "6673-37c6-375b-7587", "type": "selectionEntry"},
-      {"name": "Neurotyrant", "id": "4e51-d0ed-4280-837e", "hidden": false, "targetId": "30b9-6e74-4cde-1b73", "type": "selectionEntry"},
+      {
+        "name": "Neurotyrant",
+        "id": "4e51-d0ed-4280-837e",
+        "hidden": false,
+        "targetId": "30b9-6e74-4cde-1b73",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord", "id": "471e-e5aa-87b5-8517", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
+          {"name": "Relic", "id": "b605-fe49-5f41-2843", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
+          {"name": "Warlord Trait", "id": "00c5-ae27-30b7-d87c", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
+        ]
+      },
       {"name": "Termagant Brood", "id": "81c3-4c16-7e5b-2840", "hidden": false, "targetId": "cfbd-468a-355d-342e", "type": "selectionEntry"},
       {"name": "Dimachaeron", "id": "f830-f47e-5352-20c2", "hidden": false, "targetId": "6ac0-1e69-822c-4f66", "type": "selectionEntry"},
       {"name": "Exocrine", "id": "acf1-5a8a-95a1-4972", "hidden": false, "targetId": "e603-bd62-6095-3cf9", "type": "selectionEntry"},
@@ -3078,6 +3143,189 @@
                   {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
                   {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
                   {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deathleaper",
+        "id": "5225-6863-fc8b-3987",
+        "comment": "todo: 130pts in Unit List",
+        "hidden": false,
+        "import": true,
+        "page": "37",
+        "publicationId": "845e-2c61-98f7-8572",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Faction: Tyranids", "id": "19cf-c84f-392c-2cd2", "hidden": false, "primary": false, "targetId": "a3ec-9102-8e04-5ab2"},
+          {"name": "HQ", "id": "e8ff-6a10-8c8c-b3eb", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Unique", "id": "242d-f87a-8f5a-e059", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M41", "id": "de21-5d2a-fbf8-d772", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Infantry", "id": "4aa5-fe5a-bff6-0e2e", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Vangaurd", "id": "c9f1-11da-3ae8-11f9", "hidden": false, "primary": false, "targetId": "eafa-e544-8b78-0da3"},
+          {"name": "[Leviathan]", "id": "9931-cf77-83f5-a3dc", "hidden": false, "primary": false, "targetId": "3f20-1d78-3f0b-55fe"},
+          {"name": "The Deathleaper", "id": "200c-b45d-284c-892f", "hidden": false, "primary": false, "targetId": "9688-8ab9-e7c8-478e"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 95}],
+        "entryLinks": [{"name": "Warlord", "id": "e4c4-610f-7573-1999", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"}],
+        "infoLinks": [
+          {"name": "The Swarm Descends", "id": "f0b7-3863-44af-bfb3", "hidden": false, "targetId": "f0d3-fbf1-7852-7a39", "type": "rule"},
+          {"name": "Pheromone Trail", "id": "ca48-b805-1b44-df59", "hidden": false, "targetId": "b65d-cead-5637-6e37", "type": "rule"},
+          {"name": "Fear (x)", "id": "ccfd-9f5e-8c4f-2f5f", "hidden": false, "targetId": "719f-3e8c-b6f2-54ee", "type": "rule"},
+          {"name": "Chameleonic", "id": "bf6d-7a5f-18ed-ad66", "hidden": false, "targetId": "be15-77b5-0a58-8aff", "type": "rule"},
+          {"name": "Preferred enemy (x)", "id": "9b64-53ac-15ca-9cc8", "hidden": false, "targetId": "da65-1f63-3fee-610a", "type": "rule"},
+          {"name": "Character", "id": "3d8f-64b1-e581-7db0", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Infiltrate", "id": "8d72-2e81-03e1-66c7", "hidden": false, "targetId": "1f09-f0fd-d463-db52", "type": "rule"},
+          {"name": "Outflank", "id": "7fcb-2bc3-20e2-eada", "hidden": false, "targetId": "afef-1361-8dda-9d33", "type": "rule"},
+          {"name": "Move through Cover", "id": "271f-901b-2468-1490", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
+          {"name": "Bulky (x)", "id": "e4e7-5950-b636-fa20", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Hatred (x)", "id": "dd9f-6839-8e48-37ad", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"}
+        ],
+        "rules": [{"name": "Allegiance: Leviathan", "id": "278d-c6d6-525a-ac6e", "description": "\n", "hidden": false}],
+        "selectionEntries": [
+          {
+            "name": "Invisible Stalker",
+            "id": "66e3-b1ff-47a4-6e55",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "ed3a-18d0-c74a-5ab8-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "ed3a-18d0-c74a-5ab8-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "ed3a-18d0-c74a-5ab8-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "ed3a-18d0-c74a-5ab8-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Invisible Stalker",
+                "id": "a3d8-76bd-fc44-c856",
+                "description": "If this unit is your Warlord, all attacks made against the Deathleaper are made at Ballistic Skill (BS) and Weapon Skill (WS) 1",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Deathleaper",
+            "id": "c0b6-18b4-d5dd-dd92",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "ea97-3fc1-d092-9b1a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "ea97-3fc1-d092-9b1a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Flesh Hooks",
+                "id": "a608-7311-8f88-8ef5",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "70f3-b5d3-4fe0-827d",
+                "type": "selectionEntry",
+                "constraints": [{"id": "eaeb-2343-2924-a292", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Reinforced Chitin", "id": "171c-9eef-22cc-1fb2", "hidden": false, "import": true, "targetId": "e40d-a922-fe03-804a", "type": "selectionEntry"},
+              {
+                "name": "Rending claws",
+                "id": "5466-1f8a-9902-cc12",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "5328-16b7-cbe7-f4d4",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3bba-b0a0-3c01-d959-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3bba-b0a0-3c01-d959-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Grasping talons",
+                "id": "9bbb-4c31-5cd7-fa6f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "104d-3de0-c16d-a182",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3444-1ee4-99c3-5a40-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3444-1ee4-99c3-5a40-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Deathleaper",
+                "id": "7fb1-eec1-ca5c-d4fa",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "5", "typeId": "c9ff-af68-092c-c4b3"}
                 ]
               }
             ]
@@ -5509,8 +5757,26 @@
         "publicationId": "845e-2c61-98f7-8572",
         "type": "upgrade",
         "constraints": [
-          {"id": "55ab-20dc-c511-a7ba-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "55ab-20dc-c511-a7ba-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {
+            "id": "55ab-20dc-c511-a7ba-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "55ab-20dc-c511-a7ba-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
         ],
         "rules": [
           {
@@ -5825,10 +6091,7 @@
             "import": true,
             "targetId": "a643-fa96-5620-8cab",
             "type": "selectionEntryGroup"
-          },
-          {"name": "Warlord Trait", "id": "fa92-0828-acaa-e830", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"},
-          {"name": "Relic", "id": "e910-acbc-b959-e565", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
-          {"name": "Warlord", "id": "aee2-7b2b-1222-701b", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"}
+          }
         ],
         "infoLinks": [
           {"name": "Fleet", "id": "17b2-7f2c-60bc-d447", "hidden": false, "targetId": "41f3-3618-66a0-61af", "type": "rule"},
@@ -6195,189 +6458,6 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Deathleaper",
-        "id": "5225-6863-fc8b-3987",
-        "comment": "todo: 130pts in Unit List",
-        "hidden": false,
-        "import": true,
-        "page": "37",
-        "publicationId": "845e-2c61-98f7-8572",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Tyranids", "id": "19cf-c84f-392c-2cd2", "hidden": false, "primary": false, "targetId": "a3ec-9102-8e04-5ab2"},
-          {"name": "HQ", "id": "e8ff-6a10-8c8c-b3eb", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Unique", "id": "242d-f87a-8f5a-e059", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "M41", "id": "de21-5d2a-fbf8-d772", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
-          {"name": "Infantry", "id": "4aa5-fe5a-bff6-0e2e", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Vangaurd", "id": "c9f1-11da-3ae8-11f9", "hidden": false, "primary": false, "targetId": "eafa-e544-8b78-0da3"},
-          {"name": "[Leviathan]", "id": "9931-cf77-83f5-a3dc", "hidden": false, "primary": false, "targetId": "3f20-1d78-3f0b-55fe"},
-          {"name": "The Deathleaper", "id": "200c-b45d-284c-892f", "hidden": false, "primary": false, "targetId": "9688-8ab9-e7c8-478e"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 95}],
-        "entryLinks": [{"name": "Warlord", "id": "e4c4-610f-7573-1999", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"}],
-        "infoLinks": [
-          {"name": "The Swarm Descends", "id": "f0b7-3863-44af-bfb3", "hidden": false, "targetId": "f0d3-fbf1-7852-7a39", "type": "rule"},
-          {"name": "Pheromone Trail", "id": "ca48-b805-1b44-df59", "hidden": false, "targetId": "b65d-cead-5637-6e37", "type": "rule"},
-          {"name": "Fear (x)", "id": "ccfd-9f5e-8c4f-2f5f", "hidden": false, "targetId": "719f-3e8c-b6f2-54ee", "type": "rule"},
-          {"name": "Chameleonic", "id": "bf6d-7a5f-18ed-ad66", "hidden": false, "targetId": "be15-77b5-0a58-8aff", "type": "rule"},
-          {"name": "Preferred enemy (x)", "id": "9b64-53ac-15ca-9cc8", "hidden": false, "targetId": "da65-1f63-3fee-610a", "type": "rule"},
-          {"name": "Character", "id": "3d8f-64b1-e581-7db0", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
-          {"name": "Infiltrate", "id": "8d72-2e81-03e1-66c7", "hidden": false, "targetId": "1f09-f0fd-d463-db52", "type": "rule"},
-          {"name": "Outflank", "id": "7fcb-2bc3-20e2-eada", "hidden": false, "targetId": "afef-1361-8dda-9d33", "type": "rule"},
-          {"name": "Move through Cover", "id": "271f-901b-2468-1490", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
-          {"name": "Bulky (x)", "id": "e4e7-5950-b636-fa20", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
-          {"name": "Hatred (x)", "id": "dd9f-6839-8e48-37ad", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"}
-        ],
-        "rules": [{"name": "Allegiance: Leviathan", "id": "278d-c6d6-525a-ac6e", "description": "\n", "hidden": false}],
-        "selectionEntries": [
-          {
-            "name": "Invisible Stalker",
-            "id": "66e3-b1ff-47a4-6e55",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "ed3a-18d0-c74a-5ab8-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "ed3a-18d0-c74a-5ab8-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifiers": [
-              {
-                "field": "ed3a-18d0-c74a-5ab8-min",
-                "type": "set",
-                "value": 1,
-                "conditions": [
-                  {
-                    "childId": "544d-0eb3-a4ab-4540",
-                    "childName": "Warlord",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "instanceOf",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "field": "ed3a-18d0-c74a-5ab8-max",
-                "type": "set",
-                "value": 1,
-                "conditions": [
-                  {
-                    "childId": "544d-0eb3-a4ab-4540",
-                    "childName": "Warlord",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "instanceOf",
-                    "value": 1
-                  }
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Invisible Stalker",
-                "id": "a3d8-76bd-fc44-c856",
-                "description": "If this unit is your Warlord, all attacks made against the Deathleaper are made at Ballistic Skill (BS) and Weapon Skill (WS) 1",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Deathleaper",
-            "id": "c0b6-18b4-d5dd-dd92",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "ea97-3fc1-d092-9b1a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "ea97-3fc1-d092-9b1a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {
-                "name": "Flesh Hooks",
-                "id": "a608-7311-8f88-8ef5",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "70f3-b5d3-4fe0-827d",
-                "type": "selectionEntry",
-                "constraints": [{"id": "eaeb-2343-2924-a292", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
-              },
-              {"name": "Reinforced Chitin", "id": "171c-9eef-22cc-1fb2", "hidden": false, "import": true, "targetId": "e40d-a922-fe03-804a", "type": "selectionEntry"},
-              {
-                "name": "Rending claws",
-                "id": "5466-1f8a-9902-cc12",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "5328-16b7-cbe7-f4d4",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "3bba-b0a0-3c01-d959-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3bba-b0a0-3c01-d959-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Grasping talons",
-                "id": "9bbb-4c31-5cd7-fa6f",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "104d-3de0-c16d-a182",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "3444-1ee4-99c3-5a40-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3444-1ee4-99c3-5a40-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Deathleaper",
-                "id": "7fb1-eec1-ca5c-d4fa",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "6", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "3", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "5", "typeId": "c9ff-af68-092c-c4b3"}
                 ]
               }
             ]
@@ -8030,10 +8110,7 @@
             "import": true,
             "targetId": "a643-fa96-5620-8cab",
             "type": "selectionEntryGroup"
-          },
-          {"name": "Warlord", "id": "1e6b-95e5-5bf3-6b6b", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
-          {"name": "Warlord Trait", "id": "2edb-d517-6b71-5422", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"},
-          {"name": "Relic", "id": "1cad-55ef-5455-7693", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"}
+          }
         ],
         "infoLinks": [
           {"name": "Brood Guard", "id": "ccd9-1921-5f11-9858", "hidden": false, "targetId": "4cb5-2114-d9ef-06d7", "type": "rule"},
@@ -9031,8 +9108,6 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 110}],
         "entryLinks": [
-          {"name": "Warlord", "id": "471e-e5aa-87b5-8517", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
-          {"name": "Relic", "id": "b605-fe49-5f41-2843", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
           {
             "name": "Tyranid Psychic Powers",
             "id": "98a1-e0ed-c5d0-6c2e",
@@ -9040,8 +9115,7 @@
             "import": true,
             "targetId": "a643-fa96-5620-8cab",
             "type": "selectionEntryGroup"
-          },
-          {"name": "Warlord Trait", "id": "00c5-ae27-30b7-d87c", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
+          }
         ],
         "infoLinks": [
           {"name": "Synapse", "id": "b8ed-ca63-e1be-e308", "hidden": false, "targetId": "d8e2-597a-1dce-4295", "type": "rule"},
@@ -9709,11 +9783,6 @@
           {"name": "AdaptivePhysiology", "id": "6f8d-df90-14b5-fbf6", "hidden": false, "primary": false, "targetId": "cd3a-500c-6521-abb6"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
-        "entryLinks": [
-          {"name": "Warlord", "id": "e185-c3b0-4cdf-6b61", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
-          {"name": "Relic", "id": "75a3-d580-d38d-5f82", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
-          {"name": "Warlord Trait", "id": "c35b-f797-9557-3d3b", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
-        ],
         "infoLinks": [
           {"name": "Bulky (x)", "id": "d2d3-117c-ded4-1817", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
           {"name": "Character", "id": "4c0b-7939-2065-b25b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
@@ -10721,7 +10790,6 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 145}],
         "entryLinks": [
-          {"name": "Relic", "id": "4e58-85df-e3ab-328e", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
           {
             "name": "Tyranid Psychic Powers",
             "id": "b01c-d770-84db-83c1",
@@ -10729,9 +10797,7 @@
             "import": true,
             "targetId": "a643-fa96-5620-8cab",
             "type": "selectionEntryGroup"
-          },
-          {"name": "Warlord Trait", "id": "f07f-c58a-71f1-af72", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"},
-          {"name": "Warlord", "id": "73f0-269b-7027-807b", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"}
+          }
         ],
         "infoLinks": [
           {"name": "Move through Cover", "id": "fa5b-e7a7-06b9-686d", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
@@ -11145,11 +11211,6 @@
           {"name": "AdaptivePhysiology", "id": "a9cc-4f1a-8b41-1ef2", "hidden": false, "primary": false, "targetId": "cd3a-500c-6521-abb6"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
-        "entryLinks": [
-          {"name": "Warlord", "id": "1573-e62e-9bd6-c5cf", "hidden": false, "import": true, "targetId": "df6f-20c4-0bed-823c", "type": "selectionEntry"},
-          {"name": "Relic", "id": "7e0c-ca98-a6b8-891a", "hidden": false, "import": true, "targetId": "95c0-cb53-400b-7c6b", "type": "selectionEntryGroup"},
-          {"name": "Warlord Trait", "id": "2318-b741-a0b6-3e64", "hidden": false, "import": true, "targetId": "6809-3dd0-185d-9f5c", "type": "selectionEntryGroup"}
-        ],
         "infoLinks": [
           {"name": "Synapse", "id": "6f85-1cd3-ae0b-5c96", "hidden": false, "targetId": "d8e2-597a-1dce-4295", "type": "rule"},
           {"name": "Bulky (x)", "id": "decb-2e7e-f7ef-2c92", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
