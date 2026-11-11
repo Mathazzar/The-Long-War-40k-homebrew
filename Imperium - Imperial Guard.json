@@ -1486,7 +1486,36 @@
         "hidden": false,
         "targetId": "0224-78af-fccf-0101",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Lord of War", "id": "e270-7bdd-a4f5-e0ce", "hidden": false, "primary": true, "targetId": "acad-b629-5cd8-4c1f"}],
+        "entryLinks": [
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "c524-c386-7e38-a302",
+            "hidden": false,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "constraints": [{"id": "aa07-7a59-41cf-c73f", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "c0c0-3e98-b651-9201",
+                    "childName": "Armoured Company",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
         "modifiers": [
           {
             "field": "hidden",
@@ -1519,63 +1548,6 @@
                     "value": 1
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Baneblade Super Heavy Tank",
-        "id": "3a34-92cf-dd2a-aab1",
-        "hidden": false,
-        "targetId": "0224-78af-fccf-0101",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Heavy", "id": "90ea-8861-adf2-9f1d", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}],
-        "constraints": [{"id": "faba-9d3d-d89d-d4f6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
-        "entryLinks": [
-          {
-            "name": "Grav-Chutes",
-            "id": "80ad-2537-a794-ceeb",
-            "hidden": false,
-            "import": true,
-            "targetId": "abe3-cafb-509a-20fb",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "6b80-004d-2370-9a5c",
-                    "childName": "Airborne Company",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "c0c0-3e98-b651-9201",
-                "childName": "Armoured Company",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
               }
             ]
           }
@@ -26404,7 +26376,18 @@
             "id": "10fa-f857-d4d0-5416",
             "flatten": true,
             "hidden": false,
-            "constraints": [{"id": "2dde-b7d8-1738-892e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 5}],
+            "constraints": [
+              {
+                "id": "2dde-b7d8-1738-892e",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 6
+              }
+            ],
             "entryLinks": [
               {
                 "name": "Krieg Field Battery",
@@ -26590,7 +26573,8 @@
           {"name": "Imperium", "id": "4a8c-ada9-2db8-f6fe", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
           {"name": "[Regiment]", "id": "6089-76b9-a7f2-de74", "hidden": false, "primary": false, "targetId": "60cd-2858-1bf3-8543"},
           {"name": "Baneblade Super Heavy Tank", "id": "c7d8-3ed5-ca31-9779", "hidden": false, "primary": false, "targetId": "2b63-9fdf-2bc0-e561"},
-          {"name": "Vehicle", "id": "d6b5-dabb-80f5-feda", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"}
+          {"name": "Vehicle", "id": "d6b5-dabb-80f5-feda", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Lord of War", "id": "114e-1ed9-37df-f40b", "hidden": false, "primary": true, "targetId": "acad-b629-5cd8-4c1f"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 290}],
         "infoLinks": [
@@ -30485,9 +30469,14 @@
           {
             "name": "Field Battery",
             "id": "a3ef-c4c4-6f77-ddd0",
+            "defaultAmount": "1",
             "hidden": false,
             "import": true,
             "type": "model",
+            "constraints": [
+              {"id": "c25d-55cb-0906-d8c1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "c25d-55cb-0906-d8c1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
             "entryLinks": [
               {"name": "Shield Plate", "id": "9d86-a3d9-2a8a-b126", "hidden": false, "import": true, "targetId": "82d6-93db-1cb2-3076", "type": "selectionEntry"},
               {

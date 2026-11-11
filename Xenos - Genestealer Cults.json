@@ -370,9 +370,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "parent", "type": "set", "value": true}
             ]
           }
         ]
@@ -393,9 +393,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit-self", "type": "set", "value": true}
             ]
           }
         ]
@@ -416,9 +416,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit-self", "type": "set", "value": true}
             ]
           }
         ]
@@ -439,9 +439,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit-self", "type": "set", "value": true}
             ]
           }
         ]
@@ -462,9 +462,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "unit-self", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit-self", "type": "set", "value": true}
             ]
           }
         ]
@@ -473,7 +473,6 @@
       {"name": "Guardsmen Squad", "id": "5c0e-4cf0-e028-bc29", "hidden": false, "import": true, "targetId": "c9f2-3ec6-e33e-4bb6", "type": "selectionEntry"},
       {"name": "Veteran Squad", "id": "b9a1-1911-6241-c6a6", "hidden": false, "import": true, "targetId": "da32-b25f-c134-7603", "type": "selectionEntry"},
       {"name": "Conscript Squad", "id": "c879-0c34-1cd9-7421", "hidden": false, "import": true, "targetId": "b614-bf56-8da1-4bd5", "type": "selectionEntry"},
-      {"name": "Storm Trooper Section", "id": "b873-2494-7982-c5ef", "hidden": false, "import": true, "targetId": "7bef-0015-7799-b98b", "type": "selectionEntry"},
       {
         "name": "Infantry Section",
         "id": "1357-2545-dd24-09dd",
@@ -485,9 +484,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "parent", "type": "set", "value": true}
             ]
           }
         ]
@@ -503,9 +502,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "parent", "type": "set", "value": true}
             ]
           }
         ]
@@ -521,9 +520,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "parent", "type": "set", "value": true}
             ]
           }
         ]
@@ -537,14 +536,41 @@
         "hidden": false,
         "import": true,
         "targetId": "2f9e-7a3e-0459-7423",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Broodmind Psychic Powers",
+            "id": "2fd9-7217-43d3-8b48",
+            "hidden": false,
+            "import": true,
+            "targetId": "7a4e-3ea7-f245-be42",
+            "type": "selectionEntryGroup"
+          }
+        ]
       },
       {"name": "Regimental Tech-Priest", "id": "6d93-d878-f6b2-fe9a", "hidden": false, "import": true, "targetId": "a33b-96b4-1eaa-d503", "type": "selectionEntry"},
       {"name": "Master of Ordinance", "id": "f66b-3106-84b2-7db9", "hidden": false, "import": true, "targetId": "4965-4fd9-dc3c-e1ad", "type": "selectionEntry"},
       {"name": "Master of the Fleet", "id": "4469-63d7-2526-ab79", "hidden": false, "import": true, "targetId": "9ccb-fadb-9208-55cf", "type": "selectionEntry"},
       {"name": "Ogryn Squad", "id": "fd83-38dd-d9a6-cfde", "hidden": false, "import": true, "targetId": "621a-e725-2c4e-6a0e", "type": "selectionEntry"},
       {"name": "Ratling Squad", "id": "39f9-598e-bcc1-2c11", "hidden": false, "import": true, "targetId": "42c4-04a8-5d50-d281", "type": "selectionEntry"},
-      {"name": "Wyrdvane Psykers", "id": "5867-3a7a-5285-d7c0", "hidden": false, "import": true, "targetId": "f463-d9ee-e1cb-3e89", "type": "selectionEntry"},
+      {
+        "name": "Wyrdvane Psykers",
+        "id": "5867-3a7a-5285-d7c0",
+        "hidden": false,
+        "import": true,
+        "targetId": "f463-d9ee-e1cb-3e89",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Broodmind Psychic Powers",
+            "id": "b814-c16b-b256-f108",
+            "hidden": false,
+            "import": true,
+            "targetId": "7a4e-3ea7-f245-be42",
+            "type": "selectionEntryGroup"
+          }
+        ]
+      },
       {"name": "Field Battery", "id": "a8a9-fa21-7af5-046b", "hidden": false, "import": true, "targetId": "c48f-3ff2-d2d1-9e10", "type": "selectionEntry"},
       {"name": "Earthshaker Carriage", "id": "3a95-aa0b-9423-625f", "hidden": false, "import": true, "targetId": "4a94-f29a-29d5-b1c9", "type": "selectionEntry"},
       {"name": "Chimera APC", "id": "7837-3915-983e-e609", "hidden": false, "import": true, "targetId": "cdea-267d-64b5-1476", "type": "selectionEntry"},
@@ -576,7 +602,8 @@
         "hidden": false,
         "import": true,
         "targetId": "c8b7-98f7-6529-e40f",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "2d25-6ca9-9f1d-9f62", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}]
       },
       {"name": "Tauros", "id": "d4e6-1a30-ff39-a3c5", "hidden": false, "import": true, "targetId": "97b9-9c73-8b1c-16b6", "type": "selectionEntry"},
       {"name": "Mobile Artillery Section", "id": "bd8b-9a01-cffd-e06d", "hidden": false, "import": true, "targetId": "ea88-fc4e-2795-a882", "type": "selectionEntry"},
@@ -633,9 +660,9 @@
           {
             "type": "and",
             "modifiers": [
-              {"affects": "self.entries.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.29dd-538e-9064-380e", "field": "hidden", "scope": "unit", "type": "set", "value": true},
-              {"affects": "self.entries.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "unit", "type": "set", "value": true}
+              {"affects": "self.entries.forces.recursive.da73-92e8-6d36-176a", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.forces.recursive.bf4b-cbce-cfac-ddce", "field": "hidden", "scope": "parent", "type": "set", "value": true},
+              {"affects": "self.entries.forces.recursive.4ea6-9a48-dbe2-7f28", "field": "hidden", "scope": "parent", "type": "set", "value": true}
             ]
           }
         ]
@@ -997,11 +1024,9 @@
                 "modifierGroups": [
                   {
                     "type": "and",
-                    "modifiers": [
+                    "modifierGroups": [
                       {
-                        "field": "error",
-                        "type": "add",
-                        "value": "Your army must contain 2 units from Codex – Imperial Guard",
+                        "type": "and",
                         "conditionGroups": [
                           {
                             "type": "and",
@@ -1011,7 +1036,7 @@
                                 "childName": "Faction: Imperial Guard",
                                 "field": "selections",
                                 "includeChildForces": true,
-                                "includeChildSelections": true,
+                                "includeChildSelections": false,
                                 "scope": "force",
                                 "shared": true,
                                 "type": "notEqualTo",
@@ -1029,10 +1054,38 @@
                               }
                             ]
                           }
+                        ],
+                        "modifiers": [
+                          {
+                            "affects": "entries.forces.c97a-f2a9-b9c5-1141",
+                            "field": "error",
+                            "scope": "force",
+                            "type": "add",
+                            "value": "Your army must contain 2 units from Codex – Imperial Guard"
+                          },
+                          {
+                            "field": "error",
+                            "scope": "force",
+                            "type": "add",
+                            "value": "Your army must contain 2 units from Codex – Imperial Guard",
+                            "conditions": [
+                              {
+                                "childId": "c97a-f2a9-b9c5-1141",
+                                "childName": "Faction: Imperial Guard",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
                         ]
-                      },
-                      {"affects": "entries.c97a-f2a9-b9c5-1141", "field": "category", "scope": "force", "type": "add", "value": "21a1-f338-83b7-d0b7"}
-                    ]
+                      }
+                    ],
+                    "modifiers": [{"affects": "entries.c97a-f2a9-b9c5-1141", "field": "category", "scope": "force", "type": "add", "value": "21a1-f338-83b7-d0b7"}]
                   }
                 ]
               }
@@ -1617,7 +1670,35 @@
           },
           {"name": "Warlord", "id": "7453-f5fb-f522-0ab3", "hidden": false, "import": true, "targetId": "d84e-6957-de3c-591f", "type": "selectionEntry"},
           {"name": "Warlord Trait", "id": "d912-d606-c983-d081", "hidden": false, "import": true, "targetId": "29dd-538e-9064-380e", "type": "selectionEntryGroup"},
-          {"name": "Relic", "id": "3778-842e-a414-2894", "hidden": false, "import": true, "targetId": "9395-93bc-0987-2164", "type": "selectionEntryGroup"}
+          {"name": "Relic", "id": "3778-842e-a414-2894", "hidden": false, "import": true, "targetId": "9395-93bc-0987-2164", "type": "selectionEntryGroup"},
+          {
+            "name": "Psykana Psychic Powers",
+            "id": "60b6-2930-6a17-8155",
+            "hidden": false,
+            "import": true,
+            "targetId": "e57d-ecbf-a293-2c11",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "2920-221d-2048-291d",
+                    "childName": "Brood Brother Revolution",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Character", "id": "0cd1-c912-7090-600f", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
@@ -2204,7 +2285,35 @@
               }
             ]
           },
-          {"name": "Warlord Trait", "id": "78d1-d798-975a-4bba", "hidden": false, "import": true, "targetId": "29dd-538e-9064-380e", "type": "selectionEntryGroup"}
+          {"name": "Warlord Trait", "id": "78d1-d798-975a-4bba", "hidden": false, "import": true, "targetId": "29dd-538e-9064-380e", "type": "selectionEntryGroup"},
+          {
+            "name": "Psykana Psychic Powers",
+            "id": "22f9-0200-ab34-f3b3",
+            "hidden": false,
+            "import": true,
+            "targetId": "e57d-ecbf-a293-2c11",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "2920-221d-2048-291d",
+                    "childName": "Brood Brother Revolution",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Character", "id": "9be6-9db9-ae12-b21b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
@@ -4746,7 +4855,35 @@
         "entryLinks": [
           {"name": "Warlord", "id": "4021-587d-d768-3ca0", "hidden": false, "import": true, "targetId": "d84e-6957-de3c-591f", "type": "selectionEntry"},
           {"name": "Relic", "id": "d40e-2ad3-e7fd-c70a", "hidden": false, "import": true, "targetId": "9395-93bc-0987-2164", "type": "selectionEntryGroup"},
-          {"name": "Warlord Trait", "id": "9042-4a0d-b313-dc54", "hidden": false, "import": true, "targetId": "29dd-538e-9064-380e", "type": "selectionEntryGroup"}
+          {"name": "Warlord Trait", "id": "9042-4a0d-b313-dc54", "hidden": false, "import": true, "targetId": "29dd-538e-9064-380e", "type": "selectionEntryGroup"},
+          {
+            "name": "Psykana Psychic Powers",
+            "id": "9754-628c-81e2-4364",
+            "hidden": false,
+            "import": true,
+            "targetId": "e57d-ecbf-a293-2c11",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "2920-221d-2048-291d",
+                    "childName": "Brood Brother Revolution",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Character", "id": "a7af-9207-dc3f-64e5", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
@@ -5906,7 +6043,35 @@
             "type": "selectionEntryGroup"
           },
           {"name": "Warlord Trait", "id": "1d65-d73f-23f3-3d35", "hidden": false, "import": true, "targetId": "29dd-538e-9064-380e", "type": "selectionEntryGroup"},
-          {"name": "Relic", "id": "711b-ff11-c320-901a", "hidden": false, "import": true, "targetId": "9395-93bc-0987-2164", "type": "selectionEntryGroup"}
+          {"name": "Relic", "id": "711b-ff11-c320-901a", "hidden": false, "import": true, "targetId": "9395-93bc-0987-2164", "type": "selectionEntryGroup"},
+          {
+            "name": "Psykana Psychic Powers",
+            "id": "b3a1-aa07-706a-043e",
+            "hidden": false,
+            "import": true,
+            "targetId": "e57d-ecbf-a293-2c11",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "2920-221d-2048-291d",
+                    "childName": "Brood Brother Revolution",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "infoLinks": [
           {"name": "Character", "id": "b82b-ac4b-cb38-c900", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
@@ -6072,7 +6237,35 @@
             "entryLinks": [
               {"name": "Searchlight", "id": "1cac-e62b-3d55-9d21", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
               {"name": "Smoke Launchers", "id": "1379-4980-3a5f-ed8d", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
-              {"name": "Cult Crew Weapons", "id": "3374-e628-fc2e-65a0", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"}
+              {"name": "Cult Crew Weapons", "id": "3374-e628-fc2e-65a0", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "8156-f030-f76c-9010",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -6306,6 +6499,34 @@
                   {"id": "347f-b329-763d-3427-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Demo Caches",
+                "id": "6cd0-5bee-95f6-adb9",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -6591,7 +6812,35 @@
                 "constraints": [{"id": "d31c-ccce-05ba-b55e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}]
               },
-              {"name": "Cult Crew Weapons", "id": "48da-611f-d535-65e0", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"}
+              {"name": "Cult Crew Weapons", "id": "48da-611f-d535-65e0", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "cd81-6d38-4828-7cd1",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -7317,7 +7566,35 @@
               {"name": "Heavy Stubber (S)", "id": "6c36-b4da-8ff1-02a6", "hidden": false, "import": true, "targetId": "260b-2c07-2f2e-b1e9", "type": "selectionEntryGroup"},
               {"name": "Sponson Weapons", "id": "a9f8-fc6b-af09-48c7", "hidden": false, "import": true, "targetId": "0dbb-5795-0349-067f", "type": "selectionEntryGroup"},
               {"name": "Cult Crew Weapons", "id": "2be0-148b-f008-decf", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
-              {"name": "Devoted Crew", "id": "8315-35b3-366d-0941", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"}
+              {"name": "Devoted Crew", "id": "8315-35b3-366d-0941", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "2f85-d172-7cba-7669",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -7414,7 +7691,35 @@
               },
               {"name": "Heavy Bolter (P)", "id": "1464-f5ca-26ea-5813", "hidden": false, "import": true, "targetId": "ce2e-dd24-4524-5ca6", "type": "selectionEntryGroup"},
               {"name": "Cult Crew Weapons", "id": "5de5-27bb-1ad6-15ee", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
-              {"name": "Devoted Crew", "id": "0ff7-596b-5559-4455", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"}
+              {"name": "Devoted Crew", "id": "0ff7-596b-5559-4455", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "9cd9-ea65-d59a-dce0",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -7511,7 +7816,35 @@
               },
               {"name": "Heavy Bolter (P)", "id": "45f6-1a3a-3b75-7a7d", "hidden": false, "import": true, "targetId": "ce2e-dd24-4524-5ca6", "type": "selectionEntryGroup"},
               {"name": "Devoted Crew", "id": "487b-0479-a13d-8542", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"},
-              {"name": "Cult Crew Weapons", "id": "43b4-d272-cfc2-fd7a", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"}
+              {"name": "Cult Crew Weapons", "id": "43b4-d272-cfc2-fd7a", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "ea96-ced0-9f35-1d61",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -7607,6 +7940,34 @@
                   {"id": "1a68-17b7-9513-b676-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Demo Caches",
+                "id": "85ad-a5b9-6b08-e4d1",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -7729,7 +8090,35 @@
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
               },
               {"name": "Devoted Crew", "id": "6971-4ecb-443e-b9f9", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"},
-              {"name": "Cult Crew Weapons", "id": "0fb8-c65c-4a94-ed06", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"}
+              {"name": "Cult Crew Weapons", "id": "0fb8-c65c-4a94-ed06", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "e02e-f51d-8870-75b1",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -7850,7 +8239,35 @@
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}]
               },
               {"name": "Cult Crew Weapons", "id": "2964-9e19-0bc9-76c8", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
-              {"name": "Devoted Crew", "id": "9e90-9571-9321-3554", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"}
+              {"name": "Devoted Crew", "id": "9e90-9571-9321-3554", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "7a24-8572-a042-0158",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -7961,7 +8378,35 @@
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
               },
               {"name": "Devoted Crew", "id": "e763-8d20-f115-cf69", "hidden": false, "import": true, "targetId": "2d3c-5b31-8bb5-bfd4", "type": "selectionEntry"},
-              {"name": "Cult Crew Weapons", "id": "2e70-67ab-fbbe-7fe8", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"}
+              {"name": "Cult Crew Weapons", "id": "2e70-67ab-fbbe-7fe8", "hidden": false, "import": true, "targetId": "d09a-78d0-70f9-1540", "type": "selectionEntry"},
+              {
+                "name": "Demo Caches",
+                "id": "803e-e394-ab6d-7348",
+                "hidden": false,
+                "import": true,
+                "targetId": "75dc-a7c5-8245-2ac8",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "5174-77b9-c541-a061",
+                        "childName": "Deliverance Blood Surge",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "profiles": [
               {
@@ -9929,7 +10374,7 @@
                     "type": "and",
                     "conditions": [
                       {
-                        "childId": "840b-c47a-0e8d-fa15",
+                        "childId": "bb51-6cbb-4c24-0e65",
                         "childName": "Force Stave",
                         "field": "selections",
                         "includeChildSelections": true,
@@ -10045,8 +10490,8 @@
                         "value": 1
                       },
                       {
-                        "childId": "84dd-49d6-4915-6b09",
-                        "childName": "Power Sword",
+                        "childId": "33da-022f-9ab0-c411",
+                        "childName": "Bonesword",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "unit",
@@ -10055,8 +10500,8 @@
                         "value": 1
                       },
                       {
-                        "childId": "84dd-49d6-4915-6b09",
-                        "childName": "Power Sword",
+                        "childId": "d5b9-5f1d-e3d5-97cc",
+                        "childName": "Locus Blades",
                         "comment": "bonesword",
                         "field": "selections",
                         "includeChildSelections": true,
