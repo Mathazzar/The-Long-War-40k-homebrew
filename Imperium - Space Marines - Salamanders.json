@@ -1,0 +1,740 @@
+{
+  "catalogue": {
+    "name": "Imperium - Space Marines - Salamanders",
+    "id": "b156-90bb-8d29-1b80",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 20,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue",
+    "catalogueLinks": [{"name": "Imperium - shared rules", "id": "3570-5733-a5f7-4863", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
+    "publications": [{"name": "The Long War – Codex Supplement Salamanders", "id": "e82a-a342-9a4a-1bdc", "hidden": false, "publisher": "5.0"}],
+    "sharedRules": [
+      {
+        "name": "Sanctified by Fire",
+        "id": "cc7b-9503-ed95-cf8b",
+        "description": "Instead of setting to Overwatch, a unit may set to Sanctify an Objective. A unit that sets to Sanctify may select a single Objective Marker within 6” of it. That Objective Marker is removed from the battlefield and can no longer be used to score Victory Points.",
+        "hidden": false,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc"
+      },
+      {
+        "name": "Strength of Nocturne",
+        "id": "65c0-d02e-fcb9-66a4",
+        "description": "All Salamanders units gain the following benefits:\n• All ‘Flamer’, ‘Acid’, ‘Plasma’, ‘Bio-Plasma’, ‘Melta’, ‘Fusion’, ‘Phosphor’, and ‘Volkite’ weapons have -1 to all Wound rolls against Salamanders units.\n• Salamanders units with the Character special rule gain the Master-Crafted special rule on all weapons they are equipped with.",
+        "hidden": false,
+        "page": "3",
+        "publicationId": "e82a-a342-9a4a-1bdc"
+      },
+      {
+        "name": "Cautious Pace",
+        "id": "7975-717a-919f-bcf4",
+        "description": "• All Salamanders units have -1 to their Initiative (I) characteristic (This is included in Salamanders specific units).\n• Salamanders Javelin Assault Speeders, Storm Speeders and Land Speeders gain Limited: 1 Per Detachment.\n• Salamanders Tactical Terminators and Assault Terminators gain Limited: 1 Per Detachment.",
+        "hidden": false,
+        "page": "3",
+        "publicationId": "e82a-a342-9a4a-1bdc"
+      },
+      {
+        "name": "Adherent of Prophecy",
+        "id": "7435-bc71-e750-e7c1",
+        "description": "A unit with this special rule always counts as holding an objective regardless of the number of enemy models contesting the objective.",
+        "hidden": false,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc"
+      },
+      {
+        "name": "Master-Crafted Weapon",
+        "id": "eefa-a8f5-e651-c0a2",
+        "description": "A model equipped with this wargear selects 1 weapon they are equipped with. It gains the Master-Crafted special rule. If a unit with this special rule has 2 more models and every unit has purchased this wargear, they can re-roll hit rolls of 1 instead with all Weapons they are equipped with.",
+        "hidden": false
+      },
+      {
+        "name": "Master-Crafted Promethean Armour",
+        "id": "f1c6-f438-25c8-338c",
+        "description": "A model equipped with this wargear may re-roll 1 Armour Save roll per Phase. If a unit with this special rule has 2 more models and every unit has purchased this wargear, they can re-roll Armour Save rolls of 1 instead.",
+        "hidden": false
+      },
+      {
+        "name": "Dragon Rage",
+        "id": "d024-5100-1910-ea8e",
+        "description": "Wounds inflicted by a weapon with this special rule cannot be ignored with the Feel no Pain (x) special rule.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Forge Father",
+        "id": "d2e8-0caa-12dd-390a",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "constraints": [{"id": "8fec-d365-7855-29b5", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 55}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "entries.recursive.profiles.Unit", "field": "bc55-c58d-b53a-233c", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "f7cb-9e55-a62c-25ed", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "unit", "type": "increment", "value": 1}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Forge Father",
+            "id": "fd0d-2078-ff55-ea2d",
+            "description": "A unit with this upgrade gains +1 to their Ballistic Skill (BS), Weapon Skill (WS), Wounds (W), Attacks (A) and Leadership (LD) characteristics. Additionally, the unit gains the Battle Smith (1) and Master of Command special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Master-Crafted Promethean Armour",
+        "id": "255d-517c-a08f-9141",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5c77-9141-69cb-f377-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "5c77-9141-69cb-f377-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
+        "infoLinks": [{"name": "Master-Crafted Promethean Armour", "id": "de99-c4f8-c202-ffd0", "hidden": false, "targetId": "f1c6-f438-25c8-338c", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "5c77-9141-69cb-f377-min",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "986b-ce02-36c8-4c36",
+                "childName": "Master-Crafted Promethean Armoury",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "5c77-9141-69cb-f377-max",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "986b-ce02-36c8-4c36",
+                "childName": "Master-Crafted Promethean Armoury",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Master-Crafted Weapons",
+        "id": "d04c-11b4-b557-2053",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9eac-dab9-ccd3-ab51",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "infoLinks": [{"name": "Master-Crafted Weapon", "id": "3214-f373-b296-9521", "hidden": false, "targetId": "eefa-a8f5-e651-c0a2", "type": "rule"}],
+        "modifiers": [{"field": "9eac-dab9-ccd3-ab51", "type": "set", "value": 0}]
+      },
+      {
+        "name": "Master-Crafted Weapon",
+        "id": "ff3b-82c8-562c-e2cb",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2c89-13c9-acea-a877-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "2c89-13c9-acea-a877-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "infoLinks": [{"name": "Master-Crafted Weapon", "id": "8df8-3bf5-2d6c-576a", "hidden": false, "targetId": "eefa-a8f5-e651-c0a2", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "2c89-13c9-acea-a877-min",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "d04c-11b4-b557-2053",
+                "childName": "Master-Crafted Weapons",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "2c89-13c9-acea-a877-max",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "d04c-11b4-b557-2053",
+                "childName": "Master-Crafted Weapons",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Master-Crafted Promethean Armoury",
+        "id": "986b-ce02-36c8-4c36",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "95bc-8b20-26db-9be8",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "infoLinks": [{"name": "Master-Crafted Promethean Armour", "id": "b2fd-3576-b5c4-9dde", "hidden": false, "targetId": "f1c6-f438-25c8-338c", "type": "rule"}],
+        "modifiers": [{"field": "95bc-8b20-26db-9be8", "type": "set", "value": 0}]
+      },
+      {
+        "name": "Dragonrage Pattern Heavy Boltgun",
+        "id": "ebee-a354-be31-7546",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Dragonrage Pattern Heavy Boltgun",
+            "id": "c6f5-bd59-5392-935f",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Dragon Rage", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Obsidian Aquila",
+        "id": "cec6-9e44-1ab1-4a69",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "constraints": [{"id": "96d1-80c3-b105-0b2a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "rules": [
+          {
+            "name": "Obsidian Aquila",
+            "id": "61e7-fa8a-89f1-fb16",
+            "description": "A model equipped with this wargear gains the Battle-Hardened special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Drake Scale Shield",
+        "id": "16b4-04fe-5fcc-8e92",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+        "rules": [
+          {
+            "name": "Drake Scale Shield",
+            "id": "cf59-a5bc-6b97-79bb",
+            "description": "A model with this wargear may gains a 4+ Invulnerable Save and the Batte-Hardened special rule. In addition, the Invulnerable save is increased to 3+ against wounds caused by ‘Flamer’, ‘Acid’, ‘Plasma’, ‘Bio-Plasma’, ‘Melta’, ‘Fusion’, ‘Las’, ‘Phosphor’, and ‘Volkite’ weapons",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Promethean Chainsword",
+        "id": "2dcf-9d27-470f-6867",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
+        "profiles": [
+          {
+            "name": "Promethean Chainsword",
+            "id": "75e1-24d7-c96b-f10a",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Arcing (6)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dragonrage Pattern Boltgun",
+        "id": "c106-0d48-2d56-31ef",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Dragonrage Pattern Boltgun",
+            "id": "1ac4-3441-3b12-68c7",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Dragon Rage", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drake Linked Heavy Flamer",
+        "id": "0029-4e3f-9b9e-2caf",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Drake Linked Heavy Flamer",
+            "id": "c933-6a4c-9039-b996",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Linked, Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drake Flame Storm Cannon",
+        "id": "900b-dba2-db0a-e5e6",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Drake Flame Storm Cannon",
+            "id": "eb4b-06d3-fd35-cfe7",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drake Hand Flamer",
+        "id": "4593-4c0f-1539-ce1b",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Drake Hand Flamer",
+            "id": "6dda-5e61-e966-4b40",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drake Flamer",
+        "id": "a10c-1b4f-5039-146f",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Drake Flamer",
+            "id": "146b-d929-a1b9-60e0",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drake Heavy Flamer",
+        "id": "922b-9cfd-acb5-5d6a",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Drake Heavy Flamer",
+            "id": "f3cd-c5b9-0c4d-b56a",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drake Flamestorm Gauntlets",
+        "id": "96a5-1b2f-60fe-fd5b",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
+        "profiles": [
+          {
+            "name": "Drake Flamestorm Gauntlets (shooting)",
+            "id": "5bed-0cf4-1d70-2ef3",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray, Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          },
+          {
+            "name": "Drake Flamestorm Gauntlets (melee)",
+            "id": "33ce-5fce-4cbc-2363",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Specialist Weapon", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magna Melta",
+        "id": "ac40-2008-af60-30f8",
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Magna Melta",
+            "id": "99ae-3b2f-1f76-d81f",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Melta. Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drakeblade",
+        "id": "4b31-15a4-9905-8340",
+        "hidden": false,
+        "import": true,
+        "page": "6",
+        "publicationId": "e82a-a342-9a4a-1bdc",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "profiles": [
+          {
+            "name": "Drakeblade",
+            "id": "31e2-f29a-7032-851e",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Parry, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Promethean Psyker Discipline",
+        "id": "da29-035e-7afd-94bd",
+        "collapsible": true,
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Flame Breath (Psychic Weapon)",
+            "id": "3f94-2e7f-d97d-536e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "70ba-3ed7-5ee2-cd89", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "profiles": [
+              {
+                "name": "Flame Breath",
+                "id": "9a06-c597-7196-112f",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Psychic Weapon, Spray", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fiery Form (Psychic Power)",
+            "id": "e1f4-3e44-6dda-1ab0",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "7065-4f30-dbb6-7a44", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "rules": [
+              {
+                "name": "Fiery Form",
+                "id": "1fae-3f56-3596-b4ca",
+                "description": "When this power is successfully cast, the Psyker gains an 4+ Invulnerable Save. In addition, the Psyker gains the Shred special rule on all ‘Flamer’, ‘Melta’ and ‘Plasma’ weapons they are equipped with. This effects the Molten Beam Psychic Weapon. The effects of this Psychic Power lasts until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Fire Shield (Psychic Power)",
+            "id": "df7d-e187-92d5-4d35",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "c39c-0711-bded-61c6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [
+              {
+                "name": "Fire Shield",
+                "id": "50ac-346c-091e-3f4f",
+                "description": "When this power is successfully cast, All Charges declared against the Psyker and their attached unit are resolved as if the Charging unit was moving through Dangerous Terrain. This lasts until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Spontaneous Combustion (Psychic Power)",
+            "id": "daa3-b6fa-8165-1f0e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "d874-6448-3cd1-c67f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+            "rules": [
+              {
+                "name": "Spontaneous Combustion",
+                "id": "b006-5644-01bd-0eb0",
+                "description": "When this power is successfully cast, select 1 enemy model with 12” the Psyker. The target enemy must make a Toughness Test. If they fail, the model is slain and removed from play. If they pass, they take D3 Automatic Wound with no saves allowed. This power cannot affect units without a Toughness (T) characteristic.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Molten Beam (Psychic Weapon)",
+            "id": "7b89-31b0-0498-1c2d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "19ee-782c-eebd-e28f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "profiles": [
+              {
+                "name": "Molten Beam",
+                "id": "a514-59a1-3002-1823",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Psychic Weapon, Melta", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
