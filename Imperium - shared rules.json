@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 10,
     "library": true,
-    "revision": 8,
+    "revision": 9,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
@@ -454,16 +454,6 @@
             "hidden": false
           }
         ]
-      },
-      {
-        "name": "Refractor field",
-        "id": "440e-4a18-c4ad-6bb6",
-        "hidden": false,
-        "import": true,
-        "page": "8",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "rules": [{"name": "Refractor field", "id": "cf17-699c-9515-4dd3", "description": "A model with a refractor Field has a 5+ Invulnerable save.", "hidden": false}]
       },
       {
         "name": "Teleport Homer",
@@ -1885,32 +1875,6 @@
                   }
                 ]
               }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Breacher Charge",
-        "id": "c54b-a27f-62ce-0b95",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Breacher Charge",
-            "id": "0c95-c892-1ec4-57c9",
-            "hidden": false,
-            "page": "12",
-            "publicationId": "5b81-795c-38b3-285c",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "6", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]

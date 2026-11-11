@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "19c4-6ab7-10c5-8fbe",
-    "revision": 10,
+    "revision": 11,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -4615,10 +4615,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "33d8-241b-46a9-c006-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "33d8-241b-46a9-c006-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "33d8-241b-46a9-c006-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               },
               {
                 "name": "Chainsword",
@@ -7547,10 +7544,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "ccda-237b-a2b9-561d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "ccda-237b-a2b9-561d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "ccda-237b-a2b9-561d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               }
             ],
             "profiles": [
@@ -8148,10 +8142,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "b011-ef36-f8e5-24cb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "b011-ef36-f8e5-24cb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "b011-ef36-f8e5-24cb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               }
             ],
             "profiles": [
@@ -8455,10 +8446,7 @@
                 "import": true,
                 "targetId": "440e-4a18-c4ad-6bb6",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "df17-21fe-4e8f-2733-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "df17-21fe-4e8f-2733-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "constraints": [{"id": "df17-21fe-4e8f-2733-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               }
             ],
             "profiles": [
