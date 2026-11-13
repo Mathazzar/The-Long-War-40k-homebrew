@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 10,
     "library": true,
-    "revision": 9,
+    "revision": 10,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
@@ -284,6 +284,14 @@
         "hidden": false,
         "page": "8",
         "publicationId": "6f16-791a-3a26-4c72"
+      },
+      {
+        "name": "Master of Command",
+        "id": "d4d4-4350-213c-409c",
+        "description": "You may only field 1 model in your army with this special rule. If your army includes a model with this special rule, they must be your Warlord.",
+        "hidden": false,
+        "page": "7",
+        "publicationId": "1606-03fb-e01d-e0cf"
       }
     ],
     "sharedSelectionEntries": [
@@ -301,6 +309,7 @@
           {"id": "9860-bc11-48f0-ccd0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
           {"id": "e910-9605-5108-8b6a", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
         ],
+        "infoLinks": [{"name": "Master of Command", "id": "9376-f4d3-ae6c-76a1", "hidden": false, "targetId": "d4d4-4350-213c-409c", "type": "rule"}],
         "modifiers": [
           {
             "field": "warning",
@@ -318,16 +327,6 @@
                 "value": 1
               }
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Master of Command",
-            "id": "d4d4-4350-213c-409c",
-            "description": "You may only field 1 model in your army with this special rule. If your army includes a model with this special rule, they must be your Warlord.",
-            "hidden": false,
-            "page": "7",
-            "publicationId": "1606-03fb-e01d-e0cf"
           }
         ]
       },
@@ -1073,11 +1072,16 @@
         "name": "Marine Crew Weapons",
         "id": "2bae-f8ee-dabc-33dc",
         "collective": true,
+        "defaultAmount": "1",
         "hidden": false,
         "import": true,
         "page": "19",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
+        "constraints": [
+          {"id": "4246-cfd0-675b-70f2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "4246-cfd0-675b-70f2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
         "profiles": [
           {
             "name": "Marine Crew Weapons",
@@ -2117,7 +2121,22 @@
                 "import": true,
                 "type": "model",
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                "entryLinks": [{"name": "Carapace Armour", "id": "12d5-1e74-049b-f55c", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"}],
+                "entryLinks": [
+                  {"name": "Carapace Armour", "id": "12d5-1e74-049b-f55c", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
+                  {
+                    "name": "Storm Shields",
+                    "id": "eaef-0d76-721f-2894",
+                    "defaultAmount": "1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f149-873d-0ef1-c92d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "260c-0c60-c617-17ed-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "260c-0c60-c617-17ed-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
                 "profiles": [
                   {
                     "name": "Crusaders",
@@ -2136,29 +2155,6 @@
                       {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
                       {"name": "LD", "$text": "7", "typeId": "bc55-c58d-b53a-233c"},
                       {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "name": "Storm Shield",
-                    "id": "ae84-546f-00c6-b6da",
-                    "defaultAmount": "1",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "constraints": [
-                      {"id": "2026-74b2-4a42-8655-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                      {"id": "2026-74b2-4a42-8655-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ],
-                    "infoLinks": [{"name": "Battle Hardened", "id": "86cf-54b2-eb16-0ddc", "hidden": false, "targetId": "7b47-5df7-aa9c-4f63", "type": "rule"}],
-                    "rules": [
-                      {
-                        "name": "Storm Shield",
-                        "id": "782e-c474-de9d-95be",
-                        "description": "A model equipped with this wargear has a 4+ Invulnerable Save. A model equipped with this wargear gains the Battle-Hardened special rule",
-                        "hidden": false
-                      }
                     ]
                   }
                 ]

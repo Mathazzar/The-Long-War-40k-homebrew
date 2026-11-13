@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 20,
+    "revision": 21,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -1900,6 +1900,7 @@
       {
         "name": "Force Organization: Dedicated Transport",
         "id": "ba61-a73f-f059-cf58",
+        "exportable": false,
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -1919,6 +1920,7 @@
       {
         "name": "Force Organization: Elite",
         "id": "c9f9-3940-2fc2-709e",
+        "exportable": false,
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -1938,6 +1940,7 @@
       {
         "name": "Force Organization: Heavy Support",
         "id": "1e8e-a64f-440c-fe54",
+        "exportable": false,
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -1957,6 +1960,7 @@
       {
         "name": "Force Organization: Troop",
         "id": "cd9e-d590-95bd-2dfd",
+        "exportable": false,
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -2002,6 +2006,7 @@
       {
         "name": "Force Organization: Free",
         "id": "4e6e-a84c-60c4-47e9",
+        "exportable": false,
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -2022,6 +2027,7 @@
       {
         "name": "Force Organization: HQ",
         "id": "0eb7-0289-6c97-4f6d",
+        "exportable": false,
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -2041,6 +2047,7 @@
       {
         "name": "Force Organization: Fast Attack",
         "id": "cf9a-6021-e001-57e1",
+        "exportable": false,
         "hidden": false,
         "import": true,
         "type": "upgrade",
