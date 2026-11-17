@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 20,
     "library": true,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "3570-5733-a5f7-4863", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -211,7 +211,8 @@
             ]
           }
         ]
-      }
+      },
+      {"name": "Character", "id": "bf2b-7ae1-7518-e819", "hidden": false}
     ],
     "entryLinks": [
       {"name": "Vulkan He’stan", "id": "c467-0c2f-5e0b-c343", "hidden": false, "targetId": "71da-a195-ac0c-c4c1", "type": "selectionEntry"},
@@ -348,16 +349,31 @@
             "field": "warning",
             "type": "add",
             "value": "{unit} must be your Warlord",
-            "conditions": [
+            "conditionGroups": [
               {
-                "childId": "544d-0eb3-a4ab-4540",
-                "childName": "Warlord",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "unit",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d2e8-0caa-12dd-390a",
+                    "childName": "Forge Father",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -512,7 +528,15 @@
           }
         ],
         "infoLinks": [{"name": "Master-Crafted Weapon", "id": "3214-f373-b296-9521", "hidden": false, "targetId": "eefa-a8f5-e651-c0a2", "type": "rule"}],
-        "modifiers": [{"field": "9eac-dab9-ccd3-ab51", "type": "set", "value": 0}]
+        "modifiers": [
+          {"field": "9eac-dab9-ccd3-ab51", "type": "set", "value": 0},
+          {
+            "field": "cbdc-411c-cf55-3186",
+            "type": "increment",
+            "value": 2,
+            "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 1}]
+          }
+        ]
       },
       {
         "name": "Master-Crafted Weapon",
@@ -524,31 +548,20 @@
         "type": "upgrade",
         "constraints": [
           {
-            "id": "2c89-13c9-acea-a877-min",
-            "automatic": true,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "min",
-            "value": 1
-          },
-          {
             "id": "2c89-13c9-acea-a877-max",
             "automatic": true,
             "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
+            "includeChildSelections": true,
+            "scope": "model",
             "shared": true,
             "type": "max",
             "value": 1
           }
         ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}],
         "infoLinks": [{"name": "Master-Crafted Weapon", "id": "8df8-3bf5-2d6c-576a", "hidden": false, "targetId": "eefa-a8f5-e651-c0a2", "type": "rule"}],
         "modifiers": [
           {
-            "field": "2c89-13c9-acea-a877-min",
+            "field": "2c89-13c9-acea-a877-max",
             "type": "set",
             "value": 0,
             "conditions": [
@@ -565,16 +578,17 @@
             ]
           },
           {
-            "field": "2c89-13c9-acea-a877-max",
+            "field": "hidden",
             "type": "set",
-            "value": 0,
+            "value": true,
             "conditions": [
               {
-                "childId": "d04c-11b4-b557-2053",
-                "childName": "Master-Crafted Weapons",
+                "childId": "100c-98ec-dcff-076d",
+                "childName": "Salamanders",
                 "field": "selections",
-                "includeChildSelections": false,
-                "scope": "unit",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
                 "shared": true,
                 "type": "lessThan",
                 "value": 1
@@ -5291,19 +5305,12 @@
           {"name": "Captain", "id": "750b-b2f3-6975-dc03", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
           {"name": "Adrax Agatone", "id": "a30b-054c-9532-0ec5", "hidden": false, "primary": false, "targetId": "e6e5-bb7c-05f0-5e7a"},
           {"name": "Unique", "id": "b8d4-39a6-0983-e255", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "M42+", "id": "3af1-24d6-7b5b-57b9", "hidden": false, "primary": false, "targetId": "f012-d96a-f2a8-de0c"}
+          {"name": "M42+", "id": "3af1-24d6-7b5b-57b9", "hidden": false, "primary": false, "targetId": "f012-d96a-f2a8-de0c"},
+          {"name": "Character", "id": "d315-c899-6fa3-c368", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
         "entryLinks": [
-          {
-            "name": "Salamanders Wargear",
-            "id": "7085-7cbe-b844-5143",
-            "hidden": false,
-            "import": true,
-            "targetId": "1549-dd53-18d7-2720",
-            "type": "selectionEntryGroup",
-            "entryLinks": [{"name": "Obsidian Aquila", "id": "502b-269f-5c39-92da", "hidden": false, "import": true, "targetId": "cec6-9e44-1ab1-4a69", "type": "selectionEntry"}]
-          }
+          {"name": "Salamanders Wargear", "id": "7085-7cbe-b844-5143", "hidden": false, "import": true, "targetId": "1549-dd53-18d7-2720", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
           {"name": "Allegiance: Salamanders", "id": "debc-ca8b-e625-1ee5", "hidden": false, "targetId": "ee3f-8959-b8ac-eb2a", "type": "rule"},
@@ -5870,7 +5877,8 @@
           {"name": "[Salamanders]", "id": "d236-4a69-46d2-70e8", "hidden": false, "primary": false, "targetId": "4db2-c5b4-e890-1d82"},
           {"name": "Harath Shen", "id": "c0f1-6367-b618-ccbb", "hidden": false, "primary": false, "targetId": "85ca-95f2-b2a9-b171"},
           {"name": "Unique", "id": "acef-4c8b-d8af-33e1", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "M41", "id": "b6ce-8d5c-cc23-ba9e", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"}
+          {"name": "M41", "id": "b6ce-8d5c-cc23-ba9e", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "c7ec-018c-3f2f-8bf8", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 70}],
         "entryLinks": [
@@ -5940,7 +5948,15 @@
               }
             ]
           },
-          {"name": "Salamanders Wargear", "id": "8494-0aff-ddc3-3218", "hidden": false, "import": true, "targetId": "1549-dd53-18d7-2720", "type": "selectionEntryGroup"}
+          {
+            "name": "Salamanders Wargear",
+            "id": "8494-0aff-ddc3-3218",
+            "hidden": false,
+            "import": true,
+            "targetId": "1549-dd53-18d7-2720",
+            "type": "selectionEntryGroup",
+            "modifiers": [{"affects": "cec6-9e44-1ab1-4a69", "field": "hidden", "type": "set", "value": true}]
+          }
         ],
         "infoLinks": [
           {"name": "Allegiance: Salamanders", "id": "0ba9-7329-aebb-ffb3", "hidden": false, "targetId": "ee3f-8959-b8ac-eb2a", "type": "rule"},
@@ -6105,19 +6121,12 @@
           {"name": "Captain", "id": "747e-243a-f2c4-f552", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
           {"name": "Pellas Mir’San", "id": "9615-c668-a914-ca1e", "hidden": false, "primary": false, "targetId": "28c6-acee-e0f8-0169"},
           {"name": "Unique", "id": "df33-2d60-f648-1950", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "M41", "id": "7681-d2cd-5312-1334", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"}
+          {"name": "M41", "id": "7681-d2cd-5312-1334", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "e07d-a278-a8d7-0aa9", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 120}],
         "entryLinks": [
-          {
-            "name": "Salamanders Wargear",
-            "id": "fd3a-1e7f-a195-a8ec",
-            "hidden": false,
-            "import": true,
-            "targetId": "1549-dd53-18d7-2720",
-            "type": "selectionEntryGroup",
-            "entryLinks": [{"name": "Obsidian Aquila", "id": "6dd4-4dc7-6fa7-39a6", "hidden": false, "import": true, "targetId": "cec6-9e44-1ab1-4a69", "type": "selectionEntry"}]
-          }
+          {"name": "Salamanders Wargear", "id": "fd3a-1e7f-a195-a8ec", "hidden": false, "import": true, "targetId": "1549-dd53-18d7-2720", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
           {"name": "Allegiance: Salamanders", "id": "d1cf-7a58-1c27-4027", "hidden": false, "targetId": "ee3f-8959-b8ac-eb2a", "type": "rule"},
@@ -7097,7 +7106,8 @@
           {"name": "Captain", "id": "dd64-e645-fa0f-83a8", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
           {"name": "Vulkan He’stan", "id": "69e4-0a51-0416-d196", "hidden": false, "primary": false, "targetId": "f2d8-885e-53e8-fd14"},
           {"name": "Unique", "id": "4042-0603-5b53-e617", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
-          {"name": "M41", "id": "a045-07a4-1812-f15d", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"}
+          {"name": "M41", "id": "a045-07a4-1812-f15d", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "2841-2603-f715-d8e5", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 150}],
         "entryLinks": [
@@ -8114,12 +8124,103 @@
         "hidden": false,
         "entryLinks": [
           {
-            "name": "Master-Crafted Promethean Armoury",
+            "name": "Master-Crafted Weapons",
             "id": "b014-c2a5-90c7-d5e1",
+            "hidden": false,
+            "import": true,
+            "targetId": "d04c-11b4-b557-2053",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "bf2b-7ae1-7518-e819",
+                    "childName": "Character",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master-Crafted Promethean Armoury",
+            "id": "14f5-2aca-9b8d-ff77",
             "hidden": false,
             "import": true,
             "targetId": "986b-ce02-36c8-4c36",
             "type": "selectionEntry"
+          },
+          {
+            "name": "Obsidian Aquila",
+            "id": "f680-e6d8-c9c6-59ed",
+            "hidden": false,
+            "import": true,
+            "targetId": "cec6-9e44-1ab1-4a69",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "bf2b-7ae1-7518-e819",
+                    "childName": "Character",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "bf2b-7ae1-7518-e819",
+                "childName": "Character",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "unit",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "affects": "entries.forces.recursive.profiles.Melee Weapons",
+                "field": "ba87-19e9-d692-6e30",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Master-Crafted",
+                "type": "append",
+                "value": "Master-Crafted"
+              },
+              {
+                "affects": "entries.forces.recursive.profiles.Ranged Weapons",
+                "field": "ba87-19e9-d692-6e30",
+                "join": ", ",
+                "scope": "unit",
+                "skipIfPresent": "Master-Crafted",
+                "type": "append",
+                "value": "Master-Crafted"
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -8673,6 +8774,68 @@
                   }
                 ],
                 "modifiers": [{"field": "b47a-178b-223b-ab22", "type": "set", "value": 0}, {"field": "hidden", "type": "set", "value": true}]
+              }
+            ]
+          },
+          {
+            "name": "Drakeblade",
+            "id": "f0ad-8ec5-7655-4620",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "8808-f6c8-92ef-8c0f",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "affects": "entries.recursive.84dd-49d6-4915-6b09.profiles.Melee Weapons",
+                    "field": "cc29-b1e7-88e5-c90f",
+                    "scope": "unit",
+                    "type": "set",
+                    "value": "Parry, Master-Crafted"
+                  },
+                  {"affects": "entries.recursive.84dd-49d6-4915-6b09", "field": "name", "scope": "unit", "type": "set", "value": "Drakeblade"},
+                  {"affects": "entries.recursive.84dd-49d6-4915-6b09.profiles.Melee Weapons", "field": "a10f-8fce-fc56-cafc", "scope": "unit", "type": "set", "value": "1"},
+                  {"affects": "entries.recursive.84dd-49d6-4915-6b09.profiles.Melee Weapons", "field": "65af-3e5a-1d24-5a74", "scope": "unit", "type": "set", "value": "1"},
+                  {"affects": "entries.recursive.84dd-49d6-4915-6b09.profiles.Melee Weapons", "field": "name", "scope": "unit", "type": "set", "value": "Drakeblade"}
+                ]
+              },
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "84dd-49d6-4915-6b09",
+                    "childName": "Power Sword",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [{"field": "8808-f6c8-92ef-8c0f", "type": "set", "value": 0}, {"field": "hidden", "type": "set", "value": true}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "cbdc-411c-cf55-3186",
+                "type": "increment",
+                "value": 10,
+                "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 1}]
               }
             ]
           }
