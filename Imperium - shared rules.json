@@ -5076,6 +5076,81 @@
             "hidden": false
           }
         ]
+      },
+      {
+        "name": "Centurion Armour",
+        "id": "2b89-4fcf-b732-6351",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f41e-ae42-98f1-8b92-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f41e-ae42-98f1-8b92-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Centurion Armour",
+            "id": "6b8b-a5f2-18d2-457c",
+            "description": "Centurion Armour is a massive, powered suit of Armour worn over normal power Armour. It provides a 2+ Armour save. In addition, it grants the wearer +1 to their Wound (W), Strength (S) and Toughness (T) characteristics, as well as the Relentless, Bulky (3) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 2”A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Assault Drills",
+        "id": "15bc-5f98-693a-b12a",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Assault Drills",
+            "id": "6ee8-aa27-68f8-fc4e",
+            "hidden": false,
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Sunder", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Astartes Grenade Launcher",
+        "id": "5d14-540c-0685-74c3",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Astartes Grenade Launcher",
+            "id": "fa4a-4db2-5aba-246b",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
