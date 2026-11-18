@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 20,
+    "revision": 21,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -18,12 +18,55 @@
         "type": "catalogue"
       },
       {"name": "Imperium - shared rules", "id": "4253-4e1d-f16f-62c6", "targetId": "cb87-e388-9772-a046", "type": "catalogue"},
-      {"name": "Imperium - Space Marines - Salamanders", "id": "cdf3-ff03-1062-b344", "targetId": "b156-90bb-8d29-1b80", "type": "catalogue"}
+      {"name": "Imperium - Space Marines - Salamanders", "id": "cdf3-ff03-1062-b344", "targetId": "b156-90bb-8d29-1b80", "type": "catalogue"},
+      {
+        "name": "Imperium - Space Marines - Black Templars",
+        "id": "d211-099b-1f43-0657",
+        "importRootEntries": false,
+        "targetId": "f14e-1557-3a53-e27e",
+        "type": "catalogue"
+      }
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
       {"name": "Lieutenant", "id": "7f3b-8dcd-3e9e-0d9c", "hidden": false},
-      {"name": "Command Squad", "id": "3dcd-0520-4715-224e", "hidden": false},
+      {
+        "name": "Command Squad",
+        "id": "3dcd-0520-4715-224e",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "af14-cf63-5187-05a2",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "af14-cf63-5187-05a2",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "7369-59f3-e062-7115",
+                "childName": "The Sons of Grimaldus",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
       {"name": "Damocles Command Rhino", "id": "3614-8382-22d8-a32e", "hidden": false},
       {"name": "[Crimson Fists]", "id": "c673-28a5-5572-1f3d", "hidden": false},
       {
@@ -1438,6 +1481,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Free",
+            "id": "e0ef-4da3-2162-f176",
+            "hidden": false,
+            "import": true,
+            "targetId": "4e6e-a84c-60c4-47e9",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "7369-59f3-e062-7115",
+                    "childName": "The Sons of Grimaldus",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -1602,6 +1673,17 @@
                   {
                     "childId": "100c-98ec-dcff-076d",
                     "childName": "Salamanders",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -1879,6 +1961,31 @@
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
           }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2110,6 +2217,31 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2377,33 +2509,7 @@
         "targetId": "1e85-b2c4-bcf8-e749",
         "type": "selectionEntry",
         "entryLinks": [
-          {
-            "name": "Warlord Trait",
-            "id": "3fe7-de55-50a4-c3d2",
-            "hidden": false,
-            "import": true,
-            "targetId": "fada-47af-eaaa-80f8",
-            "type": "selectionEntryGroup",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "e808-93a0-5aa4-0d1b",
-                    "childName": "Tank Commander",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
+          {"name": "Warlord Trait", "id": "3fe7-de55-50a4-c3d2", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"},
           {
             "name": "Relic",
             "id": "6c34-8569-2342-b0a3",
@@ -2548,6 +2654,17 @@
                     "childId": "100c-98ec-dcff-076d",
                     "childName": "Salamanders",
                     "comment": "todo: Unit List duplicated with conflicting options in reference",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -3382,33 +3499,7 @@
               }
             ]
           },
-          {
-            "name": "Warlord Trait",
-            "id": "88cd-167d-bbf8-6bb9",
-            "hidden": false,
-            "import": true,
-            "targetId": "fada-47af-eaaa-80f8",
-            "type": "selectionEntryGroup",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "e808-93a0-5aa4-0d1b",
-                    "childName": "Tank Commander",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
+          {"name": "Warlord Trait", "id": "88cd-167d-bbf8-6bb9", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"},
           {
             "name": "Chapter Supplements Wargear",
             "id": "3254-14b1-d48b-1c79",
@@ -3782,6 +3873,73 @@
         "targetId": "8e7e-0cec-c295-fa85",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Battle Line", "id": "20e5-4d78-d7d7-6d54", "hidden": false, "primary": false, "targetId": "52a4-b849-6620-8858"}]
+      },
+      {
+        "name": "Crusader Bike Cavalry",
+        "id": "95b9-60b0-5c0e-5bb5",
+        "hidden": false,
+        "import": true,
+        "targetId": "00a3-9a0b-e70e-1026",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Battle Line", "id": "abf9-f8bf-bd72-d824", "hidden": false, "primary": false, "targetId": "52a4-b849-6620-8858"}]
+      },
+      {
+        "name": "High Marshal Helbrecht",
+        "id": "f878-21a6-bd20-c8fe",
+        "hidden": false,
+        "import": true,
+        "targetId": "f631-9d28-1b72-da43",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord", "id": "7ab1-090b-4c5e-df23", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Chaplain Grimaldus",
+        "id": "4c1d-f07b-4e9e-5fbd",
+        "hidden": false,
+        "import": true,
+        "targetId": "6178-dacf-8b6c-8ec5",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "991c-5ff9-76bd-cc8f", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [{"name": "Warlord", "id": "f3d0-54f2-d101-a656", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "The Emperor’s Champion",
+        "id": "9c89-93b6-a534-96db",
+        "hidden": false,
+        "import": true,
+        "targetId": "46de-3665-4887-0f9f",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord", "id": "cbd2-fe3c-4525-b41f", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Crusader Squad",
+        "id": "903d-5729-3665-09ec",
+        "hidden": false,
+        "import": true,
+        "targetId": "7eda-8cb6-e26d-cb72",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Battle Line", "id": "634f-f923-cc04-8334", "hidden": false, "primary": false, "targetId": "52a4-b849-6620-8858"}]
+      },
+      {"name": "Sword Brethren", "id": "aef1-5e31-d9b8-3c7e", "hidden": false, "import": true, "targetId": "4af4-b035-896b-ff76", "type": "selectionEntry"},
+      {
+        "name": "Sword Brethren Terminators",
+        "id": "7178-a42a-717b-102b",
+        "hidden": false,
+        "import": true,
+        "targetId": "544e-f33a-5527-f0cc",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Centurions",
+        "id": "e548-2a52-42b5-0f03",
+        "hidden": false,
+        "import": true,
+        "targetId": "5397-04fd-814a-e1e6",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Close Support", "id": "9cb8-09ff-71d9-db97", "hidden": false, "primary": false, "targetId": "720b-794e-4235-f757"},
+          {"name": "Centurions", "id": "befd-a731-43b5-2071", "hidden": false, "primary": false, "targetId": "e7db-0262-4926-f0b1"}
+        ]
       }
     ],
     "publications": [{"name": "The Long War - Codex Space Marines", "id": "1606-03fb-e01d-e0cf", "hidden": false, "publisher": "5.0"}],
@@ -3851,6 +4009,54 @@
                 "import": true,
                 "targetId": "34aa-d310-8ecd-6ec0",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Black Templars Rites of War",
+                "id": "bab7-6ef6-1560-f061",
+                "hidden": false,
+                "import": true,
+                "targetId": "acbb-94df-3a5e-5241",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "affects": "entries.forces.recursive.f509-3640-726b-e5b7",
+                    "field": "add-info",
+                    "scope": "force",
+                    "type": "add",
+                    "value": "b206-387f-6a4e-2a67",
+                    "conditions": [
+                      {
+                        "childId": "cd59-26a1-fe37-c8ae",
+                        "childName": "The Endless Crusade",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "affects": "entries.forces.recursive.875f-9975-8052-0495",
+                    "field": "hidden",
+                    "scope": "force",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "7369-59f3-e062-7115",
+                        "childName": "The Sons of Grimaldus",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "modifierGroups": [
@@ -3874,6 +4080,16 @@
                       {
                         "childId": "100c-98ec-dcff-076d",
                         "childName": "Salamanders",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "24e8-efde-3148-5d6e",
+                        "childName": "Black Templars",
                         "field": "selections",
                         "includeChildSelections": false,
                         "scope": "parent",
@@ -3929,7 +4145,26 @@
                 "import": true,
                 "page": "30",
                 "publicationId": "1606-03fb-e01d-e0cf",
-                "type": "upgrade"
+                "type": "upgrade",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "24e8-efde-3148-5d6e",
+                        "childName": "Black Templars",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "name": "Pride of the Chapter",
@@ -4041,20 +4276,94 @@
               }
             ],
             "entryLinks": [
+              {"name": "Salamanders", "id": "1558-7487-1504-d38d", "hidden": false, "targetId": "100c-98ec-dcff-076d", "type": "selectionEntry"},
+              {"name": "Raven Guard", "id": "7d34-cff0-fae2-bd5e", "hidden": false, "targetId": "1a89-b9e7-f553-9a7d", "type": "selectionEntry"},
               {
-                "name": "Salamanders",
-                "id": "1558-7487-1504-d38d",
+                "name": "Black Templars",
+                "id": "9096-40d5-dea2-b4d4",
                 "hidden": false,
-                "targetId": "100c-98ec-dcff-076d",
+                "import": true,
+                "targetId": "24e8-efde-3148-5d6e",
                 "type": "selectionEntry",
-                "modifierGroups": [
+                "modifiers": [
                   {
-                    "type": "and",
-                    "modifiers": [{"affects": "entries.forces.recursive.109e-e658-ee85-f181.profiles.Unit", "field": "6bc7-a391-2ba3-44f9", "scope": "force", "type": "decrement", "value": 1}]
+                    "affects": "entries.forces.recursive.109e-e658-ee85-f181",
+                    "field": "add-info",
+                    "scope": "force",
+                    "type": "add",
+                    "value": "74b8-7376-0fc7-8b8f",
+                    "conditions": [
+                      {
+                        "childId": "3e59-627b-ab42-b1d5",
+                        "childName": "Abhor the Witch, Deny the Witch",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "affects": "entries.forces.recursive.109e-e658-ee85-f181",
+                    "field": "add-info",
+                    "scope": "force",
+                    "type": "add",
+                    "value": "b7d5-5524-f50d-cd3b",
+                    "conditions": [
+                      {
+                        "childId": "44eb-227c-6c6d-5b72",
+                        "childName": "Accept any challenge, no matter the odds",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "affects": "entries.forces.recursive.109e-e658-ee85-f181",
+                    "field": "add-info",
+                    "scope": "force",
+                    "type": "add",
+                    "value": "0e9c-5959-29a3-1519",
+                    "conditions": [
+                      {
+                        "childId": "fdec-7af9-214e-9112",
+                        "childName": "Suffer not the Unclean to live",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "affects": "entries.forces.recursive.109e-e658-ee85-f181",
+                    "field": "add-info",
+                    "scope": "force",
+                    "type": "add",
+                    "value": "92a5-e1cd-daac-bd41",
+                    "conditions": [
+                      {
+                        "childId": "fe63-9b3f-22c0-96f9",
+                        "childName": "Uphold the honour of the Emperor",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
-              },
-              {"name": "Raven Guard", "id": "7d34-cff0-fae2-bd5e", "hidden": false, "targetId": "1a89-b9e7-f553-9a7d", "type": "selectionEntry"}
+              }
             ],
             "modifiers": [
               {
@@ -6625,7 +6934,32 @@
               }
             ]
           },
-          {"name": "Raven Guard", "id": "2dc4-efe0-ad21-f170", "hidden": false, "targetId": "4e07-baa0-1d58-f408", "type": "infoGroup"},
+          {
+            "name": "Raven Guard",
+            "id": "2dc4-efe0-ad21-f170",
+            "hidden": false,
+            "targetId": "4e07-baa0-1d58-f408",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "1a89-b9e7-f553-9a7d",
+                    "childName": "Raven Guard",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {
             "name": "Carcharodon",
             "id": "b6af-1fbc-58a0-4b9d",
@@ -6691,7 +7025,7 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "1558-7487-1504-d38d",
+                    "childId": "100c-98ec-dcff-076d",
                     "childName": "Salamanders",
                     "field": "selections",
                     "includeChildForces": true,
@@ -7272,493 +7606,6 @@
         ]
       },
       {
-        "name": "Centurion Armour",
-        "id": "2b89-4fcf-b732-6351",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "f41e-ae42-98f1-8b92-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "f41e-ae42-98f1-8b92-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "rules": [
-          {
-            "name": "Centurion Armour",
-            "id": "6b8b-a5f2-18d2-457c",
-            "description": "Centurion Armour is a massive, powered suit of Armour worn over normal power Armour. It provides a 2+ Armour save. In addition, it grants the wearer +1 to their Wound (W), Strength (S) and Toughness (T) characteristics, as well as the Relentless, Bulky (3) and Slow & Purposeful special rules. The wearers Movement (M) Characteristic is decreased by 2”A more mobile ancient pattern of Terminator Armour rarely used. It provides a 2+ Armour Save and a 5+ Invulnerable save. The Wearer gains Relentless, Bulky (2), and Sprint (1) special rules. It grants the Terminator Keyword.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Relic",
-        "id": "b344-3163-b292-5be5",
-        "comment": "Core SM Codex",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": false,
-        "page": "10",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "constraints": [
-          {"id": "0bb4-dd4a-af62-ce97-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "0bb4-dd4a-af62-ce97-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "entryLinks": [
-          {
-            "name": "Relics",
-            "id": "fa3e-2726-7758-e33d",
-            "hidden": false,
-            "import": true,
-            "targetId": "99d6-0f88-4709-a6b2",
-            "type": "selectionEntryGroup",
-            "entryLinks": [
-              {
-                "name": "Raven’s Fury",
-                "id": "1b9b-843e-2c95-0342",
-                "hidden": false,
-                "import": true,
-                "targetId": "b035-6bf5-99d5-f6e6",
-                "type": "selectionEntry",
-                "constraints": [
-                  {
-                    "id": "04e9-af86-1d2a-320c",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "message": "{unit} must have a jump pack equipped to take {this}",
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 0
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "field": "04e9-af86-1d2a-320c",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "6029-ff30-bd91-9976",
-                        "childName": "Jump Pack",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Nihilus",
-                "id": "92b9-9331-d7f7-35ae",
-                "hidden": false,
-                "import": true,
-                "targetId": "9b3c-8637-453e-2206",
-                "type": "selectionEntry",
-                "modifiers": [
-                  {
-                    "field": "396b-3e06-f8e4-3a10",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "469c-f449-1e9e-1d6f",
-                        "childName": "Boltgun",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Ex-Tenebris",
-                "id": "91a2-1750-9c38-280d",
-                "hidden": false,
-                "import": true,
-                "targetId": "e08d-f68c-70cb-4b6d",
-                "type": "selectionEntry",
-                "modifiers": [
-                  {
-                    "field": "9c73-c377-45e1-c1a1",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "469c-f449-1e9e-1d6f",
-                        "childName": "Boltgun",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "The Ebon Claws",
-                "id": "fe0a-0645-b019-8b5e",
-                "hidden": false,
-                "import": true,
-                "targetId": "be88-6129-6060-fb1c",
-                "type": "selectionEntry",
-                "modifiers": [
-                  {
-                    "field": "19e2-988a-c821-fa16",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "7387-4d1b-e3e4-b301",
-                        "childName": "Lightning Claws",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 2
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Swift Strike & Murder",
-                "id": "cdbf-3db1-b93c-b20f",
-                "hidden": false,
-                "import": true,
-                "targetId": "6c38-6bb8-be92-f85e",
-                "type": "selectionEntry",
-                "modifiers": [
-                  {
-                    "field": "18e1-67ec-c120-318c",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "7387-4d1b-e3e4-b301",
-                        "childName": "Lightning Claws",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 2
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "The Teeth of Terra",
-                "id": "5315-68a0-c8cb-66e2",
-                "hidden": false,
-                "import": true,
-                "page": "10",
-                "publicationId": "1606-03fb-e01d-e0cf",
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "01c0-50f1-0be8-c3e2", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
-                  {
-                    "id": "02b1-5e25-ca57-6214",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "message": "{parent} must have a chainsword equipped to take {this}",
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 0
-                  }
-                ],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                "modifiers": [
-                  {
-                    "field": "02b1-5e25-ca57-6214",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "f82a-555a-d38f-b930",
-                        "childName": "Chainsword",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "The Teeth of Terra",
-                    "id": "49cf-17ee-ea65-5de8",
-                    "hidden": false,
-                    "typeId": "8fa1-1cd9-5ae1-0e93",
-                    "typeName": "Melee Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-                      {"name": "Rules", "$text": "Shred, Specialist Weapon, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
-                    ]
-                  }
-                ],
-                "rules": [{"name": "The Teeth of Terra", "id": "8f3c-927d-7a89-a400", "description": "A model may exchange their Chainsword for this Relic", "hidden": false}]
-              },
-              {
-                "name": "The Burning Blade",
-                "id": "3eef-37a0-0fb8-d924",
-                "hidden": false,
-                "import": true,
-                "page": "11",
-                "publicationId": "1606-03fb-e01d-e0cf",
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "d6a2-95ed-3c06-3ebf", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
-                  {
-                    "id": "962a-fd01-7ae4-b609",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "message": "{parent} must have a power sword equipped to take {this}",
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 0
-                  }
-                ],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                "modifiers": [
-                  {
-                    "field": "962a-fd01-7ae4-b609",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "84dd-49d6-4915-6b09",
-                        "childName": "Power Sword",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "The Burning Blade",
-                    "id": "acd5-2b60-231d-3bf2",
-                    "hidden": false,
-                    "typeId": "8fa1-1cd9-5ae1-0e93",
-                    "typeName": "Melee Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
-                      {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
-                      {"name": "Rules", "$text": "Master-Crafted, Two-Handed, Murderous Strike (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
-                    ]
-                  }
-                ],
-                "rules": [{"name": "The Burning Blade", "id": "4fc8-4dc7-c361-d821", "description": "A model may exchange their Power Sword for this Relic", "hidden": false}]
-              },
-              {
-                "name": "The Primarch’s Wrath",
-                "id": "b460-87b8-c46c-34d5",
-                "hidden": false,
-                "import": true,
-                "page": "11",
-                "publicationId": "1606-03fb-e01d-e0cf",
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "e0ce-6bd6-e52d-5de6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
-                  {
-                    "id": "dbf0-7473-2deb-cd14",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "message": "{parent} must have a boltgun or storm bolter equipped to take {this}",
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 0
-                  }
-                ],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                "modifiers": [
-                  {
-                    "field": "dbf0-7473-2deb-cd14",
-                    "type": "set",
-                    "value": 1,
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "childId": "c829-b809-d33d-4738",
-                            "childName": "Storm Bolter",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "unit",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "469c-f449-1e9e-1d6f",
-                            "childName": "Boltgun",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "unit",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "The Primarch’s Wrath",
-                    "id": "6ba5-f4bc-f116-cac3",
-                    "hidden": false,
-                    "typeId": "4425-e2ff-1ce0-83c1",
-                    "typeName": "Ranged Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-                      {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                      {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-                      {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-                      {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                      {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "The Primarch’s Wrath",
-                    "id": "e30d-fce5-dc69-f5f3",
-                    "description": "A model may exchange their Boltgun or Storm Bolter for this Relic",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Standard of the Emperor Ascendant",
-                "id": "1cdb-775f-f40b-5628",
-                "hidden": false,
-                "import": true,
-                "page": "11",
-                "publicationId": "1606-03fb-e01d-e0cf",
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "bbbf-a95d-128a-d59e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
-                  {
-                    "id": "cb9f-cec0-6022-2392",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "message": "{parent} must have a chapter banner equipped to take {this}",
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 0
-                  }
-                ],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
-                "modifiers": [
-                  {
-                    "field": "cb9f-cec0-6022-2392",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "ff10-eb40-1ad8-0521",
-                        "childName": "Chapter Banner",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "unit",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Standard of the Emperor Ascendant",
-                    "id": "c92b-ecb2-a7b5-5c5d",
-                    "description": "A model equipped with this relic wargear counts as being equipped with a Chapter Banner. In addition, the equipped model and any attached unit gain the Last Stand special rule.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Armour Indomitus",
-                "id": "e32a-1354-b745-0b80",
-                "hidden": false,
-                "import": true,
-                "page": "10",
-                "publicationId": "1606-03fb-e01d-e0cf",
-                "type": "upgrade",
-                "constraints": [{"id": "0bd2-c6b1-5328-a095", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                "modifiers": [{"affects": "self.entries.recursive.profiles.Unit", "field": "c9ff-af68-092c-c4b3", "scope": "unit", "type": "set", "value": "2+"}],
-                "rules": [
-                  {
-                    "name": "Armour Indomitus",
-                    "id": "5bb4-1eec-6d60-0603",
-                    "description": "A model equipped with this relic wargear gains a 2+ Armour save and a 4+ Invulnerable save. In addition, the equipped model may re-roll 1 ailed Save (Armour or Invul) per phase.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Honours Vehement",
-                "id": "cba4-c55b-5779-ea55",
-                "hidden": false,
-                "import": true,
-                "page": "11",
-                "publicationId": "1606-03fb-e01d-e0cf",
-                "type": "upgrade",
-                "constraints": [{"id": "76ed-2434-1abb-853e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                "rules": [
-                  {
-                    "name": "Honours Vehement",
-                    "id": "3e80-05b9-92be-0b05",
-                    "description": "A model equipped with this relic wargear and any attached unit gain +1 to their Attacks (A) characteristic.",
-                    "hidden": false
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Tempest Bolter",
         "id": "9061-f012-9622-cdf4",
         "collective": true,
@@ -8148,33 +7995,6 @@
         "infoLinks": [{"name": "Grenade Launcher", "id": "5bb9-715b-db83-c151", "hidden": false, "targetId": "79db-30d4-936a-bf17", "type": "profile"}]
       },
       {
-        "name": "Astartes Grenade Launcher",
-        "id": "5d14-540c-0685-74c3",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "20",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Astartes Grenade Launcher",
-            "id": "fa4a-4db2-5aba-246b",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Krak Storm Grenade Launchers",
         "id": "42f4-2475-6213-0689",
         "collective": true,
@@ -8224,32 +8044,6 @@
               {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
               {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Precision Hits, Rending (5+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Assault Drills",
-        "id": "15bc-5f98-693a-b12a",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "21",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Assault Drills",
-            "id": "6ee8-aa27-68f8-fc4e",
-            "hidden": false,
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Unwieldy, Sunder", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
@@ -11963,6 +11757,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -12579,6 +12384,17 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -16672,7 +16488,8 @@
           {"name": "[Chapter]", "id": "781e-db14-6a70-1bd6", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
           {"name": "M31", "id": "5955-4d64-7df7-9671", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
           {"name": "Lieutenant", "id": "9b85-f882-3d11-ef1a", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"},
-          {"name": "Infantry", "id": "4410-16f7-c4ee-8e1b", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+          {"name": "Infantry", "id": "4410-16f7-c4ee-8e1b", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Character", "id": "3668-a96f-fe60-d4f7", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
         "entryLinks": [
@@ -16967,8 +16784,9 @@
                         ],
                         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
                       },
-                      {"name": "Litany of Prayers", "id": "d183-d0e3-fdec-0f55", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+                      {"name": "Litanies", "id": "d183-d0e3-fdec-0f55", "hidden": false, "import": true, "targetId": "3fe7-a4c0-da08-8a22", "type": "selectionEntryGroup"}
                     ],
+                    "modifiers": [{"field": "hidden", "type": "set", "value": true}, {"field": "category", "scope": "unit", "type": "add", "value": "f41c-295d-a9b1-b72c"}],
                     "selectionEntries": [
                       {
                         "name": "Stubborn",
@@ -17026,7 +16844,6 @@
                             "value": 1
                           }
                         ],
-                        "infoLinks": [{"name": "Priest (x)", "id": "127f-96ba-0dc7-d24d", "hidden": false, "targetId": "beb9-b346-8f52-63fe", "type": "rule"}],
                         "selectionEntries": [
                           {"name": "Priest (1)", "id": "ff1e-1b72-cc44-7b29", "defaultAmount": "1", "hidden": false, "import": true, "type": "upgrade"},
                           {
@@ -17073,6 +16890,24 @@
                             "childId": "0c8c-ae91-c6be-ba67",
                             "childName": "Blood Ravens",
                             "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "24e8-efde-3148-5d6e",
+                            "childName": "Black Templars",
+                            "field": "selections",
+                            "includeChildForces": true,
                             "includeChildSelections": true,
                             "scope": "force",
                             "shared": true,
@@ -18305,7 +18140,8 @@
           {"name": "Command Squad", "id": "3d3c-8d7d-b61c-a109", "hidden": false, "primary": false, "targetId": "3dcd-0520-4715-224e"},
           {"name": "Vetrans", "id": "1eec-8650-1cf2-73ae", "hidden": false, "primary": false, "targetId": "6ce5-b373-d16a-52f6"},
           {"name": "M31", "id": "1292-6944-4177-5747", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Infantry", "id": "8778-c027-d85d-c910", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+          {"name": "Infantry", "id": "8778-c027-d85d-c910", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Character", "id": "7256-39a9-49e6-14fc", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
         ],
         "constraints": [{"id": "1768-b553-2796-8378", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [
@@ -20172,7 +20008,8 @@
           {"name": "[Chapter]", "id": "2fdd-9a87-a447-f037", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
           {"name": "Captain", "id": "93cc-71a8-b0f4-ba75", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
           {"name": "M31", "id": "dda4-530b-1195-ea14", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Infantry", "id": "9186-64bd-c7e4-6389", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
+          {"name": "Infantry", "id": "9186-64bd-c7e4-6389", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Character", "id": "2810-8d07-00ac-b19a", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 60}],
         "entryLinks": [
@@ -20420,6 +20257,42 @@
                       {"affects": "profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "scope": "model", "type": "increment", "value": 1},
                       {"affects": "profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "model", "type": "increment", "value": 1},
                       {"affects": "profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "model", "type": "increment", "value": 1}
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "24e8-efde-3148-5d6e",
+                            "childName": "Black Templars",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "1a89-b9e7-f553-9a7d",
+                            "childName": "Raven Guard",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
                     ]
                   }
                 ],
@@ -22791,6 +22664,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -23940,6 +23824,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28653,6 +28548,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -31615,6 +31521,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -33139,6 +33056,17 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -35498,6 +35426,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "24e8-efde-3148-5d6e",
+                    "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -36301,7 +36240,8 @@
             "modifiers": [
               {"affects": "self.entries.profiles.Vehicle", "field": "ce2d-33a1-3626-3105", "scope": "unit", "type": "increment", "value": "1"},
               {"affects": "self.entries.profiles.Vehicle", "field": "1a60-9cb9-3892-ac5a", "scope": "unit", "type": "increment", "value": "1"},
-              {"affects": "self.entries.profiles.Vehicle", "field": "7b21-f3da-4802-3e38", "scope": "unit", "type": "increment", "value": "1"}
+              {"affects": "self.entries.profiles.Vehicle", "field": "7b21-f3da-4802-3e38", "scope": "unit", "type": "increment", "value": "1"},
+              {"field": "category", "scope": "unit", "type": "add", "value": "bf2b-7ae1-7518-e819"}
             ]
           }
         ],
@@ -36518,6 +36458,58 @@
                         "value": 1
                       }
                     ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "cd59-26a1-fe37-c8ae",
+                        "childName": "The Endless Crusade",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "875f-9975-8052-0495",
+                        "childName": "Captain",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "7369-59f3-e062-7115",
+                        "childName": "The Sons of Grimaldus",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e66c-73a7-0900-2c5f",
+                        "childName": "Chaplain Grimaldus",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
                   }
                 ],
                 "conditions": [
@@ -36666,7 +36658,14 @@
         "import": false,
         "constraints": [{"id": "81ae-e9a0-a457-02fb", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [
-          {"name": "Warlord Traits", "id": "6b60-4c39-1b24-a2e7", "hidden": false, "import": true, "targetId": "1fae-8577-e43d-8c2b", "type": "selectionEntryGroup"},
+          {
+            "name": "Salamanders Warlord Traits",
+            "id": "6b60-4c39-1b24-a2e7",
+            "hidden": false,
+            "import": true,
+            "targetId": "1fae-8577-e43d-8c2b",
+            "type": "selectionEntryGroup"
+          },
           {
             "name": "Raven Guard Warlord Traits",
             "id": "1ac7-ff05-a695-ff3d",
@@ -36729,6 +36728,17 @@
                       {
                         "childId": "1a89-b9e7-f553-9a7d",
                         "childName": "Raven Guard",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "24e8-efde-3148-5d6e",
+                        "childName": "Black Templars",
                         "field": "selections",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -36851,6 +36861,7 @@
         "name": "Litany of Prayers",
         "id": "830d-5d9f-1d8a-708c",
         "collapsible": true,
+        "comment": "Core SM Codex",
         "hidden": false,
         "page": "25",
         "publicationId": "1606-03fb-e01d-e0cf",
@@ -37795,7 +37806,41 @@
         "flatten": true,
         "hidden": false,
         "entryLinks": [
-          {"name": "Salamanders Wargear", "id": "04cc-2e82-1538-25a7", "hidden": false, "import": true, "targetId": "1549-dd53-18d7-2720", "type": "selectionEntryGroup"}
+          {
+            "name": "Salamanders Wargear",
+            "id": "04cc-2e82-1538-25a7",
+            "hidden": false,
+            "import": true,
+            "targetId": "1549-dd53-18d7-2720",
+            "type": "selectionEntryGroup",
+            "modifierGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "100c-98ec-dcff-076d",
+                    "childName": "Salamanders",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [{"affects": "entries.forces.recursive.profiles.Unit", "field": "6bc7-a391-2ba3-44f9", "scope": "unit", "type": "decrement", "value": 1}]
+              }
+            ]
+          },
+          {
+            "name": "Black Templars Wargear",
+            "id": "3899-0405-8568-b1db",
+            "hidden": false,
+            "import": true,
+            "targetId": "0db8-92fd-ebfd-e881",
+            "type": "selectionEntryGroup"
+          }
         ]
       },
       {
@@ -37815,6 +37860,7 @@
           {
             "name": "Librarius Psychic Powers",
             "id": "c45b-a5fa-3ee5-3f92",
+            "comment": "todo: Black Templars Indomitus Psyker Discipline?",
             "hidden": false,
             "import": true,
             "targetId": "e38c-7c3f-2d01-60a9",
@@ -37867,7 +37913,15 @@
         ],
         "entryLinks": [
           {"name": "Raven Guard Relics", "id": "a04a-ce44-b84f-abfe", "hidden": false, "import": true, "targetId": "9b03-6c66-01cd-406d", "type": "selectionEntryGroup"},
-          {"name": "Salamanders Relics", "id": "bf52-c693-e8d1-13a3", "hidden": false, "import": true, "targetId": "5eb8-a60b-d67a-f623", "type": "selectionEntryGroup"}
+          {"name": "Salamanders Relics", "id": "bf52-c693-e8d1-13a3", "hidden": false, "import": true, "targetId": "5eb8-a60b-d67a-f623", "type": "selectionEntryGroup"},
+          {
+            "name": "Black Templars Relics",
+            "id": "76ea-71b1-903d-7481",
+            "hidden": false,
+            "import": true,
+            "targetId": "7975-3300-c7b1-2892",
+            "type": "selectionEntryGroup"
+          }
         ],
         "selectionEntryGroups": [
           {
@@ -37899,6 +37953,17 @@
                       {
                         "childId": "1a89-b9e7-f553-9a7d",
                         "childName": "Raven Guard",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "24e8-efde-3148-5d6e",
+                        "childName": "Black Templars",
                         "field": "selections",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -38204,6 +38269,48 @@
               }
             ]
           }
+        ]
+      },
+      {
+        "name": "Litanies",
+        "id": "3fe7-a4c0-da08-8a22",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Litany of Prayers",
+            "id": "3680-9ac2-f204-892d",
+            "hidden": false,
+            "import": true,
+            "targetId": "830d-5d9f-1d8a-708c",
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "24e8-efde-3148-5d6e",
+                        "childName": "Black Templars",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Litanies of Faith", "id": "21be-d951-6c31-0da7", "hidden": false, "import": true, "targetId": "90af-80c6-b9da-d7ae", "type": "selectionEntryGroup"}
         ]
       }
     ]

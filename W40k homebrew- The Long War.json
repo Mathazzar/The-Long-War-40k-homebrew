@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 21,
+    "revision": 22,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -241,7 +241,8 @@
       {"name": "Malcador Annihilator Tank", "id": "0a3c-9658-7eee-2a71", "hidden": false},
       {"name": "Macharius Heavy Tank", "id": "ec3b-99c1-fefd-86c8", "hidden": false},
       {"name": "Baneblade Super Heavy Tank", "id": "2b63-9fdf-2bc0-e561", "hidden": false},
-      {"name": "Bastion", "id": "69af-8155-3254-e7f3", "hidden": false}
+      {"name": "Bastion", "id": "69af-8155-3254-e7f3", "hidden": false},
+      {"name": "Character", "id": "bf2b-7ae1-7518-e819", "hidden": true}
     ],
     "costTypes": [
       {
