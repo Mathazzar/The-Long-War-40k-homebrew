@@ -1,0 +1,155 @@
+{
+  "catalogue": {
+    "name": "Imperium - Space Marines - Blood Angels",
+    "id": "c8bb-2be7-a95b-1ceb",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 22,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue",
+    "catalogueLinks": [{"name": "Imperium - shared rules", "id": "408c-5eb7-96be-3abd", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
+    "categoryEntries": [{"name": "[Blood Angels]", "id": "9ccb-08c2-c256-ec0a", "hidden": false}, {"name": "Death Company", "id": "f140-3324-07ab-000a", "hidden": false}],
+    "publications": [{"name": "The Long War – Codex Supplement Blood Angels", "id": "5bad-8a08-2a03-418d", "hidden": false, "publisher": "5.0"}],
+    "sharedInfoGroups": [
+      {
+        "name": "Blood Angels",
+        "id": "91e7-1544-e2b7-9e54",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "The Black Rage",
+            "id": "9f30-4b26-771f-9772",
+            "description": "• When mustering your army, you must select 1 Blood Angels Infantry or Walker type unit that does not have the Veteran Keyword per 1,000pts to gain the Death Company special rule.\n• A Blood Angels army must include at least 1 Death Company unit for every 1000pts.\n•  Blood Angels Space Marine Captains may not purchase the Chapter Master upgrade.",
+            "hidden": false,
+            "page": "4",
+            "publicationId": "5bad-8a08-2a03-418d"
+          },
+          {
+            "name": "The Red Thirst",
+            "id": "bf10-930b-2901-0f43",
+            "description": "Blood Angels units gain the following special rules:\n• Blood Angels Infantry, Bike, Cavalry and Walker type units gain the Rage special rule.\n• All Blood Angels units in your army must make a Leadership test at the start of each of Combat Phase if they are engaged with an enemy unit:\n• If the Leadership test is passed, the Blood Angels unit automatically pass all Panic tests they would be required to make that phase.\n• If the Blood Angels unit fails the Leadership test, the Blood Angels unit gains +1 to its Strength (S) characteristic until the end of the Phase.\nDesigner note: You may opt to fail a Leadership Test when called instead of rolling per the Core Rules. This includes the Red Thirst test.",
+            "hidden": false,
+            "page": "4",
+            "publicationId": "5bad-8a08-2a03-418d"
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {"name": "Allegiance: Blood Angels", "id": "63d9-11c8-19e4-13cc", "hidden": false},
+      {
+        "name": "Angelic Visage",
+        "id": "7d5f-f27b-0b8e-f744",
+        "description": "Enemy units within 3” of a unit with this special rule suffer -1 to their Weapon Skill (WS) characteristic.",
+        "hidden": false,
+        "page": "6",
+        "publicationId": "5bad-8a08-2a03-418d"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {"name": "Blood Angles", "id": "69c3-944c-6e99-d38c", "hidden": false, "import": true, "type": "upgrade"},
+      {
+        "name": "Death Company",
+        "id": "58c1-36d4-c4f2-dc2b",
+        "hidden": true,
+        "import": true,
+        "page": "6",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "2331-947b-de62-49d3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "11c8-2ee2-4de0-8da0",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "11c8-2ee2-4de0-8da0",
+                "type": "set",
+                "value": 2,
+                "conditions": [
+                  {
+                    "childId": "e220-3a56-1eb4-4110",
+                    "childName": "Large (2000 Point Limit)",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {"field": "hidden", "type": "set", "value": false},
+              {
+                "field": "11c8-2ee2-4de0-8da0",
+                "type": "set",
+                "value": 1,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "7212-ae7b-bd0a-69e5",
+                        "childName": "Average (1500 Point Limit)",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "a344-db50-458b-6942",
+                        "childName": "Small (1000 Point Limit)",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"field": "category", "scope": "unit", "type": "add", "value": "f140-3324-07ab-000a"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Death Company",
+            "id": "d1d0-6846-39f1-6040",
+            "description": "A unit with this special rule gains the following effects:\n• The unit gains the Frenzy special rule and is always considered to be affected by the Frenzy special rule even if it has suffered no wounds or casualties.\n• The unit with this special rule always counts as failing the Leadership test for the Red Thirst special rule (see Allegiance: Blood Angels).\n• The unit automatically passes all Panic tests.\n• The unit gains the Expendable special rule and does not count for Victory Points when Slain.\n• The unit gains the Death Company Keyword.\n• The unit cannot be joined by other units that do not have the Death Company Keyword.\nDesigner Note: The purchase of the Death Company special rule for a unit does not cost any points. It is free but mandatory.",
+            "hidden": false
+          }
+        ]
+      }
+    ]
+  }
+}
