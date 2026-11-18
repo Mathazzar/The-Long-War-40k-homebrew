@@ -7,7 +7,7 @@
     "gameSystemRevision": 4,
     "library": true,
     "publicationId": "2341-8754-2493-838d",
-    "revision": 10,
+    "revision": 11,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - Imperial Guard", "id": "70d5-ec7b-4e75-5145", "importRootEntries": false, "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"}],
     "categoryEntries": [
@@ -469,25 +469,6 @@
         "infoLinks": [
           {"name": "Flesh over Steel", "id": "cbd5-70be-7875-1007", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"},
           {"name": "The Tri-Fold Path of Shadow", "id": "0e86-c76f-5717-bd67", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "1a89-b9e7-f553-9a7d",
-                "childName": "Raven Guard",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
-              }
-            ]
-          }
         ]
       }
     ],
@@ -853,10 +834,18 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [
-          {"name": "Flesh over Steel", "id": "8983-1379-e4f7-b0ad", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"},
-          {"name": "The Tri-Fold Path of Shadow", "id": "ce07-5d39-31a6-d1ef", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"}
-        ]
+        "infoGroups": [
+          {
+            "name": "Raven Guard",
+            "id": "c6d4-a961-21ee-e97d",
+            "hidden": false,
+            "infoLinks": [
+              {"name": "Flesh over Steel", "id": "622b-b249-a635-b128", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"},
+              {"name": "The Tri-Fold Path of Shadow", "id": "18bd-1f71-51ee-421f", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"}
+            ]
+          }
+        ],
+        "modifiers": [{"affects": "entries.forces.recursive.95f3-9989-88bf-42cb", "field": "add-info", "scope": "force", "type": "add", "value": "4e07-baa0-1d58-f408"}]
       },
       {
         "name": "Raven’s Fury",
@@ -1233,10 +1222,8 @@
           {"name": "Night Vision", "id": "a056-a1cb-d2d7-962b", "hidden": false, "targetId": "ab1c-d9d1-a94e-fefc", "type": "rule"},
           {"name": "Bulky (x)", "id": "e214-4de7-7107-a9d5", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
           {"name": "Deep Strike", "id": "b4f4-e518-8c99-d273", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
-          {"name": "The Tri-Fold Path of Shadow", "id": "e09d-12e4-b5a7-7309", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "2642-e57f-225a-38f6", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "Fly", "id": "07e9-db5f-77bc-d484", "hidden": false, "targetId": "6848-5598-edc5-a56f", "type": "rule"},
-          {"name": "Flesh over Steel", "id": "b562-0d3a-5a5f-0132", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"}
+          {"name": "Fly", "id": "07e9-db5f-77bc-d484", "hidden": false, "targetId": "6848-5598-edc5-a56f", "type": "rule"}
         ],
         "modifiers": [
           {
@@ -1753,9 +1740,7 @@
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 115}],
         "infoLinks": [
           {"name": "Allegiance: Raven Guard", "id": "6113-7fde-2261-00cd", "hidden": false, "targetId": "efa2-956c-6cac-bdda", "type": "rule"},
-          {"name": "Character", "id": "1a75-e2a5-b786-126b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
-          {"name": "Flesh over Steel", "id": "35db-53e5-73bd-586c", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"},
-          {"name": "The Tri-Fold Path of Shadow", "id": "361a-121b-fad8-443c", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"}
+          {"name": "Character", "id": "1a75-e2a5-b786-126b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
         ],
         "modifiers": [
           {
@@ -1990,8 +1975,6 @@
         "infoLinks": [
           {"name": "Shadow Master", "id": "81b9-7789-8c46-6212", "hidden": false, "targetId": "1994-232d-947b-5c57", "type": "rule"},
           {"name": "Character", "id": "f864-ef2c-5247-9d39", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
-          {"name": "Flesh over Steel", "id": "69a3-f29f-2053-21ed", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"},
-          {"name": "The Tri-Fold Path of Shadow", "id": "788b-3f28-9412-2595", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"},
           {"name": "Allegiance: Raven Guard", "id": "3ba3-e1db-4473-9df7", "hidden": false, "targetId": "efa2-956c-6cac-bdda", "type": "rule"},
           {"name": "Bulky (x)", "id": "631d-354e-a99b-a7d7", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
           {"name": "Deep Strike", "id": "37a7-8f5e-cefe-eea7", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
@@ -2224,14 +2207,12 @@
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 60}],
         "infoLinks": [
-          {"name": "Flesh over Steel", "id": "df41-ba23-d598-c745", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"},
           {"name": "Scout", "id": "e353-129a-fe91-0621", "hidden": false, "targetId": "40e0-db51-99ce-684c", "type": "rule"},
           {"name": "Sudden Strike", "id": "e616-c861-af06-0f57", "hidden": false, "targetId": "e8ec-274c-8bea-40d2", "type": "rule"},
           {"name": "Bulky (x)", "id": "f532-929c-8e41-71bc", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
           {"name": "Allegiance: Raven Guard", "id": "225f-2953-b08e-e8f3", "hidden": false, "targetId": "efa2-956c-6cac-bdda", "type": "rule"},
           {"name": "Fly", "id": "0db0-8560-2633-ac6e", "hidden": false, "targetId": "6848-5598-edc5-a56f", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "fa81-8a20-57c5-72dd", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
-          {"name": "The Tri-Fold Path of Shadow", "id": "010e-c4be-ab89-2674", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"},
           {"name": "Deep Strike", "id": "14ee-7e9d-8e40-07ea", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"}
         ],
         "modifiers": [
@@ -2888,8 +2869,6 @@
           {"name": "Character", "id": "f180-3fa0-7c89-484d", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
           {"name": "Allegiance: Raven Guard", "id": "206b-709c-c23b-fd82", "hidden": false, "targetId": "efa2-956c-6cac-bdda", "type": "rule"},
           {"name": "Shadow Master", "id": "17d1-c1b3-2c00-b33b", "hidden": false, "targetId": "1994-232d-947b-5c57", "type": "rule"},
-          {"name": "The Tri-Fold Path of Shadow", "id": "3de7-ee9d-71d5-3ce2", "hidden": false, "targetId": "83aa-d0b5-6da1-2b3f", "type": "rule"},
-          {"name": "Flesh over Steel", "id": "fea5-c2a7-dbb3-8c23", "hidden": false, "targetId": "0442-0bdd-8698-f417", "type": "rule"},
           {"name": "Relentless", "id": "7419-2238-3ce2-1779", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
           {"name": "Night Vision", "id": "2d08-6557-5dc7-8ffd", "hidden": false, "targetId": "ab1c-d9d1-a94e-fefc", "type": "rule"},
           {"name": "Scout", "id": "ade8-bb55-444f-ef64", "hidden": false, "targetId": "40e0-db51-99ce-684c", "type": "rule"}

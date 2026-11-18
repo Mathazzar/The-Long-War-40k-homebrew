@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 10,
     "library": true,
-    "revision": 10,
+    "revision": 11,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
@@ -1379,7 +1379,7 @@
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}],
         "rules": [
           {
-            "name": "Litany of Foxus (Prayer)",
+            "name": "Litany of Foxus",
             "id": "c0c1-9399-1f40-8f8e",
             "description": "When this Prayer is performed, the Priest and any attached unit has the Indomitable Spirit (4+) special rule until the start of your next Shooting Phase.",
             "hidden": false,
@@ -5058,6 +5058,22 @@
               {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
               {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
             ]
+          }
+        ]
+      },
+      {
+        "name": "Litany of Fury (Prayer)",
+        "id": "dc9a-ef61-f807-8d7e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "1d35-db98-4b35-b20a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Litany of Fury",
+            "id": "cba1-1177-99e3-5e3b",
+            "description": "When this Prayer is performed, the Priest and any attached unit gains the Fleet special rule until the start of your next Shooting Phase.",
+            "hidden": false
           }
         ]
       }

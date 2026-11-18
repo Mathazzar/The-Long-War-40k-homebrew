@@ -7,7 +7,7 @@
     "gameSystemRevision": 1,
     "library": false,
     "publicationId": "6f16-791a-3a26-4c72",
-    "revision": 12,
+    "revision": 13,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0b86-c521-be39-bdb4", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -10315,7 +10315,15 @@
         "publicationId": "6f16-791a-3a26-4c72",
         "entryLinks": [
           {"name": "Litany of Hatred (Prayer)", "id": "6d0e-afeb-5ed5-fa4a", "hidden": false, "import": true, "targetId": "0a63-744b-fb9a-273d", "type": "selectionEntry"},
-          {"name": "Litany of Focus (Prayer)", "id": "3767-b035-f3e3-2f61", "hidden": false, "import": true, "targetId": "a645-6155-b3a2-36e9", "type": "selectionEntry"}
+          {"name": "Litany of Focus (Prayer)", "id": "3767-b035-f3e3-2f61", "hidden": false, "import": true, "targetId": "a645-6155-b3a2-36e9", "type": "selectionEntry"},
+          {
+            "name": "Litany of Fury (Prayer)",
+            "id": "a3e8-a437-a9e8-9685",
+            "hidden": false,
+            "targetId": "dc9a-ef61-f807-8d7e",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+          }
         ],
         "selectionEntries": [
           {
@@ -10335,15 +10343,6 @@
             "type": "upgrade",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
             "rules": [{"name": "Litany of Enduring Faith (Prayer)", "id": "82d0-557b-efa6-c8c1", "hidden": false}]
-          },
-          {
-            "name": "Litany of Fury (Prayer)",
-            "id": "dc9a-ef61-f807-8d7e",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-            "rules": [{"name": "Litany of Fury (Prayer)", "id": "cba1-1177-99e3-5e3b", "hidden": false}]
           },
           {
             "name": "Litany of Blazing Piety (Prayer)",

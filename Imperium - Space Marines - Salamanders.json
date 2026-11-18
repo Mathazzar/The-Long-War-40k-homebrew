@@ -211,8 +211,7 @@
             ]
           }
         ]
-      },
-      {"name": "Character", "id": "bf2b-7ae1-7518-e819", "hidden": false}
+      }
     ],
     "entryLinks": [
       {"name": "Vulkan He’stan", "id": "c467-0c2f-5e0b-c343", "hidden": false, "targetId": "71da-a195-ac0c-c4c1", "type": "selectionEntry"},
@@ -1247,7 +1246,8 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "Salamanders", "id": "b1dc-e378-6f00-073d", "hidden": false, "targetId": "f335-d285-db5e-55e4", "type": "infoGroup"}]
+        "infoLinks": [{"name": "Salamanders", "id": "b1dc-e378-6f00-073d", "hidden": false, "targetId": "f335-d285-db5e-55e4", "type": "infoGroup"}],
+        "modifiers": [{"affects": "4db2-c5b4-e890-1d82", "field": "add-info", "scope": "force", "type": "add", "value": "f335-d285-db5e-55e4"}]
       },
       {
         "name": "Sanctifier",
@@ -6131,8 +6131,7 @@
         "infoLinks": [
           {"name": "Allegiance: Salamanders", "id": "d1cf-7a58-1c27-4027", "hidden": false, "targetId": "ee3f-8959-b8ac-eb2a", "type": "rule"},
           {"name": "And they shall know no Fear", "id": "376d-3a80-8d46-0f7e", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Character", "id": "750a-f738-290a-70a9", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
-          {"name": "Salamanders", "id": "0572-d000-a2c3-e915", "hidden": false, "targetId": "f335-d285-db5e-55e4", "type": "infoGroup"}
+          {"name": "Character", "id": "750a-f738-290a-70a9", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
         ],
         "modifiers": [
           {
