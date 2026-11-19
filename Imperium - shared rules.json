@@ -3594,6 +3594,14 @@
                   {"id": "7736-5049-96c4-37ee-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "b075-2610-46ad-68df",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [

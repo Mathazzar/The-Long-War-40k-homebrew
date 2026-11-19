@@ -8756,7 +8756,7 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "e720-4c5d-0a93-ba0f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e720-4c5d-0a93-ba0f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -8815,6 +8815,14 @@
                   {"id": "5eb1-f206-3f42-1a06-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "0033-3e51-fa13-5fb8",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -9073,6 +9081,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "508c-8e0c-786f-b9f3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "327e-75be-e9b6-094e",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "4d35-da95-a53a-fd36", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}],
@@ -9405,6 +9421,14 @@
                   {"id": "2acc-3e9c-3b69-87ca-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "2acc-3e9c-3b69-87ca-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "e075-2d3c-79f6-4bc5",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "d763-d89e-933c-1fb8", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
@@ -9710,7 +9734,7 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "01c9-5673-4258-5229-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "01c9-5673-4258-5229-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -9764,6 +9788,14 @@
                 "constraints": [{"id": "2d60-cf99-cf1c-5fd8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "b3b1-073e-d5fe-37ba",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -9927,7 +9959,15 @@
                   {"id": "878d-5a0c-08b0-0509-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Smoke Launchers", "id": "4b85-c1cc-74b3-64f9", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"}
+              {"name": "Smoke Launchers", "id": "4b85-c1cc-74b3-64f9", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "d50f-5540-3db0-2c62",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -10749,6 +10789,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "e858-8a8f-45d4-b284", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "28c2-d43a-c84e-b8f5",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Veteran Sergeant", "id": "b3c8-3a83-7456-91f9", "hidden": false, "targetId": "5cc4-7146-09a3-a8df", "type": "profile"}]
@@ -11426,7 +11474,8 @@
                       {"affects": "f149-873d-0ef1-c92d", "field": "hidden", "type": "set", "value": true},
                       {"affects": "1879-2a4e-1150-0b85", "field": "hidden", "type": "set", "value": true},
                       {"affects": "c829-b809-d33d-4738", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 1},
-                      {"field": "defaultSelectionEntryId", "type": "set", "value": "b2cc-ec7f-a3f4-0935"}
+                      {"field": "defaultSelectionEntryId", "type": "set", "value": "b2cc-ec7f-a3f4-0935"},
+                      {"affects": "b997-ac09-b543-0e7d", "field": "hidden", "type": "set", "value": true}
                     ]
                   }
                 ]
@@ -11497,6 +11546,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "d699-7b79-f343-9e97",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Veteran Marine", "id": "06d9-1857-1c81-f3e5", "hidden": false, "targetId": "e556-d882-9b10-16d6", "type": "profile"}],
@@ -11815,7 +11872,15 @@
                 ]
               },
               {"name": "(P)", "id": "e301-efa8-faf0-6844", "hidden": false, "import": true, "targetId": "5975-8fe4-656d-48a9", "type": "selectionEntryGroup"},
-              {"name": "(S)", "id": "fafa-4530-aed1-e50f", "hidden": false, "import": true, "targetId": "349f-e2f6-cbb2-b4b3", "type": "selectionEntryGroup"}
+              {"name": "(S)", "id": "fafa-4530-aed1-e50f", "hidden": false, "import": true, "targetId": "349f-e2f6-cbb2-b4b3", "type": "selectionEntryGroup"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "bd74-fd93-196b-36e7",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -11937,6 +12002,14 @@
                   {"id": "74c2-905b-b30c-c226-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "eb14-adad-57aa-b762",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -12183,6 +12256,14 @@
                     "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
                   }
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "f09a-c708-cc96-883a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Veteran Sergeant", "id": "4e6f-677d-461a-001e", "hidden": false, "targetId": "5cc4-7146-09a3-a8df", "type": "profile"}],
@@ -12392,6 +12473,62 @@
                     "targetId": "e38e-0c5b-3e05-b098",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
+                    "name": "Evicerator",
+                    "id": "07df-6e97-7c14-9948",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b997-ac09-b543-0e7d",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "69c3-944c-6e99-d38c",
+                            "childName": "Blood Angles",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Encarmine Axe",
+                    "id": "421b-3869-96ab-55e0",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7175-124a-2e09-3318",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
+                    "name": "Encarmine Sword",
+                    "id": "e64c-59a6-3686-3df2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "5939-7c62-5a7c-f618",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
+                    "name": "Encarmine Spear",
+                    "id": "9689-04e1-afd2-ff50",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "1548-cca6-6169-648e",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
                   }
                 ]
               }
@@ -12440,6 +12577,14 @@
                     "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
                   }
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "4b8a-a4d8-875a-938c",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Veteran Marine", "id": "162f-decc-ab87-0e82", "hidden": false, "targetId": "e556-d882-9b10-16d6", "type": "profile"}],
@@ -12640,7 +12785,10 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
-                  {"name": "Power Fist", "id": "6c49-baca-f4a2-db37", "hidden": false, "import": true, "targetId": "e38e-0c5b-3e05-b098", "type": "selectionEntry"}
+                  {"name": "Power Fist", "id": "6c49-baca-f4a2-db37", "hidden": false, "import": true, "targetId": "e38e-0c5b-3e05-b098", "type": "selectionEntry"},
+                  {"name": "Encarmine Axe", "id": "9386-11ec-cf10-0cc4", "hidden": false, "import": true, "targetId": "7175-124a-2e09-3318", "type": "selectionEntry"},
+                  {"name": "Encarmine Spear", "id": "136c-a665-72c2-88d7", "hidden": false, "import": true, "targetId": "1548-cca6-6169-648e", "type": "selectionEntry"},
+                  {"name": "Encarmine Sword", "id": "2071-cb3c-24fb-70ad", "hidden": false, "import": true, "targetId": "5939-7c62-5a7c-f618", "type": "selectionEntry"}
                 ]
               }
             ]
@@ -12806,7 +12954,8 @@
                     "targetId": "78c1-9390-d6ec-04ff",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
-                  }
+                  },
+                  {"name": "Quakebolt Boltgun", "id": "f1cb-e6cc-4cae-f65e", "hidden": false, "import": true, "targetId": "487b-5ff5-4171-f0cb", "type": "selectionEntry"}
                 ],
                 "modifierGroups": [
                   {
@@ -12849,7 +12998,8 @@
                       {"affects": "7387-4d1b-e3e4-b301", "field": "hidden", "type": "set", "value": true},
                       {"affects": "469c-f449-1e9e-1d6f", "field": "hidden", "type": "set", "value": true},
                       {"field": "defaultSelectionEntryId", "type": "set", "value": "992d-6e7a-c5ae-390e"},
-                      {"field": "name", "type": "append", "value": "Heavy"}
+                      {"field": "name", "type": "append", "value": "Heavy"},
+                      {"affects": "487b-5ff5-4171-f0cb", "field": "hidden", "type": "set", "value": true}
                     ]
                   },
                   {
@@ -12893,6 +13043,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "7fbc-c3e3-7da0-bf85", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "7cc1-eb7d-5128-3734",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "6f72-86ed-024c-df28", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}],
@@ -13050,7 +13208,15 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
             "entryLinks": [
               {"name": "Krak Grenades", "id": "5c8f-80a7-6145-9d9d", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-              {"name": "Frag Grenades", "id": "cfa3-299c-deb9-48b1", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"}
+              {"name": "Frag Grenades", "id": "cfa3-299c-deb9-48b1", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "474d-a72c-3d9c-4e93",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Marine", "id": "bcde-4884-88de-bb77", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
             "selectionEntryGroups": [
@@ -13124,6 +13290,7 @@
                     "value": 1
                   }
                 ],
+                "entryLinks": [{"name": "Quakebolt Boltgun", "id": "dcdc-9b09-9f8f-d9ed", "hidden": false, "import": true, "targetId": "487b-5ff5-4171-f0cb", "type": "selectionEntry"}],
                 "selectionEntries": [
                   {
                     "name": "Boltgun",
@@ -15451,6 +15618,14 @@
                   {"id": "aac6-f3db-01cc-fef5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "aac6-f3db-01cc-fef5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "1eb5-195b-1a31-0cb9",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "758e-6182-b96a-7c67", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
@@ -15519,6 +15694,14 @@
                   {"id": "2497-c319-3339-b74b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "2497-c319-3339-b74b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "aab9-2789-8bcb-7bfb",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "c646-3410-49a3-9a13", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}]
@@ -15604,6 +15787,14 @@
                   {"id": "b32d-0dc9-67a4-842d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "9574-422b-6e4b-5479",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -15742,7 +15933,7 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "84ee-e639-0e5c-2c53-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "84ee-e639-0e5c-2c53-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -15759,6 +15950,14 @@
                   {"id": "41d4-8caf-20e1-22a5-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "41d4-8caf-20e1-22a5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "239d-7cfd-5222-9265",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -15980,6 +16179,14 @@
                   {"id": "5120-2f3c-a884-df22-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "5120-2f3c-a884-df22-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "66b7-3d96-23fc-38ca",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -16248,7 +16455,17 @@
               {"id": "b3cc-a139-0ed5-3a19-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b3cc-a139-0ed5-3a19-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "entryLinks": [{"name": "Vengeance Launcher (P)", "id": "23a0-b309-9f16-42a4", "hidden": false, "targetId": "8bc9-9d7e-5b09-9e3d", "type": "selectionEntry"}],
+            "entryLinks": [
+              {"name": "Vengeance Launcher (P)", "id": "23a0-b309-9f16-42a4", "hidden": false, "targetId": "8bc9-9d7e-5b09-9e3d", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "dac8-6d25-034d-add5",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
+            ],
             "profiles": [
               {
                 "name": "Storm Eagle",
@@ -16584,6 +16801,14 @@
                   {"id": "d8a9-6408-458b-65e5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "6af6-01f4-c530-bfef",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -16748,6 +16973,14 @@
                   {"id": "f50e-e401-ef6a-c971-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "f50e-e401-ef6a-c971-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "8769-7486-3063-5ddc",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -17017,6 +17250,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "212f-ec19-c283-4363",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -18748,6 +18989,14 @@
                       {"id": "1b62-1da7-ce51-c7a2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "1b62-1da7-ce51-c7a2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ]
+                  },
+                  {
+                    "name": "Chapter Supplements Model Wargear",
+                    "id": "1c73-d7c1-2d67-4c08",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7850-b4d5-657d-7ea6",
+                    "type": "selectionEntryGroup"
                   }
                 ],
                 "infoLinks": [
@@ -19079,7 +19328,15 @@
                       }
                     ]
                   },
-                  {"name": "Bolt Pistol", "id": "0c14-87c4-7efa-f72c", "hidden": false, "import": true, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"}
+                  {"name": "Bolt Pistol", "id": "0c14-87c4-7efa-f72c", "hidden": false, "import": true, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"},
+                  {
+                    "name": "Chapter Supplements Model Wargear",
+                    "id": "bdb8-47c1-589f-e72e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7850-b4d5-657d-7ea6",
+                    "type": "selectionEntryGroup"
+                  }
                 ],
                 "infoLinks": [
                   {
@@ -19517,6 +19774,15 @@
                       {"id": "686b-8a6f-1aac-39f6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "686b-8a6f-1aac-39f6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ]
+                  },
+                  {"name": "Bolt Pistol", "id": "053d-e590-03a2-8192", "hidden": false, "import": true, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"},
+                  {
+                    "name": "Chapter Supplements Model Wargear",
+                    "id": "f42e-2dcc-cad8-0758",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7850-b4d5-657d-7ea6",
+                    "type": "selectionEntryGroup"
                   }
                 ],
                 "profiles": [
@@ -19537,48 +19803,6 @@
                       {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
                       {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
                       {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
-                    ]
-                  }
-                ],
-                "selectionEntryGroups": [
-                  {
-                    "name": "Bolt Pistol",
-                    "id": "0d75-1994-ac45-acfb",
-                    "defaultSelectionEntryId": "6088-0342-9b7c-b8af",
-                    "hidden": false,
-                    "constraints": [
-                      {
-                        "id": "b4af-55fc-d87b-1887-min",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "min",
-                        "value": 1
-                      },
-                      {
-                        "id": "b4af-55fc-d87b-1887-max",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "max",
-                        "value": 1
-                      }
-                    ],
-                    "entryLinks": [
-                      {
-                        "name": "Plasma Pistol",
-                        "id": "bf0d-cdc8-bf9c-ef1d",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "3407-02d2-18aa-4a22",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                      },
-                      {"name": "Bolt Pistol", "id": "d759-1a0d-3563-db82", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"}
                     ]
                   }
                 ]
@@ -19882,7 +20106,15 @@
                       {"id": "6cff-c913-97af-b79e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ]
                   },
-                  {"name": "Bolt Pistol", "id": "1475-abf5-4f14-3755", "hidden": false, "import": true, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"}
+                  {"name": "Bolt Pistol", "id": "1475-abf5-4f14-3755", "hidden": false, "import": true, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"},
+                  {
+                    "name": "Chapter Supplements Model Wargear",
+                    "id": "f9d6-b4f4-72b0-b802",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7850-b4d5-657d-7ea6",
+                    "type": "selectionEntryGroup"
+                  }
                 ],
                 "infoLinks": [
                   {
@@ -20004,6 +20236,90 @@
                         "targetId": "7387-4d1b-e3e4-b301",
                         "type": "selectionEntry",
                         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                      },
+                      {
+                        "name": "Encarmine Axe",
+                        "id": "ee2b-731a-35bc-81b2",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "7175-124a-2e09-3318",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                        "modifiers": [
+                          {
+                            "field": "hidden",
+                            "type": "set",
+                            "value": true,
+                            "conditions": [
+                              {
+                                "childId": "b2b5-3d4c-75aa-f071",
+                                "childName": "Terminator",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "notInstanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Encarmine Spear",
+                        "id": "9000-1450-11f8-a3d0",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "1548-cca6-6169-648e",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                        "modifiers": [
+                          {
+                            "field": "hidden",
+                            "type": "set",
+                            "value": true,
+                            "conditions": [
+                              {
+                                "childId": "b2b5-3d4c-75aa-f071",
+                                "childName": "Terminator",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "notInstanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Encarmine Sword",
+                        "id": "a090-1b7a-dcce-4dd9",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "5939-7c62-5a7c-f618",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+                        "modifiers": [
+                          {
+                            "field": "hidden",
+                            "type": "set",
+                            "value": true,
+                            "conditions": [
+                              {
+                                "childId": "b2b5-3d4c-75aa-f071",
+                                "childName": "Terminator",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "notInstanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -20243,6 +20559,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "368e-153b-52cf-337b",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -22703,6 +23027,14 @@
                   {"id": "902c-c17d-0788-7ba3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "ebf4-ce27-91b0-492f",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -23033,6 +23365,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "01a7-d0c0-1cd3-4970", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "8e32-e872-4241-665b",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Scout Sergeant", "id": "4fdf-6cbd-888c-bbe5", "hidden": false, "targetId": "045a-9c2b-3428-cf05", "type": "profile"}],
@@ -23546,6 +23886,14 @@
                   {"id": "e463-91c4-4277-9b59-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "e463-91c4-4277-9b59-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "9ebd-c5d8-cc7f-6380",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Scout Marine", "id": "4451-6b9d-8b6a-f5c8", "hidden": false, "targetId": "3510-dc59-5a3b-adba", "type": "profile"}],
@@ -24213,6 +24561,14 @@
                   {"id": "eaa4-8650-f0c9-9961-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "eaa4-8650-f0c9-9961-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "aca6-3e3c-eb92-855d",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Scout Marine", "id": "1db9-fdc8-69bd-6d4a", "hidden": false, "targetId": "3510-dc59-5a3b-adba", "type": "profile"}]
@@ -24363,6 +24719,14 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "98c8-8597-31a6-8548",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Scout Sergeant", "id": "6979-860c-158f-08c0", "hidden": false, "targetId": "045a-9c2b-3428-cf05", "type": "profile"}],
@@ -24556,7 +24920,15 @@
                   {"id": "0c54-6830-0793-687b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Smoke Launchers", "id": "91a2-3919-12ef-4aa9", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"}
+              {"name": "Smoke Launchers", "id": "91a2-3919-12ef-4aa9", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "862b-0e60-3092-e841",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -24787,6 +25159,14 @@
                 "constraints": [{"id": "18ee-acd5-1088-0055", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "eee9-7117-e8c0-4c9a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -25217,6 +25597,14 @@
                 "targetId": "7812-1637-a222-add0",
                 "type": "selectionEntry",
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "a601-31aa-4796-6035",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -25364,6 +25752,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "e0f1-f5f8-f12b-9347", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "e749-7a98-9b1f-ff63",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Veteran Sergeant", "id": "0c6d-c845-3834-ef1a", "hidden": false, "targetId": "5cc4-7146-09a3-a8df", "type": "profile"}],
@@ -25516,6 +25912,16 @@
               {"id": "360f-5079-46ab-447f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4}
             ],
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 47}],
+            "entryLinks": [
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "b917-c94f-1c60-a3aa",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
+            ],
             "infoLinks": [{"name": "Veteran Marine", "id": "65dd-af10-8234-14d0", "hidden": false, "targetId": "e556-d882-9b10-16d6", "type": "profile"}],
             "selectionEntryGroups": [
               {
@@ -25943,7 +26349,15 @@
                 "constraints": [{"id": "6b98-1578-4622-f24f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
               },
-              {"name": "Bolt Pistol", "id": "e986-d509-4a8d-eeb5", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"}
+              {"name": "Bolt Pistol", "id": "e986-d509-4a8d-eeb5", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "0c44-2633-ee23-6c89",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "d672-1b1a-fafd-6383", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
           },
@@ -26114,6 +26528,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "b15c-42de-959f-ba6a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "cf61-5368-a051-47a4", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}]
@@ -26248,12 +26670,22 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "d505-c4c3-99fc-17d9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "d505-c4c3-99fc-17d9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "entryLinks": [{"name": "Dreadnought Plate", "id": "0cb9-8fee-d93d-ae0d", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"}],
+            "entryLinks": [
+              {"name": "Dreadnought Plate", "id": "0cb9-8fee-d93d-ae0d", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "e609-d8a8-e882-9f1f",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
+            ],
             "profiles": [
               {
                 "name": "Redemptor Dreadnought",
@@ -26860,6 +27292,14 @@
                   {"id": "48aa-4947-581c-1994-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "48aa-4947-581c-1994-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "9eef-d650-edbe-5009",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -27104,6 +27544,14 @@
                   {"id": "adbc-3569-c469-c7b1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "e2d5-969e-1017-003c",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -27259,7 +27707,15 @@
                 ]
               },
               {"name": "Dreadnought Plate", "id": "a57f-95fb-ea09-b8e5", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"},
-              {"name": "Atomantic Shielding", "id": "b47d-c5cd-9ef7-3b3e", "hidden": false, "import": true, "targetId": "22bf-68df-6ed4-225d", "type": "selectionEntry"}
+              {"name": "Atomantic Shielding", "id": "b47d-c5cd-9ef7-3b3e", "hidden": false, "import": true, "targetId": "22bf-68df-6ed4-225d", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "34a2-2a6d-5a32-3711",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -27529,6 +27985,14 @@
                   {"id": "27df-71f8-91f0-9b63-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "27df-71f8-91f0-9b63-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "c361-e607-bc5f-162c",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -27694,6 +28158,14 @@
                   {"id": "8339-cc82-4d72-1391-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "8339-cc82-4d72-1391-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "a474-3e1b-935f-dc17",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -27929,6 +28401,14 @@
                   {"id": "37e8-e11e-d3a5-0f53-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "a79f-fcbd-2619-66fe",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "selectionEntryGroups": [
@@ -28088,7 +28568,7 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "f8e8-754e-19f8-1add-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f8e8-754e-19f8-1add-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -28133,7 +28613,15 @@
                   {"id": "cb76-50b9-92a8-6545-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "2 Hunter-Killer Missiles", "id": "dac4-52b6-0a4f-2e23", "hidden": false, "import": true, "targetId": "eb44-a9b5-7e6b-dd5d", "type": "selectionEntry"}
+              {"name": "2 Hunter-Killer Missiles", "id": "dac4-52b6-0a4f-2e23", "hidden": false, "import": true, "targetId": "eb44-a9b5-7e6b-dd5d", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "3e00-0183-8dcd-c2ce",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -28375,7 +28863,7 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "f2c7-19a0-45d5-293a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f2c7-19a0-45d5-293a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -28451,6 +28939,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "d714-9d04-1afb-ed1c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "9045-ff92-363c-5075",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -28639,6 +29135,14 @@
                   {"id": "d033-79a8-6a60-ebcf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "d033-79a8-6a60-ebcf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "04b3-3338-24f9-6c21",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -28910,7 +29414,15 @@
                 "constraints": [{"id": "2947-9694-d7b8-68bf", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
-              {"name": "Bolt Pistol", "id": "93ba-c721-9a1c-5f89", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"}
+              {"name": "Bolt Pistol", "id": "93ba-c721-9a1c-5f89", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "f8a2-1390-07e5-4489",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "fd42-77b8-6e9b-b1c7", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
           },
@@ -29000,6 +29512,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "331b-a366-a74e-8700", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "49bb-6bc9-825c-f70a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "cebe-e112-8262-81b7", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}]
@@ -29149,6 +29669,14 @@
                   {"id": "3d52-5198-0957-1bf8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "3d52-5198-0957-1bf8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "d6a4-768f-06d0-614d",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "52c2-bd53-ac9f-faf9", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
@@ -29220,6 +29748,14 @@
                   {"id": "1731-1267-49a3-6cca-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "1731-1267-49a3-6cca-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "0c39-1779-1824-2a9d",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "5cbc-205c-885f-b37f", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}]
@@ -29384,6 +29920,14 @@
                   {"id": "fc3a-c934-0247-f804-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "fc3a-c934-0247-f804-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "9005-9119-6bb6-ba1c",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "ffc9-b416-e3ee-962f", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}],
@@ -29502,6 +30046,14 @@
                   {"id": "910d-42cb-3fbf-22ab-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "910d-42cb-3fbf-22ab-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "e58d-15a2-1f4c-3a4c",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "4759-fcaa-3c7c-c6e7", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
@@ -29711,6 +30263,14 @@
                   {"id": "30db-6c09-94e3-b383-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "30db-6c09-94e3-b383-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "9ae9-a1c5-5b7e-dda9",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -29983,6 +30543,14 @@
                   {"id": "0d55-720e-3b42-0a94-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "705a-6829-66fb-0ada",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ]
           }
@@ -30036,6 +30604,14 @@
                   {"id": "9376-a414-75ba-e7b0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "cb1b-0886-4d1a-f683",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -30200,7 +30776,7 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "b547-6d8d-9c43-0183-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b547-6d8d-9c43-0183-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -30231,6 +30807,14 @@
                   {"id": "426a-77f5-a509-ac09-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "426a-77f5-a509-ac09-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "6983-9994-0c84-27df",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "4fc1-6d1f-ae40-93a7", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}],
@@ -30425,7 +31009,7 @@
             "defaultAmount": "2",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "6ad8-acbe-9f55-85a1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "e2c8-09aa-22b3-1efc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 8}
@@ -30457,6 +31041,14 @@
                   {"id": "ad03-ad13-b7f9-ca9a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "ad03-ad13-b7f9-ca9a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "83f9-a6f6-f86b-e234",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "ca38-1134-ddcb-d236", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
@@ -30823,6 +31415,14 @@
                 "constraints": [{"id": "24e9-b98c-c6a3-7907", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
                 "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "94b0-030f-7fcb-e040",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -31127,6 +31727,14 @@
                   {"id": "f1be-70b2-31cd-e17e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "f1be-70b2-31cd-e17e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "6bcb-574c-7cbe-07f1",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -31260,7 +31868,17 @@
               {"id": "7ff4-bafb-e608-8ab0-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "7ff4-bafb-e608-8ab0-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "entryLinks": [{"name": "Linked Avenger Bolter (P)", "id": "4641-d56a-a43d-b80e", "hidden": false, "targetId": "13d7-490d-26a5-a027", "type": "selectionEntry"}],
+            "entryLinks": [
+              {"name": "Linked Avenger Bolter (P)", "id": "4641-d56a-a43d-b80e", "hidden": false, "targetId": "13d7-490d-26a5-a027", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "e812-bf27-a97b-90da",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
+            ],
             "profiles": [
               {
                 "name": "Fire Raptor Gunship",
@@ -31516,6 +32134,14 @@
                 "import": true,
                 "targetId": "ee36-94c2-dbb4-3640",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "fd79-41da-5461-7282",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -31667,7 +32293,15 @@
                 "targetId": "804b-e078-82ed-e64e",
                 "type": "selectionEntryGroup"
               },
-              {"name": "(S)", "id": "469b-43c6-851a-a431", "hidden": false, "import": true, "targetId": "349f-e2f6-cbb2-b4b3", "type": "selectionEntryGroup"}
+              {"name": "(S)", "id": "469b-43c6-851a-a431", "hidden": false, "import": true, "targetId": "349f-e2f6-cbb2-b4b3", "type": "selectionEntryGroup"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "51da-c2e4-fa5e-f756",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -31826,6 +32460,14 @@
                   {"id": "c42b-64a0-65ff-3d60-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "c42b-64a0-65ff-3d60-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "0be8-c8b6-c575-1939",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "3d37-653f-28a5-307a", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}],
@@ -31922,6 +32564,14 @@
                   {"id": "e00a-8fa1-e6db-58b1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "e00a-8fa1-e6db-58b1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "0c34-7bcc-5424-03d6",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "d3c1-72e2-a344-1b4c", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
@@ -32031,10 +32681,20 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "5fd3-d48e-fb99-f385-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "5fd3-d48e-fb99-f385-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "8461-3889-0f91-07b3",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -32290,6 +32950,14 @@
                   {"id": "b7f5-a559-7d52-0086-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "b7f5-a559-7d52-0086-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "afd9-837a-69a7-51fa",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "c5e1-3f2a-ca12-5e06", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
@@ -32448,6 +33116,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "3182-f735-d63f-ef52", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "2342-9d4a-d2b3-d54e",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "f5ff-f6cd-cd1a-a460", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
@@ -32586,7 +33262,15 @@
                   {"id": "bacf-e67a-6c96-d550-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
-              {"name": "Dreadnought Plate", "id": "a4bb-20a6-de1e-4851", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"}
+              {"name": "Dreadnought Plate", "id": "a4bb-20a6-de1e-4851", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "d0a2-b221-8394-603d",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -32796,6 +33480,14 @@
                   {"id": "947a-8cd8-2f45-8451-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "20de-f996-8316-2236",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [
@@ -32873,7 +33565,15 @@
             ],
             "entryLinks": [
               {"name": "Atomantic Shielding", "id": "669d-7e99-6aaa-9fe1", "hidden": false, "import": true, "targetId": "22bf-68df-6ed4-225d", "type": "selectionEntry"},
-              {"name": "Dreadnought Plate", "id": "a5b6-13cb-8491-9f04", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"}
+              {"name": "Dreadnought Plate", "id": "a5b6-13cb-8491-9f04", "hidden": false, "import": true, "targetId": "4d42-d3d4-8133-9643", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "b52f-8cfb-685e-6fea",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -33194,6 +33894,14 @@
                   {"id": "dca5-9425-764a-4abf-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "dca5-9425-764a-4abf-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "3a13-cd5d-d1ed-c989",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -33339,7 +34047,17 @@
               {"id": "1cc5-cc43-5a1a-6d0b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1cc5-cc43-5a1a-6d0b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "entryLinks": [{"name": "Centurion Armour", "id": "653c-9b55-1b1b-b904", "hidden": false, "import": true, "targetId": "2b89-4fcf-b732-6351", "type": "selectionEntry"}],
+            "entryLinks": [
+              {"name": "Centurion Armour", "id": "653c-9b55-1b1b-b904", "hidden": false, "import": true, "targetId": "2b89-4fcf-b732-6351", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "b5fb-a882-5f1f-fc76",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
+            ],
             "profiles": [
               {
                 "name": "Centurion",
@@ -33680,7 +34398,17 @@
               {"id": "d4cb-402a-4cc6-f0f1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 10}
             ],
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
-            "entryLinks": [{"name": "Centurion Armour", "id": "3a28-23fb-ccec-af85", "hidden": false, "import": true, "targetId": "2b89-4fcf-b732-6351", "type": "selectionEntry"}],
+            "entryLinks": [
+              {"name": "Centurion Armour", "id": "3a28-23fb-ccec-af85", "hidden": false, "import": true, "targetId": "2b89-4fcf-b732-6351", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "362e-52bc-ac76-392a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
+            ],
             "profiles": [
               {
                 "name": "Centurion",
@@ -34194,6 +34922,14 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "3126-3bf5-1371-6ffa", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "94bd-aa47-f11e-7c3a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "66e0-86b8-b9db-aae5", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}],
@@ -34629,6 +35365,14 @@
                   {"id": "349c-ad1f-1d9f-3733", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "00f2-116d-2ccc-0e27", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "07a9-e36f-1c57-b87f",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "infoLinks": [{"name": "Marine", "id": "7a88-853c-1f90-3f85", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
@@ -35211,6 +35955,14 @@
                   {"id": "9bbc-97c6-5cd2-6034-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "9bbc-97c6-5cd2-6034-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "97da-d34d-f809-341d",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -35373,7 +36125,7 @@
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
+            "type": "model",
             "constraints": [
               {"id": "3bec-6679-00e7-c04f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "3bec-6679-00e7-c04f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -35420,6 +36172,14 @@
                   {"id": "9a5e-d37b-cada-70cc-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "0e22-9e6a-7581-f3a3",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -35746,14 +36506,22 @@
               },
               {"name": "Shard of Istvaan", "id": "ca73-f705-ea26-59d2", "hidden": false, "import": true, "targetId": "3805-76c1-b6e7-2cef", "type": "selectionEntry"},
               {"name": "Corvia", "id": "4ae6-a54d-cfd6-5861", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"},
-              {"name": "Infravisor", "id": "c960-400b-1f85-8208", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"}
+              {"name": "Infravisor", "id": "c960-400b-1f85-8208", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "162c-9842-57d4-0928",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Veteran Sergeant", "id": "0b47-d998-9575-9a2a", "hidden": false, "targetId": "5cc4-7146-09a3-a8df", "type": "profile"}],
             "selectionEntryGroups": [
               {
-                "name": "Power Fist",
+                "name": "2 Lightning Claws",
                 "id": "2d6d-ea70-8947-ffac",
-                "defaultSelectionEntryId": "53b7-6f92-479f-196c",
+                "defaultSelectionEntryId": "567d-45be-5552-a293",
                 "hidden": false,
                 "constraints": [
                   {
@@ -35857,14 +36625,22 @@
               },
               {"name": "Shard of Istvaan", "id": "0080-8f90-5f36-cc9b", "hidden": false, "import": true, "targetId": "3805-76c1-b6e7-2cef", "type": "selectionEntry"},
               {"name": "Corvia", "id": "ca81-7cc9-a832-e5ea", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"},
-              {"name": "Infravisor", "id": "8e34-cb15-a92e-8420", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"}
+              {"name": "Infravisor", "id": "8e34-cb15-a92e-8420", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "094b-77f6-d157-71b2",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Veteran Marine", "id": "8543-6924-73a3-d0c0", "hidden": false, "targetId": "e556-d882-9b10-16d6", "type": "profile"}],
             "selectionEntryGroups": [
               {
-                "name": "Power Fist",
+                "name": "Lightning Claws",
                 "id": "65c4-c198-9ecc-a6ad",
-                "defaultSelectionEntryId": "53b7-6f92-479f-196c",
+                "defaultSelectionEntryId": "f90e-e3ad-e958-53e1",
                 "hidden": false,
                 "constraints": [
                   {
@@ -36065,7 +36841,15 @@
               },
               {"name": "Infravisor", "id": "edf3-0316-df32-772f", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"},
               {"name": "Shard of Istvaan", "id": "2f87-7ddc-79cb-c9e4", "hidden": false, "import": true, "targetId": "3805-76c1-b6e7-2cef", "type": "selectionEntry"},
-              {"name": "Corvia", "id": "d919-0006-f04f-0adf", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"}
+              {"name": "Corvia", "id": "d919-0006-f04f-0adf", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "9b4a-3664-5778-1222",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "9673-9896-c74a-3842", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}],
             "selectionEntryGroups": [
@@ -36256,7 +37040,15 @@
               {"name": "Krak Grenades", "id": "cf81-e8f7-cba2-51eb", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Infravisor", "id": "a8ed-74c7-678b-0e56", "hidden": false, "import": true, "targetId": "57f1-e1f2-d14b-2d76", "type": "selectionEntry"},
               {"name": "Shard of Istvaan", "id": "f6d0-4e04-e4b2-629c", "hidden": false, "import": true, "targetId": "3805-76c1-b6e7-2cef", "type": "selectionEntry"},
-              {"name": "Corvia", "id": "18a7-3dbd-996b-48b0", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"}
+              {"name": "Corvia", "id": "18a7-3dbd-996b-48b0", "hidden": false, "import": true, "targetId": "06ba-0a26-d82e-fd0a", "type": "selectionEntry"},
+              {
+                "name": "Chapter Supplements Model Wargear",
+                "id": "717b-0f29-3fdb-b94a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7850-b4d5-657d-7ea6",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Marine", "id": "7bcd-1d82-567b-7716", "hidden": false, "targetId": "19c0-dec2-3eb5-d2ad", "type": "profile"}],
             "selectionEntryGroups": [
@@ -37384,7 +38176,119 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
           },
-          {"name": "Chainsword", "id": "4d0e-9c6f-245f-1627", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"}
+          {"name": "Chainsword", "id": "4d0e-9c6f-245f-1627", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"},
+          {
+            "name": "Evicerator",
+            "id": "0311-f0e0-ed4c-3c11",
+            "hidden": false,
+            "import": true,
+            "targetId": "b997-ac09-b543-0e7d",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Encarmine Axe",
+            "id": "a4e6-a287-0f65-3300",
+            "hidden": false,
+            "import": true,
+            "targetId": "7175-124a-2e09-3318",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b2b5-3d4c-75aa-f071",
+                    "childName": "Terminator",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Encarmine Spear",
+            "id": "1a48-41aa-a2da-cbf3",
+            "hidden": false,
+            "import": true,
+            "targetId": "1548-cca6-6169-648e",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b2b5-3d4c-75aa-f071",
+                    "childName": "Terminator",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Encarmine Sword",
+            "id": "b98e-012a-8d12-c43d",
+            "hidden": false,
+            "import": true,
+            "targetId": "5939-7c62-5a7c-f618",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b2b5-3d4c-75aa-f071",
+                    "childName": "Terminator",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -37721,6 +38625,34 @@
             "targetId": "e38e-0c5b-3e05-b098",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+          },
+          {
+            "name": "Evicerator",
+            "id": "e622-419c-d90d-dff4",
+            "hidden": false,
+            "import": true,
+            "targetId": "b997-ac09-b543-0e7d",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -37824,6 +38756,35 @@
             "targetId": "7387-4d1b-e3e4-b301",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Evicerator",
+            "id": "d054-f165-af51-df89",
+            "hidden": false,
+            "import": true,
+            "targetId": "b997-ac09-b543-0e7d",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -38680,7 +39641,7 @@
       {
         "name": "Bolt Pistol",
         "id": "5523-dc02-9311-2e64",
-        "comment": "Chapter Supplements",
+        "comment": "Chapter Supplements, Blood Angels",
         "defaultSelectionEntryId": "1028-dc65-e7ad-f7e0",
         "hidden": false,
         "constraints": [

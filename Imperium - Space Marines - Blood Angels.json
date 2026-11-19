@@ -387,7 +387,15 @@
       }
     ],
     "sharedSelectionEntries": [
-      {"name": "Blood Angles", "id": "69c3-944c-6e99-d38c", "hidden": false, "import": true, "type": "upgrade"},
+      {
+        "name": "Blood Angles",
+        "id": "69c3-944c-6e99-d38c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Blood Angels", "id": "b62d-60ee-4c55-ef96", "hidden": false, "targetId": "91e7-1544-e2b7-9e54", "type": "infoGroup"}],
+        "modifiers": [{"affects": "entries.forces.recursive.9ccb-08c2-c256-ec0a", "field": "add-info", "scope": "force", "type": "add", "value": "91e7-1544-e2b7-9e54"}]
+      },
       {
         "name": "Death Company",
         "id": "58c1-36d4-c4f2-dc2b",
