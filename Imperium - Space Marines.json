@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 22,
+    "revision": 23,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -1165,7 +1165,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "3f3e-7be7-592f-0edf",
             "hidden": false,
             "import": true,
@@ -1182,7 +1182,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "81f7-8d31-3008-b1a1",
             "hidden": false,
             "import": true,
@@ -1275,7 +1275,7 @@
           {"name": "Warlord Trait", "id": "bf8d-b61c-4845-bafd", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"},
           {"name": "Relic", "id": "c56e-e7b4-c945-a7cc", "hidden": false, "import": true, "targetId": "5634-8f25-deba-df48", "type": "selectionEntryGroup"},
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "994d-56ba-18e4-1c40",
             "hidden": false,
             "import": true,
@@ -1339,7 +1339,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "c4ec-85ae-b1b6-1972",
             "hidden": false,
             "import": true,
@@ -1392,7 +1392,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "b40e-170c-7004-02a0",
             "hidden": false,
             "import": true,
@@ -1411,7 +1411,7 @@
           {"name": "Warlord Trait", "id": "484d-5f89-692b-bc22", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"},
           {"name": "Relic", "id": "cb46-af57-ab44-f9f4", "hidden": false, "import": true, "targetId": "5634-8f25-deba-df48", "type": "selectionEntryGroup"},
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "e6f2-e67a-c2b4-19c8",
             "hidden": false,
             "import": true,
@@ -1477,7 +1477,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "a457-d547-0e9c-8098",
             "hidden": false,
             "import": true,
@@ -1496,7 +1496,7 @@
           {"name": "Warlord Trait", "id": "7e9d-e2d4-44f2-f6d5", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"},
           {"name": "Relic", "id": "0da9-f711-7546-59bd", "hidden": false, "import": true, "targetId": "5634-8f25-deba-df48", "type": "selectionEntryGroup"},
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "05f9-bd61-9652-ea46",
             "hidden": false,
             "import": true,
@@ -1539,6 +1539,7 @@
         "hidden": false,
         "targetId": "4a59-0aa3-cb44-5abb",
         "type": "selectionEntry",
+        "constraints": [{"id": "14e4-831d-85bb-0fa3", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "min", "value": 0}],
         "entryLinks": [
           {
             "name": "Narthecium",
@@ -1607,7 +1608,7 @@
           {"name": "Warlord Trait", "id": "5633-bf4d-4f2a-4039", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"},
           {"name": "Relic", "id": "162d-6ce6-7a21-c739", "hidden": false, "import": true, "targetId": "5634-8f25-deba-df48", "type": "selectionEntryGroup"},
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "e119-c40d-a2b7-f4a7",
             "hidden": false,
             "import": true,
@@ -1624,7 +1625,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "8b45-30e9-16f8-ecaf",
             "hidden": false,
             "import": true,
@@ -1727,7 +1728,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "b762-c79a-d6e9-aebc",
             "hidden": false,
             "import": true,
@@ -1744,7 +1745,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "9cc4-f8ea-a992-1f1a",
             "hidden": false,
             "import": true,
@@ -1761,7 +1762,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "3e49-fe9b-2fb7-acb2",
             "hidden": false,
             "import": true,
@@ -1778,7 +1779,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "7266-3e7e-a50b-8d43",
             "hidden": false,
             "import": true,
@@ -1816,7 +1817,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "c2a2-5a15-8ade-afcf",
             "hidden": false,
             "import": true,
@@ -1839,7 +1840,7 @@
         ],
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "1b77-2931-d2dd-cb39",
             "hidden": false,
             "import": true,
@@ -1920,7 +1921,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "cb15-6452-e939-a2f8",
             "hidden": false,
             "import": true,
@@ -1937,7 +1938,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "b144-c258-92b0-1686",
             "hidden": false,
             "import": true,
@@ -1954,7 +1955,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "973f-44ec-20fe-be57",
             "hidden": false,
             "import": true,
@@ -1992,7 +1993,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "eba8-a342-1874-b3c1",
             "hidden": false,
             "import": true,
@@ -2034,7 +2035,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "8c60-0af5-8674-21ef",
             "hidden": false,
             "import": true,
@@ -2051,7 +2052,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "780e-a438-c20b-35b8",
             "hidden": false,
             "import": true,
@@ -2068,7 +2069,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "1fc5-6d09-99b1-8ef9",
             "hidden": false,
             "import": true,
@@ -2085,7 +2086,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "50f9-fdd0-5c3b-67cc",
             "hidden": false,
             "import": true,
@@ -2102,7 +2103,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "2160-8c3f-18c3-8baa",
             "hidden": false,
             "import": true,
@@ -2140,7 +2141,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "c03b-9a9a-208f-d7ab",
             "hidden": false,
             "import": true,
@@ -2185,7 +2186,7 @@
             ]
           },
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "d04a-7f0f-e9e3-74d6",
             "hidden": false,
             "import": true,
@@ -2249,7 +2250,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "81d3-1822-2c85-1507",
             "hidden": false,
             "import": true,
@@ -2291,7 +2292,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "e002-9f01-4b34-e476",
             "hidden": false,
             "import": true,
@@ -2308,12 +2309,56 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "082d-85b5-b0c9-d151",
             "hidden": false,
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "2579-656f-59ea-8472",
+            "hidden": false,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "5917-3f8b-45a0-9158",
+                        "childName": "The Decapitation Strike",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "0a54-6d30-57c0-2a31",
+                        "childName": "Airborne Assault",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2326,12 +2371,40 @@
         "categoryLinks": [{"name": "[Chapter]", "id": "bc1b-c6e5-f34d-140b", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}],
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "4750-3d80-64e9-827e",
             "hidden": false,
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Dedicated Transport",
+            "id": "4041-a607-b19d-b18b",
+            "hidden": false,
+            "import": true,
+            "targetId": "ba61-a73f-f059-cf58",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "0a54-6d30-57c0-2a31",
+                    "childName": "Airborne Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -2368,7 +2441,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "5380-dbf5-5e14-07b0",
             "hidden": false,
             "import": true,
@@ -2385,7 +2458,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "75e2-abd4-2195-3c69",
             "hidden": false,
             "import": true,
@@ -2423,7 +2496,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "9c4b-ed7a-b9cc-1999",
             "hidden": false,
             "import": true,
@@ -2440,7 +2513,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "2f15-810f-774b-5b5d",
             "hidden": false,
             "import": true,
@@ -2457,7 +2530,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "019a-bd26-e83c-c3aa",
             "hidden": false,
             "import": true,
@@ -2531,7 +2604,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "7029-9ff9-8319-8d81",
             "hidden": false,
             "import": true,
@@ -2576,7 +2649,7 @@
             ]
           },
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "7e1b-d5d8-181c-b823",
             "hidden": false,
             "import": true,
@@ -2593,7 +2666,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "5ef8-dbdb-5a23-4ecd",
             "hidden": false,
             "import": true,
@@ -2610,7 +2683,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "4b8b-4112-44cf-8587",
             "hidden": false,
             "import": true,
@@ -2736,7 +2809,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "d5b1-1498-4a33-1fed",
             "hidden": false,
             "import": true,
@@ -2753,7 +2826,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "962e-b129-273d-1754",
             "hidden": false,
             "import": true,
@@ -2770,7 +2843,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "a3be-a5b0-7155-694a",
             "hidden": false,
             "import": true,
@@ -2787,7 +2860,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "f3e4-22c6-c8c1-7150",
             "hidden": false,
             "import": true,
@@ -2808,7 +2881,7 @@
         ],
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "5327-6247-8339-dcdb",
             "hidden": false,
             "import": true,
@@ -2892,7 +2965,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "4590-97f5-1c8a-e31a",
             "hidden": false,
             "import": true,
@@ -2909,7 +2982,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "15ae-4697-8330-ed4b",
             "hidden": false,
             "import": true,
@@ -2926,7 +2999,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "9c40-9acf-2edb-1ce8",
             "hidden": false,
             "import": true,
@@ -2943,7 +3016,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "2425-de86-f054-1e92",
             "hidden": false,
             "import": true,
@@ -2960,7 +3033,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "ce2d-6508-137e-d694",
             "hidden": false,
             "import": true,
@@ -2982,7 +3055,7 @@
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 45}],
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "9764-f9a4-4ffb-5381",
             "hidden": false,
             "import": true,
@@ -3086,7 +3159,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "3720-0e6b-9f3d-2500",
             "hidden": false,
             "import": true,
@@ -3103,7 +3176,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "4712-bf9f-5f07-ffdf",
             "hidden": false,
             "import": true,
@@ -3120,7 +3193,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "7c3f-df4e-f1c2-818e",
             "hidden": false,
             "import": true,
@@ -3137,7 +3210,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "e55d-52c3-a3a3-dd0f",
             "hidden": false,
             "import": true,
@@ -3175,7 +3248,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "feb1-e4c3-017f-9d05",
             "hidden": false,
             "import": true,
@@ -3192,7 +3265,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "53a2-a116-56a2-cbfa",
             "hidden": false,
             "import": true,
@@ -3230,7 +3303,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "9881-e25c-d35f-ceec",
             "hidden": false,
             "import": true,
@@ -3252,7 +3325,7 @@
         ],
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "cd1c-093e-cfdc-318c",
             "hidden": false,
             "import": true,
@@ -3331,7 +3404,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "2c94-9d87-e125-4a6d",
             "hidden": false,
             "import": true,
@@ -3348,7 +3421,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "1ef6-112e-e5ca-3c17",
             "hidden": false,
             "import": true,
@@ -3370,7 +3443,7 @@
         ],
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "3e74-9416-738e-97ea",
             "hidden": false,
             "import": true,
@@ -3443,7 +3516,7 @@
         ],
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "58b5-6e64-7ed1-df28",
             "hidden": false,
             "import": true,
@@ -3550,7 +3623,7 @@
           },
           {"name": "Warlord Trait", "id": "88cd-167d-bbf8-6bb9", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"},
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "3254-14b1-d48b-1c79",
             "hidden": false,
             "import": true,
@@ -3567,7 +3640,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "83ad-99c9-4f7d-e8d6",
             "hidden": false,
             "import": true,
@@ -3584,7 +3657,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "df96-b1fa-b4b6-3d36",
             "hidden": false,
             "import": true,
@@ -3601,12 +3674,67 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "7630-ee26-6dd1-40bc",
             "hidden": false,
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Troop",
+            "id": "9e84-67e1-8cfe-0273",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "860a-da71-4255-6379",
+                        "childName": "Drop Pod Assault",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "94da-d01e-4899-6ca8",
+                        "childName": "Pride of the Chapter",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "0a54-6d30-57c0-2a31",
+                        "childName": "Airborne Assault",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3618,7 +3746,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "6765-aa79-0c43-1a56",
             "hidden": false,
             "import": true,
@@ -3656,7 +3784,7 @@
         "type": "selectionEntry",
         "entryLinks": [
           {
-            "name": "Chapter Supplements Wargear",
+            "name": "Chapter Supplements Unit Wargear",
             "id": "1f52-c5c6-048d-3ec3",
             "hidden": false,
             "import": true,
@@ -3988,6 +4116,133 @@
         "categoryLinks": [
           {"name": "Close Support", "id": "9cb8-09ff-71d9-db97", "hidden": false, "primary": false, "targetId": "720b-794e-4235-f757"},
           {"name": "Centurions", "id": "befd-a731-43b5-2071", "hidden": false, "primary": false, "targetId": "e7db-0262-4926-f0b1"}
+        ]
+      },
+      {
+        "name": "The Sanguinor, Exemplar of the Host",
+        "id": "e8f0-d98a-e6a8-0709",
+        "hidden": false,
+        "import": true,
+        "targetId": "59b6-838a-f11d-fa19",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord", "id": "5256-6500-22a9-6ff1", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Lord Commander Dante",
+        "id": "7f2f-9ba4-37e3-d64f",
+        "hidden": false,
+        "import": true,
+        "targetId": "63ec-6bfd-9635-8747",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "1fae-6d57-1d17-3667",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "8b0f-c5b5-7ecf-c89b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Chapter Master Gabriel Seth",
+        "id": "ccc2-9065-fdd8-6256",
+        "hidden": false,
+        "import": true,
+        "targetId": "a26d-edf5-98e1-e7c2",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "0859-7aa9-334e-16c2",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "3208-ecc7-79b4-685a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Captain Tycho",
+        "id": "3818-e422-7cc4-9dfa",
+        "hidden": false,
+        "import": true,
+        "targetId": "c82f-20b6-7ba2-eec5",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord", "id": "2b05-79b5-5bef-9d36", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Lemartes, Guardian of the Lost",
+        "id": "2ca4-1b79-6093-a1e6",
+        "hidden": false,
+        "import": true,
+        "targetId": "4b1e-a7cd-6e84-f78a",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "33e4-6b80-f6c3-5add", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "56a0-efaf-f186-e5cf", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Litany of Prayers", "id": "1924-395f-472b-3588", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "High Chaplain Astorath, The Redeemer",
+        "id": "4b3b-6fe7-845e-52f6",
+        "hidden": false,
+        "import": true,
+        "targetId": "ce49-acb4-4c77-3b37",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "4807-f556-eb46-e758", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "338e-c3cf-35f3-c1a9", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Litany of Prayers", "id": "0196-bf67-54a2-6cd3", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Chief Librarian Mephiston",
+        "id": "df48-c21c-267e-df1c",
+        "hidden": false,
+        "import": true,
+        "targetId": "ff9c-f7c1-e581-3280",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "65ea-834f-581a-9ae3", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [{"name": "Warlord", "id": "fc42-fcc1-9911-b86e", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "High Priest Corbulo",
+        "id": "0147-98dc-b9c1-7d19",
+        "hidden": false,
+        "import": true,
+        "targetId": "66bc-12c7-5ce4-c8bd",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "64bc-7e44-6cb0-ec0f", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "b15d-eb3f-a7e4-3574", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Litany of Prayers", "id": "0247-0c79-4275-841c", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Erelim",
+        "id": "a501-2a1a-28d7-832c",
+        "hidden": false,
+        "import": true,
+        "targetId": "9188-2c42-5b08-6c24",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Litany of Prayers", "id": "64cd-d0e0-5901-4dd8", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}]
+      },
+      {"name": "Sanguinary Guard", "id": "a9d5-11d3-78cd-811e", "hidden": false, "import": true, "targetId": "bccd-52c2-873a-d117", "type": "selectionEntry"},
+      {
+        "name": "Baal Predator",
+        "id": "a0bd-c51f-61fe-a7de",
+        "hidden": false,
+        "import": true,
+        "targetId": "f52e-2aef-8fb0-66ec",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Fire Support", "id": "d7dc-bbe7-1c83-9f1d", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
+          {"name": "[Chapter]", "id": "e0df-8257-fbf8-e7fc", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
         ]
       }
     ],
@@ -7217,6 +7472,33 @@
                     "childId": "d8f7-37d0-193e-c9ff",
                     "childName": "Exorcists",
                     "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Blood Angels",
+            "id": "c3fa-97f4-ff47-7e8b",
+            "hidden": false,
+            "targetId": "91e7-1544-e2b7-9e54",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -15261,36 +15543,6 @@
           {"name": "Flyer", "id": "ef2b-9c17-73cd-cb5a", "hidden": false, "primary": true, "targetId": "2285-8753-500e-a8f0"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 115}],
-        "entryLinks": [
-          {
-            "name": "Force Organization: Heavy Support",
-            "id": "2579-656f-59ea-8472",
-            "hidden": false,
-            "import": true,
-            "targetId": "1e8e-a64f-440c-fe54",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "5917-3f8b-45a0-9158",
-                    "childName": "The Decapitation Strike",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "a114-b06a-d4c3-1b87", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
           {"name": "Firing Protocols (x)", "id": "03f6-a919-2326-cfbc", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
@@ -16852,6 +17104,18 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "constraints": [
+                      {
+                        "id": "6f2b-ed0d-dc67-cb44",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 0
+                      }
+                    ],
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
                     "entryLinks": [
                       {
@@ -16870,7 +17134,43 @@
                       },
                       {"name": "Litanies", "id": "d183-d0e3-fdec-0f55", "hidden": false, "import": true, "targetId": "3fe7-a4c0-da08-8a22", "type": "selectionEntryGroup"}
                     ],
-                    "modifiers": [{"field": "hidden", "type": "set", "value": true}, {"field": "category", "scope": "unit", "type": "add", "value": "f41c-295d-a9b1-b72c"}],
+                    "modifiers": [
+                      {"field": "category", "scope": "unit", "type": "add", "value": "f41c-295d-a9b1-b72c"},
+                      {
+                        "field": "6f2b-ed0d-dc67-cb44",
+                        "type": "set",
+                        "value": 1,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "544d-0eb3-a4ab-4540",
+                                "childName": "Warlord",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              },
+                              {
+                                "childId": "f935-82ae-81b0-2f0a",
+                                "childName": "The Death Company",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
                     "selectionEntries": [
                       {
                         "name": "Stubborn",
@@ -17644,41 +17944,7 @@
                     "import": true,
                     "sortIndex": 0,
                     "targetId": "ba4d-218f-3817-c775",
-                    "type": "selectionEntry",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "type": "selectionEntry"
                   },
                   {
                     "name": "Chainsword",
@@ -17687,41 +17953,7 @@
                     "import": true,
                     "targetId": "f82a-555a-d38f-b930",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}]
                   },
                   {
                     "name": "Power Maul",
@@ -17749,23 +17981,6 @@
                             "value": 1
                           }
                         ]
-                      },
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "e0af-8ba3-030e-3a87",
-                            "childName": "Tech-Marine",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "parent",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          }
-                        ]
                       }
                     ]
                   },
@@ -17776,41 +17991,7 @@
                     "import": true,
                     "targetId": "a7ed-640e-8d57-4f6f",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
                   {
                     "name": "Force Stave",
@@ -17847,41 +18028,7 @@
                     "import": true,
                     "targetId": "e38e-0c5b-3e05-b098",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
                   },
                   {
                     "name": "Thunder Hammer",
@@ -17890,41 +18037,7 @@
                     "import": true,
                     "targetId": "4e5d-8e80-1671-f1f9",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
                   },
                   {
                     "name": "Lightning Claws",
@@ -17933,41 +18046,7 @@
                     "import": true,
                     "targetId": "7387-4d1b-e3e4-b301",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
                   {
                     "name": "Power Sword",
@@ -17976,41 +18055,7 @@
                     "import": true,
                     "targetId": "84dd-49d6-4915-6b09",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   },
                   {
                     "name": "Power Axe",
@@ -18019,41 +18064,7 @@
                     "import": true,
                     "targetId": "6dff-d1d6-7194-b1d0",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "e0af-8ba3-030e-3a87",
-                                "childName": "Tech-Marine",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "032b-6ee5-79fa-5885",
-                                "childName": "Chaplain",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
                   {
                     "name": "Force Sword",
@@ -18110,10 +18121,65 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "name": "Maul of Perdition",
+                    "id": "3865-25da-c38f-0bb8",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ce76-1e12-38f5-98c7",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "cbdc-411c-cf55-3186",
+                        "type": "set",
+                        "value": 18,
+                        "conditions": [
+                          {
+                            "childId": "032b-6ee5-79fa-5885",
+                            "childName": "Chaplain",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Blade of Perdition",
+                    "id": "143d-730e-2fb9-298c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "8c55-9032-666c-1ebc",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}]
+                  },
+                  {
+                    "name": "Axe of Perdition",
+                    "id": "e78b-ade0-edfc-4573",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a18f-99c5-affb-c011",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
+                  },
+                  {
+                    "name": "Spear of Perdition",
+                    "id": "2eab-1035-8fb4-7668",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "31f6-0f76-1c7e-8fea",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
                   }
                 ],
                 "modifierGroups": [
                   {
+                    "comment": "Tech-Marine",
                     "type": "and",
                     "conditions": [
                       {
@@ -18127,9 +18193,25 @@
                         "value": 1
                       }
                     ],
-                    "modifiers": [{"field": "defaultSelectionEntryId", "type": "set", "value": "5a4a-74a2-7031-bba3"}]
+                    "modifiers": [
+                      {"field": "defaultSelectionEntryId", "type": "set", "value": "5a4a-74a2-7031-bba3"},
+                      {"affects": "ce76-1e12-38f5-98c7", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4e5d-8e80-1671-f1f9", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "2607-4972-6fde-3757", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "a7ed-640e-8d57-4f6f", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "e38e-0c5b-3e05-b098", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "6dff-d1d6-7194-b1d0", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "7387-4d1b-e3e4-b301", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "31f6-0f76-1c7e-8fea", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true}
+                    ]
                   },
                   {
+                    "comment": "Chaplain",
                     "type": "and",
                     "conditions": [
                       {
@@ -18143,7 +18225,20 @@
                         "value": 1
                       }
                     ],
-                    "modifiers": [{"field": "defaultSelectionEntryId", "type": "set", "value": "a0d6-ee59-c27a-d4b7"}]
+                    "modifiers": [
+                      {"field": "defaultSelectionEntryId", "type": "set", "value": "a0d6-ee59-c27a-d4b7"},
+                      {"affects": "31f6-0f76-1c7e-8fea", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4e5d-8e80-1671-f1f9", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "a7ed-640e-8d57-4f6f", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "e38e-0c5b-3e05-b098", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "6dff-d1d6-7194-b1d0", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "7387-4d1b-e3e4-b301", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true}
+                    ]
                   }
                 ],
                 "selectionEntries": [
@@ -18350,6 +18445,7 @@
                 "constraints": [{"id": "75bd-3ab5-2aea-c9ea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 38}],
                 "entryLinks": [
+                  {"name": "Bolt Pistol", "id": "ac3b-3a16-f5f8-cd3b", "hidden": false, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"},
                   {
                     "name": "Digital Weapons",
                     "id": "8def-bfe5-e220-7ca0",
@@ -18662,48 +18758,6 @@
                     "targetId": "5cc4-7146-09a3-a8df",
                     "type": "profile",
                     "modifiers": [{"field": "name", "type": "set", "value": "Judicator"}]
-                  }
-                ],
-                "selectionEntryGroups": [
-                  {
-                    "name": "Bolt Pistol",
-                    "id": "e3f6-c726-dfb8-3288",
-                    "defaultSelectionEntryId": "6088-0342-9b7c-b8af",
-                    "hidden": false,
-                    "constraints": [
-                      {
-                        "id": "1e5c-1992-4d54-50f3-min",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "min",
-                        "value": 1
-                      },
-                      {
-                        "id": "1e5c-1992-4d54-50f3-max",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "max",
-                        "value": 1
-                      }
-                    ],
-                    "entryLinks": [
-                      {
-                        "name": "Plasma Pistol",
-                        "id": "b127-58d6-bbf5-3e1d",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "3407-02d2-18aa-4a22",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                      },
-                      {"name": "Bolt Pistol", "id": "9914-539b-9b5b-a6ab", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"}
-                    ]
                   }
                 ]
               },
@@ -19024,7 +19078,8 @@
                         ]
                       }
                     ]
-                  }
+                  },
+                  {"name": "Bolt Pistol", "id": "0c14-87c4-7efa-f72c", "hidden": false, "import": true, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"}
                 ],
                 "infoLinks": [
                   {
@@ -19037,46 +19092,6 @@
                   }
                 ],
                 "selectionEntryGroups": [
-                  {
-                    "name": "Bolt Pistol",
-                    "id": "5eb6-defc-5c2d-7eb1",
-                    "defaultSelectionEntryId": "6088-0342-9b7c-b8af",
-                    "hidden": false,
-                    "constraints": [
-                      {
-                        "id": "37d1-1ce5-7ea7-f9ee-min",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "min",
-                        "value": 1
-                      },
-                      {
-                        "id": "37d1-1ce5-7ea7-f9ee-max",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "max",
-                        "value": 1
-                      }
-                    ],
-                    "entryLinks": [
-                      {
-                        "name": "Plasma Pistol",
-                        "id": "5e27-ad38-1f84-64b8",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "3407-02d2-18aa-4a22",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                      },
-                      {"name": "Bolt Pistol", "id": "8f41-0709-bce4-aa9c", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"}
-                    ]
-                  },
                   {
                     "name": "Close Combat Weapon",
                     "id": "7e22-c1cc-4899-224b",
@@ -19866,7 +19881,8 @@
                       {"id": "6cff-c913-97af-b79e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "6cff-c913-97af-b79e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ]
-                  }
+                  },
+                  {"name": "Bolt Pistol", "id": "1475-abf5-4f14-3755", "hidden": false, "import": true, "targetId": "e3f6-c726-dfb8-3288", "type": "selectionEntryGroup"}
                 ],
                 "infoLinks": [
                   {
@@ -19879,46 +19895,6 @@
                   }
                 ],
                 "selectionEntryGroups": [
-                  {
-                    "name": "Bolt Pistol",
-                    "id": "9e61-84f6-72d4-6754",
-                    "defaultSelectionEntryId": "6088-0342-9b7c-b8af",
-                    "hidden": false,
-                    "constraints": [
-                      {
-                        "id": "fc52-f181-70f2-32b2-min",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "min",
-                        "value": 1
-                      },
-                      {
-                        "id": "fc52-f181-70f2-32b2-max",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "max",
-                        "value": 1
-                      }
-                    ],
-                    "entryLinks": [
-                      {
-                        "name": "Plasma Pistol",
-                        "id": "61ff-adc8-11b5-6ca6",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "3407-02d2-18aa-4a22",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-                      },
-                      {"name": "Bolt Pistol", "id": "ae76-37ed-42ad-32aa", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"}
-                    ]
-                  },
                   {
                     "name": "Close Combat Weapon",
                     "id": "c215-c72d-c162-047a",
@@ -20367,6 +20343,17 @@
                           {
                             "childId": "1a89-b9e7-f553-9a7d",
                             "childName": "Raven Guard",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "69c3-944c-6e99-d38c",
+                            "childName": "Blood Angles",
                             "field": "selections",
                             "includeChildForces": true,
                             "includeChildSelections": true,
@@ -21684,6 +21671,218 @@
                                 "field": "cbdc-411c-cf55-3186",
                                 "type": "set",
                                 "value": 5,
+                                "conditionGroups": [
+                                  {
+                                    "type": "or",
+                                    "conditions": [
+                                      {
+                                        "childId": "c6a0-e718-359f-a4fe",
+                                        "childName": "Cataphractii Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "0a06-2498-85c3-dc58",
+                                        "childName": "Tartaros Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "fdaa-f768-5e2d-3ce6",
+                                        "childName": "Indomitus Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Maul of Perdition",
+                            "id": "e4fa-6063-977b-ef5d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "ce76-1e12-38f5-98c7",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 18}],
+                            "modifiers": [
+                              {
+                                "field": "cbdc-411c-cf55-3186",
+                                "type": "set",
+                                "value": 13,
+                                "conditionGroups": [
+                                  {
+                                    "type": "or",
+                                    "conditions": [
+                                      {
+                                        "childId": "c6a0-e718-359f-a4fe",
+                                        "childName": "Cataphractii Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "0a06-2498-85c3-dc58",
+                                        "childName": "Tartaros Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "fdaa-f768-5e2d-3ce6",
+                                        "childName": "Indomitus Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Blade of Perdition",
+                            "id": "6cc3-2d37-ba8b-d0f1",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8c55-9032-666c-1ebc",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}],
+                            "modifiers": [
+                              {
+                                "field": "cbdc-411c-cf55-3186",
+                                "type": "set",
+                                "value": 3,
+                                "conditionGroups": [
+                                  {
+                                    "type": "or",
+                                    "conditions": [
+                                      {
+                                        "childId": "c6a0-e718-359f-a4fe",
+                                        "childName": "Cataphractii Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "0a06-2498-85c3-dc58",
+                                        "childName": "Tartaros Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "fdaa-f768-5e2d-3ce6",
+                                        "childName": "Indomitus Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Axe of Perdition",
+                            "id": "0476-b437-fd49-8b86",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "a18f-99c5-affb-c011",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}],
+                            "modifiers": [
+                              {
+                                "field": "cbdc-411c-cf55-3186",
+                                "type": "set",
+                                "value": 8,
+                                "conditionGroups": [
+                                  {
+                                    "type": "or",
+                                    "conditions": [
+                                      {
+                                        "childId": "c6a0-e718-359f-a4fe",
+                                        "childName": "Cataphractii Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "0a06-2498-85c3-dc58",
+                                        "childName": "Tartaros Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      },
+                                      {
+                                        "childId": "fdaa-f768-5e2d-3ce6",
+                                        "childName": "Indomitus Terminator Armour",
+                                        "field": "selections",
+                                        "includeChildSelections": true,
+                                        "scope": "model",
+                                        "shared": true,
+                                        "type": "atLeast",
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Spear of Perdition",
+                            "id": "4d91-964c-a10f-890c",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "31f6-0f76-1c7e-8fea",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}],
+                            "modifiers": [
+                              {
+                                "field": "cbdc-411c-cf55-3186",
+                                "type": "set",
+                                "value": 8,
                                 "conditionGroups": [
                                   {
                                     "type": "or",
@@ -25661,19 +25860,6 @@
                 ]
               },
               {
-                "name": "Bolt Pistol",
-                "id": "0d99-637e-e5ac-3769",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "ead9-8050-dca8-5b0f",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "514f-083a-60d5-6a04-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "514f-083a-60d5-6a04-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
                 "name": "Close Combat Weapons",
                 "id": "2717-89b2-1cfe-ab61",
                 "defaultAmount": "1",
@@ -25756,7 +25942,8 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "6b98-1578-4622-f24f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-              }
+              },
+              {"name": "Bolt Pistol", "id": "e986-d509-4a8d-eeb5", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"}
             ],
             "infoLinks": [{"name": "Sergeant", "id": "d672-1b1a-fafd-6383", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
           },
@@ -28688,19 +28875,6 @@
                 ]
               },
               {
-                "name": "Bolt Pistol",
-                "id": "f5ba-d90c-08d2-f969",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "ead9-8050-dca8-5b0f",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "a3ef-8e80-b9ef-7f23-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "a3ef-8e80-b9ef-7f23-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
                 "name": "Boltgun",
                 "id": "d782-07a8-e1d5-d4fa",
                 "defaultAmount": "1",
@@ -28735,7 +28909,8 @@
                 "type": "selectionEntry",
                 "constraints": [{"id": "2947-9694-d7b8-68bf", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-              }
+              },
+              {"name": "Bolt Pistol", "id": "93ba-c721-9a1c-5f89", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"}
             ],
             "infoLinks": [{"name": "Sergeant", "id": "fd42-77b8-6e9b-b1c7", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
           },
@@ -28932,6 +29107,7 @@
               {"id": "6d73-43ab-8284-5fd2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
+              {"name": "Bolt Pistol", "id": "5c4f-43ce-486d-1534", "hidden": false, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"},
               {"name": "Divinator Auspex Array", "id": "81ad-3c3d-296a-db12", "hidden": false, "targetId": "0b16-cef7-fa02-77b3", "type": "selectionEntry"},
               {
                 "name": "Close Combat Weapons",
@@ -28959,19 +29135,6 @@
                 "constraints": [
                   {"id": "f464-2a15-82ee-5a66-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "f464-2a15-82ee-5a66-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Bolt Pistol",
-                "id": "1028-dc65-e7ad-f7e0",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "ead9-8050-dca8-5b0f",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "fbeb-7f9e-a529-085b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "fbeb-7f9e-a529-085b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
               {
@@ -34393,6 +34556,34 @@
                     "targetId": "b8b8-1bdb-b1a9-d4d9",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {
+                    "name": "Inferno Pistol",
+                    "id": "f101-0ce8-7db7-6ee3",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "52f8-0226-59f4-2edf",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "69c3-944c-6e99-d38c",
+                            "childName": "Blood Angles",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -35770,55 +35961,7 @@
           {"name": "Fast", "id": "05e7-384d-0636-7047", "hidden": false, "primary": true, "targetId": "d22f-83a4-1032-2783"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-        "entryLinks": [
-          {
-            "name": "Force Organization: Troop",
-            "id": "9e84-67e1-8cfe-0273",
-            "hidden": false,
-            "import": true,
-            "targetId": "cd9e-d590-95bd-2dfd",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
-                  {
-                    "childId": "860a-da71-4255-6379",
-                    "childName": "Drop Pod Assault",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
-                  {
-                    "childId": "94da-d01e-4899-6ca8",
-                    "childName": "Pride of the Chapter",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {"name": "Vetran", "id": "5ba6-c457-e6e4-d5ff", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
-        ],
+        "entryLinks": [{"name": "Vetran", "id": "5ba6-c457-e6e4-d5ff", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "Combat Squads", "id": "502d-e82a-9302-2dd8", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"},
           {"name": "And they shall know no Fear", "id": "fd7a-c784-5a2f-f902", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"}
@@ -36594,6 +36737,42 @@
                         "value": 1
                       }
                     ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "f935-82ae-81b0-2f0a",
+                        "childName": "The Death Company",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "4a59-0aa3-cb44-5abb",
+                        "childName": "Space Marine Lieutenant",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "8546-f256-99da-a259",
+                        "childName": "Lemartes",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
                   }
                 ],
                 "conditions": [
@@ -37263,6 +37442,34 @@
             "targetId": "be5e-26aa-f44a-412c",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {
+            "name": "Inferno Pistol",
+            "id": "2324-0a71-df63-377b",
+            "hidden": false,
+            "import": true,
+            "targetId": "52f8-0226-59f4-2edf",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -37704,7 +37911,35 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
           },
-          {"name": "Silentus Bolt Pistol", "id": "2fc2-74e3-e46c-1e3c", "hidden": false, "import": true, "targetId": "b651-fd85-152c-61af", "type": "selectionEntry"}
+          {"name": "Silentus Bolt Pistol", "id": "2fc2-74e3-e46c-1e3c", "hidden": false, "import": true, "targetId": "b651-fd85-152c-61af", "type": "selectionEntry"},
+          {
+            "name": "Inferno Pistol",
+            "id": "c0bf-3f3f-f014-0512",
+            "hidden": false,
+            "import": true,
+            "targetId": "52f8-0226-59f4-2edf",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -38439,6 +38674,135 @@
             "import": true,
             "targetId": "0db8-92fd-ebfd-e881",
             "type": "selectionEntryGroup"
+          }
+        ]
+      },
+      {
+        "name": "Bolt Pistol",
+        "id": "5523-dc02-9311-2e64",
+        "comment": "Chapter Supplements",
+        "defaultSelectionEntryId": "1028-dc65-e7ad-f7e0",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "8efa-3a1d-3551-069a-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "8efa-3a1d-3551-069a-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "Bolt Pistol", "id": "1028-dc65-e7ad-f7e0", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"},
+          {
+            "name": "Inferno Pistol",
+            "id": "cdd3-6cb8-bc12-9366",
+            "hidden": false,
+            "import": true,
+            "targetId": "52f8-0226-59f4-2edf",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bolt Pistol",
+        "id": "e3f6-c726-dfb8-3288",
+        "comment": "SM Command Squad",
+        "defaultSelectionEntryId": "9914-539b-9b5b-a6ab",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "1e5c-1992-4d54-50f3-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "1e5c-1992-4d54-50f3-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Plasma Pistol",
+            "id": "b127-58d6-bbf5-3e1d",
+            "hidden": false,
+            "import": true,
+            "targetId": "3407-02d2-18aa-4a22",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {"name": "Bolt Pistol", "id": "9914-539b-9b5b-a6ab", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"},
+          {
+            "name": "Inferno Pistol",
+            "id": "e5e8-6805-5442-3f48",
+            "hidden": false,
+            "import": true,
+            "targetId": "52f8-0226-59f4-2edf",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
