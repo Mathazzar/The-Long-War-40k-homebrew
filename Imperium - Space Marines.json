@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "1606-03fb-e01d-e0cf",
-    "revision": 21,
+    "revision": 22,
     "type": "catalogue",
     "catalogueLinks": [
       {
@@ -25,7 +25,8 @@
         "importRootEntries": false,
         "targetId": "f14e-1557-3a53-e27e",
         "type": "catalogue"
-      }
+      },
+      {"name": "Imperium - Space Marines - Blood Angels", "id": "c56d-078e-8687-98a4", "targetId": "c8bb-2be7-a95b-1ceb", "type": "catalogue"}
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
@@ -1446,6 +1447,26 @@
               }
             ]
           }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "f935-82ae-81b0-2f0a",
+                "childName": "The Death Company",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
         ]
       },
       {
@@ -1823,6 +1844,23 @@
             "hidden": false,
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Chaplain Dreadnought",
+            "id": "79e0-74a5-b9de-e859",
+            "comment": "todo: No Blessed Spear profile in reference",
+            "hidden": false,
+            "import": true,
+            "targetId": "c1c1-7829-bd4b-8381",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Blood Angels Dreadnought",
+            "id": "b82e-f397-933c-040a",
+            "hidden": false,
+            "import": true,
+            "targetId": "3226-b66f-a3fe-0050",
             "type": "selectionEntryGroup"
           }
         ],
@@ -2665,6 +2703,17 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "69c3-944c-6e99-d38c",
+                    "childName": "Blood Angles",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -4057,6 +4106,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Blood Angels Rites of War",
+                "id": "563d-5026-5296-3f3d",
+                "hidden": false,
+                "import": true,
+                "targetId": "1818-304c-c2d5-fe80",
+                "type": "selectionEntryGroup"
               }
             ],
             "modifierGroups": [
@@ -4107,7 +4164,34 @@
               }
             ],
             "selectionEntries": [
-              {"name": "Grey Shields", "id": "5bc5-fa86-1838-ee2e", "hidden": false, "import": true, "page": "33", "publicationId": "1606-03fb-e01d-e0cf", "type": "upgrade"},
+              {
+                "name": "Grey Shields",
+                "id": "5bc5-fa86-1838-ee2e",
+                "hidden": false,
+                "import": true,
+                "page": "33",
+                "publicationId": "1606-03fb-e01d-e0cf",
+                "type": "upgrade",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "69c3-944c-6e99-d38c",
+                        "childName": "Blood Angles",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
               {
                 "name": "Drop Pod Assault",
                 "id": "860a-da71-4255-6379",
@@ -36673,6 +36757,22 @@
             "import": true,
             "targetId": "24b3-5524-4c5c-2676",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Blood Angels Warlord Traits",
+            "id": "1c63-a11e-d09a-e7d2",
+            "hidden": false,
+            "import": true,
+            "targetId": "d68f-8fa3-2748-ca82",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Black Templars Warlord Traits",
+            "id": "b930-1a07-110b-b2e7",
+            "hidden": false,
+            "import": true,
+            "targetId": "51e9-1d3a-18b2-433b",
+            "type": "selectionEntryGroup"
           }
         ],
         "modifiers": [
@@ -37801,14 +37901,15 @@
         ]
       },
       {
-        "name": "Chapter Supplements Wargear",
+        "name": "Chapter Supplements Unit Wargear",
         "id": "03d1-305a-7bcd-4e39",
         "flatten": true,
         "hidden": false,
         "entryLinks": [
+          {"name": "Blood Angles Wargear", "id": "d227-21b8-741f-89dc", "hidden": false, "import": true, "targetId": "8047-8f8d-363b-25e8", "type": "selectionEntryGroup"},
           {
             "name": "Salamanders Wargear",
-            "id": "04cc-2e82-1538-25a7",
+            "id": "fb80-0ae7-f670-1267",
             "hidden": false,
             "import": true,
             "targetId": "1549-dd53-18d7-2720",
@@ -37832,14 +37933,6 @@
                 "modifiers": [{"affects": "entries.forces.recursive.profiles.Unit", "field": "6bc7-a391-2ba3-44f9", "scope": "unit", "type": "decrement", "value": 1}]
               }
             ]
-          },
-          {
-            "name": "Black Templars Wargear",
-            "id": "3899-0405-8568-b1db",
-            "hidden": false,
-            "import": true,
-            "targetId": "0db8-92fd-ebfd-e881",
-            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -37860,7 +37953,7 @@
           {
             "name": "Librarius Psychic Powers",
             "id": "c45b-a5fa-3ee5-3f92",
-            "comment": "todo: Black Templars Indomitus Psyker Discipline?",
+            "comment": "todo: Indomitus Psyker Discipline?",
             "hidden": false,
             "import": true,
             "targetId": "e38c-7c3f-2d01-60a9",
@@ -37884,12 +37977,31 @@
                         "shared": true,
                         "type": "atLeast",
                         "value": 1
+                      },
+                      {
+                        "childId": "69c3-944c-6e99-d38c",
+                        "childName": "Blood Angles",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
                       }
                     ]
                   }
                 ]
               }
             ]
+          },
+          {
+            "name": "Blood Angels Sanguinary Psychic Discipline",
+            "id": "50f9-7ed9-a7b7-82dc",
+            "hidden": false,
+            "import": true,
+            "targetId": "a8ad-c653-ea06-52fc",
+            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -37921,7 +38033,8 @@
             "import": true,
             "targetId": "7975-3300-c7b1-2892",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Blood Angels Relics", "id": "fbdf-6ce7-5f00-52c8", "hidden": false, "import": true, "targetId": "1904-90bd-2bf2-ad60", "type": "selectionEntryGroup"}
         ],
         "selectionEntryGroups": [
           {
@@ -38311,6 +38424,22 @@
             ]
           },
           {"name": "Litanies of Faith", "id": "21be-d951-6c31-0da7", "hidden": false, "import": true, "targetId": "90af-80c6-b9da-d7ae", "type": "selectionEntryGroup"}
+        ]
+      },
+      {
+        "name": "Chapter Supplements Model Wargear",
+        "id": "7850-b4d5-657d-7ea6",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Black Templars Wargear",
+            "id": "3899-0405-8568-b1db",
+            "hidden": false,
+            "import": true,
+            "targetId": "0db8-92fd-ebfd-e881",
+            "type": "selectionEntryGroup"
+          }
         ]
       }
     ]

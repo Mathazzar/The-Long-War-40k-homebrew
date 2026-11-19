@@ -21,7 +21,8 @@
       {"name": "Land Raider Crusader", "id": "7790-4f61-9ccc-1699", "hidden": false},
       {"name": "Land Raider Redeemer", "id": "cb98-681a-2899-71c4", "hidden": false},
       {"name": "Paragon Warsuit", "id": "ee22-1e0b-4930-ea68", "hidden": false},
-      {"name": "Contemptor", "id": "9891-f932-73e3-f871", "hidden": false}
+      {"name": "Contemptor", "id": "9891-f932-73e3-f871", "hidden": false},
+      {"name": "Furioso", "id": "eb23-7713-9821-ca94", "hidden": true}
     ],
     "sharedProfiles": [
       {
@@ -2296,7 +2297,6 @@
               {"id": "3ce9-6900-b349-615f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
-              {"name": "Smoke Launchers", "id": "c9f8-cc8b-3402-462b", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
               {
                 "name": "Assault launchers",
                 "id": "706c-d01e-6bb9-b353",
@@ -2480,6 +2480,73 @@
                     "targetId": "4167-b3b6-779e-7442",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {
+                    "name": "Hallowed Mace",
+                    "id": "677c-66e2-3860-c96b",
+                    "comment": "Black Templars; Chaplain Dreadnought",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e8d7-39d3-9d73-7980",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "f41c-295d-a9b1-b72c",
+                            "childName": "Priest",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Blood Angels; Furioso Dreadnought",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "eb23-7713-9821-ca94",
+                        "childName": "Furioso",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"affects": "9788-7711-3998-b9c4", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "c990-6a7a-e2d2-63af", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4b58-2b09-3805-2dab", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "8df1-2b7a-b2fa-fa8f", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "5739-d53f-fe33-f250", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "7812-1637-a222-add0", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "446b-047d-0872-5352", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "6bc7-dc8c-099c-61ce", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "90c9-36e3-ba67-2cfc", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "a976-9c82-b60a-5fc0", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4167-b3b6-779e-7442", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4241-5508-b835-119d", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "b997-c30c-9f4c-cc29", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "3662-54fb-37c4-cfe4", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "bc41-69c9-75b9-f444", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4ba0-42b2-8c49-96d8", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "9d4a-9c02-1c7c-740a", "field": "hidden", "type": "set", "value": false},
+                      {"affects": "d700-75c1-93af-c08d", "field": "hidden", "type": "set", "value": false},
+                      {"affects": "a11a-60ba-0902-9fc0", "field": "hidden", "type": "set", "value": false}
+                    ]
                   }
                 ],
                 "selectionEntries": [
@@ -2670,6 +2737,230 @@
                           {"id": "a5c9-03f9-7db5-67bb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                           {"id": "a5c9-03f9-7db5-67bb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Blood Talon",
+                    "id": "a11a-60ba-0902-9fc0",
+                    "hidden": true,
+                    "import": true,
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Blood Talon",
+                        "id": "1751-a4ca-e9e0-0123",
+                        "hidden": false,
+                        "typeId": "8fa1-1cd9-5ae1-0e93",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                          {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                          {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                          {"name": "Rules", "$text": "Shred", "typeId": "cc29-b1e7-88e5-c90f"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy Frag Cannon",
+                    "id": "9d4a-9c02-1c7c-740a",
+                    "hidden": true,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [{"id": "9f19-0674-e781-183e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "profiles": [
+                      {
+                        "name": "Heavy Frag Cannon",
+                        "id": "631f-d456-374d-45ba",
+                        "hidden": false,
+                        "typeId": "4425-e2ff-1ce0-83c1",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                          {"name": "A", "$text": "6", "typeId": "0048-3de8-a98b-d7dd"},
+                          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+                          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+                          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+                          {"name": "Rules", "$text": "Concussive, Shred", "typeId": "ba87-19e9-d692-6e30"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bloodfist",
+                    "id": "d700-75c1-93af-c08d",
+                    "hidden": true,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [{"id": "7f3b-9548-09d8-28e1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "profiles": [
+                      {
+                        "name": "Bloodfist",
+                        "id": "4ec3-2088-ad43-686e",
+                        "hidden": false,
+                        "typeId": "8fa1-1cd9-5ae1-0e93",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                          {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+                          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                          {"name": "Rules", "$text": "Unwieldy", "typeId": "cc29-b1e7-88e5-c90f"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Force Halberd",
+                    "id": "981b-a30d-5eae-17d0",
+                    "comment": "Blood Angels; Librarian Dreadnought",
+                    "hidden": true,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {
+                        "id": "6e9b-1a69-483f-3600-min",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 0
+                      },
+                      {
+                        "id": "6e9b-1a69-483f-3600-max",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 0
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "4e4d-1694-c7c7-88b1",
+                            "childName": "Psyker",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ],
+                        "modifiers": [
+                          {"field": "6e9b-1a69-483f-3600-min", "type": "set", "value": 1},
+                          {"field": "6e9b-1a69-483f-3600-max", "type": "set", "value": 1},
+                          {"field": "hidden", "type": "set", "value": false}
+                        ]
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Force Halberd",
+                        "id": "a290-be57-5640-0a8c",
+                        "hidden": false,
+                        "typeId": "8fa1-1cd9-5ae1-0e93",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                          {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+                          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                          {"name": "Rules", "$text": "Reach, Force", "typeId": "cc29-b1e7-88e5-c90f"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Smoke Launchers",
+                "id": "718f-4011-7505-f391",
+                "defaultSelectionEntryId": "5882-f74a-267f-3be4",
+                "flatten": true,
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "0d40-e42d-916a-cee3-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "0d40-e42d-916a-cee3-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Smoke Launchers",
+                    "id": "5882-f74a-267f-3be4",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Smoke Launchers",
+                        "id": "c9f8-cc8b-3402-462b",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4662-0b45-17cd-f1ad",
+                        "type": "selectionEntry"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Magna Grapple",
+                    "id": "1c20-5bbe-421b-7036",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "eb23-7713-9821-ca94",
+                            "childName": "Furioso",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Magna Grapple",
+                        "id": "67b4-d5d7-77bb-edc8",
+                        "description": "Enemy Vehicle, Walker, Automata and Battlesuit units within 3” of a unit equipped with this wargear may not make Retreat moves in the Movement phase.\nIf a Walker, Automata or Battlesuit unit in combat with this unit would fail a Panic test at the end of the Combat phase, the unit does not move and instead, simply takes 1 automatic wound.\nWhen a unit equipped with this wargear attempts to charge a unit that contains a Vehicle, Automata, Knightr, Titan, Walker or Battlesuit type unit, this unit has +1 to its Charge roll.",
+                        "hidden": false
                       }
                     ]
                   }

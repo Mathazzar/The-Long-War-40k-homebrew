@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 21,
     "library": true,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "81d3-dbfb-e02f-8897", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -406,12 +406,12 @@
             "value": true,
             "conditions": [
               {
-                "childId": "9fea-9580-3966-9896",
-                "childName": "Castraferrum Dreadnought",
+                "childId": "24e8-efde-3148-5d6e",
+                "childName": "Black Templars",
                 "field": "selections",
                 "includeChildForces": true,
                 "includeChildSelections": true,
-                "scope": "unit",
+                "scope": "force",
                 "shared": true,
                 "type": "lessThan",
                 "value": 1

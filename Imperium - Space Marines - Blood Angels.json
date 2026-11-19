@@ -6,11 +6,56 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 22,
     "library": true,
+    "publicationId": "5bad-8a08-2a03-418d",
     "revision": 1,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "408c-5eb7-96be-3abd", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
-    "categoryEntries": [{"name": "[Blood Angels]", "id": "9ccb-08c2-c256-ec0a", "hidden": false}, {"name": "Death Company", "id": "f140-3324-07ab-000a", "hidden": false}],
+    "categoryEntries": [
+      {"name": "[Blood Angels]", "id": "9ccb-08c2-c256-ec0a", "hidden": false},
+      {"name": "Death Company", "id": "f140-3324-07ab-000a", "hidden": false},
+      {"name": "Seargent", "id": "f000-d2ae-28f5-8f48", "hidden": true},
+      {
+        "name": "Lord Commander Dante",
+        "id": "88ae-eba2-e9f1-0619",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "208b-0ff5-40f2-8016",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      }
+    ],
     "publications": [{"name": "The Long War – Codex Supplement Blood Angels", "id": "5bad-8a08-2a03-418d", "hidden": false, "publisher": "5.0"}],
+    "selectionEntries": [
+      {
+        "name": "Lord Commander Dante",
+        "id": "63ec-6bfd-9635-8747",
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "0edc-1b73-47e7-d810", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "0b40-c4e7-3a68-a554", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "5e4a-17e1-0a10-a562", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Space Marines", "id": "a808-1749-60ed-4033", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "[Blood Angels]", "id": "2eb4-226c-6852-e1cb", "hidden": false, "primary": false, "targetId": "9ccb-08c2-c256-ec0a"},
+          {"name": "Captain", "id": "499f-ecbf-04e5-4220", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
+          {"name": "Lord Commander Dante", "id": "d4ba-555d-1b52-b92e", "hidden": false, "primary": false, "targetId": "88ae-eba2-e9f1-0619"},
+          {"name": "Unique", "id": "0c05-a61f-0914-ffb8", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M41", "id": "680b-72cf-9148-077b", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 135}]
+      }
+    ],
     "sharedInfoGroups": [
       {
         "name": "Blood Angels",
@@ -36,6 +81,25 @@
         ]
       }
     ],
+    "sharedProfiles": [
+      {
+        "name": "Fleshrender Grenades",
+        "id": "6c58-a6c7-653f-4d3a",
+        "hidden": false,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "3", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "\n", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Blast (Small), Shred", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      }
+    ],
     "sharedRules": [
       {"name": "Allegiance: Blood Angels", "id": "63d9-11c8-19e4-13cc", "hidden": false},
       {
@@ -58,13 +122,42 @@
         "publicationId": "5bad-8a08-2a03-418d",
         "type": "upgrade",
         "constraints": [
-          {"id": "2331-947b-de62-49d3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "2331-947b-de62-49d3",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
           {
             "id": "11c8-2ee2-4de0-8da0",
             "field": "selections",
             "includeChildForces": true,
             "includeChildSelections": true,
             "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "9d3b-7d27-0465-5643",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "4349-1e32-e0d6-9659",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
             "shared": true,
             "type": "min",
             "value": 0
@@ -86,29 +179,9 @@
                 "value": 1
               }
             ],
-            "modifiers": [
+            "modifierGroups": [
               {
-                "field": "11c8-2ee2-4de0-8da0",
-                "type": "set",
-                "value": 2,
-                "conditions": [
-                  {
-                    "childId": "e220-3a56-1eb4-4110",
-                    "childName": "Large (2000 Point Limit)",
-                    "field": "selections",
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              },
-              {"field": "hidden", "type": "set", "value": false},
-              {
-                "field": "11c8-2ee2-4de0-8da0",
-                "type": "set",
-                "value": 1,
+                "type": "and",
                 "conditionGroups": [
                   {
                     "type": "or",
@@ -135,9 +208,188 @@
                       }
                     ]
                   }
+                ],
+                "modifiers": [
+                  {"field": "11c8-2ee2-4de0-8da0", "type": "set", "value": 1},
+                  {
+                    "field": "9d3b-7d27-0465-5643",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "f935-82ae-81b0-2f0a",
+                        "childName": "The Death Company",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
                 ]
               },
-              {"field": "category", "scope": "unit", "type": "add", "value": "f140-3324-07ab-000a"}
+              {
+                "comment": "2k",
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "e220-3a56-1eb4-4110",
+                    "childName": "Large (2000 Point Limit)",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "11c8-2ee2-4de0-8da0", "type": "set", "value": 2},
+                  {
+                    "field": "9d3b-7d27-0465-5643",
+                    "type": "set",
+                    "value": 2,
+                    "conditions": [
+                      {
+                        "childId": "f935-82ae-81b0-2f0a",
+                        "childName": "The Death Company",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "38cd-8c36-35cb-d825",
+                            "childName": "Walker",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "560f-2dca-57fb-5997",
+                            "childName": "Infantry",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "bf2b-7ae1-7518-e819",
+                                "childName": "Character",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              },
+                              {
+                                "childId": "f935-82ae-81b0-2f0a",
+                                "childName": "The Death Company",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "childId": "6ce5-b373-d16a-52f6",
+                            "childName": "Vetrans",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "4349-1e32-e0d6-9659",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "f935-82ae-81b0-2f0a",
+                "childName": "The Death Company",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {"field": "category", "scope": "unit", "type": "add", "value": "f140-3324-07ab-000a"},
+          {
+            "field": "2331-947b-de62-49d3",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
             ]
           }
         ],
@@ -147,6 +399,1613 @@
             "id": "d1d0-6846-39f1-6040",
             "description": "A unit with this special rule gains the following effects:\n• The unit gains the Frenzy special rule and is always considered to be affected by the Frenzy special rule even if it has suffered no wounds or casualties.\n• The unit with this special rule always counts as failing the Leadership test for the Red Thirst special rule (see Allegiance: Blood Angels).\n• The unit automatically passes all Panic tests.\n• The unit gains the Expendable special rule and does not count for Victory Points when Slain.\n• The unit gains the Death Company Keyword.\n• The unit cannot be joined by other units that do not have the Death Company Keyword.\nDesigner Note: The purchase of the Death Company special rule for a unit does not cost any points. It is free but mandatory.",
             "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Blood Chalice",
+        "id": "0d75-c79e-2fb7-2b5a",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9716-2ca8-5294-15e2",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Blood Chalice",
+            "id": "c1a0-8865-6b24-aa26",
+            "description": "At the start of your Movement Phase, the equipped model or any attached unit may Heal 1 wound. If the unit does not have any models that have suffered Wounds, you may return 1 Slain model to the unit with 1 Wound remaining.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Death Mask of Sangiunious",
+        "id": "1eba-1f4e-a57b-b3c4",
+        "hidden": false,
+        "import": true,
+        "page": "",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "ee42-a9d4-c5da-bbf6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "ee42-a9d4-c5da-bbf6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Death Mask of Sangiunious",
+            "id": "0ca9-03d0-2141-97a0",
+            "description": "A model with this wargear gains the Fear (2) and Sprint (1) special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Death Mask",
+        "id": "3d2c-359f-b4e6-2d86",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3635-a7a4-7775-152f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3635-a7a4-7775-152f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "rules": [{"name": "Death Mask", "id": "443e-0e14-ff79-486e", "description": "A model with this wargear gains the Fear (1) special rule.", "hidden": false}]
+      },
+      {
+        "name": "Flamestorm Cannon",
+        "id": "2d75-8617-a28e-669f",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Flamestorm Cannon",
+            "id": "c798-e422-b148-f6f3",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spear of Perdition",
+        "id": "31f6-0f76-1c7e-8fea",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Spear of Perdition",
+            "id": "dcd0-77d5-83ee-d4df",
+            "hidden": false,
+            "page": "",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Reach, Sweeping (2)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Axe of Perdition",
+        "id": "a18f-99c5-affb-c011",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Axe of Perdition",
+            "id": "c0c7-a0f5-2ebb-a8de",
+            "hidden": false,
+            "page": "",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Sweeping (2)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blade of Perdition",
+        "id": "8c55-9032-666c-1ebc",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Blade of Perdition",
+            "id": "255c-a887-bd68-3c64",
+            "hidden": false,
+            "page": "",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Rending (6+), Sweeping (2)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Encarmine Axe",
+        "id": "7175-124a-2e09-3318",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Encarmine Axe",
+            "id": "a441-1ac8-788f-44c2",
+            "hidden": false,
+            "page": "",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Unwieldy, Masterwork", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Encarmine Spear",
+        "id": "1548-cca6-6169-648e",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Encarmine Spear",
+            "id": "12a0-dc9a-81d5-2f80",
+            "hidden": false,
+            "page": "",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Reach, Masterwork", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Encarmine Sword",
+        "id": "5939-7c62-5a7c-f618",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Encarmine Sword",
+            "id": "fa9a-aa04-4116-c8a4",
+            "hidden": false,
+            "page": "",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Rending (6+), Masterwork", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quakebolt Boltgun",
+        "id": "487b-5ff5-4171-f0cb",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Quakebolt Boltgun",
+            "id": "5e6d-bda3-646e-c2ef",
+            "hidden": false,
+            "page": "",
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Concussive", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Maul of Perdition",
+        "id": "ce76-1e12-38f5-98c7",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Maul of Perdition",
+            "id": "bd0a-471d-2278-5900",
+            "hidden": false,
+            "page": "",
+            "typeId": "8fa1-1cd9-5ae1-0e93",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+              {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+              {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+              {"name": "Rules", "$text": "Crushing (6+), Concussive, Sweeping (2)", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fleshrender Grenades",
+        "id": "72be-b1c8-0740-5b48",
+        "hidden": false,
+        "import": true,
+        "page": "7",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Fleshrender Grenades", "id": "7458-9483-01f1-6487", "hidden": false, "targetId": "6c58-a6c7-653f-4d3a", "type": "profile"}]
+      },
+      {
+        "name": "Angelus Boltgun",
+        "id": "9266-2c63-1a00-1aaf",
+        "hidden": false,
+        "import": true,
+        "page": "8",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Angelus Boltgun",
+            "id": "0da3-98dc-72fe-7c74",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Artisan of war",
+        "id": "3f6f-386e-299e-67e8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Artisan of war",
+            "id": "154c-6839-558d-af4b",
+            "description": "A model with this Warlord Trait can re-roll 1 failed Armour save (Armour only) per phase. All weapons the warlord is equipped with gain the Master-Crafted special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Selfless Valour",
+        "id": "4fb9-8513-0b8b-0182",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Selfless Valour",
+            "id": "c606-e568-7233-b2aa",
+            "description": "Once per game, a model with this Warlord Trait can Charge in your opponent’s Charge Phase as if it were your Charge Phase. This is performed after all other Charges in that Phase have been resolved. If the model with this trait is attached to a unit, they detach from that unit if they successfully complete the charge. They may rejoin a new unit later.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Soul Warden",
+        "id": "f80f-8d20-8c61-7883",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Soul Warden",
+            "id": "3697-30f2-c5ed-4e96",
+            "description": "A Warlord with this trait and any attached unit, automatically passes the Leadership test at the start of each Combat Phase when rolling for the Red Thirst (see Blood Angels Allegiance).",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Blood Angels Dreadnought",
+        "id": "3226-b66f-a3fe-0050",
+        "flatten": true,
+        "hidden": false,
+        "page": "6",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "constraints": [
+          {
+            "id": "1652-b7b0-1be6-fcdc",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Furioso Dreadnought",
+            "id": "5127-23d0-b5b0-872e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "modifiers": [{"field": "category", "scope": "unit", "type": "add", "value": "eb23-7713-9821-ca94"}],
+            "rules": [
+              {
+                "name": "Furioso Dreadnought",
+                "id": "e29c-87de-5eae-3714",
+                "description": "A unit with this upgrade exchanges its 2 Dreadnaught Close Combat Weapons & Storm Bolters for a Blood Fist, Storm Bolter and Heavy Frag Cannon.\n● A Furioso Dreadnought may exchange its Smoke Launchers for a Magna Grapple for 10pts.\n● A Furioso Dreadnought may exchange any of its Storm Bolters for one of the following:\n○ Flamer for 5pts.\n○ Meltagun for 15pts.\n● A Furioso Dreadnought may exchange its Blood Fist or Heavy Frag Cannon for Blood Talons for 0pts each.",
+                "hidden": false
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Storm Bolter",
+                "id": "acf9-396b-45d4-9be6",
+                "collapsible": true,
+                "defaultSelectionEntryId": "8313-b5ab-1ebc-836e",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "f2f4-ea88-41d7-b20c-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "f2f4-ea88-41d7-b20c-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Meltagun",
+                    "id": "e455-99af-18ab-c734",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6186-a63d-2245-c4bb",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {"name": "Storm Bolter", "id": "8313-b5ab-1ebc-836e", "hidden": false, "import": true, "targetId": "c829-b809-d33d-4738", "type": "selectionEntry"},
+                  {
+                    "name": "Flamer",
+                    "id": "9ed5-ebd9-3ce8-8a7d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "958b-0867-67db-e40a",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Librarian Dreadnought",
+            "id": "7cd8-5084-7237-6bdf",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 40}],
+            "entryLinks": [
+              {
+                "name": "Blood Angels Sanguinary Psychic Discipline",
+                "id": "ab4b-97ba-24e7-ff24",
+                "hidden": false,
+                "import": true,
+                "targetId": "a8ad-c653-ea06-52fc",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Psychic Hood",
+                "id": "15d2-cadf-4887-8247",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "7290-e9c7-b7e0-950d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "ff10-76eb-f5b4-4b98-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ff10-76eb-f5b4-4b98-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "add", "value": "4e4d-1694-c7c7-88b1"}],
+            "rules": [
+              {
+                "name": "Librarian Dreadnought",
+                "id": "8c82-0f42-8501-e79c",
+                "description": "A unit with this upgrade gains the Psyker (2) and Adamantium Will special rules. The unit gains a Psychic Hood. The Librarian Dreadnought exchanges its 1 of its Dreadnought Close Combat Weapons & Storm Bolters for a Force Halberd.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blood Angels Sanguinary Psychic Discipline",
+        "id": "a8ad-c653-ea06-52fc",
+        "defaultSelectionEntryId": "none",
+        "flatten": true,
+        "hidden": false,
+        "page": "13",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Blood Lance (Psychic Weapon)",
+            "id": "475f-16b9-e7fc-ba80",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "6ece-54e2-7be4-f4f3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "profiles": [
+              {
+                "name": "Blood Lance",
+                "id": "ff17-831e-e083-1901",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Psychic Weapon, Lance", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wings of Sanguinius (Psychic Power)",
+            "id": "272a-5619-2e31-4282",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "7cc7-0e5e-56e5-08da", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "rules": [
+              {
+                "name": "Wings of Sanguinius",
+                "id": "7f80-9008-7421-54e7",
+                "description": "When this Psychic Power is cast, the Psyker and any attached unit may immediately perform a Normal Move as if it were your Movement Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Shield of Sanguinius (Psychic Power)",
+            "id": "79e4-e23b-07e4-8399",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "9cc2-77ba-013e-661a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Shield of Sanguinius",
+                "id": "321e-b4f5-41f4-20fa",
+                "description": "When this Psychic Power is cast, the Psyker and any attached unit gain a 5+ Invulnerable save until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Blood Boil (Psychic Power)",
+            "id": "0bd2-2027-4234-bb19",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "8ee2-c8d6-a57d-38f2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Blood Boil",
+                "id": "abf7-d6cc-698b-40f1",
+                "description": "When this Psychic Power is cast, select 1 enemy unit within 24” of the Psyker that does not have the Vehicle, Automata, Drone, Walker, Fortification or Aircraft type. The target unit suffers 1 Wound with no saves of any kind allowed and cannot be ignored by any means.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Unleash Rage (Psychic Power)",
+            "id": "22f3-1bb4-3a38-b064",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "be03-01fd-f197-ff2f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Unleash Rage",
+                "id": "a8f8-4bf5-c1de-2f8f",
+                "description": "When this Psychic Power is cast, the Psyker and any attached unit gain the Rage special rule until the start of your next Shooting Phase. If a unit affected by this Psychic power already has the Rage special rule, when they opt to declare the Rage in the Combat Phase, they gain +2 Attacks instead of +1.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blood Angles Wargear",
+        "id": "8047-8f8d-363b-25e8",
+        "comment": "Unit",
+        "hidden": false,
+        "entryLinks": [{"name": "Death Company", "id": "9743-2eba-65d6-2323", "hidden": false, "import": true, "targetId": "58c1-36d4-c4f2-dc2b", "type": "selectionEntry"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Fleshrender Grenades",
+            "id": "9d92-3616-d3ca-aa0f",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "infoLinks": [
+              {
+                "name": "Fleshrender Grenades",
+                "id": "7f0b-c57c-4311-f54c",
+                "hidden": false,
+                "targetId": "6c58-a6c7-653f-4d3a",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "9d92-3616-d3ca-aa0f",
+                        "childName": "Fleshrender Grenades",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "affects": "entries.recursive.d2ae-8075-6bc5-1bdd.profiles.Ranged Weapons",
+                    "field": "ba87-19e9-d692-6e30",
+                    "join": ", ",
+                    "scope": "unit",
+                    "type": "append",
+                    "value": "Shred\n"
+                  },
+                  {"affects": "entries.recursive.d2ae-8075-6bc5-1bdd", "field": "name", "scope": "unit", "type": "set", "value": "Fleshrender Grenades"},
+                  {"affects": "entries.recursive.d2ae-8075-6bc5-1bdd.profiles.Ranged Weapons", "field": "name", "scope": "unit", "type": "set", "value": "Fleshrender Grenades"},
+                  {"affects": "entries.recursive.d2ae-8075-6bc5-1bdd.profiles.Ranged Weapons", "field": "4e85-0d56-33e2-acca", "scope": "unit", "type": "set", "value": "3"},
+                  {"affects": "entries.recursive.d2ae-8075-6bc5-1bdd.profiles.Ranged Weapons", "field": "1fa3-547b-b56c-c34e", "scope": "unit", "type": "set", "value": "\n"}
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "d2ae-8075-6bc5-1bdd",
+                    "childName": "Frag Grenades",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blood Angels Relics",
+        "id": "1904-90bd-2bf2-ad60",
+        "defaultSelectionEntryId": "none",
+        "flatten": true,
+        "hidden": false,
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Decimator",
+            "id": "1a99-fc04-a770-aacb",
+            "hidden": false,
+            "import": true,
+            "page": "11",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "cf99-c3ca-855d-3b66",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a boltgun, storm bolter, or heavy bolter equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "c829-b809-d33d-4738",
+                        "childName": "Storm Bolter",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "1a99-fc04-a770-aacb",
+                        "childName": "The Angels Wing",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "469c-f449-1e9e-1d6f",
+                        "childName": "Boltgun",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "aee5-a896-164f-7f58",
+                        "childName": "Heavy Boltgun",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Decimator",
+                "id": "d8ba-4b41-9f53-d750",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Master-Crafted, Pinning", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Archangel’s Shard",
+            "id": "d468-4c78-129d-3327",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "6b8b-a135-1d20-6090",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a power sword equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "84dd-49d6-4915-6b09",
+                        "childName": "Power Sword",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "d468-4c78-129d-3327",
+                        "childName": "Archangel’s Shard",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Valor’s Edge",
+                "id": "ccd2-9fad-6f15-f0f9",
+                "hidden": false,
+                "typeId": "8fa1-1cd9-5ae1-0e93",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                  {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                  {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                  {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                  {"name": "Rules", "$text": "Master-Crafted, Parry", "typeId": "cc29-b1e7-88e5-c90f"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Valor’s Edge",
+            "id": "5bc1-bc50-2fda-94ca",
+            "hidden": false,
+            "import": true,
+            "page": "9",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "f2b9-d545-0de1-0baa",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a power sword equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "84dd-49d6-4915-6b09",
+                        "childName": "Power Sword",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "5bc1-bc50-2fda-94ca",
+                        "childName": "The Angels Wing",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Valor’s Edge",
+                "id": "5a5c-1e05-d5af-b1ac",
+                "hidden": false,
+                "typeId": "8fa1-1cd9-5ae1-0e93",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                  {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                  {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
+                  {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                  {"name": "Rules", "$text": "Master-Crafted, Blind", "typeId": "cc29-b1e7-88e5-c90f"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Angels Wing",
+            "id": "de28-79a0-f97c-650f",
+            "hidden": false,
+            "import": true,
+            "page": "9",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "6c0f-ba28-aafe-975a",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a jump pack equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "6029-ff30-bd91-9976",
+                        "childName": "Jump Pack",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "de28-79a0-f97c-650f",
+                        "childName": "The Angels Wing",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Angels Wing",
+                "id": "c2a8-b36d-b6a1-2f71",
+                "description": "A model may exchange its Jump Pack for this Relic wargear. The equipped model gains the Move Through Cover special rule and automatically arrives (counts as having rolled a 6) when arriving via Deep Strike. In addition, this wargear counts as a Jump Pack and confers all the benefits of one.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Gleaming Pinions",
+            "id": "64ac-01e2-7411-abed",
+            "hidden": false,
+            "import": true,
+            "page": "11",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "579d-e089-a365-d53e",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a jump pack equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "6029-ff30-bd91-9976",
+                        "childName": "Jump Pack",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "de28-79a0-f97c-650f",
+                        "childName": "The Angels Wing",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Gleaming Pinions",
+                "id": "f61a-5c66-a584-d99d",
+                "description": "A model may exchange its Jump Pack for this Relic wargear. The equipped model gains the Fade & Fire, Hit & Run and Sprint (1) special rules. In addition, this wargear counts as a Jump Pack and confers all the benefits of one.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Veritas Vitae",
+            "id": "d0f6-2f14-d97e-a613",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "7a73-0814-387a-ddae",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "entryLinks": [
+              {
+                "name": "Blood Angels Warlord Traits",
+                "id": "cfea-2852-427e-e0ba",
+                "hidden": false,
+                "import": true,
+                "targetId": "d68f-8fa3-2748-ca82",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "c261-faa3-c479-9d77",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Veritas Vitae",
+                "id": "1faa-47bd-bf02-a0b2",
+                "description": "A model with this wargear generates a Warlord trait from the Blood Angels Warlord Traits. If they are already your Warlord, they may generate an additional Warlord trait.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Crown Angelic",
+            "id": "0699-8ee1-7213-9ce7",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "06d7-9dc7-736c-36e7",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "rules": [{"name": "The Crown Angelic", "id": "456c-9540-06dc-a2d4", "description": "A model with this wargear gains the Fear (3) special rule.", "hidden": false}]
+          },
+          {
+            "name": "Fury of Baal",
+            "id": "1716-3a66-72fb-d2aa",
+            "hidden": false,
+            "import": true,
+            "page": "10",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "7caa-973b-0a38-5997",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a plasma pistol equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "3407-02d2-18aa-4a22",
+                        "childName": "Plasma Pistol",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "1716-3a66-72fb-d2aa",
+                        "childName": "The Angels Wing",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Fury of Baal",
+                "id": "0a02-d859-4b61-addf",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blood Angels Warlord Traits",
+        "id": "d68f-8fa3-2748-ca82",
+        "defaultSelectionEntryId": "none",
+        "flatten": true,
+        "hidden": false,
+        "page": "12",
+        "publicationId": "5bad-8a08-2a03-418d",
+        "entryLinks": [
+          {"name": "Soul Warden", "id": "977a-9fad-8680-c498", "hidden": false, "targetId": "f80f-8d20-8c61-7883", "type": "selectionEntry"},
+          {"name": "Selfless Valour", "id": "760d-e7d3-bfa4-aa2f", "hidden": false, "targetId": "4fb9-8513-0b8b-0182", "type": "selectionEntry"},
+          {"name": "Artisan of war", "id": "dc3f-bf66-2dc8-8164", "hidden": false, "targetId": "3f6f-386e-299e-67e8", "type": "selectionEntry"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blood Angels Rites of War",
+        "id": "1818-304c-c2d5-fe80",
+        "defaultSelectionEntryId": "none",
+        "flatten": true,
+        "hidden": false,
+        "page": "",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "69c3-944c-6e99-d38c",
+                "childName": "Blood Angles",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "The Death Company",
+            "id": "f935-82ae-81b0-2f0a",
+            "hidden": false,
+            "import": true,
+            "page": "15",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade"
+          },
+          {
+            "name": "Airborne Assault",
+            "id": "0a54-6d30-57c0-2a31",
+            "hidden": false,
+            "import": true,
+            "page": "15",
+            "publicationId": "5bad-8a08-2a03-418d",
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "field": "error",
+                "scope": "roster",
+                "type": "add",
+                "value": "Your army must include at least 2 Aircraft type units.",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "6af1-500e-865d-e08f",
+                        "childName": "Aircraft",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 2
+                      },
+                      {
+                        "childId": "0a54-6d30-57c0-2a31",
+                        "childName": "Airborne Assault",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
