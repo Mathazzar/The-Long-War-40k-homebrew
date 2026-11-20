@@ -2636,6 +2636,34 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Force Organization: Troop",
+            "id": "e015-8c3e-1c8d-8198",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -2812,6 +2840,24 @@
                     "value": 1
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "3856-84ba-387d-5526",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "7a38-109f-dfd0-3054",
+                "childName": "Deathwing Strike Talon",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
               }
             ]
           }
@@ -3129,6 +3175,36 @@
           {"name": "M40", "id": "af15-17ea-01ef-ca2a", "hidden": false, "primary": false, "targetId": "6b06-4dd3-48ca-a808"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 145}],
+        "entryLinks": [
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "f663-402d-8967-30f4",
+            "hidden": false,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
         "infoLinks": [
           {"name": "Allegiance: Dark Angels", "id": "7da4-92c8-02ca-612c", "hidden": false, "targetId": "34c2-4b22-684f-e12d", "type": "rule"},
           {"name": "And they shall know no Fear", "id": "76af-941e-23ec-7374", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
@@ -4213,15 +4289,47 @@
             "hidden": false
           }
         ],
-        "selectionEntries": [
+        "selectionEntryGroups": [
           {
-            "name": "Priest (2)",
-            "id": "6d4c-7030-3f72-e17f",
+            "name": "Priest",
+            "id": "de11-3bb1-cace-f430",
+            "defaultSelectionEntryId": "ff1e-1b72-cc44-7b29",
+            "flatten": true,
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "84d6-32e8-92fd-7e12", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+            "constraints": [
+              {
+                "id": "01c8-aeac-f14c-e5e8",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "a47a-38f7-f4b8-4710",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {"name": "Priest (1)", "id": "3b52-9dc4-7e21-d494", "defaultAmount": "1", "hidden": false, "import": true, "type": "upgrade"},
+              {
+                "name": "Priest (2)",
+                "id": "e323-20a5-8d55-b429",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              }
+            ]
           }
         ]
       },

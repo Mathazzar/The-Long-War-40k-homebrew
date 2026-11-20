@@ -2066,6 +2066,50 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Troop",
+            "id": "3fe4-969d-da58-8539",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "94da-d01e-4899-6ca8",
+                        "childName": "Pride of the Chapter",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "6410-7a47-89db-b0b7",
+                        "childName": "Ravenwing Hunt Talon",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -3151,6 +3195,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "8a42-4d49-7ffc-2eb7",
+            "hidden": false,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -17858,6 +17930,17 @@
                     "value": 1
                   }
                 ],
+                "entryLinks": [
+                  {
+                    "name": "Interrogator Chaplain",
+                    "id": "747d-160a-a969-c28d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "0a92-8fdf-536b-16fe",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Litany of Prayers", "id": "c663-e968-bf6b-67d5", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}]
+                  }
+                ],
                 "selectionEntries": [
                   {
                     "name": "Vanguard Operator",
@@ -18515,6 +18598,16 @@
                                     "shared": true,
                                     "type": "lessThan",
                                     "value": 1
+                                  },
+                                  {
+                                    "childId": "0a92-8fdf-536b-16fe",
+                                    "childName": "Interrogator Chaplain",
+                                    "field": "selections",
+                                    "includeChildSelections": false,
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "type": "lessThan",
+                                    "value": 1
                                   }
                                 ]
                               }
@@ -18660,6 +18753,16 @@
                               {
                                 "childId": "04ad-f1d3-1d3c-57bc",
                                 "childName": "Reiver Commando",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "0a92-8fdf-536b-16fe",
+                                "childName": "Interrogator Chaplain",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -19011,16 +19114,31 @@
                   {
                     "comment": "Chaplain",
                     "type": "and",
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "childId": "032b-6ee5-79fa-5885",
-                        "childName": "Chaplain",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "032b-6ee5-79fa-5885",
+                            "childName": "Chaplain",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "0a92-8fdf-536b-16fe",
+                            "childName": "Interrogator Chaplain",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
                       }
                     ],
                     "modifiers": [
@@ -21135,7 +21253,8 @@
                 "import": true,
                 "targetId": "7850-b4d5-657d-7ea6",
                 "type": "selectionEntryGroup"
-              }
+              },
+              {"name": "Dark Angels Captain", "id": "be1c-7b69-3aa6-c50d", "hidden": false, "import": true, "targetId": "abce-d415-9c83-9811", "type": "selectionEntryGroup"}
             ],
             "profiles": [
               {
@@ -21324,16 +21443,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -21351,7 +21485,33 @@
                     "entryLinks": [
                       {"name": "Frag Grenades", "id": "7d98-7b98-608d-d853", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "2f50-4c9c-b42b-b995", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-                      {"name": "Mobility", "id": "9218-625f-cd8e-e56d", "hidden": false, "import": true, "targetId": "801d-2543-53c9-8359", "type": "selectionEntryGroup"}
+                      {
+                        "name": "Mobility",
+                        "id": "9218-625f-cd8e-e56d",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "801d-2543-53c9-8359",
+                        "type": "selectionEntryGroup",
+                        "modifiers": [
+                          {
+                            "field": "hidden",
+                            "type": "set",
+                            "value": true,
+                            "conditions": [
+                              {
+                                "childId": "1e36-cfd4-06a3-d23d",
+                                "childName": "Ravenwing Talon Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
                     ],
                     "modifiers": [
                       {
@@ -21365,6 +21525,16 @@
                             "field": "selections",
                             "includeChildSelections": true,
                             "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
                             "shared": true,
                             "type": "atLeast",
                             "value": 1
@@ -21392,16 +21562,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -21419,6 +21604,25 @@
                     "entryLinks": [
                       {"name": "Frag Grenades", "id": "adf1-26c8-5d21-ebac", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "0bc8-118c-06d9-73a0", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
                     ]
                   },
                   {
@@ -21433,6 +21637,25 @@
                     "entryLinks": [
                       {"name": "Frag Grenades", "id": "275f-8265-e74f-baba", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "c3c6-30b1-f577-48af", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
                     ]
                   },
                   {
@@ -21448,16 +21671,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "c395-01d4-98bc-ff18",
+                                "childName": "IC",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -21476,13 +21714,45 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "1e36-cfd4-06a3-d23d",
+                                "childName": "Ravenwing Talon Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "field": "cbdc-411c-cf55-3186",
+                        "type": "set",
+                        "value": 0,
                         "conditions": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
                             "field": "selections",
                             "includeChildSelections": true,
-                            "scope": "force",
+                            "scope": "model",
                             "shared": true,
                             "type": "atLeast",
                             "value": 1
@@ -21504,16 +21774,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "c395-01d4-98bc-ff18",
+                                "childName": "IC",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -21550,7 +21835,121 @@
                     "value": 1
                   }
                 ],
-                "entryLinks": [{"name": "2 Lightning Claws", "id": "54dc-62d7-63d0-5449", "hidden": false, "targetId": "33b0-c44b-28ac-366a", "type": "selectionEntry"}],
+                "entryLinks": [
+                  {
+                    "name": "2 Lightning Claws",
+                    "id": "54dc-62d7-63d0-5449",
+                    "hidden": false,
+                    "targetId": "33b0-c44b-28ac-366a",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "4e36-cdf8-e88f-dfaf",
+                                "childName": "Gravis",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "field": "error",
+                        "type": "add",
+                        "value": "{this} can't be taken with a bike",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "33b0-c44b-28ac-366a",
+                                "childName": "2 Lightning Claws",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "cd1c-37c9-b49b-eb52",
+                                "childName": "Bike",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "d1c5-18bb-ef55-0797",
+                            "childName": "Artificer Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "bda4-b2dc-ba85-4b63",
+                            "childName": "Power Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {"affects": "c332-9d44-10e0-a2f9", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ff03-8a50-2439-8489", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "f073-4b28-ff12-8f12", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4eac-066b-aeae-31a6", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "795c-01a5-dc2e-46a1", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4ccc-3067-8af9-802f", "field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ],
                 "modifiers": [
                   {
                     "field": "name",
@@ -21558,36 +21957,55 @@
                     "value": "Storm Bolter and Power Sword",
                     "conditionGroups": [
                       {
-                        "type": "or",
+                        "type": "and",
+                        "conditionGroups": [
+                          {
+                            "sortIndex": 1,
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "c6a0-e718-359f-a4fe",
+                                "childName": "Cataphractii Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "0a06-2498-85c3-dc58",
+                                "childName": "Tartaros Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "fdaa-f768-5e2d-3ce6",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
                         "conditions": [
                           {
-                            "childId": "c6a0-e718-359f-a4fe",
-                            "childName": "Cataphractii Terminator Armour",
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
                             "field": "selections",
                             "includeChildSelections": true,
                             "scope": "model",
                             "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "0a06-2498-85c3-dc58",
-                            "childName": "Tartaros Terminator Armour",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "model",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "fdaa-f768-5e2d-3ce6",
-                            "childName": "Indomitus Terminator Armour",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "model",
-                            "shared": true,
-                            "type": "atLeast",
+                            "sortIndex": 2,
+                            "type": "lessThan",
                             "value": 1
                           }
                         ]
@@ -21602,6 +22020,23 @@
                       {
                         "childId": "9226-fb5d-3a30-a654",
                         "childName": "Gravis Armour",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "name",
+                    "type": "set",
+                    "value": "Storm Bolter and Calabanite Blade",
+                    "conditions": [
+                      {
+                        "childId": "e0e2-66fc-b298-e2b3",
+                        "childName": "Deathwing Strike Master",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "model",
@@ -21649,38 +22084,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -22818,6 +23221,7 @@
                         ],
                         "modifierGroups": [
                           {
+                            "comment": "Terminator",
                             "type": "and",
                             "conditionGroups": [
                               {
@@ -22857,6 +23261,125 @@
                               }
                             ],
                             "modifiers": [{"field": "defaultSelectionEntryId", "type": "set", "value": "7220-4717-28d6-bce1"}, {"field": "name", "type": "set", "value": "Power Sword"}]
+                          },
+                          {
+                            "comment": "Deathwing Strike Master",
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ],
+                            "modifiers": [
+                              {"field": "3e9e-e55e-b894-5cfa-max", "type": "set", "value": 0},
+                              {"field": "hidden", "type": "set", "value": true},
+                              {"field": "3e9e-e55e-b894-5cfa-min", "type": "set", "value": 0}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Calabanite Blade",
+                        "id": "b6f7-9b51-3b84-06ff",
+                        "collapsible": true,
+                        "comment": "Deathwing Strike Master",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "a4c7-d0dc-d73b-c38a-min",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "a4c7-d0dc-d73b-c38a-max",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Calabanite Blade",
+                            "id": "eaf8-873b-3284-f79f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "ca28-a3f8-0bf0-dc36",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+                          },
+                          {
+                            "name": "Thunder Hammer",
+                            "id": "df96-b211-849b-4a26",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4e5d-8e80-1671-f1f9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Mace of Absolution",
+                            "id": "bad3-3a70-67e8-79ed",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8039-d641-2537-58a9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Terranic Great Sword",
+                            "id": "be60-097e-ea3e-f66d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "30f8-c9ea-311a-899d",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Relic Blade",
+                            "id": "f1a5-bcda-017e-af0d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "a113-ba7f-4fb8-2b3c",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          }
+                        ],
+                        "modifierGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ],
+                            "modifiers": [
+                              {"field": "a4c7-d0dc-d73b-c38a-min", "type": "set", "value": 0},
+                              {"field": "a4c7-d0dc-d73b-c38a-max", "type": "set", "value": 0},
+                              {"field": "hidden", "type": "set", "value": true}
+                            ]
                           }
                         ]
                       }
@@ -22898,38 +23421,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -23018,38 +23509,6 @@
                     ],
                     "modifiers": [
                       {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
                         "field": "error",
                         "type": "add",
                         "value": "{this} can't be taken with a bike or jump pack",
@@ -23136,38 +23595,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -23256,38 +23683,6 @@
                     ],
                     "modifiers": [
                       {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
                         "field": "error",
                         "type": "add",
                         "value": "{this} can't be taken with a bike or jump pack",
@@ -23374,38 +23769,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -35938,37 +36301,7 @@
           {"name": "Bike Squad", "id": "c226-df17-014a-4227", "hidden": false, "primary": false, "targetId": "f7a6-38ad-b9fe-3b78"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 19}],
-        "entryLinks": [
-          {
-            "name": "Force Organization: Troop",
-            "id": "3fe4-969d-da58-8539",
-            "hidden": false,
-            "import": true,
-            "targetId": "cd9e-d590-95bd-2dfd",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
-                  {
-                    "childId": "94da-d01e-4899-6ca8",
-                    "childName": "Pride of the Chapter",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {"name": "Vetran", "id": "1f04-91ea-175b-26e3", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
-        ],
+        "entryLinks": [{"name": "Vetran", "id": "1f04-91ea-175b-26e3", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "d952-122a-1e6a-39b6", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "5bb6-554f-130e-fba4", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
@@ -38776,6 +39109,82 @@
                         "childId": "8546-f256-99da-a259",
                         "childName": "Lemartes",
                         "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "7a38-109f-dfd0-3054",
+                        "childName": "Deathwing Strike Talon",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "a313-c56a-0bc9-473c",
+                        "childName": "Belial, Master of the Deathwing",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e615-33d8-dabc-1bcd",
+                        "childName": "Space Marine Captain",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "6410-7a47-89db-b0b7",
+                        "childName": "Ravenwing Hunt Talon",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "eb7c-ded6-31b5-9025",
+                        "childName": "Sammael, Master of the Ravenwing",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e615-33d8-dabc-1bcd",
+                        "childName": "Space Marine Captain",
+                        "field": "selections",
+                        "includeChildForces": false,
                         "includeChildSelections": false,
                         "scope": "unit",
                         "shared": true,

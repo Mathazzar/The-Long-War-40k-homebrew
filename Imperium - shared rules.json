@@ -543,7 +543,8 @@
             "modifiers": [
               {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
               {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Gravis", "type": "append", "value": "in Gravis Armour"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1}
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1},
+              {"field": "category", "scope": "unit", "type": "add", "value": "4e36-cdf8-e88f-dfaf"}
             ]
           }
         ],
