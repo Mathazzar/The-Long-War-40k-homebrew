@@ -26,7 +26,8 @@
         "targetId": "f14e-1557-3a53-e27e",
         "type": "catalogue"
       },
-      {"name": "Imperium - Space Marines - Blood Angels", "id": "c56d-078e-8687-98a4", "targetId": "c8bb-2be7-a95b-1ceb", "type": "catalogue"}
+      {"name": "Imperium - Space Marines - Blood Angels", "id": "c56d-078e-8687-98a4", "targetId": "c8bb-2be7-a95b-1ceb", "type": "catalogue"},
+      {"name": "Imperium - Space Marines - Dark Angels", "id": "5a1f-d0d4-79e0-5d1e", "targetId": "3ca1-0e50-ce88-c7ec", "type": "catalogue"}
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
@@ -1324,6 +1325,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -1370,6 +1382,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -1713,6 +1747,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -1906,6 +1951,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -2020,6 +2087,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -2058,6 +2136,42 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2235,6 +2349,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -2270,6 +2395,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -2419,6 +2566,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -2794,6 +2952,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -2943,6 +3112,17 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -3101,6 +3281,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -3292,6 +3483,40 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3382,6 +3607,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -3496,6 +3732,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -3573,6 +3820,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -4369,6 +4627,14 @@
                 "import": true,
                 "targetId": "1818-304c-c2d5-fe80",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Dark Angels Rites of War",
+                "id": "b659-7069-6635-467c",
+                "hidden": false,
+                "import": true,
+                "targetId": "4d57-6e50-8c84-61a6",
+                "type": "selectionEntryGroup"
               }
             ],
             "modifierGroups": [
@@ -4402,6 +4668,16 @@
                       {
                         "childId": "24e8-efde-3148-5d6e",
                         "childName": "Black Templars",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "c7b7-b755-3afa-865f",
+                        "childName": "Dark Angels",
                         "field": "selections",
                         "includeChildSelections": false,
                         "scope": "parent",
@@ -4702,7 +4978,8 @@
                     ]
                   }
                 ]
-              }
+              },
+              {"name": "Dark Angels", "id": "5ab0-50ad-856e-6003", "hidden": false, "import": true, "targetId": "c7b7-b755-3afa-865f", "type": "selectionEntry"}
             ],
             "modifiers": [
               {
@@ -7508,6 +7785,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Dark Angels",
+            "id": "8725-9afc-811f-9384",
+            "hidden": false,
+            "targetId": "12c8-e8f6-c852-d0ae",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -8743,6 +9047,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -8885,6 +9211,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -9721,6 +10069,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -9895,6 +10265,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -11823,6 +12215,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -11949,6 +12363,28 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -12200,6 +12636,17 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -12909,6 +13356,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -15755,6 +16224,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -15912,6 +16392,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -16141,6 +16632,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -16430,6 +16943,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -16730,6 +17254,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -16912,6 +17458,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -18631,6 +19188,17 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -22966,6 +23534,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -23283,6 +23873,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24473,6 +25085,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -24887,6 +25510,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -25096,6 +25741,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25503,6 +26159,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26649,6 +27316,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -27245,6 +27934,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -27480,6 +28191,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -27667,6 +28389,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -27919,6 +28663,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -28000,19 +28755,20 @@
                 "name": "Land Speeder Storm",
                 "id": "beaf-a4b4-ecbe-a247",
                 "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
+                "typeId": "3563-e5b8-93ec-7b86",
+                "typeName": "Monster",
                 "characteristics": [
-                  {"name": "M", "$text": "14", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                  {"name": "M", "$text": "14", "typeId": "308b-d2ca-3375-97ed"},
+                  {"name": "WS", "$text": "4", "typeId": "1a47-3bd1-4cf1-dd8f"},
+                  {"name": "BS", "$text": "4", "typeId": "48f1-8c2b-8a2b-e9b3"},
+                  {"name": "S", "$text": "4", "typeId": "28ef-f6c8-2b44-8894"},
+                  {"name": "T", "$text": "5", "typeId": "82cc-19c4-cadc-b6b1"},
+                  {"name": "W", "$text": "3", "typeId": "05bd-39ae-7147-174d"},
+                  {"name": "A", "$text": "2", "typeId": "b872-96a8-ff4a-5dc4"},
+                  {"name": "I", "$text": "4", "typeId": "edb9-e6ab-2c64-4145"},
+                  {"name": "LD", "$text": "8", "typeId": "33a8-39c0-4848-9b0b"},
+                  {"name": "Sv", "$text": "4", "typeId": "bf3e-2485-2ce9-c616"},
+                  {"name": "Transport Capacity", "$text": "6", "typeId": "7115-9edc-c70a-a6d3"}
                 ]
               }
             ]
@@ -28070,6 +28826,17 @@
                   {
                     "childId": "860a-da71-4255-6379",
                     "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28354,6 +29121,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -28548,6 +29337,17 @@
                   {
                     "childId": "860a-da71-4255-6379",
                     "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28850,6 +29650,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -29055,6 +29877,28 @@
                   {
                     "childId": "860a-da71-4255-6379",
                     "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -29334,6 +30178,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -29593,6 +30459,28 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -29869,6 +30757,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -30222,6 +31132,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -30464,6 +31385,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -30756,6 +31699,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -31344,6 +32309,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -31668,6 +32655,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -31843,6 +32852,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -32083,6 +33103,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -32249,6 +33291,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -32406,6 +33470,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -32653,6 +33739,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -33222,6 +34330,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -33845,6 +34964,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -34022,6 +35163,17 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -35882,6 +37034,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -36105,6 +37268,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -36472,6 +37657,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -36765,6 +37961,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -37743,6 +38961,14 @@
             "hidden": false,
             "import": true,
             "targetId": "51e9-1d3a-18b2-433b",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Dark Angels Warlord Traits",
+            "id": "216f-1140-247d-149f",
+            "hidden": false,
+            "import": true,
+            "targetId": "de35-1040-dd70-3d23",
             "type": "selectionEntryGroup"
           }
         ],
@@ -39129,6 +40355,14 @@
                 "modifiers": [{"affects": "entries.forces.recursive.profiles.Unit", "field": "6bc7-a391-2ba3-44f9", "scope": "unit", "type": "decrement", "value": 1}]
               }
             ]
+          },
+          {
+            "name": "Dark Angels Unit Wargear",
+            "id": "09fc-5903-6a80-9441",
+            "hidden": false,
+            "import": true,
+            "targetId": "9d98-11e8-9a5b-2986",
+            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -39198,6 +40432,14 @@
             "import": true,
             "targetId": "a8ad-c653-ea06-52fc",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Interromancy Discipline",
+            "id": "efc9-7f0b-6479-6401",
+            "hidden": false,
+            "import": true,
+            "targetId": "f422-6b38-2ab2-42a1",
+            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -39230,7 +40472,8 @@
             "targetId": "7975-3300-c7b1-2892",
             "type": "selectionEntryGroup"
           },
-          {"name": "Blood Angels Relics", "id": "fbdf-6ce7-5f00-52c8", "hidden": false, "import": true, "targetId": "1904-90bd-2bf2-ad60", "type": "selectionEntryGroup"}
+          {"name": "Blood Angels Relics", "id": "fbdf-6ce7-5f00-52c8", "hidden": false, "import": true, "targetId": "1904-90bd-2bf2-ad60", "type": "selectionEntryGroup"},
+          {"name": "Dark Angels Relics", "id": "ac4c-4197-77e5-ab2e", "hidden": false, "import": true, "targetId": "a1f0-fff9-894e-ad5d", "type": "selectionEntryGroup"}
         ],
         "selectionEntryGroups": [
           {
