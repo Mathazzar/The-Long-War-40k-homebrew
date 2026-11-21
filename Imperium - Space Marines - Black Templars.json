@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 21,
     "library": true,
-    "revision": 2,
+    "revision": 3,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "81d3-dbfb-e02f-8897", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -6788,6 +6788,7 @@
       {
         "name": "Black Templars Wargear",
         "id": "0db8-92fd-ebfd-e881",
+        "comment": "Model",
         "defaultSelectionEntryId": "none",
         "flatten": true,
         "hidden": false,

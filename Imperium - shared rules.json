@@ -22,7 +22,9 @@
       {"name": "Land Raider Redeemer", "id": "cb98-681a-2899-71c4", "hidden": false},
       {"name": "Paragon Warsuit", "id": "ee22-1e0b-4930-ea68", "hidden": false},
       {"name": "Contemptor", "id": "9891-f932-73e3-f871", "hidden": false},
-      {"name": "Furioso", "id": "eb23-7713-9821-ca94", "hidden": true}
+      {"name": "Furioso", "id": "eb23-7713-9821-ca94", "hidden": true},
+      {"name": "Apothecary", "id": "35e8-eef8-623b-fc39", "hidden": true},
+      {"name": "Sergeant", "id": "f000-d2ae-28f5-8f48", "hidden": true}
     ],
     "sharedProfiles": [
       {
@@ -231,6 +233,23 @@
           {"name": "Strength", "$text": "*", "typeId": "4e85-0d56-33e2-acca"},
           {"name": "AP", "$text": "*", "typeId": "1fa3-547b-b56c-c34e"},
           {"name": "Rules", "$text": "Stasis", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Inferno Pistol",
+        "id": "e6a0-d2b2-1af0-c431",
+        "hidden": false,
+        "page": "11",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
         ]
       }
     ],
@@ -692,25 +711,7 @@
         "import": true,
         "type": "upgrade",
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-        "profiles": [
-          {
-            "name": "Inferno Pistol",
-            "id": "e6a0-d2b2-1af0-c431",
-            "hidden": false,
-            "page": "11",
-            "publicationId": "6f16-791a-3a26-4c72",
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Pistol", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "8", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Melta", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Inferno Pistol", "id": "83d8-6cd8-a936-d987", "hidden": false, "targetId": "e6a0-d2b2-1af0-c431", "type": "profile"}]
       },
       {
         "name": "Linked Assault Cannon",
@@ -5478,6 +5479,33 @@
           {"id": "1626-da0a-5b56-c177-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [{"name": "Stasis Grenade", "id": "d042-277c-9544-d43d", "hidden": false, "targetId": "9514-9275-540a-32e5", "type": "profile"}]
+      },
+      {
+        "name": "Dragonfire Boltgun",
+        "id": "8abc-120b-e5d5-ccf8",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "page": "12",
+        "publicationId": "1606-03fb-e01d-e0cf",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Dragonfire Boltgun",
+            "id": "f2f8-eb9d-1302-794a",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Ignores Cover", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [

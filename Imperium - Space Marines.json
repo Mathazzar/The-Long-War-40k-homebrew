@@ -8575,33 +8575,6 @@
         ]
       },
       {
-        "name": "Dragonfire Boltgun",
-        "id": "8abc-120b-e5d5-ccf8",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "12",
-        "publicationId": "1606-03fb-e01d-e0cf",
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Dragonfire Boltgun",
-            "id": "f2f8-eb9d-1302-794a",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Ignores Cover", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Melta Destroyer",
         "id": "3126-6f5d-974a-fa8b",
         "collective": true,
@@ -9526,6 +9499,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "d43f-da62-944e-91ca", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "34ec-9031-f847-2990-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "34ec-9031-f847-2990-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -10689,6 +10663,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "3909-c4a6-9b23-c0a4", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "1cad-fa68-9f48-78f3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1cad-fa68-9f48-78f3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -12940,6 +12915,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "475b-fb45-69de-f5f8", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "4141-184e-5ad2-a027-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "4141-184e-5ad2-a027-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -13190,62 +13166,6 @@
                     "hidden": false,
                     "import": true,
                     "targetId": "e38e-0c5b-3e05-b098",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  },
-                  {
-                    "name": "Evicerator",
-                    "id": "07df-6e97-7c14-9948",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "b997-ac09-b543-0e7d",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "69c3-944c-6e99-d38c",
-                            "childName": "Blood Angles",
-                            "field": "selections",
-                            "includeChildForces": true,
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Encarmine Axe",
-                    "id": "421b-3869-96ab-55e0",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "7175-124a-2e09-3318",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  },
-                  {
-                    "name": "Encarmine Sword",
-                    "id": "e64c-59a6-3686-3df2",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "5939-7c62-5a7c-f618",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  },
-                  {
-                    "name": "Encarmine Spear",
-                    "id": "9689-04e1-afd2-ff50",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "1548-cca6-6169-648e",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
                   }
@@ -13504,10 +13424,7 @@
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
-                  {"name": "Power Fist", "id": "6c49-baca-f4a2-db37", "hidden": false, "import": true, "targetId": "e38e-0c5b-3e05-b098", "type": "selectionEntry"},
-                  {"name": "Encarmine Axe", "id": "9386-11ec-cf10-0cc4", "hidden": false, "import": true, "targetId": "7175-124a-2e09-3318", "type": "selectionEntry"},
-                  {"name": "Encarmine Spear", "id": "136c-a665-72c2-88d7", "hidden": false, "import": true, "targetId": "1548-cca6-6169-648e", "type": "selectionEntry"},
-                  {"name": "Encarmine Sword", "id": "2071-cb3c-24fb-70ad", "hidden": false, "import": true, "targetId": "5939-7c62-5a7c-f618", "type": "selectionEntry"}
+                  {"name": "Power Fist", "id": "6c49-baca-f4a2-db37", "hidden": false, "import": true, "targetId": "e38e-0c5b-3e05-b098", "type": "selectionEntry"}
                 ]
               }
             ]
@@ -13671,6 +13588,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "1c22-7192-00f1-9aac", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "ee7d-e5ec-28f8-f1d7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "ee7d-e5ec-28f8-f1d7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -16294,6 +16212,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "5bda-716c-1ba4-12bd", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "9ed6-7604-3158-a0e3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "9ed6-7604-3158-a0e3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -19222,69 +19141,6 @@
                         ]
                       }
                     ]
-                  },
-                  {
-                    "name": "Maul of Perdition",
-                    "id": "3865-25da-c38f-0bb8",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "ce76-1e12-38f5-98c7",
-                    "type": "selectionEntry",
-                    "modifiers": [
-                      {
-                        "field": "cbdc-411c-cf55-3186",
-                        "type": "set",
-                        "value": 18,
-                        "conditions": [
-                          {
-                            "childId": "032b-6ee5-79fa-5885",
-                            "childName": "Chaplain",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "parent",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Blade of Perdition",
-                    "id": "143d-730e-2fb9-298c",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "8c55-9032-666c-1ebc",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}]
-                  },
-                  {
-                    "name": "Axe of Perdition",
-                    "id": "e78b-ade0-edfc-4573",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "a18f-99c5-affb-c011",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
-                  },
-                  {
-                    "name": "Spear of Perdition",
-                    "id": "2eab-1035-8fb4-7668",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "31f6-0f76-1c7e-8fea",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
-                  },
-                  {
-                    "name": "Calabanite Blade",
-                    "id": "7db4-f26f-d860-ac6c",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "ca28-a3f8-0bf0-dc36",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
                 ],
                 "modifierGroups": [
@@ -19314,11 +19170,7 @@
                       {"affects": "7387-4d1b-e3e4-b301", "field": "hidden", "type": "set", "value": true},
                       {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
                       {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "31f6-0f76-1c7e-8fea", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "ca28-a3f8-0bf0-dc36", "field": "hidden", "type": "set", "value": true}
+                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true}
                     ]
                   },
                   {
@@ -19353,7 +19205,6 @@
                     ],
                     "modifiers": [
                       {"field": "defaultSelectionEntryId", "type": "set", "value": "a0d6-ee59-c27a-d4b7"},
-                      {"affects": "31f6-0f76-1c7e-8fea", "field": "hidden", "type": "set", "value": true},
                       {"affects": "4e5d-8e80-1671-f1f9", "field": "hidden", "type": "set", "value": true},
                       {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true},
                       {"affects": "a7ed-640e-8d57-4f6f", "field": "hidden", "type": "set", "value": true},
@@ -19361,10 +19212,7 @@
                       {"affects": "6dff-d1d6-7194-b1d0", "field": "hidden", "type": "set", "value": true},
                       {"affects": "7387-4d1b-e3e4-b301", "field": "hidden", "type": "set", "value": true},
                       {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "ca28-a3f8-0bf0-dc36", "field": "hidden", "type": "set", "value": true}
+                      {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true}
                     ]
                   }
                 ],
@@ -19881,6 +19729,37 @@
                     "import": true,
                     "targetId": "7850-b4d5-657d-7ea6",
                     "type": "selectionEntryGroup"
+                  },
+                  {
+                    "name": "Power Sword",
+                    "id": "0f88-3890-35e4-a8d3",
+                    "defaultAmount": "1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "84dd-49d6-4915-6b09",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "ba1e-6b2e-18bb-dc8e-min",
+                        "automatic": false,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "ba1e-6b2e-18bb-dc8e-max",
+                        "automatic": false,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
                   }
                 ],
                 "infoLinks": [
@@ -19891,48 +19770,6 @@
                     "targetId": "5cc4-7146-09a3-a8df",
                     "type": "profile",
                     "modifiers": [{"field": "name", "type": "set", "value": "Judicator"}]
-                  }
-                ],
-                "selectionEntryGroups": [
-                  {
-                    "name": "Power Sword",
-                    "id": "cc66-46e3-6807-58f1",
-                    "defaultSelectionEntryId": "0f88-3890-35e4-a8d3",
-                    "hidden": false,
-                    "constraints": [
-                      {
-                        "id": "ba1e-6b2e-18bb-dc8e-min",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "min",
-                        "value": 1
-                      },
-                      {
-                        "id": "ba1e-6b2e-18bb-dc8e-max",
-                        "automatic": true,
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "max",
-                        "value": 1
-                      }
-                    ],
-                    "entryLinks": [
-                      {
-                        "name": "Power Sword",
-                        "id": "0f88-3890-35e4-a8d3",
-                        "defaultAmount": "1",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "84dd-49d6-4915-6b09",
-                        "type": "selectionEntry"
-                      },
-                      {"name": "Calabanite Blade", "id": "97f8-c5d0-7e2e-5bf0", "hidden": false, "import": true, "targetId": "ca28-a3f8-0bf0-dc36", "type": "selectionEntry"}
-                    ]
                   }
                 ]
               },
@@ -20739,6 +20576,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "model",
+                "categoryLinks": [{"name": "Apothecary", "id": "d973-04ba-09d7-277c", "hidden": false, "primary": false, "targetId": "35e8-eef8-623b-fc39"}],
                 "constraints": [{"id": "00f3-8243-6f10-8063", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 37}],
                 "entryLinks": [
@@ -21160,99 +20998,6 @@
                         "hidden": false,
                         "import": true,
                         "targetId": "7387-4d1b-e3e4-b301",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                      },
-                      {
-                        "name": "Encarmine Axe",
-                        "id": "ee2b-731a-35bc-81b2",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "7175-124a-2e09-3318",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                        "modifiers": [
-                          {
-                            "field": "hidden",
-                            "type": "set",
-                            "value": true,
-                            "conditions": [
-                              {
-                                "childId": "b2b5-3d4c-75aa-f071",
-                                "childName": "Terminator",
-                                "field": "selections",
-                                "includeChildSelections": false,
-                                "scope": "unit",
-                                "shared": true,
-                                "type": "notInstanceOf",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "name": "Encarmine Spear",
-                        "id": "9000-1450-11f8-a3d0",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "1548-cca6-6169-648e",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                        "modifiers": [
-                          {
-                            "field": "hidden",
-                            "type": "set",
-                            "value": true,
-                            "conditions": [
-                              {
-                                "childId": "b2b5-3d4c-75aa-f071",
-                                "childName": "Terminator",
-                                "field": "selections",
-                                "includeChildSelections": false,
-                                "scope": "unit",
-                                "shared": true,
-                                "type": "notInstanceOf",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "name": "Encarmine Sword",
-                        "id": "a090-1b7a-dcce-4dd9",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "5939-7c62-5a7c-f618",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                        "modifiers": [
-                          {
-                            "field": "hidden",
-                            "type": "set",
-                            "value": true,
-                            "conditions": [
-                              {
-                                "childId": "b2b5-3d4c-75aa-f071",
-                                "childName": "Terminator",
-                                "field": "selections",
-                                "includeChildSelections": false,
-                                "scope": "unit",
-                                "shared": true,
-                                "type": "notInstanceOf",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "name": "Calabanite Blade",
-                        "id": "c787-9596-d7bc-1992",
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "ca28-a3f8-0bf0-dc36",
                         "type": "selectionEntry",
                         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                       }
@@ -22858,51 +22603,6 @@
                             "targetId": "7387-4d1b-e3e4-b301",
                             "type": "selectionEntry",
                             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                          },
-                          {
-                            "name": "Maul of Perdition",
-                            "id": "e4fa-6063-977b-ef5d",
-                            "hidden": false,
-                            "import": true,
-                            "targetId": "ce76-1e12-38f5-98c7",
-                            "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 18}]
-                          },
-                          {
-                            "name": "Blade of Perdition",
-                            "id": "6cc3-2d37-ba8b-d0f1",
-                            "hidden": false,
-                            "import": true,
-                            "targetId": "8c55-9032-666c-1ebc",
-                            "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}]
-                          },
-                          {
-                            "name": "Axe of Perdition",
-                            "id": "0476-b437-fd49-8b86",
-                            "hidden": false,
-                            "import": true,
-                            "targetId": "a18f-99c5-affb-c011",
-                            "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
-                          },
-                          {
-                            "name": "Spear of Perdition",
-                            "id": "4d91-964c-a10f-890c",
-                            "hidden": false,
-                            "import": true,
-                            "targetId": "31f6-0f76-1c7e-8fea",
-                            "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
-                          },
-                          {
-                            "name": "Calabanite Blade",
-                            "id": "7848-f85b-316c-93ea",
-                            "hidden": false,
-                            "import": true,
-                            "targetId": "ca28-a3f8-0bf0-dc36",
-                            "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           }
                         ],
                         "modifierGroups": [
@@ -22949,20 +22649,15 @@
                             "modifiers": [
                               {"field": "defaultSelectionEntryId", "type": "set", "value": "7220-4717-28d6-bce1"},
                               {"field": "name", "type": "set", "value": "Power Sword"},
-                              {"affects": "8c55-9032-666c-1ebc", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 3},
                               {"affects": "a113-ba7f-4fb8-2b3c", "field": "hidden", "type": "set", "value": true},
                               {"affects": "84dd-49d6-4915-6b09", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 0},
-                              {"affects": "a18f-99c5-affb-c011", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 8},
                               {"affects": "4e5d-8e80-1671-f1f9", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 20},
                               {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
-                              {"affects": "31f6-0f76-1c7e-8fea", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 8},
                               {"affects": "2607-4972-6fde-3757", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 10},
                               {"affects": "a7ed-640e-8d57-4f6f", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
                               {"affects": "e38e-0c5b-3e05-b098", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 15},
                               {"affects": "6dff-d1d6-7194-b1d0", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
-                              {"affects": "ce76-1e12-38f5-98c7", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 13},
-                              {"affects": "7387-4d1b-e3e4-b301", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
-                              {"affects": "ca28-a3f8-0bf0-dc36", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5}
+                              {"affects": "7387-4d1b-e3e4-b301", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5}
                             ]
                           },
                           {
@@ -23018,15 +22713,6 @@
                         ],
                         "entryLinks": [
                           {
-                            "name": "Calabanite Blade",
-                            "id": "eaf8-873b-3284-f79f",
-                            "hidden": false,
-                            "import": true,
-                            "targetId": "ca28-a3f8-0bf0-dc36",
-                            "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
-                          },
-                          {
                             "name": "Thunder Hammer",
                             "id": "df96-b211-849b-4a26",
                             "hidden": false,
@@ -23061,7 +22747,8 @@
                             "targetId": "a113-ba7f-4fb8-2b3c",
                             "type": "selectionEntry",
                             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                          }
+                          },
+                          {"name": "Calabanite Blade", "id": "f369-9c93-01f9-d57b", "hidden": false, "import": true, "targetId": "ca28-a3f8-0bf0-dc36", "type": "selectionEntry"}
                         ],
                         "modifierGroups": [
                           {
@@ -23982,6 +23669,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Seargent", "id": "0593-f95a-2d1f-3ee1", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "c1dd-5ec3-6343-0822-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "c1dd-5ec3-6343-0822-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -25269,6 +24957,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Seargent", "id": "3727-80c2-7a19-c358", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "5208-f9f7-b831-c46b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "92df-bfa2-020e-03e4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -26465,12 +26154,13 @@
         ],
         "selectionEntries": [
           {
-            "name": "TerminatorSergeant",
+            "name": "Terminator Sergeant",
             "id": "6efd-6c4a-6856-c7b1",
             "defaultAmount": "1",
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "cfe3-8d59-adbc-11ed", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "63ba-7041-0959-4124-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "63ba-7041-0959-4124-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -26915,6 +26605,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "1b06-41c8-e858-cf7c", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "146f-f401-9c09-6e94-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "146f-f401-9c09-6e94-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -27082,7 +26773,6 @@
                 "constraints": [{"id": "6b98-1578-4622-f24f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
               },
-              {"name": "Bolt Pistol", "id": "e986-d509-4a8d-eeb5", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"},
               {
                 "name": "Chapter Supplements Model Wargear",
                 "id": "0c44-2633-ee23-6c89",
@@ -27090,6 +26780,19 @@
                 "import": true,
                 "targetId": "7850-b4d5-657d-7ea6",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "1028-dc65-e7ad-f7e0",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ead9-8050-dca8-5b0f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a95a-0bc0-79fc-5d07-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a95a-0bc0-79fc-5d07-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "d672-1b1a-fafd-6383", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
@@ -30280,6 +29983,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "b858-45b1-fa65-0104", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "247d-ca98-50ec-9f16-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "247d-ca98-50ec-9f16-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -30346,7 +30050,6 @@
                 "constraints": [{"id": "2947-9694-d7b8-68bf", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
               },
-              {"name": "Bolt Pistol", "id": "93ba-c721-9a1c-5f89", "hidden": false, "import": true, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"},
               {
                 "name": "Chapter Supplements Model Wargear",
                 "id": "f8a2-1390-07e5-4489",
@@ -30354,6 +30057,19 @@
                 "import": true,
                 "targetId": "7850-b4d5-657d-7ea6",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "1360-0ef5-7995-4b57",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ead9-8050-dca8-5b0f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2019-bb54-e991-4ab3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2019-bb54-e991-4ab3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "fd42-77b8-6e9b-b1c7", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
@@ -30576,12 +30292,12 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "6827-66cb-b3f6-9e16", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "6d73-43ab-8284-5fd2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "6d73-43ab-8284-5fd2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
-              {"name": "Bolt Pistol", "id": "5c4f-43ce-486d-1534", "hidden": false, "targetId": "5523-dc02-9311-2e64", "type": "selectionEntryGroup"},
               {"name": "Divinator Auspex Array", "id": "81ad-3c3d-296a-db12", "hidden": false, "targetId": "0b16-cef7-fa02-77b3", "type": "selectionEntry"},
               {
                 "name": "Close Combat Weapons",
@@ -30631,6 +30347,19 @@
                 "import": true,
                 "targetId": "7850-b4d5-657d-7ea6",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "292a-56e0-1baf-494f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ead9-8050-dca8-5b0f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a7cb-cdec-5973-515e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a7cb-cdec-5973-515e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Sergeant", "id": "52c2-bd53-ac9f-faf9", "hidden": false, "targetId": "f345-9232-1970-d879", "type": "profile"}]
@@ -30866,6 +30595,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "8c0a-e632-e1b8-5bb7", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "9fe0-415b-29e0-769b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "9fe0-415b-29e0-769b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -31808,6 +31538,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "6aab-c447-33ef-bae4", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "b547-6d8d-9c43-0183-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b547-6d8d-9c43-0183-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -33579,6 +33310,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "a74e-f791-db3e-ad12", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "0844-5226-68df-177e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "0844-5226-68df-177e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -34221,6 +33953,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "1319-76e6-64e1-19d6", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "638d-d99d-c7e9-288d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "638d-d99d-c7e9-288d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -35261,6 +34994,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "9d5f-5d1f-aa59-3533", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "1cc5-cc43-5a1a-6d0b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1cc5-cc43-5a1a-6d0b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -36021,6 +35755,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "b252-8158-0c07-e02b", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "e0e0-df90-3ec1-0931-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e0e0-df90-3ec1-0931-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -36480,34 +36215,6 @@
                     "targetId": "b8b8-1bdb-b1a9-d4d9",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-                  },
-                  {
-                    "name": "Inferno Pistol",
-                    "id": "f101-0ce8-7db7-6ee3",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "52f8-0226-59f4-2edf",
-                    "type": "selectionEntry",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditions": [
-                          {
-                            "childId": "69c3-944c-6e99-d38c",
-                            "childName": "Blood Angles",
-                            "field": "selections",
-                            "includeChildForces": true,
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
                   }
                 ]
               }
@@ -37718,6 +37425,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "dbc6-0faf-10fe-5163", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "aa9a-0a2d-0671-b025-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "aa9a-0a2d-0671-b025-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -38040,6 +37748,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Sergeant", "id": "f29b-8ceb-213d-1311", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "b8b3-78d6-5d68-ebb1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b8b3-78d6-5d68-ebb1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -39514,147 +39223,7 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
           },
-          {"name": "Chainsword", "id": "4d0e-9c6f-245f-1627", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"},
-          {
-            "name": "Evicerator",
-            "id": "0311-f0e0-ed4c-3c11",
-            "hidden": false,
-            "import": true,
-            "targetId": "b997-ac09-b543-0e7d",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Encarmine Axe",
-            "id": "a4e6-a287-0f65-3300",
-            "hidden": false,
-            "import": true,
-            "targetId": "7175-124a-2e09-3318",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "b2b5-3d4c-75aa-f071",
-                    "childName": "Terminator",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "notInstanceOf",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Encarmine Spear",
-            "id": "1a48-41aa-a2da-cbf3",
-            "hidden": false,
-            "import": true,
-            "targetId": "1548-cca6-6169-648e",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "b2b5-3d4c-75aa-f071",
-                    "childName": "Terminator",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "notInstanceOf",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Encarmine Sword",
-            "id": "b98e-012a-8d12-c43d",
-            "hidden": false,
-            "import": true,
-            "targetId": "5939-7c62-5a7c-f618",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "b2b5-3d4c-75aa-f071",
-                    "childName": "Terminator",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "notInstanceOf",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Calabanite Blade",
-            "id": "be24-6478-8132-8039",
-            "hidden": false,
-            "import": true,
-            "targetId": "ca28-a3f8-0bf0-dc36",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "bf2b-7ae1-7518-e819",
-                    "childName": "Character",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "notInstanceOf",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
+          {"name": "Chainsword", "id": "4d0e-9c6f-245f-1627", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"}
         ]
       },
       {
@@ -39712,34 +39281,6 @@
             "targetId": "be5e-26aa-f44a-412c",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
-          },
-          {
-            "name": "Inferno Pistol",
-            "id": "2324-0a71-df63-377b",
-            "hidden": false,
-            "import": true,
-            "targetId": "52f8-0226-59f4-2edf",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -39991,34 +39532,6 @@
             "targetId": "e38e-0c5b-3e05-b098",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
-          },
-          {
-            "name": "Evicerator",
-            "id": "e622-419c-d90d-dff4",
-            "hidden": false,
-            "import": true,
-            "targetId": "b997-ac09-b543-0e7d",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -40122,35 +39635,6 @@
             "targetId": "7387-4d1b-e3e4-b301",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
-          },
-          {
-            "name": "Evicerator",
-            "id": "d054-f165-af51-df89",
-            "hidden": false,
-            "import": true,
-            "targetId": "b997-ac09-b543-0e7d",
-            "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -40238,35 +39722,7 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
           },
-          {"name": "Silentus Bolt Pistol", "id": "2fc2-74e3-e46c-1e3c", "hidden": false, "import": true, "targetId": "b651-fd85-152c-61af", "type": "selectionEntry"},
-          {
-            "name": "Inferno Pistol",
-            "id": "c0bf-3f3f-f014-0512",
-            "hidden": false,
-            "import": true,
-            "targetId": "52f8-0226-59f4-2edf",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
+          {"name": "Silentus Bolt Pistol", "id": "2fc2-74e3-e46c-1e3c", "hidden": false, "import": true, "targetId": "b651-fd85-152c-61af", "type": "selectionEntry"}
         ]
       },
       {
@@ -41018,61 +40474,68 @@
             "import": true,
             "targetId": "0db8-92fd-ebfd-e881",
             "type": "selectionEntryGroup"
-          }
-        ]
-      },
-      {
-        "name": "Bolt Pistol",
-        "id": "5523-dc02-9311-2e64",
-        "comment": "Chapter Supplements, Blood Angels",
-        "defaultSelectionEntryId": "1028-dc65-e7ad-f7e0",
-        "hidden": false,
-        "constraints": [
-          {
-            "id": "8efa-3a1d-3551-069a-min",
-            "automatic": true,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "min",
-            "value": 1
           },
+          {"name": "Dark Angels Wargear", "id": "d6e2-2cf6-5eeb-7a11", "hidden": false, "import": true, "targetId": "025c-f6eb-60ed-c3d2", "type": "selectionEntryGroup"},
           {
-            "id": "8efa-3a1d-3551-069a-max",
-            "automatic": true,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "max",
-            "value": 1
-          }
-        ],
-        "entryLinks": [
-          {"name": "Bolt Pistol", "id": "1028-dc65-e7ad-f7e0", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"},
-          {
-            "name": "Inferno Pistol",
-            "id": "cdd3-6cb8-bc12-9366",
+            "name": "Blood Angles Wargear",
+            "id": "0a4b-ce0c-237a-63b7",
             "hidden": false,
             "import": true,
-            "targetId": "52f8-0226-59f4-2edf",
-            "type": "selectionEntry",
+            "targetId": "cc43-0453-0855-95dd",
+            "type": "selectionEntryGroup",
+            "modifierGroups": [
+              {
+                "type": "and",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "4a59-0aa3-cb44-5abb",
+                        "childName": "Space Marine Lieutenant",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e615-33d8-dabc-1bcd",
+                        "childName": "Space Marine Captain",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {"affects": "97d7-61c9-a6b9-5a0c", "field": "hidden", "type": "set", "value": true},
+                  {"affects": "1111-dbfb-51fa-b38c", "field": "hidden", "type": "set", "value": true},
+                  {"affects": "50cc-8a2c-7ee5-de42", "field": "hidden", "type": "set", "value": true},
+                  {"affects": "7752-ee2e-2eb7-ae33", "field": "hidden", "type": "set", "value": true}
+                ]
+              }
+            ],
             "modifiers": [
               {
+                "affects": "d12a-e42a-0eda-2297",
                 "field": "hidden",
                 "type": "set",
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
+                    "childId": "b445-e70f-9300-286e",
+                    "childName": "Tactical Squad",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
+                    "includeChildSelections": false,
+                    "scope": "unit",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -41119,35 +40582,7 @@
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
           },
-          {"name": "Bolt Pistol", "id": "9914-539b-9b5b-a6ab", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"},
-          {
-            "name": "Inferno Pistol",
-            "id": "e5e8-6805-5442-3f48",
-            "hidden": false,
-            "import": true,
-            "targetId": "52f8-0226-59f4-2edf",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditions": [
-                  {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "lessThan",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
+          {"name": "Bolt Pistol", "id": "9914-539b-9b5b-a6ab", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"}
         ]
       }
     ]
