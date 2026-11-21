@@ -7,7 +7,7 @@
     "gameSystemRevision": 4,
     "library": true,
     "publicationId": "2341-8754-2493-838d",
-    "revision": 11,
+    "revision": 12,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - Imperial Guard", "id": "70d5-ec7b-4e75-5145", "importRootEntries": false, "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"}],
     "categoryEntries": [
@@ -845,7 +845,15 @@
             ]
           }
         ],
-        "modifiers": [{"affects": "entries.forces.recursive.95f3-9989-88bf-42cb", "field": "add-info", "scope": "force", "type": "add", "value": "4e07-baa0-1d58-f408"}]
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "force", "type": "add", "value": "95f3-9989-88bf-42cb"},
+              {"affects": "entries.forces.recursive.95f3-9989-88bf-42cb", "field": "add-info", "scope": "force", "type": "add", "value": "4e07-baa0-1d58-f408"}
+            ]
+          }
+        ]
       },
       {
         "name": "Raven’s Fury",
@@ -3815,13 +3823,13 @@
             "value": true,
             "conditions": [
               {
-                "childId": "1a89-b9e7-f553-9a7d",
-                "childName": "Raven Guard",
+                "childId": "95f3-9989-88bf-42cb",
+                "childName": "[Raven Guard]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

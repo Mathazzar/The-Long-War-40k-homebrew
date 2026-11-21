@@ -7,7 +7,7 @@
     "gameSystemRevision": 22,
     "library": true,
     "publicationId": "1cdc-9290-fb29-f4bc",
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "64c0-d117-c38d-697e", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -249,13 +249,19 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Dark Angels", "id": "949f-d9bd-9c9a-9fe0", "hidden": false, "targetId": "12c8-e8f6-c852-d0ae", "type": "infoGroup"}],
-        "modifiers": [
-          {"affects": "entries.ba7d-58f2-ee40-fc55", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"},
-          {"affects": "entries.6e84-25be-0f58-4c5e", "field": "add-info", "scope": "force", "type": "add", "value": "12c8-e8f6-c852-d0ae"},
-          {"affects": "entries.6ce5-b373-d16a-52f6", "field": "category", "scope": "force", "type": "add", "value": "5a29-f170-e309-da9d"},
-          {"affects": "entries.fa9d-896e-a495-babb", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"},
-          {"affects": "entries.0709-887f-8d36-2d6b", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"},
-          {"affects": "entries.6af1-500e-865d-e08f", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"}
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "force", "type": "add", "value": "6e84-25be-0f58-4c5e"},
+              {"affects": "entries.ba7d-58f2-ee40-fc55", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"},
+              {"affects": "entries.6e84-25be-0f58-4c5e", "field": "add-info", "scope": "force", "type": "add", "value": "12c8-e8f6-c852-d0ae"},
+              {"affects": "entries.6ce5-b373-d16a-52f6", "field": "category", "scope": "force", "type": "add", "value": "5a29-f170-e309-da9d"},
+              {"affects": "entries.fa9d-896e-a495-babb", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"},
+              {"affects": "entries.0709-887f-8d36-2d6b", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"},
+              {"affects": "entries.6af1-500e-865d-e08f", "field": "category", "scope": "force", "type": "add", "value": "24f0-2cde-742a-ffb3"}
+            ]
+          }
         ]
       },
       {
@@ -5407,14 +5413,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "c7b7-b755-3afa-865f",
-                "childName": "Dark Angels",
+                "childId": "6e84-25be-0f58-4c5e",
+                "childName": "[Dark Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -6229,14 +6235,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "c7b7-b755-3afa-865f",
-                "childName": "Dark Angels",
+                "childId": "6e84-25be-0f58-4c5e",
+                "childName": "[Dark Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -6767,14 +6773,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "c7b7-b755-3afa-865f",
-                "childName": "Dark Angels",
+                "childId": "6e84-25be-0f58-4c5e",
+                "childName": "[Dark Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

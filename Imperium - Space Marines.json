@@ -27,7 +27,14 @@
         "type": "catalogue"
       },
       {"name": "Imperium - Space Marines - Blood Angels", "id": "c56d-078e-8687-98a4", "targetId": "c8bb-2be7-a95b-1ceb", "type": "catalogue"},
-      {"name": "Imperium - Space Marines - Dark Angels", "id": "5a1f-d0d4-79e0-5d1e", "targetId": "3ca1-0e50-ce88-c7ec", "type": "catalogue"}
+      {"name": "Imperium - Space Marines - Dark Angels", "id": "5a1f-d0d4-79e0-5d1e", "targetId": "3ca1-0e50-ce88-c7ec", "type": "catalogue"},
+      {
+        "name": "Imperium - Space Marines - Imperial Fists",
+        "id": "001f-d16d-9d03-f08c",
+        "importRootEntries": true,
+        "targetId": "6e62-9887-b03e-46f3",
+        "type": "catalogue"
+      }
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
@@ -143,13 +150,13 @@
             "value": 2,
             "conditions": [
               {
-                "childId": "d8f7-37d0-193e-c9ff",
-                "childName": "Exorcists",
+                "childId": "fd61-e389-7c96-97ae",
+                "childName": "[Exorcists]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -173,13 +180,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "d8f7-37d0-193e-c9ff",
-                    "childName": "Exorcists",
+                    "childId": "fd61-e389-7c96-97ae",
+                    "childName": "[Exorcists]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -396,13 +403,13 @@
             "value": 3,
             "conditions": [
               {
-                "childId": "489e-a992-dc1d-e244",
-                "childName": "Red Scorpions",
+                "childId": "94c6-d794-5572-523f",
+                "childName": "[Red Scorpions]",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -563,13 +570,13 @@
             "value": 2,
             "conditions": [
               {
-                "childId": "d8f7-37d0-193e-c9ff",
-                "childName": "Exorcists",
+                "childId": "fd61-e389-7c96-97ae",
+                "childName": "[Exorcists]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -593,13 +600,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "d8f7-37d0-193e-c9ff",
-                    "childName": "Exorcists",
+                    "childId": "fd61-e389-7c96-97ae",
+                    "childName": "[Exorcists]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -635,13 +642,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -896,13 +903,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "489e-a992-dc1d-e244",
-                "childName": "Red Scorpions",
+                "childId": "94c6-d794-5572-523f",
+                "childName": "[Red Scorpions]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -926,13 +933,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -953,13 +960,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "489e-a992-dc1d-e244",
-                "childName": "Red Scorpions",
+                "childId": "94c6-d794-5572-523f",
+                "childName": "[Red Scorpions]",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -973,13 +980,13 @@
                 "type": "and",
                 "conditions": [
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   },
                   {
@@ -1101,13 +1108,13 @@
                 "type": "or",
                 "conditions": [
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   },
                   {
@@ -1841,13 +1848,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -2039,13 +2046,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -2278,13 +2285,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -2677,13 +2684,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -3490,13 +3497,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -3545,13 +3552,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -4093,13 +4100,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -4131,13 +4138,13 @@
             "value": 1,
             "conditions": [
               {
-                "childId": "9b8f-6e3f-8129-6396",
-                "childName": "Raptor",
+                "childId": "5310-859a-dbb6-04ad",
+                "childName": "[Raptors]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "instanceOf",
                 "value": 1
               }
             ]
@@ -4907,6 +4914,14 @@
                 "import": true,
                 "targetId": "4d57-6e50-8c84-61a6",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Imperial Fists Rites of War",
+                "id": "d859-6cf6-e160-47e5",
+                "hidden": false,
+                "import": true,
+                "targetId": "5f4d-dd39-8002-f63b",
+                "type": "selectionEntryGroup"
               }
             ],
             "modifierGroups": [
@@ -4918,43 +4933,43 @@
                     "type": "or",
                     "conditions": [
                       {
-                        "childId": "1a89-b9e7-f553-9a7d",
-                        "childName": "Raven Guard",
+                        "childId": "95f3-9989-88bf-42cb",
+                        "childName": "[Raven Guard]",
                         "field": "selections",
                         "includeChildSelections": false,
-                        "scope": "parent",
+                        "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "100c-98ec-dcff-076d",
-                        "childName": "Salamanders",
+                        "childId": "4db2-c5b4-e890-1d82",
+                        "childName": "[Salamanders]",
                         "field": "selections",
                         "includeChildSelections": false,
-                        "scope": "parent",
+                        "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "24e8-efde-3148-5d6e",
-                        "childName": "Black Templars",
+                        "childId": "ee46-6cc6-6244-6172",
+                        "childName": "[Black Templars]",
                         "field": "selections",
                         "includeChildSelections": false,
-                        "scope": "parent",
+                        "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "c7b7-b755-3afa-865f",
-                        "childName": "Dark Angels",
+                        "childId": "6e84-25be-0f58-4c5e",
+                        "childName": "[Dark Angels]",
                         "field": "selections",
                         "includeChildSelections": false,
-                        "scope": "parent",
+                        "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       }
                     ]
@@ -4980,16 +4995,31 @@
                     "field": "hidden",
                     "type": "set",
                     "value": true,
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "childId": "69c3-944c-6e99-d38c",
-                        "childName": "Blood Angles",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "9ccb-08c2-c256-ec0a",
+                            "childName": "[Blood Angels]",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "fbef-5f4b-bee4-b90b",
+                            "childName": "[Imperial Fists]",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
                       }
                     ]
                   }
@@ -5040,13 +5070,13 @@
                     "value": true,
                     "conditions": [
                       {
-                        "childId": "24e8-efde-3148-5d6e",
-                        "childName": "Black Templars",
+                        "childId": "ee46-6cc6-6244-6172",
+                        "childName": "[Black Templars]",
                         "field": "selections",
                         "includeChildSelections": false,
-                        "scope": "parent",
+                        "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       }
                     ]
@@ -5071,23 +5101,13 @@
                         "type": "or",
                         "conditions": [
                           {
-                            "childId": "9b8f-6e3f-8129-6396",
-                            "childName": "Raptor",
+                            "childId": "5310-859a-dbb6-04ad",
+                            "childName": "[Raptors]",
                             "field": "selections",
                             "includeChildSelections": false,
                             "scope": "force",
                             "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "9b8f-6e3f-8129-6396",
-                            "childName": "Raptor",
-                            "field": "selections",
-                            "includeChildSelections": false,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
+                            "type": "instanceOf",
                             "value": 1
                           }
                         ]
@@ -5251,7 +5271,8 @@
                   }
                 ]
               },
-              {"name": "Dark Angels", "id": "5ab0-50ad-856e-6003", "hidden": false, "import": true, "targetId": "c7b7-b755-3afa-865f", "type": "selectionEntry"}
+              {"name": "Dark Angels", "id": "5ab0-50ad-856e-6003", "hidden": false, "import": true, "targetId": "c7b7-b755-3afa-865f", "type": "selectionEntry"},
+              {"name": "Imperial Fists", "id": "b01a-eb26-103d-ab74", "hidden": false, "import": true, "targetId": "2e4b-aee9-4a40-d0a7", "type": "selectionEntry"}
             ],
             "modifiers": [
               {
@@ -5280,6 +5301,7 @@
                 "import": true,
                 "type": "upgrade",
                 "infoLinks": [{"name": "None Wanting", "id": "5bea-3b72-de64-805d", "hidden": false, "targetId": "75a8-963e-5640-3724", "type": "rule"}],
+                "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "09b2-5403-b8eb-5e95"}],
                 "rules": [
                   {
                     "name": "Psyker Mutation",
@@ -5296,6 +5318,7 @@
                 "import": true,
                 "type": "upgrade",
                 "infoLinks": [{"name": "Oath of Rynn’s world", "id": "4c58-af34-1fdc-c1c4", "hidden": false, "targetId": "b3c9-2e0e-aa0e-d647", "type": "rule"}],
+                "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "c673-28a5-5572-1f3d"}],
                 "rules": [
                   {
                     "name": "An army of Heroes",
@@ -5311,6 +5334,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "94c6-d794-5572-523f"}],
                 "rules": [
                   {
                     "name": "Codex Dogma",
@@ -5333,6 +5357,7 @@
                 "import": true,
                 "type": "upgrade",
                 "infoLinks": [{"name": "Sanctioned Fratricide", "id": "aaf8-230b-aab9-c223", "hidden": false, "targetId": "8182-5ea6-a86e-f11e", "type": "rule"}],
+                "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "62b1-3564-27e6-ebbb"}],
                 "rules": [
                   {
                     "name": "Forever Apart",
@@ -5351,7 +5376,8 @@
                 "infoLinks": [
                   {"name": "Return to the Void", "id": "7a95-e26a-7446-3e48", "hidden": false, "targetId": "437d-d604-8985-f355", "type": "rule"},
                   {"name": "Blood in the Water", "id": "7c87-8080-66f1-c026", "hidden": false, "targetId": "3984-6d7f-bc05-4abb", "type": "rule"}
-                ]
+                ],
+                "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "3a84-9965-e39c-b489"}]
               },
               {
                 "name": "Raptor",
@@ -5360,6 +5386,7 @@
                 "import": true,
                 "type": "upgrade",
                 "infoLinks": [{"name": "Raptor Hunt", "id": "820c-0f32-78d6-7fc7", "hidden": false, "targetId": "adf4-3445-7bfc-f5bd", "type": "rule"}],
+                "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "5310-859a-dbb6-04ad"}],
                 "rules": [{"name": "Solitary Hunters", "id": "a2ec-41c8-8f7f-d7a1", "description": "A Raptor army may not use the Pride of the Chapter Rite of War.", "hidden": false}]
               },
               {
@@ -5369,6 +5396,7 @@
                 "import": true,
                 "type": "upgrade",
                 "infoLinks": [{"name": "Orisons Occult", "id": "afd3-2f89-fc42-1658", "hidden": false, "targetId": "f996-bd27-6d22-96d4", "type": "rule"}],
+                "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "fd61-e389-7c96-97ae"}],
                 "rules": [
                   {
                     "name": "Twelve Companies",
@@ -5444,13 +5472,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "0c96-52dc-0e66-984c",
-                    "childName": "Crimson Fists",
+                    "childId": "c673-28a5-5572-1f3d",
+                    "childName": "[Crimson Fists]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -5667,13 +5695,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -5949,13 +5977,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -6155,13 +6183,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -6413,13 +6441,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -6730,13 +6758,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "3879-d0de-cfca-dd32",
-                    "childName": "Minotaur",
+                    "childId": "62b1-3564-27e6-ebbb",
+                    "childName": "[Minotaurs]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -6962,13 +6990,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "9b8f-6e3f-8129-6396",
-                    "childName": "Raptor",
+                    "childId": "5310-859a-dbb6-04ad",
+                    "childName": "[Raptors]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7173,13 +7201,13 @@
             "value": true,
             "conditions": [
               {
-                "childId": "e6b4-cd52-2864-fc89",
-                "childName": "Carcharodon",
+                "childId": "3a84-9965-e39c-b489",
+                "childName": "[Carcharodon]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -7402,13 +7430,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "0c8c-ae91-c6be-ba67",
-                    "childName": "Blood Ravens",
+                    "childId": "09b2-5403-b8eb-5e95",
+                    "childName": "[Blood Ravens]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7559,13 +7587,13 @@
                     "value": 1
                   },
                   {
-                    "childId": "d8f7-37d0-193e-c9ff",
-                    "childName": "Exorcists",
+                    "childId": "fd61-e389-7c96-97ae",
+                    "childName": "[Exorcists]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7809,13 +7837,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "0c8c-ae91-c6be-ba67",
-                    "childName": "Blood Ravens",
+                    "childId": "09b2-5403-b8eb-5e95",
+                    "childName": "[Blood Ravens]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7835,13 +7863,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "1a89-b9e7-f553-9a7d",
-                    "childName": "Raven Guard",
+                    "childId": "95f3-9989-88bf-42cb",
+                    "childName": "[Raven Guard]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7861,13 +7889,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "e6b4-cd52-2864-fc89",
-                    "childName": "Carcharodon",
+                    "childId": "3a84-9965-e39c-b489",
+                    "childName": "[Carcharodon]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7887,13 +7915,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "0c96-52dc-0e66-984c",
-                    "childName": "Crimson Fists",
+                    "childId": "c673-28a5-5572-1f3d",
+                    "childName": "[Crimson Fists]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7913,14 +7941,14 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "100c-98ec-dcff-076d",
-                    "childName": "Salamanders",
+                    "childId": "4db2-c5b4-e890-1d82",
+                    "childName": "[Salamanders]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7940,13 +7968,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "489e-a992-dc1d-e244",
-                    "childName": "Red Scorpions",
+                    "childId": "94c6-d794-5572-523f",
+                    "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7966,13 +7994,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "9b8f-6e3f-8129-6396",
-                    "childName": "Raptor",
+                    "childId": "5310-859a-dbb6-04ad",
+                    "childName": "[Raptors]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -7992,13 +8020,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "3879-d0de-cfca-dd32",
-                    "childName": "Minotaur",
+                    "childId": "62b1-3564-27e6-ebbb",
+                    "childName": "[Minotaurs]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -8018,13 +8046,13 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "d8f7-37d0-193e-c9ff",
-                    "childName": "Exorcists",
+                    "childId": "fd61-e389-7c96-97ae",
+                    "childName": "[Exorcists]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -8044,14 +8072,14 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
+                    "childId": "9ccb-08c2-c256-ec0a",
+                    "childName": "[Blood Angels]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -8071,14 +8099,40 @@
                 "value": true,
                 "conditions": [
                   {
-                    "childId": "c7b7-b755-3afa-865f",
-                    "childName": "Dark Angels",
+                    "childId": "6e84-25be-0f58-4c5e",
+                    "childName": "[Dark Angels]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "lessThan",
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Fists",
+            "id": "0dcb-b2be-34ae-c354",
+            "hidden": false,
+            "targetId": "de1b-cf81-fa8a-eda4",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "fbef-5f4b-bee4-b90b",
+                    "childName": "[Imperial Fists]",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "notInstanceOf",
                     "value": 1
                   }
                 ]
@@ -8361,14 +8415,14 @@
                 "value": 1,
                 "conditions": [
                   {
-                    "childId": "0c96-52dc-0e66-984c",
-                    "childName": "Crimson Fists",
+                    "childId": "c673-28a5-5572-1f3d",
+                    "childName": "[Crimson Fists]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ],
@@ -18271,13 +18325,13 @@
                         "value": 1,
                         "conditions": [
                           {
-                            "childId": "0c8c-ae91-c6be-ba67",
-                            "childName": "Blood Ravens",
+                            "childId": "09b2-5403-b8eb-5e95",
+                            "childName": "[Blood Ravens]",
                             "field": "selections",
-                            "includeChildSelections": true,
+                            "includeChildSelections": false,
                             "scope": "force",
                             "shared": true,
-                            "type": "atLeast",
+                            "type": "instanceOf",
                             "value": 1
                           }
                         ]
@@ -23669,7 +23723,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
-            "categoryLinks": [{"name": "Seargent", "id": "0593-f95a-2d1f-3ee1", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
+            "categoryLinks": [{"name": "Sergeant", "id": "0593-f95a-2d1f-3ee1", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "c1dd-5ec3-6343-0822-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "c1dd-5ec3-6343-0822-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -24957,7 +25011,7 @@
             "hidden": false,
             "import": true,
             "type": "model",
-            "categoryLinks": [{"name": "Seargent", "id": "3727-80c2-7a19-c358", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
+            "categoryLinks": [{"name": "Sergeant", "id": "3727-80c2-7a19-c358", "hidden": false, "primary": false, "targetId": "f000-d2ae-28f5-8f48"}],
             "constraints": [
               {"id": "5208-f9f7-b831-c46b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "92df-bfa2-020e-03e4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -38791,6 +38845,14 @@
             "import": true,
             "targetId": "de35-1040-dd70-3d23",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Imperial Fists Warlord Traits",
+            "id": "4f65-8f3e-c81f-7d0e",
+            "hidden": false,
+            "import": true,
+            "targetId": "0e1a-b8e7-0af6-49ae",
+            "type": "selectionEntryGroup"
           }
         ],
         "modifiers": [
@@ -38833,36 +38895,47 @@
                     "type": "or",
                     "conditions": [
                       {
-                        "childId": "100c-98ec-dcff-076d",
-                        "childName": "Salamanders",
+                        "childId": "4db2-c5b4-e890-1d82",
+                        "childName": "[Salamanders]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "1a89-b9e7-f553-9a7d",
-                        "childName": "Raven Guard",
+                        "childId": "95f3-9989-88bf-42cb",
+                        "childName": "[Raven Guard]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "24e8-efde-3148-5d6e",
-                        "childName": "Black Templars",
+                        "childId": "ee46-6cc6-6244-6172",
+                        "childName": "[Black Templars]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "fbef-5f4b-bee4-b90b",
+                        "childName": "[Imperial Fists]",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
                         "value": 1
                       }
                     ]
@@ -39937,14 +40010,14 @@
                 "type": "and",
                 "conditions": [
                   {
-                    "childId": "100c-98ec-dcff-076d",
-                    "childName": "Salamanders",
+                    "childId": "4db2-c5b4-e890-1d82",
+                    "childName": "[Salamanders]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ],
@@ -39952,12 +40025,13 @@
               }
             ]
           },
+          {"name": "Dark Angels Wargear", "id": "09fc-5903-6a80-9441", "hidden": false, "import": true, "targetId": "9d98-11e8-9a5b-2986", "type": "selectionEntryGroup"},
           {
-            "name": "Dark Angels Unit Wargear",
-            "id": "09fc-5903-6a80-9441",
+            "name": "Imperial Fists Wargear",
+            "id": "6b21-cb79-fc85-1e24",
             "hidden": false,
             "import": true,
-            "targetId": "9d98-11e8-9a5b-2986",
+            "targetId": "933f-ebb5-31af-1abe",
             "type": "selectionEntryGroup"
           }
         ]
@@ -39994,25 +40068,25 @@
                     "type": "or",
                     "conditions": [
                       {
-                        "childId": "100c-98ec-dcff-076d",
-                        "childName": "Salamanders",
+                        "childId": "4db2-c5b4-e890-1d82",
+                        "childName": "[Salamanders]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "69c3-944c-6e99-d38c",
-                        "childName": "Blood Angles",
+                        "childId": "9ccb-08c2-c256-ec0a",
+                        "childName": "[Blood Angels]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       }
                     ]
@@ -40069,7 +40143,15 @@
             "type": "selectionEntryGroup"
           },
           {"name": "Blood Angels Relics", "id": "fbdf-6ce7-5f00-52c8", "hidden": false, "import": true, "targetId": "1904-90bd-2bf2-ad60", "type": "selectionEntryGroup"},
-          {"name": "Dark Angels Relics", "id": "ac4c-4197-77e5-ab2e", "hidden": false, "import": true, "targetId": "a1f0-fff9-894e-ad5d", "type": "selectionEntryGroup"}
+          {"name": "Dark Angels Relics", "id": "ac4c-4197-77e5-ab2e", "hidden": false, "import": true, "targetId": "a1f0-fff9-894e-ad5d", "type": "selectionEntryGroup"},
+          {
+            "name": "Imperial Fists Relics",
+            "id": "8d8b-2d20-e50f-6263",
+            "hidden": false,
+            "import": true,
+            "targetId": "745e-3f85-b48d-8dac",
+            "type": "selectionEntryGroup"
+          }
         ],
         "selectionEntryGroups": [
           {
@@ -40088,36 +40170,47 @@
                     "type": "or",
                     "conditions": [
                       {
-                        "childId": "100c-98ec-dcff-076d",
-                        "childName": "Salamanders",
+                        "childId": "4db2-c5b4-e890-1d82",
+                        "childName": "[Salamanders]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "1a89-b9e7-f553-9a7d",
-                        "childName": "Raven Guard",
+                        "childId": "95f3-9989-88bf-42cb",
+                        "childName": "[Raven Guard]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       },
                       {
-                        "childId": "24e8-efde-3148-5d6e",
-                        "childName": "Black Templars",
+                        "childId": "ee46-6cc6-6244-6172",
+                        "childName": "[Black Templars]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "fbef-5f4b-bee4-b90b",
+                        "childName": "[Imperial Fists]",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
                         "value": 1
                       }
                     ]
@@ -40442,14 +40535,14 @@
                     "type": "or",
                     "conditions": [
                       {
-                        "childId": "24e8-efde-3148-5d6e",
-                        "childName": "Black Templars",
+                        "childId": "ee46-6cc6-6244-6172",
+                        "childName": "[Black Templars]",
                         "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
                         "scope": "force",
                         "shared": true,
-                        "type": "atLeast",
+                        "type": "instanceOf",
                         "value": 1
                       }
                     ]
@@ -40541,6 +40634,14 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Imperial Fists Wargear",
+            "id": "06b0-2b31-5ad5-a73b",
+            "hidden": false,
+            "import": true,
+            "targetId": "c6a2-8452-540d-0a52",
+            "type": "selectionEntryGroup"
           }
         ]
       },

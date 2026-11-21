@@ -7,7 +7,7 @@
     "gameSystemRevision": 22,
     "library": true,
     "publicationId": "5bad-8a08-2a03-418d",
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "408c-5eb7-96be-3abd", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -4119,14 +4119,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "69c3-944c-6e99-d38c",
-                "childName": "Blood Angles",
+                "childId": "9ccb-08c2-c256-ec0a",
+                "childName": "[Blood Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -4976,14 +4976,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "69c3-944c-6e99-d38c",
-                "childName": "Blood Angles",
+                "childId": "9ccb-08c2-c256-ec0a",
+                "childName": "[Blood Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -5098,14 +5098,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "69c3-944c-6e99-d38c",
-                "childName": "Blood Angles",
+                "childId": "9ccb-08c2-c256-ec0a",
+                "childName": "[Blood Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

@@ -7,7 +7,7 @@
     "gameSystemRevision": 22,
     "library": true,
     "publicationId": "e28b-31b7-b599-f5fe",
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "d9b8-0301-7a2a-557c", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -28,7 +28,9 @@
             "value": 1
           }
         ]
-      }
+      },
+      {"name": "Tor Garadon", "id": "cc4f-c05a-a9da-ebbf", "hidden": false},
+      {"name": "Huscarl", "id": "12b3-28a4-6d14-f2b6", "hidden": false}
     ],
     "publications": [{"name": "The Long War – Codex Supplement Imperial Fists", "id": "e28b-31b7-b599-f5fe", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
@@ -61,6 +63,26 @@
           {"name": "Relentless", "id": "2c77-dd20-76c1-70ee", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
           {"name": "Bulky (x)", "id": "4578-e181-87ed-521e", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
           {"name": "Adamantine Will", "id": "c297-6cdd-f1c9-9813", "hidden": false, "targetId": "1f0e-f701-bd3a-3894", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
         ],
         "selectionEntries": [
           {
@@ -239,6 +261,649 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Tor Garadon",
+        "id": "1d58-d1a8-c1de-b9ef",
+        "hidden": false,
+        "import": true,
+        "page": "15",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "d8a1-b85c-6e78-6e90", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "bb76-058c-b827-a2ee", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "8a55-d63b-fa1b-7b44", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Imperial Fists]", "id": "9d66-aed2-8a22-1ae8", "hidden": false, "primary": false, "targetId": "fbef-5f4b-bee4-b90b"},
+          {"name": "Faction: Space Marines", "id": "2ad0-e7e4-a366-fe75", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Captain", "id": "49b4-0a59-48a6-896b", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
+          {"name": "Tor Garadon", "id": "ce1b-732c-0975-ad15", "hidden": false, "primary": false, "targetId": "cc4f-c05a-a9da-ebbf"},
+          {"name": "M41", "id": "7f2b-4d9c-a0fb-a4ee", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "68a0-fb08-21c4-07cd", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
+        ],
+        "constraints": [
+          {
+            "id": "467a-a458-4716-a607",
+            "automatic": false,
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
+        "infoLinks": [
+          {"name": "Allegiance: Imperial Fists", "id": "dc18-16e2-eafe-1207", "hidden": false, "targetId": "f24a-53b4-8820-3ace", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "c35d-05bc-ab74-cf06", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Character", "id": "7f3a-3c62-2d16-ee1b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Relentless", "id": "9fdb-5203-82d4-cdb5", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Tor Garadon",
+            "id": "cb98-beee-0a86-826f",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "8467-ebbc-cb2e-d084-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8467-ebbc-cb2e-d084-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Gravis Armour",
+                "id": "a54f-35bb-425a-f01b",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "1618-4349-e229-5a93",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "53d6-9d1d-14d0-9167-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "53d6-9d1d-14d0-9167-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Iron Halo", "id": "ff61-1e74-c1df-878c", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
+              {
+                "name": "Wardens Cuirass",
+                "id": "4233-52ea-9e04-fb25",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "2eb3-322c-3022-2688",
+                "type": "selectionEntry",
+                "constraints": [{"id": "7775-cd89-ea82-b68b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Auspex Scanner",
+                "id": "6675-1886-76b5-314e",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c397-e8e5-f71d-2cb0",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3672-fd37-f3c0-c0a9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3672-fd37-f3c0-c0a9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Grav Gun",
+                "id": "d269-dbe9-13c8-1f24",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c4da-fd1d-a542-d279",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "7ace-c12e-b1cc-a352-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7ace-c12e-b1cc-a352-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "527b-ab11-284b-57bc",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ead9-8050-dca8-5b0f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "537f-1b0c-d520-b454-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "537f-1b0c-d520-b454-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Tor Garadon",
+                "id": "e103-9652-29ee-c326",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Hand of Defiance",
+                "id": "cbe6-93ee-0076-5c86",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "baf2-dd40-ebfe-23df-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "baf2-dd40-ebfe-23df-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Hand of Defiance",
+                    "id": "1915-b702-3de1-0438",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Concussive", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Sentinels of Terra",
+            "id": "b531-3695-51ee-968d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "0c80-db33-4af1-0441-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "0c80-db33-4af1-0441-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {"affects": "38cd-8c36-35cb-d825", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"},
+                  {"affects": "560f-2dca-57fb-5997", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"},
+                  {"affects": "fa9d-896e-a495-babb", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"}
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "0c80-db33-4af1-0441-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "0c80-db33-4af1-0441-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Sentinels of Terra",
+                "id": "de1c-b77b-29ad-9b53",
+                "description": "If this unit is your Warlord, all Imperial Fists Infantry, Bike and Walker type units in your army gain the Last Stand special rule.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Huscarl",
+        "id": "c92c-76f1-ab0c-223c",
+        "hidden": false,
+        "import": true,
+        "page": "16",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "e41c-3708-a7af-15f8", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "3575-119c-5584-ec5e", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "99f1-6fa2-1fc8-a520", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Imperial Fists]", "id": "fa4b-e3c9-790d-6da7", "hidden": false, "primary": false, "targetId": "fbef-5f4b-bee4-b90b"},
+          {"name": "Faction: Space Marines", "id": "55b6-e71b-048a-580b", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Huscarl", "id": "e835-5da5-cc85-ae7c", "hidden": false, "primary": false, "targetId": "12b3-28a4-6d14-f2b6"},
+          {"name": "M31", "id": "2176-b820-6de3-b68b", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
+        ],
+        "constraints": [{"id": "4955-f5f7-1991-6665", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "infoLinks": [
+          {"name": "Allegiance: Imperial Fists", "id": "97ee-4528-2288-1e99", "hidden": false, "targetId": "f24a-53b4-8820-3ace", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "9664-2bb5-2560-4e98", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Support Squad", "id": "38d2-d8d6-e087-bcc3", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"},
+          {"name": "Relentless", "id": "b6b1-7b32-d557-ecbb", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Battle Hardened", "id": "4235-97fd-b7c4-d86f", "hidden": false, "targetId": "7b47-5df7-aa9c-4f63", "type": "rule"},
+          {"name": "Deep Strike", "id": "d8f4-dfbb-accf-98f3", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Bulky (x)", "id": "652b-fb92-7468-bea2", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Wardens of Knowledge",
+            "id": "7917-0d04-bd74-99cd",
+            "description": "During deployment, if this unit is composed of multiple models, you may opt to deploy it as a single unit or instead, deploy each model in the unit as a separate unit with the Character special rule.",
+            "hidden": false
+          },
+          {
+            "name": "Shared Burden",
+            "id": "8e47-4368-e333-c98e",
+            "description": "This unit does not have the Character special rule but may be selected as your Warlord. If you do so, each model in the unit is considered your Warlord and gains the benefit any Warlord traits.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Huscarl",
+            "id": "2996-c0a0-21b6-6964",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "7336-1496-6d35-9384", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8d73-10fb-b24a-c419", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 95}],
+            "entryLinks": [
+              {
+                "name": "Wardens Cuirass",
+                "id": "ae43-6172-03e0-559f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "2eb3-322c-3022-2688",
+                "type": "selectionEntry",
+                "constraints": [{"id": "6b59-bee8-85ab-cab3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Indomitus Terminator Armour",
+                "id": "03ef-c58c-a7c0-af66",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "5048-d77b-37d4-15b9",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6f9f-9d5b-9b1a-7140-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6f9f-9d5b-9b1a-7140-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Storm Shields",
+                "id": "243e-3d8c-0593-e24f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "f149-873d-0ef1-c92d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "566c-fac3-1f2e-fa39-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "566c-fac3-1f2e-fa39-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Huscarl",
+                "id": "70cf-1690-4c44-bd74",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Fist of Terra",
+                "id": "5908-ac59-cc67-58cf",
+                "collapsible": true,
+                "defaultSelectionEntryId": "d98e-641b-499a-0397",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "f62f-9de5-46d6-7096-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "f62f-9de5-46d6-7096-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {"name": "Thunder Hammer", "id": "6300-6ac1-901d-8eca", "hidden": false, "import": true, "targetId": "4e5d-8e80-1671-f1f9", "type": "selectionEntry"},
+                  {"name": "Fist of Terra", "id": "d98e-641b-499a-0397", "hidden": false, "import": true, "targetId": "a219-a77b-7c5e-78ec", "type": "selectionEntry"}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Assault Cannon & Close Combat Weapon",
+                    "id": "26af-4998-feb7-4c16",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [{"id": "9b3a-834c-ba0d-41da", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                    "entryLinks": [
+                      {
+                        "name": "Assault Cannon",
+                        "id": "c35c-4cd7-c9c8-c277",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "9788-7711-3998-b9c4",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "3550-5068-3718-7f84-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "3550-5068-3718-7f84-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Close Combat Weapons",
+                        "id": "740b-1906-eecf-5389",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ba4d-218f-3817-c775",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4e5c-09da-30d5-b2ea-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "4e5c-09da-30d5-b2ea-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "9b3a-834c-ba0d-41da",
+                        "type": "increment",
+                        "value": 1,
+                        "conditions": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 3
+                          }
+                        ]
+                      },
+                      {
+                        "field": "9b3a-834c-ba0d-41da",
+                        "type": "decrement",
+                        "value": 1,
+                        "conditions": [
+                          {
+                            "childId": "4b58-2b09-3805-2dab",
+                            "childName": "Heavy Flamer",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy Flamer & Close Combat Weapon",
+                    "id": "de59-4451-e10b-ecaf",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [{"id": "9d03-f9df-20ce-c272", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                    "entryLinks": [
+                      {
+                        "name": "Heavy Flamer",
+                        "id": "6994-e5e0-1a72-60bd",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4b58-2b09-3805-2dab",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "faca-3ce4-7022-e87a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "faca-3ce4-7022-e87a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Close Combat Weapons",
+                        "id": "d387-4c54-d5da-88e7",
+                        "defaultAmount": "1",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ba4d-218f-3817-c775",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "9db4-1a0f-8300-bdc8-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "9db4-1a0f-8300-bdc8-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "9d03-f9df-20ce-c272",
+                        "type": "increment",
+                        "value": 1,
+                        "conditions": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 3
+                          }
+                        ]
+                      },
+                      {
+                        "field": "9d03-f9df-20ce-c272",
+                        "type": "decrement",
+                        "value": 1,
+                        "conditions": [
+                          {
+                            "childId": "9788-7711-3998-b9c4",
+                            "childName": "Assault Cannon",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Warlord Trait",
+            "id": "cd3b-1982-b103-f794",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "0661-4c90-5e93-7f93",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Imperial Fists Warlord Traits",
+                "id": "2a69-d676-4aaf-688c",
+                "hidden": false,
+                "import": true,
+                "targetId": "0e1a-b8e7-0af6-49ae",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedInfoGroups": [
@@ -330,7 +995,15 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Imperial Fists", "id": "fe7e-350b-4077-39d3", "hidden": false, "targetId": "de1b-cf81-fa8a-eda4", "type": "infoGroup"}],
-        "modifiers": [{"affects": "entries.fbef-5f4b-bee4-b90b", "field": "add-info", "scope": "force", "type": "add", "value": "de1b-cf81-fa8a-eda4"}]
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "entries.fbef-5f4b-bee4-b90b", "field": "add-info", "scope": "force", "type": "add", "value": "de1b-cf81-fa8a-eda4"},
+              {"field": "category", "scope": "force", "type": "add", "value": "fbef-5f4b-bee4-b90b"}
+            ]
+          }
+        ]
       },
       {
         "name": "Terror Scouts",
@@ -360,7 +1033,7 @@
             "constraints": [{"id": "e845-bbc2-fe7a-dc55", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "infoLinks": [
               {
-                "name": "Ferromag Shotguns",
+                "name": "Ferromag Shotgun",
                 "id": "3b28-43dd-4b5b-8830",
                 "hidden": false,
                 "targetId": "4374-a477-4adb-a711",
@@ -421,7 +1094,7 @@
         "import": true,
         "page": "",
         "type": "upgrade",
-        "infoLinks": [{"name": "Ferromag Shotguns", "id": "1bf5-9180-ee02-5302", "hidden": false, "targetId": "4374-a477-4adb-a711", "type": "profile"}]
+        "infoLinks": [{"name": "Ferromag Shotgun", "id": "1bf5-9180-ee02-5302", "hidden": false, "targetId": "4374-a477-4adb-a711", "type": "profile"}]
       },
       {
         "name": "Boarding Shield",
@@ -654,14 +1327,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "2e4b-aee9-4a40-d0a7",
-                "childName": "Imperial Fists",
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -686,14 +1359,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "2e4b-aee9-4a40-d0a7",
-                "childName": "Imperial Fists",
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -713,14 +1386,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "2e4b-aee9-4a40-d0a7",
-                "childName": "Imperial Fists",
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -743,14 +1416,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "2e4b-aee9-4a40-d0a7",
-                "childName": "Imperial Fists",
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -1243,14 +1916,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "2e4b-aee9-4a40-d0a7",
-                "childName": "Imperial Fists",
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
