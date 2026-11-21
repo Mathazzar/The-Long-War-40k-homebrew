@@ -26,7 +26,8 @@
         "targetId": "f14e-1557-3a53-e27e",
         "type": "catalogue"
       },
-      {"name": "Imperium - Space Marines - Blood Angels", "id": "c56d-078e-8687-98a4", "targetId": "c8bb-2be7-a95b-1ceb", "type": "catalogue"}
+      {"name": "Imperium - Space Marines - Blood Angels", "id": "c56d-078e-8687-98a4", "targetId": "c8bb-2be7-a95b-1ceb", "type": "catalogue"},
+      {"name": "Imperium - Space Marines - Dark Angels", "id": "5a1f-d0d4-79e0-5d1e", "targetId": "3ca1-0e50-ce88-c7ec", "type": "catalogue"}
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
@@ -1324,6 +1325,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -1370,6 +1382,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -1713,6 +1747,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -1906,6 +1951,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -1999,6 +2066,50 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Troop",
+            "id": "3fe4-969d-da58-8539",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "94da-d01e-4899-6ca8",
+                        "childName": "Pride of the Chapter",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "6410-7a47-89db-b0b7",
+                        "childName": "Ravenwing Hunt Talon",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -2013,6 +2124,17 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -2058,6 +2180,42 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2235,6 +2393,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -2270,6 +2439,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -2419,6 +2610,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -2794,6 +2996,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -2950,6 +3163,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -2971,6 +3195,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "8a42-4d49-7ffc-2eb7",
+            "hidden": false,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3101,6 +3353,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -3292,6 +3555,40 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3382,6 +3679,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -3496,6 +3804,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -3573,6 +3892,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -4184,7 +4514,8 @@
         "categoryLinks": [{"name": "Lieutenant", "id": "33e4-6b80-f6c3-5add", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
         "entryLinks": [
           {"name": "Warlord", "id": "56a0-efaf-f186-e5cf", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
-          {"name": "Litany of Prayers", "id": "1924-395f-472b-3588", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+          {"name": "Litany of Prayers", "id": "1924-395f-472b-3588", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "12e8-abe2-fc07-d2c1", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
         ]
       },
       {
@@ -4197,7 +4528,8 @@
         "categoryLinks": [{"name": "Lieutenant", "id": "4807-f556-eb46-e758", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
         "entryLinks": [
           {"name": "Warlord", "id": "338e-c3cf-35f3-c1a9", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
-          {"name": "Litany of Prayers", "id": "0196-bf67-54a2-6cd3", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+          {"name": "Litany of Prayers", "id": "0196-bf67-54a2-6cd3", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "4be0-e350-ef98-30b6", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
         ]
       },
       {
@@ -4208,7 +4540,10 @@
         "targetId": "ff9c-f7c1-e581-3280",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Lieutenant", "id": "65ea-834f-581a-9ae3", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
-        "entryLinks": [{"name": "Warlord", "id": "fc42-fcc1-9911-b86e", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+        "entryLinks": [
+          {"name": "Warlord", "id": "fc42-fcc1-9911-b86e", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Sub Commander", "id": "2744-d96f-57cd-ba57", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
+        ]
       },
       {
         "name": "High Priest Corbulo",
@@ -4220,7 +4555,8 @@
         "categoryLinks": [{"name": "Lieutenant", "id": "64bc-7e44-6cb0-ec0f", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
         "entryLinks": [
           {"name": "Warlord", "id": "b15d-eb3f-a7e4-3574", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
-          {"name": "Litany of Prayers", "id": "0247-0c79-4275-841c", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+          {"name": "Litany of Prayers", "id": "0247-0c79-4275-841c", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "fa66-c6a9-8b20-0ccc", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
         ]
       },
       {
@@ -4243,6 +4579,200 @@
         "categoryLinks": [
           {"name": "Fire Support", "id": "d7dc-bbe7-1c83-9f1d", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
           {"name": "[Chapter]", "id": "e0df-8257-fbf8-e7fc", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ]
+      },
+      {
+        "name": "Land Raider Solemnus Aggressor",
+        "id": "a376-da56-ec73-4447",
+        "hidden": false,
+        "import": true,
+        "targetId": "c6f7-9084-2121-93ef",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Fire Support", "id": "fbb9-e05b-6092-41cb", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
+          {"name": "[Chapter]", "id": "993e-c68d-aa6d-faff", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ]
+      },
+      {
+        "name": "Azreal, Master of the Dark Angels",
+        "id": "3bf7-5dae-3295-ff3e",
+        "hidden": false,
+        "import": true,
+        "targetId": "596d-23e3-e771-3571",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "ff37-ca4e-45db-5ebe",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "1af6-dd98-60e5-83c8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Asmodai",
+        "id": "9301-7a0e-224d-079d",
+        "hidden": false,
+        "import": true,
+        "targetId": "bee5-ec45-907e-487d",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "c00b-e722-525d-adaa", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "dd27-c9ee-18ab-f04b", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Litany of Prayers", "id": "7845-c63d-5fc0-9270", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "8aa3-d793-0fc8-87a5", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Ezekiel",
+        "id": "516c-8f02-03fe-e7ec",
+        "hidden": false,
+        "import": true,
+        "targetId": "5944-7ec1-453b-9e8a",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "1a07-a538-2ea1-5b59", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "c050-2bbc-dfdb-64b0", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Psychic Diciplines", "id": "55e4-d5bd-e26a-bc9c", "hidden": false, "import": true, "targetId": "3dbb-dbc4-7638-1a01", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "1757-572d-dbbc-3a92", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Belial, Master of the Deathwing",
+        "id": "ff37-d521-b4f1-e9d6",
+        "hidden": false,
+        "import": true,
+        "targetId": "d32a-6dab-9dea-5981",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "cdb7-e8fe-5b40-d134",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sammael, Master of the Ravenwing",
+        "id": "658d-04fc-1fe6-3212",
+        "hidden": false,
+        "import": true,
+        "targetId": "f736-1039-9c59-9611",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "6a85-d71e-db9f-5627", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [{"name": "Warlord", "id": "32c5-9fca-2049-2d8a", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Lion El Johnson, Primarch of the Dark Angels",
+        "id": "eed1-119d-798e-a234",
+        "hidden": false,
+        "import": true,
+        "targetId": "e4ac-13d1-c6a6-b7d8",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "15fb-048c-4c1a-f1d1",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "673c-921e-f186-146a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Deathwing Terminators",
+        "id": "b900-f5db-d422-7e35",
+        "hidden": false,
+        "import": true,
+        "targetId": "8e10-795b-676f-d12c",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "5a21-d7bc-5c64-cad8", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {
+        "name": "Deathwing Knights",
+        "id": "9bb2-402d-6c53-bc62",
+        "hidden": false,
+        "import": true,
+        "targetId": "2e9d-3e67-9968-4ca9",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "0c6c-e4c3-f22c-208c", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {
+        "name": "Deathwing Companions",
+        "id": "c8fa-9d69-e4d7-d5e8",
+        "hidden": false,
+        "import": true,
+        "targetId": "b1cc-8881-f8c7-1122",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "4a51-c065-7421-def2", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {
+        "name": "Ravenwing Black Knights",
+        "id": "e410-ecb7-bfaa-fee2",
+        "hidden": false,
+        "import": true,
+        "targetId": "1a94-5c57-3354-41b0",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "3103-5562-3809-f616", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {"name": "Nephilim Jet Fighter", "id": "ca02-cb91-8579-f2d3", "hidden": false, "import": true, "targetId": "1efb-4bbe-b039-2574", "type": "selectionEntry"},
+      {"name": "Dark Talon", "id": "a87d-e0f3-e36a-2ae6", "hidden": false, "import": true, "targetId": "b9f8-ddd4-0f3f-f983", "type": "selectionEntry"},
+      {
+        "name": "Land Speeder vengeance",
+        "id": "7b26-43dc-252a-44ad",
+        "hidden": false,
+        "import": true,
+        "targetId": "8642-541a-a1c5-8084",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Close Support", "id": "65c1-196f-42e7-2751", "hidden": false, "primary": false, "targetId": "720b-794e-4235-f757"}]
+      },
+      {
+        "name": "Ravenwing Dark Shroud",
+        "id": "29cb-760e-e8cf-66f8",
+        "hidden": false,
+        "import": true,
+        "targetId": "3a82-a78f-c5f4-9a0e",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Close Support", "id": "c179-43ab-09fc-2240", "hidden": false, "primary": false, "targetId": "720b-794e-4235-f757"}]
+      },
+      {
+        "name": "Land Raider Ares",
+        "id": "75c4-a0ee-e0b0-5271",
+        "hidden": false,
+        "import": true,
+        "targetId": "ad2a-b5a1-d7ee-1c7c",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "[Chapter]", "id": "b96d-30be-6ae1-5c45", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
+          {"name": "Fire Support", "id": "9614-6cc4-3ea8-906e", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"}
         ]
       }
     ],
@@ -4369,6 +4899,14 @@
                 "import": true,
                 "targetId": "1818-304c-c2d5-fe80",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Dark Angels Rites of War",
+                "id": "b659-7069-6635-467c",
+                "hidden": false,
+                "import": true,
+                "targetId": "4d57-6e50-8c84-61a6",
+                "type": "selectionEntryGroup"
               }
             ],
             "modifierGroups": [
@@ -4402,6 +4940,16 @@
                       {
                         "childId": "24e8-efde-3148-5d6e",
                         "childName": "Black Templars",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "c7b7-b755-3afa-865f",
+                        "childName": "Dark Angels",
                         "field": "selections",
                         "includeChildSelections": false,
                         "scope": "parent",
@@ -4702,7 +5250,8 @@
                     ]
                   }
                 ]
-              }
+              },
+              {"name": "Dark Angels", "id": "5ab0-50ad-856e-6003", "hidden": false, "import": true, "targetId": "c7b7-b755-3afa-865f", "type": "selectionEntry"}
             ],
             "modifiers": [
               {
@@ -7508,6 +8057,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Dark Angels",
+            "id": "8725-9afc-811f-9384",
+            "hidden": false,
+            "targetId": "12c8-e8f6-c852-d0ae",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -8743,6 +9319,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -8885,6 +9483,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -9721,6 +10341,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -9895,6 +10537,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -11823,6 +12487,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -11949,6 +12635,28 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -12200,6 +12908,17 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -12909,6 +13628,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -15755,6 +16496,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -15912,6 +16664,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -16141,6 +16904,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -16430,6 +17215,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -16730,6 +17526,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -16912,6 +17730,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -17299,6 +18128,17 @@
                     "shared": true,
                     "type": "max",
                     "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Interrogator Chaplain",
+                    "id": "747d-160a-a969-c28d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "0a92-8fdf-536b-16fe",
+                    "type": "selectionEntry",
+                    "entryLinks": [{"name": "Litany of Prayers", "id": "c663-e968-bf6b-67d5", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}]
                   }
                 ],
                 "selectionEntries": [
@@ -17958,6 +18798,16 @@
                                     "shared": true,
                                     "type": "lessThan",
                                     "value": 1
+                                  },
+                                  {
+                                    "childId": "0a92-8fdf-536b-16fe",
+                                    "childName": "Interrogator Chaplain",
+                                    "field": "selections",
+                                    "includeChildSelections": false,
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "type": "lessThan",
+                                    "value": 1
                                   }
                                 ]
                               }
@@ -18103,6 +18953,16 @@
                               {
                                 "childId": "04ad-f1d3-1d3c-57bc",
                                 "childName": "Reiver Commando",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "0a92-8fdf-536b-16fe",
+                                "childName": "Interrogator Chaplain",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -18416,6 +19276,15 @@
                     "targetId": "31f6-0f76-1c7e-8fea",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
+                  },
+                  {
+                    "name": "Calabanite Blade",
+                    "id": "7db4-f26f-d860-ac6c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ca28-a3f8-0bf0-dc36",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
                 ],
                 "modifierGroups": [
@@ -18448,22 +19317,38 @@
                       {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
                       {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true},
                       {"affects": "31f6-0f76-1c7e-8fea", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true}
+                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ca28-a3f8-0bf0-dc36", "field": "hidden", "type": "set", "value": true}
                     ]
                   },
                   {
                     "comment": "Chaplain",
                     "type": "and",
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "childId": "032b-6ee5-79fa-5885",
-                        "childName": "Chaplain",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "032b-6ee5-79fa-5885",
+                            "childName": "Chaplain",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "0a92-8fdf-536b-16fe",
+                            "childName": "Interrogator Chaplain",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
                       }
                     ],
                     "modifiers": [
@@ -18478,7 +19363,8 @@
                       {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
                       {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true},
                       {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true}
+                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ca28-a3f8-0bf0-dc36", "field": "hidden", "type": "set", "value": true}
                     ]
                   }
                 ],
@@ -18631,6 +19517,17 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -18965,19 +19862,6 @@
                     ]
                   },
                   {
-                    "name": "Power Sword",
-                    "id": "0f88-3890-35e4-a8d3",
-                    "defaultAmount": "1",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "84dd-49d6-4915-6b09",
-                    "type": "selectionEntry",
-                    "constraints": [
-                      {"id": "b115-8e1a-b347-f3b4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                      {"id": "b115-8e1a-b347-f3b4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ]
-                  },
-                  {
                     "name": "Tempormortis",
                     "id": "c0d6-e6cb-211b-97f7",
                     "defaultAmount": "1",
@@ -19007,6 +19891,48 @@
                     "targetId": "5cc4-7146-09a3-a8df",
                     "type": "profile",
                     "modifiers": [{"field": "name", "type": "set", "value": "Judicator"}]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Power Sword",
+                    "id": "cc66-46e3-6807-58f1",
+                    "defaultSelectionEntryId": "0f88-3890-35e4-a8d3",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "id": "ba1e-6b2e-18bb-dc8e-min",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "ba1e-6b2e-18bb-dc8e-max",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Power Sword",
+                        "id": "0f88-3890-35e4-a8d3",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "84dd-49d6-4915-6b09",
+                        "type": "selectionEntry"
+                      },
+                      {"name": "Calabanite Blade", "id": "97f8-c5d0-7e2e-5bf0", "hidden": false, "import": true, "targetId": "ca28-a3f8-0bf0-dc36", "type": "selectionEntry"}
+                    ]
                   }
                 ]
               },
@@ -19322,7 +20248,7 @@
                         "type": "and",
                         "modifiers": [
                           {"affects": "1879-2a4e-1150-0b85", "field": "hidden", "type": "set", "value": true},
-                          {"affects": "2b71-b37e-49b9-5ca8", "field": "hidden", "type": "set", "value": true},
+                          {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
                           {"affects": "8427-0650-ff74-4bb3", "field": "hidden", "type": "set", "value": true}
                         ]
                       }
@@ -20320,6 +21246,15 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "name": "Calabanite Blade",
+                        "id": "c787-9596-d7bc-1992",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ca28-a3f8-0bf0-dc36",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                       }
                     ]
                   }
@@ -20567,7 +21502,8 @@
                 "import": true,
                 "targetId": "7850-b4d5-657d-7ea6",
                 "type": "selectionEntryGroup"
-              }
+              },
+              {"name": "Dark Angels Captain", "id": "be1c-7b69-3aa6-c50d", "hidden": false, "import": true, "targetId": "abce-d415-9c83-9811", "type": "selectionEntryGroup"}
             ],
             "profiles": [
               {
@@ -20756,16 +21692,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -20783,7 +21734,33 @@
                     "entryLinks": [
                       {"name": "Frag Grenades", "id": "7d98-7b98-608d-d853", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "2f50-4c9c-b42b-b995", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
-                      {"name": "Mobility", "id": "9218-625f-cd8e-e56d", "hidden": false, "import": true, "targetId": "801d-2543-53c9-8359", "type": "selectionEntryGroup"}
+                      {
+                        "name": "Mobility",
+                        "id": "9218-625f-cd8e-e56d",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "801d-2543-53c9-8359",
+                        "type": "selectionEntryGroup",
+                        "modifiers": [
+                          {
+                            "field": "hidden",
+                            "type": "set",
+                            "value": true,
+                            "conditions": [
+                              {
+                                "childId": "1e36-cfd4-06a3-d23d",
+                                "childName": "Ravenwing Talon Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
                     ],
                     "modifiers": [
                       {
@@ -20797,6 +21774,16 @@
                             "field": "selections",
                             "includeChildSelections": true,
                             "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
                             "shared": true,
                             "type": "atLeast",
                             "value": 1
@@ -20824,16 +21811,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -20851,6 +21853,25 @@
                     "entryLinks": [
                       {"name": "Frag Grenades", "id": "adf1-26c8-5d21-ebac", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "0bc8-118c-06d9-73a0", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
                     ]
                   },
                   {
@@ -20865,6 +21886,25 @@
                     "entryLinks": [
                       {"name": "Frag Grenades", "id": "275f-8265-e74f-baba", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
                       {"name": "Krak Grenades", "id": "c3c6-30b1-f577-48af", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
                     ]
                   },
                   {
@@ -20880,16 +21920,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "c395-01d4-98bc-ff18",
+                                "childName": "IC",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -20908,13 +21963,45 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "1e36-cfd4-06a3-d23d",
+                                "childName": "Ravenwing Talon Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "field": "cbdc-411c-cf55-3186",
+                        "type": "set",
+                        "value": 0,
                         "conditions": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
                             "field": "selections",
                             "includeChildSelections": true,
-                            "scope": "force",
+                            "scope": "model",
                             "shared": true,
                             "type": "atLeast",
                             "value": 1
@@ -20936,16 +22023,31 @@
                         "field": "hidden",
                         "type": "set",
                         "value": true,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "f7ea-4caf-2ed7-469a",
-                            "childName": "Vanguard Support",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "f7ea-4caf-2ed7-469a",
+                                "childName": "Vanguard Support",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "c395-01d4-98bc-ff18",
+                                "childName": "IC",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -20982,7 +22084,121 @@
                     "value": 1
                   }
                 ],
-                "entryLinks": [{"name": "2 Lightning Claws", "id": "54dc-62d7-63d0-5449", "hidden": false, "targetId": "33b0-c44b-28ac-366a", "type": "selectionEntry"}],
+                "entryLinks": [
+                  {
+                    "name": "2 Lightning Claws",
+                    "id": "54dc-62d7-63d0-5449",
+                    "hidden": false,
+                    "targetId": "33b0-c44b-28ac-366a",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "4e36-cdf8-e88f-dfaf",
+                                "childName": "Gravis",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "field": "error",
+                        "type": "add",
+                        "value": "{this} can't be taken with a bike",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "33b0-c44b-28ac-366a",
+                                "childName": "2 Lightning Claws",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "cd1c-37c9-b49b-eb52",
+                                "childName": "Bike",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "d1c5-18bb-ef55-0797",
+                            "childName": "Artificer Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "bda4-b2dc-ba85-4b63",
+                            "childName": "Power Armour",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "model",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {"affects": "c332-9d44-10e0-a2f9", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ff03-8a50-2439-8489", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "f073-4b28-ff12-8f12", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4eac-066b-aeae-31a6", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "795c-01a5-dc2e-46a1", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "4ccc-3067-8af9-802f", "field": "hidden", "type": "set", "value": true}
+                    ]
+                  }
+                ],
                 "modifiers": [
                   {
                     "field": "name",
@@ -20990,36 +22206,55 @@
                     "value": "Storm Bolter and Power Sword",
                     "conditionGroups": [
                       {
-                        "type": "or",
+                        "type": "and",
+                        "conditionGroups": [
+                          {
+                            "sortIndex": 1,
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "c6a0-e718-359f-a4fe",
+                                "childName": "Cataphractii Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "0a06-2498-85c3-dc58",
+                                "childName": "Tartaros Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "fdaa-f768-5e2d-3ce6",
+                                "childName": "Indomitus Terminator Armour",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
                         "conditions": [
                           {
-                            "childId": "c6a0-e718-359f-a4fe",
-                            "childName": "Cataphractii Terminator Armour",
+                            "childId": "e0e2-66fc-b298-e2b3",
+                            "childName": "Deathwing Strike Master",
                             "field": "selections",
                             "includeChildSelections": true,
                             "scope": "model",
                             "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "0a06-2498-85c3-dc58",
-                            "childName": "Tartaros Terminator Armour",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "model",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "fdaa-f768-5e2d-3ce6",
-                            "childName": "Indomitus Terminator Armour",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "model",
-                            "shared": true,
-                            "type": "atLeast",
+                            "sortIndex": 2,
+                            "type": "lessThan",
                             "value": 1
                           }
                         ]
@@ -21034,6 +22269,23 @@
                       {
                         "childId": "9226-fb5d-3a30-a654",
                         "childName": "Gravis Armour",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "name",
+                    "type": "set",
+                    "value": "Storm Bolter and Calabanite Blade",
+                    "conditions": [
+                      {
+                        "childId": "e0e2-66fc-b298-e2b3",
+                        "childName": "Deathwing Strike Master",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "model",
@@ -21081,38 +22333,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -21565,51 +22785,7 @@
                             "sortIndex": 0,
                             "targetId": "84dd-49d6-4915-6b09",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 0,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                           },
                           {
                             "name": "Chainsword",
@@ -21618,51 +22794,7 @@
                             "import": true,
                             "sortIndex": 0,
                             "targetId": "f82a-555a-d38f-b930",
-                            "type": "selectionEntry",
-                            "modifiers": [
-                              {
-                                "field": "hidden",
-                                "type": "set",
-                                "value": true,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "type": "selectionEntry"
                           },
                           {
                             "name": "Power Maul",
@@ -21671,51 +22803,7 @@
                             "import": true,
                             "targetId": "2607-4972-6fde-3757",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 10,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
                           },
                           {
                             "name": "Power Lance",
@@ -21724,51 +22812,7 @@
                             "import": true,
                             "targetId": "a7ed-640e-8d57-4f6f",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 5,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           },
                           {
                             "name": "Relic Blade",
@@ -21777,51 +22821,7 @@
                             "import": true,
                             "targetId": "a113-ba7f-4fb8-2b3c",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                            "modifiers": [
-                              {
-                                "field": "hidden",
-                                "type": "set",
-                                "value": true,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
                           },
                           {
                             "name": "Power Axe",
@@ -21830,51 +22830,7 @@
                             "import": true,
                             "targetId": "6dff-d1d6-7194-b1d0",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 5,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           },
                           {
                             "name": "Power Fist",
@@ -21883,51 +22839,7 @@
                             "import": true,
                             "targetId": "e38e-0c5b-3e05-b098",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 15,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
                           },
                           {
                             "name": "Thunder Hammer",
@@ -21936,51 +22848,7 @@
                             "import": true,
                             "targetId": "4e5d-8e80-1671-f1f9",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 20,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
                           },
                           {
                             "name": "Lightning Claws",
@@ -21989,51 +22857,7 @@
                             "import": true,
                             "targetId": "7387-4d1b-e3e4-b301",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 5,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           },
                           {
                             "name": "Maul of Perdition",
@@ -22042,51 +22866,7 @@
                             "import": true,
                             "targetId": "ce76-1e12-38f5-98c7",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 18}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 13,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 18}]
                           },
                           {
                             "name": "Blade of Perdition",
@@ -22095,51 +22875,7 @@
                             "import": true,
                             "targetId": "8c55-9032-666c-1ebc",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 3,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}]
                           },
                           {
                             "name": "Axe of Perdition",
@@ -22148,51 +22884,7 @@
                             "import": true,
                             "targetId": "a18f-99c5-affb-c011",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 8,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
                           },
                           {
                             "name": "Spear of Perdition",
@@ -22201,55 +22893,21 @@
                             "import": true,
                             "targetId": "31f6-0f76-1c7e-8fea",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 8,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
+                          },
+                          {
+                            "name": "Calabanite Blade",
+                            "id": "7848-f85b-316c-93ea",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "ca28-a3f8-0bf0-dc36",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           }
                         ],
                         "modifierGroups": [
                           {
+                            "comment": "Terminator",
                             "type": "and",
                             "conditionGroups": [
                               {
@@ -22288,7 +22946,143 @@
                                 ]
                               }
                             ],
-                            "modifiers": [{"field": "defaultSelectionEntryId", "type": "set", "value": "7220-4717-28d6-bce1"}, {"field": "name", "type": "set", "value": "Power Sword"}]
+                            "modifiers": [
+                              {"field": "defaultSelectionEntryId", "type": "set", "value": "7220-4717-28d6-bce1"},
+                              {"field": "name", "type": "set", "value": "Power Sword"},
+                              {"affects": "8c55-9032-666c-1ebc", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 3},
+                              {"affects": "a113-ba7f-4fb8-2b3c", "field": "hidden", "type": "set", "value": true},
+                              {"affects": "84dd-49d6-4915-6b09", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 0},
+                              {"affects": "a18f-99c5-affb-c011", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 8},
+                              {"affects": "4e5d-8e80-1671-f1f9", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 20},
+                              {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
+                              {"affects": "31f6-0f76-1c7e-8fea", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 8},
+                              {"affects": "2607-4972-6fde-3757", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 10},
+                              {"affects": "a7ed-640e-8d57-4f6f", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "e38e-0c5b-3e05-b098", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 15},
+                              {"affects": "6dff-d1d6-7194-b1d0", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "ce76-1e12-38f5-98c7", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 13},
+                              {"affects": "7387-4d1b-e3e4-b301", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "ca28-a3f8-0bf0-dc36", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5}
+                            ]
+                          },
+                          {
+                            "comment": "Deathwing Strike Master",
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ],
+                            "modifiers": [
+                              {"field": "3e9e-e55e-b894-5cfa-max", "type": "set", "value": 0},
+                              {"field": "hidden", "type": "set", "value": true},
+                              {"field": "3e9e-e55e-b894-5cfa-min", "type": "set", "value": 0}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Calabanite Blade",
+                        "id": "b6f7-9b51-3b84-06ff",
+                        "collapsible": true,
+                        "comment": "Deathwing Strike Master",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "a4c7-d0dc-d73b-c38a-min",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "a4c7-d0dc-d73b-c38a-max",
+                            "automatic": true,
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Calabanite Blade",
+                            "id": "eaf8-873b-3284-f79f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "ca28-a3f8-0bf0-dc36",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+                          },
+                          {
+                            "name": "Thunder Hammer",
+                            "id": "df96-b211-849b-4a26",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4e5d-8e80-1671-f1f9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Mace of Absolution",
+                            "id": "bad3-3a70-67e8-79ed",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8039-d641-2537-58a9",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                          },
+                          {
+                            "name": "Terranic Great Sword",
+                            "id": "be60-097e-ea3e-f66d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "30f8-c9ea-311a-899d",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          },
+                          {
+                            "name": "Relic Blade",
+                            "id": "f1a5-bcda-017e-af0d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "a113-ba7f-4fb8-2b3c",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                          }
+                        ],
+                        "modifierGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "e0e2-66fc-b298-e2b3",
+                                "childName": "Deathwing Strike Master",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "model",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ],
+                            "modifiers": [
+                              {"field": "a4c7-d0dc-d73b-c38a-min", "type": "set", "value": 0},
+                              {"field": "a4c7-d0dc-d73b-c38a-max", "type": "set", "value": 0},
+                              {"field": "hidden", "type": "set", "value": true}
+                            ]
                           }
                         ]
                       }
@@ -22330,38 +23124,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -22450,38 +23212,6 @@
                     ],
                     "modifiers": [
                       {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
                         "field": "error",
                         "type": "add",
                         "value": "{this} can't be taken with a bike or jump pack",
@@ -22568,38 +23298,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -22688,38 +23386,6 @@
                     ],
                     "modifiers": [
                       {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
                         "field": "error",
                         "type": "add",
                         "value": "{this} can't be taken with a bike or jump pack",
@@ -22806,38 +23472,6 @@
                       }
                     ],
                     "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": true,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d1c5-18bb-ef55-0797",
-                                "childName": "Artificer Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "bda4-b2dc-ba85-4b63",
-                                "childName": "Power Armour",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "model",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "field": "error",
                         "type": "add",
@@ -22959,6 +23593,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23283,6 +23939,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24473,6 +25151,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -24887,6 +25576,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -25096,6 +25807,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25503,6 +26225,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26649,6 +27382,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -27245,6 +28000,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -27480,6 +28257,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -27667,6 +28455,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -27919,6 +28729,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -28000,19 +28821,20 @@
                 "name": "Land Speeder Storm",
                 "id": "beaf-a4b4-ecbe-a247",
                 "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
+                "typeId": "3563-e5b8-93ec-7b86",
+                "typeName": "Monster",
                 "characteristics": [
-                  {"name": "M", "$text": "14", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                  {"name": "M", "$text": "14", "typeId": "308b-d2ca-3375-97ed"},
+                  {"name": "WS", "$text": "4", "typeId": "1a47-3bd1-4cf1-dd8f"},
+                  {"name": "BS", "$text": "4", "typeId": "48f1-8c2b-8a2b-e9b3"},
+                  {"name": "S", "$text": "4", "typeId": "28ef-f6c8-2b44-8894"},
+                  {"name": "T", "$text": "5", "typeId": "82cc-19c4-cadc-b6b1"},
+                  {"name": "W", "$text": "3", "typeId": "05bd-39ae-7147-174d"},
+                  {"name": "A", "$text": "2", "typeId": "b872-96a8-ff4a-5dc4"},
+                  {"name": "I", "$text": "4", "typeId": "edb9-e6ab-2c64-4145"},
+                  {"name": "LD", "$text": "8", "typeId": "33a8-39c0-4848-9b0b"},
+                  {"name": "Sv", "$text": "4", "typeId": "bf3e-2485-2ce9-c616"},
+                  {"name": "Transport Capacity", "$text": "6", "typeId": "7115-9edc-c70a-a6d3"}
                 ]
               }
             ]
@@ -28070,6 +28892,17 @@
                   {
                     "childId": "860a-da71-4255-6379",
                     "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28354,6 +29187,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -28548,6 +29403,17 @@
                   {
                     "childId": "860a-da71-4255-6379",
                     "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28850,6 +29716,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -29055,6 +29943,28 @@
                   {
                     "childId": "860a-da71-4255-6379",
                     "childName": "Drop Pod Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -29334,6 +30244,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -29593,6 +30525,28 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -29869,6 +30823,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -30222,6 +31198,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -30464,6 +31451,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -30756,6 +31765,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -31344,6 +32375,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -31668,6 +32721,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -31843,6 +32918,17 @@
                   {
                     "childId": "5bc5-fa86-1838-ee2e",
                     "childName": "Grey Shields",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -32083,6 +33169,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -32249,6 +33357,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -32406,6 +33536,28 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -32653,6 +33805,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -33222,6 +34396,17 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -33845,6 +35030,28 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -34022,6 +35229,17 @@
                   {
                     "childId": "24e8-efde-3148-5d6e",
                     "childName": "Black Templars",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -34786,37 +36004,7 @@
           {"name": "Bike Squad", "id": "c226-df17-014a-4227", "hidden": false, "primary": false, "targetId": "f7a6-38ad-b9fe-3b78"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 19}],
-        "entryLinks": [
-          {
-            "name": "Force Organization: Troop",
-            "id": "3fe4-969d-da58-8539",
-            "hidden": false,
-            "import": true,
-            "targetId": "cd9e-d590-95bd-2dfd",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
-                  {
-                    "childId": "94da-d01e-4899-6ca8",
-                    "childName": "Pride of the Chapter",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {"name": "Vetran", "id": "1f04-91ea-175b-26e3", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}
-        ],
+        "entryLinks": [{"name": "Vetran", "id": "1f04-91ea-175b-26e3", "hidden": false, "import": true, "targetId": "9afe-c14a-8172-9260", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "And they shall know no Fear", "id": "d952-122a-1e6a-39b6", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
           {"name": "Hammer of Wrath (x)", "id": "5bb6-554f-130e-fba4", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
@@ -35882,6 +37070,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -36105,6 +37304,28 @@
                   {
                     "childId": "5917-3f8b-45a0-9158",
                     "childName": "The Decapitation Strike",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -36472,6 +37693,17 @@
                     "shared": true,
                     "type": "atLeast",
                     "value": 1
+                  },
+                  {
+                    "childId": "c7b7-b755-3afa-865f",
+                    "childName": "Dark Angels",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -36765,6 +37997,28 @@
                   {
                     "childId": "f7ea-4caf-2ed7-469a",
                     "childName": "Vanguard Support",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "6410-7a47-89db-b0b7",
+                    "childName": "Ravenwing Hunt Talon",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -37565,6 +38819,82 @@
                         "value": 1
                       }
                     ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "7a38-109f-dfd0-3054",
+                        "childName": "Deathwing Strike Talon",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "a313-c56a-0bc9-473c",
+                        "childName": "Belial, Master of the Deathwing",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e615-33d8-dabc-1bcd",
+                        "childName": "Space Marine Captain",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "6410-7a47-89db-b0b7",
+                        "childName": "Ravenwing Hunt Talon",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "eb7c-ded6-31b5-9025",
+                        "childName": "Sammael, Master of the Ravenwing",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e615-33d8-dabc-1bcd",
+                        "childName": "Space Marine Captain",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
                   }
                 ],
                 "conditions": [
@@ -37743,6 +39073,14 @@
             "hidden": false,
             "import": true,
             "targetId": "51e9-1d3a-18b2-433b",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Dark Angels Warlord Traits",
+            "id": "216f-1140-247d-149f",
+            "hidden": false,
+            "import": true,
+            "targetId": "de35-1040-dd70-3d23",
             "type": "selectionEntryGroup"
           }
         ],
@@ -38278,6 +39616,34 @@
                   {
                     "childId": "b2b5-3d4c-75aa-f071",
                     "childName": "Terminator",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calabanite Blade",
+            "id": "be24-6478-8132-8039",
+            "hidden": false,
+            "import": true,
+            "targetId": "ca28-a3f8-0bf0-dc36",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "bf2b-7ae1-7518-e819",
+                    "childName": "Character",
                     "field": "selections",
                     "includeChildSelections": false,
                     "scope": "unit",
@@ -39129,6 +40495,14 @@
                 "modifiers": [{"affects": "entries.forces.recursive.profiles.Unit", "field": "6bc7-a391-2ba3-44f9", "scope": "unit", "type": "decrement", "value": 1}]
               }
             ]
+          },
+          {
+            "name": "Dark Angels Unit Wargear",
+            "id": "09fc-5903-6a80-9441",
+            "hidden": false,
+            "import": true,
+            "targetId": "9d98-11e8-9a5b-2986",
+            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -39198,6 +40572,14 @@
             "import": true,
             "targetId": "a8ad-c653-ea06-52fc",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Interromancy Discipline",
+            "id": "efc9-7f0b-6479-6401",
+            "hidden": false,
+            "import": true,
+            "targetId": "f422-6b38-2ab2-42a1",
+            "type": "selectionEntryGroup"
           }
         ]
       },
@@ -39230,7 +40612,8 @@
             "targetId": "7975-3300-c7b1-2892",
             "type": "selectionEntryGroup"
           },
-          {"name": "Blood Angels Relics", "id": "fbdf-6ce7-5f00-52c8", "hidden": false, "import": true, "targetId": "1904-90bd-2bf2-ad60", "type": "selectionEntryGroup"}
+          {"name": "Blood Angels Relics", "id": "fbdf-6ce7-5f00-52c8", "hidden": false, "import": true, "targetId": "1904-90bd-2bf2-ad60", "type": "selectionEntryGroup"},
+          {"name": "Dark Angels Relics", "id": "ac4c-4197-77e5-ab2e", "hidden": false, "import": true, "targetId": "a1f0-fff9-894e-ad5d", "type": "selectionEntryGroup"}
         ],
         "selectionEntryGroups": [
           {

@@ -217,6 +217,21 @@
           {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "", "typeId": "cc29-b1e7-88e5-c90f"}
         ]
+      },
+      {
+        "name": "Stasis Grenade",
+        "id": "9514-9275-540a-32e5",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "*", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "*", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Stasis", "typeId": "ba87-19e9-d692-6e30"}
+        ]
       }
     ],
     "sharedRules": [
@@ -293,6 +308,12 @@
         "hidden": false,
         "page": "7",
         "publicationId": "1606-03fb-e01d-e0cf"
+      },
+      {
+        "name": "Stasis",
+        "id": "11e8-6e37-ffd0-1f12",
+        "description": "When a model is hit by a weapon with the Stasis special rule, its Weapon Skill (WS) and Initiative (I) characteristics are reduced by 1 until the start of your next shooting phase.",
+        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -522,7 +543,8 @@
             "modifiers": [
               {"affects": "profiles.Unit", "field": "86ae-bb7f-c781-56b5", "scope": "model", "type": "increment", "value": 1},
               {"affects": "profiles.Unit", "field": "name", "scope": "model", "skipIfPresent": "Gravis", "type": "append", "value": "in Gravis Armour"},
-              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1}
+              {"affects": "profiles.Unit", "field": "e165-c63b-1720-081f", "scope": "model", "type": "decrement", "value": 1},
+              {"field": "category", "scope": "unit", "type": "add", "value": "4e36-cdf8-e88f-dfaf"}
             ]
           }
         ],
@@ -3324,7 +3346,8 @@
           {"name": "Dedicated Transport", "id": "c7d8-a199-6cb0-1915", "hidden": false, "primary": true, "targetId": "cb56-41eb-9b8c-2a8c"},
           {"name": "Razorback", "id": "fbfb-fab4-08c4-6b29", "hidden": false, "primary": false, "targetId": "6c54-25e1-143c-9354"},
           {"name": "Tank", "id": "14c8-6f28-831a-7ce7", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
-          {"name": "M36", "id": "48e2-7eaf-dbef-5bf8", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"}
+          {"name": "M36", "id": "48e2-7eaf-dbef-5bf8", "hidden": false, "primary": false, "targetId": "15a0-a7af-3afb-aff6"},
+          {"name": "Vehicle", "id": "aebd-96fe-0138-0330", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 55}],
         "infoLinks": [
@@ -5442,6 +5465,19 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Stasis Grenade",
+        "id": "6bfd-f2ba-9e3d-753d",
+        "defaultAmount": "1",
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1626-da0a-5b56-c177-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "1626-da0a-5b56-c177-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Stasis Grenade", "id": "d042-277c-9544-d43d", "hidden": false, "targetId": "9514-9275-540a-32e5", "type": "profile"}]
       }
     ],
     "sharedSelectionEntryGroups": [

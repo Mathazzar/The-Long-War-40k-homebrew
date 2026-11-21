@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "19c4-6ab7-10c5-8fbe",
-    "revision": 11,
+    "revision": 12,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -887,6 +887,14 @@
                   {"id": "9c50-7c0c-78f9-2b6f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
               },
+              {
+                "name": "Stasis Grenade",
+                "id": "23c9-3120-4a15-e373",
+                "comment": "todo: No way for model to take this provided in reference",
+                "hidden": true,
+                "targetId": "6bfd-f2ba-9e3d-753d",
+                "type": "selectionEntry"
+              },
               {"name": "Frag Grenades", "id": "925c-e9d9-158c-906c", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
               {"name": "Krak Grenades", "id": "c913-7ee8-364d-5bd5", "hidden": false, "import": true, "targetId": "f388-1ad7-18d8-8a53", "type": "selectionEntry"},
               {"name": "Orbital Bombardment", "id": "f152-f9dc-6baa-4e6a", "hidden": false, "import": true, "targetId": "e4b2-4024-7ff4-318d", "type": "selectionEntry"},
@@ -980,36 +988,6 @@
                       {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
                       {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
                       {"name": "Rules", "$text": "Spray", "typeId": "ba87-19e9-d692-6e30"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Stasis Grenade",
-                "id": "6bfd-f2ba-9e3d-753d",
-                "comment": "todo: No way for model to take this provided in reference",
-                "defaultAmount": "1",
-                "hidden": true,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "1626-da0a-5b56-c177-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "1626-da0a-5b56-c177-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Stasis Grenade",
-                    "id": "9514-9275-540a-32e5",
-                    "hidden": false,
-                    "typeId": "4425-e2ff-1ce0-83c1",
-                    "typeName": "Ranged Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Grenade", "typeId": "96e6-b391-984f-0904"},
-                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                      {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
-                      {"name": "Strength", "$text": "*", "typeId": "4e85-0d56-33e2-acca"},
-                      {"name": "AP", "$text": "*", "typeId": "1fa3-547b-b56c-c34e"},
-                      {"name": "Rules", "$text": "Stasis", "typeId": "ba87-19e9-d692-6e30"}
                     ]
                   }
                 ]
@@ -18507,12 +18485,6 @@
         "name": "Ammo Compatible",
         "id": "d954-dcb5-8c00-dcda",
         "description": "This weapon counts as Boltgun for the purposes of the Special Issue Ammunition special rule.",
-        "hidden": false
-      },
-      {
-        "name": "Stasis",
-        "id": "11e8-6e37-ffd0-1f12",
-        "description": "When a model is hit by a weapon with the Stasis special rule, its Weapon Skill (WS) and Initiative (I) characteristics are reduced by 1 until the start of your next shooting phase.",
         "hidden": false
       },
       {"name": "Allegiance: Ordo Malleus", "id": "c329-684a-8c8c-7faa", "hidden": false},
