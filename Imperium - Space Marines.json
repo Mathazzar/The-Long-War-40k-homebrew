@@ -4514,7 +4514,8 @@
         "categoryLinks": [{"name": "Lieutenant", "id": "33e4-6b80-f6c3-5add", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
         "entryLinks": [
           {"name": "Warlord", "id": "56a0-efaf-f186-e5cf", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
-          {"name": "Litany of Prayers", "id": "1924-395f-472b-3588", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+          {"name": "Litany of Prayers", "id": "1924-395f-472b-3588", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "12e8-abe2-fc07-d2c1", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
         ]
       },
       {
@@ -4527,7 +4528,8 @@
         "categoryLinks": [{"name": "Lieutenant", "id": "4807-f556-eb46-e758", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
         "entryLinks": [
           {"name": "Warlord", "id": "338e-c3cf-35f3-c1a9", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
-          {"name": "Litany of Prayers", "id": "0196-bf67-54a2-6cd3", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+          {"name": "Litany of Prayers", "id": "0196-bf67-54a2-6cd3", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "4be0-e350-ef98-30b6", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
         ]
       },
       {
@@ -4538,7 +4540,10 @@
         "targetId": "ff9c-f7c1-e581-3280",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Lieutenant", "id": "65ea-834f-581a-9ae3", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
-        "entryLinks": [{"name": "Warlord", "id": "fc42-fcc1-9911-b86e", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+        "entryLinks": [
+          {"name": "Warlord", "id": "fc42-fcc1-9911-b86e", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Sub Commander", "id": "2744-d96f-57cd-ba57", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
+        ]
       },
       {
         "name": "High Priest Corbulo",
@@ -4550,7 +4555,8 @@
         "categoryLinks": [{"name": "Lieutenant", "id": "64bc-7e44-6cb0-ec0f", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
         "entryLinks": [
           {"name": "Warlord", "id": "b15d-eb3f-a7e4-3574", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
-          {"name": "Litany of Prayers", "id": "0247-0c79-4275-841c", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"}
+          {"name": "Litany of Prayers", "id": "0247-0c79-4275-841c", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "fa66-c6a9-8b20-0ccc", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
         ]
       },
       {
@@ -4573,6 +4579,200 @@
         "categoryLinks": [
           {"name": "Fire Support", "id": "d7dc-bbe7-1c83-9f1d", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
           {"name": "[Chapter]", "id": "e0df-8257-fbf8-e7fc", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ]
+      },
+      {
+        "name": "Land Raider Solemnus Aggressor",
+        "id": "a376-da56-ec73-4447",
+        "hidden": false,
+        "import": true,
+        "targetId": "c6f7-9084-2121-93ef",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Fire Support", "id": "fbb9-e05b-6092-41cb", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"},
+          {"name": "[Chapter]", "id": "993e-c68d-aa6d-faff", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"}
+        ]
+      },
+      {
+        "name": "Azreal, Master of the Dark Angels",
+        "id": "3bf7-5dae-3295-ff3e",
+        "hidden": false,
+        "import": true,
+        "targetId": "596d-23e3-e771-3571",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "ff37-ca4e-45db-5ebe",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "1af6-dd98-60e5-83c8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Asmodai",
+        "id": "9301-7a0e-224d-079d",
+        "hidden": false,
+        "import": true,
+        "targetId": "bee5-ec45-907e-487d",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "c00b-e722-525d-adaa", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "dd27-c9ee-18ab-f04b", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Litany of Prayers", "id": "7845-c63d-5fc0-9270", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "8aa3-d793-0fc8-87a5", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Ezekiel",
+        "id": "516c-8f02-03fe-e7ec",
+        "hidden": false,
+        "import": true,
+        "targetId": "5944-7ec1-453b-9e8a",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "1a07-a538-2ea1-5b59", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [
+          {"name": "Warlord", "id": "c050-2bbc-dfdb-64b0", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Psychic Diciplines", "id": "55e4-d5bd-e26a-bc9c", "hidden": false, "import": true, "targetId": "3dbb-dbc4-7638-1a01", "type": "selectionEntryGroup"},
+          {"name": "Sub Commander", "id": "1757-572d-dbbc-3a92", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Belial, Master of the Deathwing",
+        "id": "ff37-d521-b4f1-e9d6",
+        "hidden": false,
+        "import": true,
+        "targetId": "d32a-6dab-9dea-5981",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "cdb7-e8fe-5b40-d134",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "7a38-109f-dfd0-3054",
+                    "childName": "Deathwing Strike Talon",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sammael, Master of the Ravenwing",
+        "id": "658d-04fc-1fe6-3212",
+        "hidden": false,
+        "import": true,
+        "targetId": "f736-1039-9c59-9611",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lieutenant", "id": "6a85-d71e-db9f-5627", "hidden": false, "primary": false, "targetId": "7f3b-8dcd-3e9e-0d9c"}],
+        "entryLinks": [{"name": "Warlord", "id": "32c5-9fca-2049-2d8a", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Lion El Johnson, Primarch of the Dark Angels",
+        "id": "eed1-119d-798e-a234",
+        "hidden": false,
+        "import": true,
+        "targetId": "e4ac-13d1-c6a6-b7d8",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "15fb-048c-4c1a-f1d1",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "673c-921e-f186-146a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Deathwing Terminators",
+        "id": "b900-f5db-d422-7e35",
+        "hidden": false,
+        "import": true,
+        "targetId": "8e10-795b-676f-d12c",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "5a21-d7bc-5c64-cad8", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {
+        "name": "Deathwing Knights",
+        "id": "9bb2-402d-6c53-bc62",
+        "hidden": false,
+        "import": true,
+        "targetId": "2e9d-3e67-9968-4ca9",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "0c6c-e4c3-f22c-208c", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {
+        "name": "Deathwing Companions",
+        "id": "c8fa-9d69-e4d7-d5e8",
+        "hidden": false,
+        "import": true,
+        "targetId": "b1cc-8881-f8c7-1122",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "4a51-c065-7421-def2", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {
+        "name": "Ravenwing Black Knights",
+        "id": "e410-ecb7-bfaa-fee2",
+        "hidden": false,
+        "import": true,
+        "targetId": "1a94-5c57-3354-41b0",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "3103-5562-3809-f616", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      },
+      {"name": "Nephilim Jet Fighter", "id": "ca02-cb91-8579-f2d3", "hidden": false, "import": true, "targetId": "1efb-4bbe-b039-2574", "type": "selectionEntry"},
+      {"name": "Dark Talon", "id": "a87d-e0f3-e36a-2ae6", "hidden": false, "import": true, "targetId": "b9f8-ddd4-0f3f-f983", "type": "selectionEntry"},
+      {
+        "name": "Land Speeder vengeance",
+        "id": "7b26-43dc-252a-44ad",
+        "hidden": false,
+        "import": true,
+        "targetId": "8642-541a-a1c5-8084",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Close Support", "id": "65c1-196f-42e7-2751", "hidden": false, "primary": false, "targetId": "720b-794e-4235-f757"}]
+      },
+      {
+        "name": "Ravenwing Dark Shroud",
+        "id": "29cb-760e-e8cf-66f8",
+        "hidden": false,
+        "import": true,
+        "targetId": "3a82-a78f-c5f4-9a0e",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Close Support", "id": "c179-43ab-09fc-2240", "hidden": false, "primary": false, "targetId": "720b-794e-4235-f757"}]
+      },
+      {
+        "name": "Land Raider Ares",
+        "id": "75c4-a0ee-e0b0-5271",
+        "hidden": false,
+        "import": true,
+        "targetId": "ad2a-b5a1-d7ee-1c7c",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "[Chapter]", "id": "b96d-30be-6ae1-5c45", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
+          {"name": "Fire Support", "id": "9614-6cc4-3ea8-906e", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"}
         ]
       }
     ],
@@ -19076,6 +19276,15 @@
                     "targetId": "31f6-0f76-1c7e-8fea",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
+                  },
+                  {
+                    "name": "Calabanite Blade",
+                    "id": "7db4-f26f-d860-ac6c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ca28-a3f8-0bf0-dc36",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   }
                 ],
                 "modifierGroups": [
@@ -19108,7 +19317,8 @@
                       {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
                       {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true},
                       {"affects": "31f6-0f76-1c7e-8fea", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true}
+                      {"affects": "84dd-49d6-4915-6b09", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ca28-a3f8-0bf0-dc36", "field": "hidden", "type": "set", "value": true}
                     ]
                   },
                   {
@@ -19153,7 +19363,8 @@
                       {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
                       {"affects": "ba4d-218f-3817-c775", "field": "hidden", "type": "set", "value": true},
                       {"affects": "8c55-9032-666c-1ebc", "field": "hidden", "type": "set", "value": true},
-                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true}
+                      {"affects": "a18f-99c5-affb-c011", "field": "hidden", "type": "set", "value": true},
+                      {"affects": "ca28-a3f8-0bf0-dc36", "field": "hidden", "type": "set", "value": true}
                     ]
                   }
                 ],
@@ -19651,19 +19862,6 @@
                     ]
                   },
                   {
-                    "name": "Power Sword",
-                    "id": "0f88-3890-35e4-a8d3",
-                    "defaultAmount": "1",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "84dd-49d6-4915-6b09",
-                    "type": "selectionEntry",
-                    "constraints": [
-                      {"id": "b115-8e1a-b347-f3b4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                      {"id": "b115-8e1a-b347-f3b4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ]
-                  },
-                  {
                     "name": "Tempormortis",
                     "id": "c0d6-e6cb-211b-97f7",
                     "defaultAmount": "1",
@@ -19693,6 +19891,48 @@
                     "targetId": "5cc4-7146-09a3-a8df",
                     "type": "profile",
                     "modifiers": [{"field": "name", "type": "set", "value": "Judicator"}]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Power Sword",
+                    "id": "cc66-46e3-6807-58f1",
+                    "defaultSelectionEntryId": "0f88-3890-35e4-a8d3",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "id": "ba1e-6b2e-18bb-dc8e-min",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "ba1e-6b2e-18bb-dc8e-max",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Power Sword",
+                        "id": "0f88-3890-35e4-a8d3",
+                        "defaultAmount": "1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "84dd-49d6-4915-6b09",
+                        "type": "selectionEntry"
+                      },
+                      {"name": "Calabanite Blade", "id": "97f8-c5d0-7e2e-5bf0", "hidden": false, "import": true, "targetId": "ca28-a3f8-0bf0-dc36", "type": "selectionEntry"}
+                    ]
                   }
                 ]
               },
@@ -20008,7 +20248,7 @@
                         "type": "and",
                         "modifiers": [
                           {"affects": "1879-2a4e-1150-0b85", "field": "hidden", "type": "set", "value": true},
-                          {"affects": "2b71-b37e-49b9-5ca8", "field": "hidden", "type": "set", "value": true},
+                          {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
                           {"affects": "8427-0650-ff74-4bb3", "field": "hidden", "type": "set", "value": true}
                         ]
                       }
@@ -21006,6 +21246,15 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "name": "Calabanite Blade",
+                        "id": "c787-9596-d7bc-1992",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ca28-a3f8-0bf0-dc36",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                       }
                     ]
                   }
@@ -22536,51 +22785,7 @@
                             "sortIndex": 0,
                             "targetId": "84dd-49d6-4915-6b09",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 0,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                           },
                           {
                             "name": "Chainsword",
@@ -22589,51 +22794,7 @@
                             "import": true,
                             "sortIndex": 0,
                             "targetId": "f82a-555a-d38f-b930",
-                            "type": "selectionEntry",
-                            "modifiers": [
-                              {
-                                "field": "hidden",
-                                "type": "set",
-                                "value": true,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "type": "selectionEntry"
                           },
                           {
                             "name": "Power Maul",
@@ -22642,51 +22803,7 @@
                             "import": true,
                             "targetId": "2607-4972-6fde-3757",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 10,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
                           },
                           {
                             "name": "Power Lance",
@@ -22695,51 +22812,7 @@
                             "import": true,
                             "targetId": "a7ed-640e-8d57-4f6f",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 5,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           },
                           {
                             "name": "Relic Blade",
@@ -22748,51 +22821,7 @@
                             "import": true,
                             "targetId": "a113-ba7f-4fb8-2b3c",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                            "modifiers": [
-                              {
-                                "field": "hidden",
-                                "type": "set",
-                                "value": true,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
                           },
                           {
                             "name": "Power Axe",
@@ -22801,51 +22830,7 @@
                             "import": true,
                             "targetId": "6dff-d1d6-7194-b1d0",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 5,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           },
                           {
                             "name": "Power Fist",
@@ -22854,51 +22839,7 @@
                             "import": true,
                             "targetId": "e38e-0c5b-3e05-b098",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 15,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
                           },
                           {
                             "name": "Thunder Hammer",
@@ -22907,51 +22848,7 @@
                             "import": true,
                             "targetId": "4e5d-8e80-1671-f1f9",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 20,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
                           },
                           {
                             "name": "Lightning Claws",
@@ -22960,51 +22857,7 @@
                             "import": true,
                             "targetId": "7387-4d1b-e3e4-b301",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 5,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           },
                           {
                             "name": "Maul of Perdition",
@@ -23013,51 +22866,7 @@
                             "import": true,
                             "targetId": "ce76-1e12-38f5-98c7",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 18}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 13,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 18}]
                           },
                           {
                             "name": "Blade of Perdition",
@@ -23066,51 +22875,7 @@
                             "import": true,
                             "targetId": "8c55-9032-666c-1ebc",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 3,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 8}]
                           },
                           {
                             "name": "Axe of Perdition",
@@ -23119,51 +22884,7 @@
                             "import": true,
                             "targetId": "a18f-99c5-affb-c011",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 8,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
                           },
                           {
                             "name": "Spear of Perdition",
@@ -23172,51 +22893,16 @@
                             "import": true,
                             "targetId": "31f6-0f76-1c7e-8fea",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}],
-                            "modifiers": [
-                              {
-                                "field": "cbdc-411c-cf55-3186",
-                                "type": "set",
-                                "value": 8,
-                                "conditionGroups": [
-                                  {
-                                    "type": "or",
-                                    "conditions": [
-                                      {
-                                        "childId": "c6a0-e718-359f-a4fe",
-                                        "childName": "Cataphractii Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "0a06-2498-85c3-dc58",
-                                        "childName": "Tartaros Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      },
-                                      {
-                                        "childId": "fdaa-f768-5e2d-3ce6",
-                                        "childName": "Indomitus Terminator Armour",
-                                        "field": "selections",
-                                        "includeChildSelections": true,
-                                        "scope": "model",
-                                        "shared": true,
-                                        "type": "atLeast",
-                                        "value": 1
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 13}]
+                          },
+                          {
+                            "name": "Calabanite Blade",
+                            "id": "7848-f85b-316c-93ea",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "ca28-a3f8-0bf0-dc36",
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                           }
                         ],
                         "modifierGroups": [
@@ -23260,7 +22946,24 @@
                                 ]
                               }
                             ],
-                            "modifiers": [{"field": "defaultSelectionEntryId", "type": "set", "value": "7220-4717-28d6-bce1"}, {"field": "name", "type": "set", "value": "Power Sword"}]
+                            "modifiers": [
+                              {"field": "defaultSelectionEntryId", "type": "set", "value": "7220-4717-28d6-bce1"},
+                              {"field": "name", "type": "set", "value": "Power Sword"},
+                              {"affects": "8c55-9032-666c-1ebc", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 3},
+                              {"affects": "a113-ba7f-4fb8-2b3c", "field": "hidden", "type": "set", "value": true},
+                              {"affects": "84dd-49d6-4915-6b09", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 0},
+                              {"affects": "a18f-99c5-affb-c011", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 8},
+                              {"affects": "4e5d-8e80-1671-f1f9", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 20},
+                              {"affects": "f82a-555a-d38f-b930", "field": "hidden", "type": "set", "value": true},
+                              {"affects": "31f6-0f76-1c7e-8fea", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 8},
+                              {"affects": "2607-4972-6fde-3757", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 10},
+                              {"affects": "a7ed-640e-8d57-4f6f", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "e38e-0c5b-3e05-b098", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 15},
+                              {"affects": "6dff-d1d6-7194-b1d0", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "ce76-1e12-38f5-98c7", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 13},
+                              {"affects": "7387-4d1b-e3e4-b301", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5},
+                              {"affects": "ca28-a3f8-0bf0-dc36", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 5}
+                            ]
                           },
                           {
                             "comment": "Deathwing Strike Master",
@@ -39913,6 +39616,34 @@
                   {
                     "childId": "b2b5-3d4c-75aa-f071",
                     "childName": "Terminator",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calabanite Blade",
+            "id": "be24-6478-8132-8039",
+            "hidden": false,
+            "import": true,
+            "targetId": "ca28-a3f8-0bf0-dc36",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "bf2b-7ae1-7518-e819",
+                    "childName": "Character",
                     "field": "selections",
                     "includeChildSelections": false,
                     "scope": "unit",
