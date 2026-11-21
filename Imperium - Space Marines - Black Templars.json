@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 21,
     "library": true,
-    "revision": 2,
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "81d3-dbfb-e02f-8897", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -337,6 +337,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Black Templars", "id": "5b48-460a-161e-f88b", "hidden": false, "targetId": "9c13-1dbf-b334-a6a2", "type": "infoGroup"}],
+        "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "ee46-6cc6-6244-6172"}],
         "selectionEntryGroups": [
           {
             "name": "Templars Vow",
@@ -6788,6 +6789,7 @@
       {
         "name": "Black Templars Wargear",
         "id": "0db8-92fd-ebfd-e881",
+        "comment": "Model",
         "defaultSelectionEntryId": "none",
         "flatten": true,
         "hidden": false,
@@ -6804,14 +6806,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "24e8-efde-3148-5d6e",
-                "childName": "Black Templars",
+                "childId": "ee46-6cc6-6244-6172",
+                "childName": "[Black Templars]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -7044,14 +7046,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "24e8-efde-3148-5d6e",
-                "childName": "Black Templars",
+                "childId": "ee46-6cc6-6244-6172",
+                "childName": "[Black Templars]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -7893,14 +7895,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "24e8-efde-3148-5d6e",
-                "childName": "Black Templars",
+                "childId": "ee46-6cc6-6244-6172",
+                "childName": "[Black Templars]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

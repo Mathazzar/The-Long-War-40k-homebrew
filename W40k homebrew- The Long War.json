@@ -243,7 +243,8 @@
       {"name": "Baneblade Super Heavy Tank", "id": "2b63-9fdf-2bc0-e561", "hidden": false},
       {"name": "Bastion", "id": "69af-8155-3254-e7f3", "hidden": false},
       {"name": "Character", "id": "bf2b-7ae1-7518-e819", "hidden": true},
-      {"name": "M40", "id": "6b06-4dd3-48ca-a808", "hidden": false}
+      {"name": "M40", "id": "6b06-4dd3-48ca-a808", "hidden": false},
+      {"name": "Arquitor Bombard", "id": "c859-6854-cd94-c053", "hidden": false}
     ],
     "costTypes": [
       {
@@ -914,6 +915,24 @@
             "type": "max",
             "value": 1
           }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Eviscerator",
+        "id": "ec36-ec28-f008-e96a",
+        "hidden": false,
+        "page": "12",
+        "publicationId": "6f16-791a-3a26-4c72",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Shred, Sunder, Unwieldy, Two Handed", "typeId": "cc29-b1e7-88e5-c90f"}
         ]
       }
     ],
@@ -5982,24 +6001,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Eviscerator",
-            "id": "ec36-ec28-f008-e96a",
-            "hidden": false,
-            "page": "12",
-            "publicationId": "6f16-791a-3a26-4c72",
-            "typeId": "8fa1-1cd9-5ae1-0e93",
-            "typeName": "Melee Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-              {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-              {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
-              {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Shred, Sunder, Unwieldy, Two Handed", "typeId": "cc29-b1e7-88e5-c90f"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Eviscerator", "id": "2016-ea82-eb2b-941f", "hidden": false, "targetId": "ec36-ec28-f008-e96a", "type": "profile"}]
       },
       {
         "name": "Lascutter",
@@ -7390,6 +7392,80 @@
               {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "5", "typeId": "65af-3e5a-1d24-5a74"},
               {"name": "Rules", "$text": "Shred", "typeId": "cc29-b1e7-88e5-c90f"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Graviton Charge Cannon",
+        "id": "2a1c-a348-e9e0-7fcc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "profiles": [
+          {
+            "name": "Graviton Charge Cannon",
+            "id": "2eb4-57cf-f8a9-c294",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Ordnance, Blast (Large), Haywire (5+), Crushing (5+)", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Morbus Bombard",
+        "id": "93e0-3f67-ede3-7907",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Morbus Bombard",
+            "id": "9db6-ceac-0ec0-0cb5",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12-36", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Blast (Large), Pinning, Indirect Fire, Ordnance", "typeId": "ba87-19e9-d692-6e30"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spicula Rocket System",
+        "id": "f0dc-11cd-504c-f264",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "profiles": [
+          {
+            "name": "Spicula Rocket System",
+            "id": "14c8-d51b-d5d5-81e3",
+            "hidden": false,
+            "typeId": "4425-e2ff-1ce0-83c1",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+              {"name": "Range", "$text": "12-72", "typeId": "83a1-168d-3aa3-97f8"},
+              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+              {"name": "Rules", "$text": "Ordnance, Blast (Large), Barrage (D6), Pinning", "typeId": "ba87-19e9-d692-6e30"}
             ]
           }
         ]

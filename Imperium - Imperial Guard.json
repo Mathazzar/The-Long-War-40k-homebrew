@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "5b81-795c-38b3-285c",
-    "revision": 14,
+    "revision": 15,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "bf05-3f00-89ae-d163", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -430,11 +430,9 @@
       {"name": "Manticore Missile Launcher", "id": "56d3-16b2-7ca4-0e04", "hidden": false},
       {"name": "Deathstrike Missile Launcher", "id": "3c9c-3193-a30b-afac", "hidden": false},
       {"name": "Colossus Bombard", "id": "f324-520c-4adb-7201", "hidden": false},
-      {"name": "Tarantula Battery", "id": "2cf2-d2e6-b8b6-79cb", "hidden": false},
       {"name": "Sly Marbo", "id": "54c6-9047-a341-d711", "hidden": false},
       {"name": "Fortification Section", "id": "c301-2e5c-2f12-3c7c", "hidden": false},
       {"name": "Point Defence Turrets", "id": "87f0-6bfa-745d-1dfd", "hidden": false},
-      {"name": "Firestorm Redoubt", "id": "456c-0506-05ba-3eb3", "hidden": false},
       {
         "name": "Storm Trooper Section",
         "id": "7717-9f22-090e-7fbc",
@@ -527,6 +525,10 @@
         "hidden": false,
         "targetId": "22e8-02bc-ea6a-5938",
         "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Faction: Imperial Guard", "id": "fa80-5e6a-4cf2-43e9", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"},
+          {"name": "[Regiment]", "id": "68d6-2421-d67b-99d2", "hidden": false, "primary": false, "targetId": "60cd-2858-1bf3-8543"}
+        ],
         "modifiers": [
           {
             "field": "hidden",
@@ -602,6 +604,7 @@
         "hidden": false,
         "targetId": "49f7-9dac-8dc2-9275",
         "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "fdd7-eb67-76b0-2df8", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}],
         "modifiers": [
           {
             "field": "hidden",
@@ -2640,6 +2643,7 @@
         "hidden": false,
         "targetId": "11dc-3912-eaa6-c10e",
         "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "8f96-d38a-f2f1-9a6c", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}],
         "modifiers": [
           {
             "field": "hidden",
@@ -3129,6 +3133,7 @@
         "hidden": false,
         "targetId": "0d8e-a3d7-2ded-d14d",
         "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "555f-c186-6fb8-8745", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}],
         "modifiers": [
           {
             "field": "hidden",
@@ -24058,25 +24063,6 @@
           {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
           {"name": "Rules", "$text": "Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
         ]
-      },
-      {
-        "name": "Tarantula Gun",
-        "id": "2883-529a-18a9-e35e",
-        "hidden": false,
-        "typeId": "8460-92c9-82af-a787",
-        "typeName": "Unit",
-        "characteristics": [
-          {"name": "M", "$text": "0", "typeId": "e165-c63b-1720-081f"},
-          {"name": "WS", "$text": "", "typeId": "bc69-d61f-afa3-0ebd"},
-          {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
-          {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
-          {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
-          {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
-          {"name": "A", "$text": "", "typeId": "a07e-368b-351c-bc54"},
-          {"name": "I", "$text": "\n", "typeId": "6bc7-a391-2ba3-44f9"},
-          {"name": "LD", "$text": "\n", "typeId": "bc55-c58d-b53a-233c"},
-          {"name": "Sv", "$text": "3+", "typeId": "c9ff-af68-092c-c4b3"}
-        ]
       }
     ],
     "sharedRules": [
@@ -25841,229 +25827,6 @@
         ]
       },
       {
-        "name": "Tarantula Gun",
-        "id": "6782-c822-1451-c47e",
-        "hidden": false,
-        "import": true,
-        "type": "model",
-        "entryLinks": [
-          {
-            "name": "Grav-Chute",
-            "id": "4e82-8a26-4d23-8d23",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "targetId": "0c0f-9894-7a9b-277c",
-            "type": "selectionEntry",
-            "constraints": [
-              {"id": "b429-4ad9-3f02-8309-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "b429-4ad9-3f02-8309-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ]
-          },
-          {"name": "Armoured Plate", "id": "02af-8aea-cf81-1dee", "hidden": false, "import": true, "targetId": "a8c0-ad07-77d1-f6c7", "type": "selectionEntry"}
-        ]
-      },
-      {
-        "name": "Tarantula Battery",
-        "id": "22e8-02bc-ea6a-5938",
-        "hidden": false,
-        "import": true,
-        "page": "121",
-        "publicationId": "5b81-795c-38b3-285c",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Imperial Guard", "id": "5624-d8d7-b9fc-cf08", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"},
-          {"name": "Imperium", "id": "ae38-9ef8-8fcf-e889", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "[Regiment]", "id": "cd42-a09c-179c-145a", "hidden": false, "primary": false, "targetId": "60cd-2858-1bf3-8543"},
-          {"name": "Tarantula Battery", "id": "c392-a163-34a7-ced2", "hidden": false, "primary": false, "targetId": "2cf2-d2e6-b8b6-79cb"},
-          {"name": "M35", "id": "7e67-d2d7-b718-624f", "hidden": false, "primary": false, "targetId": "eac0-484c-93fc-4466"},
-          {"name": "Automata", "id": "126a-07d5-62c5-1580", "hidden": false, "primary": false, "targetId": "0fec-1996-2577-4109"},
-          {"name": "Heavy", "id": "35cb-dd73-484e-c148", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 65}],
-        "entryLinks": [
-          {
-            "name": "Tarantula Gun",
-            "id": "6462-fe24-1a69-da9c",
-            "defaultAmount": "3",
-            "hidden": false,
-            "targetId": "6782-c822-1451-c47e",
-            "type": "selectionEntry",
-            "constraints": [
-              {"id": "2590-4793-c767-157f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "min", "value": 3},
-              {"id": "2590-4793-c767-157f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 3}
-            ],
-            "entryLinks": [
-              {
-                "name": "Multi-Laser",
-                "id": "098d-85b1-d868-2583",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "f570-5167-afca-351d",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "8f89-a236-37df-ecc9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "8f89-a236-37df-ecc9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              }
-            ],
-            "infoLinks": [{"name": "Tarantula Gun", "id": "0291-6c98-b795-679f", "hidden": false, "targetId": "2883-529a-18a9-e35e", "type": "profile"}]
-          },
-          {
-            "name": "Tarantula Gun",
-            "id": "d3f0-2009-8795-0202",
-            "hidden": false,
-            "targetId": "6782-c822-1451-c47e",
-            "type": "selectionEntry",
-            "constraints": [{"id": "0a84-0b50-57cf-5595", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 12}],
-            "infoLinks": [
-              {
-                "name": "Tarantula Gun",
-                "id": "acfe-5b2d-2302-40b1",
-                "hidden": false,
-                "targetId": "2883-529a-18a9-e35e",
-                "type": "profile",
-                "modifiers": [{"field": "name", "type": "prepend", "value": "Air Defense"}]
-              }
-            ],
-            "modifiers": [{"field": "name", "type": "prepend", "value": "Air Defence"}],
-            "selectionEntries": [
-              {
-                "name": "Air Defence Relay",
-                "id": "c079-c05b-ec66-16cd",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "5c00-c205-1332-a799-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "5c00-c205-1332-a799-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "rules": [
-                  {
-                    "name": "Air Defence Relay",
-                    "id": "a38f-25a4-bc81-956e",
-                    "description": "If a unit has a model equipped with this wargear, the entire unit gains the Skyfire special rule on all shooting weapons they are equipped with. In addition, this unit may always target enemy units with the Fly special rule even if it is not the closest visible unit in range.",
-                    "hidden": false
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Force Organization: Free",
-            "id": "c1bf-ab73-f83a-ebc5",
-            "hidden": false,
-            "import": true,
-            "targetId": "4e6e-a84c-60c4-47e9",
-            "type": "selectionEntry",
-            "constraints": [{"id": "efee-fc8d-b1f0-6f14", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": false, "type": "max", "value": 0}],
-            "modifiers": [
-              {
-                "field": "efee-fc8d-b1f0-6f14",
-                "type": "increment",
-                "value": 2,
-                "repeats": [
-                  {
-                    "childId": "2cf2-d2e6-b8b6-79cb",
-                    "childName": "Tarantula Battery",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "repeats": 1,
-                    "roundUp": false,
-                    "scope": "force",
-                    "shared": true,
-                    "value": 3
-                  }
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Weapon Battery",
-                "id": "99fb-4818-6deb-9957",
-                "description": "For each unit in your army with this special rule, you may include 2 additional units with the Tarantula Battery keyword in your army without taking up a Force Organization Slot.",
-                "hidden": false
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {"name": "Relentless", "id": "4128-18c1-8c8c-aeb8", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
-          {"name": "Expendable", "id": "a7b2-d271-19a2-160c", "hidden": false, "targetId": "10fa-7459-7b04-1f93", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "47b2-bd0d-2f86-cdd9", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
-          {"name": "Slow and purposeful", "id": "d8f8-2db3-f8a0-378a", "hidden": false, "targetId": "5424-9bb7-d620-92b1", "type": "rule"},
-          {"name": "Move through Cover", "id": "9136-314e-1bdc-1df5", "hidden": false, "targetId": "8b84-75ff-3191-46fa", "type": "rule"},
-          {"name": "Deep Strike", "id": "2c6f-d135-e2ff-04bf", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"}
-        ],
-        "rules": [
-          {
-            "name": "Emplaced Automata",
-            "id": "b9a0-6c0d-210e-5c61",
-            "description": "This unit automatically passes all Pinning and Panic tests. Its Movement (M) characteristic is reduced to 0”.",
-            "hidden": false
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Linked Heavy Bolter",
-            "id": "af3e-7ebc-ce65-018a",
-            "comment": "todo: No model with default in wargear",
-            "defaultSelectionEntryId": "e1a4-111c-0be3-8e60",
-            "hidden": true,
-            "entryLinks": [
-              {"name": "Linked Heavy Bolter", "id": "e1a4-111c-0be3-8e60", "hidden": false, "import": true, "targetId": "7812-1637-a222-add0", "type": "selectionEntry"},
-              {
-                "name": "Multi-Melta",
-                "id": "720e-f4aa-5084-24b9",
-                "hidden": false,
-                "import": true,
-                "targetId": "90c9-36e3-ba67-2cfc",
-                "type": "selectionEntry",
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
-              },
-              {
-                "name": "Linked Las Cannon",
-                "id": "c69c-ccff-22ec-6a8d",
-                "hidden": false,
-                "import": true,
-                "targetId": "446b-047d-0872-5352",
-                "type": "selectionEntry",
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "2 Missile Launchers",
-                "id": "edd6-070d-1a40-8e3f",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
-                "entryLinks": [
-                  {
-                    "name": "Missile Launcher",
-                    "id": "856f-2818-23d4-1012",
-                    "defaultAmount": "2",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "6bc7-dc8c-099c-61ce",
-                    "type": "selectionEntry",
-                    "constraints": [
-                      {"id": "5c91-f028-ceb3-c648-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                      {"id": "5c91-f028-ceb3-c648-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Weapon Battery",
         "id": "8059-f50a-181f-5c5a",
         "defaultAmount": "1",
@@ -27379,28 +27142,6 @@
         ]
       },
       {
-        "name": "Aegis Defence Line",
-        "id": "11dc-3912-eaa6-c10e",
-        "hidden": false,
-        "import": true,
-        "page": "128",
-        "publicationId": "5b81-795c-38b3-285c",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Imperial Guard", "id": "68c1-1332-63dc-c077", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"},
-          {"name": "Imperium", "id": "d982-0eb2-a789-84e7", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Fortification", "id": "e7c5-8311-4506-671d", "hidden": false, "primary": true, "targetId": "afd1-1404-6ffb-02d8"}
-        ],
-        "rules": [
-          {
-            "name": "Aegis Defence Line",
-            "id": "c741-e2cb-8966-255b",
-            "description": "If you are the defender in a scenario, you may deploy up to 3 Aegis Defence Line pieces in your deployment zone as part of prepared positions after determining who will be the attacker and who will be the defender. Aegis Defence Lines provide cover per the standard cover rules and provide no additional benefits.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Armageddon Pattern Centaur RSV",
         "id": "9e9c-69d8-a175-e87d",
         "hidden": false,
@@ -28358,129 +28099,6 @@
                     "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
                   {"name": "Earthshaker Cannon", "id": "71f2-4ac4-74f8-c404", "hidden": false, "import": true, "targetId": "068a-73ce-806f-902e", "type": "selectionEntry"}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Bastion",
-        "id": "0d8e-a3d7-2ded-d14d",
-        "hidden": false,
-        "import": true,
-        "page": "127",
-        "publicationId": "5b81-795c-38b3-285c",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Imperial Guard", "id": "9641-be7d-5e87-076e", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"},
-          {"name": "Imperium", "id": "7436-d7af-b729-d84f", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Fortification", "id": "2edc-20d4-3823-fdf0", "hidden": false, "primary": true, "targetId": "afd1-1404-6ffb-02d8"},
-          {"name": "Bastion", "id": "33de-3074-f901-945f", "hidden": false, "primary": false, "targetId": "69af-8155-3254-e7f3"},
-          {"name": "M31", "id": "48a7-d635-af4b-1698", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 120}],
-        "infoLinks": [
-          {"name": "Icarus Defences", "id": "b148-aae8-8d37-5454", "hidden": false, "targetId": "d7ab-07c9-a52f-619c", "type": "rule"},
-          {"name": "Firing Protocols (x)", "id": "11ed-674b-d9d8-d637", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
-        ],
-        "rules": [
-          {
-            "name": "Garrison",
-            "id": "9479-dac4-0b49-469a",
-            "description": "This model can garrison up to 22 Infantry models embarked within it. Models embarked within this Fortification may shoot in the shooting phase as normal, drawing all visibility and range from this unit’s hull.",
-            "hidden": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Bastion",
-            "id": "d4fb-fa5d-3afb-c2a3",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "dae2-1495-adb6-ef5f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "dae2-1495-adb6-ef5f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {"name": "Hidden Entrances", "id": "6df3-f486-9a34-029d", "hidden": false, "targetId": "77f7-d38e-51ee-2560", "type": "selectionEntry"},
-              {
-                "name": "Heavy Bolter",
-                "id": "e0cf-4f10-1d49-5836",
-                "defaultAmount": "4",
-                "hidden": false,
-                "import": true,
-                "targetId": "78c1-9390-d6ec-04ff",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "29d1-643d-7312-8b4c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4},
-                  {"id": "29d1-643d-7312-8b4c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 4}
-                ],
-                "modifiers": [{"field": "name", "type": "append", "value": "(P)"}]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Bastion",
-                "id": "87d9-83e3-fcea-9730",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "0", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "0", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "2", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "8", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "13", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "13", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "13", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "0", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "0", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "\n", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "22", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Cannon (P)",
-                "id": "4882-fb08-f784-f7b7",
-                "defaultSelectionEntryId": "none",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "id": "f2cb-7914-ead0-0ddf",
-                    "automatic": true,
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "max",
-                    "value": 1
-                  }
-                ],
-                "entryLinks": [
-                  {"name": "Sensor Relay", "id": "8567-a9d9-117f-b4c9", "hidden": false, "targetId": "f7cd-11ca-0a24-a2de", "type": "selectionEntry"},
-                  {
-                    "name": "Linked Las Cannon",
-                    "id": "b038-c944-03cf-61fa",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "446b-047d-0872-5352",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
-                  },
-                  {
-                    "name": "Linked Autocannon",
-                    "id": "7c8f-3444-53a9-973e",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "5739-d53f-fe33-f250",
-                    "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
-                  }
                 ]
               }
             ]
@@ -30583,99 +30201,6 @@
         ]
       },
       {
-        "name": "Firestorm Redoubt",
-        "id": "49f7-9dac-8dc2-9275",
-        "hidden": false,
-        "import": true,
-        "page": "130",
-        "publicationId": "5b81-795c-38b3-285c",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Faction: Imperial Guard", "id": "0a60-c79b-24b8-ae1b", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"},
-          {"name": "Imperium", "id": "7e9f-721f-5242-176e", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "Fortification", "id": "910b-5ab1-5f65-3e41", "hidden": false, "primary": true, "targetId": "afd1-1404-6ffb-02d8"},
-          {"name": "Firestorm Redoubt", "id": "3349-412d-08bf-e312", "hidden": false, "primary": false, "targetId": "456c-0506-05ba-3eb3"},
-          {"name": "M31", "id": "8373-7668-e886-dbe6", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
-        "infoLinks": [{"name": "Firing Protocols (x)", "id": "3d69-32c1-ad6b-910d", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}],
-        "rules": [
-          {
-            "name": "Garrison",
-            "id": "e57b-5ddf-4217-04c6",
-            "description": "This model can garrison up to 42 Infantry models embarked within it. Models embarked within this Fortification may shoot in the shooting phase as normal, drawing all visibility and range from this unit’s hull.",
-            "hidden": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Firestorm Redoubt",
-            "id": "e592-2d87-c4d3-6e0c",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "84fd-dc52-8903-641b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "84fd-dc52-8903-641b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "profiles": [
-              {
-                "name": "Firestorm Redoubt",
-                "id": "1ca1-9d6c-2572-5281",
-                "hidden": false,
-                "typeId": "9f3f-85d3-bf97-fcc9",
-                "typeName": "Vehicle",
-                "characteristics": [
-                  {"name": "M", "$text": "0", "typeId": "3206-9664-eeb3-26eb"},
-                  {"name": "WS", "$text": "0", "typeId": "b91a-6b4e-68f6-5398"},
-                  {"name": "BS", "$text": "1", "typeId": "ce2d-33a1-3626-3105"},
-                  {"name": "S", "$text": "8", "typeId": "605e-2df1-55c7-3d9d"},
-                  {"name": "Front", "$text": "13", "typeId": "65d6-7651-a40f-fcd5"},
-                  {"name": "Side", "$text": "13", "typeId": "570a-ef9c-8153-2bb7"},
-                  {"name": "Rear", "$text": "13", "typeId": "e3d1-4d87-d5c4-921c"},
-                  {"name": "A", "$text": "0", "typeId": "1a60-9cb9-3892-ac5a"},
-                  {"name": "I", "$text": "0", "typeId": "7f1b-fabe-598c-f8de"},
-                  {"name": "LD", "$text": "\n", "typeId": "7b21-f3da-4802-3e38"},
-                  {"name": "Transport Capacity", "$text": "42", "typeId": "8058-3a16-8bc0-ad4b"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Quad Icarus Las Cannons (P)",
-                "id": "e188-0abd-65a4-d25a",
-                "defaultAmount": "2",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "e36b-1053-300e-afbb-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "e36b-1053-300e-afbb-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "profiles": [
-                  {
-                    "name": "Quad Icarus Las Cannon",
-                    "id": "b81b-f6c6-2b19-bd0d",
-                    "hidden": false,
-                    "typeId": "4425-e2ff-1ce0-83c1",
-                    "typeName": "Ranged Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                      {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-                      {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-                      {"name": "Strength", "$text": "9", "typeId": "4e85-0d56-33e2-acca"},
-                      {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-                      {"name": "Rules", "$text": "Linked, Skyfire", "typeId": "ba87-19e9-d692-6e30"}
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Fortification Section",
         "id": "e414-e363-9271-53ea",
         "hidden": false,
@@ -30698,6 +30223,7 @@
             "import": true,
             "targetId": "0d8e-a3d7-2ded-d14d",
             "type": "selectionEntry",
+            "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "a7c2-91d9-6f63-e5bc", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}],
             "constraints": [
               {"id": "db58-ead4-5655-52a2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b442-a32b-abf2-5109", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}
@@ -30710,6 +30236,7 @@
             "import": true,
             "targetId": "49f7-9dac-8dc2-9275",
             "type": "selectionEntry",
+            "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "d9ce-59a1-3392-1a2c", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}],
             "constraints": [{"id": "aab7-3bda-65a4-3ddb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}]
           },
           {
@@ -30719,6 +30246,7 @@
             "import": true,
             "targetId": "11dc-3912-eaa6-c10e",
             "type": "selectionEntry",
+            "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "45ce-ef06-4278-564f", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}],
             "constraints": [{"id": "af9d-49a7-5974-cd33", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}]
           },
           {
@@ -30737,6 +30265,10 @@
             "import": true,
             "targetId": "22e8-02bc-ea6a-5938",
             "type": "selectionEntry",
+            "categoryLinks": [
+              {"name": "[Regiment]", "id": "3e9b-7bb9-41f8-1fc3", "hidden": false, "primary": false, "targetId": "60cd-2858-1bf3-8543"},
+              {"name": "Faction: Imperial Guard", "id": "4bb9-ee26-ca06-2788", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}
+            ],
             "constraints": [{"id": "efd8-762f-b9b6-bf20", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}]
           }
         ],

@@ -7,7 +7,7 @@
     "gameSystemRevision": 9,
     "library": false,
     "publicationId": "cd32-7680-79bc-f6c6",
-    "revision": 5,
+    "revision": 6,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Chaos - shared rules", "id": "e987-556f-6a19-3a66", "targetId": "168b-7a05-c2ee-575e", "type": "catalogue"}],
     "categoryEntries": [
@@ -418,7 +418,6 @@
       {"name": "Obliterators", "id": "7e32-0859-10e5-990c", "hidden": false},
       {"name": "Rapier Battery", "id": "914d-32f1-5be3-3786", "hidden": false},
       {"name": "Defiler", "id": "738b-832a-fea1-9fce", "hidden": false},
-      {"name": "Arquitor Bombard", "id": "c859-6854-cd94-c053", "hidden": false},
       {
         "name": "LR",
         "id": "5b58-3ece-64a8-5d19",
@@ -15840,7 +15839,7 @@
                     "import": true,
                     "targetId": "78c1-9390-d6ec-04ff",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
                   },
                   {
                     "name": "Heavy Flamer",
@@ -15849,7 +15848,7 @@
                     "import": true,
                     "targetId": "4b58-2b09-3805-2dab",
                     "type": "selectionEntry",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
                   }
                 ],
                 "modifiers": [{"affects": "90c9-36e3-ba67-2cfc", "field": "cbdc-411c-cf55-3186", "type": "set", "value": 25}]
@@ -15973,87 +15972,34 @@
                 "name": "Morbus Bombard (P)",
                 "id": "3df2-e08c-cce4-1cb7",
                 "collapsible": true,
-                "defaultSelectionEntryId": "93e0-3f67-ede3-7907",
+                "defaultSelectionEntryId": "c0cc-50ef-0178-f3a6",
                 "hidden": false,
                 "constraints": [
-                  {"id": "6835-599c-a2e5-708a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "6835-599c-a2e5-708a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "selectionEntries": [
                   {
-                    "name": "Graviton Charge Cannon",
-                    "id": "2a1c-a348-e9e0-7fcc",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-                    "profiles": [
-                      {
-                        "name": "Graviton Charge Cannon",
-                        "id": "2eb4-57cf-f8a9-c294",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Ordnance, Blast (Large), Haywire (5+), Crushing (5+)", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
+                    "id": "6835-599c-a2e5-708a-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
                   },
                   {
-                    "name": "Morbus Bombard",
-                    "id": "93e0-3f67-ede3-7907",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "profiles": [
-                      {
-                        "name": "Morbus Bombard",
-                        "id": "9db6-ceac-0ec0-0cb5",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "12-36", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Blast (Large), Pinning, Indirect Fire, Ordnance", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Spicula Rocket System",
-                    "id": "f0dc-11cd-504c-f264",
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-                    "profiles": [
-                      {
-                        "name": "Spicula Rocket System",
-                        "id": "14c8-d51b-d5d5-81e3",
-                        "hidden": false,
-                        "typeId": "4425-e2ff-1ce0-83c1",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-                          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-                          {"name": "Range", "$text": "12-72", "typeId": "83a1-168d-3aa3-97f8"},
-                          {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-                          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-                          {"name": "Rules", "$text": "Ordnance, Blast (Large), Barrage (D6), Pinning", "typeId": "ba87-19e9-d692-6e30"}
-                        ]
-                      }
-                    ]
+                    "id": "6835-599c-a2e5-708a-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
                   }
+                ],
+                "entryLinks": [
+                  {"name": "Spicula Rocket System", "id": "b07b-dbd6-bd04-89dd", "hidden": false, "targetId": "f0dc-11cd-504c-f264", "type": "selectionEntry"},
+                  {"name": "Morbus Bombard", "id": "c0cc-50ef-0178-f3a6", "hidden": false, "targetId": "93e0-3f67-ede3-7907", "type": "selectionEntry"},
+                  {"name": "Graviton Charge Cannon", "id": "7586-3e30-af48-e398", "hidden": false, "targetId": "2a1c-a348-e9e0-7fcc", "type": "selectionEntry"}
                 ]
               }
             ]

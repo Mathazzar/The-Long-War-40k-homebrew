@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 20,
     "library": true,
-    "revision": 2,
+    "revision": 3,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "3570-5733-a5f7-4863", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -1247,7 +1247,15 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Salamanders", "id": "b1dc-e378-6f00-073d", "hidden": false, "targetId": "f335-d285-db5e-55e4", "type": "infoGroup"}],
-        "modifiers": [{"affects": "4db2-c5b4-e890-1d82", "field": "add-info", "scope": "force", "type": "add", "value": "f335-d285-db5e-55e4"}]
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "force", "type": "add", "value": "4db2-c5b4-e890-1d82"},
+              {"affects": "4db2-c5b4-e890-1d82", "field": "add-info", "scope": "force", "type": "add", "value": "f335-d285-db5e-55e4"}
+            ]
+          }
+        ]
       },
       {
         "name": "Sanctifier",
@@ -7388,14 +7396,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "100c-98ec-dcff-076d",
-                "childName": "Salamanders",
+                "childId": "4db2-c5b4-e890-1d82",
+                "childName": "[Salamanders]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -7530,14 +7538,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "100c-98ec-dcff-076d",
-                "childName": "Salamanders",
+                "childId": "4db2-c5b4-e890-1d82",
+                "childName": "[Salamanders]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -8040,14 +8048,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "100c-98ec-dcff-076d",
-                "childName": "Salamanders",
+                "childId": "4db2-c5b4-e890-1d82",
+                "childName": "[Salamanders]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -8229,14 +8237,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "100c-98ec-dcff-076d",
-                "childName": "Salamanders",
+                "childId": "4db2-c5b4-e890-1d82",
+                "childName": "[Salamanders]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
