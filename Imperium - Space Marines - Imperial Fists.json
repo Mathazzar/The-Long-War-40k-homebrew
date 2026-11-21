@@ -30,13 +30,1456 @@
         ]
       },
       {"name": "Tor Garadon", "id": "cc4f-c05a-a9da-ebbf", "hidden": false},
-      {"name": "Huscarl", "id": "12b3-28a4-6d14-f2b6", "hidden": false}
+      {"name": "Huscarl", "id": "12b3-28a4-6d14-f2b6", "hidden": false},
+      {"name": "Auric Auxilia", "id": "67ca-a112-3af5-8e16", "hidden": false},
+      {"name": "Arquitor Bombard", "id": "b18b-07dc-a54d-be7e", "hidden": false}
+    ],
+    "entryLinks": [
+      {"name": "Tor Garadon", "id": "59a8-b6dd-2647-928c", "hidden": false, "targetId": "1d58-d1a8-c1de-b9ef", "type": "selectionEntry"},
+      {"name": "Captain Lysander", "id": "325c-d63e-8c2c-0af0", "hidden": false, "targetId": "4e75-4284-1942-f997", "type": "selectionEntry"},
+      {"name": "Huscarl", "id": "7a81-1636-31e8-6827", "hidden": false, "targetId": "c92c-76f1-ab0c-223c", "type": "selectionEntry"},
+      {"name": "Arquitor Bombard", "id": "56c5-55bd-0d6b-7ac6", "hidden": false, "targetId": "0a9a-ca6f-0c23-a8f1", "type": "selectionEntry"},
+      {"name": "Auric Auxilia", "id": "ca37-1c8e-9d07-7d09", "hidden": false, "targetId": "b95e-ef34-981c-cc0c", "type": "selectionEntry"},
+      {"name": "Auric Auxilia Colonel", "id": "def4-5234-acb0-df39", "hidden": false, "targetId": "8416-0258-0943-d27b", "type": "selectionEntry"}
     ],
     "publications": [{"name": "The Long War – Codex Supplement Imperial Fists", "id": "e28b-31b7-b599-f5fe", "hidden": false, "publisher": "5.0"}],
-    "selectionEntries": [
+    "sharedInfoGroups": [
+      {
+        "name": "Imperial Fists",
+        "id": "de1b-cf81-fa8a-eda4",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Pain is a Lesson",
+            "id": "63c0-ac52-9214-f423",
+            "description": "• All Imperial Fists army must re-roll successful Feel No Pain rolls made using the Feel no Pain Special rule.\n• If your opponent is Iron Warriors, you must play 1 additional Battle Round of the battle regardless of the battlepack rules.",
+            "hidden": false,
+            "page": "3",
+            "publicationId": "e28b-31b7-b599-f5fe"
+          },
+          {
+            "name": "Chapter Drills",
+            "id": "80d3-80be-9e9b-035a",
+            "description": "All Imperial Fists units in your army gain the following benefits:\n• Imperial Fists units re-roll all to hit rolls of 1 with Bolt Pistol, Boltguns, Heavy Boltguns, Heavy Bolters, Linked Boltguns, Linked Heavy Bolters, Gatebreaker Boltguns and Chainswords.\n• Imperial Fists units gain the Siege Attacker special rule.",
+            "hidden": false,
+            "page": "3",
+            "publicationId": "e28b-31b7-b599-f5fe"
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Ferromag Shotgun",
+        "id": "4374-a477-4adb-a711",
+        "hidden": false,
+        "page": "5",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Concussive, Rending (6+)", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Fist of Terra",
+        "id": "2a70-c288-1117-5600",
+        "hidden": false,
+        "page": "4",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "typeId": "8fa1-1cd9-5ae1-0e93",
+        "typeName": "Melee Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+          {"name": "Strength", "$text": "10", "typeId": "a10f-8fce-fc56-cafc"},
+          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+          {"name": "Rules", "$text": "Unwieldy, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Gatebreaker Boltgun",
+        "id": "7fb6-5ceb-24b1-b89b",
+        "hidden": false,
+        "page": "5",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Concussive", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {"name": "Allegiance: Imperial Fists", "id": "f24a-53b4-8820-3ace", "hidden": false},
+      {"name": "Only in Death", "id": "e2cc-9fa2-1358-a888", "description": "A model equipped with this wargear gains the Last Stand special rule.", "hidden": false}
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Imperial Fists",
+        "id": "2e4b-aee9-4a40-d0a7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Imperial Fists", "id": "fe7e-350b-4077-39d3", "hidden": false, "targetId": "de1b-cf81-fa8a-eda4", "type": "infoGroup"}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "entries.fbef-5f4b-bee4-b90b", "field": "add-info", "scope": "force", "type": "add", "value": "de1b-cf81-fa8a-eda4"},
+              {"field": "category", "scope": "force", "type": "add", "value": "fbef-5f4b-bee4-b90b"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Terror Scouts",
+        "id": "a5e1-d3ca-a829-fbd2",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "constraints": [{"id": "dab7-c082-07e0-bd13", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "rules": [
+          {
+            "name": "Terror Scouts",
+            "id": "82f3-dcbc-5520-b0bd",
+            "description": "A unit with this upgrade gains the Fear (1) and Crusader special rule. In addition, they gain Shock Grenades.\n• A Terror Scout unit may exchange their Astartes Shotguns for Ferromag Shotguns for 1pt per model.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ferromag Shotguns",
+            "id": "56a2-9278-fd5e-74ae",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "e845-bbc2-fe7a-dc55", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [
+              {
+                "name": "Ferromag Shotgun",
+                "id": "3b28-43dd-4b5b-8830",
+                "hidden": false,
+                "targetId": "4374-a477-4adb-a711",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "56a2-9278-fd5e-74ae",
+                        "childName": "Ferromag Shotguns",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "affects": "entries.recursive.f426-979e-1b34-e351.profiles.Ranged Weapons",
+                    "field": "ba87-19e9-d692-6e30",
+                    "join": ", ",
+                    "scope": "unit",
+                    "type": "append",
+                    "value": "Rending (6+)"
+                  },
+                  {"affects": "entries.recursive.f426-979e-1b34-e351", "field": "name", "scope": "unit", "type": "set", "value": "Ferromag Shotguns"},
+                  {"affects": "entries.recursive.f426-979e-1b34-e351.profiles.Ranged Weapons", "field": "name", "scope": "unit", "type": "set", "value": "Ferromag Shotguns"}
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "cbdc-411c-cf55-3186",
+                "type": "set",
+                "value": 1,
+                "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 1}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ferromag Shotgun",
+        "id": "a681-fc4b-ec1e-2ce8",
+        "hidden": false,
+        "import": true,
+        "page": "",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Ferromag Shotgun", "id": "1bf5-9180-ee02-5302", "hidden": false, "targetId": "4374-a477-4adb-a711", "type": "profile"}]
+      },
+      {
+        "name": "Boarding Shield",
+        "id": "af00-058f-ea9c-dfae",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "constraints": [{"id": "b940-7b11-d32a-2186", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+        "rules": [
+          {
+            "name": "Boarding Shield",
+            "id": "cdbf-afa3-914c-9f38",
+            "description": "A model equipped with this wargear gains a 5+ Invulnerable save. If at least 3 models in a unit are equipped with Boarding Shields, all charges against the equipped unit are treated as Disordered Charges.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Wardens Cuirass",
+        "id": "2eb3-322c-3022-2688",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "constraints": [{"id": "917d-6cee-84c4-7e65", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Wardens Cuirass",
+            "id": "6ce7-6448-d314-3062",
+            "description": "A model with this wargear may re-roll 1 failed Armour save roll per Phase.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Auric Aquilla",
+        "id": "7c20-9ebc-6a90-a222",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1af4-4e6f-a28f-f61c",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "rules": [{"name": "Auric Aquilla", "id": "1dc1-18df-e186-7a8c", "description": "A model equipped with this wargear gains a 6+ Invulnerable save.", "hidden": false}]
+      },
+      {
+        "name": "Fist of Terra",
+        "id": "a219-a77b-7c5e-78ec",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Fist of Terra", "id": "8b28-bf4f-9492-7a15", "hidden": false, "targetId": "2a70-c288-1117-5600", "type": "profile"}]
+      },
+      {
+        "name": "Gatebreaker Boltgun",
+        "id": "3cb2-a886-0f81-fa45",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Gatebreaker Boltgun", "id": "10e4-b8b4-a1cf-1fc9", "hidden": false, "targetId": "7fb6-5ceb-24b1-b89b", "type": "profile"}]
+      },
+      {
+        "name": "Indomitable",
+        "id": "9efa-f447-8749-929d",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Indomitable",
+            "id": "c05f-def0-7a25-18ad",
+            "description": "A Warlord with this trait and any attached unit gains the Crusader special rule. In addition, any combat they are involved in which would be lost is considered a tied combat instead.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Stubborn Heroism",
+        "id": "b137-aa16-b4e7-9655",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Stubborn Heroism",
+            "id": "19c4-4d09-dbaf-25f2",
+            "description": "The Warlord and any attached unit gain the Stubborn and Counter-Attack special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Superior Architect",
+        "id": "144e-f5e5-aea2-978d",
+        "hidden": false,
+        "import": true,
+        "page": "9",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Superior Architect",
+            "id": "56de-09b5-1256-fe00",
+            "description": "All Fortification type units in your army gain a 5+ Invulnerable Save. In addition, you may include 1 additional Fortification slot in your army per 500pts.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Arquitor Bombard",
+        "id": "0a9a-ca6f-0c23-a8f1",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "M31", "id": "77d5-e929-ff5b-dabe", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
+          {"name": "Heavy", "id": "adbf-9dba-3f81-e649", "hidden": false, "primary": true, "targetId": "c831-e8d6-bb33-52b3"},
+          {"name": "Vehicle", "id": "6083-0d4e-40c5-7748", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "Tank", "id": "5fc7-2e1b-9898-99fa", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
+          {"name": "Arquitor Bombard", "id": "0735-2aa0-828f-49fc", "hidden": false, "primary": false, "targetId": "c859-6854-cd94-c053"},
+          {"name": "Imperium", "id": "e3f2-720c-558e-36b3", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Imperial Fists]", "id": "330f-488b-1cf3-706c", "hidden": false, "primary": false, "targetId": "fbef-5f4b-bee4-b90b"},
+          {"name": "Faction: Space Marines", "id": "749d-c3e7-ada5-a748", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
+        "infoLinks": [
+          {"name": "Super Heavy (x)", "id": "c3b4-e8d5-d348-21a7", "hidden": false, "targetId": "35dc-0e82-3125-fe6f", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "7401-1a73-73c3-062a", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
+          {"name": "Hammer of Wrath (x)", "id": "a080-983b-4764-a8df", "hidden": false, "targetId": "30b0-80e3-98a2-567c", "type": "rule"},
+          {"name": "Relentless", "id": "d730-65c8-1a48-3594", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "210b-4adb-db52-69cb", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Fade & Fire", "id": "bdcc-a11f-3ff2-c204", "hidden": false, "targetId": "a9fb-3a41-13a5-83a4", "type": "rule"},
+          {"name": "Allegiance: Imperial Fists", "id": "7265-114b-c087-bcfd", "hidden": false, "targetId": "f24a-53b4-8820-3ace", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Arquitor Bombard",
+            "id": "8826-e22c-3ecd-5174",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "77b3-b90b-1ffd-aeea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "5714-d5bd-3be3-333a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Hunter-Killer Missile",
+                "id": "42db-28ca-c0bd-d94b",
+                "hidden": false,
+                "import": true,
+                "targetId": "1a9c-6ba1-bbb9-0abb",
+                "type": "selectionEntry",
+                "constraints": [{"id": "62da-1b2e-5b73-c9bd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
+                "modifiers": [{"field": "name", "type": "append", "value": "(S)"}]
+              },
+              {"name": "Searchlight", "id": "5b41-8218-6e17-7310", "hidden": false, "import": true, "targetId": "0e9d-bd2d-5ade-e0c2", "type": "selectionEntry"},
+              {"name": "Smoke Launchers", "id": "86c3-288a-d6d5-5c11", "hidden": false, "import": true, "targetId": "4662-0b45-17cd-f1ad", "type": "selectionEntry"},
+              {"name": "Marine Crew Weapons", "id": "bc6e-3409-21e9-6eed", "hidden": false, "import": true, "targetId": "2bae-f8ee-dabc-33dc", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Arquitor Bombard",
+                "id": "cb00-212f-e1b1-5b41",
+                "hidden": false,
+                "typeId": "9f3f-85d3-bf97-fcc9",
+                "typeName": "Vehicle",
+                "characteristics": [
+                  {"name": "M", "$text": "12", "typeId": "3206-9664-eeb3-26eb"},
+                  {"name": "WS", "$text": "4", "typeId": "b91a-6b4e-68f6-5398"},
+                  {"name": "BS", "$text": "4", "typeId": "ce2d-33a1-3626-3105"},
+                  {"name": "S", "$text": "6", "typeId": "605e-2df1-55c7-3d9d"},
+                  {"name": "Front", "$text": "12", "typeId": "65d6-7651-a40f-fcd5"},
+                  {"name": "Side", "$text": "12", "typeId": "570a-ef9c-8153-2bb7"},
+                  {"name": "Rear", "$text": "10", "typeId": "e3d1-4d87-d5c4-921c"},
+                  {"name": "A", "$text": "1", "typeId": "1a60-9cb9-3892-ac5a"},
+                  {"name": "I", "$text": "4", "typeId": "7f1b-fabe-598c-f8de"},
+                  {"name": "LD", "$text": "8", "typeId": "7b21-f3da-4802-3e38"},
+                  {"name": "Transport Capacity", "$text": "0", "typeId": "8058-3a16-8bc0-ad4b"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "2 Heavy Bolters (P)",
+                "id": "7159-5590-e2ad-9a5b",
+                "collapsible": true,
+                "defaultSelectionEntryId": "cca1-9545-53f6-b698",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "575a-c4c2-e21f-9ec9",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "30d5-6998-a880-41cf",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "2 Autocannons",
+                    "id": "3a1f-15f9-4d59-1f41",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "entryLinks": [
+                      {
+                        "name": "Autocannon",
+                        "id": "8db7-4f53-e40e-0fc5",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2583-e542-e2d4-698d",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "250b-ad24-15c5-d97e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "08ab-2a1d-e5c3-f890", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Lascannons",
+                    "id": "0acf-18a2-7338-d2dd",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+                    "entryLinks": [
+                      {
+                        "name": "Lascannon",
+                        "id": "3ecd-587b-72e5-2060",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2cfd-9f25-1c54-177a",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "0890-e65e-5134-7e74-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "0890-e65e-5134-7e74-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Heavy Bolters",
+                    "id": "cca1-9545-53f6-b698",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Heavy Bolter",
+                        "id": "fb4c-0868-8c78-922a",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "78c1-9390-d6ec-04ff",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "6a2e-61fc-5014-e09b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "6a2e-61fc-5014-e09b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Heavy Flamers",
+                    "id": "6473-71b0-c93a-5261",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Heavy Flamer",
+                        "id": "0ccc-5b30-5543-7733",
+                        "defaultAmount": "2",
+                        "exportable": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4b58-2b09-3805-2dab",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "a159-4d91-53dc-13df-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "a159-4d91-53dc-13df-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Morbus Bombard (P)",
+                "id": "5a2b-25dc-6eca-f81c",
+                "collapsible": true,
+                "defaultSelectionEntryId": "5040-1311-5c34-dbfd",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "7c68-1450-57ad-29c0",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "e014-f49e-a97c-b802",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {"name": "Spicula Rocket System", "id": "f77a-519c-273a-17d1", "hidden": false, "import": true, "targetId": "f0dc-11cd-504c-f264", "type": "selectionEntry"},
+                  {"name": "Graviton Charge Cannon", "id": "ae66-b4cb-461a-af3f", "hidden": false, "import": true, "targetId": "2a1c-a348-e9e0-7fcc", "type": "selectionEntry"},
+                  {"name": "Morbus Bombard", "id": "5040-1311-5c34-dbfd", "hidden": false, "import": true, "targetId": "93e0-3f67-ede3-7907", "type": "selectionEntry"}
+                ]
+              },
+              {
+                "name": "Combi Bolter (S)",
+                "id": "009c-c1b4-3bbb-5a8c",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "07f9-f31b-1804-3f10",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "39c2-447a-75ce-5d39",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {"name": "Combi Bolter", "id": "36d3-5b5c-bf62-b93b", "hidden": false, "import": true, "targetId": "b729-3d1e-1672-516b", "type": "selectionEntry"},
+                  {
+                    "name": "Combi Flamer",
+                    "id": "0ea9-e05f-2805-94d1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4055-8e1b-e950-5299",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Combi Plasma",
+                    "id": "bc79-3884-dad9-8a1e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "8d0b-110a-173a-4ddd",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {
+                    "name": "Combi Melta",
+                    "id": "62fc-9955-0f32-cd7e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "0a47-4e41-d06f-dabf",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
+                    "name": "Multi-Melta",
+                    "id": "dac8-3f8b-bc8c-66f8",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "90c9-36e3-ba67-2cfc",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}]
+                  },
+                  {
+                    "name": "Heavy Bolter",
+                    "id": "7189-1bc5-ab10-e8e0",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "78c1-9390-d6ec-04ff",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {
+                    "name": "Heavy Flamer",
+                    "id": "3dfc-6685-4d40-034b",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4b58-2b09-3805-2dab",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Auric Auxilia",
+        "id": "b95e-ef34-981c-cc0c",
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Troop", "id": "6986-b297-040e-8448", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Infantry", "id": "feb8-ad7c-d58c-70a2", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "1784-66a2-a344-db6f", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Space Marines", "id": "7414-c688-9670-bd28", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Auric Auxilia", "id": "af84-a146-d98d-3ea8", "hidden": false, "primary": false, "targetId": "67ca-a112-3af5-8e16"},
+          {"name": "M31", "id": "919c-7cc7-1f15-60ab", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 7}],
+        "infoLinks": [{"name": "Support Squad", "id": "cfb9-41c1-1d98-3688", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Auric Auxilia",
+            "id": "99aa-5f11-cf3c-b317",
+            "defaultAmount": "9",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "3b5b-a52a-808a-093b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 9},
+              {"id": "4fbf-c6f1-9ed1-5d20", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 19}
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 7}],
+            "entryLinks": [
+              {
+                "name": "Auric Aquilla",
+                "id": "8be9-dff9-687e-299b",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "7c20-9ebc-6a90-a222",
+                "type": "selectionEntry",
+                "constraints": [{"id": "865d-720e-5f73-0a59", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Standard", "id": "a55f-4e94-d2a0-f425", "hidden": false, "targetId": "d261-7065-66bb-4b37", "type": "selectionEntryGroup"},
+              {"name": "Carapace Armour", "id": "d3ce-739b-a3af-f44a", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "fa46-73f0-ba32-bdef", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
+              {
+                "name": "Close Combat Weapons",
+                "id": "74c6-8203-4e22-01c3",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ba4d-218f-3817-c775",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6be2-9fdc-dab1-e23e-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6be2-9fdc-dab1-e23e-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auric Auxilia",
+                "id": "9909-684d-52a0-b400",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "3", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "1", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "6", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Lasgun",
+                "id": "c3a1-1ea5-b639-892e",
+                "collapsible": true,
+                "defaultSelectionEntryId": "0d02-33e6-12cc-ce35",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "91c3-4205-fc0d-769d-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "91c3-4205-fc0d-769d-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Grenade Launcher",
+                    "id": "20c1-998a-9b28-7ac7",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6d89-4fe1-9b27-affe",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "dfbf-acff-7644-3ccc", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "dfbf-acff-7644-3ccc",
+                        "type": "increment",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "99aa-5f11-cf3c-b317",
+                            "childName": "Auric Auxilia",
+                            "field": "selections",
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 9
+                          }
+                        ]
+                      },
+                      {
+                        "field": "dfbf-acff-7644-3ccc",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "6186-a63d-2245-c4bb",
+                            "childName": "Meltagun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "958b-0867-67db-e40a",
+                            "childName": "Flamer",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "db58-d2e2-0963-74bd",
+                            "childName": "Plasma Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "c4da-fd1d-a542-d279",
+                            "childName": "Grav Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"name": "Las Gun", "id": "0d02-33e6-12cc-ce35", "hidden": false, "import": true, "targetId": "8731-bbdc-a71e-bf77", "type": "selectionEntry"},
+                  {
+                    "name": "Astartes Shotgun",
+                    "id": "117b-b346-678a-e8b4",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f426-979e-1b34-e351",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+                  },
+                  {
+                    "name": "Ferromag Shotgun",
+                    "id": "1a4d-c642-ddf9-fb9e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a681-fc4b-ec1e-2ce8",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 4}]
+                  },
+                  {
+                    "name": "Power Axe",
+                    "id": "3794-b876-d900-1c60",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6dff-d1d6-7194-b1d0",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {
+                    "name": "Flamer",
+                    "id": "cd92-922b-9f8a-34eb",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "958b-0867-67db-e40a",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "6aba-45ac-6269-f933", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "modifiers": [
+                      {
+                        "field": "6aba-45ac-6269-f933",
+                        "type": "increment",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "99aa-5f11-cf3c-b317",
+                            "childName": "Auric Auxilia",
+                            "field": "selections",
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 9
+                          }
+                        ]
+                      },
+                      {
+                        "field": "6aba-45ac-6269-f933",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "6186-a63d-2245-c4bb",
+                            "childName": "Meltagun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "db58-d2e2-0963-74bd",
+                            "childName": "Plasma Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "c4da-fd1d-a542-d279",
+                            "childName": "Grav Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "6d89-4fe1-9b27-affe",
+                            "childName": "Grenade Launcher",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Meltagun",
+                    "id": "6316-98f5-83e6-1d7a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6186-a63d-2245-c4bb",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "9605-664c-4c7b-112c", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "modifiers": [
+                      {
+                        "field": "9605-664c-4c7b-112c",
+                        "type": "increment",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "99aa-5f11-cf3c-b317",
+                            "childName": "Auric Auxilia",
+                            "field": "selections",
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 9
+                          }
+                        ]
+                      },
+                      {
+                        "field": "9605-664c-4c7b-112c",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "958b-0867-67db-e40a",
+                            "childName": "Flamer",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "db58-d2e2-0963-74bd",
+                            "childName": "Plasma Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "c4da-fd1d-a542-d279",
+                            "childName": "Grav Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "6d89-4fe1-9b27-affe",
+                            "childName": "Grenade Launcher",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Plasma Gun",
+                    "id": "e5d1-37d1-d850-0dfa",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "db58-d2e2-0963-74bd",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "825b-e961-d587-97e1", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "825b-e961-d587-97e1",
+                        "type": "increment",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "99aa-5f11-cf3c-b317",
+                            "childName": "Auric Auxilia",
+                            "field": "selections",
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 9
+                          }
+                        ]
+                      },
+                      {
+                        "field": "825b-e961-d587-97e1",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "6186-a63d-2245-c4bb",
+                            "childName": "Meltagun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "958b-0867-67db-e40a",
+                            "childName": "Flamer",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "c4da-fd1d-a542-d279",
+                            "childName": "Grav Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "6d89-4fe1-9b27-affe",
+                            "childName": "Grenade Launcher",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Grav Gun",
+                    "id": "ef49-8237-2b9f-0b05",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "c4da-fd1d-a542-d279",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "d533-3108-5959-bbe6", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "d533-3108-5959-bbe6",
+                        "type": "increment",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "99aa-5f11-cf3c-b317",
+                            "childName": "Auric Auxilia",
+                            "field": "selections",
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 9
+                          }
+                        ]
+                      },
+                      {
+                        "field": "d533-3108-5959-bbe6",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [
+                          {
+                            "childId": "6186-a63d-2245-c4bb",
+                            "childName": "Meltagun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "958b-0867-67db-e40a",
+                            "childName": "Flamer",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "db58-d2e2-0963-74bd",
+                            "childName": "Plasma Gun",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          },
+                          {
+                            "childId": "6d89-4fe1-9b27-affe",
+                            "childName": "Grenade Launcher",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "repeats": 1,
+                            "roundUp": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Auxilia Sergeant",
+            "id": "9d66-1c38-1a39-0e82",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "be47-9193-cf74-4124-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "be47-9193-cf74-4124-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Auric Aquilla",
+                "id": "4f97-73aa-1245-821c",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "7c20-9ebc-6a90-a222",
+                "type": "selectionEntry",
+                "constraints": [{"id": "7c4e-de21-3870-b157", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Standard", "id": "fadb-b8e2-697c-87e5", "hidden": false, "targetId": "d261-7065-66bb-4b37", "type": "selectionEntryGroup"},
+              {"name": "Carapace Armour", "id": "7b81-2948-465e-0201", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "87f0-12ea-2eee-921c", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
+              {"name": "Laspistol", "id": "14e3-274d-9a58-d7bd", "hidden": false, "import": true, "targetId": "00e4-66df-4f2f-0809", "type": "selectionEntryGroup"},
+              {"name": "Chainsword", "id": "65dc-db0d-ee7b-fa9a", "hidden": false, "import": true, "targetId": "19fe-189b-629e-0298", "type": "selectionEntryGroup"},
+              {
+                "name": "Digital Weapons",
+                "id": "6c08-dac6-16e4-322a",
+                "hidden": false,
+                "import": true,
+                "targetId": "7abf-e940-51aa-1a1e",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
+              {
+                "name": "Melta Bomb",
+                "id": "680c-cfb6-a808-d963",
+                "hidden": false,
+                "import": true,
+                "targetId": "3649-d648-4d6b-786f",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Teleport Homer",
+                "id": "af09-23b8-75a9-a043",
+                "hidden": false,
+                "import": true,
+                "targetId": "1e1f-77bf-b9ab-f22f",
+                "type": "selectionEntry",
+                "constraints": [{"id": "32c8-3324-e7dd-dbe9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxilia Sergeant",
+                "id": "e97d-bab8-3d00-093b",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "3", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "3", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "1", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "7", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Auric Auxilia Colonel",
+        "id": "8416-0258-0943-d27b",
+        "comment": "todo: In HQ section?",
+        "hidden": false,
+        "import": true,
+        "page": "17",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Troop", "id": "094a-a14b-fa91-66b9", "hidden": false, "primary": true, "targetId": "9f3a-4892-68dc-2701"},
+          {"name": "Infantry", "id": "b37f-5f38-31c6-76e2", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "1c03-0a9f-ffc9-af66", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "Faction: Space Marines", "id": "f57a-9552-202a-2877", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Auric Auxilia", "id": "6223-f9db-b9b7-1e87", "hidden": false, "primary": false, "targetId": "67ca-a112-3af5-8e16"},
+          {"name": "M31", "id": "c495-0a37-6ab6-c989", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 35}],
+        "infoLinks": [{"name": "Support Squad", "id": "a722-3ecf-223c-916a", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Auric Auxilia Colonel",
+            "id": "2f40-2707-4273-c4b3",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "8725-5338-33a3-6a11-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8725-5338-33a3-6a11-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {"name": "Chainsword", "id": "d112-732a-d61c-d969", "hidden": false, "targetId": "19fe-189b-629e-0298", "type": "selectionEntryGroup"},
+              {
+                "name": "Wardens Cuirass",
+                "id": "c5f9-eca1-0f18-80e7",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "2eb3-322c-3022-2688",
+                "type": "selectionEntry",
+                "constraints": [{"id": "12c0-10dd-c302-ab39", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Laspistol", "id": "5e42-c4e0-d7e1-4e74", "hidden": false, "targetId": "00e4-66df-4f2f-0809", "type": "selectionEntryGroup"},
+              {"name": "Carapace Armour", "id": "3b73-9a8f-cd99-297e", "hidden": false, "import": true, "targetId": "2fdd-2493-ba54-c730", "type": "selectionEntry"},
+              {"name": "Frag Grenades", "id": "76b8-4dcd-981b-95c7", "hidden": false, "import": true, "targetId": "d2ae-8075-6bc5-1bdd", "type": "selectionEntry"},
+              {
+                "name": "Refractor field",
+                "id": "40af-1f9e-5605-3002",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "440e-4a18-c4ad-6bb6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "1bb4-dea4-bb18-b529", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Teleport Homer",
+                "id": "7c23-35d3-0c41-e688",
+                "hidden": false,
+                "import": true,
+                "targetId": "1e1f-77bf-b9ab-f22f",
+                "type": "selectionEntry",
+                "constraints": [{"id": "8648-95f1-aee9-156f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              },
+              {
+                "name": "Melta Bomb",
+                "id": "2f46-a906-1f9a-93f6",
+                "hidden": false,
+                "import": true,
+                "targetId": "3649-d648-4d6b-786f",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+              },
+              {
+                "name": "Digital Weapons",
+                "id": "f995-0203-4369-c7e5",
+                "hidden": false,
+                "import": true,
+                "targetId": "7abf-e940-51aa-1a1e",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auric Auxilia Colonel",
+                "id": "8367-a309-b3fb-1703",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "4", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "3", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "3", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "8", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "4", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
       {
         "name": "Captain Lysander",
         "id": "4e75-4284-1942-f997",
+        "comment": "todo: Darnith Lysander 120pts in Unit List",
         "hidden": false,
         "import": true,
         "page": "14",
@@ -256,279 +1699,6 @@
                 "name": "Hammer Strike",
                 "id": "c5ad-880a-a727-8794",
                 "description": "If this unit is your Warlord, it and any attached unit are treated as having rolled a Minor Deviation when arriving via Deep Strike. In addition, Lysander and any attached unit may re-roll charge the rolls the turn they arrive from Deep Strike or Disembark from a Transport",
-                "hidden": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Tor Garadon",
-        "id": "1d58-d1a8-c1de-b9ef",
-        "hidden": false,
-        "import": true,
-        "page": "15",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "HQ", "id": "d8a1-b85c-6e78-6e90", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
-          {"name": "Infantry", "id": "bb76-058c-b827-a2ee", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
-          {"name": "Imperium", "id": "8a55-d63b-fa1b-7b44", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
-          {"name": "[Imperial Fists]", "id": "9d66-aed2-8a22-1ae8", "hidden": false, "primary": false, "targetId": "fbef-5f4b-bee4-b90b"},
-          {"name": "Faction: Space Marines", "id": "2ad0-e7e4-a366-fe75", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
-          {"name": "Captain", "id": "49b4-0a59-48a6-896b", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
-          {"name": "Tor Garadon", "id": "ce1b-732c-0975-ad15", "hidden": false, "primary": false, "targetId": "cc4f-c05a-a9da-ebbf"},
-          {"name": "M41", "id": "7f2b-4d9c-a0fb-a4ee", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
-          {"name": "Character", "id": "68a0-fb08-21c4-07cd", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
-        ],
-        "constraints": [
-          {
-            "id": "467a-a458-4716-a607",
-            "automatic": false,
-            "field": "selections",
-            "includeChildForces": true,
-            "includeChildSelections": true,
-            "scope": "roster",
-            "shared": true,
-            "type": "max",
-            "value": 1
-          }
-        ],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
-        "infoLinks": [
-          {"name": "Allegiance: Imperial Fists", "id": "dc18-16e2-eafe-1207", "hidden": false, "targetId": "f24a-53b4-8820-3ace", "type": "rule"},
-          {"name": "And they shall know no Fear", "id": "c35d-05bc-ab74-cf06", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
-          {"name": "Character", "id": "7f3a-3c62-2d16-ee1b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
-          {"name": "Relentless", "id": "9fdb-5203-82d4-cdb5", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "fbef-5f4b-bee4-b90b",
-                "childName": "[Imperial Fists]",
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "force",
-                "shared": true,
-                "type": "notInstanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Tor Garadon",
-            "id": "cb98-beee-0a86-826f",
-            "defaultAmount": "1",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "constraints": [
-              {"id": "8467-ebbc-cb2e-d084-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "8467-ebbc-cb2e-d084-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {
-                "name": "Gravis Armour",
-                "id": "a54f-35bb-425a-f01b",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "1618-4349-e229-5a93",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "53d6-9d1d-14d0-9167-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "53d6-9d1d-14d0-9167-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {"name": "Iron Halo", "id": "ff61-1e74-c1df-878c", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
-              {
-                "name": "Wardens Cuirass",
-                "id": "4233-52ea-9e04-fb25",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "2eb3-322c-3022-2688",
-                "type": "selectionEntry",
-                "constraints": [{"id": "7775-cd89-ea82-b68b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
-              },
-              {
-                "name": "Auspex Scanner",
-                "id": "6675-1886-76b5-314e",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c397-e8e5-f71d-2cb0",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "3672-fd37-f3c0-c0a9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3672-fd37-f3c0-c0a9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Grav Gun",
-                "id": "d269-dbe9-13c8-1f24",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "c4da-fd1d-a542-d279",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "7ace-c12e-b1cc-a352-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "7ace-c12e-b1cc-a352-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Bolt Pistol",
-                "id": "527b-ab11-284b-57bc",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "targetId": "ead9-8050-dca8-5b0f",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "537f-1b0c-d520-b454-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "537f-1b0c-d520-b454-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Tor Garadon",
-                "id": "e103-9652-29ee-c326",
-                "hidden": false,
-                "typeId": "8460-92c9-82af-a787",
-                "typeName": "Unit",
-                "characteristics": [
-                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
-                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
-                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
-                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
-                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
-                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
-                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
-                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
-                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
-                  {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Hand of Defiance",
-                "id": "cbe6-93ee-0076-5c86",
-                "defaultAmount": "1",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "baf2-dd40-ebfe-23df-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "baf2-dd40-ebfe-23df-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Hand of Defiance",
-                    "id": "1915-b702-3de1-0438",
-                    "hidden": false,
-                    "typeId": "8fa1-1cd9-5ae1-0e93",
-                    "typeName": "Melee Weapons",
-                    "characteristics": [
-                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-                      {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
-                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-                      {"name": "Rules", "$text": "Master-Crafted, Concussive", "typeId": "cc29-b1e7-88e5-c90f"}
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "The Sentinels of Terra",
-            "id": "b531-3695-51ee-968d",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "0c80-db33-4af1-0441-min",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 0
-              },
-              {
-                "id": "0c80-db33-4af1-0441-max",
-                "automatic": true,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 0
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "modifiers": [
-                  {"affects": "38cd-8c36-35cb-d825", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"},
-                  {"affects": "560f-2dca-57fb-5997", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"},
-                  {"affects": "fa9d-896e-a495-babb", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"}
-                ]
-              }
-            ],
-            "modifiers": [
-              {
-                "field": "0c80-db33-4af1-0441-min",
-                "type": "set",
-                "value": 1,
-                "conditions": [
-                  {
-                    "childId": "544d-0eb3-a4ab-4540",
-                    "childName": "Warlord",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "instanceOf",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "field": "0c80-db33-4af1-0441-max",
-                "type": "set",
-                "value": 1,
-                "conditions": [
-                  {
-                    "childId": "544d-0eb3-a4ab-4540",
-                    "childName": "Warlord",
-                    "field": "selections",
-                    "includeChildSelections": false,
-                    "scope": "unit",
-                    "shared": true,
-                    "type": "instanceOf",
-                    "value": 1
-                  }
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "The Sentinels of Terra",
-                "id": "de1c-b77b-29ad-9b53",
-                "description": "If this unit is your Warlord, all Imperial Fists Infantry, Bike and Walker type units in your army gain the Last Stand special rule.",
                 "hidden": false
               }
             ]
@@ -904,321 +2074,305 @@
             ]
           }
         ]
-      }
-    ],
-    "sharedInfoGroups": [
-      {
-        "name": "Imperial Fists",
-        "id": "de1b-cf81-fa8a-eda4",
-        "hidden": false,
-        "rules": [
-          {
-            "name": "Pain is a Lesson",
-            "id": "63c0-ac52-9214-f423",
-            "description": "• All Imperial Fists army must re-roll successful Feel No Pain rolls made using the Feel no Pain Special rule.\n• If your opponent is Iron Warriors, you must play 1 additional Battle Round of the battle regardless of the battlepack rules.",
-            "hidden": false,
-            "page": "3",
-            "publicationId": "e28b-31b7-b599-f5fe"
-          },
-          {
-            "name": "Chapter Drills",
-            "id": "80d3-80be-9e9b-035a",
-            "description": "All Imperial Fists units in your army gain the following benefits:\n• Imperial Fists units re-roll all to hit rolls of 1 with Bolt Pistol, Boltguns, Heavy Boltguns, Heavy Bolters, Linked Boltguns, Linked Heavy Bolters, Gatebreaker Boltguns and Chainswords.\n• Imperial Fists units gain the Siege Attacker special rule.",
-            "hidden": false,
-            "page": "3",
-            "publicationId": "e28b-31b7-b599-f5fe"
-          }
-        ]
-      }
-    ],
-    "sharedProfiles": [
-      {
-        "name": "Ferromag Shotgun",
-        "id": "4374-a477-4adb-a711",
-        "hidden": false,
-        "page": "5",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Concussive, Rending (6+)", "typeId": "ba87-19e9-d692-6e30"}
-        ]
       },
       {
-        "name": "Fist of Terra",
-        "id": "2a70-c288-1117-5600",
-        "hidden": false,
-        "page": "4",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "typeId": "8fa1-1cd9-5ae1-0e93",
-        "typeName": "Melee Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
-          {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
-          {"name": "Strength", "$text": "10", "typeId": "a10f-8fce-fc56-cafc"},
-          {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
-          {"name": "Rules", "$text": "Unwieldy, Master-Crafted", "typeId": "cc29-b1e7-88e5-c90f"}
-        ]
-      },
-      {
-        "name": "Gatebreaker Boltgun",
-        "id": "7fb6-5ceb-24b1-b89b",
-        "hidden": false,
-        "page": "5",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "typeId": "4425-e2ff-1ce0-83c1",
-        "typeName": "Ranged Weapons",
-        "characteristics": [
-          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
-          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
-          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-          {"name": "Rules", "$text": "Concussive", "typeId": "ba87-19e9-d692-6e30"}
-        ]
-      }
-    ],
-    "sharedRules": [
-      {"name": "Allegiance: Imperial Fists", "id": "f24a-53b4-8820-3ace", "hidden": false},
-      {"name": "Only in Death", "id": "e2cc-9fa2-1358-a888", "description": "A model equipped with this wargear gains the Last Stand special rule.", "hidden": false}
-    ],
-    "sharedSelectionEntries": [
-      {
-        "name": "Imperial Fists",
-        "id": "2e4b-aee9-4a40-d0a7",
+        "name": "Tor Garadon",
+        "id": "1d58-d1a8-c1de-b9ef",
         "hidden": false,
         "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Imperial Fists", "id": "fe7e-350b-4077-39d3", "hidden": false, "targetId": "de1b-cf81-fa8a-eda4", "type": "infoGroup"}],
-        "modifierGroups": [
+        "page": "15",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "d8a1-b85c-6e78-6e90", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "bb76-058c-b827-a2ee", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "8a55-d63b-fa1b-7b44", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Imperial Fists]", "id": "9d66-aed2-8a22-1ae8", "hidden": false, "primary": false, "targetId": "fbef-5f4b-bee4-b90b"},
+          {"name": "Faction: Space Marines", "id": "2ad0-e7e4-a366-fe75", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Captain", "id": "49b4-0a59-48a6-896b", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
+          {"name": "Tor Garadon", "id": "ce1b-732c-0975-ad15", "hidden": false, "primary": false, "targetId": "cc4f-c05a-a9da-ebbf"},
+          {"name": "M41", "id": "7f2b-4d9c-a0fb-a4ee", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "68a0-fb08-21c4-07cd", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
+        ],
+        "constraints": [
           {
-            "type": "and",
-            "modifiers": [
-              {"affects": "entries.fbef-5f4b-bee4-b90b", "field": "add-info", "scope": "force", "type": "add", "value": "de1b-cf81-fa8a-eda4"},
-              {"field": "category", "scope": "force", "type": "add", "value": "fbef-5f4b-bee4-b90b"}
+            "id": "467a-a458-4716-a607",
+            "automatic": false,
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 140}],
+        "entryLinks": [
+          {
+            "name": "Auric Aquilla",
+            "id": "3efa-350a-3500-2344",
+            "hidden": false,
+            "import": true,
+            "targetId": "7c20-9ebc-6a90-a222",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Allegiance: Imperial Fists", "id": "dc18-16e2-eafe-1207", "hidden": false, "targetId": "f24a-53b4-8820-3ace", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "c35d-05bc-ab74-cf06", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Character", "id": "7f3a-3c62-2d16-ee1b", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Relentless", "id": "9fdb-5203-82d4-cdb5", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Terror Scouts",
-        "id": "a5e1-d3ca-a829-fbd2",
-        "hidden": false,
-        "import": true,
-        "page": "4",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "constraints": [{"id": "dab7-c082-07e0-bd13", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-        "rules": [
-          {
-            "name": "Terror Scouts",
-            "id": "82f3-dcbc-5520-b0bd",
-            "description": "A unit with this upgrade gains the Fear (1) and Crusader special rule. In addition, they gain Shock Grenades.\n• A Terror Scout unit may exchange their Astartes Shotguns for Ferromag Shotguns for 1pt per model.",
-            "hidden": false
           }
         ],
         "selectionEntries": [
           {
-            "name": "Ferromag Shotguns",
-            "id": "56a2-9278-fd5e-74ae",
+            "name": "Tor Garadon",
+            "id": "cb98-beee-0a86-826f",
+            "defaultAmount": "1",
             "hidden": false,
             "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "e845-bbc2-fe7a-dc55", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [
+            "type": "model",
+            "constraints": [
+              {"id": "8467-ebbc-cb2e-d084-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8467-ebbc-cb2e-d084-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
               {
-                "name": "Ferromag Shotgun",
-                "id": "3b28-43dd-4b5b-8830",
+                "name": "Gravis Armour",
+                "id": "a54f-35bb-425a-f01b",
+                "defaultAmount": "1",
                 "hidden": false,
-                "targetId": "4374-a477-4adb-a711",
-                "type": "profile",
-                "modifiers": [
+                "import": true,
+                "targetId": "1618-4349-e229-5a93",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "53d6-9d1d-14d0-9167-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "53d6-9d1d-14d0-9167-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Iron Halo", "id": "ff61-1e74-c1df-878c", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
+              {
+                "name": "Wardens Cuirass",
+                "id": "4233-52ea-9e04-fb25",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "2eb3-322c-3022-2688",
+                "type": "selectionEntry",
+                "constraints": [{"id": "7775-cd89-ea82-b68b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Auspex Scanner",
+                "id": "6675-1886-76b5-314e",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c397-e8e5-f71d-2cb0",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3672-fd37-f3c0-c0a9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3672-fd37-f3c0-c0a9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Grav Gun",
+                "id": "d269-dbe9-13c8-1f24",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c4da-fd1d-a542-d279",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "7ace-c12e-b1cc-a352-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7ace-c12e-b1cc-a352-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "527b-ab11-284b-57bc",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ead9-8050-dca8-5b0f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "537f-1b0c-d520-b454-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "537f-1b0c-d520-b454-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Tor Garadon",
+                "id": "e103-9652-29ee-c326",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Hand of Defiance",
+                "id": "cbe6-93ee-0076-5c86",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "baf2-dd40-ebfe-23df-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "baf2-dd40-ebfe-23df-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
                   {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "56a2-9278-fd5e-74ae",
-                        "childName": "Ferromag Shotguns",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
+                    "name": "Hand of Defiance",
+                    "id": "1915-b702-3de1-0438",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Concussive", "typeId": "cc29-b1e7-88e5-c90f"}
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "name": "The Sentinels of Terra",
+            "id": "b531-3695-51ee-968d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "0c80-db33-4af1-0441-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "0c80-db33-4af1-0441-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
               }
             ],
             "modifierGroups": [
               {
                 "type": "and",
                 "modifiers": [
-                  {
-                    "affects": "entries.recursive.f426-979e-1b34-e351.profiles.Ranged Weapons",
-                    "field": "ba87-19e9-d692-6e30",
-                    "join": ", ",
-                    "scope": "unit",
-                    "type": "append",
-                    "value": "Rending (6+)"
-                  },
-                  {"affects": "entries.recursive.f426-979e-1b34-e351", "field": "name", "scope": "unit", "type": "set", "value": "Ferromag Shotguns"},
-                  {"affects": "entries.recursive.f426-979e-1b34-e351.profiles.Ranged Weapons", "field": "name", "scope": "unit", "type": "set", "value": "Ferromag Shotguns"}
+                  {"affects": "38cd-8c36-35cb-d825", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"},
+                  {"affects": "560f-2dca-57fb-5997", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"},
+                  {"affects": "fa9d-896e-a495-babb", "field": "add-info", "scope": "force", "type": "add", "value": "d7a2-f172-14b5-a04c"}
                 ]
               }
             ],
             "modifiers": [
               {
-                "field": "cbdc-411c-cf55-3186",
+                "field": "0c80-db33-4af1-0441-min",
                 "type": "set",
                 "value": 1,
-                "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 1}]
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "0c80-db33-4af1-0441-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Sentinels of Terra",
+                "id": "de1c-b77b-29ad-9b53",
+                "description": "If this unit is your Warlord, all Imperial Fists Infantry, Bike and Walker type units in your army gain the Last Stand special rule.",
+                "hidden": false
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "Ferromag Shotgun",
-        "id": "a681-fc4b-ec1e-2ce8",
-        "hidden": false,
-        "import": true,
-        "page": "",
-        "type": "upgrade",
-        "infoLinks": [{"name": "Ferromag Shotgun", "id": "1bf5-9180-ee02-5302", "hidden": false, "targetId": "4374-a477-4adb-a711", "type": "profile"}]
-      },
-      {
-        "name": "Boarding Shield",
-        "id": "af00-058f-ea9c-dfae",
-        "hidden": false,
-        "import": true,
-        "page": "4",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "constraints": [{"id": "b940-7b11-d32a-2186", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
-        "rules": [
-          {
-            "name": "Boarding Shield",
-            "id": "cdbf-afa3-914c-9f38",
-            "description": "A model equipped with this wargear gains a 5+ Invulnerable save. If at least 3 models in a unit are equipped with Boarding Shields, all charges against the equipped unit are treated as Disordered Charges.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Wardens Cuirass",
-        "id": "2eb3-322c-3022-2688",
-        "hidden": false,
-        "import": true,
-        "page": "4",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "constraints": [{"id": "917d-6cee-84c4-7e65", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [
-          {
-            "name": "Wardens Cuirass",
-            "id": "6ce7-6448-d314-3062",
-            "description": "A model with this wargear may re-roll 1 failed Armour save roll per Phase.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Auric Aquilla",
-        "id": "7c20-9ebc-6a90-a222",
-        "hidden": false,
-        "import": true,
-        "page": "4",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "constraints": [
-          {
-            "id": "1af4-4e6f-a28f-f61c",
-            "automatic": false,
-            "field": "selections",
-            "includeChildSelections": false,
-            "scope": "parent",
-            "shared": true,
-            "type": "max",
-            "value": 1
-          }
         ],
-        "rules": [{"name": "Auric Aquilla", "id": "1dc1-18df-e186-7a8c", "description": "A model equipped with this wargear gains a 6+ Invulnerable save.", "hidden": false}]
-      },
-      {
-        "name": "Fist of Terra",
-        "id": "a219-a77b-7c5e-78ec",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Fist of Terra", "id": "8b28-bf4f-9492-7a15", "hidden": false, "targetId": "2a70-c288-1117-5600", "type": "profile"}]
-      },
-      {
-        "name": "Gatebreaker Boltgun",
-        "id": "3cb2-a886-0f81-fa45",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Gatebreaker Boltgun", "id": "10e4-b8b4-a1cf-1fc9", "hidden": false, "targetId": "7fb6-5ceb-24b1-b89b", "type": "profile"}]
-      },
-      {
-        "name": "Indomitable",
-        "id": "9efa-f447-8749-929d",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "rules": [
+        "selectionEntryGroups": [
           {
-            "name": "Indomitable",
-            "id": "c05f-def0-7a25-18ad",
-            "description": "A Warlord with this trait and any attached unit gains the Crusader special rule. In addition, any combat they are involved in which would be lost is considered a tied combat instead.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Stubborn Heroism",
-        "id": "b137-aa16-b4e7-9655",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Stubborn Heroism",
-            "id": "19c4-4d09-dbaf-25f2",
-            "description": "The Warlord and any attached unit gain the Stubborn and Counter-Attack special rules.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Superior Architect",
-        "id": "144e-f5e5-aea2-978d",
-        "hidden": false,
-        "import": true,
-        "page": "9",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "rules": [
-          {
-            "name": "Superior Architect",
-            "id": "56de-09b5-1256-fe00",
-            "description": "All Fortification type units in your army gain a 5+ Invulnerable Save. In addition, you may include 1 additional Fortification slot in your army per 500pts.",
-            "hidden": false
+            "name": "Relic",
+            "id": "a463-ffad-a89a-3020",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "name": "Imperial Fists Relics",
+                "id": "70d8-cddf-392d-0bdd",
+                "hidden": false,
+                "import": true,
+                "targetId": "745e-3f85-b48d-8dac",
+                "type": "selectionEntryGroup"
+              }
+            ]
           }
         ]
       }
@@ -2255,6 +3409,160 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Standard",
+        "id": "d261-7065-66bb-4b37",
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "a1f6-b2af-cd45-f2ef",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "unit",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Narthecium",
+            "id": "3dfe-3207-ff9d-1ec3",
+            "hidden": false,
+            "import": true,
+            "targetId": "f239-97a0-fdf2-e8c2",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Chapter Banner",
+            "id": "c082-8bf3-a789-3b1b",
+            "hidden": false,
+            "import": true,
+            "targetId": "ff10-eb40-1ad8-0521",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          }
+        ]
+      },
+      {
+        "name": "Laspistol",
+        "id": "00e4-66df-4f2f-0809",
+        "defaultSelectionEntryId": "af2d-b2c8-b589-bcad",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "9338-7ae8-27de-5ac2-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "9338-7ae8-27de-5ac2-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Grav Pistol",
+            "id": "548b-53c2-a302-1a78",
+            "hidden": false,
+            "import": true,
+            "targetId": "4095-0464-a8c4-96f1",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {"name": "Las Pistol", "id": "af2d-b2c8-b589-bcad", "hidden": false, "import": true, "targetId": "c468-84ae-6ed3-1806", "type": "selectionEntry"},
+          {
+            "name": "Hand Flamer",
+            "id": "e5e9-da97-06ec-8759",
+            "hidden": false,
+            "import": true,
+            "targetId": "be5e-26aa-f44a-412c",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {
+            "name": "Plasma Pistol",
+            "id": "b4fc-f756-49fd-948b",
+            "hidden": false,
+            "import": true,
+            "targetId": "3407-02d2-18aa-4a22",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          }
+        ]
+      },
+      {
+        "name": "Chainsword",
+        "id": "19fe-189b-629e-0298",
+        "defaultSelectionEntryId": "bdfc-ce66-b97f-9aad",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "406c-589e-27ec-7ab1-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "406c-589e-27ec-7ab1-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Power Fist",
+            "id": "b1ac-9494-d08d-4351",
+            "hidden": false,
+            "import": true,
+            "targetId": "e38e-0c5b-3e05-b098",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+          },
+          {"name": "Chainsword", "id": "bdfc-ce66-b97f-9aad", "hidden": false, "import": true, "targetId": "f82a-555a-d38f-b930", "type": "selectionEntry"},
+          {
+            "name": "Power Sword",
+            "id": "a45b-ce62-9f30-d0aa",
+            "hidden": false,
+            "import": true,
+            "targetId": "84dd-49d6-4915-6b09",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {
+            "name": "Power Axe",
+            "id": "9719-8fd5-0b81-6acf",
+            "hidden": false,
+            "import": true,
+            "targetId": "6dff-d1d6-7194-b1d0",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
           }
         ]
       }

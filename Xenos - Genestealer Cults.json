@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "b130-8bb7-8c88-c520",
-    "revision": 3,
+    "revision": 4,
     "type": "catalogue",
     "catalogueLinks": [
       {"name": "Imperium - Imperial Guard", "id": "07c6-d097-6732-93db", "targetId": "ae00-f16b-1c93-5c92", "type": "catalogue"},
@@ -469,7 +469,15 @@
           }
         ]
       },
-      {"name": "Firestorm Redoubt", "id": "b329-2eba-f8dd-60af", "hidden": false, "import": true, "targetId": "49f7-9dac-8dc2-9275", "type": "selectionEntry"},
+      {
+        "name": "Firestorm Redoubt",
+        "id": "b329-2eba-f8dd-60af",
+        "hidden": false,
+        "import": true,
+        "targetId": "49f7-9dac-8dc2-9275",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "583f-1199-4213-a8cc", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}]
+      },
       {"name": "Guardsmen Squad", "id": "5c0e-4cf0-e028-bc29", "hidden": false, "import": true, "targetId": "c9f2-3ec6-e33e-4bb6", "type": "selectionEntry"},
       {"name": "Veteran Squad", "id": "b9a1-1911-6241-c6a6", "hidden": false, "import": true, "targetId": "da32-b25f-c134-7603", "type": "selectionEntry"},
       {"name": "Conscript Squad", "id": "c879-0c34-1cd9-7421", "hidden": false, "import": true, "targetId": "b614-bf56-8da1-4bd5", "type": "selectionEntry"},
@@ -635,7 +643,18 @@
         "type": "selectionEntry"
       },
       {"name": "Colossus Bombard", "id": "a655-c4ff-88e1-2b51", "hidden": false, "import": true, "targetId": "eaf7-afee-856a-ec4a", "type": "selectionEntry"},
-      {"name": "Tarantula Battery", "id": "b83b-d676-bf49-e3e2", "hidden": false, "import": true, "targetId": "22e8-02bc-ea6a-5938", "type": "selectionEntry"},
+      {
+        "name": "Tarantula Battery",
+        "id": "b83b-d676-bf49-e3e2",
+        "hidden": false,
+        "import": true,
+        "targetId": "22e8-02bc-ea6a-5938",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "[Regiment]", "id": "5044-efdb-7278-dea5", "hidden": false, "primary": false, "targetId": "60cd-2858-1bf3-8543"},
+          {"name": "Faction: Imperial Guard", "id": "11d2-c814-0bc8-a05e", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}
+        ]
+      },
       {"name": "Super Heavy Tank Section", "id": "4513-28ea-8d06-92ca", "hidden": false, "import": true, "targetId": "a0f1-2d0d-a9cf-d277", "type": "selectionEntry"},
       {
         "name": "Baneblade Super Heavy Tank",
@@ -646,8 +665,24 @@
         "type": "selectionEntry"
       },
       {"name": "Fortification Section", "id": "4a53-ad5d-db8c-dc72", "hidden": false, "import": true, "targetId": "e414-e363-9271-53ea", "type": "selectionEntry"},
-      {"name": "Bastion", "id": "91bf-8f28-372f-8b11", "hidden": false, "import": true, "targetId": "0d8e-a3d7-2ded-d14d", "type": "selectionEntry"},
-      {"name": "Aegis Defence Line", "id": "ed67-9d91-1cb9-e56b", "hidden": false, "import": true, "targetId": "11dc-3912-eaa6-c10e", "type": "selectionEntry"},
+      {
+        "name": "Bastion",
+        "id": "91bf-8f28-372f-8b11",
+        "hidden": false,
+        "import": true,
+        "targetId": "0d8e-a3d7-2ded-d14d",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "84e7-ca8b-c8a1-5301", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}]
+      },
+      {
+        "name": "Aegis Defence Line",
+        "id": "ed67-9d91-1cb9-e56b",
+        "hidden": false,
+        "import": true,
+        "targetId": "11dc-3912-eaa6-c10e",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "fcb3-0414-8c82-a8fc", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}]
+      },
       {"name": "Point Defence Turrets", "id": "626d-0b42-4dc7-8268", "hidden": false, "import": true, "targetId": "344c-7014-50f7-ccd5", "type": "selectionEntry"},
       {
         "name": "Command Section",

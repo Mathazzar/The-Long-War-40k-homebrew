@@ -345,7 +345,15 @@
       {"name": "Platoon Command Squad", "id": "91fb-efb0-6337-1405", "hidden": false, "import": true, "targetId": "ab11-269a-e0c0-79f3", "type": "selectionEntry"},
       {"name": "Rough Rider Command Squad", "id": "d6c5-efc3-6e88-ba80", "hidden": false, "import": true, "targetId": "6358-211f-92e0-5c5e", "type": "selectionEntry"},
       {"name": "Leman Russ Tank Commander", "id": "01b4-218a-a36a-da12", "hidden": false, "import": true, "targetId": "8ece-2f6b-73af-fab2", "type": "selectionEntry"},
-      {"name": "Firestorm Redoubt", "id": "7434-77d1-1436-a2b5", "hidden": false, "import": true, "targetId": "49f7-9dac-8dc2-9275", "type": "selectionEntry"},
+      {
+        "name": "Firestorm Redoubt",
+        "id": "7434-77d1-1436-a2b5",
+        "hidden": false,
+        "import": true,
+        "targetId": "49f7-9dac-8dc2-9275",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "ad1e-d252-b550-d39f", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}]
+      },
       {"name": "Lord Solar Leontus", "id": "9e98-e889-1066-fb84", "hidden": false, "import": true, "targetId": "8684-4e14-bac3-cd48", "type": "selectionEntry"},
       {"name": "Scion Command Squad", "id": "a1ec-2785-8344-a305", "hidden": false, "import": true, "targetId": "f4e3-84c6-4ecb-c696", "type": "selectionEntry"},
       {"name": "Infantry Section", "id": "e128-532f-1811-7b4c", "hidden": false, "import": true, "targetId": "9f15-2db3-08c9-2117", "type": "selectionEntry"},
@@ -445,7 +453,18 @@
         "type": "selectionEntry"
       },
       {"name": "Colossus Bombard", "id": "1e17-8c09-bb05-0d42", "hidden": false, "import": true, "targetId": "eaf7-afee-856a-ec4a", "type": "selectionEntry"},
-      {"name": "Tarantula Battery", "id": "72f3-709e-78b6-3759", "hidden": false, "import": true, "targetId": "22e8-02bc-ea6a-5938", "type": "selectionEntry"},
+      {
+        "name": "Tarantula Battery",
+        "id": "72f3-709e-78b6-3759",
+        "hidden": false,
+        "import": true,
+        "targetId": "22e8-02bc-ea6a-5938",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "[Regiment]", "id": "88d4-d526-a217-9f0a", "hidden": false, "primary": false, "targetId": "60cd-2858-1bf3-8543"},
+          {"name": "Faction: Imperial Guard", "id": "f4ed-f601-f086-6444", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}
+        ]
+      },
       {
         "name": "Baneblade Super Heavy Tank",
         "id": "efcc-03fc-b4f4-cfac",
@@ -456,8 +475,24 @@
       },
       {"name": "Super Heavy Tank Section", "id": "82b9-9f33-458e-ea74", "hidden": false, "import": true, "targetId": "a0f1-2d0d-a9cf-d277", "type": "selectionEntry"},
       {"name": "Fortification Section", "id": "cb54-fdf1-4950-320b", "hidden": false, "import": true, "targetId": "e414-e363-9271-53ea", "type": "selectionEntry"},
-      {"name": "Bastion", "id": "ebe8-a6bb-409b-b373", "hidden": false, "import": true, "targetId": "0d8e-a3d7-2ded-d14d", "type": "selectionEntry"},
-      {"name": "Aegis Defence Line", "id": "3e24-a0b2-b7f9-fc4e", "hidden": false, "import": true, "targetId": "11dc-3912-eaa6-c10e", "type": "selectionEntry"},
+      {
+        "name": "Bastion",
+        "id": "ebe8-a6bb-409b-b373",
+        "hidden": false,
+        "import": true,
+        "targetId": "0d8e-a3d7-2ded-d14d",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "263f-c91a-b208-3efd", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}]
+      },
+      {
+        "name": "Aegis Defence Line",
+        "id": "3e24-a0b2-b7f9-fc4e",
+        "hidden": false,
+        "import": true,
+        "targetId": "11dc-3912-eaa6-c10e",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Imperial Guard", "id": "3a1f-80ea-ac7c-0556", "hidden": false, "primary": false, "targetId": "c97a-f2a9-b9c5-1141"}]
+      },
       {"name": "Point Defence Turrets", "id": "7b67-d9ee-2b93-ad32", "hidden": false, "import": true, "targetId": "344c-7014-50f7-ccd5", "type": "selectionEntry"}
     ],
     "publications": [{"name": "Long War - Codex Supplement Raven Guard", "id": "2341-8754-2493-838d", "hidden": false, "publisher": "5.0"}],
@@ -3765,14 +3800,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "1a89-b9e7-f553-9a7d",
-                "childName": "Raven Guard",
+                "childId": "95f3-9989-88bf-42cb",
+                "childName": "[Raven Guard]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

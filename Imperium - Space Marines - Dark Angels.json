@@ -5625,14 +5625,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "c7b7-b755-3afa-865f",
-                "childName": "Dark Angels",
+                "childId": "6e84-25be-0f58-4c5e",
+                "childName": "[Dark Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

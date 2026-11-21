@@ -7396,14 +7396,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "100c-98ec-dcff-076d",
-                "childName": "Salamanders",
+                "childId": "4db2-c5b4-e890-1d82",
+                "childName": "[Salamanders]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -7538,14 +7538,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "100c-98ec-dcff-076d",
-                "childName": "Salamanders",
+                "childId": "4db2-c5b4-e890-1d82",
+                "childName": "[Salamanders]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

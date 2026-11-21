@@ -514,7 +514,15 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [{"name": "Blood Angels", "id": "b62d-60ee-4c55-ef96", "hidden": false, "targetId": "91e7-1544-e2b7-9e54", "type": "infoGroup"}],
-        "modifiers": [{"affects": "entries.forces.recursive.9ccb-08c2-c256-ec0a", "field": "add-info", "scope": "force", "type": "add", "value": "91e7-1544-e2b7-9e54"}]
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"field": "category", "scope": "force", "type": "add", "value": "9ccb-08c2-c256-ec0a"},
+              {"affects": "entries.forces.recursive.9ccb-08c2-c256-ec0a", "field": "add-info", "scope": "force", "type": "add", "value": "91e7-1544-e2b7-9e54"}
+            ]
+          }
+        ]
       },
       {
         "name": "Death Company",
@@ -3996,14 +4004,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "69c3-944c-6e99-d38c",
-                "childName": "Blood Angles",
+                "childId": "9ccb-08c2-c256-ec0a",
+                "childName": "[Blood Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]
@@ -4399,14 +4407,14 @@
             "value": true,
             "conditions": [
               {
-                "childId": "69c3-944c-6e99-d38c",
-                "childName": "Blood Angles",
+                "childId": "9ccb-08c2-c256-ec0a",
+                "childName": "[Blood Angels]",
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
+                "includeChildForces": false,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
-                "type": "lessThan",
+                "type": "notInstanceOf",
                 "value": 1
               }
             ]

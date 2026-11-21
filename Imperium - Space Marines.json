@@ -406,10 +406,28 @@
                 "childId": "94c6-d794-5572-523f",
                 "childName": "[Red Scorpions]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
                 "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "4f29-107b-38dd-2e74",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "cfe5-a685-5c79-6caf",
+                "childName": "Siege Assault",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
@@ -545,7 +563,43 @@
       },
       {"name": "Eliminator Squad", "id": "cfe4-0112-2e86-9895", "hidden": false},
       {"name": "Centurion Squad", "id": "025f-72f2-6b51-c246", "hidden": false},
-      {"name": "Centurions", "id": "e7db-0262-4926-f0b1", "hidden": false},
+      {
+        "name": "Centurions",
+        "id": "e7db-0262-4926-f0b1",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "007c-11ea-4811-1c71",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "007c-11ea-4811-1c71",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "cfe5-a685-5c79-6caf",
+                "childName": "Siege Assault",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
       {"name": "Tactical Terminator Squad", "id": "75a2-8dab-75cd-b717", "hidden": false},
       {"name": "Assault Terminator Squad", "id": "0498-fe7e-77f1-efd7", "hidden": false},
       {"name": "Relic Terminator Squad", "id": "0df9-79f3-7dfd-4994", "hidden": false},
@@ -963,7 +1017,7 @@
                 "childId": "94c6-d794-5572-523f",
                 "childName": "[Red Scorpions]",
                 "field": "selections",
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "scope": "force",
                 "shared": true,
                 "type": "instanceOf",
@@ -983,7 +1037,7 @@
                     "childId": "94c6-d794-5572-523f",
                     "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
                     "type": "instanceOf",
@@ -1111,7 +1165,7 @@
                     "childId": "94c6-d794-5572-523f",
                     "childName": "[Red Scorpions]",
                     "field": "selections",
-                    "includeChildSelections": true,
+                    "includeChildSelections": false,
                     "scope": "force",
                     "shared": true,
                     "type": "instanceOf",
@@ -1431,6 +1485,18 @@
         "hidden": false,
         "targetId": "2a1f-7d1f-338a-93da",
         "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "29b2-9b90-e3b2-d524",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          }
+        ],
         "entryLinks": [
           {
             "name": "Chapter Supplements Unit Wargear",
@@ -1439,6 +1505,54 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Elite",
+            "id": "38c9-9de9-e22f-c717",
+            "hidden": false,
+            "import": true,
+            "targetId": "c9f9-3940-2fc2-709e",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "cfe5-a685-5c79-6caf",
+                    "childName": "Siege Assault",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "29b2-9b90-e3b2-d524",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "cfe5-a685-5c79-6caf",
+                "childName": "Siege Assault",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -1820,6 +1934,79 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Troop",
+            "id": "753c-fdea-2ddd-6ad5",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "infoLinks": [
+              {
+                "name": "Support Squad",
+                "id": "419c-2eaf-7c39-58df",
+                "hidden": false,
+                "targetId": "b206-387f-6a4e-2a67",
+                "type": "rule",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "cfe5-a685-5c79-6caf",
+                        "childName": "Siege Assault",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "94da-d01e-4899-6ca8",
+                        "childName": "Pride of the Chapter",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "cfe5-a685-5c79-6caf",
+                        "childName": "Siege Assault",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -4781,7 +4968,129 @@
           {"name": "[Chapter]", "id": "b96d-30be-6ae1-5c45", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
           {"name": "Fire Support", "id": "9614-6cc4-3ea8-906e", "hidden": false, "primary": false, "targetId": "9d11-10f0-2d96-59e3"}
         ]
-      }
+      },
+      {
+        "name": "Bastion",
+        "id": "cd69-a666-6e33-d330",
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "targetId": "0d8e-a3d7-2ded-d14d",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Space Marines", "id": "8ddf-88c2-3842-c02a", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Firestorm Redoubt",
+        "id": "8735-c916-ce27-3c99",
+        "hidden": false,
+        "import": true,
+        "page": "23",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "targetId": "49f7-9dac-8dc2-9275",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Faction: Space Marines", "id": "e1f4-8066-7ff8-5923", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aegis Defence Line",
+        "id": "aa8a-b186-d586-ab5d",
+        "hidden": false,
+        "import": true,
+        "page": "22",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "targetId": "11dc-3912-eaa6-c10e",
+        "type": "selectionEntry",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fbef-5f4b-bee4-b90b",
+                "childName": "[Imperial Fists]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "Arquitor Bombard", "id": "b97d-3537-caf0-3d3c", "hidden": false, "import": true, "targetId": "0a9a-ca6f-0c23-a8f1", "type": "selectionEntry"},
+      {
+        "name": "Captain Lysander",
+        "id": "0847-4451-a594-d9cc",
+        "hidden": false,
+        "import": true,
+        "targetId": "4e75-4284-1942-f997",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord", "id": "69c2-2989-cc66-3856", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Tor Garadon",
+        "id": "7403-c579-e4ff-f608",
+        "hidden": false,
+        "import": true,
+        "targetId": "1d58-d1a8-c1de-b9ef",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord", "id": "d6a3-fb52-9d95-9dfa", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Huscarl",
+        "id": "753d-b955-e1bf-dd34",
+        "hidden": false,
+        "import": true,
+        "targetId": "c92c-76f1-ab0c-223c",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Warlord", "id": "dcfd-d52c-f616-8838", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"},
+          {"name": "Sub Commander", "id": "413c-0d69-b0bb-ce5e", "hidden": false, "import": true, "targetId": "30fa-606a-fde9-2f19", "type": "selectionEntry"}
+        ]
+      },
+      {"name": "Auric Auxilia Colonel", "id": "45a6-a362-2d0d-6f25", "hidden": false, "import": true, "targetId": "8416-0258-0943-d27b", "type": "selectionEntry"},
+      {"name": "Auric Auxilia", "id": "0d57-b6ad-f52f-ed19", "hidden": false, "import": true, "targetId": "b95e-ef34-981c-cc0c", "type": "selectionEntry"}
     ],
     "publications": [{"name": "The Long War - Codex Space Marines", "id": "1606-03fb-e01d-e0cf", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
@@ -5272,7 +5581,8 @@
                 ]
               },
               {"name": "Dark Angels", "id": "5ab0-50ad-856e-6003", "hidden": false, "import": true, "targetId": "c7b7-b755-3afa-865f", "type": "selectionEntry"},
-              {"name": "Imperial Fists", "id": "b01a-eb26-103d-ab74", "hidden": false, "import": true, "targetId": "2e4b-aee9-4a40-d0a7", "type": "selectionEntry"}
+              {"name": "Imperial Fists", "id": "b01a-eb26-103d-ab74", "hidden": false, "import": true, "targetId": "2e4b-aee9-4a40-d0a7", "type": "selectionEntry"},
+              {"name": "Blood Angles", "id": "f6ea-b1a4-1bf5-d539", "hidden": false, "import": true, "targetId": "69c3-944c-6e99-d38c", "type": "selectionEntry"}
             ],
             "modifiers": [
               {
@@ -34944,36 +35254,6 @@
           {"name": "Infantry", "id": "f6d5-e9d6-c9fa-0cc3", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 50}],
-        "entryLinks": [
-          {
-            "name": "Force Organization: Troop",
-            "id": "753c-fdea-2ddd-6ad5",
-            "hidden": false,
-            "import": true,
-            "targetId": "cd9e-d590-95bd-2dfd",
-            "type": "selectionEntry",
-            "modifiers": [
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
-                  {
-                    "childId": "94da-d01e-4899-6ca8",
-                    "childName": "Pride of the Chapter",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {"name": "Firing Protocols (x)", "id": "a172-30bd-3048-f916", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"},
           {"name": "Combat Squads", "id": "1f0a-549e-b76f-35b3", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"},
@@ -40032,7 +40312,27 @@
             "hidden": false,
             "import": true,
             "targetId": "933f-ebb5-31af-1abe",
-            "type": "selectionEntryGroup"
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "affects": "a5e1-d3ca-a829-fbd2",
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "f509-3640-726b-e5b7",
+                    "childName": "Scout Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -40641,7 +40941,93 @@
             "hidden": false,
             "import": true,
             "targetId": "c6a2-8452-540d-0a52",
-            "type": "selectionEntryGroup"
+            "type": "selectionEntryGroup",
+            "modifiers": [
+              {
+                "affects": "dce3-27dd-8182-115f",
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "b445-e70f-9300-286e",
+                        "childName": "Tactical Squad",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "9c8e-c289-8d28-cf75",
+                        "childName": "Veteran Squad",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "affects": "af00-058f-ea9c-dfae",
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b445-e70f-9300-286e",
+                    "childName": "Tactical Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "affects": "9e84-bb4e-0109-fc36",
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "e615-33d8-dabc-1bcd",
+                        "childName": "Space Marine Captain",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "4a59-0aa3-cb44-5abb",
+                        "childName": "Space Marine Lieutenant",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
