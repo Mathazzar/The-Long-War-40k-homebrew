@@ -5,7 +5,7 @@
     "battleScribeVersion": "2.03",
     "library": true,
     "publicationId": "2f45-00bc-b53c-c859",
-    "revision": 22,
+    "revision": 23,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Default Category", "id": "default-category"},
@@ -933,6 +933,66 @@
           {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
           {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
           {"name": "Rules", "$text": "Shred, Sunder, Unwieldy, Two Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+        ]
+      },
+      {
+        "name": "Plasma Cannon",
+        "id": "f50d-f370-27c5-5bb9",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Blast (Small), Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Conversion Beamer",
+        "id": "3f3c-417a-c1a9-934d",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Conversion", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Volkite Saker",
+        "id": "8b73-7e20-dd8e-1f49",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "6", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Neutron Blaster",
+        "id": "a426-0b4e-dca0-cd14",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Sunder, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
         ]
       }
     ],
@@ -3228,23 +3288,7 @@
         "page": "17",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Plasma Cannon",
-            "id": "f50d-f370-27c5-5bb9",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "7", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Blast (Small), Gets Hot!", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Plasma Cannon", "id": "0f80-4262-c594-7959", "hidden": false, "targetId": "f50d-f370-27c5-5bb9", "type": "profile"}]
       },
       {
         "name": "Plasma Gun",
@@ -3648,23 +3692,7 @@
         "page": "21",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Conversion Beamer",
-            "id": "3f3c-417a-c1a9-934d",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "48", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "2", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Conversion", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Conversion Beamer", "id": "8c40-e05a-3959-2191", "hidden": false, "targetId": "3f3c-417a-c1a9-934d", "type": "profile"}]
       },
       {
         "name": "Combi Flamer",
@@ -4198,23 +4226,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Volkite Saker",
-            "id": "8b73-7e20-dd8e-1f49",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "6", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "6", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Deflagrate", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Volkite Saker", "id": "c17a-29f1-85c9-b79c", "hidden": false, "targetId": "8b73-7e20-dd8e-1f49", "type": "profile"}]
       },
       {
         "name": "Linked Anvilus Autocannon",
@@ -4247,23 +4259,7 @@
         "import": true,
         "type": "upgrade",
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-        "profiles": [
-          {
-            "name": "Neutron Blaster",
-            "id": "a426-0b4e-dca0-cd14",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "10", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Sunder, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Neutron Blaster", "id": "1891-429e-895a-8528", "hidden": false, "targetId": "a426-0b4e-dca0-cd14", "type": "profile"}]
       },
       {
         "name": "Battle Cannon",

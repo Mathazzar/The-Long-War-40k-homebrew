@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "6d84-fac5-77c6-2cdc",
-    "revision": 7,
+    "revision": 8,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "0e79-b452-6d4b-0244", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -11148,46 +11148,6 @@
         ]
       },
       {
-        "name": "Automedicae Bionics",
-        "id": "78d1-30e6-3a32-95c6",
-        "hidden": false,
-        "import": true,
-        "page": "5",
-        "publicationId": "6d84-fac5-77c6-2cdc",
-        "type": "upgrade",
-        "constraints": [{"id": "90bb-0813-fa9f-7849", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
-        "rules": [
-          {
-            "name": "Automedicae Bionics",
-            "id": "3829-2f32-8d7e-ab87",
-            "description": "A model equipped with this wargear gains the Regeneration special rule.",
-            "hidden": false,
-            "page": ""
-          }
-        ]
-      },
-      {
-        "name": "Cyber familiar",
-        "id": "17f0-b185-00f7-03af",
-        "defaultAmount": "1",
-        "hidden": false,
-        "import": true,
-        "page": "5",
-        "publicationId": "6d84-fac5-77c6-2cdc",
-        "type": "upgrade",
-        "constraints": [{"id": "be9a-e6d8-40f8-5f40", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [
-          {
-            "name": "Cyber familiar",
-            "id": "d48d-c924-f029-145d",
-            "description": "The equipped model gains +1 to any Invulnerable saves it has (to a max of 3+). In addition, the equipped model may re-roll 1 of the dice when performing the Leadership test for a Machine Rite.",
-            "hidden": false,
-            "page": ""
-          }
-        ]
-      },
-      {
         "name": "Mechadentrites",
         "id": "c2b3-6e0b-07af-68cb",
         "defaultAmount": "1",
@@ -14662,6 +14622,8 @@
         "page": "20",
         "publicationId": "6d84-fac5-77c6-2cdc",
         "entryLinks": [
+          {"name": "Rite of Locomotion (Machine Rite)", "id": "24f8-6cda-1651-109a", "hidden": false, "targetId": "d3e7-38dc-3538-ce10", "type": "selectionEntry"},
+          {"name": "Rite of Destruction (Machine Rite)", "id": "1a8e-b79b-a5fe-c519", "hidden": false, "targetId": "d7a6-b4be-721a-4bb8", "type": "selectionEntry"},
           {
             "name": "Rite of Reloading (Machine Rite)",
             "id": "4071-9e89-d3d6-6e72",
@@ -14693,42 +14655,6 @@
             "import": true,
             "targetId": "9048-fd1a-9e31-03aa",
             "type": "selectionEntry"
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Rite of Destruction (Machine Rite)",
-            "id": "d7a6-b4be-721a-4bb8",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "1c0c-f63b-e147-24f0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
-            "rules": [
-              {
-                "name": "Rite of Destruction",
-                "id": "32ca-4f53-c62d-8413",
-                "description": "When this Rite is performed successfully, select 1 enemy Vehicle, Walker, Knight, Titan or Aircraft unit within 12”. The target unit takes D6, Strength 1, AP- automatic hits. These hits are resolved with the Haywire (4+) special rule. Only Invulnerable saves may be made against these attacks.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "Rite of Locomotion (Machine Rite)",
-            "id": "d3e7-38dc-3538-ce10",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "ae48-c660-75e7-4354", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
-            "rules": [
-              {
-                "name": "Rite of Locomotion",
-                "id": "dc8b-ef4f-c20e-91b6",
-                "description": "When this Rite is performed successfully, select a Vehicle, Automata, Walker or Aircraft unit within 3” of the unit performing this Rite or a unit they embarked upon may immediately make a Normal Move. However, the selected unit may not Shoot in the Shooting Phase or Charge in the Charge Phase.",
-                "hidden": false
-              }
-            ]
           }
         ]
       },

@@ -1,0 +1,4223 @@
+{
+  "catalogue": {
+    "name": "Imperium - Space Marines - Iron Hands",
+    "id": "935c-9f41-efac-ccfa",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-a003-176c-de1f-4eba",
+    "gameSystemRevision": 22,
+    "library": true,
+    "publicationId": "8190-e097-f8d4-566c",
+    "revision": 1,
+    "type": "catalogue",
+    "catalogueLinks": [{"name": "Imperium - shared rules", "id": "5532-5a60-0ef4-c174", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
+    "categoryEntries": [
+      {"name": "[Iron Hands]", "id": "d6b5-16f9-ff80-5764", "hidden": false},
+      {"name": "Ancient Bulwark", "id": "95c0-e8ed-b661-b594", "hidden": false},
+      {"name": "Super Heavy Assault", "id": "971f-61a8-751d-d7d4", "hidden": false},
+      {
+        "name": "Iron Father Kardan Stronos",
+        "id": "b75f-cfcc-71d6-66b6",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "1561-575b-8f76-ed91",
+            "automatic": false,
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {"name": "Iron Father", "id": "ed6e-a208-f154-06fd", "hidden": false},
+      {
+        "name": "Iron Father Malkaan Ferrios",
+        "id": "0026-edb6-6691-85ef",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "281c-fbc0-21a2-de64",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {"name": "Iron Captain Caanok Var", "id": "4b20-f80b-38a1-fcbb", "hidden": false},
+      {"name": "Vaylund Cal", "id": "a498-e599-7e8a-86a0", "hidden": false},
+      {"name": "[Sons of Medusa]", "id": "4cb4-7cb8-5dc1-83c9", "hidden": false},
+      {"name": "Morlocks", "id": "1ebb-81c6-385e-6ef7", "hidden": false},
+      {
+        "name": "SH",
+        "id": "014e-7b8f-3162-7078",
+        "hidden": true,
+        "constraints": [
+          {
+            "id": "935d-f1cd-0a46-4dc0",
+            "automatic": false,
+            "field": "selections",
+            "includeChildSelections": false,
+            "message": "Your army must include at least 1 Vehicle with the Super Heavy (x) special rule.",
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "0cf6-9378-2b04-fafd",
+            "field": "selections",
+            "includeChildSelections": true,
+            "message": "You must include 3 Infantry type units per vehicle in your Army with the Super Heavy (x) special rule.",
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "971f-61a8-751d-d7d4",
+                "childName": "Super Heavy Assault",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"field": "935d-f1cd-0a46-4dc0", "type": "set", "value": 1},
+              {
+                "field": "0cf6-9378-2b04-fafd",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "560f-2dca-57fb-5997",
+                    "childName": "Infantry",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "force",
+                    "shared": true,
+                    "value": 3
+                  }
+                ]
+              },
+              {"field": "0cf6-9378-2b04-fafd", "type": "increment", "value": 1}
+            ]
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {"name": "Morlocks", "id": "3d99-3d32-5cfb-ec09", "hidden": false, "targetId": "fa9a-ec8e-fc06-7ead", "type": "selectionEntry"},
+      {"name": "Iron Father Vaylund Cal", "id": "c123-7898-a05f-3ee3", "hidden": false, "targetId": "071f-3a87-f8bd-63cc", "type": "selectionEntry"},
+      {"name": "Iron Father Malkaan Ferrios", "id": "f0ca-81b4-f136-1296", "hidden": false, "targetId": "4a53-fd9a-862c-320b", "type": "selectionEntry"},
+      {"name": "Iron Father Kardan Stronos", "id": "ca22-7a54-76aa-ea05", "hidden": false, "targetId": "ebad-a5d9-e971-edc6", "type": "selectionEntry"},
+      {"name": "Iron Captain Caanok Var", "id": "e646-d6ce-2104-0605", "hidden": false, "targetId": "75a2-1633-f65b-2995", "type": "selectionEntry"},
+      {"name": "Helfathers", "id": "82e2-e6ca-c495-64ec", "hidden": false, "targetId": "f745-8e88-f30c-6098", "type": "selectionEntry"}
+    ],
+    "publications": [{"name": "The Long War – Codex Supplement Iron Hands", "id": "8190-e097-f8d4-566c", "hidden": false, "publisher": "5.0"}],
+    "sharedInfoGroups": [
+      {
+        "name": "Iron Hands",
+        "id": "c29b-071c-8ae8-37b7",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Bitter History",
+            "id": "b7f3-b54d-21be-b21d",
+            "description": "• An Iron Hands army gains the Limited: 1 per army special rule on the following units:\n o Tactical Terminators.\n o Assault Terminators.\n• Iron Hands Space Marine Captains may not purchase the Chapter Master upgrade.\n• Iron Hands Space Marine Lieutenants may not purchase the Chaplain upgrade.",
+            "hidden": false,
+            "page": "3",
+            "publicationId": "8190-e097-f8d4-566c"
+          },
+          {
+            "name": "Flesh is Weak",
+            "id": "aca8-119c-3b43-c95a",
+            "description": "All Iron Hands units in your army gain the following benefits:\n• All Infantry, Bike, Walker and Cavalry type units gain the Bionics Wargear (which confers the Feel no Pain (6+) special rule).\n• All Vehicle, Aircraft type units ignore any results of Crew Injury on the Vehicle damage table and treat it as a Superficial damage result instead.",
+            "hidden": false,
+            "page": "3",
+            "publicationId": "8190-e097-f8d4-566c"
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Graviton Shredder",
+        "id": "c386-8c72-a942-fe62",
+        "hidden": false,
+        "page": "6",
+        "publicationId": "8190-e097-f8d4-566c",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Haywire Stormbolter",
+        "id": "02ee-3db5-92ea-7725",
+        "hidden": false,
+        "page": "6",
+        "publicationId": "8190-e097-f8d4-566c",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      },
+      {
+        "name": "Haywire Boltgun",
+        "id": "22a7-21b3-34c8-942e",
+        "hidden": false,
+        "page": "6",
+        "publicationId": "8190-e097-f8d4-566c",
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {"name": "Allegiance: Iron Hands", "id": "6954-afe0-9ba5-a0a3", "hidden": false, "page": "3", "publicationId": "8190-e097-f8d4-566c"},
+      {
+        "name": "Gorgon Terminator Armour",
+        "id": "c309-85b8-d8e6-efdc",
+        "description": "This wargear confers a 2+ Armour save and a 5+ Invulnerable save. The model gains the Relentless, Bulky (2) and Deep Strike special rules. A model equipped with this wargear may not perform Sweeping Advances. When a model with this wargear makes a Successful save in the Shooting Phase, all enemy units within 6” of the model count as being hit by a weapon with the Blind special rule. The model gains the Terminator Keyword.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Iron Hands",
+        "id": "0201-874d-8bc8-9a94",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Iron Hands", "id": "d9de-0448-7d40-8ec1", "hidden": false, "targetId": "c29b-071c-8ae8-37b7", "type": "infoGroup"}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "entries.d6b5-16f9-ff80-5764", "field": "add-info", "scope": "force", "type": "add", "value": "c29b-071c-8ae8-37b7"},
+              {"field": "category", "scope": "force", "type": "add", "value": "d6b5-16f9-ff80-5764"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Father",
+        "id": "778f-e033-09a4-28a0",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7341-184e-4ce2-9378",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 55}],
+        "entryLinks": [
+          {
+            "name": "Servo Arm",
+            "id": "58c5-dc96-b2ea-d46c",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "f298-43ba-623e-e090",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "6c5b-d817-bcf1-cb85-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "6c5b-d817-bcf1-cb85-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {"affects": "entries.recursive.profiles.Unit", "field": "bc55-c58d-b53a-233c", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "f7cb-9e55-a62c-25ed", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "85c9-0630-c2cc-126e", "scope": "unit", "type": "increment", "value": 1},
+              {"affects": "entries.recursive.profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "unit", "type": "increment", "value": 1},
+              {"field": "category", "scope": "model", "type": "add", "value": "f41c-295d-a9b1-b72c"},
+              {"field": "category", "scope": "model", "type": "add", "value": "69c3-b571-197c-4f99"}
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "warning",
+            "type": "add",
+            "value": "{unit} must be your Warlord",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "sortIndex": 2,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "778f-e033-09a4-28a0",
+                    "childName": "Iron Father",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "sortIndex": 1,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Iron Father",
+            "id": "5225-f97d-6f16-40cb",
+            "description": "A unit with this upgrade gains +1 to their Ballistic Skill (BS), Weapon Skill (WS), Wounds (W), Attacks (A) and Leadership (LD) characteristics. The unit gains a Servo Arm. Additionally, the unit gains the Battle Smith (1), Priest (1), Hatred, Stubborn, Zealot and Master of Command special rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Gorgon Terminator Armour",
+        "id": "7f53-3641-6a84-c927",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "upgrade",
+        "infoLinks": [{"name": "Gorgon Terminator Armour", "id": "9531-c766-0017-36f5", "hidden": false, "targetId": "c309-85b8-d8e6-efdc", "type": "rule"}]
+      },
+      {
+        "name": "Blessed Autosimulacra",
+        "id": "7e6e-ae0f-61fe-adae",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "upgrade",
+        "constraints": [{"id": "313f-a145-4501-b36d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Blessed Autosimulacra",
+            "id": "1f7d-06e9-7cc7-5b34",
+            "description": "A model equipped with this wargear gains the Regeneration Special rule. In addition, each time the unit suffers a Wound or Penetrating hit, it can roll a D6. On a 5+ that Wound or Penetrating hit is ignored.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Graviton Shredder",
+        "id": "4cf6-bd7c-99e5-c9c9",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Graviton Shredder", "id": "3c9e-0555-2bf1-6f5b", "hidden": false, "targetId": "c386-8c72-a942-fe62", "type": "profile"}]
+      },
+      {
+        "name": "Haywire Stormbolter",
+        "id": "27e5-7272-7807-d20e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Haywire Stormbolter", "id": "bcc5-1a55-8cb5-a2df", "hidden": false, "targetId": "02ee-3db5-92ea-7725", "type": "profile"}]
+      },
+      {
+        "name": "Haywire Boltgun",
+        "id": "5976-9c0c-4712-f931",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Haywire Boltgun", "id": "d8c0-e88f-e255-fef8", "hidden": false, "targetId": "22a7-21b3-34c8-942e", "type": "profile"}]
+      },
+      {
+        "name": "Adept of the Omnissiah",
+        "id": "9e29-a950-d0f3-dfd2",
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "upgrade",
+        "modifiers": [{"field": "category", "scope": "model", "type": "add", "value": "69c3-b571-197c-4f99"}],
+        "rules": [
+          {
+            "name": "Adept of the Omnissiah",
+            "id": "585c-3bb6-0fa3-f9d3",
+            "description": "The Warlord with this trait gains the Battle Smith (1) special rule. If they already have the Battle Smith (x) special rule, increase the value of (x) by 1.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "All Flesh is Weakness",
+        "id": "1d27-388f-0bd5-0d1d",
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "All Flesh is Weakness",
+            "id": "3d5e-7121-28ec-18ba",
+            "description": "The Warlord with this trait gains the Feel no Pain (4+) special rule. In addition, the Warlord gains the Battle-Hardened special rule.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Targeting Protocols",
+        "id": "b3ee-33f4-38f2-978b",
+        "hidden": false,
+        "import": true,
+        "page": "11",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "upgrade",
+        "rules": [
+          {
+            "name": "Targeting Protocols",
+            "id": "178b-56a6-218f-8d22",
+            "description": "A Warlord with this trait and any attached unit always makes Snap Shots at Ballistic Skill (BS) 2 instead of 1. In addition, the Warlord and any attached unit gain +6” to the range of all Shooting weapons they are equipped with except for Grenade type weapons.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Helfathers",
+        "id": "f745-8e88-f30c-6098",
+        "hidden": false,
+        "import": true,
+        "page": "23",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Elite", "id": "f092-ba47-e4cc-b002", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Infantry", "id": "b804-be72-25b0-8958", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "b0c4-3b20-1651-90da", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Iron Hands]", "id": "0551-ac01-dae0-279d", "hidden": false, "primary": false, "targetId": "d6b5-16f9-ff80-5764"},
+          {"name": "Faction: Space Marines", "id": "3bc4-dc8f-e464-de11", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Morlocks", "id": "2261-b847-4496-6d7f", "hidden": false, "primary": false, "targetId": "1ebb-81c6-385e-6ef7"},
+          {"name": "M31", "id": "ce2f-4943-d146-ad35", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
+        ],
+        "constraints": [{"id": "8695-3895-567d-d554", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 130}],
+        "entryLinks": [
+          {
+            "name": "Force Organization: Free",
+            "id": "a368-e4a7-b166-edeb",
+            "hidden": false,
+            "import": true,
+            "targetId": "4e6e-a84c-60c4-47e9",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "8c6d-7969-861c-a061-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "8c6d-7969-861c-a061-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "778f-e033-09a4-28a0",
+                    "childName": "Iron Father",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "8c6d-7969-861c-a061-min", "type": "set", "value": 0},
+                  {"field": "8c6d-7969-861c-a061-max", "type": "set", "value": 0},
+                  {"field": "hidden", "type": "set", "value": true}
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Allegiance: Iron Hands", "id": "2b4a-0365-e4fd-c548", "hidden": false, "targetId": "6954-afe0-9ba5-a0a3", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "5aa5-b50e-527d-f96d", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Bulky (x)", "id": "0a6e-8d16-89b4-258e", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Expendable", "id": "e769-cb14-e786-db1e", "hidden": false, "targetId": "10fa-7459-7b04-1f93", "type": "rule"},
+          {"name": "Feel no Pain", "id": "bc5a-b2b4-f094-d3ff", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Relentless", "id": "171c-ae55-aa6e-044d", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Deep Strike", "id": "f1a3-99be-5519-6607", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Custodians of the Iron Council",
+            "id": "7b76-e683-2911-78b2",
+            "description": "This unit may be joined by Iron Hands units with the Character special rule even if they are not Automata type. While an Infantry type character is attached to this unit, they ignore the standard rules for Automata targeting for Shooting and Charging. This unit does not take up a Force Organization slot if your army includes a Space Marine Captain upgraded to an Iron Father.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Helfathers",
+            "id": "2e6b-040c-ba4a-ffd5",
+            "defaultAmount": "2",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "33fa-d243-b803-fb32-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "33fa-d243-b803-fb32-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+            ],
+            "entryLinks": [
+              {"name": "Enhanced Bionics", "id": "6714-e304-6d29-450e", "hidden": false, "import": true, "targetId": "e4b6-a746-d25a-10e7", "type": "selectionEntry"},
+              {
+                "name": "Cyber familiar",
+                "id": "2f61-46d9-c4e8-49d1",
+                "hidden": false,
+                "import": true,
+                "targetId": "17f0-b185-00f7-03af",
+                "type": "selectionEntry",
+                "constraints": [{"id": "1291-679d-e6c5-babe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Storm Bolter", "id": "6f88-dcff-3c4e-bddc", "hidden": false, "import": true, "targetId": "9c22-8a6a-5b2e-46e3", "type": "selectionEntryGroup"}
+            ],
+            "profiles": [
+              {
+                "name": "Helfathers",
+                "id": "f462-4e0b-e669-4486",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "5", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "5", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "3", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "3", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Indomitus Terminator Armour",
+                "id": "c48b-9d6a-1f95-673d",
+                "defaultSelectionEntryId": "0672-89f5-abfe-2397",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "bd68-15cf-2358-5cf4-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "bd68-15cf-2358-5cf4-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Gorgon Terminator Armour",
+                    "id": "7a1d-7458-380c-c6c5",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7f53-3641-6a84-c927",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Indomitus Terminator Armour",
+                    "id": "5832-65d7-352d-35dc",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "5048-d77b-37d4-15b9",
+                    "type": "selectionEntry"
+                  }
+                ]
+              },
+              {
+                "name": "Power Axe",
+                "id": "a0b3-3553-df7c-2150",
+                "collapsible": true,
+                "defaultSelectionEntryId": "7cf3-cfba-dd5a-ce60",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "2a2a-356f-d172-ac74-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "2a2a-356f-d172-ac74-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Thunder Hammer",
+                    "id": "a3f6-7c61-8992-6202",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4e5d-8e80-1671-f1f9",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+                  },
+                  {
+                    "name": "Power Fist",
+                    "id": "e40b-bd0b-63da-6897",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e38e-0c5b-3e05-b098",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {"name": "Power Axe", "id": "7edc-321b-f56d-99e9", "hidden": false, "import": true, "targetId": "6dff-d1d6-7194-b1d0", "type": "selectionEntry"},
+                  {
+                    "name": "Chainfist",
+                    "id": "734d-f259-c78f-7f8d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d8ec-e3b8-112b-1e9d",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}]
+                  },
+                  {
+                    "name": "Power Maul",
+                    "id": "1a91-0996-5a85-86f0",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2607-4972-6fde-3757",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Captain Caanok Var",
+        "id": "75a2-1633-f65b-2995",
+        "hidden": false,
+        "import": true,
+        "page": "20",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "87bf-abf1-d53c-9043", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "3a1e-87fa-d275-c673", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "5a16-a7fb-27ca-142e", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Iron Hands]", "id": "527d-9019-e943-40d7", "hidden": false, "primary": false, "targetId": "d6b5-16f9-ff80-5764"},
+          {"name": "Faction: Space Marines", "id": "d184-0fbc-6c3e-88ef", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Captain", "id": "e341-3cdc-d7d9-d2bc", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
+          {"name": "Iron Captain Caanok Var", "id": "0398-265f-9434-26b2", "hidden": false, "primary": false, "targetId": "4b20-f80b-38a1-fcbb"},
+          {"name": "M41", "id": "f1c6-3451-2ab7-2c77", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "95ba-2ce4-3f18-5286", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
+        ],
+        "constraints": [
+          {
+            "id": "c668-a144-5f3d-e3d9",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 115}],
+        "entryLinks": [{"name": "Iron Hands Wargear", "id": "1288-1c4f-f611-7f5b", "hidden": false, "import": true, "targetId": "ec92-8eb3-c6b1-374a", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {"name": "Rage", "id": "389e-97aa-222d-9919", "hidden": false, "targetId": "6796-7bce-f463-d591", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "bc85-532d-8625-5640", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Bulky (x)", "id": "be53-e8e1-8293-3214", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Character", "id": "2d12-5723-4419-e5ce", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Feel no Pain", "id": "87a8-869e-7124-7a57", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Allegiance: Iron Hands", "id": "e460-6936-d5a6-2c19", "hidden": false, "targetId": "6954-afe0-9ba5-a0a3", "type": "rule"},
+          {"name": "Deep Strike", "id": "25df-d7b0-9048-587a", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Relic",
+            "id": "3383-2e1f-2b94-0963",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "41be-a197-848b-0baf",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [{"name": "Iron Hands Relics", "id": "78cd-191d-f43d-8cc9", "hidden": false, "import": true, "targetId": "719d-5e95-51c1-8f45", "type": "selectionEntryGroup"}]
+          },
+          {
+            "name": "Iron Captain of Clan Avernii",
+            "id": "4c8e-ee35-6c21-4d4a",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "1a87-cc5b-1427-28c5-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "1a87-cc5b-1427-28c5-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "1a87-cc5b-1427-28c5-min",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "1a87-cc5b-1427-28c5-max",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "544d-0eb3-a4ab-4540",
+                    "childName": "Warlord",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Iron Captain of Clan Avernii",
+                "id": "a9e4-b123-dd1b-62fd",
+                "description": "If this unit is your Warlord, all Veteran Keyword units exchange their Bionics for Enhanced Bionics.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Iron Captain Caanok Var",
+            "id": "26c7-7364-faac-5b96",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "0327-28af-967e-f06d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0327-28af-967e-f06d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Storm Bolter",
+                "id": "fa61-8b94-d09e-02e6",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "c829-b809-d33d-4738",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "db01-c54c-a547-4790-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "db01-c54c-a547-4790-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Iron Halo", "id": "5153-a71b-d0aa-dc3d", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
+              {"name": "Enhanced Bionics", "id": "63d2-d3e4-8f56-57d1", "hidden": false, "import": true, "targetId": "e4b6-a746-d25a-10e7", "type": "selectionEntry"},
+              {
+                "name": "Cyber familiar",
+                "id": "b25c-f381-03fc-cde8",
+                "hidden": false,
+                "import": true,
+                "targetId": "17f0-b185-00f7-03af",
+                "type": "selectionEntry",
+                "constraints": [{"id": "d252-cc43-a62c-dd49", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Indomitus Terminator Armour",
+                "id": "95b5-ead0-e11f-28da",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "5048-d77b-37d4-15b9",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6f17-f8e6-06b8-461c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6f17-f8e6-06b8-461c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Iron Hands Wargear",
+                "id": "3578-7291-1779-b726",
+                "hidden": false,
+                "import": true,
+                "targetId": "a044-bf4a-6a36-b7c6",
+                "type": "selectionEntryGroup",
+                "modifiers": [{"affects": "af00-058f-ea9c-dfae", "field": "hidden", "type": "set", "value": true}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Iron Captain Caanok Var",
+                "id": "c4c9-2c38-6154-3582",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "5", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Power Tetsubo",
+                "id": "efa9-ac13-6805-044a",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "f9a9-d28a-7b01-e966-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f9a9-d28a-7b01-e966-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Power Tetsubo",
+                    "id": "8a92-3593-5f50-bae8",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Crushing (4+), Concussive", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Broad Spectrum Enhanced Bionics",
+                "id": "3376-ce2f-ba2f-30db",
+                "comment": "todo: No profile provided in reference",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "9305-08aa-4e8b-9f7c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "9305-08aa-4e8b-9f7c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "rules": [
+                  {
+                    "name": "Broad Spectrum Data Tether",
+                    "id": "3822-e112-b52d-b27a",
+                    "comment": "todo: No way to take provided in reference",
+                    "description": "A unit with this wargear and all friendly Iron Hands units within 12” may re-roll Panic tests.",
+                    "hidden": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Father Kardan Stronos",
+        "id": "ebad-a5d9-e971-edc6",
+        "hidden": false,
+        "import": true,
+        "page": "18",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "6223-249f-efdf-a284", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "643f-7f34-1655-903d", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "9aac-7d06-9e62-9d89", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Iron Hands]", "id": "e965-5eda-c510-8388", "hidden": false, "primary": false, "targetId": "d6b5-16f9-ff80-5764"},
+          {"name": "Faction: Space Marines", "id": "4328-7df8-9c3f-de0e", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Captain", "id": "e7c0-bd76-a709-7db1", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
+          {"name": "Iron Father Kardan Stronos", "id": "7041-295d-822d-3be9", "hidden": false, "primary": false, "targetId": "b75f-cfcc-71d6-66b6"},
+          {"name": "Iron Father", "id": "2aca-9ab3-6758-220d", "hidden": false, "primary": false, "targetId": "ed6e-a208-f154-06fd"},
+          {"name": "Tech-Priest", "id": "453f-9aaa-de2b-dd54", "hidden": false, "primary": false, "targetId": "69c3-b571-197c-4f99"},
+          {"name": "Priest", "id": "c73e-6c97-d0c3-84af", "hidden": false, "primary": false, "targetId": "f41c-295d-a9b1-b72c"},
+          {"name": "Unique", "id": "e643-93af-bce2-bb8a", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M41", "id": "c87d-e6db-fdcb-44d8", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "b099-a2d2-1434-ed8c", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 155}],
+        "entryLinks": [
+          {
+            "name": "Iron Hands Wargear",
+            "id": "8ab0-f812-9c57-a9e3",
+            "hidden": false,
+            "import": true,
+            "targetId": "ec92-8eb3-c6b1-374a",
+            "type": "selectionEntryGroup",
+            "modifiers": [{"affects": "78d1-30e6-3a32-95c6", "field": "hidden", "type": "set", "value": true}]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Character", "id": "c2ea-fa57-4540-32cc", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Allegiance: Iron Hands", "id": "08bb-c7af-0ca8-d55e", "hidden": false, "targetId": "6954-afe0-9ba5-a0a3", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "c0b0-e7d6-0f09-c737", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Master of Command", "id": "839b-1e6c-dc44-5512", "hidden": false, "targetId": "d4d4-4350-213c-409c", "type": "rule"},
+          {"name": "Battle Smith (x)", "id": "62d2-d5aa-c262-e843", "hidden": false, "targetId": "1bae-372c-fb85-7975", "type": "rule"},
+          {"name": "Priest (x)", "id": "78ea-5e74-ff4e-7599", "hidden": false, "targetId": "beb9-b346-8f52-63fe", "type": "rule"},
+          {"name": "Hatred (x)", "id": "b0c7-b7a9-8af3-d813", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
+          {"name": "Zealot", "id": "74e1-3777-8c8f-6a67", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"},
+          {"name": "Stubborn", "id": "c322-f94a-f4f7-9ad1", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
+          {"name": "Rage", "id": "61b7-5bf1-1bb0-8e99", "hidden": false, "targetId": "6796-7bce-f463-d591", "type": "rule"},
+          {"name": "Feel no Pain", "id": "1e56-1b71-6459-b63d", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Regeneration", "id": "1b2b-0caf-6c2c-587b", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "0bbe-e124-3358-88cd", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Iron Father Kardan Stronos",
+            "id": "eb41-ac6f-275c-40a7",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "1e52-ec74-7765-2270-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "1e52-ec74-7765-2270-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Automedicae Bionics",
+                "id": "c657-fc0f-8ef5-b25f",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "78d1-30e6-3a32-95c6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "3e0b-6150-b947-6e96", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+              },
+              {
+                "name": "Artificer Armour",
+                "id": "4c64-6b98-441a-a1db",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "504d-7a9b-cb14-1472",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3808-8218-f17c-315d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3808-8218-f17c-315d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Boltgun",
+                "id": "f9b0-4e6e-0998-015e",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "469c-f449-1e9e-1d6f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "357d-f680-91e5-2e03-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "357d-f680-91e5-2e03-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "fe82-591a-2cbe-cba1",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ead9-8050-dca8-5b0f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6c3a-5818-3cf1-974a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6c3a-5818-3cf1-974a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Flamer",
+                "id": "35c5-9275-6580-9162",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "958b-0867-67db-e40a",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "464f-1e80-328d-9587-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "464f-1e80-328d-9587-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Plasma Pistol",
+                "id": "61f5-13f2-d71d-803d",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "3407-02d2-18aa-4a22",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "d14a-0a45-0703-4191-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d14a-0a45-0703-4191-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Servo Arm",
+                "id": "43a3-fa46-c04d-7a5f",
+                "defaultAmount": "2",
+                "hidden": false,
+                "import": true,
+                "targetId": "f298-43ba-623e-e090",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "62e7-f2a3-d627-47e2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "62e7-f2a3-d627-47e2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ]
+              },
+              {
+                "name": "Bionics",
+                "id": "5442-5e26-6bbc-7661",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "f3dc-8d02-5045-67e3",
+                "type": "selectionEntry",
+                "constraints": [{"id": "0280-950d-86b3-2200", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Iron Halo", "id": "2ee0-51a0-382b-edb6", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"}
+            ],
+            "profiles": [
+              {
+                "name": "Iron Father Kardan Stronos",
+                "id": "b21c-4d22-bc39-179d",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "6", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Axe of Medusa",
+                "id": "bf37-9e19-f5d2-0145",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "d016-aeae-f84e-f948-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d016-aeae-f84e-f948-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Axe of Medusa",
+                    "id": "00f2-33bc-3454-a9f1",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "1", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Two-Handed, Unwieldy, Murderous Strike (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cold Belief in Firepower",
+            "id": "2817-b8be-43f0-013d",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "fbda-e9cc-fb27-bd4b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "fbda-e9cc-fb27-bd4b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "rules": [
+              {
+                "name": "Cold Belief in Firepower",
+                "id": "a054-b986-0141-acde",
+                "description": "If this unit is your Warlord, you may field Razorbacks IFV’s as Elite choices. In addition, any Transport that this unit is Embarked upon may use this units Ballistic Skill (BS) and Weapon Skill (WS) characteristics.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Father Malkaan Ferrios",
+        "id": "4a53-fd9a-862c-320b",
+        "hidden": false,
+        "import": true,
+        "page": "19",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "ca1e-da30-7fa4-517b", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "7e9c-26be-5302-9d97", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "7ac9-65f1-bc0f-a905", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Iron Hands]", "id": "d5ff-aabc-48e4-893c", "hidden": false, "primary": false, "targetId": "d6b5-16f9-ff80-5764"},
+          {"name": "Faction: Space Marines", "id": "6ba6-2377-27af-89c6", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Captain", "id": "5040-e083-92f9-715b", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
+          {"name": "Iron Father Malkaan Ferrios", "id": "5772-b142-af17-1c5e", "hidden": false, "primary": false, "targetId": "0026-edb6-6691-85ef"},
+          {"name": "Iron Father", "id": "6d3c-a2e1-99d2-7a0f", "hidden": false, "primary": false, "targetId": "ed6e-a208-f154-06fd"},
+          {"name": "Tech-Priest", "id": "8e3a-326d-3d77-d061", "hidden": false, "primary": false, "targetId": "69c3-b571-197c-4f99"},
+          {"name": "Priest", "id": "bedc-4413-aa93-0066", "hidden": false, "primary": false, "targetId": "f41c-295d-a9b1-b72c"},
+          {"name": "Unique", "id": "773b-0ba8-9727-c101", "hidden": false, "primary": false, "targetId": "5537-d172-0654-67ea"},
+          {"name": "M41", "id": "d847-411a-6596-9f9a", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "c383-711b-3829-cad9", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"}
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 150}],
+        "entryLinks": [{"name": "Iron Hands Wargear", "id": "ba7a-341d-4955-da99", "hidden": false, "import": true, "targetId": "ec92-8eb3-c6b1-374a", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {"name": "Allegiance: Iron Hands", "id": "b3d5-b960-0cdf-cf73", "hidden": false, "targetId": "6954-afe0-9ba5-a0a3", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "207e-4f5b-eaf0-daca", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Battle Smith (x)", "id": "9a72-0e9b-06df-2838", "hidden": false, "targetId": "1bae-372c-fb85-7975", "type": "rule"},
+          {"name": "Bulky (x)", "id": "14c6-2d39-0559-3171", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Feel no Pain", "id": "7aab-86ac-6d96-5d03", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Hatred (x)", "id": "7fc7-9dd4-b94d-c362", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
+          {"name": "Master of Command", "id": "4d9a-e163-434c-7946", "hidden": false, "targetId": "d4d4-4350-213c-409c", "type": "rule"},
+          {"name": "Priest (x)", "id": "f918-2ef1-d04a-2c0a", "hidden": false, "targetId": "beb9-b346-8f52-63fe", "type": "rule"},
+          {"name": "Stubborn", "id": "7b12-d352-6eb9-26c5", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
+          {"name": "Zealot", "id": "87f5-68d3-1c3d-90dc", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"},
+          {"name": "Character", "id": "9efe-685c-4a98-ec61", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Iron Father Malkaan Ferrios",
+            "id": "9578-c8da-8f9f-9d2d",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "33f2-fa29-34b4-f51c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "33f2-fa29-34b4-f51c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Servo Arm",
+                "id": "82c1-45cd-c6cc-a16d",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "f298-43ba-623e-e090",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "5aea-4d0f-49f0-0165-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "5aea-4d0f-49f0-0165-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {"name": "Iron Halo", "id": "9829-02bb-08bd-1edf", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
+              {
+                "name": "Bionics",
+                "id": "6dae-8e6f-a0d8-80ef",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "f3dc-8d02-5045-67e3",
+                "type": "selectionEntry",
+                "constraints": [{"id": "69ca-77e6-8d37-d487", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Gravis Armour",
+                "id": "04bb-894c-3a7b-197d",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "1618-4349-e229-5a93",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "be54-182b-37a1-8b90-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "be54-182b-37a1-8b90-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Bolt Pistol",
+                "id": "ace6-efcf-6b3b-80ee",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "ead9-8050-dca8-5b0f",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "7d58-f7f6-9a2e-c7ef-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7d58-f7f6-9a2e-c7ef-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Iron Father Malkaan Ferrios",
+                "id": "fd76-fd60-acb9-239d",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "5", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "3", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Gorgons Wrath",
+                "id": "1fa5-c0a1-a9f4-c28a",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "5800-1cdb-4c60-6838-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "5800-1cdb-4c60-6838-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Gorgons Wrath",
+                    "id": "f5e5-3e67-f6f9-7772",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "36", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "5", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "4", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "Pinning, Master-Crafted", "typeId": "ba87-19e9-d692-6e30"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Harrowhand",
+                "id": "dbe7-3a7a-49b7-1bba",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "927d-2f18-6599-1984-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "927d-2f18-6599-1984-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Harrowhand",
+                    "id": "d938-2483-d2f5-35ee",
+                    "hidden": false,
+                    "typeId": "8fa1-1cd9-5ae1-0e93",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                      {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                      {"name": "Strength", "$text": "+2", "typeId": "a10f-8fce-fc56-cafc"},
+                      {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                      {"name": "Rules", "$text": "Master-Crafted, Unwieldy, Two-Handed, Haywire (4+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Iron Father of Clan Rukaan",
+            "id": "be36-5542-8ae0-35ad",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "844f-2165-a625-2798-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "844f-2165-a625-2798-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "rules": [
+              {
+                "name": "Iron Father of Clan Rukaan",
+                "id": "6714-1f03-2ece-5251",
+                "description": "If this unit is your Warlord, you may field Castraferrum Dreadnoughts and Redemptor Dreadnoughts as Heavy Support choices.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Father Vaylund Cal",
+        "id": "071f-3a87-f8bd-63cc",
+        "hidden": false,
+        "import": true,
+        "page": "21",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "HQ", "id": "3ff0-2685-d493-9184", "hidden": false, "primary": true, "targetId": "32ec-1b0c-3325-937c"},
+          {"name": "Infantry", "id": "0a41-4bb7-115f-bb06", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "99c1-67ee-21dd-31c2", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Iron Hands]", "id": "aa92-f6bd-4d26-bedc", "hidden": false, "primary": false, "targetId": "d6b5-16f9-ff80-5764"},
+          {"name": "Faction: Space Marines", "id": "981b-4284-ef08-53d2", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Captain", "id": "ef17-1cdd-817c-eac8", "hidden": false, "primary": false, "targetId": "875f-9975-8052-0495"},
+          {"name": "Vaylund Cal", "id": "633f-0e57-c54b-baae", "hidden": false, "primary": false, "targetId": "a498-e599-7e8a-86a0"},
+          {"name": "Tech-Priest", "id": "c721-0cee-7a07-95c9", "hidden": false, "primary": false, "targetId": "69c3-b571-197c-4f99"},
+          {"name": "Priest", "id": "f9d0-a22a-c354-baa4", "hidden": false, "primary": false, "targetId": "f41c-295d-a9b1-b72c"},
+          {"name": "M41", "id": "8b20-4b16-fcb4-b306", "hidden": false, "primary": false, "targetId": "4218-e2bd-057a-fe69"},
+          {"name": "Character", "id": "bb83-f565-a765-bbb0", "hidden": false, "primary": false, "targetId": "bf2b-7ae1-7518-e819"},
+          {"name": "[Sons of Medusa]", "id": "869c-5d0d-bb82-bb79", "hidden": false, "primary": false, "targetId": "4cb4-7cb8-5dc1-83c9"}
+        ],
+        "constraints": [
+          {
+            "id": "02b9-8b47-646f-e893",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 165}],
+        "entryLinks": [{"name": "Iron Hands Wargear", "id": "9b51-efab-214f-b60a", "hidden": false, "import": true, "targetId": "ec92-8eb3-c6b1-374a", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {"name": "And they shall know no Fear", "id": "c91b-3133-addf-4da9", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Bulky (x)", "id": "2f09-f22b-8288-f90d", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Character", "id": "d255-1c6a-f04e-ab84", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"},
+          {"name": "Deep Strike", "id": "66d0-589d-0baa-6f7d", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Feel no Pain", "id": "95cf-6645-763f-c9fc", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"},
+          {"name": "Allegiance: Iron Hands", "id": "cdce-972b-033a-fc32", "hidden": false, "targetId": "6954-afe0-9ba5-a0a3", "type": "rule"},
+          {"name": "Master of Command", "id": "3548-1c5e-36ad-9353", "hidden": false, "targetId": "d4d4-4350-213c-409c", "type": "rule"},
+          {"name": "Relentless", "id": "31df-ae75-b136-3df0", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Battle Smith (x)", "id": "fb29-dc16-c745-c6de", "hidden": false, "targetId": "1bae-372c-fb85-7975", "type": "rule"},
+          {"name": "Priest (x)", "id": "8765-3034-4848-04c3", "hidden": false, "targetId": "beb9-b346-8f52-63fe", "type": "rule"},
+          {"name": "Hatred (x)", "id": "a2b6-fc68-4387-0f1b", "hidden": false, "targetId": "f482-402e-8720-2134", "type": "rule"},
+          {"name": "Zealot", "id": "a0a5-b6be-e76a-ff00", "hidden": false, "targetId": "b7d5-5524-f50d-cd3b", "type": "rule"},
+          {"name": "Stubborn", "id": "9217-895f-4d14-10ac", "hidden": false, "targetId": "92a5-e1cd-daac-bd41", "type": "rule"},
+          {"name": "Firing Protocols (x)", "id": "0233-f1f9-1cf8-6f70", "hidden": false, "targetId": "0947-7853-b23a-ff17", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Relic",
+            "id": "1cfc-e860-f19d-9f7e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "698f-cb6c-c3f5-9af3",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [{"name": "Iron Hands Relics", "id": "7e7b-1493-2f3b-e026", "hidden": false, "import": true, "targetId": "719d-5e95-51c1-8f45", "type": "selectionEntryGroup"}]
+          },
+          {
+            "name": "Iron Father Vaylund Cal",
+            "id": "fb09-2e49-57f7-26fc",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "6ad4-9ade-1f15-0f67-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "6ad4-9ade-1f15-0f67-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Servo Arm",
+                "id": "7b8a-37fc-80d1-47d2",
+                "defaultAmount": "2",
+                "hidden": false,
+                "import": true,
+                "targetId": "f298-43ba-623e-e090",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "fe6d-68e4-7f12-1eee-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "fe6d-68e4-7f12-1eee-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ]
+              },
+              {"name": "Iron Halo", "id": "ce61-fe9b-0c3c-76aa", "hidden": false, "import": true, "targetId": "e4e6-277e-371d-1ba9", "type": "selectionEntry"},
+              {
+                "name": "Bionics",
+                "id": "b255-ea3c-9aa0-2cab",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "f3dc-8d02-5045-67e3",
+                "type": "selectionEntry",
+                "constraints": [{"id": "23c9-0a0c-8adf-46bd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Flamer",
+                "id": "b4c5-72fb-4e7a-c49a",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "958b-0867-67db-e40a",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "050f-1ee4-c431-a0bd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "050f-1ee4-c431-a0bd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Plasma Pistol",
+                "id": "704f-11f7-06ec-9944",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "3407-02d2-18aa-4a22",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "e80b-65b7-46ed-ec01-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "e80b-65b7-46ed-ec01-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Thunder Hammer",
+                "id": "7c35-8692-440b-8ceb",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "4e5d-8e80-1671-f1f9",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "88f1-019d-6329-f96a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "88f1-019d-6329-f96a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Iron Father Vaylund Cal",
+                "id": "d38a-917d-0042-07f2",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "6", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "6", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "4", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "4", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "5", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "10", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Gravis Honour",
+                "id": "d2ee-8bec-9b29-bd94",
+                "defaultSelectionEntryId": "fb93-c6e2-16fd-e282",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "271e-b26b-52f3-112b-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "271e-b26b-52f3-112b-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {"name": "Gravis Armour", "id": "be16-f9a1-8b19-11d2", "hidden": false, "import": true, "targetId": "1618-4349-e229-5a93", "type": "selectionEntry"},
+                  {"name": "Gorgon Terminator Armour", "id": "08d6-0784-4e35-cf61", "hidden": false, "import": true, "targetId": "7f53-3641-6a84-c927", "type": "selectionEntry"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Iron Father of Clan Atropos",
+            "id": "e4f2-e63e-3052-52eb",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "71c1-17fe-5136-4448-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "71c1-17fe-5136-4448-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "rules": [
+              {
+                "name": "Iron Father of Clan Atropos",
+                "id": "b9d6-1fa1-ac8e-d2e4",
+                "description": "If this unit is your Warlord, Tactical Terminator and Assault Terminator units in your army ignore the Limited: x special rule.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Morlocks",
+        "id": "fa9a-ec8e-fc06-7ead",
+        "hidden": false,
+        "import": true,
+        "page": "22",
+        "publicationId": "8190-e097-f8d4-566c",
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Elite", "id": "59b5-413a-b2b5-cce1", "hidden": false, "primary": true, "targetId": "f907-c80d-2520-e7f7"},
+          {"name": "Infantry", "id": "0b35-8683-b39c-c263", "hidden": false, "primary": false, "targetId": "560f-2dca-57fb-5997"},
+          {"name": "Imperium", "id": "c048-db88-a463-d27f", "hidden": false, "primary": false, "targetId": "cc80-3e62-5e73-265e"},
+          {"name": "[Iron Hands]", "id": "71af-b6a4-11f8-8ba9", "hidden": false, "primary": false, "targetId": "d6b5-16f9-ff80-5764"},
+          {"name": "Faction: Space Marines", "id": "0250-e748-bf78-7a1d", "hidden": false, "primary": false, "targetId": "14ac-ce60-d7a3-b846"},
+          {"name": "Morlocks", "id": "d202-30d6-b7a0-5bc6", "hidden": false, "primary": false, "targetId": "1ebb-81c6-385e-6ef7"},
+          {"name": "M31", "id": "5573-0ad2-7680-bfa3", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"}
+        ],
+        "constraints": [{"id": "1ee4-e417-1719-0170", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 240}],
+        "infoLinks": [
+          {"name": "Allegiance: Iron Hands", "id": "ebb7-4f46-20d1-60e2", "hidden": false, "targetId": "6954-afe0-9ba5-a0a3", "type": "rule"},
+          {"name": "And they shall know no Fear", "id": "5a21-c5e1-1c0a-ea36", "hidden": false, "targetId": "f40b-cc5e-6659-c56e", "type": "rule"},
+          {"name": "Relentless", "id": "d587-08b7-2464-dfed", "hidden": false, "targetId": "bc7d-2fe4-c376-c0ab", "type": "rule"},
+          {"name": "Bulky (x)", "id": "b94b-bd43-3549-8c88", "hidden": false, "targetId": "026a-aaa8-18ac-0d29", "type": "rule"},
+          {"name": "Deep Strike", "id": "97a7-1664-a263-1005", "hidden": false, "targetId": "f6e5-a558-a82c-5982", "type": "rule"},
+          {"name": "Regeneration", "id": "f15c-c1fa-b316-2a4d", "hidden": false, "targetId": "a674-ec4a-7fd9-dae6", "type": "rule"},
+          {"name": "Feel no Pain", "id": "b610-feb1-bf51-ae97", "hidden": false, "targetId": "7f66-39f3-991c-573c", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Morlocks",
+            "id": "150e-a622-6089-2134",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "7e87-f28d-2544-b6f6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "7e87-f28d-2544-b6f6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 5}
+            ],
+            "entryLinks": [
+              {
+                "name": "Automedicae Bionics",
+                "id": "7d1f-04a8-f940-0478",
+                "defaultAmount": "1",
+                "hidden": false,
+                "import": true,
+                "targetId": "78d1-30e6-3a32-95c6",
+                "type": "selectionEntry",
+                "constraints": [{"id": "014a-58fd-6187-5c4a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {"name": "Enhanced Bionics", "id": "de35-425c-86bf-5471", "hidden": false, "import": true, "targetId": "e4b6-a746-d25a-10e7", "type": "selectionEntry"},
+              {
+                "name": "Storm Bolter",
+                "id": "7671-7c51-c896-3d01",
+                "hidden": false,
+                "import": true,
+                "targetId": "9c22-8a6a-5b2e-46e3",
+                "type": "selectionEntryGroup",
+                "entryLinks": [
+                  {
+                    "name": "Autocannon",
+                    "id": "f8f4-f75b-9930-7f30",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2583-e542-e2d4-698d",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "f79d-b383-8d6c-bb77", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+                    "modifiers": [
+                      {
+                        "field": "f79d-b383-8d6c-bb77",
+                        "type": "set",
+                        "value": 0,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "2851-7115-5fcd-3a4d",
+                                "childName": "Volkite Culverin",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "4b58-2b09-3805-2dab",
+                                "childName": "Heavy Flamer",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "db58-d2e2-0963-74bd",
+                                "childName": "Plasma Gun",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy Flamer",
+                    "id": "3b85-2b15-de4f-9c26",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4b58-2b09-3805-2dab",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "6c17-cd98-c1a4-d89e", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                    "modifiers": [
+                      {
+                        "field": "6c17-cd98-c1a4-d89e",
+                        "type": "set",
+                        "value": 0,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "2851-7115-5fcd-3a4d",
+                                "childName": "Volkite Culverin",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "2583-e542-e2d4-698d",
+                                "childName": "Autocannon",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "db58-d2e2-0963-74bd",
+                                "childName": "Plasma Gun",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Plasma Gun",
+                    "id": "7575-08ce-7624-3775",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "db58-d2e2-0963-74bd",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "b327-79eb-cf20-cd1c", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "b327-79eb-cf20-cd1c",
+                        "type": "set",
+                        "value": 0,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "2851-7115-5fcd-3a4d",
+                                "childName": "Volkite Culverin",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "4b58-2b09-3805-2dab",
+                                "childName": "Heavy Flamer",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "2583-e542-e2d4-698d",
+                                "childName": "Autocannon",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Volkite Culverin",
+                    "id": "2ea5-1901-a9b3-6570",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2851-7115-5fcd-3a4d",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "f397-5859-518c-e807", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                    "modifiers": [
+                      {
+                        "field": "f397-5859-518c-e807",
+                        "type": "set",
+                        "value": 0,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "db58-d2e2-0963-74bd",
+                                "childName": "Plasma Gun",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "4b58-2b09-3805-2dab",
+                                "childName": "Heavy Flamer",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "2583-e542-e2d4-698d",
+                                "childName": "Autocannon",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Lightning Claws",
+                    "id": "a3de-b410-0341-b71c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7387-4d1b-e3e4-b301",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Morlocks",
+                "id": "4c1d-8bc1-3c70-7959",
+                "hidden": false,
+                "typeId": "8460-92c9-82af-a787",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6", "typeId": "e165-c63b-1720-081f"},
+                  {"name": "WS", "$text": "5", "typeId": "bc69-d61f-afa3-0ebd"},
+                  {"name": "BS", "$text": "4", "typeId": "f7cb-9e55-a62c-25ed"},
+                  {"name": "S", "$text": "4", "typeId": "0ad1-8e51-6f8f-ec14"},
+                  {"name": "T", "$text": "4", "typeId": "86ae-bb7f-c781-56b5"},
+                  {"name": "W", "$text": "2", "typeId": "85c9-0630-c2cc-126e"},
+                  {"name": "A", "$text": "2", "typeId": "a07e-368b-351c-bc54"},
+                  {"name": "I", "$text": "4", "typeId": "6bc7-a391-2ba3-44f9"},
+                  {"name": "LD", "$text": "9", "typeId": "bc55-c58d-b53a-233c"},
+                  {"name": "Sv", "$text": "2", "typeId": "c9ff-af68-092c-c4b3"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Indomitus Terminator Armour",
+                "id": "7cda-e93c-5559-2cf2",
+                "collapsible": true,
+                "defaultSelectionEntryId": "ebc4-7329-d606-1ba7",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "ff46-1a71-2e59-2bd2-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "ff46-1a71-2e59-2bd2-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Cataphractii Terminator Armour",
+                    "id": "4b58-4bf8-1960-9ee7",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "214e-0f39-2ccd-751e",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Indomitus Terminator Armour",
+                    "id": "77bd-e2b7-87c0-dffd",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "5048-d77b-37d4-15b9",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Tartaros Terminator Armour",
+                    "id": "9113-20e8-7ca5-74f7",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7990-b949-e314-74dc",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {
+                    "name": "Gorgon Terminator Armour",
+                    "id": "ec17-b355-9324-c319",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7f53-3641-6a84-c927",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  }
+                ]
+              },
+              {
+                "name": "Power Fist",
+                "id": "2ece-dee3-8121-17a3",
+                "collapsible": true,
+                "defaultSelectionEntryId": "8e78-acaf-c63c-2c59",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "f8ac-63d3-f9b7-80d7-min",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "f8ac-63d3-f9b7-80d7-max",
+                    "automatic": true,
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Thunder Hammer",
+                    "id": "e7af-4ed7-be38-f924",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4e5d-8e80-1671-f1f9",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+                  },
+                  {"name": "Power Fist", "id": "1d2d-433f-c89f-23ca", "hidden": false, "import": true, "targetId": "e38e-0c5b-3e05-b098", "type": "selectionEntry"},
+                  {"name": "Power Axe", "id": "7c56-c1f3-6690-92e6", "hidden": false, "import": true, "targetId": "6dff-d1d6-7194-b1d0", "type": "selectionEntry"},
+                  {
+                    "name": "Chainfist",
+                    "id": "34d1-99c7-2746-621e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d8ec-e3b8-112b-1e9d",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+                  },
+                  {"name": "Lightning Claws", "id": "198e-cedd-651f-b36f", "hidden": false, "import": true, "targetId": "7387-4d1b-e3e4-b301", "type": "selectionEntry"}
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Iron Hands Machine Rites",
+        "id": "3d3b-6274-ef5c-ffde",
+        "defaultSelectionEntryId": "none",
+        "hidden": false,
+        "page": "10",
+        "publicationId": "8190-e097-f8d4-566c",
+        "entryLinks": [
+          {
+            "name": "Rite of Destruction (Machine Rite)",
+            "id": "a2bd-7f51-1101-f6f8",
+            "hidden": false,
+            "import": true,
+            "targetId": "d7a6-b4be-721a-4bb8",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+          },
+          {
+            "name": "Rite of Repair (Machine Rite)",
+            "id": "6d01-8106-7907-186f",
+            "hidden": false,
+            "import": true,
+            "targetId": "9e4c-7de9-2a09-4097",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+          },
+          {
+            "name": "Rite of Immolation (Machine Rite)",
+            "id": "90df-c2aa-8411-3d2d",
+            "hidden": false,
+            "import": true,
+            "targetId": "f37a-2f6b-c0ca-f251",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rite of Locomotion (Machine Rite)",
+            "id": "579a-f4d6-2322-28a5",
+            "hidden": false,
+            "import": true,
+            "targetId": "d3e7-38dc-3538-ce10",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 0}]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Hands Wargear",
+        "id": "a044-bf4a-6a36-b7c6",
+        "comment": "Model",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Boarding Shield",
+            "id": "10a8-8430-fa17-8c22",
+            "hidden": false,
+            "import": true,
+            "page": "5",
+            "publicationId": "8190-e097-f8d4-566c",
+            "targetId": "af00-058f-ea9c-dfae",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}]
+          },
+          {
+            "name": "Blessed Autosimulacra",
+            "id": "2bef-0cde-8f79-35a3",
+            "hidden": false,
+            "import": true,
+            "page": "5",
+            "publicationId": "8190-e097-f8d4-566c",
+            "targetId": "7e6e-ae0f-61fe-adae",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "0177-02e2-2373-23eb",
+                        "childName": "Vehicle",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "38cd-8c36-35cb-d825",
+                        "childName": "Walker",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "6af1-500e-865d-e08f",
+                        "childName": "Aircraft",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Indomitus Terminator Armour",
+            "id": "dc7e-ba0c-7477-6a19",
+            "hidden": false,
+            "import": true,
+            "targetId": "5048-d77b-37d4-15b9",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "f000-d2ae-28f5-8f48",
+                    "childName": "Sergeant",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "model",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Gorgon Terminator Armour",
+            "id": "b3fa-ee11-417b-a2b2",
+            "hidden": false,
+            "import": true,
+            "page": "5",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [{"id": "b442-5823-df5f-6c05", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "infoLinks": [{"name": "Gorgon Terminator Armour", "id": "620c-7844-8a8a-2cfa", "hidden": false, "targetId": "c309-85b8-d8e6-efdc", "type": "rule"}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "5048-d77b-37d4-15b9",
+                    "childName": "Indomitus Terminator Armour",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              },
+              {"affects": "entries.recursive.5048-d77b-37d4-15b9.rules", "field": "hidden", "scope": "model", "type": "set", "value": true}
+            ]
+          },
+          {
+            "name": "Haywire Stormbolter",
+            "id": "7e33-ceef-1365-afa7",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "b812-87aa-4577-8743", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
+            "infoLinks": [
+              {
+                "name": "Haywire Stormbolter",
+                "id": "26c7-9fc0-ee28-7154",
+                "hidden": false,
+                "targetId": "02ee-3db5-92ea-7725",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "7e33-ceef-1365-afa7",
+                        "childName": "Graviton Shredder",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {"affects": "entries.recursive.c829-b809-d33d-4738", "field": "name", "scope": "model", "type": "prepend", "value": "Haywire"},
+                  {"affects": "entries.recursive.c829-b809-d33d-4738.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "prepend", "value": "Haywire"},
+                  {
+                    "affects": "entries.recursive.c829-b809-d33d-4738.profiles.Ranged Weapons",
+                    "field": "ba87-19e9-d692-6e30",
+                    "scope": "model",
+                    "type": "set",
+                    "value": "Haywire (6+)"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "c829-b809-d33d-4738",
+                    "childName": "Storm Bolter",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Graviton Shredder",
+            "id": "34b3-de7a-e56b-53bc",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "4cb6-aadb-eb19-f319", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
+            "infoLinks": [
+              {
+                "name": "Graviton Shredder",
+                "id": "323e-8c08-7dff-0522",
+                "hidden": false,
+                "targetId": "c386-8c72-a942-fe62",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "34b3-de7a-e56b-53bc",
+                        "childName": "Graviton Shredder",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {"affects": "entries.recursive.c4da-fd1d-a542-d279.profiles.Ranged Weapons", "field": "83a1-168d-3aa3-97f8", "scope": "model", "type": "set", "value": "18"},
+                  {"affects": "entries.recursive.c4da-fd1d-a542-d279", "field": "name", "scope": "model", "type": "set", "value": "Graviton Shredder"},
+                  {"affects": "entries.recursive.c4da-fd1d-a542-d279.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "set", "value": "Graviton Shredder"},
+                  {
+                    "affects": "entries.recursive.c4da-fd1d-a542-d279.profiles.Ranged Weapons",
+                    "field": "96e6-b391-984f-0904",
+                    "scope": "model",
+                    "type": "set",
+                    "value": "Assault"
+                  },
+                  {"affects": "entries.recursive.c4da-fd1d-a542-d279.profiles.Ranged Weapons", "field": "0048-3de8-a98b-d7dd", "scope": "model", "type": "set", "value": "2"}
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "c4da-fd1d-a542-d279",
+                    "childName": "Grav Gun",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Haywire Boltgun",
+            "id": "63db-a904-60d9-cc3f",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "3301-e2fd-e48e-fda5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}],
+            "infoLinks": [
+              {
+                "name": "Haywire Boltgun",
+                "id": "7566-5334-b6ba-5a65",
+                "hidden": false,
+                "targetId": "22a7-21b3-34c8-942e",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "63db-a904-60d9-cc3f",
+                        "childName": "Graviton Shredder",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {"affects": "entries.recursive.469c-f449-1e9e-1d6f", "field": "name", "scope": "model", "type": "prepend", "value": "Haywire"},
+                  {"affects": "entries.recursive.469c-f449-1e9e-1d6f.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "prepend", "value": "Haywire"},
+                  {
+                    "affects": "entries.recursive.469c-f449-1e9e-1d6f.profiles.Ranged Weapons",
+                    "field": "ba87-19e9-d692-6e30",
+                    "scope": "model",
+                    "type": "set",
+                    "value": "Haywire (6+)"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "469c-f449-1e9e-1d6f",
+                    "childName": "Boltgun",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Autocannon (P)",
+            "id": "1bf8-d216-57af-f46f",
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "a488-c819-9f8b-7849",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "2583-e542-e2d4-698d",
+                        "childName": "Autocannon",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "a416-1797-0b52-c519",
+                        "childName": "Predator Tank",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Neutron Blaster",
+                "id": "1cc6-8bca-f2f4-1d4b",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 30}],
+                "infoLinks": [
+                  {
+                    "name": "Neutron Blaster",
+                    "id": "ab6c-cdc6-9614-18d9",
+                    "hidden": false,
+                    "targetId": "a426-0b4e-dca0-cd14",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "1cc6-8bca-f2f4-1d4b",
+                            "childName": "Plasma Cannon",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "4e85-0d56-33e2-acca", "scope": "model", "type": "set", "value": "10"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d", "field": "name", "scope": "model", "type": "set", "value": "Neutron Blaster"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "set", "value": "Neutron Blaster"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "83a1-168d-3aa3-97f8", "scope": "model", "type": "set", "value": "24"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "1fa3-547b-b56c-c34e", "scope": "model", "type": "set", "value": "1"},
+                      {
+                        "affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons",
+                        "field": "ba87-19e9-d692-6e30",
+                        "scope": "model",
+                        "type": "set",
+                        "value": "Sunder, Blast (Small)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Plasma Cannon",
+                "id": "f17e-0dbe-a930-be1d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "infoLinks": [
+                  {
+                    "name": "Plasma Cannon",
+                    "id": "412d-5b0d-68c4-445c",
+                    "hidden": false,
+                    "targetId": "f50d-f370-27c5-5bb9",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "f17e-0dbe-a930-be1d",
+                            "childName": "Plasma Cannon",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons",
+                        "field": "ba87-19e9-d692-6e30",
+                        "scope": "model",
+                        "type": "set",
+                        "value": "Blast (Small), Gets Hot!"
+                      },
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d", "field": "name", "scope": "model", "type": "set", "value": "Plasma Cannon"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "set", "value": "Plasma Cannon"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "0048-3de8-a98b-d7dd", "scope": "model", "type": "set", "value": "1"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "1fa3-547b-b56c-c34e", "scope": "model", "type": "set", "value": "2"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Grav Cannon",
+                "id": "fd50-fd2b-73c7-89b6",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [
+                  {
+                    "name": "Grav Cannon",
+                    "id": "6454-2dbc-e618-6bc5",
+                    "hidden": false,
+                    "targetId": "7c93-f9a2-e580-86c7",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "fd50-fd2b-73c7-89b6",
+                            "childName": "Plasma Cannon",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "4e85-0d56-33e2-acca", "scope": "model", "type": "set", "value": "6"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d", "field": "name", "scope": "model", "type": "set", "value": "Grav Cannon"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "set", "value": "Grav Cannon"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "83a1-168d-3aa3-97f8", "scope": "model", "type": "set", "value": "30"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "1fa3-547b-b56c-c34e", "scope": "model", "type": "set", "value": "3"},
+                      {
+                        "affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons",
+                        "field": "ba87-19e9-d692-6e30",
+                        "scope": "model",
+                        "type": "set",
+                        "value": "Crushing (6+), Haywire (6+)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Conversion Beamer",
+                "id": "ab90-0f14-e40b-96f4",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+                "infoLinks": [
+                  {
+                    "name": "Conversion Beamer",
+                    "id": "d5a6-fc32-ca4f-9a71",
+                    "hidden": false,
+                    "targetId": "3f3c-417a-c1a9-934d",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "ab90-0f14-e40b-96f4",
+                            "childName": "Plasma Cannon",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "4e85-0d56-33e2-acca", "scope": "model", "type": "set", "value": "8"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d", "field": "name", "scope": "model", "type": "set", "value": "Conversion Beamer"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "set", "value": "Conversion Beamer"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "83a1-168d-3aa3-97f8", "scope": "model", "type": "set", "value": "48"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "1fa3-547b-b56c-c34e", "scope": "model", "type": "set", "value": "2"},
+                      {
+                        "affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons",
+                        "field": "ba87-19e9-d692-6e30",
+                        "scope": "model",
+                        "type": "set",
+                        "value": "Conversion"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Melta Cannon",
+                "id": "1c86-b4f1-a701-18fd",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 25}],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "4e85-0d56-33e2-acca", "scope": "model", "type": "set", "value": "8"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d", "field": "name", "scope": "model", "type": "set", "value": "Melta Cannon"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "set", "value": "Melta Cannon"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "83a1-168d-3aa3-97f8", "scope": "model", "type": "set", "value": "24"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "1fa3-547b-b56c-c34e", "scope": "model", "type": "set", "value": "1"},
+                      {
+                        "affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons",
+                        "field": "ba87-19e9-d692-6e30",
+                        "scope": "model",
+                        "type": "set",
+                        "value": "Melta, Blast (Small)"
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Melta Cannon",
+                    "id": "aaea-9954-60c3-4da3",
+                    "hidden": false,
+                    "typeId": "4425-e2ff-1ce0-83c1",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+                      {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                      {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+                      {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+                      {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+                      {"name": "Rules", "$text": "Melta, Blast (Small)", "typeId": "ba87-19e9-d692-6e30"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "1c86-b4f1-a701-18fd",
+                            "childName": "Plasma Cannon",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Volkite Saker",
+                "id": "3b81-a6c4-ba54-e2a7",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+                "infoLinks": [
+                  {
+                    "name": "Volkite Saker",
+                    "id": "949f-c7a2-d9ca-350a",
+                    "hidden": false,
+                    "targetId": "8b73-7e20-dd8e-1f49",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "3b81-a6c4-ba54-e2a7",
+                            "childName": "Plasma Cannon",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "4e85-0d56-33e2-acca", "scope": "model", "type": "set", "value": "6"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d", "field": "name", "scope": "model", "type": "set", "value": "Volkite Saker"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "name", "scope": "model", "type": "set", "value": "Volkite Saker"},
+                      {"affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons", "field": "1fa3-547b-b56c-c34e", "scope": "model", "type": "set", "value": "6"},
+                      {
+                        "affects": "entries.recursive.2583-e542-e2d4-698d.profiles.Ranged Weapons",
+                        "field": "ba87-19e9-d692-6e30",
+                        "scope": "model",
+                        "type": "set",
+                        "value": "Deflgrate"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Hands Wargear",
+        "id": "ec92-8eb3-c6b1-374a",
+        "comment": "Unit",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Bionics",
+            "id": "d9f5-be21-6ab3-1bab",
+            "hidden": true,
+            "import": true,
+            "page": "",
+            "targetId": "f3dc-8d02-5045-67e3",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "b3eb-3555-2581-ddcf-min",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "b3eb-3555-2581-ddcf-max",
+                "automatic": true,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ba7d-58f2-ee40-fc55",
+                        "childName": "Cavalry",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "560f-2dca-57fb-5997",
+                        "childName": "Infantry",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "fa9d-896e-a495-babb",
+                        "childName": "Bike",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "38cd-8c36-35cb-d825",
+                        "childName": "Walker",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {"field": "hidden", "type": "set", "value": false},
+                  {"field": "b3eb-3555-2581-ddcf-min", "type": "set", "value": 1},
+                  {"field": "b3eb-3555-2581-ddcf-max", "type": "set", "value": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Automedicae Bionics",
+            "id": "f6ef-5894-8239-8792",
+            "hidden": false,
+            "import": true,
+            "page": "5",
+            "publicationId": "8190-e097-f8d4-566c",
+            "targetId": "78d1-30e6-3a32-95c6",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "bf2b-7ae1-7518-e819",
+                    "childName": "Character",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cyber familiar",
+            "id": "da6c-32c4-b99b-df1d",
+            "hidden": false,
+            "import": true,
+            "page": "5",
+            "publicationId": "8190-e097-f8d4-566c",
+            "targetId": "17f0-b185-00f7-03af",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "bf2b-7ae1-7518-e819",
+                    "childName": "Character",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Enhanced Bionics",
+            "id": "f402-9508-0e47-bb59",
+            "hidden": false,
+            "import": true,
+            "page": "5",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [{"id": "ffdb-842d-41db-1e6a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "entryLinks": [
+              {
+                "name": "Enhanced Bionics",
+                "id": "3eea-ab87-0c94-f9ac",
+                "exportable": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e4b6-a746-d25a-10e7",
+                "type": "selectionEntry"
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "bf2b-7ae1-7518-e819",
+                    "childName": "Character",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Awakened Machine Spirit",
+            "id": "b57f-07cf-2e02-dc43",
+            "hidden": false,
+            "import": true,
+            "page": "14",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "e292-5b01-4f7b-be98",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 50}],
+            "entryLinks": [
+              {
+                "name": "Iron Hands Machine Rites",
+                "id": "9ec6-761a-f871-16c0",
+                "hidden": false,
+                "import": true,
+                "targetId": "3d3b-6274-ef5c-ffde",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {"affects": "entries.recursive.profiles.Unit", "field": "bc55-c58d-b53a-233c", "scope": "unit", "type": "increment", "value": 1},
+                  {"affects": "entries.recursive.profiles.Unit", "field": "f7cb-9e55-a62c-25ed", "scope": "unit", "type": "increment", "value": 1},
+                  {"affects": "entries.recursive.profiles.Unit", "field": "bc69-d61f-afa3-0ebd", "scope": "unit", "type": "increment", "value": 1},
+                  {"affects": "entries.recursive.profiles.Unit", "field": "a07e-368b-351c-bc54", "scope": "unit", "type": "increment", "value": 1}
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "0177-02e2-2373-23eb",
+                        "childName": "Vehicle",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "971f-61a8-751d-d7d4",
+                        "childName": "Super Heavy Assault",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Awakened Machine Spirit",
+                "id": "78e6-b05f-9931-0b49",
+                "description": "A unit with this upgrade gains +1 to their Ballistic Skill (BS), Weapon Skill (WS), Attacks (A) and Leadership (LD) characteristics. The unit gains the Battle Smith (1) special rule.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Hands Rites of War",
+        "id": "e03a-af68-b0fe-dee1",
+        "flatten": true,
+        "hidden": false,
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Super Heavy Assault",
+            "id": "97e6-3695-69c4-ee93",
+            "hidden": false,
+            "import": true,
+            "page": "13",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "modifiers": [{"field": "category", "scope": "force", "type": "add", "value": "971f-61a8-751d-d7d4"}]
+          },
+          {
+            "name": "Ancient Bulwark",
+            "id": "9cfc-33d2-0deb-b1c2",
+            "hidden": false,
+            "import": true,
+            "page": "13",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "modifiers": [
+              {"field": "category", "scope": "force", "type": "add", "value": "95c0-e8ed-b661-b594"},
+              {
+                "field": "error",
+                "scope": "force",
+                "type": "add",
+                "value": "Your army must include at least 1 Walker type unit per 1,000pts.",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "38cd-8c36-35cb-d825",
+                                "childName": "Walker",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 2
+                              },
+                              {
+                                "childId": "e220-3a56-1eb4-4110",
+                                "childName": "Large (2000 Point Limit)",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "roster",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "type": "and",
+                            "conditionGroups": [
+                              {
+                                "type": "or",
+                                "conditions": [
+                                  {
+                                    "childId": "a344-db50-458b-6942",
+                                    "childName": "Small (1000 Point Limit)",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "roster",
+                                    "shared": true,
+                                    "type": "atLeast",
+                                    "value": 1
+                                  },
+                                  {
+                                    "childId": "7212-ae7b-bd0a-69e5",
+                                    "childName": "Average (1500 Point Limit)",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "roster",
+                                    "shared": true,
+                                    "type": "atLeast",
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ],
+                            "conditions": [
+                              {
+                                "childId": "38cd-8c36-35cb-d825",
+                                "childName": "Walker",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "force",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "9cfc-33d2-0deb-b1c2",
+                        "childName": "Ancient Bulwark",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Hands Warlord Traits",
+        "id": "1ffc-874d-b444-e432",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {"name": "Adept of the Omnissiah", "id": "a7e6-3d13-f85b-5cb6", "hidden": false, "import": true, "targetId": "9e29-a950-d0f3-dfd2", "type": "selectionEntry"},
+          {"name": "All Flesh is Weakness", "id": "cfea-77f2-af08-5f7f", "hidden": false, "import": true, "targetId": "1d27-388f-0bd5-0d1d", "type": "selectionEntry"},
+          {"name": "Targeting Protocols", "id": "7a79-edca-ef3b-8af5", "hidden": false, "import": true, "targetId": "b3ee-33f4-38f2-978b", "type": "selectionEntry"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iron Hands Relics",
+        "id": "719d-5e95-51c1-8f45",
+        "flatten": true,
+        "hidden": false,
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Betrayer’s Bane",
+            "id": "b5af-cb4f-ff0a-4467",
+            "hidden": false,
+            "import": true,
+            "page": "8",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "38f9-3aef-a00a-14cd",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a boltgun equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "469c-f449-1e9e-1d6f",
+                        "childName": "Boltgun",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "b5af-cb4f-ff0a-4467",
+                        "childName": "The Mindforge",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "sortIndex": 1,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Betrayer’s Bane (Bolt)",
+                "id": "55fc-f523-f8dc-1c41",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Rapid Fire", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "24", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "4", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "5", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Master-Crafted, Combi", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              },
+              {
+                "name": "Betrayer’s Bane (Melta)",
+                "id": "6133-b04e-13cf-57e0",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "2", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "12", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "8", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "1", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Master-Crafted, Combi, Melta", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Iron Stone",
+            "id": "e621-3c43-b270-ce42",
+            "hidden": false,
+            "import": true,
+            "page": "7",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "48c3-af4d-6ecd-4900",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "The Iron Stone",
+                "id": "1039-e855-be27-c6d0",
+                "description": "At the start of the equipped model Shooting Phase, select a singe friendly Vehicle, Aircraft or Walker within 12”. Immediately apply 1 of the effects of the Rite of Repair (see Machine Rites) without performing a Machine Rite. This does not count towards the number of Machine Rites a unit can perform per Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Gorgons Chain",
+            "id": "2192-24aa-f3c0-25bd",
+            "hidden": false,
+            "import": true,
+            "page": "7",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "4fcc-41a0-27e5-908b",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "rules": [
+              {
+                "name": "The Gorgons Chain",
+                "id": "8149-332c-fea4-3435",
+                "description": "Attacks against a model with this wargear is resolved at -1 Strength.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Tempered Helm",
+            "id": "0c1a-911f-f041-9e72",
+            "hidden": false,
+            "import": true,
+            "page": "7",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "1669-330f-2e78-0314",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "The Tempered Helm",
+                "id": "fddc-6c9c-ec22-21ee",
+                "description": "A model with this wargear may select a single friendly unit within 24” at the start of the Movement Phase. That unit automatically passes all Pinning and Panic tests until the start of your next Movement Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Aegis Ferrum",
+            "id": "0128-610c-5bd3-8a7a",
+            "hidden": false,
+            "import": true,
+            "page": "8",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "ae8c-75d9-52bb-2971",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "The Aegis Ferrum",
+                "id": "6fec-dcae-0cd4-b967",
+                "description": "A model with this wargear ignores the first wound assigned to it per Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Mindforge",
+            "id": "ac56-4581-2ec6-4683",
+            "hidden": false,
+            "import": true,
+            "page": "8",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "5196-4539-28c5-424b",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a force sword, force axe, or force stave equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "840b-c47a-0e8d-fa15",
+                        "childName": "Force Stave",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "ac56-4581-2ec6-4683",
+                        "childName": "The Mindforge",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "sortIndex": 1,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "896e-0836-daec-f0a8",
+                        "childName": "Force Sword",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "3a5f-68dd-68b7-f2f4",
+                        "childName": "Force Axe",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "The Mindforge",
+                "id": "b460-2e48-e188-281b",
+                "hidden": false,
+                "typeId": "8fa1-1cd9-5ae1-0e93",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                  {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                  {"name": "Strength", "$text": "X2", "typeId": "a10f-8fce-fc56-cafc"},
+                  {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
+                  {"name": "Rules", "$text": "Master-Crafted, Force", "typeId": "cc29-b1e7-88e5-c90f"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Axe of Severance",
+            "id": "4d64-b3a6-78a0-3d46",
+            "hidden": false,
+            "import": true,
+            "page": "8",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "2398-4e15-cc5b-37ea",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a power axe, or omnissian axe equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "6dff-d1d6-7194-b1d0",
+                        "childName": "Power Axe",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "4d64-b3a6-78a0-3d46",
+                        "childName": "The Mindforge",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "sortIndex": 1,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "1045-91ce-a571-3484",
+                        "childName": "Omnissian Axe",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "The Axe of Severance",
+                "id": "c68a-7721-6d7e-ad31",
+                "hidden": false,
+                "typeId": "8fa1-1cd9-5ae1-0e93",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                  {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                  {"name": "Strength", "$text": "+4", "typeId": "a10f-8fce-fc56-cafc"},
+                  {"name": "AP", "$text": "2", "typeId": "65af-3e5a-1d24-5a74"},
+                  {"name": "Rules", "$text": "Master-Crafted, Bane (Infantry), Two-Handed", "typeId": "cc29-b1e7-88e5-c90f"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Teeth of Mars",
+            "id": "4df8-19ae-06cb-f21e",
+            "hidden": false,
+            "import": true,
+            "page": "8",
+            "publicationId": "8190-e097-f8d4-566c",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "3541-223d-e998-a775",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "modifiers": [
+              {
+                "field": "error",
+                "type": "add",
+                "value": "{unit} must have a chainsword equipped to take {this}",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "f82a-555a-d38f-b930",
+                        "childName": "Chainsword",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      },
+                      {
+                        "childId": "4df8-19ae-06cb-f21e",
+                        "childName": "The Mindforge",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "sortIndex": 1,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "The Teeth of Mars",
+                "id": "d8a7-ed46-62a5-3f7f",
+                "hidden": false,
+                "typeId": "8fa1-1cd9-5ae1-0e93",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Melee", "typeId": "ebe7-bb49-849c-9994"},
+                  {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
+                  {"name": "Strength", "$text": "+1", "typeId": "a10f-8fce-fc56-cafc"},
+                  {"name": "AP", "$text": "4", "typeId": "65af-3e5a-1d24-5a74"},
+                  {"name": "Rules", "$text": "Master-Crafted, Shred, Haywire (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Technomancy Psychic Powers",
+        "id": "7519-402f-3859-2e4b",
+        "hidden": false,
+        "page": "9",
+        "publicationId": "8190-e097-f8d4-566c",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "d6b5-16f9-ff80-5764",
+                "childName": "[Iron Hands]",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Fury of Mars (Psychic Weapon)",
+            "id": "dea7-01af-e11c-0d56",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "d8d2-066b-bcbf-777a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "profiles": [
+              {
+                "name": "Fury of Mars",
+                "id": "c58f-5b25-d6a4-b923",
+                "hidden": false,
+                "typeId": "4425-e2ff-1ce0-83c1",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Type", "$text": "Assault", "typeId": "96e6-b391-984f-0904"},
+                  {"name": "A", "$text": "1", "typeId": "0048-3de8-a98b-d7dd"},
+                  {"name": "Range", "$text": "18", "typeId": "83a1-168d-3aa3-97f8"},
+                  {"name": "Strength", "$text": "1", "typeId": "4e85-0d56-33e2-acca"},
+                  {"name": "AP", "$text": "", "typeId": "1fa3-547b-b56c-c34e"},
+                  {"name": "Rules", "$text": "Psychic Weapon, Haywire (2+)", "typeId": "ba87-19e9-d692-6e30"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Blessing of the Machine (Psychic Power)",
+            "id": "7095-6067-f57e-888e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "d655-960a-bf4d-8883", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}],
+            "rules": [
+              {
+                "name": "Blessing of the Machine",
+                "id": "73bc-63b9-80f2-30a1",
+                "description": "When this Psychic Power is successfully cast, select a single friendly Vehicle or Aircraft unit within 24” of the Psyker. That unit ignores the effects of the Crew Injury result on the damage table until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Machine Curse (Psychic Power)",
+            "id": "b481-bb5c-b8c3-d116",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "1845-1de5-4bcb-a957", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Machine Curse",
+                "id": "17bd-9a37-6248-4aba",
+                "description": "When this Psychic Power is successfully cast, select a single enemy Vehicle or Aircraft unit within 12” of the Psyker. All friendly Iron Hands units are treated as having the Tank Hunter special rule when resolving attacks against the targeted unit until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Reforge (Psychic Power)",
+            "id": "a827-2831-8b92-23dd",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "ede5-cb35-7ecd-1da7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+            "rules": [
+              {
+                "name": "Reforge",
+                "id": "2e23-70ed-271e-22f3",
+                "description": "When this Psychic Power is successfully cast, select a single friendly Vehicle or Aircraft unit within 12” of the Psyker. That unit gains the benefit of the Rite of Repair as if the Rite of Repair had been successfully performed on the target. (see Machine Rites)",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Warp Metal Armour (Psychic Power)",
+            "id": "5c6f-09b6-6927-3b5f",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "0468-fdd8-304d-d1ce", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+            "rules": [
+              {
+                "name": "Warp Metal Armour",
+                "id": "d885-9076-714b-40a7",
+                "description": "When this Psychic Power is successfully cast, select a single enemy Vehicle, Walker or Aircraft unit within 12” of the Psyker. The target unit gains +1 to its Armour Facings (AV) or Toughness (T) characteristic until the start of your next Shooting Phase.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm Bolter",
+        "id": "9c22-8a6a-5b2e-46e3",
+        "collapsible": true,
+        "defaultSelectionEntryId": "24fd-6ecf-0109-02c3",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "55c2-497f-f30e-a7cb-min",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "55c2-497f-f30e-a7cb-max",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "Storm Bolter", "id": "24fd-6ecf-0109-02c3", "hidden": false, "import": true, "targetId": "c829-b809-d33d-4738", "type": "selectionEntry"},
+          {
+            "name": "Combi Grav",
+            "id": "1ac9-2dfd-b3b1-84df",
+            "hidden": false,
+            "import": true,
+            "targetId": "b8b8-1bdb-b1a9-d4d9",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Combi Plasma",
+            "id": "40f0-23f1-a8bd-df22",
+            "hidden": false,
+            "import": true,
+            "targetId": "8d0b-110a-173a-4ddd",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Grav Gun",
+            "id": "0b1e-65c8-5b94-943c",
+            "comment": "todo: Listed in both limited and unlimited sections",
+            "hidden": false,
+            "import": true,
+            "targetId": "c4da-fd1d-a542-d279",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}]
+          },
+          {
+            "name": "Graviton Shredder",
+            "id": "7dd4-96be-2bc4-0313",
+            "comment": "todo: Listed in both limited and unlimited sections",
+            "hidden": false,
+            "import": true,
+            "targetId": "4cf6-bd7c-99e5-c9c9",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 11}]
+          },
+          {
+            "name": "Volkite Charger",
+            "id": "7985-ebda-3802-da94",
+            "hidden": false,
+            "import": true,
+            "targetId": "1879-2a4e-1150-0b85",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 2}]
+          },
+          {
+            "name": "Combi Flamer",
+            "id": "e232-af55-5edb-4c3e",
+            "hidden": false,
+            "import": true,
+            "targetId": "4055-8e1b-e950-5299",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
+          },
+          {
+            "name": "Combi Melta",
+            "id": "99f9-424b-cd36-de30",
+            "hidden": false,
+            "import": true,
+            "targetId": "0a47-4e41-d06f-dabf",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}]
+          },
+          {
+            "name": "Haywire Stormbolter",
+            "id": "9c55-629b-c68f-e33e",
+            "hidden": false,
+            "import": true,
+            "targetId": "27e5-7272-7807-d20e",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 1}]
+          }
+        ]
+      }
+    ]
+  }
+}

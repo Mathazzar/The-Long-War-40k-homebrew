@@ -7,7 +7,7 @@
     "gameSystemRevision": 22,
     "library": true,
     "publicationId": "e28b-31b7-b599-f5fe",
-    "revision": 2,
+    "revision": 3,
     "type": "catalogue",
     "catalogueLinks": [{"name": "Imperium - shared rules", "id": "d9b8-0301-7a2a-557c", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -232,25 +232,6 @@
         "page": "",
         "type": "upgrade",
         "infoLinks": [{"name": "Ferromag Shotgun", "id": "1bf5-9180-ee02-5302", "hidden": false, "targetId": "4374-a477-4adb-a711", "type": "profile"}]
-      },
-      {
-        "name": "Boarding Shield",
-        "id": "af00-058f-ea9c-dfae",
-        "hidden": false,
-        "import": true,
-        "page": "4",
-        "publicationId": "e28b-31b7-b599-f5fe",
-        "type": "upgrade",
-        "constraints": [{"id": "b940-7b11-d32a-2186", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}],
-        "rules": [
-          {
-            "name": "Boarding Shield",
-            "id": "cdbf-afa3-914c-9f38",
-            "description": "A model equipped with this wargear gains a 5+ Invulnerable save. If at least 3 models in a unit are equipped with Boarding Shields, all charges against the equipped unit are treated as Disordered Charges.",
-            "hidden": false
-          }
-        ]
       },
       {
         "name": "Wardens Cuirass",
@@ -3062,7 +3043,17 @@
         "defaultSelectionEntryId": "none",
         "flatten": true,
         "hidden": false,
-        "entryLinks": [{"name": "Boarding Shield", "id": "46c2-fe58-4b3b-ece2", "hidden": false, "import": true, "targetId": "af00-058f-ea9c-dfae", "type": "selectionEntry"}],
+        "entryLinks": [
+          {
+            "name": "Boarding Shield",
+            "id": "46c2-fe58-4b3b-ece2",
+            "hidden": false,
+            "import": true,
+            "targetId": "af00-058f-ea9c-dfae",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 3}]
+          }
+        ],
         "modifiers": [
           {
             "field": "hidden",
