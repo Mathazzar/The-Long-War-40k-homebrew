@@ -6,7 +6,7 @@
     "gameSystemId": "sys-a003-176c-de1f-4eba",
     "gameSystemRevision": 10,
     "library": true,
-    "revision": 11,
+    "revision": 12,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Zealous Congregation", "id": "eefe-f5c8-4604-3219", "hidden": false},
@@ -271,6 +271,21 @@
           {"name": "I", "$text": "\n", "typeId": "6bc7-a391-2ba3-44f9"},
           {"name": "LD", "$text": "\n", "typeId": "bc55-c58d-b53a-233c"},
           {"name": "Sv", "$text": "3+", "typeId": "c9ff-af68-092c-c4b3"}
+        ]
+      },
+      {
+        "name": "Grav Cannon",
+        "id": "7c93-f9a2-e580-86c7",
+        "hidden": false,
+        "typeId": "4425-e2ff-1ce0-83c1",
+        "typeName": "Ranged Weapons",
+        "characteristics": [
+          {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
+          {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
+          {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
+          {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
+          {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
+          {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
         ]
       }
     ],
@@ -1231,23 +1246,7 @@
         "page": "16",
         "publicationId": "1606-03fb-e01d-e0cf",
         "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Grav Cannon",
-            "id": "7c93-f9a2-e580-86c7",
-            "hidden": false,
-            "typeId": "4425-e2ff-1ce0-83c1",
-            "typeName": "Ranged Weapons",
-            "characteristics": [
-              {"name": "Type", "$text": "Heavy", "typeId": "96e6-b391-984f-0904"},
-              {"name": "A", "$text": "3", "typeId": "0048-3de8-a98b-d7dd"},
-              {"name": "Range", "$text": "30", "typeId": "83a1-168d-3aa3-97f8"},
-              {"name": "Strength", "$text": "6", "typeId": "4e85-0d56-33e2-acca"},
-              {"name": "AP", "$text": "3", "typeId": "1fa3-547b-b56c-c34e"},
-              {"name": "Rules", "$text": "Crushing (6+), Haywire (6+)", "typeId": "ba87-19e9-d692-6e30"}
-            ]
-          }
-        ]
+        "infoLinks": [{"name": "Grav Cannon", "id": "eff0-8b92-014b-35aa", "hidden": false, "targetId": "7c93-f9a2-e580-86c7", "type": "profile"}]
       },
       {
         "name": "Plasma Exterminator",
@@ -5980,6 +5979,98 @@
             "name": "Aegis Defence Line",
             "id": "c741-e2cb-8966-255b",
             "description": "If you are the defender in a scenario, you may deploy up to 3 Aegis Defence Line pieces in your deployment zone as part of prepared positions after determining who will be the attacker and who will be the defender. Aegis Defence Lines provide cover per the standard cover rules and provide no additional benefits.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Boarding Shield",
+        "id": "af00-058f-ea9c-dfae",
+        "hidden": false,
+        "import": true,
+        "page": "4",
+        "publicationId": "e28b-31b7-b599-f5fe",
+        "type": "upgrade",
+        "constraints": [{"id": "b940-7b11-d32a-2186", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Boarding Shield",
+            "id": "cdbf-afa3-914c-9f38",
+            "description": "A model equipped with this wargear gains a 5+ Invulnerable save. If at least 3 models in a unit are equipped with Boarding Shields, all charges against the equipped unit are treated as Disordered Charges.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Cyber familiar",
+        "id": "17f0-b185-00f7-03af",
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "6d84-fac5-77c6-2cdc",
+        "type": "upgrade",
+        "constraints": [{"id": "be9a-e6d8-40f8-5f40", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "rules": [
+          {
+            "name": "Cyber familiar",
+            "id": "d48d-c924-f029-145d",
+            "description": "The equipped model gains +1 to any Invulnerable saves it has (to a max of 3+). In addition, the equipped model may re-roll 1 of the dice when performing the Leadership test for a Machine Rite.",
+            "hidden": false,
+            "page": ""
+          }
+        ]
+      },
+      {
+        "name": "Automedicae Bionics",
+        "id": "78d1-30e6-3a32-95c6",
+        "hidden": false,
+        "import": true,
+        "page": "5",
+        "publicationId": "6d84-fac5-77c6-2cdc",
+        "type": "upgrade",
+        "constraints": [{"id": "90bb-0813-fa9f-7849", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 10}],
+        "rules": [
+          {
+            "name": "Automedicae Bionics",
+            "id": "3829-2f32-8d7e-ab87",
+            "description": "A model equipped with this wargear gains the Regeneration special rule.",
+            "hidden": false,
+            "page": ""
+          }
+        ]
+      },
+      {
+        "name": "Rite of Destruction (Machine Rite)",
+        "id": "d7a6-b4be-721a-4bb8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "1c0c-f63b-e147-24f0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 15}],
+        "rules": [
+          {
+            "name": "Rite of Destruction",
+            "id": "32ca-4f53-c62d-8413",
+            "description": "When this Rite is performed successfully, select 1 enemy Vehicle, Walker, Knight, Titan or Aircraft unit within 12”. The target unit takes D6, Strength 1, AP- automatic hits. These hits are resolved with the Haywire (4+) special rule. Only Invulnerable saves may be made against these attacks.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Rite of Locomotion (Machine Rite)",
+        "id": "d3e7-38dc-3538-ce10",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "ae48-c660-75e7-4354", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 20}],
+        "rules": [
+          {
+            "name": "Rite of Locomotion",
+            "id": "dc8b-ef4f-c20e-91b6",
+            "description": "When this Rite is performed successfully, select a Vehicle, Automata, Walker or Aircraft unit within 3” of the unit performing this Rite or a unit they embarked upon may immediately make a Normal Move. However, the selected unit may not Shoot in the Shooting Phase or Charge in the Charge Phase.",
             "hidden": false
           }
         ]

@@ -34,7 +34,8 @@
         "importRootEntries": true,
         "targetId": "6e62-9887-b03e-46f3",
         "type": "catalogue"
-      }
+      },
+      {"name": "Imperium - Space Marines - Iron Hands", "id": "ca6b-9a72-a148-ae3f", "targetId": "935c-9f41-efac-ccfa", "type": "catalogue"}
     ],
     "categoryEntries": [
       {"name": "[Chapter]", "id": "109e-e658-ee85-f181", "hidden": false},
@@ -600,8 +601,88 @@
           }
         ]
       },
-      {"name": "Tactical Terminator Squad", "id": "75a2-8dab-75cd-b717", "hidden": false},
-      {"name": "Assault Terminator Squad", "id": "0498-fe7e-77f1-efd7", "hidden": false},
+      {
+        "name": "Tactical Terminator Squad",
+        "id": "75a2-8dab-75cd-b717",
+        "hidden": false,
+        "constraints": [{"id": "1aab-f31d-f08f-b466", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": -1}],
+        "modifiers": [
+          {
+            "field": "1aab-f31d-f08f-b466",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "a498-e599-7e8a-86a0",
+                    "childName": "Vaylund Cal",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d6b5-16f9-ff80-5764",
+                    "childName": "[Iron Hands]",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "sortIndex": 1,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Assault Terminator Squad",
+        "id": "0498-fe7e-77f1-efd7",
+        "hidden": false,
+        "constraints": [{"id": "5b16-cf31-77fe-a446", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": -1}],
+        "modifiers": [
+          {
+            "field": "5b16-cf31-77fe-a446",
+            "type": "set",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "a498-e599-7e8a-86a0",
+                    "childName": "Vaylund Cal",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d6b5-16f9-ff80-5764",
+                    "childName": "[Iron Hands]",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "sortIndex": 1,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
       {"name": "Relic Terminator Squad", "id": "0df9-79f3-7dfd-4994", "hidden": false},
       {"name": "Redemptor", "id": "0f5c-2f4a-f828-f35c", "hidden": false},
       {"name": "Invictor Tactical Warsuit", "id": "4e12-4f3c-8352-aa1c", "hidden": false},
@@ -1060,7 +1141,63 @@
         ]
       },
       {"name": "Gravis Squad", "id": "a036-c446-ea47-84c2", "hidden": false},
-      {"name": "Firestrike Servo Turret", "id": "a067-cffa-6b20-d6b2", "hidden": false},
+      {
+        "name": "Firestrike Servo Turret",
+        "id": "a067-cffa-6b20-d6b2",
+        "hidden": false,
+        "constraints": [{"id": "6909-91c3-1d6a-167b", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0}],
+        "modifiers": [
+          {
+            "field": "6909-91c3-1d6a-167b",
+            "type": "increment",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "95c0-e8ed-b661-b594",
+                "childName": "Ancient Bulwark",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "6909-91c3-1d6a-167b",
+            "type": "decrement",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "95c0-e8ed-b661-b594",
+                    "childName": "Ancient Bulwark",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "bdd7-b3dd-0fe3-55dd",
+                    "childName": "Thunderfire Cannon",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
       {"name": "Whirlwind Tank", "id": "8c19-9cad-b82f-0af2", "hidden": false},
       {"name": "Hunter Tank", "id": "c2ca-05a1-b9bd-6ce3", "hidden": false},
       {"name": "Stalker Tank", "id": "5d9d-deb7-6abe-4f43", "hidden": false},
@@ -1471,6 +1608,16 @@
                     "scope": "roster",
                     "shared": true,
                     "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "971f-61a8-751d-d7d4",
+                    "childName": "Super Heavy Assault",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -1900,6 +2047,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: HQ",
+            "id": "3973-c14b-eced-ddea",
+            "hidden": false,
+            "import": true,
+            "targetId": "0eb7-0289-6c97-4f6d",
+            "type": "selectionEntry",
+            "constraints": [{"id": "2e5a-63d1-6b4d-1c38", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "971f-61a8-751d-d7d4",
+                    "childName": "Super Heavy Assault",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2062,6 +2237,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: HQ",
+            "id": "a22f-d33f-b8e0-c05e",
+            "hidden": false,
+            "import": true,
+            "targetId": "0eb7-0289-6c97-4f6d",
+            "type": "selectionEntry",
+            "constraints": [{"id": "e33f-f476-8f32-b9cc", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "971f-61a8-751d-d7d4",
+                    "childName": "Super Heavy Assault",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2102,6 +2305,126 @@
             "import": true,
             "targetId": "3226-b66f-a3fe-0050",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Troop",
+            "id": "554d-a095-8e2c-fc30",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "infoLinks": [{"name": "Support Squad", "id": "eebd-52e4-508b-2d63", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "9f3a-4892-68dc-2701",
+                            "childName": "Troop",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "f907-c80d-2520-e7f7",
+                            "childName": "Elite",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "95c0-e8ed-b661-b594",
+                        "childName": "Ancient Bulwark",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Dreadnought Warlord", "id": "1e9f-9246-06ca-1861", "hidden": false, "import": true, "targetId": "5570-1e6e-19dd-1611", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "843a-5dd4-30ce-f4ba",
+            "hidden": true,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "c831-e8d6-bb33-52b3",
+                            "childName": "Heavy",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "f907-c80d-2520-e7f7",
+                            "childName": "Elite",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "0026-edb6-6691-85ef",
+                        "childName": "Iron Father Malkaan Ferrios",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -2444,6 +2767,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: HQ",
+            "id": "19aa-abad-2977-4f22",
+            "hidden": false,
+            "import": true,
+            "targetId": "0eb7-0289-6c97-4f6d",
+            "type": "selectionEntry",
+            "constraints": [{"id": "8c86-c3bc-0a92-3c8e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "971f-61a8-751d-d7d4",
+                    "childName": "Super Heavy Assault",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2520,7 +2871,7 @@
               {
                 "field": "hidden",
                 "type": "set",
-                "value": false,
+                "value": true,
                 "conditions": [
                   {
                     "childId": "94da-d01e-4899-6ca8",
@@ -2530,7 +2881,7 @@
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "lessThan",
                     "value": 1
                   }
                 ]
@@ -2544,7 +2895,8 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Dreadnought Warlord", "id": "283f-644e-3f7e-ce51", "hidden": false, "import": true, "targetId": "5570-1e6e-19dd-1611", "type": "selectionEntry"}
         ],
         "modifiers": [
           {
@@ -3006,6 +3358,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: HQ",
+            "id": "fbd4-5a2c-1306-53c1",
+            "hidden": false,
+            "import": true,
+            "targetId": "0eb7-0289-6c97-4f6d",
+            "type": "selectionEntry",
+            "constraints": [{"id": "ff9b-929c-05cc-62f0", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "971f-61a8-751d-d7d4",
+                    "childName": "Super Heavy Assault",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3068,6 +3448,34 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: HQ",
+            "id": "fc16-459e-bbc5-5098",
+            "hidden": false,
+            "import": true,
+            "targetId": "0eb7-0289-6c97-4f6d",
+            "type": "selectionEntry",
+            "constraints": [{"id": "6c3d-aaa1-9f94-34b0", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "971f-61a8-751d-d7d4",
+                    "childName": "Super Heavy Assault",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3147,59 +3555,70 @@
                     "value": 1
                   },
                   {
-                    "childId": "1a89-b9e7-f553-9a7d",
-                    "childName": "Raven Guard",
+                    "childId": "95f3-9989-88bf-42cb",
+                    "childName": "[Raven Guard]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   },
                   {
-                    "childId": "100c-98ec-dcff-076d",
-                    "childName": "Salamanders",
+                    "childId": "4db2-c5b4-e890-1d82",
+                    "childName": "[Salamanders]",
                     "comment": "todo: Unit List duplicated with conflicting options in reference",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   },
                   {
-                    "childId": "24e8-efde-3148-5d6e",
-                    "childName": "Black Templars",
+                    "childId": "ee46-6cc6-6244-6172",
+                    "childName": "[Black Templars]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   },
                   {
-                    "childId": "69c3-944c-6e99-d38c",
-                    "childName": "Blood Angles",
+                    "childId": "9ccb-08c2-c256-ec0a",
+                    "childName": "[Blood Angels]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
                     "value": 1
                   },
                   {
-                    "childId": "c7b7-b755-3afa-865f",
-                    "childName": "Dark Angels",
+                    "childId": "6e84-25be-0f58-4c5e",
+                    "childName": "[Dark Angels]",
                     "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "scope": "force",
                     "shared": true,
-                    "type": "atLeast",
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d6b5-16f9-ff80-5764",
+                    "childName": "[Iron Hands]",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -3222,6 +3641,126 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {"name": "Dreadnought Warlord", "id": "5d24-e331-b0b4-17c7", "hidden": false, "import": true, "targetId": "5570-1e6e-19dd-1611", "type": "selectionEntry"},
+          {
+            "name": "Force Organization: Troop",
+            "id": "de0c-704b-ae01-a026",
+            "hidden": false,
+            "import": true,
+            "targetId": "cd9e-d590-95bd-2dfd",
+            "type": "selectionEntry",
+            "infoLinks": [{"name": "Support Squad", "id": "d9ff-b4e0-d6d7-fc00", "hidden": false, "targetId": "b206-387f-6a4e-2a67", "type": "rule"}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "9f3a-4892-68dc-2701",
+                            "childName": "Troop",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "f907-c80d-2520-e7f7",
+                            "childName": "Elite",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "95c0-e8ed-b661-b594",
+                        "childName": "Ancient Bulwark",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Force Organization: Heavy Support",
+            "id": "1b4e-0b96-c5ac-f4e7",
+            "hidden": true,
+            "import": true,
+            "targetId": "1e8e-a64f-440c-fe54",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "c831-e8d6-bb33-52b3",
+                            "childName": "Heavy",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "f907-c80d-2520-e7f7",
+                            "childName": "Elite",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "0026-edb6-6691-85ef",
+                        "childName": "Iron Father Malkaan Ferrios",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3294,6 +3833,33 @@
             "import": true,
             "targetId": "03d1-305a-7bcd-4e39",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Force Organization: Elite",
+            "id": "e843-db7f-966a-1a2a",
+            "hidden": false,
+            "import": true,
+            "targetId": "c9f9-3940-2fc2-709e",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b75f-cfcc-71d6-66b6",
+                    "childName": "Iron Father Kardan Stronos",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -5090,7 +5656,83 @@
         ]
       },
       {"name": "Auric Auxilia Colonel", "id": "45a6-a362-2d0d-6f25", "hidden": false, "import": true, "targetId": "8416-0258-0943-d27b", "type": "selectionEntry"},
-      {"name": "Auric Auxilia", "id": "0d57-b6ad-f52f-ed19", "hidden": false, "import": true, "targetId": "b95e-ef34-981c-cc0c", "type": "selectionEntry"}
+      {"name": "Auric Auxilia", "id": "0d57-b6ad-f52f-ed19", "hidden": false, "import": true, "targetId": "b95e-ef34-981c-cc0c", "type": "selectionEntry"},
+      {"name": "Helfathers", "id": "68d4-707a-d15b-02b8", "hidden": false, "import": true, "targetId": "f745-8e88-f30c-6098", "type": "selectionEntry"},
+      {
+        "name": "Iron Father Kardan Stronos",
+        "id": "8f98-fd68-6873-5d5f",
+        "hidden": false,
+        "import": true,
+        "targetId": "ebad-a5d9-e971-edc6",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "bc8c-cdef-121e-0589",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "5bd6-b953-0f55-f719", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Iron Father Malkaan Ferrios",
+        "id": "02a1-f960-a7fa-c510",
+        "hidden": false,
+        "import": true,
+        "targetId": "4a53-fd9a-862c-320b",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "57be-e64c-6511-969d",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "6cb6-2e15-4b80-e4f2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Iron Captain Caanok Var",
+        "id": "ad40-031e-52dc-59f3",
+        "hidden": false,
+        "import": true,
+        "targetId": "75a2-1633-f65b-2995",
+        "type": "selectionEntry",
+        "entryLinks": [{"name": "Warlord", "id": "bc5a-65c9-f167-7f12", "hidden": false, "import": true, "targetId": "af31-89ae-7eb1-df93", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Iron Father Vaylund Cal",
+        "id": "efea-d159-a641-b822",
+        "hidden": false,
+        "import": true,
+        "targetId": "071f-3a87-f8bd-63cc",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "8b11-e4ff-56e9-1ae7",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "ed7f-eef3-bd36-f9d0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Morlocks",
+        "id": "e4cc-5218-22e8-1ae8",
+        "hidden": false,
+        "import": true,
+        "targetId": "fa9a-ec8e-fc06-7ead",
+        "type": "selectionEntry",
+        "infoLinks": [{"name": "Combat Squads", "id": "bebf-4bb5-4e5d-aa4b", "hidden": false, "targetId": "efa0-976f-ffa4-74cb", "type": "rule"}]
+      }
     ],
     "publications": [{"name": "The Long War - Codex Space Marines", "id": "1606-03fb-e01d-e0cf", "hidden": false, "publisher": "5.0"}],
     "selectionEntries": [
@@ -5231,6 +5873,14 @@
                 "import": true,
                 "targetId": "5f4d-dd39-8002-f63b",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Iron Hands Rites of War",
+                "id": "2580-3ca6-825a-6e01",
+                "hidden": false,
+                "import": true,
+                "targetId": "e03a-af68-b0fe-dee1",
+                "type": "selectionEntryGroup"
               }
             ],
             "modifierGroups": [
@@ -5274,6 +5924,16 @@
                       {
                         "childId": "6e84-25be-0f58-4c5e",
                         "childName": "[Dark Angels]",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "d6b5-16f9-ff80-5764",
+                        "childName": "[Iron Hands]",
                         "field": "selections",
                         "includeChildSelections": false,
                         "scope": "force",
@@ -5582,7 +6242,8 @@
               },
               {"name": "Dark Angels", "id": "5ab0-50ad-856e-6003", "hidden": false, "import": true, "targetId": "c7b7-b755-3afa-865f", "type": "selectionEntry"},
               {"name": "Imperial Fists", "id": "b01a-eb26-103d-ab74", "hidden": false, "import": true, "targetId": "2e4b-aee9-4a40-d0a7", "type": "selectionEntry"},
-              {"name": "Blood Angles", "id": "f6ea-b1a4-1bf5-d539", "hidden": false, "import": true, "targetId": "69c3-944c-6e99-d38c", "type": "selectionEntry"}
+              {"name": "Blood Angles", "id": "f6ea-b1a4-1bf5-d539", "hidden": false, "import": true, "targetId": "69c3-944c-6e99-d38c", "type": "selectionEntry"},
+              {"name": "Iron Hands", "id": "498c-4f4e-294d-1e94", "hidden": false, "import": true, "targetId": "0201-874d-8bc8-9a94", "type": "selectionEntry"}
             ],
             "modifiers": [
               {
@@ -8438,6 +9099,32 @@
                   {
                     "childId": "fbef-5f4b-bee4-b90b",
                     "childName": "[Imperial Fists]",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Iron Hands",
+            "id": "d467-e471-49d9-ef38",
+            "hidden": false,
+            "targetId": "c29b-071c-8ae8-37b7",
+            "type": "infoGroup",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "d6b5-16f9-ff80-5764",
+                    "childName": "[Iron Hands]",
                     "field": "selections",
                     "includeChildSelections": false,
                     "scope": "force",
@@ -12761,7 +13448,8 @@
           {"name": "Tank", "id": "65d8-b4a6-6c54-e9d4", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
           {"name": "M31", "id": "16e0-5156-43f8-3511", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
           {"name": "Typhon Siege Tank", "id": "1a14-1ca4-9d7a-a51b", "hidden": false, "primary": false, "targetId": "4aba-2d8a-0515-4676"},
-          {"name": "Vehicle", "id": "25b9-757a-921c-cb65", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"}
+          {"name": "Vehicle", "id": "25b9-757a-921c-cb65", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "SH", "id": "507e-1904-6864-3b5b", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 255}],
         "infoLinks": [
@@ -17956,7 +18644,8 @@
           {"name": "[Chapter]", "id": "0f15-8831-6a8a-b9ca", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
           {"name": "M31", "id": "9cdb-0bb3-aab1-3cb1", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
           {"name": "Spartan Assault Tank", "id": "c308-b47f-211c-5a1c", "hidden": false, "primary": false, "targetId": "071d-945c-9ad6-03d3"},
-          {"name": "Vehicle", "id": "153a-49bf-c490-6739", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"}
+          {"name": "Vehicle", "id": "153a-49bf-c490-6739", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "SH", "id": "7df1-37c0-1148-cbf0", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 275}],
         "infoLinks": [
@@ -18531,6 +19220,23 @@
                                 "value": 1
                               }
                             ]
+                          }
+                        ]
+                      },
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "d6b5-16f9-ff80-5764",
+                            "childName": "[Iron Hands]",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
                           }
                         ]
                       }
@@ -21612,7 +22318,19 @@
                 "targetId": "7850-b4d5-657d-7ea6",
                 "type": "selectionEntryGroup"
               },
-              {"name": "Dark Angels Captain", "id": "be1c-7b69-3aa6-c50d", "hidden": false, "import": true, "targetId": "abce-d415-9c83-9811", "type": "selectionEntryGroup"}
+              {"name": "Dark Angels Captain", "id": "be1c-7b69-3aa6-c50d", "hidden": false, "import": true, "targetId": "abce-d415-9c83-9811", "type": "selectionEntryGroup"},
+              {
+                "name": "Iron Father",
+                "id": "6c51-b0fd-57de-584c",
+                "hidden": false,
+                "import": true,
+                "targetId": "778f-e033-09a4-28a0",
+                "type": "selectionEntry",
+                "entryLinks": [
+                  {"name": "Litany of Prayers", "id": "a105-a951-7a2b-0d72", "hidden": false, "import": true, "targetId": "830d-5d9f-1d8a-708c", "type": "selectionEntryGroup"},
+                  {"name": "Rites of Machines", "id": "b471-5d79-226e-3af9", "hidden": false, "import": true, "targetId": "de6c-6b13-c77a-f3dc", "type": "selectionEntryGroup"}
+                ]
+              }
             ],
             "profiles": [
               {
@@ -21699,36 +22417,47 @@
                         "type": "or",
                         "conditions": [
                           {
-                            "childId": "24e8-efde-3148-5d6e",
-                            "childName": "Black Templars",
+                            "childId": "ee46-6cc6-6244-6172",
+                            "childName": "[Black Templars]",
                             "field": "selections",
-                            "includeChildForces": true,
-                            "includeChildSelections": true,
+                            "includeChildForces": false,
+                            "includeChildSelections": false,
                             "scope": "force",
                             "shared": true,
-                            "type": "atLeast",
+                            "type": "instanceOf",
                             "value": 1
                           },
                           {
-                            "childId": "1a89-b9e7-f553-9a7d",
-                            "childName": "Raven Guard",
+                            "childId": "95f3-9989-88bf-42cb",
+                            "childName": "[Raven Guard]",
                             "field": "selections",
-                            "includeChildForces": true,
-                            "includeChildSelections": true,
+                            "includeChildForces": false,
+                            "includeChildSelections": false,
                             "scope": "force",
                             "shared": true,
-                            "type": "atLeast",
+                            "type": "instanceOf",
                             "value": 1
                           },
                           {
-                            "childId": "69c3-944c-6e99-d38c",
-                            "childName": "Blood Angles",
+                            "childId": "9ccb-08c2-c256-ec0a",
+                            "childName": "[Blood Angels]",
                             "field": "selections",
-                            "includeChildForces": true,
-                            "includeChildSelections": true,
+                            "includeChildForces": false,
+                            "includeChildSelections": false,
                             "scope": "force",
                             "shared": true,
-                            "type": "atLeast",
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "d6b5-16f9-ff80-5764",
+                            "childName": "[Iron Hands]",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": false,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "instanceOf",
                             "value": 1
                           }
                         ]
@@ -28260,7 +28989,8 @@
           {"name": "[Chapter]", "id": "36bd-aa3f-a5af-1cbf", "hidden": false, "primary": false, "targetId": "109e-e658-ee85-f181"},
           {"name": "Vehicle", "id": "20ae-6f0b-60bc-8606", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
           {"name": "M31", "id": "38d0-92ab-bb14-ca2b", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Mastodon", "id": "92af-68ea-eb1b-b884", "hidden": false, "primary": false, "targetId": "1748-236e-28fb-c34e"}
+          {"name": "Mastodon", "id": "92af-68ea-eb1b-b884", "hidden": false, "primary": false, "targetId": "1748-236e-28fb-c34e"},
+          {"name": "SH", "id": "f77c-cf48-23d6-c991", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 445}],
         "infoLinks": [
@@ -29190,7 +29920,8 @@
           {"name": "Tank", "id": "b595-11e1-1302-43a0", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
           {"name": "Vehicle", "id": "f9af-6394-447f-931c", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
           {"name": "M31", "id": "c9df-4c8e-856a-8adb", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
-          {"name": "Kratos Super Heavy Tank", "id": "23d8-4ee4-0074-fd4d", "hidden": false, "primary": false, "targetId": "988d-6c77-7bca-04f2"}
+          {"name": "Kratos Super Heavy Tank", "id": "23d8-4ee4-0074-fd4d", "hidden": false, "primary": false, "targetId": "988d-6c77-7bca-04f2"},
+          {"name": "SH", "id": "6f63-1244-250b-6a79", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "constraints": [{"id": "27d2-624f-c4ca-b197", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 215}],
@@ -33201,7 +33932,8 @@
           {"name": "Tank", "id": "7a33-b523-58a6-d6bd", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
           {"name": "M31", "id": "ab03-7edd-c432-6400", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
           {"name": "Fellblade", "id": "6880-03b3-ca14-6721", "hidden": false, "primary": false, "targetId": "eea8-c8e7-293f-b1fc"},
-          {"name": "Vehicle", "id": "0b8c-d08a-91b7-9289", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"}
+          {"name": "Vehicle", "id": "0b8c-d08a-91b7-9289", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "SH", "id": "6aea-2a56-fa2a-45e9", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 275}],
         "infoLinks": [
@@ -33389,7 +34121,8 @@
           {"name": "Tank", "id": "9020-17b5-27f1-0d8d", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
           {"name": "M31", "id": "430d-5792-6ac0-c189", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
           {"name": "Vehicle", "id": "a8b3-8021-a0e6-8979", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
-          {"name": "Falchion", "id": "4fce-2f60-2bd8-2ad6", "hidden": false, "primary": false, "targetId": "6a52-3c52-357a-3dce"}
+          {"name": "Falchion", "id": "4fce-2f60-2bd8-2ad6", "hidden": false, "primary": false, "targetId": "6a52-3c52-357a-3dce"},
+          {"name": "SH", "id": "45ba-fc15-ee53-9ad9", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 290}],
         "infoLinks": [
@@ -35063,7 +35796,8 @@
           {"name": "Tank", "id": "8585-db2d-2175-3bcd", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
           {"name": "M31", "id": "6a60-2821-f34b-79fe", "hidden": false, "primary": false, "targetId": "a253-8c73-fb02-3cd5"},
           {"name": "Cerberus", "id": "594e-4998-7141-d8d8", "hidden": false, "primary": false, "targetId": "d01a-6462-f59a-9334"},
-          {"name": "Vehicle", "id": "908e-0549-cff3-f60d", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"}
+          {"name": "Vehicle", "id": "908e-0549-cff3-f60d", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
+          {"name": "SH", "id": "7e07-5641-b00c-4d20", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 280}],
         "infoLinks": [
@@ -37288,7 +38022,8 @@
           {"name": "Tank", "id": "7257-cce8-87bb-b2ba", "hidden": false, "primary": false, "targetId": "f18c-7036-60d2-364f"},
           {"name": "M42+", "id": "378f-67d6-d0a2-97c9", "hidden": false, "primary": false, "targetId": "f012-d96a-f2a8-de0c"},
           {"name": "Vehicle", "id": "fb7b-c4f3-6d4f-cd1c", "hidden": false, "primary": false, "targetId": "0177-02e2-2373-23eb"},
-          {"name": "Astraeus", "id": "1fbf-9e0d-192a-50ff", "hidden": false, "primary": false, "targetId": "1441-95cc-01a7-2889"}
+          {"name": "Astraeus", "id": "1fbf-9e0d-192a-50ff", "hidden": false, "primary": false, "targetId": "1441-95cc-01a7-2889"},
+          {"name": "SH", "id": "ff5c-c54b-5077-763b", "hidden": false, "primary": false, "targetId": "014e-7b8f-3162-7078"}
         ],
         "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 310}],
         "infoLinks": [
@@ -39074,6 +39809,58 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Dreadnought Warlord",
+        "id": "5570-1e6e-19dd-1611",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "5796-3f55-c164-388e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [
+          {
+            "name": "Force Organization: HQ",
+            "id": "b2d6-ef9c-2ecf-5dda",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "0eb7-0289-6c97-4f6d",
+            "type": "selectionEntry",
+            "constraints": [{"id": "587c-b13b-bcce-f5ab", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          },
+          {
+            "name": "Warlord",
+            "id": "0d69-634f-fc42-fc4f",
+            "defaultAmount": "1",
+            "hidden": false,
+            "import": true,
+            "targetId": "af31-89ae-7eb1-df93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "24f8-0e3b-5186-84ef", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
+          },
+          {"name": "Relic", "id": "9777-5370-c5ef-02c4", "hidden": false, "import": true, "targetId": "5634-8f25-deba-df48", "type": "selectionEntryGroup"},
+          {"name": "Warlord Trait", "id": "e5c2-ec65-52ec-5622", "hidden": false, "import": true, "targetId": "fada-47af-eaaa-80f8", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [{"name": "Character", "id": "2243-5c4c-bf78-303d", "hidden": false, "targetId": "6fc6-d895-fab7-0c9a", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "95c0-e8ed-b661-b594",
+                "childName": "Ancient Bulwark",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -39132,6 +39919,14 @@
             "hidden": false,
             "import": true,
             "targetId": "0e1a-b8e7-0af6-49ae",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Iron Hands Warlord Traits",
+            "id": "55ab-f3da-3db2-d70a",
+            "hidden": false,
+            "import": true,
+            "targetId": "1ffc-874d-b444-e432",
             "type": "selectionEntryGroup"
           }
         ],
@@ -39210,6 +40005,17 @@
                       {
                         "childId": "fbef-5f4b-bee4-b90b",
                         "childName": "[Imperial Fists]",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "d6b5-16f9-ff80-5764",
+                        "childName": "[Iron Hands]",
                         "field": "selections",
                         "includeChildForces": false,
                         "includeChildSelections": false,
@@ -39347,6 +40153,7 @@
         "name": "Machine Rites",
         "id": "b68e-1d8d-6b88-422e",
         "collapsible": true,
+        "comment": "Core SM Codex",
         "hidden": false,
         "page": "26",
         "publicationId": "1606-03fb-e01d-e0cf",
@@ -40333,7 +41140,8 @@
                 ]
               }
             ]
-          }
+          },
+          {"name": "Iron Hands Wargear", "id": "133f-1a72-5e04-1ec8", "hidden": false, "import": true, "targetId": "ec92-8eb3-c6b1-374a", "type": "selectionEntryGroup"}
         ]
       },
       {
@@ -40388,6 +41196,17 @@
                         "shared": true,
                         "type": "instanceOf",
                         "value": 1
+                      },
+                      {
+                        "childId": "d6b5-16f9-ff80-5764",
+                        "childName": "[Iron Hands]",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
                       }
                     ]
                   }
@@ -40409,6 +41228,14 @@
             "hidden": false,
             "import": true,
             "targetId": "f422-6b38-2ab2-42a1",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Technomancy Psychic Powers",
+            "id": "0301-4b20-63aa-4e93",
+            "hidden": false,
+            "import": true,
+            "targetId": "7519-402f-3859-2e4b",
             "type": "selectionEntryGroup"
           }
         ]
@@ -40451,7 +41278,8 @@
             "import": true,
             "targetId": "745e-3f85-b48d-8dac",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Iron Hands Relics", "id": "7b30-4d06-6fea-2828", "hidden": false, "import": true, "targetId": "719d-5e95-51c1-8f45", "type": "selectionEntryGroup"}
         ],
         "selectionEntryGroups": [
           {
@@ -40505,6 +41333,17 @@
                       {
                         "childId": "fbef-5f4b-bee4-b90b",
                         "childName": "[Imperial Fists]",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "d6b5-16f9-ff80-5764",
+                        "childName": "[Iron Hands]",
                         "field": "selections",
                         "includeChildForces": false,
                         "includeChildSelections": false,
@@ -41028,6 +41867,35 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Iron Hands Wargear",
+            "id": "4819-c262-0a0b-1bb7",
+            "hidden": false,
+            "import": true,
+            "targetId": "a044-bf4a-6a36-b7c6",
+            "type": "selectionEntryGroup",
+            "modifierGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "b445-e70f-9300-286e",
+                    "childName": "Tactical Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "notInstanceOf",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"affects": "af00-058f-ea9c-dfae", "field": "hidden", "type": "set", "value": true},
+                  {"affects": "63db-a904-60d9-cc3f", "field": "hidden", "type": "set", "value": true}
+                ]
+              }
+            ]
           }
         ]
       },
@@ -41070,6 +41938,24 @@
             "costs": [{"name": "pts", "typeId": "cbdc-411c-cf55-3186", "value": 5}]
           },
           {"name": "Bolt Pistol", "id": "9914-539b-9b5b-a6ab", "hidden": false, "import": true, "targetId": "ead9-8050-dca8-5b0f", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Rites of Machines",
+        "id": "de6c-6b13-c77a-f3dc",
+        "defaultSelectionEntryId": "none",
+        "flatten": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Iron Hands Machine Rites",
+            "id": "ffef-e18f-57f1-ae8f",
+            "hidden": false,
+            "import": true,
+            "targetId": "3d3b-6274-ef5c-ffde",
+            "type": "selectionEntryGroup"
+          },
+          {"name": "Machine Rites", "id": "eac7-6784-d72d-8e19", "hidden": false, "import": true, "targetId": "b68e-1d8d-6b88-422e", "type": "selectionEntryGroup"}
         ]
       }
     ]

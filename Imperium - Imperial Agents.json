@@ -7,7 +7,7 @@
     "gameSystemRevision": 3,
     "library": false,
     "publicationId": "19c4-6ab7-10c5-8fbe",
-    "revision": 12,
+    "revision": 13,
     "type": "catalogue",
     "catalogueLinks": [{"name": "New Catalogue (link)", "id": "569a-9f4d-f22d-da2b", "targetId": "cb87-e388-9772-a046", "type": "catalogue"}],
     "categoryEntries": [
@@ -18522,25 +18522,6 @@
       }
     ],
     "sharedSelectionEntries": [
-      {
-        "name": "Boarding Shields",
-        "id": "a57d-606c-5014-f00a",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "page": "7",
-        "publicationId": "19c4-6ab7-10c5-8fbe",
-        "type": "upgrade",
-        "constraints": [{"id": "a16e-ce34-1b38-118a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [
-          {
-            "name": "Boarding Shields",
-            "id": "bf75-95a5-b64e-bd71",
-            "description": "A model equipped with this wargear gains a 5+ Invulnerable save. If at least 3 models in a unit are equipped with Boarding Shields, all charges against the equipped unit are treated as Disordered Charges.",
-            "hidden": false
-          }
-        ]
-      },
       {
         "name": "Vortex Grenade",
         "id": "1c8a-e33d-f872-df8e",
