@@ -26,7 +26,8 @@
       {"name": "Apothecary", "id": "35e8-eef8-623b-fc39", "hidden": true},
       {"name": "Sergeant", "id": "f000-d2ae-28f5-8f48", "hidden": true},
       {"name": "Tarantula Battery", "id": "2cf2-d2e6-b8b6-79cb", "hidden": false},
-      {"name": "Firestorm Redoubt", "id": "456c-0506-05ba-3eb3", "hidden": false}
+      {"name": "Firestorm Redoubt", "id": "456c-0506-05ba-3eb3", "hidden": false},
+      {"name": "Gravis", "id": "4e36-cdf8-e88f-dfaf", "hidden": false}
     ],
     "sharedProfiles": [
       {

@@ -3392,7 +3392,7 @@
               {"name": "Range", "$text": "Melee", "typeId": "181e-655a-ab11-3e00"},
               {"name": "Strength", "$text": "User", "typeId": "a10f-8fce-fc56-cafc"},
               {"name": "AP", "$text": "3", "typeId": "65af-3e5a-1d24-5a74"},
-              {"name": "Rules", "$text": "Rending (6+).", "typeId": "cc29-b1e7-88e5-c90f"}
+              {"name": "Rules", "$text": "Rending (6+)", "typeId": "cc29-b1e7-88e5-c90f"}
             ]
           }
         ]
